@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Videos.css';
 
@@ -43,6 +43,7 @@ const newsLinks = [
 const Videos = () => {
   const sliderRef = useRef();
   const navigate = useNavigate();
+  const [activeVideo, setActiveVideo] = useState(null);
 
   const scrollLeft = () => {
     sliderRef.current.scrollBy({ left: -1000, behavior: 'smooth' });
@@ -75,15 +76,29 @@ const Videos = () => {
           <div className="slider-wrapper" ref={sliderRef}>
             {videoIds.map((id, index) => (
               <div className="video-wrapper" key={index}>
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${id}`}
-                  title={`YouTube Video ${index}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                {activeVideo === id ? (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+                    title={`YouTube Video ${index}`}
+                    frameBorder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <div
+                    className="video-thumbnail"
+                    onClick={() => setActiveVideo(id)}
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
+                      alt="Video thumbnail"
+                    />
+                    <div className="play-btn">▶</div>
+                  </div>
+                )}
               </div>
             ))}
           </div>

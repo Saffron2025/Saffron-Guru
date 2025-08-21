@@ -18,7 +18,7 @@ const NewsletterForm = () => {
           </p>
         </div>
 
-        {/* MailerLite Form Placeholder */}
+        {/* ✅ MailerLite Form Placeholder */}
         <div className="ml-embedded" data-form="5jp7ck"></div>
 
         <p className="newsletter-note">
