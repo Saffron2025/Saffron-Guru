@@ -1,0 +1,83 @@
+.defendmepro-banner {
+  padding: 4rem 2rem;
+  background: linear-gradient(145deg, #1c2c3c, #243b52);
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.05);
+  max-width: 1300px;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.defendmepro-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.defendmepro-text {
+  flex: 1 1 55%;
+  min-width: 280px;
+}
+
+.defendmepro-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.defendmepro-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  animation: floatImage 6s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+.defendmepro-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Reuse your existing text styles */
+.reality-numbers-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #00ffe7, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.reality-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #e0f7ff;
+}
+
+/* Floating animation for image */
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .defendmepro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .defendmepro-text {
+    flex: 1 1 100%;
+  }
+
+  .defendmepro-image {
+    flex: 1 1 100%;
+  }
+}

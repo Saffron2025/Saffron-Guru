@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+.faq-wrapper {
+  padding: 5rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.9;
+  background: linear-gradient(120deg, #f9fafb, #eef2ff, #faf5ff, #f9fafb);
+  background-size: 400% 400%;
+  animation: wrapperFlow 18s infinite alternate ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🌀 Animated Gradient Background */
+@keyframes wrapperFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✨ Floating particles (soft bokeh) */
+.faq-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 10% 20%, rgba(99,102,241,0.1), transparent 60%),
+              radial-gradient(circle at 90% 80%, rgba(16,185,129,0.1), transparent 70%);
+  animation: floatBokeh 25s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes floatBokeh {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-20px) scale(1.1); }
+}
+
+/* 🔥 Title */
+.faq-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #16a34a, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  animation: shine 6s infinite linear;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.faq-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #475569;
+  margin-bottom: 3rem;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeUp 1.8s ease;
+}
+
+/* 📦 Content Area */
+.faq-content {
+  max-width: 980px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* 🧊 Glassmorphism Blocks */
+.faq-block, .faq-family, .faq-renewal {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 2.3rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-block::before, .faq-family::before, .faq-renewal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(16,185,129,0.1));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.faq-block:hover::before,
+.faq-family:hover::before,
+.faq-renewal:hover::before {
+  opacity: 1;
+}
+
+.faq-block:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.15);
+}
+
+/* 📝 Headings */
+.faq-block h2, .faq-family h2, .faq-renewal h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.8rem;
+}
+
+.faq-block p, .faq-block li {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* 💬 Quote Style */
+.faq-quote {
+  background: #f9fafb;
+  border-left: 6px solid #2563eb;
+  padding: 1.3rem;
+  border-radius: 14px;
+  font-style: italic;
+  margin-top: 1.2rem;
+  font-size: 1.15rem;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+  animation: fadeIn 2.5s ease;
+}
+
+/* 🌈 Footer */
+.faq-footer {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #2563eb26, #06b6d426, #16a34a26, #9333ea26);
+  margin-top: 3rem;
+  color: #1e293b;
+  animation: pulseFooter 5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseFooter {
+  0% { transform: scale(1); opacity: 0.85; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,187 @@
+.everything-safe-banner {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0c111c, #1c2638);
+  border-radius: 24px;
+  box-shadow: 0 0 80px rgba(0, 255, 255, 0.06);
+  font-family: 'Poppins', sans-serif;
+  color: #f0f8ff;
+  position: relative;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: 4rem auto;
+  animation: fadeInUp 1s ease forwards;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transform-style: preserve-3d;
+}
+
+/* 💫 Animated Glow Orbs */
+.everything-safe-banner::before,
+.everything-safe-banner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(100px);
+  opacity: 0.3;
+  animation: floatGlow 8s ease-in-out infinite alternate;
+}
+.everything-safe-banner::before {
+  width: 300px;
+  height: 300px;
+  background: #00ffe0;
+  top: -80px;
+  left: -100px;
+}
+.everything-safe-banner::after {
+  width: 400px;
+  height: 400px;
+  background: #ff00cc;
+  bottom: -120px;
+  right: -120px;
+}
+
+.reality-numbers-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(to right, #00f0ff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-align: center;
+  animation: neonGlow 3s ease-in-out infinite alternate;
+}
+
+/* 💡 Feature Blocks */
+.reality-point {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  border-left: 6px solid #00ffe7;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.06);
+  transition: all 0.4s ease;
+  animation: cardPop 1.2s ease forwards;
+}
+
+.reality-point:hover {
+  background: rgba(0, 255, 255, 0.07);
+  transform: scale(1.02) translateX(3px);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.2);
+}
+
+.reality-point strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ✅ Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 10px #00ffe0aa;
+  }
+  to {
+    text-shadow: 0 0 20px #00fff0;
+  }
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    transform: scale(1.15) translateY(40px);
+  }
+}
+
+@keyframes cardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.98) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 💻 Responsive */
+@media (max-width: 768px) {
+  .everything-safe-banner {
+    padding: 3rem 1.2rem;
+  }
+  .reality-numbers-heading {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .reality-point {
+    padding: 1.2rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+
+.everything-safe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.everything-safe-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+.everything-safe-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.1);
+  animation: floatImage 6s ease-in-out infinite;
+  transition: transform 0.5s ease;
+}
+
+.everything-safe-image img:hover {
+  transform: scale(1.03);
+}
+
+.everything-safe-text {
+  flex: 1 1 55%;
+  min-width: 280px;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .everything-safe-wrapper {
+    flex-direction: column;
+  }
+
+  .everything-safe-image {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .everything-safe-text {
+    order: 2;
+  }
+}

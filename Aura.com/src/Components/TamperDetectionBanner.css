@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.tamper-banner {
+  position: relative;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+
+  /* Deep premium gradient background */
+  background: linear-gradient(135deg, #1f0d14, #4a1b2f, #2b0f1e);
+}
+
+/* Animated glowing gradients */
+.tamper-banner::before,
+.tamper-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 300% 300%;
+  z-index: 0;
+  animation: tamperBgShift 18s ease-in-out infinite alternate;
+}
+
+.tamper-banner::before {
+  background-image: radial-gradient(circle at 25% 30%, rgba(255,0,64,0.28), transparent 70%),
+                    radial-gradient(circle at 80% 70%, rgba(255,128,196,0.28), transparent 70%);
+}
+
+.tamper-banner::after {
+  background-image: radial-gradient(circle at 15% 85%, rgba(255,255,255,0.05), transparent 60%),
+                    radial-gradient(circle at 75% 15%, rgba(255,0,128,0.08), transparent 70%);
+  animation-duration: 26s;
+}
+
+@keyframes tamperBgShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Floating particles */
+.tamper-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: tamperParticles 45s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes tamperParticles {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+/* Content animation */
+.tamper-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: tamperFadeInUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes tamperFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animated heading with shimmer effect */
+.tamper-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff0040, #ff80c4, #ff0040);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tamperHeadingShine 6s ease-in-out infinite alternate;
+  text-shadow: 0 0 25px rgba(255,0,64,0.4);
+}
+
+@keyframes tamperHeadingShine {
+  to { background-position: 200% center; }
+}
+
+/* Text animation */
+.tamper-text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #ffe6ec;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: tamperTextFade 1.4s ease-out 0.3s forwards;
+}
+
+@keyframes tamperTextFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects */
+.tamper-banner:hover .tamper-content {
+  transform: translateY(-5px) scale(1.03);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.tamper-banner:hover {
+  box-shadow: 0 35px 120px rgba(255,0,64,0.6);
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600;800&display=swap');
+
+:root{
+  --ink:#0b1222; --ink2:#0f1831;
+  --glass:rgba(255,255,255,.06); --stroke:rgba(255,255,255,.12);
+  --text:#eaf6ff; --muted:#a2b7ce;
+  --cyan:#51e1ff; --mint:#7cffc4;
+}
+
+.svc-banner{
+  font-family:'Urbanist', sans-serif;
+  color:var(--text);
+  position: relative; isolation:isolate;
+  margin: clamp(.6rem, 1.5vw, 1rem) auto;
+  padding: clamp(1rem, 2.4vw, 1.6rem) .75rem;
+  max-width: 1100px;
+  overflow: hidden;
+  opacity:0;
+  transform: translateY(14px) scale(.992);
+  transition: opacity .65s ease, transform .7s cubic-bezier(.2,.65,.2,1);
+  background: linear-gradient(180deg, var(--ink), var(--ink2));
+  border-radius: 18px;
+}
+.svc-banner.in{ opacity:1; transform: translateY(0) scale(1); }
+
+.svc-bg{
+  position:absolute; inset:-10% -6%;
+  z-index:-2;
+  background: linear-gradient(180deg, #0b1222 0%, #15284f 45%, #5ad7ff 100%);
+  background-size: 100% 260%;
+  animation: sweepUp 14s ease-in-out infinite alternate;
+  filter: saturate(1.04);
+  border-radius: 22px;
+}
+@keyframes sweepUp{
+  0%{ background-position: 50% 100%; }
+  100%{ background-position: 50% 0%; }
+}
+
+.svc-card{
+  position: relative;
+  margin: 0 auto;
+  width: min(100%, 960px);
+  border-radius: 16px;
+  padding: clamp(.9rem, 2vw, 1.4rem);
+  background: linear-gradient(180deg, var(--glass), rgba(255,255,255,.02));
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 16px 44px rgba(18,130,200,.16);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.svc-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(20,180,255,.2);
+  border-color: rgba(81,225,255,.22);
+}
+
+.svc-header{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.svc-icon{
+  position: relative;
+  flex-shrink: 0;
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mint), var(--cyan));
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 18px rgba(81,225,255,0.45);
+  transition: transform .3s ease, box-shadow .3s ease;
+  color: var(--ink);
+}
+.svc-card:hover .svc-icon{
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(81,225,255,0.65);
+}
+
+.i-main{ font-size: 1.35rem; }
+.i-sub{
+  position: absolute;
+  font-size: .9rem;
+  background: #0f1a33;
+  color: #cfefff;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 50%;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.sub-a{ right: -6px; bottom: -4px; } /* clock */
+.sub-b{ left: -6px; top: -4px; }    /* shield */
+
+.svc-head{
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  margin: 0;
+  background: linear-gradient(180deg, #ecf7ff 0%, #cdeeff 70%, #a4ddff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.svc-sub{
+  margin-top: .6rem;
+  color: var(--muted);
+  font-size: clamp(.94rem, 1.05vw, 1rem);
+  line-height: 1.48;
+}
+
+@media (max-width: 640px){
+  .svc-card{ padding: .8rem; border-radius: 12px; }
+  .svc-icon{ width: 48px; height: 48px; }
+  .i-main{ font-size: 1.2rem; }
+  .i-sub{ width: 20px; height: 20px; font-size: .82rem; }
+}

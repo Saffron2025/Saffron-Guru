@@ -1,0 +1,92 @@
+.email-support-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #f4fbff, #eaf7ff);
+  border-radius: 20px;
+  max-width: 1300px;
+  margin: 4rem auto;
+  box-shadow: 0 20px 60px rgba(0, 130, 255, 0.08);
+  animation: fadeInRise 1s ease;
+  perspective: 1200px;
+}
+
+.email-support-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 3rem 2rem;
+  max-width: 950px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+  box-shadow: 0 25px 60px rgba(0, 140, 255, 0.12);
+}
+
+.email-support-card:hover {
+  transform: scale(1.015) rotateX(2deg) rotateY(-1.5deg);
+  box-shadow: 0 35px 90px rgba(0, 150, 255, 0.2);
+}
+
+.email-icon {
+  font-size: 3rem;
+  animation: flickerGlow 2.8s infinite ease-in-out;
+  color: #007cf0;
+  margin-bottom: 1.2rem;
+}
+
+.email-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
+}
+
+.email-description {
+  font-size: 1.15rem;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+@keyframes flickerGlow {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(0,200,255,0.4);
+  }
+  50% {
+    opacity: 0.85;
+    text-shadow: 0 0 20px rgba(0,200,255,0.25);
+  }
+}
+
+@keyframes fadeInRise {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .email-title {
+    font-size: 1.6rem;
+  }
+
+  .email-description {
+    font-size: 1rem;
+  }
+
+  .email-support-card {
+    padding: 2rem 1.4rem;
+  }
+}

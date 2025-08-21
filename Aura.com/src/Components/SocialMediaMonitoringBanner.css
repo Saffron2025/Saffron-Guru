@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.social-banner {
+  position: relative;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.5);
+  background: linear-gradient(135deg, #101b3a, #2e145b, #191932);
+}
+
+/* Layered moving glow gradients */
+.social-banner::before,
+.social-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 300% 300%;
+  animation: socialGradientMove 18s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.social-banner::before {
+  background-image: radial-gradient(circle at 25% 30%, rgba(0,200,255,0.3), transparent 70%),
+                    radial-gradient(circle at 80% 70%, rgba(255,0,200,0.3), transparent 70%);
+}
+
+.social-banner::after {
+  background-image: radial-gradient(circle at 10% 90%, rgba(255,255,255,0.05), transparent 60%),
+                    radial-gradient(circle at 85% 15%, rgba(0,255,200,0.08), transparent 70%);
+  animation-duration: 26s;
+}
+
+@keyframes socialGradientMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Floating particle layer */
+.social-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 45px 45px;
+  animation: socialParticles 40s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes socialParticles {
+  from { background-position: 0 0; }
+  to { background-position: 200px 200px; }
+}
+
+/* Content animations */
+.social-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(35px) scale(0.96);
+  animation: socialFadeInUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes socialFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Heading with shimmer */
+.social-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c8ff, #ff00c8, #00c8ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: socialShine 6s ease-in-out infinite;
+  text-shadow: 0 0 25px rgba(0,200,255,0.4);
+}
+
+@keyframes socialShine {
+  to { background-position: 200% center; }
+}
+
+/* Animated paragraph */
+.social-text {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #f0eaff;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: socialTextFade 1.4s ease-out 0.3s forwards;
+}
+
+@keyframes socialTextFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects */
+.social-banner:hover {
+  box-shadow: 0 40px 120px rgba(0,200,255,0.6);
+}
+
+.social-banner:hover .social-content {
+  transform: translateY(-5px) scale(1.03);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}

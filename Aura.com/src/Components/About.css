@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+.about-section {
+  background: linear-gradient(135deg, #ffffff, #f2f8fc);
+  font-family: 'Chakra Petch', sans-serif;
+  padding: 5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating gradient aurora */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: conic-gradient(from 180deg, #00c6ff44, #0072ff22, transparent 70%);
+  filter: blur(140px);
+  animation: spinAurora 30s linear infinite;
+  z-index: 0;
+}
+
+/* Section Banner Block */
+.about-block {
+  margin: 5rem 0;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  animation: fadeUp 1.2s ease both;
+}
+
+.about-block:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient animated overlay per block */
+.about-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 92, 153, 0.1), rgba(51, 153, 204, 0.1));
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-block:hover::before {
+  opacity: 1;
+}
+
+/* Heading Style */
+.about-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #005c99, #00b4db, #3399cc);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 6s linear infinite;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+/* Text block */
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #223344;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 4px solid #3399cc;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  animation: slideIn 1.2s ease;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.about-text:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Image with parallax hover */
+.about-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+  margin-top: 300px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-image:hover {
+  transform: scale(1.08) rotate3d(1, 1, 0, 8deg);
+}
+
+.OurMission {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.OurValue {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.OurVision {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.WhatWeOfferToday {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+/* List styling */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  z-index: 2;
+  position: relative;
+}
+
+.about-list li {
+  background: linear-gradient(90deg, #f2f9ff, #ffffff);
+  border: 1px solid #d4e6f1;
+  padding: 0.9rem 1.4rem;
+  margin-bottom: 0.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #2a4d69;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "✨";
+  margin-right: 8px;
+}
+
+.about-list li:hover {
+  background: #eaf6ff;
+  transform: translateX(10px);
+}
+
+/* --- Keyframes --- */
+@keyframes spinAurora {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shineText {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .about-image {
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .OurMission {
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .OurValue {
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .WhatWeOfferToday {
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .OurVision {
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .about-block {
+    padding: 2rem 1rem;
+  }
+}
+
+
+.trust-bbb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(135deg, #f9fcff, #eef7fb);
+  border: 1px solid #d4e6f1;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.trust-bbb:hover {
+  transform: translateY(-3px);
+  background: #f0faff;
+}
+
+.trust-bbb span {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #2a4d69;
+  font-weight: 500;
+}
+
+.trust-link-block {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.trust-link-block:hover {
+  transform: scale(1.05);
+}
+
+.trust-full-image {
+  max-height: 50px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

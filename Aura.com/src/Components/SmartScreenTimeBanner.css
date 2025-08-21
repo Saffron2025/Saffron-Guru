@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.screen-banner {
+  position: relative;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+
+  /* Main gradient background */
+  background: linear-gradient(135deg, #1a1838, #342f72, #282056);
+}
+
+/* Extra animated gradient layers */
+.screen-banner::before,
+.screen-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 300% 300%;
+  animation: screenBgMove 20s ease-in-out infinite alternate;
+}
+.screen-banner::before {
+  background-image: radial-gradient(circle at 30% 20%, rgba(120,82,255,0.25), transparent 70%),
+                    radial-gradient(circle at 80% 70%, rgba(0,255,224,0.25), transparent 70%);
+}
+.screen-banner::after {
+  background-image: radial-gradient(circle at 15% 85%, rgba(255,255,255,0.04), transparent 60%),
+                    radial-gradient(circle at 75% 15%, rgba(120,82,255,0.08), transparent 70%);
+  animation-duration: 28s;
+}
+
+@keyframes screenBgMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Floating particles texture */
+.screen-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: screenParticles 40s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes screenParticles {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+/* Content styling */
+.screen-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: screenFadeInUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes screenFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animated heading */
+.screen-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7852ff, #00ffe0, #7852ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: screenHeadingGradient 6s ease-in-out infinite alternate;
+  text-shadow: 0 0 25px rgba(120,82,255,0.4);
+}
+
+@keyframes screenHeadingGradient {
+  to { background-position: 200% center; }
+}
+
+/* Paragraph animation */
+.screen-text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #e6e6ff;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: screenTextFade 1.4s ease-out 0.3s forwards;
+}
+
+@keyframes screenTextFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover interaction */
+.screen-banner:hover .screen-content {
+  transform: translateY(-5px) scale(1.03);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.screen-banner:hover {
+  box-shadow: 0 35px 120px rgba(0,0,0,0.6);
+}

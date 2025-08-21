@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.contact-section {
+  background: linear-gradient(180deg, #f9fafb, #eef2f7); /* soft gradient */
+  color: #1e293b;
+  padding: 90px 0;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* floating soft circles */
+.contact-section::before,
+.contact-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+  z-index: 0;
+}
+.contact-section::before {
+  width: 220px; height: 220px;
+  top: -60px; left: -60px;
+}
+.contact-section::after {
+  width: 180px; height: 180px;
+  bottom: -50px; right: -50px;
+}
+
+.contact-heading {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.contact-subtext {
+  font-size: 1.2rem;
+  color: #475569;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Box */
+.contact-box {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 1.2s ease both;
+}
+
+.contact-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(37,99,235,0.15);
+}
+
+/* Headings inside box */
+.contact-box h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Icons (📞, 📧) */
+.contact-box h4::before {
+  content: attr(data-icon);
+  display: inline-block;
+  font-size: 1.4rem;
+  background: #e0ecff;
+  color: #2563eb;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* Links */
+.contact-info a {
+  font-size: 1.5rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.1rem;
+  }
+  .contact-info a {
+    font-size: 1.25rem;
+  }
+}

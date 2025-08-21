@@ -1,0 +1,1825 @@
+/* ================================
+   src/components/AuraGraphSection.css
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+footer, .footer, .aura-footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+
+
+.aura-graph-section {
+  background-color: #FFFFFF;
+  padding: 5rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  overflow: hidden;
+  position: relative;
+
+  /* Fade-in animation - Adjusted timing */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards; /* Smoother cubic-bezier */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Left Column --- */
+.aura-graph-left-col {
+  padding-right: 3rem;
+  /* Slide-in animation - Adjusted timing and delay */
+  animation: slideInLeft 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.2s; /* Delay to create staggered effect with right column */
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* --- Aura Graph Section (Online Crime) --- */
+.aura-graph-section {
+  background-color: #f8faff; /* Very light blueish background from image */
+  padding: 80px 0; /* Ample padding */
+  overflow: hidden; /* Important for containing absolutely positioned elements */
+}
+
+.aura-graph-left-col {
+  padding-right: 50px; /* Space from the graph on larger screens */
+}
+
+.graph-visual-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 100%;
+}
+
+.graph-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.graph-animated-path {
+  stroke: #246bfb;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: drawGraph 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes drawGraph {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.graph-year-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+  margin-top: -40px;
+}
+
+.year-item {
+  position: relative;
+}
+
+.data-point-circle {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #246bfb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(36, 107, 251, 0.2);
+}
+
+.graph-data-callout {
+  position: absolute;
+  bottom: 10%;
+  /* top: 50%; */
+  right: 5%;
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  animation: floatIn 1.8s ease-out 1s forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.graph-title {
+  font-size: 3rem; /* Larger title */
+  font-weight: 800; /* Extra bold */
+  color: #1a1a1a;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.graph-title .highlight-text {
+  color: #007bff; /* Blue for "1 in 4." */
+}
+
+.graph-description {
+  font-size: 1.05rem; /* Readable font size */
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.graph-start-trial-btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 9999px; /* Pill shape */
+  padding: 14px 35px; /* Generous padding */
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.graph-start-trial-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.4); /* Stronger shadow on hover */
+}
+
+.graph-start-trial-btn .arrow {
+  margin-left: 12px;
+  font-size: 1.3em;
+  transition: transform 0.3s ease;
+}
+
+.graph-start-trial-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* Graph Visual Container - Crucial for positioning the SVG and all overlays */
+.graph-visual-container {
+  position: relative;
+  width: 100%;
+  /* This padding-top maintains the aspect ratio of the SVG's viewBox (600/1000 = 0.6 = 60%) */
+  padding-top: 60%;
+  background: linear-gradient(135deg, #e7f0ff 0%, #f0f7ff 100%); /* Subtle gradient background */
+  border-radius: 15px; /* Rounded corners for the container */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  overflow: hidden; /* Ensures nothing spills out of the rounded corners */
+}
+
+/* SVG itself - position absolute to cover the container */
+.graph-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensures SVG is below text overlays */
+}
+
+.graph-year-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 10px; /* Align with graph base */
+  left: 0;
+  right: 0;
+}
+
+.year-item {
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  text-align: center;
+  min-width: 50px;
+}
+
+.year-item .data-point-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px; /* Adjust based on SVG graph height */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Year Labels (2021, 2022, 2023, 2024) */
+.year-label {
+  position: absolute;
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 500;
+  bottom: 8%; /* General baseline for all years, fine-tuned individually */
+  transform: translateX(-50%); /* Centers the text horizontally over its point */
+  z-index: 2; /* On top of SVG */
+  text-align: center;
+  white-space: nowrap; /* Prevent year labels from wrapping */
+}
+
+/* Precise positioning for each year label (these are based on visual approximation from your image,
+   you might need to slightly adjust these percentages based on your specific implementation
+   and how the SVG path renders) */
+.year-2021 {
+  left: 15%; /* Approx position relative to container width */
+  bottom: 18%; /* Approx position relative to container height */
+}
+.year-2022 {
+  left: 35%;
+  bottom: 12%;
+}
+.year-2023 {
+  left: 60%;
+  bottom: 8%;
+}
+.year-2024 {
+  left: 88%; /* Positioned towards the top-right curve */
+  bottom: 5%;
+  color: #000; /* Darker for 2024 as per image */
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers circle and text vertically */
+}
+
+.year-2024 .year-text {
+  margin-top: 15px; /* Space between the circle and the "2024" text */
+}
+
+/* Circle at the 2024 data point */
+.data-point-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #007bff; /* Blue circle */
+  border-radius: 50%;
+  border: 2px solid #fff; /* White border to stand out against the background */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3); /* Subtle blue glow/ring */
+  position: absolute; /* Positioned relative to .year-2024 */
+  top: -15px; /* Moves it above the "2024" text */
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally above "2024" */
+}
+
+/* "$16B Online Crime Losses" label near top-right */
+.data-value-label-top {
+  position: absolute;
+  top: 3%; /* Adjust to align with the end of the dashed line */
+  right: 2%; /* Adjust to align with the end of the dashed line */
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap; /* Keeps text on one line */
+  text-align: right;
+  z-index: 3; /* Ensures it's on top of SVG */
+}
+
+.data-value-label-top .small-text {
+  display: block; /* Forces "online crime losses" to a new line */
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Callout Box / Info Box */
+.graph-data-callout {
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  padding: 25px; /* Generous padding inside the box */
+  position: absolute;
+  /* margin-top: 2000px; */
+  bottom: 15%; /* Position relative to graph container's bottom */
+  left: 60%; /* Adjust to match image's horizontal placement */
+  width: 300px; /* Fixed width for the callout box */
+  text-align: left;
+  z-index: 4; /* On top of all other elements */
+  animation: fadeInPop 0.5s ease-out forwards; /* Simple pop-in animation for visual effect */
+}
+
+@keyframes fadeInPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Triangle for the callout box */
+.graph-data-callout::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff; /* White triangle pointing downwards */
+  bottom: -15px; /* Positions the triangle just outside the box bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the triangle horizontally */
+}
+
+.callout-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  /* margin-top: 200px; */
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.callout-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
+/* --- Responsive Adjustments for Graph Section --- */
+
+@media (max-width: 991.98px) { /* Tablets and smaller desktops */
+  .aura-graph-left-col {
+    padding-right: 30px;
+  }
+  .graph-title {
+    font-size: 2.5rem;
+  }
+  .graph-description {
+    font-size: 0.95rem;
+  }
+  .graph-start-trial-btn {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+  .graph-visual-container {
+    padding-top: 80%; /* Adjust aspect ratio for slightly taller on tablets */
+    margin-top: 50px; /* Add space when content stacks */
+  }
+  /* Adjust year label positions for smaller screens if needed */
+  .year-label {
+    font-size: 0.8rem;
+  }
+  .year-2021 { bottom: 18%; left: 18%; }
+  .year-2022 { bottom: 12%; left: 38%; }
+  .year-2023 { bottom: 8%; left: 63%; }
+  .year-2024 { bottom: 5%; left: 90%; } /* Slight adjustment for 2024 */
+
+  .data-value-label-top {
+    font-size: 0.85rem;
+    top: 5%;
+    right: 5%;
+  }
+  .data-value-label-top .small-text {
+    font-size: 0.7rem;
+  }
+
+  .graph-data-callout {
+    width: 260px;
+    padding: 20px;
+    left: 55%;
+    bottom: 10%;
+  }
+  .callout-title {
+    font-size: 1.2rem;
+  }
+  .callout-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 767.98px) { /* Mobile devices */
+  .aura-graph-section {
+    padding: 60px 0;
+  }
+  .aura-graph-left-col {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center; /* Center content on mobile */
+  }
+  .graph-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .graph-description {
+    font-size: 0.9rem;
+    br { display: none; } /* Remove line breaks for better text flow on small screens */
+  }
+  .graph-start-trial-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+  .graph-visual-container {
+    padding-top: 100%; /* Make it more square on mobile to fit content */
+    margin-top: 40px;
+  }
+  /* Adjust year label positions for mobile */
+  .year-label {
+    font-size: 0.75rem;
+  }
+  .year-2021 { bottom: 15%; left: 15%; }
+  .year-2022 { bottom: 10%; left: 38%; }
+  .year-2023 { bottom: 5%; left: 65%; }
+  .year-2024 { bottom: 3%; left: 90%; } /* Even closer to the bottom-right corner */
+  .year-2024 .year-text {
+    margin-top: 10px;
+  }
+  .data-point-circle {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    top: -12px;
+  }
+
+  .data-value-label-top {
+    font-size: 0.8rem;
+    top: 3%;
+    right: 2%;
+  }
+  .data-value-label-top .small-text {
+    font-size: 0.6rem;
+  }
+
+  .graph-data-callout {
+    width: 90%; /* Take more width on small screens */
+    left: 5%; /* Center it roughly */
+    right: 5%;
+    transform: translateX(0); /* Reset transform, rely on left/right for centering */
+    bottom: 5%;
+    padding: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .graph-data-callout::before {
+    left: 50%; /* Re-center triangle */
+  }
+  .callout-title {
+    font-size: 1.1rem;
+  }
+  .callout-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */
+/* Ensure other sections also have appropriate responsive padding if not already defined */
+.aura-digital-parenthood-section,
+.aura-fraud-alerts-section {
+    padding: 60px 0;
+}
+@media (max-width: 767.98px) {
+    .aura-digital-parenthood-section,
+    .aura-fraud-alerts-section {
+        padding: 40px 0;
+    }
+    .aura-parenthood-right-col,
+    .aura-fraud-alerts-left-col {
+        text-align: center;
+        margin-top: 30px; /* Add space between stacked columns */
+    }
+    .image-card {
+        margin-bottom: 20px; /* Space between image and text on mobile */
+    }
+    /* Specific image adjustments for responsiveness */
+    .parenthood-phone-screen {
+        max-width: 50%; /* Adjust size relative to main image */
+        height: auto;
+    }
+}
+.graph-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #333;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Springy transition */
+}
+
+.graph-title:hover {
+  transform: scale(1.03) rotate(-1deg); /* Subtle scale and rotate on hover */
+}
+
+.highlight-text {
+  color: #4A6FFF;
+}
+
+.graph-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+  opacity: 0;
+  /* Staggered animation for description */
+  animation: fadeUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.4s;
+}
+
+.graph-start-trial-btn {
+  background-color: #4A6FFF !important;
+  border-color: #4A6FFF !important;
+  color: #FFFFFF !important;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.graph-start-trial-btn:hover {
+  background-color: #385de3 !important;
+  border-color: #385de3 !important;
+  transform: translateY(-5px) scale(1.02); /* More pronounced lift and slight scale */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.graph-start-trial-btn .arrow {
+  font-size: 1.2rem;
+  animation: arrowBounce 1.2s infinite alternate; /* Slower, more subtle bounce */
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(8px); /* Further bounce */
+  }
+}
+
+
+.graph-line-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* SVG full screen and absolute */
+.diagonal-line {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Animated dotted line */
+.animated-graph-line {
+  stroke: #007bff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 1600; /* Total length of path (roughly) */
+  stroke-dashoffset: 1600;
+  animation: drawGraph 3s ease-in-out forwards;
+}
+
+@keyframes drawGraph {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes drawGraph {
+  from {
+    stroke-dashoffset: 1600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Year label styling */
+.year-label {
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Manual position for each year along diagonal */
+.year-2021 {
+  bottom: 10%;
+  left: 5%;
+}
+
+.year-2022 {
+  bottom: 32%;
+  left: 28%;
+}
+
+.year-2023 {
+  bottom: 55%;
+  left: 53%;
+}
+
+.year-2024 {
+  bottom: 77%;
+  left: 78%;
+}
+
+/* Data point circle on 2024 */
+.data-point-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+/* --- Right Column --- */
+.aura-graph-right-col {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Slide-in animation - Adjusted timing and delay */
+  animation: slideInRight 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.3s; /* Delay for staggered effect */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.graph-line-path {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    to top right,
+    transparent 0%,
+    transparent 45%,
+    #4A6FFF 45%,
+    #4A6FFF 55%,
+    transparent 55%,
+    transparent 100%
+  );
+  transform: rotate(20deg) translateX(10%);
+  transform-origin: bottom left;
+  border-left: 2px dashed #4A6FFF;
+  opacity: 0.6;
+
+  /* Animated moving effect - Adjusted timing and starting point */
+  animation: lineMove 5s linear infinite alternate; /* Smooth linear movement, alternates direction */
+}
+
+@keyframes lineMove {
+  0% {
+    transform: rotate(20deg) translateX(-15%); /* Start further left */
+  }
+  100% {
+    transform: rotate(20deg) translateX(15%); /* End further right */
+  }
+}
+
+/* Data point */
+.graph-data-point {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+  /* Floating animation - Adjusted timing and intensity */
+  animation: float 3.5s ease-in-out infinite; /* Slower float */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1); /* Return to original scale */
+  }
+  50% {
+    transform: translateY(-15px) scale(1.03); /* More vertical movement and slight scale */
+  }
+}
+
+.data-point-circle {
+  width: 12px;
+  height: 12px;
+  background-color: #4A6FFF;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  margin-bottom: 5px;
+  box-shadow: 0 0 0 3px rgba(74, 111, 255, 0.3);
+  transition: transform 0.3s ease; /* Smooth hover for circle */
+}
+
+.data-point-circle:hover {
+  transform: scale(1.5); /* Enlarges on hover */
+}
+
+.data-point-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.data-point-label .small-text {
+  font-size: 0.75rem;
+  color: #666;
+  display: block;
+}
+
+.graph-data-callout {
+  position: absolute;
+  bottom: 70%;
+  right: 5%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  /* Fade up with a slight bounce at the end */
+  animation: fadeUpBounce 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards 0.7s; /* Delayed for dramatic effect */
+}
+
+@keyframes fadeUpBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-5px); /* Overshoot slightly */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.callout-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.callout-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991.98px) { /* Medium devices and below */
+  .aura-graph-left-col {
+    padding-right: 15px;
+    text-align: center;
+    margin-bottom: 3rem; /* Space below text on small screens */
+    /* Disable specific animations for better mobile performance */
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .graph-title {
+    font-size: 2.5rem;
+    transition: none; /* Disable hover transition on smaller screens */
+  }
+
+  .graph-title:hover {
+    transform: none; /* Disable hover transform on smaller screens */
+  }
+
+  .graph-description {
+    font-size: 0.9rem;
+    animation: none; /* Disable specific animations */
+    opacity: 1;
+    transform: none;
+  }
+
+  .aura-graph-right-col {
+    min-height: 300px; /* Reduce height for graph on small screens */
+    /* Disable specific animations */
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .graph-visual-container {
+    position: relative; /* Reset to relative for better flow on smaller screens */
+    width: 100%;
+    height: 300px; /* Fixed height for the graph area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .graph-line-path {
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: rotate(15deg) translateX(0); /* Less rotation for small screens */
+    animation: none; /* Disable line movement animation */
+  }
+
+  .graph-data-point {
+    top: 20%; /* Adjust position for smaller screens */
+    right: 10%;
+    align-items: center; /* Center align text below dot */
+    animation: none; /* Disable floating animation */
+  }
+
+  .graph-data-callout {
+    bottom: 5%; /* Adjust position for smaller screens */
+    right: 50%;
+    transform: translateX(50%); /* Center horizontally */
+    width: 90%; /* Wider on small screens */
+    padding: 1rem;
+    animation: none; /* Disable callout animation */
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767.98px) { /* Small devices (phones) */
+  .graph-title {
+    font-size: 2rem;
+  }
+
+  .graph-start-trial-btn {
+    width: 90%; /* Make button wider */
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .graph-data-point {
+    right: 5%;
+  }
+}
+
+
+/* ================================
+   src/components/AuraDigitalParenthoodSection.css
+   ================================ */
+
+.aura-digital-parenthood-section {
+  /* "Expanded Blue Box" - taller section, and wider gradient visual */
+  background: linear-gradient(135deg, #4A0088 0%, #1A2046 100%); /* Purple to dark blue gradient */
+  min-height: 700px; /* Make the box taller to "expand" it */
+  padding: 6rem 0; /* Increase padding for more space */
+  color: #FFFFFF; /* Default text color for the section */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative; /* For positioning elements within the section */
+  overflow: hidden; /* Hide any overflowing parts of images/gradients */
+
+  /* Fade-up animation - Adjusted timing and effect */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUpElastic 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeUpElastic {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Left Column (Images) --- */
+.aura-parenthood-left-col {
+  position: relative;
+  z-index: 2; /* Ensure images are above background if needed */
+  padding-right: 3rem; /* Space between content */
+}
+
+.image-card {
+  background-color: #FFFFFF; /* White background for the card/base */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Padding inside the white card */
+  position: relative;
+  width: 90%; /* Adjust width to make the image fit nicely */
+  max-width: 450px; /* Max width for the card */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  min-height: 400px; /* Ensure enough height for the images inside */
+  display: flex; /* Use flex to align children (girl and phone) */
+  justify-content: center;
+  align-items: center; /* Center content within the white card */
+  overflow: hidden; /* Important for clipping the girl's image if it overflows */
+  /* Scale up animation with a slight bounce */
+  animation: scaleUpBounce 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation-delay: 0.5s;
+  transform-origin: bottom center; /* Scale up from the bottom */
+  transition: transform 0.4s ease-out; /* Smooth hover transition */
+}
+
+@keyframes scaleUpBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px); /* Overshoot scale and lift */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.image-card:hover {
+  transform: translateY(-10px) rotate(1deg) scale(1.02); /* Lift, slight rotate, and scale on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.girl-image {
+  position: absolute; /* Position the girl image */
+  bottom: 0; /* Align to the bottom of the white card */
+  left: 50%; /* Center horizontally initially */
+  transform: translateX(-50%); /* Adjust to true center */
+  width: 100%; /* Take full width of the card */
+  height: auto;
+  object-fit: contain; /* Ensure the full image is visible, scale down if needed */
+  max-height: 100%; /* Ensure it doesn't overflow vertically from the card */
+  z-index: 1; /* Below the phone screen */
+  /* Gentle floating animation for the girl */
+  animation: floatGirl 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatGirl {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.parenthood-phone-screen {
+  position: absolute; /* Position the phone screen */
+  top: 10%; /* Position from the top of the white card */
+  right: 5%; /* Position from the right of the white card */
+  width: 200px; /* Size of the phone screen */
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)); /* Shadow for depth */
+  z-index: 2; /* On top of the girl image */
+  /* More dynamic float and slight rotation for the phone */
+  animation: floatPhone 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatPhone {
+  0%,
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+/* --- Right Column (Text Content) --- */
+.aura-parenthood-right-col {
+  padding-left: 3rem; /* Space between content */
+  position: relative;
+  z-index: 2;
+}
+
+.powered-by-ai-badge {
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  display: inline-block; /* To allow margin-bottom */
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.powered-by-ai-badge:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05); /* Slight pop on hover */
+}
+
+.parenthood-title {
+  font-size: 2.8rem; /* Large, bold title */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+  /* Slide in with a delay */
+  animation: slideInRight 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.7s;
+}
+
+.parenthood-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #E0E0E0; /* Slightly off-white for description */
+  margin-bottom: 0;
+  /* Fade in with a delay */
+  opacity: 0;
+  animation: fadeUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.9s;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991.98px) { /* Medium devices and below */
+  .aura-digital-parenthood-section {
+    min-height: auto; /* Allow height to adjust */
+    padding: 3rem 0;
+    animation: none; /* Disable section animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .aura-parenthood-left-col {
+    margin-bottom: 3rem; /* Space below image on small screens */
+    padding-right: 15px; /* Reset padding */
+    order: 2; /* Image below text on small screens */
+  }
+
+  .aura-parenthood-right-col {
+    text-align: center; /* Center text on small screens */
+    padding-left: 15px; /* Reset padding */
+    margin-bottom: 2rem;
+    order: 1; /* Text above image on small screens */
+  }
+
+  .parenthood-title {
+    font-size: 2.2rem;
+    animation: none; /* Disable title animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .parenthood-description {
+    font-size: 0.9rem;
+    animation: none; /* Disable description animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .image-card {
+    width: 80%; /* Adjust width for smaller screens */
+    min-height: 350px;
+    padding: 15px;
+    animation: none; /* Disable card animation */
+    transform: none;
+    opacity: 1;
+    transition: none; /* Disable hover transition */
+  }
+
+  .image-card:hover {
+    transform: none; /* Disable hover transform */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Reset shadow */
+  }
+
+  .girl-image {
+    width: 90%; /* Adjust girl image size */
+    animation: none; /* Disable float animation */
+    transform: translateX(-50%); /* Ensure correct centering */
+  }
+
+  .parenthood-phone-screen {
+    width: 150px; /* Smaller phone screen */
+    top: 5%; /* Adjust position */
+    right: 5%;
+    animation: none; /* Disable float animation */
+    transform: none; /* Reset rotation */
+  }
+
+  .powered-by-ai-badge {
+    margin: 0 auto 1rem auto; /* Center badge */
+    transition: none; /* Disable hover transition */
+  }
+
+  .powered-by-ai-badge:hover {
+    transform: none; /* Disable hover transform */
+    background-color: rgba(255, 255, 255, 0.15); /* Reset background */
+  }
+}
+
+@media (max-width: 767.98px) { /* Small devices (phones) */
+  .parenthood-title {
+    font-size: 1.8rem;
+  }
+
+  .image-card {
+    width: 95%;
+    min-height: 300px;
+  }
+
+  .parenthood-phone-screen {
+    width: 120px;
+  }
+}
+
+/* ================================
+   src/components/AuraFraudAlertsSection.css
+   ================================ */
+
+.aura-fraud-alerts-section {
+  background-color: #F8F8F8; /* Light background from image */
+  padding: 6rem 0; /* Vertical padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Default text color */
+  overflow: hidden; /* Hide any overflowing parts */
+  /* Fade-up animation - Adjusted timing */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* --- Left Column (Text Content) --- */
+.aura-fraud-alerts-left-col {
+  padding-right: 3rem; /* Space between text and image */
+}
+
+.fraud-alerts-title {
+  font-size: 2.8rem; /* Large, bold title */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #333;
+  /* Slide in from left */
+  animation: slideInLeft 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+.fraud-alerts-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0;
+  /* Fade up with a delay */
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.4s;
+}
+
+/* --- Right Column (Image and Overlays) --- */
+.aura-fraud-alerts-right-col {
+  position: relative;
+  min-height: 500px; /* Ensure enough height for the image and bubbles */
+}
+
+.fraud-alerts-image-container {
+  position: relative;
+  width: 100%; /* Take full width of its column */
+  max-width: 550px; /* Max width to control image size */
+  background-color: #F0F0F0; /* Subtle background for the image card */
+  border-radius: 20px; /* Rounded corners for the container behind the image */
+  padding: 15px; /* Padding inside this container to give space around image */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Important to contain overflows */
+  /* Scale up with a slight delay */
+  animation: scaleUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.main-woman-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* Slight roundness for the main image itself */
+}
+
+.notification-bubble {
+  position: absolute;
+  z-index: 2; /* Ensure bubbles are on top */
+}
+
+.notification-bubble img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Specific positioning and sizing for each bubble */
+.aura-notification-bubble {
+  top: 5%; /* Adjust vertical position */
+  right: 15%; /* Adjust horizontal position */
+  width: 50%; /* Control bubble size relative to container */
+  max-width: 250px; /* Max size for larger screens */
+  transform: rotate(3deg); /* Slight rotation */
+  /* Bubble floating animation with varying delays and directions */
+  animation: bubbleFloat 3.5s ease-in-out infinite alternate;
+  animation-delay: 0.8s;
+}
+
+.justin-message-bubble {
+  bottom: 25%; /* Adjust vertical position */
+  left: 5%; /* Adjust horizontal position */
+  width: 55%;
+  max-width: 280px;
+  transform: rotate(-5deg); /* Slight rotation */
+  position: absolute; /* Needs to be absolute to overlay */
+  /* Bubble floating animation with varying delays and directions */
+  animation: bubbleFloatReverse 4s ease-in-out infinite alternate;
+  animation-delay: 1.2s;
+}
+
+.justin-profile-pic {
+  position: absolute;
+  top: 15%; /* Adjust relative to its parent bubble */
+  left: 10%;
+  width: 30px; /* Size of the profile pic */
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  object-fit: cover;
+  /* Spin animation */
+  animation: profileSpin 2s linear infinite;
+  animation-delay: 1.5s; /* Delay to spin after bubble appears */
+}
+
+@keyframes profileSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.credit-notification-bubble {
+  bottom: 10%; /* Adjust vertical position */
+  right: 5%; /* Adjust horizontal position */
+  width: 45%;
+  max-width: 200px;
+  transform: rotate(5deg); /* Slight rotation */
+  /* Bubble floating animation with varying delays and directions */
+  animation: bubbleFloat 3.8s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes bubbleFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--initial-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(-12px) rotate(var(--hover-rotate, 0deg)); /* More vertical movement */
+  }
+}
+
+@keyframes bubbleFloatReverse {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--initial-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(12px) rotate(var(--hover-rotate, 0deg)); /* Floats downwards */
+  }
+}
+
+/* Set custom properties for initial rotation to be used in animations */
+.aura-notification-bubble { --initial-rotate: 3deg; --hover-rotate: 5deg; }
+.justin-message-bubble { --initial-rotate: -5deg; --hover-rotate: -7deg; }
+.credit-notification-bubble { --initial-rotate: 5deg; --hover-rotate: 7deg; }
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991.98px) { /* Medium devices and below */
+  .aura-fraud-alerts-section {
+    animation: none; /* Disable section animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .aura-fraud-alerts-left-col {
+    padding-right: 15px;
+    text-align: center;
+    margin-bottom: 3rem; /* Space below text on small screens */
+  }
+
+  .fraud-alerts-title {
+    font-size: 2.2rem;
+    animation: none; /* Disable animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .fraud-alerts-description {
+    font-size: 0.9rem;
+    animation: none; /* Disable animation */
+    opacity: 1;
+    transform: none;
+  }
+
+  .aura-fraud-alerts-right-col {
+    min-height: auto; /* Adjust height dynamically */
+    padding: 0 15px; /* Add some horizontal padding */
+  }
+
+  .fraud-alerts-image-container {
+    width: 90%; /* Make container wider on small screens */
+    margin: 0 auto; /* Center it */
+    padding: 10px;
+    animation: none; /* Disable animation */
+    transform: none;
+    opacity: 1;
+  }
+
+  /* Adjust bubble positions and sizes for smaller screens */
+  .aura-notification-bubble,
+  .justin-message-bubble,
+  .credit-notification-bubble {
+    animation: none; /* Disable floating animation on small screens */
+    transform: rotate(0deg); /* Remove rotation */
+    opacity: 1;
+  }
+
+  .aura-notification-bubble {
+    top: 5%;
+    right: 5%;
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .justin-message-bubble {
+    bottom: 20%;
+    left: 5%;
+    width: 65%;
+    max-width: 230px;
+  }
+
+  .justin-profile-pic {
+    width: 25px;
+    height: 25px;
+    top: 10%;
+    left: 5%;
+    animation: none; /* Disable spin animation */
+    transform: none;
+  }
+
+  .credit-notification-bubble {
+    bottom: 5%;
+    right: 5%;
+    width: 50%;
+    max-width: 180px;
+  }
+}
+
+
+
+
+
+
+
+/* CENTER: Feature List */
+
+
+
+
+
+
+
+
+
+/* EMOJI ICON BADGE */
+.emoji {
+  font-size: 1.8rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: inline-flex;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #d1ecff, #98cdff);
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  animation: pulseShadow 3s infinite ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.emoji:hover {
+  transform: scale(1.3) rotate(360deg);
+  background: radial-gradient(circle at center, #a8dcff, #4db8ff);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.6);
+  animation: bounceGlow 0.6s ease forwards;
+}
+
+@keyframes pulseShadow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  }
+}
+
+@keyframes bounceGlow {
+  0% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.35) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(360deg);
+  }
+}
+
+
+/* RIGHT: GirlsWithPhone Image - BIGGER and animated */
+/* .features-image {
+  flex: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: floatWave 7s ease-in-out infinite;
+}
+
+.features-image img {
+  width: 5000px;
+  max-width: 720px;
+  margin-left: 200000px;
+  height: 200px;
+  border-radius: 24px;
+  transition: transform 0.6s ease, filter 0.4s ease;
+} */
+
+.features-image img:hover {
+  transform: scale(1.07) rotate(1.5deg);
+  filter: drop-shadow(0 10px 30px rgba(0, 123, 255, 0.4));
+}
+
+/* Animations */
+@keyframes floatEase {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatWave {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Responsive for Tablets & Phones */
+
+
+  .gifImage {
+    width: 100%;             /* ✅ Allow full container width */
+    max-width: 380px;        /* ✅ Keep it in control */
+    height: auto;            /* ✅ Maintain aspect ratio */
+    margin-left: 0;          /* ✅ Remove negative offset */
+  }
+
+  .features-image img {
+    max-width: 440px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inline-icon {
+  width: 100px;
+  margin-left: -100px;
+
+  height: 100px;
+  margin-top: -10px;
+  object-fit: contain;
+  display: inline-block;
+  filter: drop-shadow(0 0 4px rgba(0, 224, 255, 0.4));
+}
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.protection-shared-cta {
+  width: 100%;
+  max-width: 1000px;         /* Desktop default max width */
+  height: auto;
+  margin-top: 0.5rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.08);
+  background: linear-gradient(180deg, #f9fdff, #ecfaff);
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 224, 255, 0.08);
+  animation: fadeUp 1.2s ease;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ✅ Make it 100% on mobile, reduce padding/font */
+@media (max-width: 768px) {
+  .protection-shared-cta {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+
+  .cta-line {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    line-height: 1.5;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cta-btn {
+    width: 50%;
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}
+
+
+.cta-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #003344;
+  flex-wrap: wrap;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+.cta-icon {
+  width: 275px;
+  height: 275px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px #00f7ff77);
+}
+
+.cta-btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #00e0ff, #0078ff);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 14px rgba(0, 224, 255, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #00f7ff, #0078ff);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.cta-btn:hover::before {
+  opacity: 1;
+}
+
+.cta-btn:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 224, 255, 0.4);
+}
+
+
+.cta-btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: rgba(0, 224, 255, 0.09);
+  color: #007d91;
+  border: 1px solid rgba(0, 224, 255, 0.2);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-btn:hover {
+  background: #00f7ff12;
+  color: #00b4cc;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00f7ff66;
+}
+.learn-more-link {
+  display: inline-block;
+  padding: 8px 16px; /* 👈 Smaller padding */
+  background: linear-gradient(135deg, #00f2ff, #1a72ff);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 200, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  width: auto;
+  white-space: nowrap;
+}
+
+
+
+.learn-btn-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+.learn-more-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%; /* full width shine */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: 0.5s;
+}
+
+
+.learn-more-link:hover::before {
+  left: 120%;
+}
+
+.learn-more-link:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 25px rgba(0, 200, 255, 0.6);
+}
+
+
+
+
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Custom list layout */
+
+
+
+/* Link inside item */
+
+/* Emoji icon */
+
+
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+

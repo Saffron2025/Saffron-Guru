@@ -1,0 +1,127 @@
+.learn-more-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f9fdff, #ecfaff);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.learn-more-container {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffffdd;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 150, 255, 0.1);
+  backdrop-filter: blur(4px);
+  animation: slideUp 1.3s ease;
+}
+
+.learn-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #003366;
+  background: linear-gradient(90deg, #00f2ff, #1a72ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.learn-para {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.4rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInSlide 0.8s ease forwards;
+}
+
+.learn-list {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.learn-list li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  color: #222;
+  transition: transform 0.3s ease;
+}
+
+.learn-list li:hover {
+  transform: translateX(10px);
+  color: #0c74ff;
+}
+
+.learn-cta-wrapper {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #c4f1ff;
+}
+
+.learn-cta-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #005577;
+  margin-bottom: 0.7rem;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Delays for cool staggered effect */
+.fade-in {
+  animation-delay: 0.4s;
+}
+
+.slide-in-left {
+  animation-delay: 0.6s;
+}
+
+.slide-in-right {
+  animation-delay: 0.8s;
+}
+
+.fade-in-delay {
+  animation-delay: 1s;
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-in forwards;
+  opacity: 0;
+  transform: scale(0.95);
+  animation-delay: 1.2s;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

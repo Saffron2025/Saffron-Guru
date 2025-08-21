@@ -1,0 +1,165 @@
+/* 🌐 Base Container */
+.account-container {
+  max-width: 850px;
+  margin: 4rem auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease;
+}
+
+/* 📦 Account Card */
+.account-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  color: #000;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.8s ease;
+}
+
+/* 👤 Avatar */
+.avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(145deg, #00e0ff44, #0077cc44);
+  color: #00e0ff;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.avatar:hover {
+  transform: scale(1.08);
+}
+
+/* 🧾 Welcome Text */
+.welcome-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.welcome-text span {
+  color: #00e0ff;
+}
+
+/* 📋 Input Fields */
+.account-input {
+  margin: 0.7rem 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #00e0ff44;
+  font-size: 1rem;
+  background: #0f172a;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+.account-input:focus {
+  border-color: #00e0ff;
+  outline: none;
+}
+
+/* 🛠️ Action Buttons Wrapper */
+.account-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* 🔘 Button Styles */
+.edit-btn,
+.logout-btn,
+.save-btn,
+.cancel-btn,
+.change-pass-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn {
+  background: #00e0ff;
+  color: #000;
+}
+.logout-btn {
+  background: #dc3545;
+  color: #fff;
+}
+.save-btn {
+  background: #38b000;
+  color: #fff;
+}
+.cancel-btn {
+  background: #6c757d;
+  color: #fff;
+}
+.change-pass-btn {
+  background: #007bff;
+  color: #fff;
+}
+.change-pass-btn:hover {
+  background: #0056b3;
+}
+
+/* ❗ Not Logged In Message */
+.not-logged-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f44336;
+  margin-top: 3rem;
+}
+
+/* 🔒 Password Section */
+.password-section {
+  margin-top: 2rem;
+}
+.pass-form {
+  margin-top: 1rem;
+}
+
+/* 💬 Fixed Welcome Message Block */
+.fixed-info-block {
+  margin-bottom: 2.5rem;
+  padding: 1.7rem;
+  border-radius: 16px;
+  background: linear-gradient(to right, #f0fbff, #e6f7ff);
+  border: 1px solid rgba(0, 224, 255, 0.1);
+  box-shadow: 0 4px 18px rgba(0, 224, 255, 0.08);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🧑‍💻 Support Message Text */
+.support-msg {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #003344;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+/* 🎞️ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.fade-slide-up {
+  animation: slideUp 0.6s ease-in-out;
+}

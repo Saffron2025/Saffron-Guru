@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.kids-banner {
+  position: relative;
+  width: 100%;
+  padding: 5rem 2rem;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* === Background Layers === */
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea, #14b8a6);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.25;
+  animation: blobMove 20s ease-in-out infinite;
+}
+
+.blob1 {
+  width: 380px;
+  height: 380px;
+  background: #ff6ec7;
+  top: -120px;
+  left: -150px;
+}
+
+.blob2 {
+  width: 420px;
+  height: 420px;
+  background: #00f5d4;
+  bottom: -150px;
+  right: -130px;
+  animation-delay: 5s;
+}
+
+/* === Inner Glass Card === */
+.kids-banner-inner {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15),
+              inset 0 0 20px rgba(255, 255, 255, 0.05);
+  padding: 2.5rem 3rem;
+  transform-style: preserve-3d;
+}
+
+/* === Text === */
+.kids-banner-text {
+  flex: 1;
+}
+
+.kids-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(270deg, #fff, #ffe4f4, #fff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleGradient 6s linear infinite;
+  margin-bottom: 1.2rem;
+}
+
+.kids-subtitle {
+  font-size: 1.15rem;
+  color: #f3f4f6;
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeIn 1.4s ease forwards 0.4s;
+}
+
+/* === Image === */
+.kids-banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-glow {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
+  animation: glowPulse 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+.kids-banner-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+/* === Animations === */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes blobMove {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.1); }
+}
+
+@keyframes titleGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .kids-banner-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kids-title {
+    font-size: 2.3rem;
+  }
+}

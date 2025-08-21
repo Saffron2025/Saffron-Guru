@@ -1,0 +1,178 @@
+/* === Super Unique Banner Style === */
+.tech-banner-wrapper-ultimate {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 4.5rem 3rem;
+  max-width: 1400px;
+  margin: 4rem auto;
+  background: linear-gradient(145deg, #ecfaff, #f6fbff);
+  border: 2px solid transparent;
+  border-radius: 28px;
+  background-clip: padding-box;
+  overflow: hidden;
+  animation: fadeInSlideUp 1s ease-out;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 80px rgba(0, 160, 255, 0.15);
+}
+
+.tech-banner-wrapper-ultimate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #00d4ff 0%, #0077ff 100%);
+  border-radius: 28px;
+  z-index: -2;
+  filter: blur(60px);
+  opacity: 0.2;
+  animation: pulseShadow 5s ease-in-out infinite;
+}
+
+.tech-banner-glow-layer {
+  position: absolute;
+  top: -50px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #00e0ff 0%, transparent 60%);
+  opacity: 0.4;
+  animation: glowPulse 4s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+.tech-banner-content-ultimate {
+  max-width: 60%;
+}
+
+.tech-banner-title-ultimate {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #0057ff, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.5px;
+  animation: floatText 3s infinite ease-in-out alternate;
+}
+
+.tech-banner-subtext-ultimate {
+  font-size: 1.25rem;
+  color: #1e2a3b;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.highlight-ultimate {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  background: rgba(0, 200, 255, 0.12);
+  border-left: 4px solid #00c6ff;
+  border-radius: 10px;
+  color: #006e90;
+  font-weight: 600;
+}
+
+.tech-banner-floating-image-ultimate img {
+  max-width: 320px;
+  filter: drop-shadow(0 10px 30px rgba(0, 150, 255, 0.25));
+  animation: floatImage 6s infinite ease-in-out;
+}
+
+
+/* === Tech Help Section Unique === */
+.tech-help-section-ultimate {
+  background: linear-gradient(135deg, #f8fcff, #e6f9ff);
+  margin: 4rem auto;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 160, 255, 0.1);
+  text-align: center;
+  position: relative;
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+.tech-help-title-ultimate {
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #00c6ff, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
+  animation: glowPulse 4s infinite alternate ease-in-out;
+}
+
+.tech-help-subtext-ultimate {
+  font-size: 1.2rem;
+  color: #1e2a38;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Animations */
+@keyframes floatText {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulseShadow {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.04); }
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.03); }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-banner-wrapper-ultimate {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .tech-banner-content-ultimate {
+    max-width: 100%;
+  }
+
+  .tech-banner-title-ultimate {
+    font-size: 2.2rem;
+  }
+
+  .tech-banner-floating-image-ultimate img {
+    margin-top: 2rem;
+    max-width: 280px;
+  }
+
+  .tech-help-title-ultimate {
+    font-size: 2rem;
+  }
+
+  .tech-help-subtext-ultimate {
+    font-size: 1.05rem;
+  }
+}

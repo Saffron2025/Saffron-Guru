@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+.moneyback-section {
+  background: linear-gradient(135deg, #fdfdfd, #f3f4f6); /* soft background */
+  padding: 70px 20px;
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.moneyback-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* image aur text ke beech space */
+}
+
+.moneyback-shield {
+  width: 150px;   /* apni zarurat ke hisaab se size badal lo */
+  height: 150px;
+  object-fit: contain;
+  animation: popIn 0.6s ease; /* thoda animation for unique effect */
+}
+
+/* simple pop animation */
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* 🌟 Subtle floating gradient circles in background */
+.moneyback-section::before,
+.moneyback-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14,165,233,0.1), transparent 70%);
+  animation: floatBg 10s ease-in-out infinite alternate;
+  z-index: 0;
+}
+.moneyback-section::before {
+  top: -100px;
+  left: -100px;
+}
+.moneyback-section::after {
+  bottom: -120px;
+  right: -120px;
+  animation-delay: 3s;
+}
+
+@keyframes floatBg {
+  from { transform: translateY(0) scale(1); }
+  to   { transform: translateY(-20px) scale(1.05); }
+}
+
+.moneyback-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1; /* keep above bg */
+}
+
+.moneyback-toprow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.moneyback-left {
+  flex: 1;
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.moneyback-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.moneyback-image {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.5s ease;
+}
+.moneyback-image:hover {
+  transform: scale(1.02);
+}
+
+.moneyback-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  transition: letter-spacing 0.3s ease;
+}
+.moneyback-heading:hover {
+  letter-spacing: 1px;
+}
+
+.moneyback-bottom {
+  font-size: 1.15rem;
+  color: #1e293b;
+  line-height: 1.75;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.moneyback-highlight {
+  background: #e0f2fe;
+  padding: 14px;
+  border-left: 5px solid #0284c7;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 25px 0;
+  transition: background 0.4s ease;
+}
+.moneyback-highlight:hover {
+  background: #bae6fd;
+}
+
+.moneyback-subheading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 30px 0 12px;
+  position: relative;
+}
+.moneyback-subheading::before {
+  content: "★";
+  position: absolute;
+  left: -25px;
+  color: #0ea5e9;
+  font-size: 1.2rem;
+}
+
+.moneyback-steps {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.moneyback-steps li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+  transition: transform 0.3s ease;
+}
+.moneyback-steps li:hover {
+  transform: translateX(5px);
+}
+
+.moneyback-contact {
+  font-size: 1.25rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.moneyback-contact a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.moneyback-contact a:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* Smooth reveal animation */
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .moneyback-toprow {
+    flex-direction: column;
+    text-align: center;
+  }
+  .moneyback-heading {
+    font-size: 2.2rem;
+  }
+  .moneyback-bottom {
+    font-size: 1.05rem;
+  }
+}

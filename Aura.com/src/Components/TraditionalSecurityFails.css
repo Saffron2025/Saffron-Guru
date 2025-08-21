@@ -1,0 +1,290 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap'); */
+
+.traditional-fails-section {
+  padding: 5rem 2rem;
+  background: radial-gradient(circle at 20% 30%, #0f2027, #203a43, #2c5364);
+  border-radius: 24px;
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #e0f7ff;
+  position: relative;
+  overflow: hidden;
+  animation: fadeSlideIn 1s ease forwards;
+  transform-style: preserve-3d;
+}
+
+/* Animated background glowing orbs */
+.traditional-fails-section::before,
+.traditional-fails-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  z-index: 0;
+  animation: floatGlow 10s ease-in-out infinite alternate;
+}
+.traditional-fails-section::before {
+  width: 300px;
+  height: 300px;
+  background: #00ffff;
+  top: -100px;
+  left: -100px;
+}
+.traditional-fails-section::after {
+  width: 400px;
+  height: 400px;
+  background: #ff00cc;
+  bottom: -120px;
+  right: -120px;
+}
+
+/* Main container blur effect */
+.traditional-fails-banner {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  padding: 2.5rem 2rem; /* was 4rem 3rem */
+  box-shadow: 0 0 80px rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  position: relative;
+  z-index: 1;
+  animation: popIn 1.2s ease-in-out;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.traditional-fails-banner::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #00faff, #ff00cc);
+  z-index: -1;
+  border-radius: 36px;
+  opacity: 0.07;
+  filter: blur(30px);
+  animation: borderGlow 8s linear infinite;
+}
+
+.traditional-fails-banner::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #00faff, #ff00cc);
+  z-index: -1;
+  border-radius: 36px;
+  opacity: 0.07;
+  filter: blur(30px);
+  animation: borderGlow 8s linear infinite;
+}
+
+
+
+/* Heading Animation */
+.fails-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #00ffe7, #00c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.15);
+}
+
+/* List Items */
+.fails-point {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.8;
+  color: #ffffffdd;
+  transition: all 0.4s ease;
+  animation: slideInUp 1s ease forwards;
+}
+
+.fails-point::before {
+  content: '⚠️';
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  font-size: 1.4rem;
+  color: #ff4d4d;
+  animation: bounceDot 1.5s infinite;
+}
+
+.fails-point:hover {
+  transform: scale(1.02) translateX(4px);
+  color: #00ffd5;
+}
+
+.fails-point p {
+  font-size: 1.05rem;
+  color: #ccc;
+  margin-top: 0.4rem;
+  padding-left: 0.2rem;
+}
+
+/* Animations */
+@keyframes floatGlow {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: scale(1.2) translateY(30px);
+  }
+}
+
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7aa;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7aa;
+  }
+}
+
+@keyframes bounceDot {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fails-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.2rem; /* 🔽 Reduce this for less spacing */
+  flex-wrap: wrap;
+}
+
+
+.left-content {
+  flex: 1 1 58%;  /* instead of 600px */
+  min-width: 300px;
+}
+
+.right-image {
+  flex: 1 1 40%; /* instead of 400px */
+}
+
+
+/* 🔥 Stylish Right Side Image */
+.fails-image-right {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.2);
+  animation: floatImage 6s ease-in-out infinite;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  z-index: 2;
+  margin: 10rem auto 0 auto; /* 🔁 Use auto centering with top spacing */
+}
+
+
+.fails-image-right:hover {
+  transform: scale(1.04) rotate(1deg);
+  box-shadow: 0 0 80px rgba(0, 255, 255, 0.4);
+}
+
+/* 🌊 Subtle floating animation */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.01);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* ✅ Responsive behavior */
+@media (max-width: 992px) {
+  .fails-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-image {
+    margin-top: 2rem;
+  }
+  .fails-image-right {
+    max-width: 100%;
+  }
+}
+
+
+.fails-image {
+  display: block;
+  max-width: 50%;
+  height: 300px;
+  margin: 2rem auto;
+  margin-right: 300px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0, 200, 255, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: imagePop 1s ease;
+}
+
+.fails-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.3);
+}
+
+@keyframes imagePop {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+

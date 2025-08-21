@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+.eagan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  padding: 2rem;
+}
+
+.eagan-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  max-width: 800px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 16px;
+  color: #f0f4f8;
+  animation: slideUp 1s ease-out both;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.eagan-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, #00f5a0, #00e0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.eagan-intro {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.eagan-content section {
+  margin-bottom: 1.6rem;
+}
+
+.eagan-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.eagan-content h2::after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: #00f5a0;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.eagan-content p,
+.eagan-content li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.eagan-content ul {
+  padding-left: 1.4rem;
+  list-style-type: "• ";
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00f5a0;
+  font-weight: 600;
+}
+
+.eagan-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 8px #00e0ff; }
+  to { text-shadow: 0 0 16px #00f5a0; }
+}
+
+@media (max-width: 600px) {
+  .eagan-card { padding: 2rem; }
+  .eagan-title { font-size: 2rem; }
+  .eagan-intro { font-size: 1rem; }
+}
+
+
+.eagan-read-more {
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.eagan-read-more a {
+  font-weight: 600;
+  color: #00e0ff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.3);
+}
+
+.eagan-read-more a:hover {
+  color: #ffffff;
+  background-color: #00e0ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00e0ffaa;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -1,0 +1,109 @@
+.how-saffron-page {
+  background: #fdfefe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.saffron-hero {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0e273c, #215276);
+  color: white;
+  animation: fadeInSlideDown 0.8s ease;
+}
+
+.saffron-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.saffron-subtext {
+  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 1rem auto 0;
+  opacity: 0.9;
+}
+
+.saffron-process {
+  padding: 3rem 1rem;
+}
+
+.saffron-process h2 {
+  color: #1b3b5f;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.saffron-process p,
+.saffron-process ul {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.saffron-img {
+  width: 85%;
+  max-width: 380px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.saffron-img:hover {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+.summary-card {
+  background: linear-gradient(to bottom right, #eaf1f7, #ffffff);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.08);
+  animation: fadeSlideUp 0.8s ease;
+}
+
+.summary-points {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.summary-points li {
+  font-size: 1.1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.summary-points li:hover {
+  color: #0e6dca;
+  padding-left: 8px;
+}
+
+/* Animations */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-slide {
+  animation: fadeSlideUp 1s ease-in-out;
+}

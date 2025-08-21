@@ -1,0 +1,43 @@
+.expandable-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #f9fdff, #ecfaff);
+  box-shadow: 0 10px 30px rgba(0, 100, 255, 0.08);
+  transition: all 0.3s ease;
+   display: block;
+  width: 100%;
+}
+
+.expand-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #0b2f57;
+}
+
+.expand-content {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.expand-btn {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expand-btn:hover {
+  background-color: #005fcc;
+}
+
+.bullet-list {
+  padding-left: 1.5rem;
+}

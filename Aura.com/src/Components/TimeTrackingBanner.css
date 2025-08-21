@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.time-banner {
+  position: relative;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+  isolation: isolate;
+
+  /* Layered animated gradient background */
+  background: linear-gradient(135deg, #0e182b, #142850, #1f4068);
+}
+
+.time-banner::before,
+.time-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: 300% 300%;
+  animation: bgShift 18s ease-in-out infinite alternate;
+}
+.time-banner::before {
+  background-image: radial-gradient(circle at 20% 30%, rgba(0,255,234,0.15), transparent 70%),
+                    radial-gradient(circle at 80% 70%, rgba(255,0,128,0.15), transparent 70%);
+}
+.time-banner::after {
+  background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03), transparent 60%),
+                    radial-gradient(circle at 10% 90%, rgba(0,200,255,0.08), transparent 70%);
+  animation-duration: 26s;
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Floating particle dots */
+.time-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: drift 40s linear infinite;
+}
+
+@keyframes drift {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+/* Content */
+.time-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: contentReveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes contentReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.time-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00ffe0, #ff4ecd, #00d9ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease-in-out infinite alternate;
+  text-shadow: 0 0 25px rgba(0,255,224,0.35);
+}
+
+@keyframes gradientFlow {
+  to { background-position: 200% center; }
+}
+
+.time-text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #e0f7ff;
+  animation: fadeInText 2s ease-out 0.3s forwards;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Interactivity */
+.time-banner:hover .time-content {
+  transform: translateY(-3px) scale(1.02);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.time-banner:hover {
+  box-shadow: 0 35px 100px rgba(0,0,0,0.5);
+}

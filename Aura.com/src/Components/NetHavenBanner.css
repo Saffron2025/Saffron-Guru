@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.nethaven-banner {
+  position: relative;
+  width: 100%;
+  padding: 5rem 1.5rem;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* === Background Gradient Animation === */
+.nh-bg.gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0ea5e9, #9333ea, #f59e0b);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  z-index: -3;
+}
+
+/* === Floating Blobs === */
+.nh-bg.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.25;
+  animation: blobMove 20s ease-in-out infinite;
+  z-index: -2;
+}
+
+.blob1 {
+  width: 380px;
+  height: 380px;
+  background: #ff6ec7;
+  top: -120px;
+  left: -140px;
+}
+
+.blob2 {
+  width: 420px;
+  height: 420px;
+  background: #00f5d4;
+  bottom: -150px;
+  right: -130px;
+  animation-delay: 5s;
+}
+
+/* === Inner Layout === */
+.nethaven-inner {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 28px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgba(255,255,255,0.15),
+              inset 0 0 20px rgba(255,255,255,0.05);
+  padding: 2.5rem;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* === Text Center === */
+.nh-text {
+  flex: 2;
+  text-align: center;
+}
+
+.nh-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #fff, #ffecd1, #fff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleFlow 6s linear infinite, fadeIn 1.2s ease forwards;
+  margin-bottom: 1.2rem;
+}
+
+.nh-subtitle {
+  font-size: 1.15rem;
+  color: #f3f4f6;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+  animation: fadeIn 1.4s ease forwards 0.4s;
+}
+
+/* === Side Images === */
+.nh-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-light {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  animation: lightPulse 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+.nh-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  animation: floatTilt 6s ease-in-out infinite;
+}
+
+/* === Animations === */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes blobMove {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.1); }
+}
+
+@keyframes titleFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes lightPulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+@keyframes floatTilt {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .nethaven-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nh-image {
+    order: -1;
+  }
+  .nh-title {
+    font-size: 2rem;
+  }
+}

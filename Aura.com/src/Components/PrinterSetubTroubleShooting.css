@@ -1,0 +1,106 @@
+.printer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #f7fcff, #e9f9ff);
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 4rem auto;
+  box-shadow: 0 20px 60px rgba(0, 140, 255, 0.08);
+  animation: fadeInUp 1s ease;
+}
+
+.printer-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 100, 255, 0.15);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.printer-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.1) 0%, transparent 70%);
+  animation: pulseGlow 5s infinite;
+  z-index: 0;
+}
+
+.printer-icon {
+  font-size: 3rem;
+  z-index: 2;
+  position: relative;
+  animation: printerBounce 3s infinite ease-in-out;
+}
+
+.printer-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  position: relative;
+}
+
+.printer-description {
+  font-size: 1.15rem;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 0 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.printer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 80px rgba(0, 150, 255, 0.2);
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes printerBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .printer-title {
+    font-size: 1.6rem;
+  }
+
+  .printer-description {
+    font-size: 1rem;
+  }
+
+  .printer-card {
+    padding: 2rem 1.5rem;
+  }
+}

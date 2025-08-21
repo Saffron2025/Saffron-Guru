@@ -1,0 +1,88 @@
+.software-support-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #eefaff, #e5f3ff);
+  border-radius: 20px;
+  max-width: 1300px;
+  margin: 4rem auto;
+  box-shadow: 0 20px 60px rgba(0, 150, 255, 0.08);
+  animation: fadeInScale 0.8s ease;
+  perspective: 1000px;
+}
+
+.software-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 3rem 2rem;
+  max-width: 950px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 140, 255, 0.12);
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.software-card:hover {
+  transform: rotateX(3deg) rotateY(-3deg) scale(1.01);
+  box-shadow: 0 40px 90px rgba(0, 170, 255, 0.25);
+}
+
+.software-icon {
+  font-size: 3rem;
+  animation: glowPulse 2.5s infinite ease-in-out;
+  color: #0085ff;
+  margin-bottom: 1.2rem;
+}
+
+.software-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.software-description {
+  font-size: 1.15rem;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(1); opacity: 1; text-shadow: 0 0 10px rgba(0,200,255,0.3); }
+  50% { transform: scale(1.1); opacity: 0.85; text-shadow: 0 0 20px rgba(0,200,255,0.5); }
+  100% { transform: scale(1); opacity: 1; text-shadow: 0 0 10px rgba(0,200,255,0.3); }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .software-title {
+    font-size: 1.5rem;
+  }
+
+  .software-description {
+    font-size: 1rem;
+  }
+
+  .software-card {
+    padding: 2rem 1.2rem;
+  }
+}

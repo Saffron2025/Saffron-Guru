@@ -1,0 +1,129 @@
+.microsoft-store-page {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f9fbff, #eef4fc);
+  color: #1a1a1a;
+  padding-bottom: 4rem;
+}
+
+.store-hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeSlideDown 1s ease-in-out;
+}
+
+.store-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.store-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.store-content {
+  padding: 4rem 2rem;
+}
+
+.store-section {
+  margin-bottom: 3.5rem;
+  animation: fadeUp 0.9s ease both;
+}
+
+.store-section h2 {
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.store-section ul {
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.styled-box {
+  background: #fefce8;
+  padding: 2rem;
+  border: 2px dashed #facc15;
+  border-radius: 12px;
+}
+
+.scam-stats {
+  background: #ffe4e6;
+  border-left: 6px solid #dc2626;
+  padding: 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.final-cta {
+  text-align: center;
+  background: #1e293b;
+  color: #ffffffcc;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  animation: glowPulse 4s infinite ease-in-out;
+}
+
+.final-cta h2 {
+  color: #93c5fd;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(147, 197, 253, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(147, 197, 253, 1);
+  }
+}

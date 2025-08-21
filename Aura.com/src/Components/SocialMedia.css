@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.social-media-section {
+  background: linear-gradient(135deg, #ecfaff, #f9fdff);
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  max-width: 800px;
+  margin: 4rem auto;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.social-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0c2c60;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+}
+
+.social-btn i {
+  font-size: 1.2rem;
+}
+
+/* Facebook Button */
+.social-btn.facebook {
+  background: #3b5998;
+}
+
+.social-btn.facebook:hover {
+  background: #2d4373;
+  transform: scale(1.05);
+}
+
+/* Google Button */
+.social-btn.google {
+  background: #db4437;
+}
+
+.social-btn.google:hover {
+  background: #a9362c;
+  transform: scale(1.05);
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

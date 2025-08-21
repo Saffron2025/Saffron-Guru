@@ -1,0 +1,90 @@
+.backup-support-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #f9fdff, #eafaff);
+  border-radius: 20px;
+  max-width: 1300px;
+  margin: 4rem auto;
+  box-shadow: 0 20px 60px rgba(0, 130, 255, 0.08);
+  animation: fadeSlideIn 1s ease;
+  perspective: 1000px;
+}
+
+.backup-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 3rem 2rem;
+  max-width: 950px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 140, 255, 0.12);
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+}
+
+.backup-card:hover {
+  transform: rotateX(2.5deg) rotateY(-2deg) scale(1.015);
+  box-shadow: 0 35px 90px rgba(0, 170, 255, 0.2);
+}
+
+.backup-icon {
+  font-size: 3rem;
+  animation: softGlow 3s ease-in-out infinite;
+  color: #007cf0;
+  margin-bottom: 1rem;
+}
+
+.backup-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
+}
+
+.backup-description {
+  font-size: 1.15rem;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(0,200,255,0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    text-shadow: 0 0 20px rgba(0,200,255,0.5);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .backup-title {
+    font-size: 1.6rem;
+  }
+
+  .backup-description {
+    font-size: 1rem;
+  }
+
+  .backup-card {
+    padding: 2rem 1.4rem;
+  }
+}

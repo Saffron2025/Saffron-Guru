@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+/* 🎨 Wrapper */
+.fakecalls-wrapper {
+  background: linear-gradient(180deg, #f8fafc, #f1f5f9);
+  padding: 3.5rem 1.2rem;
+  font-family: 'Chakra Petch', sans-serif;
+  line-height: 1.8;
+  color: #1e293b;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ✨ Soft FadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🏷️ Main Title */
+.fc-title {
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #2563eb, #9333ea, #16a34a);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sub Intro Text */
+.fc-intro {
+  text-align: center;
+  font-size: 1.35rem;
+  color: #334155;
+  margin-bottom: 2.5rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+/* 📦 Info Block */
+.fc-block {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border: 1px solid rgba(99, 102, 241, 0.1); /* soft gradient edge */
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+  animation: slideUp 1s ease both;
+}
+
+.fc-block:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fc-block h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #1e293b;
+}
+
+.fc-block h2::before {
+  content: "✨";
+  font-size: 1.4rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* ✅ Lists */
+.fc-block ul, .fc-block ol {
+  padding-left: 1.5rem;
+  margin: 0.8rem 0;
+}
+
+.fc-block li {
+  margin-bottom: 0.7rem;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  position: relative;
+}
+
+.fc-block li::before {
+  content: "✔️";
+  position: absolute;
+  left: -1.5rem;
+}
+
+/* 📝 Highlighted Quote */
+.fc-block blockquote {
+  background: #f1f5f9;
+  padding: 1.2rem 1.5rem;
+  border-left: 6px solid #2563eb;
+  font-style: italic;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: #0f172a;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🚦 Special Status Blocks */
+.fc-block.danger { border-left: 6px solid #dc2626; background: #fff5f5; }
+.fc-block.warning { border-left: 6px solid #f59e0b; background: #fffbea; }
+.fc-block.success { border-left: 6px solid #16a34a; background: #f0fdf4; }
+.fc-block.info { border-left: 6px solid #2563eb; background: #eff6ff; }
+.fc-block.senior { 
+  border-left: 6px solid #9333ea; 
+  background: #faf5ff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+/* 🗂️ Grid Layout */
+.fc-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.fc-grid h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* 📌 Footer */
+.fc-footer {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  padding: 1.3rem;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #2563eb22, #9333ea22);
+  color: #0f172a;
+  animation: fadeIn 1.5s ease-in-out;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600;800&display=swap');
+
+:root {
+  --ink: #0b1222;
+  --ink2: #0f1831;
+  --cyan: #51e1ff;
+  --mint: #7cffc4;
+  --glass: rgba(255,255,255,.06);
+  --stroke: rgba(255,255,255,.12);
+  --text: #eaf6ff;
+  --muted: #a2b7ce;
+}
+
+.why-wrap {
+  font-family: 'Urbanist', sans-serif;
+  color: var(--text);
+  padding: clamp(2rem, 5vw, 3rem) 1rem;
+  background: radial-gradient(800px 500px at 10% 110%, #0c1730 0%, transparent 45%),
+              radial-gradient(800px 500px at 110% -10%, #0b2a35 0%, transparent 45%),
+              linear-gradient(180deg, var(--ink), var(--ink2));
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.why-wrap.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.why-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+}
+.why-header .highlight {
+  background: linear-gradient(90deg, var(--mint), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.why-tagline {
+  margin-top: .8rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.4rem;
+}
+
+.why-card {
+  background: linear-gradient(180deg, var(--glass), rgba(255,255,255,.02));
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  padding: 1.2rem;
+  backdrop-filter: blur(6px);
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(81,225,255,.18);
+}
+
+.icon-box {
+  font-size: 1.8rem;
+  color: var(--cyan);
+  margin-bottom: .6rem;
+}
+
+.why-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.why-card p {
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+  .why-card {
+    padding: 1rem;
+  }
+}
+
+.why-bottom-tagline {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2f0ff;
+  background: linear-gradient(90deg, rgba(0, 180, 255, 0.08), rgba(0, 255, 200, 0.08));
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 200, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.why-bottom-tagline strong {
+  color: #00e0ff;
+  font-weight: 700;
+}
+
+.why-bottom-tagline:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 28px rgba(0, 255, 200, 0.25);
+}
+

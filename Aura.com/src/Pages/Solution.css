@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+.solution-page {
+  background: #f4f9fc;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.solution-hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: linear-gradient(135deg, #183b56, #1f537e);
+  color: #fff;
+  animation: fadeInSlide 0.8s ease-out;
+}
+
+.hero-heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.solution-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #163b63;
+}
+
+.solution-section p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.solution-section ul {
+  padding-left: 1.5rem;
+}
+
+.solution-section ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.solution-img {
+  width: 80%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.solution-img:hover {
+  transform: scale(1.03);
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-slide {
+  animation: fadeInSlide 1s ease-in-out;
+}

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+.newsletter-wrapper {
+padding: 2rem 1rem;    /* 👈 pehle 4rem tha, kam kar diya */
+  margin-top: -120px;     /* 👈 gap upar se aur kam hoga */
+
+  background: linear-gradient(135deg, #f9fafc, #eef2ff, #fdf9ff);
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.newsletter-card {
+  max-width: 380px;    /* 👈 width aur slim */
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.2rem 1rem;   /* 👈 card padding bahut kam */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+.newsletter-header h2 {
+  font-size: 1.3rem;   /* 👈 aur chhoti heading */
+  font-weight: 700;
+  background: linear-gradient(90deg, #3b82f6, #10b981, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.3rem; /* 👈 gap almost khatam */
+}
+
+.newsletter-header p {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 0.8rem; /* 👈 bahut chhota gap */
+  line-height: 1.3;
+}
+
+.ml-embedded {
+  margin: 0.5rem 0; /* 👈 spacing aur kam */
+}
+
+.newsletter-note {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.6rem;  /* 👈 chhoti spacing */
+  font-style: italic;
+}
+
+/* 🌟 Soft floating animation */
+@keyframes softFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .newsletter-card {
+    padding: 1rem 0.8rem;
+  }
+  .newsletter-header h2 {
+    font-size: 1.1rem;
+  }
+  .newsletter-header p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+.scam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #0a1b2a, #314454);
+  padding: 2rem;
+}
+
+.scam-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  max-width: 800px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  color: #e3f6f5;
+  animation: fadeUp 1s ease both;
+  box-shadow: 0 8px 24px rgba(0, 150, 255, 0.2);
+}
+
+.scam-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00f5a0, #00e0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 3s ease-in-out infinite alternate;
+}
+
+.scam-intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #bce7e8;
+}
+
+.scam-content section {
+  margin-bottom: 1.6rem;
+}
+
+.scam-content h2 {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  color: #00e0ff;
+}
+.scam-content h2::after {
+  content: '';
+  height: 3px;
+  width: 50px;
+  background: #00f5a0;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.scam-content p, .scam-content li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.scam-content ul {
+  padding-left: 1.5rem;
+  list-style-type: "✔️ ";
+}
+
+.scam-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.2);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 8px #00f5a0; }
+  to { text-shadow: 0 0 16px #00e0ff; }
+}
+
+@media (max-width: 600px) {
+  .scam-card {
+    padding: 2rem 1.5rem;
+  }
+  .scam-title {
+    font-size: 2rem;
+  }
+  .scam-intro {
+    font-size: 1rem;
+  }
+}
+
+.scam-read-more {
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.scam-read-more a {
+  font-weight: 600;
+  color: #00e0ff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.3);
+}
+
+.scam-read-more a:hover {
+  color: #ffffff;
+  background-color: #00e0ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00e0ffaa;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
