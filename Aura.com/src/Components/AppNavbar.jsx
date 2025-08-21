@@ -44,6 +44,8 @@ const AppNavbar = () => {
 
               <NavDropdown.Item as={Link} to="/solution">Protection of our Society</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/ParentSolution">NetHaven™ </NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/FixMyTech ">FixMyTech™ </NavDropdown.Item>
+
 
 <NavDropdown.Item
   onClick={() => {

@@ -1,0 +1,135 @@
+.fix-wrapper {
+  background: linear-gradient(135deg, #f0f9ff, #e0f7fa, #ede9fe);
+  padding: 4rem 1rem;
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+}
+
+.fix-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fix-card,
+.fix-section,
+.fix-faq,
+.fix-cta {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fix-card.show,
+.fix-section.show,
+.fix-faq.show,
+.fix-cta.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fix-card h2,
+.fix-section h2,
+.fix-faq h2,
+.fix-cta h2 {
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #2563eb, #059669, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.fix-card ul,
+.fix-section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.fix-section ol {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.fix-section .note,
+.fix-cta .note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: #059669;
+  font-weight: bold;
+}
+
+/* FAQ Accordion */
+.fix-faq details {
+  margin-bottom: 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fix-faq summary {
+  font-weight: 600;
+}
+
+.fix-faq details[open] {
+  background: #eef2ff;
+  transform: scale(1.02);
+}
+
+/* CTA */
+.fix-cta .btn-group {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-btn {
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn.secondary {
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .fix-card,
+  .fix-section,
+  .fix-faq,
+  .fix-cta {
+    padding: 1.2rem;
+  }
+  .fix-card h2,
+  .fix-section h2,
+  .fix-faq h2,
+  .fix-cta h2 {
+    font-size: 1.2rem;
+  }
+}

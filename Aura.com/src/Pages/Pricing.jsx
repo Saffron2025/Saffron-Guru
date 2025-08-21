@@ -1,8 +1,11 @@
+// src/Pages/Pricing.js
 import React, { useState } from "react";
-import AppNavbar from "../Components/AppNavbar";
-import AllSection from "../Components/AllSection";
 import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import AppNavbar from "../Components/AppNavbar";
+import AllSection from "../Components/AllSection";
+
 import "./Pricing.css";
 
 const Pricing = () => {
@@ -13,7 +16,10 @@ const Pricing = () => {
 
   return (
     <>
+      {/* 🔝 Navbar */}
       <AppNavbar />
+
+      {/* 💰 Pricing Section */}
       <section className="pricing-section">
         <Container>
           <h1 className="pricing-title">🛡 Pricing & Plans</h1>
@@ -22,7 +28,7 @@ const Pricing = () => {
           </p>
 
           <Row className="g-4 mt-4">
-            {/* 🛡️ DefendMePro Home */}
+            {/* 🏠 DefendMePro Home */}
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
@@ -51,7 +57,7 @@ const Pricing = () => {
               </Card>
             </Col>
 
-            {/* 🛡️ DefendMePro Business */}
+            {/* 🏢 DefendMePro Business */}
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
@@ -95,7 +101,10 @@ const Pricing = () => {
                     <li>Location & Geofence Alerts</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/ParentSolution" className="btn btn-outline-primary">
+                    <Link
+                      to="/ParentSolution"
+                      className="btn btn-outline-primary"
+                    >
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -106,7 +115,7 @@ const Pricing = () => {
               </Card>
             </Col>
 
-            {/* 🖥️ SaffeSupport Assist Home */}
+            {/* 🖥️ SaffeSupport Home */}
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
@@ -122,7 +131,10 @@ const Pricing = () => {
                     <li>7-Day Live Expert Support</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/ForYourHome" className="btn btn-outline-primary">
+                    <Link
+                      to="/ForYourHome"
+                      className="btn btn-outline-primary"
+                    >
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -133,7 +145,7 @@ const Pricing = () => {
               </Card>
             </Col>
 
-            {/* 🖥️ SaffeSupport Assist Business */}
+            {/* 🖥️ SaffeSupport Business */}
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
@@ -142,7 +154,10 @@ const Pricing = () => {
                   <h4>$59.99/month + tax (billed yearly)</h4>
                   <p>Covers up to 10 devices</p>
                   <ul>
-                    <li>Unlimited Remote Tech Support (computers, printers, networks)</li>
+                    <li>
+                      Unlimited Remote Tech Support (computers, printers,
+                      networks)
+                    </li>
                     <li>Priority Troubleshooting & Setup Help</li>
                     <li>Device Tune-ups & Security Optimization</li>
                     <li>Business Email & Account Assistance</li>
@@ -150,7 +165,10 @@ const Pricing = () => {
                     <li>Dedicated Support Line (7 days a week)</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/ForYourBusiness" className="btn btn-outline-primary">
+                    <Link
+                      to="/ForYourBusiness"
+                      className="btn btn-outline-primary"
+                    >
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -165,17 +183,26 @@ const Pricing = () => {
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🛡️💻 DefendMePro™ + SaffeSupport Assist™ Home Combo</h3>
+                  <h3>
+                    🛡️💻 DefendMePro™ + SaffeSupport Assist™ Home Combo
+                  </h3>
                   <p>
-                    Complete protection + your unlimited personal IT support team.
+                    Complete protection + your unlimited personal IT support
+                    team.
                   </p>
                   <h4>$34.99/month + tax (billed yearly)</h4>
                   <p>👉 Save 30% compared to buying separately</p>
                   <p>Covers up to 3 devices</p>
                   <ul>
-                    <li>DefendMePro™ Home (Antivirus, VPN, Scam Protection)</li>
-                    <li>SaffeSupport Assist™ Home (Remote IT Support + Email Help)</li>
-                    <li>7-Day Live Support for Security & Tech Issues</li>
+                    <li>
+                      DefendMePro™ Home (Antivirus, VPN, Scam Protection)
+                    </li>
+                    <li>
+                      SaffeSupport Assist™ Home (Remote IT Support + Email Help)
+                    </li>
+                    <li>
+                      7-Day Live Support for Security & Tech Issues
+                    </li>
                     <li>Peace of Mind for Your Entire Household</li>
                   </ul>
                   <div className="d-flex gap-2">
@@ -187,18 +214,94 @@ const Pricing = () => {
               </Card>
             </Col>
 
+            {/* 🏠 FixMyTech Home */}
+            <Col md={6} lg={4}>
+              <Card className="pricing-card h-100">
+                <Card.Body>
+                  <h3>🏠 FixMyTech™ Home</h3>
+                  <p>
+                    One problem fix (one device) — for seniors & families who
+                    want it fixed today.
+                  </p>
+                  <h4>$89.99 + taxes</h4>
+                  <ul>
+                    <li>Printer, email & computer troubleshooting</li>
+                    <li>Virus/malware removal & browser cleanup</li>
+                    <li>Network / Wi-Fi setup & fixes</li>
+                    <li>
+                      Reset Operating System (Windows/macOS) when needed
+                    </li>
+                  </ul>
+                  <div className="d-flex gap-2">
+                    <Link
+                      to="/fixmytech"
+                      className="btn btn-outline-primary"
+                    >
+                      Learn More
+                    </Link>
+                    <Button variant="primary" onClick={handleShow}>
+                      Get Now
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* 🏢 FixMyTech Business */}
+            <Col md={6} lg={4}>
+              <Card className="pricing-card h-100">
+                <Card.Body>
+                  <h3>🏢 FixMyTech™ Business</h3>
+                  <p>
+                    One business problem fix — for small offices & pros who
+                    can’t afford downtime.
+                  </p>
+                  <h4>$149.99 + taxes</h4>
+                  <ul>
+                    <li>
+                      Server & network troubleshooting (file shares, permissions)
+                    </li>
+                    <li>Shared printers & multi-printer setup</li>
+                    <li>Business email/Outlook & account recovery</li>
+                    <li>
+                      Reset Operating System (Windows/macOS) when needed
+                    </li>
+                  </ul>
+                  <div className="d-flex gap-2">
+                    <Link
+                      to="/fixmytech"
+                      className="btn btn-outline-primary"
+                    >
+                      Learn More
+                    </Link>
+                    <Button variant="primary" onClick={handleShow}>
+                      Get Now
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+
             {/* 🛡️💻 Combo Business */}
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🛡️💻 DefendMePro™ + SaffeSupport Assist™ Business Combo</h3>
+                  <h3>
+                    🛡️💻 DefendMePro™ + SaffeSupport Assist™ Business Combo
+                  </h3>
                   <p>End-to-end business protection with expert IT support</p>
                   <h4>$89.99/month + tax (billed yearly)</h4>
                   <p>👉 Save 35% compared to buying separately</p>
                   <p>Covers up to 10 devices</p>
                   <ul>
-                    <li>DefendMePro™ Business (Zero-Day Threat & End-to-End Security)</li>
-                    <li>SaffeSupport Assist™ Business (Remote + On-Site IT Support if required)</li>
+                    <li>
+                      DefendMePro™ Business (Zero-Day Threat & End-to-End
+                      Security)
+                    </li>
+                    <li>
+                      SaffeSupport Assist™ Business (Remote + On-Site IT Support
+                      if required)
+                    </li>
                     <li>Priority Business Support Line</li>
                     <li>Keeps Your Team Safe, Secure & Productive</li>
                   </ul>
@@ -212,13 +315,14 @@ const Pricing = () => {
             </Col>
           </Row>
 
+          {/* Guarantee Line */}
           <div className="guarantee-text mt-4">
             💳 30-Day Money-Back Guarantee — No Risk, Cancel Anytime.
           </div>
         </Container>
       </section>
 
-      {/* Popup Modal */}
+      {/* 📌 Modal Popup */}
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>🤝 Your safety matters to us.</Modal.Title>
@@ -240,6 +344,7 @@ const Pricing = () => {
         </Modal.Footer>
       </Modal>
 
+      {/* 🔚 Footer Section */}
       <AllSection />
     </>
   );

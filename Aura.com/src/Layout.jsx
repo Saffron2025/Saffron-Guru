@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <TopBanner />
+      {/* <TopBanner /> */}
       <AppNavbar />
       {children}
       {!noChatPaths.includes(location.pathname) && <AuraFooter />}

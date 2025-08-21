@@ -37,6 +37,7 @@ import Pricing from './Pages/Pricing';
 import DaysMoneyBack from './Pages/DaysMoneyBack';
 import IdentifyFakeCalls from './Pages/IdentifyFakeCalls';
 import ReadFAQ from './Pages/ReadFAQ';
+import FixMyTech from './Pages/FixMyTech';
 const App = () => {
   useEffect(() => {
     keepAlive(); // 👈 Prevent Render from sleeping
@@ -82,8 +83,9 @@ const App = () => {
           <Route path="/ParentSolution" element={<ParentSolution />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/DaysMoneyBack" element={<DaysMoneyBack />} />
-            <Route path="/IdentifyFakeCalls" element={<IdentifyFakeCalls />} />
-                        <Route path="/ReadFAQ" element={<ReadFAQ />} />
+          <Route path="/IdentifyFakeCalls" element={<IdentifyFakeCalls />} />
+          <Route path="/ReadFAQ" element={<ReadFAQ />} />
+          <Route path="/FixMyTech" element={<FixMyTech />} />
 
 
 
