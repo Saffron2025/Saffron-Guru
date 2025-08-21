@@ -21,7 +21,7 @@ const Signup = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/auth/send-otp', form);
+      await axios.post('https://saffron-guru-backend.onrender.com/api/auth/send-otp', form);
       alert("✅ Signup successful!");
       navigate('/verify-otp', { state: { email: form.email } });
     } catch (err) {
