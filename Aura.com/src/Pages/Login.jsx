@@ -15,7 +15,7 @@ useEffect(() => {
   const interval = setInterval(() => {
     if (window.turnstile && captchaRef.current && !captchaRef.current.hasChildNodes()) {
       window.turnstile.render(captchaRef.current, {
-        sitekey: '0x4AAAAAABn6qaqoeDuQyRcL',
+        sitekey: '0x4AAAAAABt3vXebqIH5X3G4',
         callback: (token) => setTurnstileToken(token),
         theme: 'light', // or 'dark'
         'refresh-expired': 'auto',
