@@ -4,6 +4,7 @@ import { SiTrustpilot } from 'react-icons/si';
 import { GiConfirmed, GiReceiveMoney, GiLockedChest } from 'react-icons/gi';
 import { MdSupportAgent } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import CookieConsent from '../Components/CookieConsent';
 import {
   Clock,
   ShieldOff,
@@ -71,7 +72,7 @@ const Hero = () => {
   </a>
 </Col>
 
-
+<CookieConsent/>
 
 
 
