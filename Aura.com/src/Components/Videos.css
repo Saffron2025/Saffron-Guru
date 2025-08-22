@@ -50,7 +50,6 @@
   justify-content: center;
   width: 100%;
   padding: 2rem 1rem;
-  border-radius: 12px;
   position: relative;
 }
 
@@ -70,6 +69,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 10px #00bcd4aa;
+  background: #000;
 }
 
 /* ⬅️➡️ Nav Buttons */
@@ -100,58 +100,47 @@
 /* ------------------- 📰 News Links Below Videos ------------------- */
 .news-links-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 40px 0 30px;
+  overflow-x: auto;      /* ✅ allow horizontal scroll */
+  padding: 20px 0;
 }
 
 .news-links-bar {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  justify-content: center;
-  width: 100%;
-  max-width: 2000px; /* Increase container size to fit all in line */
-  gap: 1.2rem;
-  padding: 0 20px;
-  animation: fadeSlideUp 0.8s ease-in-out;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 0 10px;
+  min-width: max-content; /* ✅ force inline scroll items */
 }
 
 
 .news-link {
+  flex: 0 0 auto;         /* ✅ no shrinking */
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 18px;
-  border-radius: 14px;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: black;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 255, 255, 0.15);
-  box-shadow: 0 4px 20px rgba(0, 224, 255, 0.1);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
+  background: white;
+  border: 1px solid rgba(0, 224, 255, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 224, 255, 0.1);
+  transition: all 0.3s ease;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .news-link:hover {
-  background: rgba(0, 224, 255, 0.12);
-  color: #00f7ff;
-  transform: translateY(-3px) scale(1.015);
-  box-shadow: 0 0 15px #00e0ff66;
+  background: #00e0ff;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .news-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
-  filter: drop-shadow(0 0 3px #00f7ff44);
-  animation: iconPulse 2s ease-in-out infinite;
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .news-link:hover .news-icon {
@@ -198,17 +187,23 @@
 
 /* ------------------- 📱 Responsive ------------------- */
 @media (max-width: 768px) {
-  .video-wrapper {
-    min-width: 100%;
-    height: auto;
+   .video-wrapper {
+    min-width: 100%;     /* ✅ full width video */
+    height: 200px;       /* ✅ fixed height for small screens */
   }
 
-  .slider-wrapper {
+   .slider-wrapper {
+    width: 100%;
     gap: 1rem;
+    padding: 0.5rem;
   }
 
   .news-links-bar {
     gap: 0.8rem;
+  }
+
+    .nav-btn {
+    display: none;       /* ✅ hide arrows on mobile */
   }
 
   .news-link {
