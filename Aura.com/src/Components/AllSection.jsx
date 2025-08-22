@@ -31,7 +31,7 @@ const AuraFooter = () => {
           ))}
         </div>
         <div className="footer-credit mt-4">
-          &copy; {new Date().getFullYear()} Saffron Guru. All rights reserved.
+          &copy; {new Date().getFullYear()} Saffron Guru LLC. All rights reserved.
         </div>
       </div>
     </footer>
