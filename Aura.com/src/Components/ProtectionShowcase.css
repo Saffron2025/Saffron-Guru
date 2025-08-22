@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Urbanist:wght@400;600;800&display=swap');
 
 /* ============= THEME ============= */
-:root{
-  --ps-bg-1:#0b1222; --ps-bg-2:#0f1831;
-  --ps-accent:#51e1ff; --ps-accent-2:#7cffc4;
-  --ps-glass:rgba(255,255,255,0.06); --ps-stroke:rgba(255,255,255,0.10);
-  --ps-text:#eaf6ff; --ps-muted:#9bb0c8;
+:root {
+  --ps-bg-1: #f4faff;         
+  --ps-bg-2: #e6eef5;         
+  --ps-accent: #0b1222;       
+  --ps-accent-2: #111827;     
+  --ps-text: #1a1a1a;         
+  --ps-muted: #4b5563;        
+  --ps-glass: rgba(0,0,0,0.06);
+  --ps-stroke: rgba(0,0,0,0.12);
 }
+
 
 .pshowcase-top-left {
   position: absolute;
@@ -199,11 +204,31 @@
 /* ============= RIGHT: TITLE + LIST ============= */
 .pshowcase-right{ min-width:0; }
 
-.pshowcase-title{
-  display:grid; grid-template-columns:auto 1fr; align-items:center; gap:.8rem;
-  font-size:clamp(1.15rem,1.8vw,1.35rem); font-weight:800; letter-spacing:.2px; line-height:1.25; margin:0 0 1rem;
-  font-family:'Urbanist','Outfit',ui-sans-serif,system-ui;
+.pshowcase-title {
+  display: flex;
+  flex-wrap: wrap;              /* ✅ allow wrapping naturally */
+  align-items: center;
+  gap: .6rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: .2px;
+  line-height: 1.35;
+  margin: 0 0 1.2rem;
+  font-family: 'Urbanist','Outfit',ui-sans-serif,system-ui;
 }
+
+.pshowcase-title span {
+  display: inline;              /* ✅ inline, not forced block */
+}
+
+.pshowcase-inline-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 20px rgba(81,225,255,.35));
+  transform: translateY(2px);
+}
+
 .pshowcase-inline-icon{ width:36px; height:36px; object-fit:contain; filter:drop-shadow(0 6px 20px rgba(81,225,255,.35)); transform:translateY(2px); }
 
 .pshowcase-list{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:.7rem; }
@@ -234,13 +259,25 @@
 
 /* CTA — pill with shine pass */
 .pshowcase-cta{ margin-top:1.1rem }
-.pshowcase-learn{
-  position:relative; display:inline-flex; align-items:center; gap:.6rem; font-weight:800;
-  text-decoration:none; color:#061728;
+.pshowcase-learn {
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:800;
+  text-decoration:none;
+  color:#fff;   /* ✅ white text */
   background:linear-gradient(180deg, var(--ps-accent-2), var(--ps-accent));
-  padding:.9rem 1.2rem; border-radius:14px; box-shadow:0 10px 30px rgba(81,225,255,.3);
+  padding:.9rem 1.2rem;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(81,225,255,.3);
   transition:transform .25s cubic-bezier(.2,.65,.2,1), box-shadow .25s ease, filter .25s ease;
 }
+
+.pshowcase-learn:hover {
+  color:#fff;  /* ✅ ensure text stays white even on hover */
+}
+
 .pshowcase-learn::after{
   content:""; position:absolute; inset:0; border-radius:inherit;
   background:linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent);
@@ -263,6 +300,66 @@
   .pshowcase-card{ border-radius:20px }
   .pshowcase-section::before{ filter:blur(8px) } /* lighter sweep on mobile */
 }
+
+
+/* Text Kicker */
+.pshowcase-kicker {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .4rem;
+  background: linear-gradient(90deg, #51e1ff, #7cffc4, #51e1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
+
+/* Highlight phrases */
+.highlight {
+  background: linear-gradient(90deg, rgba(81,225,255,.2), rgba(124,255,196,.2));
+  padding: 0 .3rem;
+  border-radius: 4px;
+}
+
+/* Sub text */
+.pshowcase-sub {
+  font-size: .95rem;
+  color: var(--ps-muted);
+  display: block;
+  margin-top: .6rem;
+}
+
+/* Fancy Title */
+.fancy-title span {
+  display: block;
+}
+.fancy-title .underline-anim {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+}
+.fancy-title .underline-anim::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -4px;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, #7cffc4, #51e1ff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease;
+}
+.fancy-title:hover .underline-anim::after {
+  transform: scaleX(1);
+}
+
+/* Gradient animation */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 /* ============= REDUCED MOTION ============= */
 @media (prefers-reduced-motion:reduce){

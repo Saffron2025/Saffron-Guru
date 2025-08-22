@@ -80,11 +80,11 @@ const ProtectionShowcase = () => {
         <div className="pshowcase-left">
           {/* Paragraph stays inside container */}
           <div className="pshowcase-text-top">
+            <h3 className="pshowcase-kicker">🚫 Not an Antivirus</h3>
             <p>
-              It’s Not an Antivirus.<br />
               Antivirus Can’t Stop Scammers.<br />
-              <strong>DefendMePro™ Protects You</strong> From Real Threats — Scams, Fraud, Identity Theft, Common Hacking Attempts, and Online Takeovers.<br />
-              With Real Human IT Support, Available 7 Days a Week.
+              <strong className="highlight">DefendMePro™ Protects You</strong> From Real Threats — Scams, Fraud, Identity Theft, Common Hacking Attempts, and Online Takeovers.<br />
+              <span className="pshowcase-sub">With Real Human IT Support, Available 7 Days a Week.</span>
             </p>
           </div>
 
@@ -111,9 +111,10 @@ const ProtectionShowcase = () => {
 
         {/* RIGHT SIDE */}
         <div className="pshowcase-right">
-          <h2 className="pshowcase-title">
+          <h2 className="pshowcase-title fancy-title">
             <img src="/Hero/shield.WebP" alt="Shield" className="pshowcase-inline-icon" />
-            <span>DefendMePro™ — Complete Digital Protection with Live Assistance When You Need It. ✅</span>
+            <span>DefendMePro™ — Complete Digital Protection</span>
+            <span className="underline-anim">with Live Assistance When You Need It. ✅</span>
           </h2>
 
           <ul className="pshowcase-list">

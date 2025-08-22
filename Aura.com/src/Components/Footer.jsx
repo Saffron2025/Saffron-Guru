@@ -115,19 +115,21 @@ const Footer = () => {
   {/* <div className="content-center"> */}
 <ProtectionShowcase/>
 
-     <div className="protection-shared-cta">
-    <div className="cta-line">
-      <img src="/Hero/discount.WebP" alt="offer" className="cta-icon" />
-      <span className='VeterenText'>
-        We offer <strong>special pricing for seniors and veterans</strong>. Please speak to our expert to learn more.
-      </span>
-    </div>
-    <div className="cta-buttons">
-<Link className="cta-btn" to="/contact">📞 Call Us</Link>
-{/* <button className="cta-btn" onClick={() => document.getElementById('chat')?.scrollIntoView({ behavior: 'smooth' })}>💬 Chat</button> */}
-{/* <button className="cta-btn" onClick={() => document.getElementById('learn-more')?.scrollIntoView({ behavior: 'smooth' })}>📘 Learn More</button> */}
-    </div>
+   <div className="protection-shared-cta">
+  <div className="cta-line">
+    <img src="/Hero/discount.WebP" alt="offer" className="cta-icon" />
+    <span className="VeterenText">
+      🎖️ We offer <strong>special pricing for seniors and veterans</strong>.  
+      <br /> Please speak to our expert to learn more.
+    </span>
   </div>
+
+  <div className="cta-buttons">
+    <Link className="cta-btn primary" to="/contact">📞 Call Us</Link>
+    <Link className="cta-btn secondary" to="/LearnMore">📘 Learn More</Link>
+  </div>
+</div>
+
 
     <ItSupport/>
 
