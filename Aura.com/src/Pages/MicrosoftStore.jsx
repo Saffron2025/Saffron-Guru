@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './MicrosoftStore.css';
 import AppNavbar from '../Components/AppNavbar';
 import AllSection from '../Components/AllSection';
-import { Link, useNavigate } from 'react-router-dom';  // ✅ Proper import
+import { Link, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const products = [
@@ -20,7 +20,7 @@ const products = [
 
 const MicrosoftStore = () => {
   const [cartMessage, setCartMessage] = useState("");
-  const navigate = useNavigate();  // ✅ Navigation hook
+  const navigate = useNavigate();
 
   const handleAddToCart = (product) => {
     setCartMessage(`🛒 ${product.name} added to cart. ${product.desc}`);
@@ -30,17 +30,25 @@ const MicrosoftStore = () => {
   return (
     <>
       <AppNavbar />
-      <div className="microsoft-store-page">
 
+      {/* 🔹 Hero Banner */}
+      <header className="store-hero">
+        <h1 className="store-title-hero">🛍️ Microsoft Store – Trusted Digital Licenses</h1>
+        <p className="store-subtitle">
+          Get genuine Microsoft products with lifetime licenses, no hidden charges, and instant digital delivery.
+        </p>
+      </header>
+
+      <div className="microsoft-store-page">
         {/* 🔹 Products Grid */}
         <Container className="product-grid mt-4">
-          <h2 className="store-title">🛍️ Microsoft Products</h2>
+          <h2 className="store-title">💻 Microsoft Products</h2>
           <Row>
             {products.map((product) => (
               <Col md={4} sm={6} xs={12} key={product.id} className="mb-4">
                 <Card
                   className="product-card"
-                  onClick={() => navigate(`/product/${product.id}`)} // ✅ card click works
+                  onClick={() => navigate(`/product/${product.id}`)}
                 >
                   <Card.Img variant="top" src={product.img} alt={product.name} className="product-img" />
                   <Card.Body>
@@ -51,7 +59,7 @@ const MicrosoftStore = () => {
                       variant="primary"
                       className="add-btn"
                       onClick={(e) => {
-                        e.stopPropagation(); // ✅ prevent card click
+                        e.stopPropagation();
                         handleAddToCart(product);
                       }}
                     >
@@ -65,7 +73,7 @@ const MicrosoftStore = () => {
           {cartMessage && <div className="cart-message">{cartMessage}</div>}
         </Container>
 
-        {/* ✅ Existing Content */}
+        {/* 🔹 Informational Sections */}
         <Container className="store-content">
           <Row>
             <Col md={12}>
