@@ -38,6 +38,7 @@ import DaysMoneyBack from './Pages/DaysMoneyBack';
 import IdentifyFakeCalls from './Pages/IdentifyFakeCalls';
 import ReadFAQ from './Pages/ReadFAQ';
 import FixMyTech from './Pages/FixMyTech';
+import ProductDetail from './Pages/ProductDetail';
 const App = () => {
   useEffect(() => {
     keepAlive(); // 👈 Prevent Render from sleeping
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/IdentifyFakeCalls" element={<IdentifyFakeCalls />} />
           <Route path="/ReadFAQ" element={<ReadFAQ />} />
           <Route path="/FixMyTech" element={<FixMyTech />} />
+            <Route path="/product/:id" element={<ProductDetail />} />  {/* ✅ New Route */}
 
 
 
