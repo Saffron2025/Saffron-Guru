@@ -13,31 +13,11 @@ const videoIds = [
 ];
 
 const newsLinks = [
-  {
-    icon: '/Hero/FoxNews.WebP',
-    label: 'Fox: Social Security Scam',
-    url: '/Fox',
-  },
-  {
-    icon: '/Hero/CBS.WebP',
-    label: 'CBS: Eagan Couple Nearly Scammed',
-    url: '/CBS',
-  },
-  {
-    icon: '/Hero/ABC11.WebP',
-    label: 'ABC11: Tech Support Scam',
-    url: '/ABC11',
-  },
-  {
-    icon: '/Hero/NewYorkPolice.WebP',
-    label: 'New York PD: Scam Alert',
-    url: '/NewYorkPolice',
-  },
-  {
-    icon: '/Hero/ABCNational.WebP',
-    label: 'ABC: $4.8B Lost by Seniors',
-    url: '/ABCNational',
-  },
+  { icon: '/Hero/FoxNews.WebP', label: 'Fox: Social Security Scam', url: '/Fox' },
+  { icon: '/Hero/CBS.WebP', label: 'CBS: Eagan Couple Nearly Scammed', url: '/CBS' },
+  { icon: '/Hero/ABC11.WebP', label: 'ABC11: Tech Support Scam', url: '/ABC11' },
+  { icon: '/Hero/NewYorkPolice.WebP', label: 'New York PD: Scam Alert', url: '/NewYorkPolice' },
+  { icon: '/Hero/ABCNational.WebP', label: 'ABC: $4.8B Lost by Seniors', url: '/ABCNational' },
 ];
 
 const Videos = () => {
@@ -56,7 +36,7 @@ const Videos = () => {
   return (
     <>
       {/* 🎥 Videos Section */}
-      <div className="videos-section">
+      <div className="videos-section" id="videos-section">
         <div className="video-heading">
           <span className="emoji-alert">🚨</span>
           <span className="heading-line">
@@ -92,10 +72,7 @@ const Videos = () => {
                     className="video-thumbnail"
                     onClick={() => setActiveVideo(id)}
                   >
-                    <img
-                      src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
-                      alt="Video thumbnail"
-                    />
+                    <img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt="Video thumbnail" />
                     <div className="play-btn">▶</div>
                   </div>
                 )}
@@ -113,11 +90,7 @@ const Videos = () => {
       <div className="news-links-wrapper">
         <div className="news-links-bar">
           {newsLinks.map((item, index) => (
-            <div
-              key={index}
-              className="news-link"
-              onClick={() => navigate(item.url)}
-            >
+            <div key={index} className="news-link" onClick={() => navigate(item.url)}>
               <img src={item.icon} alt="news" className="news-icon" />
               {item.label}
             </div>

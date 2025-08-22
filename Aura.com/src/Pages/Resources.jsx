@@ -45,11 +45,8 @@ const Resources = () => {
                   <Card.Text>
                     Simple video lessons and guides crafted for older users — no tech jargon, just clear steps to stay protected.
                   </Card.Text>
-                  <Button
-                    variant="success"
-                    href="https://www.youtube.com/results?search_query=scam+awareness+for+seniors"
-                    target="_blank"
-                  >
+                  {/* ✅ Now this scrolls to videos on home */}
+                  <Button as={Link} to="/#videos-section" variant="success">
                     Watch Now
                   </Button>
                 </Card.Body>
@@ -65,13 +62,9 @@ const Resources = () => {
                   <Card.Text>
                     Understand how scammers pretend to be from Microsoft, Amazon, banks, etc., and what to do if you receive a suspicious call.
                   </Card.Text>
-                  <Button
-  as={Link}
-  to="/IdentifyFakeCalls"
-  variant="warning"
->
-  Read
-</Button>
+                  <Button as={Link} to="/IdentifyFakeCalls" variant="warning">
+                    Read
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -121,13 +114,9 @@ const Resources = () => {
                   <Card.Text>
                     Common questions about fraud prevention, answered by experts. Great for families looking to protect loved ones.
                   </Card.Text>
-                                   <Button
-  as={Link}
-  to="/ReadFAQ"
-  variant="warning"
->
-  Read FAQ
-</Button>
+                  <Button as={Link} to="/ReadFAQ" variant="warning">
+                    Read FAQ
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

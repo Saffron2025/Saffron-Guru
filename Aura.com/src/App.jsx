@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import keepAlive from './utils/keepalive';
 import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
@@ -17,7 +17,6 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import Terms from './Components/Terms';
 import ReturnPolicy from './Components/ReturnPolicy';
 import WhyChooseUs from './Components/WhyChooseUs';
-// import ProtectedRoute from './Components/ProtectRoute';
 import Solution from './Pages/Solution';
 import Resources from './Pages/Resources';
 import HowSaffronWorks from './Pages/HowSaffronWorks';
@@ -39,17 +38,34 @@ import IdentifyFakeCalls from './Pages/IdentifyFakeCalls';
 import ReadFAQ from './Pages/ReadFAQ';
 import FixMyTech from './Pages/FixMyTech';
 import ProductDetail from './Pages/ProductDetail';
+
+// ✅ helper to scroll to hash ids
+const ScrollToHashElement = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.getElementById(hash.replace('#', ''));
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
+
+  return null;
+};
+
 const App = () => {
   useEffect(() => {
-    keepAlive(); // 👈 Prevent Render from sleeping
+    keepAlive();
   }, []);
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
       <Router>
         <ScrollToTop />
+        <ScrollToHashElement /> {/* ✅ important for #videos-section */}
         <Routes>
-
           {/* Public Routes */}
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/login" element={<Login />} />
@@ -87,9 +103,7 @@ const App = () => {
           <Route path="/IdentifyFakeCalls" element={<IdentifyFakeCalls />} />
           <Route path="/ReadFAQ" element={<ReadFAQ />} />
           <Route path="/FixMyTech" element={<FixMyTech />} />
-            <Route path="/product/:id" element={<ProductDetail />} />  {/* ✅ New Route */}
-
-
+          <Route path="/product/:id" element={<ProductDetail />} />
 
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" />} />
