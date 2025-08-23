@@ -494,21 +494,30 @@ footer, .footer, .aura-footer {
 }
 
 /* --- Mobile (≤ 767px) --- */
+/* --- Mobile fix for 16B box --- */
 @media (max-width: 767px) {
   .graph-data-callout {
-    position: relative;   /* ✅ ab absolute nahi */
+    position: absolute;      /* keep it inside graph */
+    top: 5%;                 /* 👈 upar le jao */
+    right: 50%;              /* center align */
+    transform: translateX(50%);
     width: 90%;
-    max-width: 100%;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    margin: 20px auto 0;
+    max-width: 300px;
+    margin: 0 auto;
     text-align: center;
+    z-index: 5;              /* 👈 year labels se upar */
   }
+
   .graph-data-callout::before {
-    display: none;  /* ✅ hide pointer */
+    display: none;           /* mobile me pointer chhupa do */
+  }
+
+  /* Year line thoda neeche kar do */
+  .graph-year-line {
+    bottom: 5% !important;
   }
 }
+
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */
 /* Ensure other sections also have appropriate responsive padding if not already defined */
