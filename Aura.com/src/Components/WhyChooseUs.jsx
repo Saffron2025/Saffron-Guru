@@ -7,9 +7,9 @@ import AllSection from "./AllSection";
 export default function WhyChooseUs() {
   return (
     <>
-      <section className="why-timeline-section">
+      <section className="why-section">
         <Container>
-          <header className="timeline-header">
+          <header className="why-header">
             <h1>Why Families Trust Saffron Guru</h1>
             <p className="sub">✅ U.S.-Based Company · Support 7 Days a Week</p>
             <p className="intro">
@@ -22,10 +22,10 @@ export default function WhyChooseUs() {
             </p>
           </header>
 
-          <div className="timeline">
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <span className="timeline-icon">🧠</span>
+          <div className="why-cards">
+            <div className="why-card">
+              <div className="why-icon">🧠</div>
+              <div className="why-text">
                 <h3>Smarter Scam Protection</h3>
                 <p>
                   We help stop scams, fraud, and online traps before they do
@@ -35,9 +35,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <span className="timeline-icon">🧑‍💻</span>
+            <div className="why-card">
+              <div className="why-icon">🧑‍💻</div>
+              <div className="why-text">
                 <h3>Human Help, Not Tech Jargon</h3>
                 <p>
                   Our patient professionals listen first and speak simply.
@@ -47,9 +47,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <span className="timeline-icon">🌎</span>
+            <div className="why-card">
+              <div className="why-icon">🌎</div>
+              <div className="why-text">
                 <h3>Trusted by Seniors at Home & Abroad</h3>
                 <p>
                   From communities across the U.S. and Canada to retiree hubs in
@@ -59,9 +59,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <span className="timeline-icon">💬</span>
+            <div className="why-card">
+              <div className="why-icon">💬</div>
+              <div className="why-text">
                 <h3>Fast Help When It Matters</h3>
                 <p>
                   Clicked something risky? Think you’ve been scammed? One call
@@ -71,9 +71,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <span className="timeline-icon">🔐</span>
+            <div className="why-card">
+              <div className="why-icon">🔐</div>
+              <div className="why-text">
                 <h3>All-in-One Security, Without the Hassle</h3>
                 <p>
                   VPN, antivirus, firewall, scam alerts—managed together for you.
@@ -82,9 +82,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <span className="timeline-icon">🛡️</span>
+            <div className="why-card">
+              <div className="why-icon">🛡️</div>
+              <div className="why-text">
                 <h3>Fair & Honest</h3>
                 <p>
                   No long contracts. No hidden lock-ins. Stay because you trust
@@ -93,9 +93,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <span className="timeline-icon">☎️</span>
+            <div className="why-card">
+              <div className="why-icon">☎️</div>
+              <div className="why-text">
                 <h3>Patient Phone Support (7 Days)</h3>
                 <p>
                   Prefer talking instead of typing? We guide you in plain English,
@@ -104,9 +104,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <span className="timeline-icon">👨‍👩‍👧‍👦</span>
+            <div className="why-card">
+              <div className="why-icon">👨‍👩‍👧‍👦</div>
+              <div className="why-text">
                 <h3>Caregiver Mode</h3>
                 <p>
                   Invite a trusted family member to review alerts and settings.
@@ -115,9 +115,9 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="timeline-item center">
-              <div className="timeline-content big-promise">
-                <span className="timeline-icon">💖</span>
+            <div className="why-card big-promise">
+              <div className="why-icon">💖</div>
+              <div className="why-text">
                 <h3>The Saffron Guru Promise</h3>
                 <p>
                   For nearly a decade, we’ve protected seniors and families from

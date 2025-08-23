@@ -6,21 +6,44 @@
   max-width: 1300px;
   margin: 3rem auto;
   overflow: hidden;
+  font-family: 'Nunito', sans-serif;
 }
 
+/* Flex container */
 .defendmepro-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* ✅ ensures wrapping */
   gap: 2rem;
 }
 
+/* Text part */
 .defendmepro-text {
   flex: 1 1 55%;
-  min-width: 280px;
+  min-width: 280px; /* ✅ prevents cutting */
+  word-wrap: break-word; /* ✅ wrap long words */
+  overflow-wrap: break-word;
 }
 
+.reality-numbers-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #00ffe7, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.reality-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #e0f7ff;
+  word-break: break-word; /* ✅ long text wraps safely */
+}
+
+/* Image part */
 .defendmepro-image {
   flex: 1 1 40%;
   display: flex;
@@ -36,27 +59,11 @@
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
   animation: floatImage 6s ease-in-out infinite;
   transition: transform 0.4s ease;
+  object-fit: contain; /* ✅ never cut */
 }
 
 .defendmepro-image img:hover {
   transform: scale(1.03);
-}
-
-/* Reuse your existing text styles */
-.reality-numbers-heading {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #00ffe7, #00bfff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-}
-
-.reality-paragraph {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  color: #e0f7ff;
 }
 
 /* Floating animation for image */
@@ -66,8 +73,8 @@
   100% { transform: translateY(0px); }
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
+/* ✅ Tablet responsive */
+@media (max-width: 991px) {
   .defendmepro-content {
     flex-direction: column;
     text-align: center;
@@ -75,9 +82,39 @@
 
   .defendmepro-text {
     flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .defendmepro-image {
     flex: 1 1 100%;
+    margin-top: 1.5rem;
+  }
+
+  .reality-numbers-heading {
+    font-size: 1.8rem;
+  }
+
+  .reality-paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Mobile responsive */
+@media (max-width: 576px) {
+  .defendmepro-banner {
+    padding: 2rem 1rem;
+  }
+
+  .reality-numbers-heading {
+    font-size: 1.5rem;
+  }
+
+  .reality-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .defendmepro-image img {
+    max-width: 90%; /* ✅ shrink nicely */
   }
 }

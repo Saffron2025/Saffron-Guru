@@ -63,12 +63,7 @@ footer, .footer, .aura-footer {
   padding-right: 50px; /* Space from the graph on larger screens */
 }
 
-.graph-visual-container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  max-width: 100%;
-}
+
 
 .graph-svg {
   width: 100%;
@@ -122,20 +117,7 @@ footer, .footer, .aura-footer {
   box-shadow: 0 0 0 6px rgba(36, 107, 251, 0.2);
 }
 
-.graph-data-callout {
-  position: absolute;
-  bottom: 10%;
-  /* top: 50%; */
-  right: 5%;
-  background: #fff;
-  padding: 1.2rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 250px;
-  animation: floatIn 1.8s ease-out 1s forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
+
 
 @keyframes floatIn {
   to {
@@ -197,12 +179,13 @@ footer, .footer, .aura-footer {
 .graph-visual-container {
   position: relative;
   width: 100%;
+  height: 600px;
   /* This padding-top maintains the aspect ratio of the SVG's viewBox (600/1000 = 0.6 = 60%) */
   padding-top: 60%;
   background: linear-gradient(135deg, #e7f0ff 0%, #f0f7ff 100%); /* Subtle gradient background */
   border-radius: 15px; /* Rounded corners for the container */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft shadow */
-  overflow: hidden; /* Ensures nothing spills out of the rounded corners */
+  overflow: visible; /* Ensures nothing spills out of the rounded corners */
 }
 
 /* SVG itself - position absolute to cover the container */
@@ -322,20 +305,7 @@ footer, .footer, .aura-footer {
 }
 
 /* Callout Box / Info Box */
-.graph-data-callout {
-  background-color: #fff;
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
-  padding: 25px; /* Generous padding inside the box */
-  position: absolute;
-  /* margin-top: 2000px; */
-  bottom: 15%; /* Position relative to graph container's bottom */
-  left: 60%; /* Adjust to match image's horizontal placement */
-  width: 300px; /* Fixed width for the callout box */
-  text-align: left;
-  z-index: 4; /* On top of all other elements */
-  animation: fadeInPop 0.5s ease-out forwards; /* Simple pop-in animation for visual effect */
-}
+
 
 @keyframes fadeInPop {
   from {
@@ -349,34 +319,10 @@ footer, .footer, .aura-footer {
 }
 
 /* Triangle for the callout box */
-.graph-data-callout::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #fff; /* White triangle pointing downwards */
-  bottom: -15px; /* Positions the triangle just outside the box bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the triangle horizontally */
-}
 
-.callout-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  /* margin-top: 200px; */
-  margin-bottom: 8px;
-  line-height: 1.2;
-}
 
-.callout-description {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
+
+
 
 
 /* --- Responsive Adjustments for Graph Section --- */
@@ -417,18 +363,9 @@ footer, .footer, .aura-footer {
     font-size: 0.7rem;
   }
 
-  .graph-data-callout {
-    width: 260px;
-    padding: 20px;
-    left: 55%;
-    bottom: 10%;
-  }
-  .callout-title {
-    font-size: 1.2rem;
-  }
-  .callout-description {
-    font-size: 0.85rem;
-  }
+
+
+
 }
 
 @media (max-width: 767.98px) { /* Mobile devices */
@@ -484,23 +421,92 @@ footer, .footer, .aura-footer {
     font-size: 0.6rem;
   }
 
+
+
+}
+
+/* graph 16 Billion dollar wala css */
+
+/* =========================
+   Graph Data Callout (Responsive)
+   ========================= */
+.graph-data-callout {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;              /* ✅ fixed: always stick to right side */
+  transform: translateX(0);
+  width: 280px;
+  max-width: 90%;      /* ✅ prevent overflow */
+  text-align: left;
+  z-index: 4;
+  animation: fadeInPop 0.5s ease-out forwards;
+}
+
+.graph-data-callout::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  bottom: -12px;
+  left: 50%;
+    right: 40px;           /* ✅ pointer bhi right aligned */
+
+  transform: translateX(-50%);
+}
+
+/* Title */
+.callout-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.callout-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --- Tablet (≤ 991px) --- */
+@media (max-width: 991px) {
   .graph-data-callout {
-    width: 90%; /* Take more width on small screens */
-    left: 5%; /* Center it roughly */
-    right: 5%;
-    transform: translateX(0); /* Reset transform, rely on left/right for centering */
-    bottom: 5%;
+    left: auto;
+    right: 10px;    /* ✅ right edge ke andar fix */
+    bottom: 10%;
+    width: 240px;
     padding: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   .graph-data-callout::before {
-    left: 50%; /* Re-center triangle */
+    left: auto;
+    right: 30px;   /* ✅ pointer bhi right me */
+    transform: none;
   }
-  .callout-title {
-    font-size: 1.1rem;
+}
+
+/* --- Mobile (≤ 767px) --- */
+@media (max-width: 767px) {
+  .graph-data-callout {
+    position: relative;   /* ✅ ab absolute nahi */
+    width: 90%;
+    max-width: 100%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 20px auto 0;
+    text-align: center;
   }
-  .callout-description {
-    font-size: 0.8rem;
+  .graph-data-callout::before {
+    display: none;  /* ✅ hide pointer */
   }
 }
 
@@ -785,21 +791,7 @@ footer, .footer, .aura-footer {
   display: block;
 }
 
-.graph-data-callout {
-  position: absolute;
-  bottom: 70%;
-  right: 5%;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 280px;
-  z-index: 2;
-  opacity: 0;
-  transform: translateY(20px);
-  /* Fade up with a slight bounce at the end */
-  animation: fadeUpBounce 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards 0.7s; /* Delayed for dramatic effect */
-}
+
 
 @keyframes fadeUpBounce {
   0% {
@@ -817,15 +809,9 @@ footer, .footer, .aura-footer {
 }
 
 
-.callout-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
 
-.callout-description {
-  font-size: 0.9rem;
-  color: #666;
-}
+
+
 
 
 /* --- Responsive Adjustments --- */
@@ -888,15 +874,7 @@ footer, .footer, .aura-footer {
     animation: none; /* Disable floating animation */
   }
 
-  .graph-data-callout {
-    bottom: 5%; /* Adjust position for smaller screens */
-    right: 50%;
-    transform: translateX(50%); /* Center horizontally */
-    width: 90%; /* Wider on small screens */
-    padding: 1rem;
-    animation: none; /* Disable callout animation */
-    opacity: 1;
-  }
+
 }
 
 @media (max-width: 767.98px) { /* Small devices (phones) */

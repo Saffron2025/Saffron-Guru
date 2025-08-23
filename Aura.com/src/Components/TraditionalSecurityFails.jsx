@@ -8,7 +8,7 @@ const TraditionalSecurityFails = () => {
       <div className="traditional-fails-banner">
         <div className="fails-content-wrapper">
           
-          {/* ✅ Move Image to Left */}
+          {/* ✅ Image Left */}
           <div className="right-image">
             <img
               src="/Hero/TraditionalFails.WebP"
@@ -17,7 +17,7 @@ const TraditionalSecurityFails = () => {
             />
           </div>
 
-          {/* ✅ Content on the Right */}
+          {/* ✅ Content Right */}
           <div className="left-content">
             <h2 className="fails-heading">❌ Why Traditional Security Falls Short</h2>
 
