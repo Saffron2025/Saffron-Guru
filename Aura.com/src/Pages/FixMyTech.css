@@ -102,6 +102,7 @@
 /* Sections */
 .fix-section {
   background: #fff;
+  text-align: center;
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -114,10 +115,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.fix-section ol, .fix-section ul {
-  padding-left: 1.4rem;
-  line-height: 1.7;
+.fix-section ol,
+.fix-section ul {
+  display: inline-block;   /* ✅ center block banega */
+  text-align: left;        /* ✅ andar ka text left aligned hi rahega */
+  margin: 0 auto;
 }
+
 .note {
   margin-top: 1rem;
   font-size: 1rem;
