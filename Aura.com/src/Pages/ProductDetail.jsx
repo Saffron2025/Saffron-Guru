@@ -4,11 +4,12 @@ import AllSection from '../Components/AllSection';
 import { useParams, Link } from 'react-router-dom';
 import { Container, Button, Modal } from 'react-bootstrap';
 import { products } from '../data/productsData';
+import ReactMarkdown from 'react-markdown';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const product = products.find(p => p.id === Number(id));  // ✅ FIXED
+  const product = products.find(p => p.id === Number(id));
 
   const [mainImg, setMainImg] = useState(product?.img);
   const [zoomStyle, setZoomStyle] = useState({});
@@ -37,7 +38,7 @@ const ProductDetail = () => {
       <AppNavbar />
       <Container className="product-detail">
         <div className="detail-card">
-          {/* 🔹 Left Side: Image */}
+          {/* 🔹 Left Side Image */}
           <div className="detail-img-wrapper">
             <img
               src={mainImg}
@@ -73,7 +74,6 @@ const ProductDetail = () => {
             </Button>
             <br />
 
-            {/* ✅ Dynamic Back to Store */}
             <Link 
               to={product.id <= 10 ? "/microsoft-store" : "/internet-security"} 
               className="back-link"
@@ -83,14 +83,24 @@ const ProductDetail = () => {
           </div>
         </div>
 
-        {/* 🔹 Extra Section */}
+        {/* 🔹 Long Description Section */}
         <div className="detail-extra">
           <h2>📖 About {product.name}</h2>
-          <p>{product.longDesc}</p>
+          <div className="markdown-body">
+            <ReactMarkdown components={{
+              h2: ({node, ...props}) => <h2 className="md-heading" {...props} />,
+              h3: ({node, ...props}) => <h3 className="md-subheading" {...props} />,
+              ul: ({node, ...props}) => <ul className="md-list" {...props} />,
+              li: ({node, ...props}) => <li className="md-list-item" {...props} />,
+              p: ({node, ...props}) => <p className="md-paragraph" {...props} />
+            }}>
+              {product.longDesc}
+            </ReactMarkdown>
+          </div>
         </div>
       </Container>
 
-      {/* 🔹 Popup Modal */}
+      {/* 🔹 Contact Modal */}
       <Modal show={showPopup} onHide={() => setShowPopup(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>📞 Contact Us</Modal.Title>

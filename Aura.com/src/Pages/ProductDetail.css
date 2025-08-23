@@ -3,6 +3,115 @@
   font-family: 'Poppins', sans-serif;
   animation: fadePageIn 0.8s ease;
 }
+/* long description css */
+
+/* ====== Markdown Styling for Product Descriptions ====== */
+.markdown-body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #334155; /* slate-700 */
+}
+
+/* 🔹 Main Headings */
+.md-heading {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+.md-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+}
+
+/* 🔹 Subheadings */
+.md-subheading {
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+}
+.md-subheading::before {
+  content: "⭐";
+  font-size: 1.1rem;
+  color: #2563eb;
+  margin-right: 0.4rem;
+}
+
+/* 🔹 Paragraphs */
+.md-paragraph {
+  margin-top: 0.9rem;
+  font-size: 1.05rem;
+  color: #374151; /* slate-600 */
+  line-height: 1.7;
+  padding-left: 0.2rem;
+  transition: transform 0.2s ease;
+}
+.md-paragraph:hover {
+  transform: translateX(3px);
+}
+
+/* 🔹 Lists */
+.md-list {
+  margin: 1rem 0 1rem 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+.md-list-item {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+  color: #1f2937; /* slate-800 */
+  padding-left: 1.8rem;
+  position: relative;
+  line-height: 1.65;
+}
+.md-list-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: #10b981; /* emerald-500 */
+  font-size: 1rem;
+}
+
+/* 🔹 Highlighted Keywords */
+.md-highlight {
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* 🔹 Info Box (for tips/notes) */
+.md-infobox {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  border-left: 5px solid #2563eb;
+  font-size: 0.95rem;
+  color: #1e3a8a;
+  line-height: 1.6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
 
 /* 🌟 Main Card */
 .detail-card {

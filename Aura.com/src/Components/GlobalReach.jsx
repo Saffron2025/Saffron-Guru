@@ -51,7 +51,6 @@ const GlobalReach = () => {
       <Container className="text-center">
         <h2 className="global-heading">Serving the US and Canada</h2>
         <p className="global-subtext">
-          Protecting{" "}
           <span className="highlight">Over 100,000 Devices Secured.</span>
         </p>
 

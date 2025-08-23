@@ -160,3 +160,17 @@
   transform: translateX(6px);
   color: #000;
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .services-heading {
+    font-size: 1.2rem;
+  }
+  .services-list li {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.8rem;
+  }
+}
+
