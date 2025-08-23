@@ -431,93 +431,59 @@ footer, .footer, .aura-footer {
    Graph Data Callout (Responsive)
    ========================= */
 .graph-data-callout {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;     /* 🔥 Compact padding */
   position: absolute;
-  bottom: 15%;
-  right: 5%;              /* ✅ fixed: always stick to right side */
-  transform: translateX(0);
-  width: 280px;
-  max-width: 90%;      /* ✅ prevent overflow */
-  text-align: left;
-  z-index: 4;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 180px;           /* 🔥 Smaller width */
+  max-width: 75%;
+  text-align: center;
+  z-index: 3;
   animation: fadeInPop 0.5s ease-out forwards;
-}
-
-.graph-data-callout::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #fff;
-  bottom: -12px;
-  left: 50%;
-    right: 40px;           /* ✅ pointer bhi right aligned */
-
-  transform: translateX(-50%);
 }
 
 /* Title */
 .callout-title {
-  font-size: 1.2rem;
+  font-size: 0.95rem;      /* 🔥 Smaller title */
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  line-height: 1.3;
 }
 
 /* Description */
 .callout-description {
-  font-size: 0.9rem;
+  font-size: 0.75rem;      /* 🔥 Smaller description */
   color: #555;
-  line-height: 1.4;
+  line-height: 1.3;
   margin: 0;
 }
 
-/* --- Tablet (≤ 991px) --- */
+/* Tablet */
 @media (max-width: 991px) {
   .graph-data-callout {
-    left: auto;
-    right: 10px;    /* ✅ right edge ke andar fix */
-    bottom: 10%;
-    width: 240px;
-    padding: 18px;
+    width: 160px;
+    padding: 8px 12px;
   }
-  .graph-data-callout::before {
-    left: auto;
-    right: 30px;   /* ✅ pointer bhi right me */
-    transform: none;
-  }
+  .callout-title { font-size: 0.85rem; }
+  .callout-description { font-size: 0.7rem; }
 }
 
-/* --- Mobile (≤ 767px) --- */
-/* --- Mobile fix for 16B box --- */
+/* Mobile */
 @media (max-width: 767px) {
   .graph-data-callout {
-    position: absolute;      /* keep it inside graph */
-    top: 5%;                 /* 👈 upar le jao */
-    right: 50%;              /* center align */
-    transform: translateX(50%);
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 5;              /* 👈 year labels se upar */
+    width: 140px;
+    padding: 6px 10px;
+    top: 28%;
+    left: 45%;
   }
-
-  .graph-data-callout::before {
-    display: none;           /* mobile me pointer chhupa do */
-  }
-
-  /* Year line thoda neeche kar do */
-  .graph-year-line {
-    bottom: 5% !important;
-  }
+  .callout-title { font-size: 0.8rem; }
+  .callout-description { font-size: 0.65rem; }
 }
-
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */
 /* Ensure other sections also have appropriate responsive padding if not already defined */
