@@ -1,141 +1,56 @@
-/* ========== AURA NAVBAR STYLING ========== */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
-
-.navbar {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.container{
-   padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-.app-navbar-wrapper {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-
-
-/* AppNavbar.css */
+/* Navbar Base */
 .aura-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1050;
-
-  background: rgba(15, 23, 42, 0.95); /* or your existing background */
-  backdrop-filter: blur(15px);        /* optional: soft blur effect */
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-
   transition: all 0.4s ease;
-}
-
-
-
-/* === Layered Animated Background === */
-.aura-navbar::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background: radial-gradient(circle at 30% 30%, #101a2f, #0b1628);
-  animation: backgroundPulse 18s ease-in-out infinite alternate;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  opacity: 0.92;
-  transition: all 1s ease-in-out;
-}
-
-.aura-navbar::after {
-  content: '';
-  position: absolute;
-  inset: -20%;
-  z-index: -1;
-  background: linear-gradient(120deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.05) 100%);
-  transform: rotate(10deg) scale(1.2);
-  animation: waveGlow 8s ease-in-out infinite;
-  pointer-events: none;
-  opacity: 0.5;
-  filter: blur(8px);
-}
-
-/* === Keyframes === */
-@keyframes backgroundPulse {
-  0% {
-    background: radial-gradient(circle at 30% 30%, #101a2f, #0b1628);
-  }
-  50% {
-    background: radial-gradient(circle at 70% 70%, #1b2c45, #0b1628);
-  }
-  100% {
-    background: radial-gradient(circle at 30% 30%, #101a2f, #0b1628);
-  }
-}
-
-@keyframes waveGlow {
-  0% {
-    transform: rotate(10deg) scale(1.2);
-    opacity: 0.3;
-  }
-  50% {
-    transform: rotate(15deg) scale(1.25);
-    opacity: 0.6;
-  }
-  100% {
-    transform: rotate(10deg) scale(1.2);
-    opacity: 0.3;
-  }
-}
-
-@keyframes fadeInBlur {
-  0% {
-    opacity: 0;
-    filter: blur(8px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
 }
 
 .aura-navbar.fade-in-blur {
   animation: fadeInBlur 1s ease forwards;
   animation-delay: 0.2s;
 }
-
-/* === Brand === */
-.SaffronLogo-brand {
-  font-size: 1.65rem;
-  height: 100px;
-  width: 100px;
-  font-weight: 700;
-  color: #ffffff !important;
-  letter-spacing: 0.25em;
-  opacity: 0.95;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+@keyframes fadeInBlur {
+  from { opacity: 0; filter: blur(8px); }
+  to { opacity: 1; filter: blur(0); }
 }
 
-/* === Nav Links === */
+/* Logo */
+.SaffronLogo-brand {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+.saffronGuru-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.saffronGuru-logo:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Nav Links */
 .aura-nav-links .nav-link {
   color: #e0e6ed !important;
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0 1rem;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease;
   position: relative;
   padding-bottom: 4px;
 }
-
 .aura-nav-links .nav-link:hover {
-  color: #ffffff !important;
+  color: #fff !important;
 }
-
 .aura-nav-links .nav-link::after {
   content: '';
   position: absolute;
@@ -146,229 +61,91 @@
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   transition: width 0.3s ease-in-out;
 }
-
 .aura-nav-links .nav-link:hover::after {
   width: 100%;
 }
 
-/* === Auth Buttons Wrapper === */
+/* Auth Buttons */
 .aura-auth-buttons {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
-/* === Sign In (Glass Link) === */
 .aura-sign-in {
-  color: #e0e6ed !important;
-  font-size: 0.95rem;
-  font-weight: 400;
+  color: #00c3ff !important;
+  font-weight: 500;
   background: none;
   border: none;
-  position: relative;
-  transition: all 0.3s ease;
-  padding: 0.4rem 0.75rem;
   text-decoration: none !important;
-  overflow: hidden;
 }
-
-.aura-sign-in::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
 .aura-sign-in:hover {
-  color: #ffffff !important;
+  color: #fff !important;
 }
-
-.aura-sign-in:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-/* === Start Trial Button (Glow) === */
-.aura-start-trial-btn {
-  position: relative;
-  font-size: 0.95rem;
-  font-weight: 500;
-  border: 2px solid transparent;
-  color: #ffffff !important;
-  padding: 0.5rem 1.4rem;
-  border-radius: 30px;
-  background: linear-gradient(120deg, #6a11cb, #2575fc);
-  background-size: 200% 200%;
-  transition: all 0.4s ease;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.aura-start-trial-btn::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, #6a11cb, #2575fc, #6a11cb);
-  animation: auraButtonWave 6s linear infinite;
-  z-index: -1;
-  opacity: 0.15;
-  filter: blur(20px);
-}
-
-.aura-start-trial-btn:hover {
-  background-position: right center;
-  box-shadow: 0 0 20px rgba(106, 17, 203, 0.6);
-  transform: scale(1.04);
-}
-
-@keyframes auraButtonWave {
-  0% {
-    transform: translateX(0%) rotate(0deg);
-  }
-  50% {
-    transform: translateX(25%) rotate(5deg);
-  }
-  100% {
-    transform: translateX(0%) rotate(0deg);
-  }
-}
-
-/* === Responsive === */
-@media (max-width: 991.98px) {
-  .aura-navbar .navbar-collapse {
-    background-color: rgba(10, 22, 45, 0.95);
-    padding: 1rem;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-
-  .aura-nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .aura-nav-links .nav-link {
-    margin: 0.5rem 0;
-    width: 100%;
-  }
-
-  .aura-auth-buttons {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 10px;
-  }
-
-  .aura-sign-in,
-  .aura-start-trial-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.dropdown-menu {
-  z-index: 2000 !important;
-  background: #101f3c;
-  border-radius: 10px;
-  position: absolute !important; /* Ensures it's above */
-}
-
-.dropdown-item {
-  color: #00e0ff;
-  transition: all 0.3s ease;
-}
-.dropdown-item:hover {
-  background: #0a142b;
-  color: white;
-}
-
-.aura-auth-buttons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.aura-sign-in {
-  font-weight: 500;
-  color: #00c3ff;
-  text-decoration: none;
-}
-
 .aura-start-trial-btn {
   background: linear-gradient(90deg, #00c3ff, #0077ff);
-  color: white;
+  color: #fff !important;
   font-weight: 600;
   border: none;
   padding: 6px 16px;
   border-radius: 8px;
   transition: 0.3s ease;
 }
-
 .aura-start-trial-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.4);
 }
 
-
-.saffronGuru-logo {
-  height: 160px;
-  margin-top: -30px;
-  width: 150px;
-  margin-left: -25px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.saffronGuru-logo:hover {
-  transform: scale(1.05) rotate(-1deg);
-}
-
-
-/* ===== Custom Dropdown Styling ===== */
+/* Dropdown Styling */
 .custom-dropdown .dropdown-menu {
   background: linear-gradient(145deg, #0a0f24, #0c132c);
-  border-radius: 16px;
-  padding: 10px 0;
+  border-radius: 12px;
   border: 1px solid rgba(0, 255, 255, 0.1);
-  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.1);
-  animation: fadeDropdown 0.3s ease-in-out;
-  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.1);
 }
-
-.custom-dropdown .dropdown-menu .dropdown-item {
+.custom-dropdown .dropdown-item {
   color: #00e0ff;
-  padding: 10px 20px;
   font-weight: 500;
+  padding: 10px 20px;
   transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
 }
-
-.custom-dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-  color: #ffffff;
+.custom-dropdown .dropdown-item:hover {
+  background: rgba(0, 255, 255, 0.1);
+  color: #fff;
   transform: scale(1.03);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
-/* Smooth dropdown animation */
-@keyframes fadeDropdown {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
+/* ✅ Responsive Fix */
+@media (max-width: 1024px) {
+  .aura-navbar .navbar-collapse {
+    background: rgba(10, 22, 45, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .aura-nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem 0;
   }
+  .aura-nav-links .nav-link {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  .aura-auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .aura-sign-in, .aura-start-trial-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
