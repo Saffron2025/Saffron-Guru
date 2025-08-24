@@ -5,7 +5,7 @@ import "./ProtectionShowcase.css";
 const ProtectionShowcase = () => {
   const rootRef = useRef(null);
 
-  // Scroll reveal
+  // 🔹 Scroll reveal
   useEffect(() => {
     const el = rootRef.current;
     if (!el) return;
@@ -21,12 +21,29 @@ const ProtectionShowcase = () => {
     return () => io.disconnect();
   }, []);
 
+  // 🔹 Random floating glow dots
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el) return;
+
+    for (let i = 0; i < 12; i++) {
+      const dot = document.createElement("span");
+      dot.className = "glow-dot";
+      dot.style.top = `${Math.random() * 100}%`;
+      dot.style.left = `${Math.random() * 100}%`;
+      dot.style.animationDuration = `${8 + Math.random() * 6}s`;
+      dot.style.animationDelay = `${Math.random() * 5}s`;
+      el.appendChild(dot);
+    }
+  }, []);
+
   return (
     <section ref={rootRef} className="pshowcase-wrapper">
       {/* Hero Intro */}
       <div className="pshowcase-hero">
         <h1>
-          ✨ Secure Your World with <span className="highlight">DefendMePro™</span>
+          ✨ Secure Your World with{" "}
+          <span className="highlight">DefendMePro™</span>
         </h1>
         <p>
           <strong>Complete Digital Protection</strong> with{" "}
@@ -40,7 +57,8 @@ const ProtectionShowcase = () => {
           <div className="pshowcase-intro">
             <h3 className="kicker">🚫 Beyond Antivirus</h3>
             <p>
-              Antivirus Can’t Stop <span className="highlight">Scammers</span>.
+              Antivirus Can’t Stop{" "}
+              <span className="highlight">Scammers</span>.
               <br />
               <strong className="highlight">DefendMePro™ Protects You</strong>{" "}
               from <span className="highlight">Scams</span>,{" "}
@@ -71,36 +89,16 @@ const ProtectionShowcase = () => {
         {/* RIGHT SIDE */}
         <div className="pshowcase-right">
           <ul className="feature-list">
-            <li>
-              <Link to="/DefendPro?item=identity-theft">👤 Identity Theft</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=fraud-detection">⚠️ Fraud Detection</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=scam-protection">🚫 Scam Protection</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=scam-alerts">🔔 Scam Alerts</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=financial-security">💰 Financial Security</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=password-manager">🔑 Password Manager</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=antivirus">🖥 Device Security</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=vpn">🌐 VPN & Privacy</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=spam-call">📞 Spam Call Protection</Link>
-            </li>
-            <li>
-              <Link to="/DefendPro?item=human-support">👤 U.S. Based Support</Link>
-            </li>
+            <li><Link to="/DefendPro?item=identity-theft">👤 Identity Theft</Link></li>
+            <li><Link to="/DefendPro?item=fraud-detection">⚠️ Fraud Detection</Link></li>
+            <li><Link to="/DefendPro?item=scam-protection">🚫 Scam Protection</Link></li>
+            <li><Link to="/DefendPro?item=scam-alerts">🔔 Scam Alerts</Link></li>
+            <li><Link to="/DefendPro?item=financial-security">💰 Financial Security</Link></li>
+            <li><Link to="/DefendPro?item=password-manager">🔑 Password Manager</Link></li>
+            <li><Link to="/DefendPro?item=antivirus">🖥 Device Security</Link></li>
+            <li><Link to="/DefendPro?item=vpn">🌐 VPN & Privacy</Link></li>
+            <li><Link to="/DefendPro?item=spam-call">📞 Spam Call Protection</Link></li>
+            <li><Link to="/DefendPro?item=human-support">👤 U.S. Based Support</Link></li>
           </ul>
 
           <div className="cta">

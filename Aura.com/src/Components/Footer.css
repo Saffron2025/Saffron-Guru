@@ -1392,20 +1392,16 @@ footer, .footer, .aura-footer {
     max-width: 180px;
   }
 }
-
 .protection-shared-cta {
-  margin: 2rem auto;
-  padding: 1.5rem 1rem;
-  max-width: 950px;
+  margin-top: 5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #85878c, #f1f3f7, #f2f6f7);
+  color: #fff;
+  border-radius: 18px;
   text-align: center;
-  border-radius: 0;              /* ✅ container look hata diya */
-  background: none;              /* ✅ no container bg */
-  border: none;                  /* ✅ no border */
-  box-shadow: none;              /* ✅ no shadow */
-  position: relative;
-  animation: ctaFadeIn 1s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: fadeUp 1s ease;
 }
-
 .cta-line {
   display: flex;
   align-items: center;
