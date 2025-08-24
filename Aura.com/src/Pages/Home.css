@@ -154,8 +154,9 @@
 .aura-hero-section {
   position: relative;
   min-height: 100vh;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem 6rem; /* desktop ke liye */
   display: flex;
+  margin-top: 80px;
   align-items: center;
   font-family: 'Outfit', sans-serif;
   background: linear-gradient(135deg, #0a0f1c, #101d3d, #1e3a8a);
@@ -326,6 +327,7 @@
   .aura-iphone-mockup { max-width: 280px; }
   .aura-mockup-glow-ring { width: 200px; height: 200px; }
   .trust-card, .trust-link { border-radius: 14px; padding: 1rem; }
+
 }
 
 /* Container & basics */
