@@ -1,0 +1,17 @@
+section {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+}
+
+/* Jab viewport me aaye */
+section.visible {
+  animation: bounceIn 0.9s ease forwards;
+}
+
+/* Bounce keyframes */
+@keyframes bounceIn {
+  0%   { transform: translateY(80px) scale(0.95); opacity: 0; }
+  60%  { transform: translateY(-20px) scale(1.05); opacity: 1; }
+  80%  { transform: translateY(8px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
