@@ -9,16 +9,18 @@ const app = express();
 
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",          // dev testing
-      "https://www.saffronguru.com",    // ✅ your live domain
-      "https://saffronguru.com"         // ✅ root domain without www
-    ],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: [
+    "http://localhost:5173",       // local dev
+    "https://www.saffronguru.com", // ✅ live site (www)
+    "https://saffronguru.com"      // ✅ root domain
+  ],
+  credentials: true,
+}));
+
+// ✅ Preflight OPTIONS requests handle karo
+app.options("*", cors());
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
