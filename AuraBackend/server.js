@@ -9,11 +9,16 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://saffron-guru.vercel.app',
-  credentials: true
-}));
-
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",          // dev testing
+      "https://www.saffronguru.com",    // ✅ your live domain
+      "https://saffronguru.com"         // ✅ root domain without www
+    ],
+    credentials: true,
+  })
+);
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
