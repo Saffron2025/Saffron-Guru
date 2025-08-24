@@ -1,9 +1,12 @@
 // src/App.js
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import OneSignal from "react-onesignal";   // ✅ OneSignal import
 import keepAlive from './utils/keepalive';
 import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
+
+// 📄 Pages & Components
 import Home from './Pages/Home';
 import Feature from './Pages/Feature';
 import DefendPro from './Pages/DefendPro';
@@ -58,13 +61,21 @@ const ScrollToHashElement = () => {
 const App = () => {
   useEffect(() => {
     keepAlive();
+
+    // ✅ OneSignal init
+    OneSignal.init({
+      appId: "YOUR_ONESIGNAL_APP_ID",  // ← yaha apna OneSignal App ID dalna
+      notifyButton: {
+        enable: true, // ✅ Allow/Block prompt dikhana
+      },
+    });
   }, []);
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
       <Router>
         <ScrollToTop />
-        <ScrollToHashElement /> {/* ✅ important for #videos-section */}
+        <ScrollToHashElement />
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Layout><Home /></Layout>} />
