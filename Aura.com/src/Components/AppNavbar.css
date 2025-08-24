@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Navbar Base */
 .aura-navbar {
   position: fixed;
   top: 0;
@@ -22,7 +21,6 @@
   to { opacity: 1; filter: blur(0); }
 }
 
-/* Logo */
 .SaffronLogo-brand {
   font-size: 1.65rem;
   font-weight: 700;
@@ -38,7 +36,6 @@
   transform: scale(1.05) rotate(-1deg);
 }
 
-/* Nav Links */
 .aura-nav-links .nav-link {
   color: #e0e6ed !important;
   font-size: 0.95rem;
@@ -65,7 +62,6 @@
   width: 100%;
 }
 
-/* Auth Buttons */
 .aura-auth-buttons {
   display: flex;
   align-items: center;
@@ -95,7 +91,6 @@
   box-shadow: 0 0 15px rgba(0, 195, 255, 0.4);
 }
 
-/* Dropdown Styling */
 .custom-dropdown .dropdown-menu {
   background: linear-gradient(145deg, #0a0f24, #0c132c);
   border-radius: 12px;
@@ -114,7 +109,6 @@
   transform: scale(1.03);
 }
 
-/* ✅ Responsive Fix */
 @media (max-width: 1024px) {
   .aura-navbar .navbar-collapse {
     background: rgba(10, 22, 45, 0.95);
@@ -146,7 +140,7 @@
 .navbar-toggler {
   border: none !important;
   outline: none !important;
-  z-index: 2000; /* ensure visible above blur bg */
+  z-index: 2000; 
 }
 
 .navbar-toggler-icon {
@@ -159,4 +153,193 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+
+/* 🌌 Navbar Base */
+.aura-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  font-family: "Outfit", sans-serif;
+}
+
+/* ✅ Shrink effect on scroll */
+.aura-navbar.scrolled {
+  padding: 0.3rem 0;
+  background: rgba(10, 15, 30, 0.96);
+  box-shadow: 0 6px 22px rgba(0, 255, 255, 0.12);
+}
+
+/* ✨ Fade-in effect */
+.aura-navbar.fade-in-blur {
+  animation: fadeInBlur 0.9s ease forwards;
+}
+@keyframes fadeInBlur {
+  from { opacity: 0; filter: blur(10px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+/* 🌟 Logo */
+.SaffronLogo-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.4);
+}
+.saffronGuru-logo {
+  height: 58px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.saffronGuru-logo:hover {
+  transform: scale(1.07) rotate(-2deg);
+  filter: drop-shadow(0 0 12px rgba(0,255,255,0.6));
+}
+
+/* 🌐 Nav Links */
+.aura-nav-links .nav-link {
+  color: #dbeafe !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 1.1rem;
+  transition: all 0.25s ease;
+  position: relative;
+  padding-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+.aura-nav-links .nav-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 6px rgba(0,255,255,0.5);
+}
+.aura-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00c3ff, #0077ff, #22d3ee);
+  transition: width 0.35s ease;
+}
+.aura-nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* 🔹 Auth Buttons */
+.aura-auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.aura-sign-in {
+  color: #38bdf8 !important;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+.aura-sign-in:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px rgba(0,255,255,0.4);
+}
+.aura-start-trial-btn {
+  background: linear-gradient(90deg, #00c3ff, #0077ff, #22d3ee);
+  color: #fff !important;
+  font-weight: 600;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+.aura-start-trial-btn:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 0 18px rgba(0,195,255,0.5);
+}
+
+/* 🔽 Dropdown Styling */
+.custom-dropdown .dropdown-menu {
+  background: linear-gradient(145deg, #0a1124, #0d1630);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.12);
+  padding: 0.4rem 0;
+  overflow: hidden;
+}
+.custom-dropdown .dropdown-item {
+  color: #9ae6ff;
+  font-weight: 500;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.custom-dropdown .dropdown-item:hover {
+  background: rgba(0, 255, 255, 0.08);
+  color: #fff;
+  transform: translateX(6px);
+}
+.custom-dropdown .dropdown-item::before {
+  content: '➜';
+  position: absolute;
+  left: 6px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #00e0ff;
+}
+.custom-dropdown .dropdown-item:hover::before {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .aura-navbar .navbar-collapse {
+    background: rgba(10, 20, 40, 0.96);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .aura-nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .aura-nav-links .nav-link {
+    margin: 0.6rem 0;
+    width: 100%;
+  }
+  .aura-auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .aura-sign-in, .aura-start-trial-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🍔 Toggler */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 34px !important;
+  height: 34px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
 
