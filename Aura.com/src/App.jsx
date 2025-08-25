@@ -65,7 +65,7 @@ const App = () => {
 
     // ✅ OneSignal init
     OneSignal.init({
-      appId: "YOUR_ONESIGNAL_APP_ID",  // ← yaha apna OneSignal App ID dalna
+      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",  // ← yaha apna OneSignal App ID dalna
       notifyButton: {
         enable: true, // ✅ Allow/Block prompt dikhana
       },
