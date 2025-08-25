@@ -158,6 +158,10 @@ router.put('/change-password', verifyToken, async (req, res) => {
   }
 });
 
+router.get('/ping', (req, res) => {
+  res.send("pong ✅ backend alive");
+})
+
 
 
 module.exports = router;
