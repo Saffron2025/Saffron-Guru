@@ -195,12 +195,19 @@
   letter-spacing: 0.5px;
   text-shadow: 0 0 10px rgba(0,255,255,0.4);
 }
-.saffronGuru-logo {
-  height: 58px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
+.logo-wrapper {
+  height: 60px;       /* Navbar ki height ko lock karo */
+  display: flex;
+  align-items: center;
 }
+
+.saffronGuru-logo {
+  height: 100px;       /* wrapper ke andar full occupy kare */
+  width: auto;
+  transform: scale(1.5);
+}
+
+
 .saffronGuru-logo:hover {
   transform: scale(1.07) rotate(-2deg);
   filter: drop-shadow(0 0 12px rgba(0,255,255,0.6));

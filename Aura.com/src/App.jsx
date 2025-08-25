@@ -68,6 +68,8 @@ useEffect(() => {
     // ✅ init ke turant baad popup force karo
     OneSignal.Slidedown.promptPush();
   });
+    keepAlive();
+
 }, []);
 
 

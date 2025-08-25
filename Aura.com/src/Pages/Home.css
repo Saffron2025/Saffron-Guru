@@ -170,6 +170,27 @@
   100% { background-position: 0% 50%; }
 }
 
+.custom-chat-btn {
+  position: fixed;
+  bottom: 20px;       /* same height as Jivo bubble */
+  right: 120px;       /* 👈 Jivo ke bubble ke left */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999999;    /* sabse upar rahe */
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-chat-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.6);
+}
+
+
 /* Floating aurora blob effect */
 .aura-hero-section::before {
   content: '';
