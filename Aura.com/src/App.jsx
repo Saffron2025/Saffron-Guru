@@ -60,21 +60,18 @@ const ScrollToHashElement = () => {
 
 const App = () => {
 
-  useEffect(() => {
+useEffect(() => {
   keepAlive();
 
-  // ✅ OneSignal init
   OneSignal.init({
     appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-    notifyButton: {
-      enable: true,
-    },
-    allowLocalhostAsSecureOrigin: true, // agar localhost test karna hai
+    notifyButton: { enable: true },
   }).then(() => {
     // ✅ Init ke turant baad force karo prompt
-    OneSignal.showSlidedownPrompt();
+    OneSignal.Slidedown.promptPush();
   });
 }, []);
+
 
 
   return (
