@@ -7,6 +7,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [agreeToUpdates, setAgreeToUpdates] = useState(false);
+  const [loading, setLoading] = useState(false); // ✅ Loader state
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -20,17 +21,29 @@ const Signup = () => {
       return;
     }
 
+    setLoading(true); // ✅ loader start
+
     try {
       await axios.post('https://saffron-guru-backend.onrender.com/api/auth/send-otp', form);
       alert("✅ Signup successful!");
       navigate('/verify-otp', { state: { email: form.email } });
     } catch (err) {
       alert(err.response?.data?.msg || "Signup error");
+    } finally {
+      setLoading(false); // ✅ loader stop
     }
   };
 
   return (
     <div className="signup-wrapper">
+      {/* 🔹 Overlay Loader */}
+      {loading && (
+        <div className="overlay-loader">
+          <div className="spinner"></div>
+          <p>Processing your signup...</p>
+        </div>
+      )}
+
       <form className="signup-form" onSubmit={handleSubmit}>
         <h2 className="signup-heading">Create Your Account</h2>
 
@@ -71,7 +84,9 @@ const Signup = () => {
           </label>
         </div>
 
-        <button type="submit" className="signup-btn">Register</button>
+        <button type="submit" className="signup-btn" disabled={loading}>
+          {loading ? "⏳ Registering..." : "Register"}
+        </button>
 
         <div className="form-switch-link">
           Already registered? <span onClick={() => navigate('/login')}>Login here</span>

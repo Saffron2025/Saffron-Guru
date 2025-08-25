@@ -8,61 +8,61 @@ const Login = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: '', password: '' });
   const [turnstileToken, setTurnstileToken] = useState(null);
+  const [loading, setLoading] = useState(false); // ✅ Loader state
   const captchaRef = useRef(null);
 
   // Turnstile CAPTCHA rendering
-useEffect(() => {
-  const interval = setInterval(() => {
-    if (window.turnstile && captchaRef.current && !captchaRef.current.hasChildNodes()) {
-      window.turnstile.render(captchaRef.current, {
-        sitekey: '0x4AAAAAABufeUdz9WpnfFPE',
-        callback: (token) => setTurnstileToken(token),
-        theme: 'light', // or 'dark'
-        'refresh-expired': 'auto',
-        'retry': 'auto',
-        'response-field': true,
-        'execution': 'render',
-        'action': 'login',
-        'language': 'auto',
-        'data-mode': 'interaction-only' // ✅ Forces manual interaction
-      });
-      clearInterval(interval);
-    }
-  }, 300);
-}, []);
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window.turnstile && captchaRef.current && !captchaRef.current.hasChildNodes()) {
+        window.turnstile.render(captchaRef.current, {
+          sitekey: '0x4AAAAAABufeUdz9WpnfFPE',
+          callback: (token) => setTurnstileToken(token),
+          theme: 'light',
+          'refresh-expired': 'auto',
+          'retry': 'auto',
+          'response-field': true,
+          'execution': 'render',
+          'action': 'login',
+          'language': 'auto',
+          'data-mode': 'interaction-only'
+        });
+        clearInterval(interval);
+      }
+    }, 300);
+  }, []);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (!turnstileToken) {
-    alert('❌ Please complete the CAPTCHA.');
-    return;
-  }
+    if (!turnstileToken) {
+      alert('❌ Please complete the CAPTCHA.');
+      return;
+    }
 
-  try {
-    const res = await axios.post('https://saffron-guru-backend.onrender.com/api/auth/login', {
-      ...form,
-      turnstileToken,
-    });
+    setLoading(true); // ✅ Loader ON
 
-    // ✅ Save token
-    localStorage.setItem('authToken', res.data.token);
+    try {
+      const res = await axios.post('https://saffron-guru-backend.onrender.com/api/auth/login', {
+        ...form,
+        turnstileToken,
+      });
 
-    // ✅ Save user info (name & email from DB)
-    localStorage.setItem('saffronUser', JSON.stringify(res.data.user));
+      localStorage.setItem('authToken', res.data.token);
+      localStorage.setItem('saffronUser', JSON.stringify(res.data.user));
 
-    alert(`✅ Welcome ${res.data.user.name}`);
-    navigate('/home');
-  } catch (err) {
-    alert(err.response?.data?.msg || 'Login error');
-  }
-};
-
+      alert(`✅ Welcome ${res.data.user.name}`);
+      navigate('/home');
+    } catch (err) {
+      alert(err.response?.data?.msg || 'Login error');
+    } finally {
+      setLoading(false); // ✅ Loader OFF
+    }
+  };
 
   return (
     <div className="login-wrapper">
@@ -92,7 +92,11 @@ useEffect(() => {
         {/* Cloudflare CAPTCHA */}
         <div ref={captchaRef} className="cf-turnstile" style={{ marginBottom: '1rem' }}></div>
 
-        <button type="submit" className="login-submit-btn">Login</button>
+        <button type="submit" className="login-submit-btn" disabled={loading}>
+          {loading ? "⏳ Logging in..." : "Login"}
+        </button>
+
+        {loading && <div className="loader"></div>} {/* ✅ Loader UI */}
 
         <div className="form-switch-link">
           Don't have an account?{' '}
