@@ -2,13 +2,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import './Login.css'; // ✅ Aapka CSS (isme loader CSS bhi add karna hoga)
 
 const Login = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: '', password: '' });
   const [turnstileToken, setTurnstileToken] = useState(null);
-  const [loading, setLoading] = useState(false); // ✅ Loader state
+  const [loading, setLoading] = useState(false);
   const captchaRef = useRef(null);
 
   // Turnstile CAPTCHA rendering
@@ -66,6 +66,14 @@ const Login = () => {
 
   return (
     <div className="login-wrapper">
+      {/* 🔹 Overlay Loader */}
+      {loading && (
+        <div className="overlay-loader">
+          <div className="spinner"></div>
+          <p>Logging you in...</p>
+        </div>
+      )}
+
       <form className="login-form-glass" onSubmit={handleSubmit}>
         <h2 className="login-heading">🚀 Secure Login</h2>
 
@@ -95,8 +103,6 @@ const Login = () => {
         <button type="submit" className="login-submit-btn" disabled={loading}>
           {loading ? "⏳ Logging in..." : "Login"}
         </button>
-
-        {loading && <div className="loader"></div>} {/* ✅ Loader UI */}
 
         <div className="form-switch-link">
           Don't have an account?{' '}

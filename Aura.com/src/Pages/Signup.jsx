@@ -1,13 +1,14 @@
+// src/Pages/Signup.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Signup.css';
+import './Signup.css'; // ✅ Aapka CSS (isme loader CSS bhi add karna hoga)
 
 const Signup = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [agreeToUpdates, setAgreeToUpdates] = useState(false);
-  const [loading, setLoading] = useState(false); // ✅ Loader state
+  const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
