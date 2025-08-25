@@ -61,13 +61,11 @@ const ScrollToHashElement = () => {
 const App = () => {
 
 useEffect(() => {
-  keepAlive();
-
   OneSignal.init({
     appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
     notifyButton: { enable: true },
   }).then(() => {
-    // ✅ Init ke turant baad force karo prompt
+    // ✅ init ke turant baad popup force karo
     OneSignal.Slidedown.promptPush();
   });
 }, []);
