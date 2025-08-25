@@ -25,8 +25,9 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
-
-
+app.get('/ping', (req, res) => {
+  res.send("pong ✅ backend alive");
+})
 app.use('/api/auth', authRoutes);
 
 app.get('/', (req, res) => res.send('Backend is running!'));
