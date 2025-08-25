@@ -159,10 +159,6 @@ router.put('/change-password', verifyToken, async (req, res) => {
 });
 
 
-// server.js
-router.get("/ping", (req, res) => {
-  res.send("pong ✅ Saffron Guru backend is alive");
-});
 
 
 module.exports = router;
