@@ -25,13 +25,6 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
-
-  // server.js
-app.get("/ping", (req, res) => {
-  res.send("pong ✅ Saffron Guru backend is alive");
-});
-
-
 app.use('/api/auth', authRoutes);
 
 app.get('/', (req, res) => res.send('Backend is running!'));
