@@ -27,7 +27,7 @@ const AppNavbar = () => {
       <Container>
         <Navbar.Brand as={Link} to="/" className="SaffronLogo-brand">
 <div className="logo-wrapper">
-    <img src="/Products/SaffronGuruLogo.png" alt="Aura Logo" className="saffronGuru-logo" />
+    <img src="/Products/SaffronGuruLogo.avif" alt="Aura Logo" className="saffronGuru-logo" />
   </div>
         </Navbar.Brand>
 
