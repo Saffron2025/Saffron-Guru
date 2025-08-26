@@ -54,7 +54,7 @@ const Hero = () => {
               {/* <div className="aura-mobile-app-container float-in"> */}
                 <div className="aura-mockup-glow-ring pulse-ring"></div>
                 <img
-                  src="/Hero/Header Banner Img.png"
+                  src="/Hero/Header Banner Img.avif"
                   alt="App Preview"
                   className="aura-iphone-mockup hover-tilt"
                 />
