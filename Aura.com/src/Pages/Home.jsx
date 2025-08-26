@@ -51,14 +51,14 @@ const Hero = () => {
               </p>
             </Col>
             <Col md={6} className="aura-hero-right-col d-flex justify-content-center">
-              <div className="aura-mobile-app-container float-in">
+              {/* <div className="aura-mobile-app-container float-in"> */}
                 <div className="aura-mockup-glow-ring pulse-ring"></div>
                 <img
-                  src="/Hero/Header Banner Img.WebP"
+                  src="/Hero/Header Banner Img.webp"
                   alt="App Preview"
                   className="aura-iphone-mockup hover-tilt"
                 />
-              </div>
+              {/* </div> */}
             </Col>
           </Row>
         </Container>
