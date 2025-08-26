@@ -7,6 +7,14 @@
   text-align: center;
 }
 
+.video-title {
+  margin-bottom: 6px;       /* ✅ title upar */
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
 .video-heading {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.8rem;
@@ -70,6 +78,28 @@
   overflow: hidden;
   box-shadow: 0 0 10px #00bcd4aa;
   background: #000;
+  position: relative;   /* ✅ required for overlay */
+}
+
+.video-overlay-title {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* ✅ semi-transparent strip */
+  z-index: 2;
+}
+
+.video-wrapper iframe,
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 
 /* ⬅️➡️ Nav Buttons */

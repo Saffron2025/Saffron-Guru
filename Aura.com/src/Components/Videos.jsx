@@ -2,16 +2,18 @@ import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Videos.css';
 
-const videoIds = [
-  'B3TRW0vQ-iY',
-  'lB-l2pfJJbo',
-  'u5l_PgazD-Q',
-  '5fCDxqYR3BM',
-  'UVM5d1zuZKM',
-  'rcEQ8VQkgLQ',
-  'l5Xi7UFYnas',
+// 🎥 Videos with Headlines
+const videos = [
+  { id: 'B3TRW0vQ-iY', title: 'FBI: How Scammers Target Seniors' },
+  { id: 'lB-l2pfJJbo', title: 'Phone Call Scam Explained' },
+  { id: 'u5l_PgazD-Q', title: 'Elder Fraud Investigation Report' },
+  { id: '5fCDxqYR3BM', title: 'Romance Scam Victim Story' },
+  { id: 'UVM5d1zuZKM', title: 'Lottery & Prize Scam Breakdown' },
+  { id: 'rcEQ8VQkgLQ', title: 'Phishing Emails and Identity Theft' },
+  { id: 'l5Xi7UFYnas', title: 'Tech Support Scam Real Case' },
 ];
 
+// 📰 News Links (separate bar below videos)
 const newsLinks = [
   { icon: '/Hero/FoxNews.WebP', label: 'Fox: Social Security Scam', url: '/Fox' },
   { icon: '/Hero/CBS.WebP', label: 'CBS: Eagan Couple Nearly Scammed', url: '/CBS' },
@@ -54,31 +56,38 @@ const Videos = () => {
           </button>
 
           <div className="slider-wrapper" ref={sliderRef}>
-            {videoIds.map((id, index) => (
-              <div className="video-wrapper" key={index}>
-                {activeVideo === id ? (
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={`https://www.youtube.com/embed/${id}?autoplay=1`}
-                    title={`YouTube Video ${index}`}
-                    frameBorder="0"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                ) : (
-                  <div
-                    className="video-thumbnail"
-                    onClick={() => setActiveVideo(id)}
-                  >
-                    <img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt="Video thumbnail" />
-                    <div className="play-btn">▶</div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+  {videos.map((video, index) => (
+    <div className="video-wrapper" key={index}>
+      {/* ✅ Title overlay on top of video */}
+      <div className="video-overlay-title">{video.title}</div>
+
+      {activeVideo === video.id ? (
+        <iframe
+          width="100%"
+          height="100%"
+          src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
+          title={video.title}
+          frameBorder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <div
+          className="video-thumbnail"
+          onClick={() => setActiveVideo(video.id)}
+        >
+          <img
+            src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+            alt={video.title}
+          />
+          <div className="play-btn">▶</div>
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
 
           <button className="nav-btn right-btn" onClick={scrollRight}>
             &#8594;
