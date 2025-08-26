@@ -205,7 +205,7 @@ const Hero = () => {
         </div>
 
         <div className="feature-bottom">
-          <p className="feature-note">Aura actively detects threats in real-time across your devices.</p>
+          <p className="feature-note">Saffron Guru actively detects threats in real-time across your devices.</p>
           <button className="feature-button">Explore Protection Plans</button>
         </div>
       </section>
