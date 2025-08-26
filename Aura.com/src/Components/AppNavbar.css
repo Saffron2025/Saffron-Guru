@@ -202,7 +202,7 @@
 }
 
 .saffronGuru-logo {
-  height: 100px;       /* wrapper ke andar full occupy kare */
+  height: 50px;       /* wrapper ke andar full occupy kare */
   width: auto;
   transform: scale(1.5);
 }
