@@ -11,6 +11,22 @@
   font-family: 'Outfit', system-ui, sans-serif;
 }
 
+.global-reach-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 90deg, #00e0ff33, #ff00c833, transparent 50%);
+  filter: blur(100px);
+  opacity: 0.25;
+  animation: rotateAurora 20s linear infinite;
+  z-index: -1;
+}
+@keyframes rotateAurora {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 /* Background blobs */
 .global-bg-blobs::before,
 .global-bg-blobs::after {
@@ -45,8 +61,16 @@
   font-weight: 800;
   font-size: clamp(1.8rem, 2.6vw, 2.4rem);
   letter-spacing: .4px;
-  text-shadow: 0 4px 30px rgba(81,225,255,.35);
+  background: linear-gradient(90deg, #00e0ff, #7cffc4, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGlow 6s ease infinite;
 }
+@keyframes textGlow {
+  0%,100% { text-shadow: 0 0 15px #00e0ff66; }
+  50% { text-shadow: 0 0 25px #ff00c888; }
+}
+
 
 .global-subtext {
   color: #a7bed9;
@@ -68,8 +92,8 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .map-wrapper:hover {
-  transform: scale(1.015);
-  box-shadow: 0 0 50px rgba(81,225,255,0.25), 0 0 100px rgba(81,225,255,0.2);
+  transform: scale(1.02) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 20px 60px rgba(0, 224, 255, 0.3), 0 0 120px rgba(255, 0, 200, 0.2);
 }
 
 /* Geography shapes */
@@ -86,6 +110,21 @@
   opacity: .95;
   filter: drop-shadow(0 0 12px rgba(81,225,255,.9));
 }
+
+.dot::after {
+  content: "";
+  position: absolute;
+  width: 12px; height: 12px;
+  border: 2px solid #8af5ff;
+  border-radius: 50%;
+  animation: ripple 2s infinite;
+  transform: translate(-50%, -50%);
+}
+@keyframes ripple {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
 .dot-pulse {
   animation: pulse 2.2s ease-in-out infinite;
 }
@@ -126,9 +165,12 @@
   white-space: nowrap;
   backdrop-filter: blur(8px) saturate(1.4);
   box-shadow: 0 0 15px rgba(81,225,255,0.35);
-  animation: tooltipFade 0.25s ease forwards;
+  animation: tooltipFade 0.25s ease forwards, tooltipFloat 3s ease-in-out infinite;
+
 }
-@keyframes tooltipFade {
-  from { opacity: 0; transform: translate(-50%, -90%); }
-  to { opacity: 1; transform: translate(-50%, -100%); }
+@keyframes tooltipFloat {
+  0%,100% { transform: translate(-50%, -100%) translateY(0); }
+  50% { transform: translate(-50%, -100%) translateY(-4px); }
 }
+
+
