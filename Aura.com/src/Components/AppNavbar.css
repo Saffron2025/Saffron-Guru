@@ -171,6 +171,21 @@
   font-family: "Outfit", sans-serif;
 }
 
+.aura-navbar::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg, #00e0ff, #0077ff, #ff00c8);
+  background-size: 300% 100%;
+  animation: glowLine 6s linear infinite;
+}
+@keyframes glowLine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+
 /* ✅ Shrink effect on scroll */
 .aura-navbar.scrolled {
   padding: 0.3rem 0;
@@ -205,12 +220,19 @@
   height: 50px;       /* wrapper ke andar full occupy kare */
   width: auto;
   transform: scale(1.5);
+    animation: logoPulse 3s infinite ease-in-out;
+
 }
 
 
 .saffronGuru-logo:hover {
   transform: scale(1.07) rotate(-2deg);
   filter: drop-shadow(0 0 12px rgba(0,255,255,0.6));
+}
+
+@keyframes logoPulse {
+  0%,100% { filter: drop-shadow(0 0 4px rgba(0,255,255,0.3)); }
+  50% { filter: drop-shadow(0 0 14px rgba(0,255,255,0.7)); }
 }
 
 /* 🌐 Nav Links */
@@ -225,8 +247,9 @@
   letter-spacing: 0.3px;
 }
 .aura-nav-links .nav-link:hover {
-  color: #fff !important;
-  text-shadow: 0 0 6px rgba(0,255,255,0.5);
+  color: #00e0ff !important;
+  text-shadow: 0 0 12px #00e0ff, 0 0 24px #0077ff;
+  transform: scale(1.08);
 }
 .aura-nav-links .nav-link::after {
   content: '';
@@ -278,6 +301,8 @@
 .custom-dropdown .dropdown-menu {
   background: linear-gradient(145deg, #0a1124, #0d1630);
   border-radius: 12px;
+    transform: perspective(600px) rotateX(0deg);
+
   border: 1px solid rgba(0, 255, 255, 0.15);
   box-shadow: 0 15px 40px rgba(0, 255, 255, 0.12);
   padding: 0.4rem 0;
