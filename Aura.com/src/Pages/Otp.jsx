@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './Otp.css'; // Optional custom styling
+import './Otp.css'; // ✅ isme loader CSS bhi add karna hoga
 
 const OtpVerify = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const OtpVerify = () => {
     if (!email) return alert('Email not found. Go back to signup.');
 
     try {
-      setLoading(true);
+      setLoading(true); // ✅ Loader ON
       const res = await axios.post('https://saffron-guru-backend.onrender.com/api/auth/verify-otp', {
         email,
         otp,
@@ -29,12 +29,20 @@ const OtpVerify = () => {
     } catch (err) {
       alert(err.response?.data?.msg || 'Invalid OTP');
     } finally {
-      setLoading(false);
+      setLoading(false); // ✅ Loader OFF
     }
   };
 
   return (
     <div className="otp-wrapper">
+      {/* 🔹 Overlay Loader */}
+      {loading && (
+        <div className="overlay-loader">
+          <div className="spinner"></div>
+          <p>Verifying OTP...</p>
+        </div>
+      )}
+
       <form className="otp-form" onSubmit={handleVerify}>
         <h2 className="otp-heading">Verify OTP</h2>
 
