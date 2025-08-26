@@ -34,6 +34,8 @@ const Hero = () => {
     <>
       {/* HERO SECTION */}
       <section className="aura-hero-section d-flex align-items-center">
+        <div className="wing wing-left"></div>
+  <div className="wing wing-right"></div>
         <Container>
           <Row className="align-items-center">
             <Col md={6} className="aura-hero-left-col">

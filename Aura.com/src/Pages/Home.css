@@ -170,6 +170,46 @@
   100% { background-position: 0% 50%; }
 }
 
+/* wings css */
+
+.aura-hero-section {
+  position: relative;
+  background: #0b1220;  /* dark bg jaisa screenshot */
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+/* Common wing styles */
+.wing {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 280px;   /* adjust size */
+  opacity: 0.3;   /* halka transparent */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.wing-left {
+  left: 0;
+  background-image: url('/Hero/wing-left.svg'); /* apna wing image */
+  background-position: left center;
+}
+
+.wing-right {
+  right: 0;
+  background-image: url('/Hero/wing-right.svg');
+  background-position: right center;
+}
+
+/* ✅ Content hamesha upar dikhe */
+.aura-hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+
 .custom-chat-btn {
   position: fixed;
   bottom: 20px;       /* same height as Jivo bubble */
