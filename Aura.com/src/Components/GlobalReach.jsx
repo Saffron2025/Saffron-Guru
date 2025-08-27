@@ -71,7 +71,8 @@ const GlobalReach = () => {
             <ZoomableGroup
               center={[-95, 55]} // roughly center of US & Canada
               zoom={1} // 1 = full view, adjust if needed
-              disablePanning // prevent manual move
+              minZoom={1}
+              maxZoom={1}   // 👈 isse zoom & pan disable ho jaayega
             >
               <Geographies geography={WORLD_GEOJSON}>
                 {({ geographies }) => {

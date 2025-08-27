@@ -1,7 +1,7 @@
-// src/App.js
+// src/App.jsx
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import OneSignal from "react-onesignal";   // ✅ OneSignal import
+import OneSignal from 'react-onesignal';                 // ✅ OneSignal import
 import keepAlive from './utils/keepalive';
 import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
@@ -45,34 +45,36 @@ import ProductDetail from './Pages/ProductDetail';
 // ✅ helper to scroll to hash ids
 const ScrollToHashElement = () => {
   const { hash } = useLocation();
-
   useEffect(() => {
     if (hash) {
       const el = document.getElementById(hash.replace('#', ''));
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
     }
   }, [hash]);
-
   return null;
 };
 
 const App = () => {
-
-useEffect(() => {
-  OneSignal.init({
-    appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-    notifyButton: { enable: true },
-  }).then(() => {
-    // ✅ init ke turant baad popup force karo
-    OneSignal.Slidedown.promptPush();
-  });
+  useEffect(() => {
+    // backend keep-alive
     keepAlive();
 
-}, []);
+    // ✅ OneSignal initialization
+    OneSignal.init({
+      appId: 'YOUR_ONESIGNAL_APP_ID',   // 👈 apna App ID yaha daalo
+      notifyButton: { enable: true },   // bell icon show karega
+      allowLocalhostAsSecureOrigin: true, // localhost par bhi chale
+    }).then(() => {
+      if (typeof Notification !== 'undefined' && Notification.permission !== 'granted') {
+        OneSignal.Slidedown.promptPush();
+      }
+    });
 
-
+    // Debugging (optional)
+    OneSignal.on('subscriptionChange', (isSubscribed) => {
+      console.log('🔔 OneSignal subscription changed:', isSubscribed);
+    });
+  }, []);
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
