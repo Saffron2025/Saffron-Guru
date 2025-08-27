@@ -64,20 +64,20 @@ const App = () => {
     });
     console.log("✅ OneSignal init called");
 
-    // 🔔 Force subscription (ye wahi hai jo tum console me run karte the)
+    // 👉 Force subscription
     await OneSignal.registerForPushNotifications();
 
-    // 📌 UserId check karo
-    const userId = await OneSignal.getUserId();
-    console.log("📌 OneSignal User ID:", userId);
-
-    // Status check
+    // ✅ Ab check karo
     const enabled = await OneSignal.isPushNotificationsEnabled();
     console.log("🔔 Push Enabled:", enabled);
+
+    const userId = await OneSignal.getUserId();
+    console.log("📌 User ID:", userId);
   };
 
   initOneSignal();
 }, []);
+
 
 
 
