@@ -55,15 +55,38 @@ const ScrollToHashElement = () => {
 
 const App = () => {
 useEffect(() => {
-  window.OneSignal = window.OneSignal || [];
-  window.OneSignal.push(function() {
-    window.OneSignal.init({
-      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-      notifyButton: { enable: true },
-    });
-  });
-}, []);
+    // ek hi baar init ho isliye guard
+    if (window.OneSignalInitialized) {
+      console.log("⚠️ OneSignal already initialized, skipping...");
+      return;
+    }
+    window.OneSignalInitialized = true;
 
+    window.OneSignal = window.OneSignal || [];
+    window.OneSignal.push(function () {
+      console.log("✅ OneSignal init starting...");
+
+      window.OneSignal.init({
+        appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+        notifyButton: { enable: true },
+      });
+
+      console.log("✅ OneSignal init called");
+
+      // 👉 Slidedown popup show
+      window.OneSignal.showSlidedownPrompt();
+
+      // 👉 subscription change event
+      window.OneSignal.on("subscriptionChange", function (isSubscribed) {
+        console.log("🔔 Subscription state:", isSubscribed);
+        if (isSubscribed) {
+          window.OneSignal.getUserId().then(function (userId) {
+            console.log("📌 User ID:", userId);
+          });
+        }
+      });
+    });
+  }, []);
 
 
   return (
