@@ -54,36 +54,48 @@ const ScrollToHashElement = () => {
 };
 
 const App = () => {
-    useEffect(() => {
-    if (window.OneSignal) {
-      window.OneSignal = window.OneSignal || [];
-      window.OneSignal.push(() => {
-        window.OneSignal.init({
-          appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-          notifyButton: { enable: true },
-          allowLocalhostAsSecureOrigin: true, // local test ke liye
-        });
-        console.log("✅ OneSignal init called");
+  useEffect(() => {
+  // multiple init se bachne ke liye ek flag use karte hain
+  if (window.OneSignalInitialized) {
+    console.log("⚠️ OneSignal already initialized, skipping...");
+    return;
+  }
+  window.OneSignalInitialized = true;
 
-        // Force popup prompt
-        window.OneSignal.Slidedown.promptPush();
+  // SDK global object
+  window.OneSignal = window.OneSignal || [];
 
-        // Status check
-        window.OneSignal.isPushNotificationsEnabled((enabled) => {
-          console.log("🔔 Push Enabled:", enabled);
-        });
+  window.OneSignal.push(() => {
+    console.log("✅ OneSignal init starting...");
 
-        window.OneSignal.getUserId((userId) => {
-          console.log("📌 User ID:", userId);
-        });
-      });
+    window.OneSignal.init({
+      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+      notifyButton: { enable: true },
+      allowLocalhostAsSecureOrigin: true, // localhost testing allow
+    });
+
+    console.log("✅ OneSignal init called");
+
+    // Safe Slidedown check
+    if (window.OneSignal.Slidedown) {
+      window.OneSignal.Slidedown.promptPush();
+      console.log("📢 Slidedown prompt shown");
     } else {
-      console.error("❌ OneSignal SDK not loaded");
+      console.log("⚠️ Slidedown not available yet");
     }
 
-    keepAlive();
-  }, []);
-  
+    // Status check
+    window.OneSignal.isPushNotificationsEnabled((enabled) => {
+      console.log("🔔 Push Enabled:", enabled);
+    });
+
+    // User ID check
+    window.OneSignal.getUserId((userId) => {
+      console.log("📌 User ID:", userId);
+    });
+  });
+}, []);
+
   return (
      <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
     <Router>
