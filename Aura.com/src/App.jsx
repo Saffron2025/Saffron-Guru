@@ -56,33 +56,23 @@ const ScrollToHashElement = () => {
 
 const App = () => {
    useEffect(() => {
-  keepAlive();
-
-  // ✅ SDK load hone ke baad init
-  if (window.OneSignal) {
-    window.OneSignal.push(function () {
-      console.log("✅ OneSignal init called");
-
-      window.OneSignal.init({
+    const initOneSignal = async () => {
+      await OneSignal.init({
         appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
         notifyButton: { enable: true },
         allowLocalhostAsSecureOrigin: true,
       });
+      console.log("✅ OneSignal init called");
 
-      // subscription aur permission check
-      window.OneSignal.isPushNotificationsEnabled(function (isEnabled) {
-        console.log("🔔 Push enabled:", isEnabled);
-      });
+      const userId = await OneSignal.getUserId();
+      console.log("📌 User ID:", userId);
 
-      window.OneSignal.getUserId(function (userId) {
-        console.log("📌 User ID:", userId);
-      });
-    });
-  } else {
-    console.error("❌ OneSignal SDK not loaded yet");
-  }
-}, []);
+      const enabled = await OneSignal.isPushNotificationsEnabled();
+      console.log("🔔 Push Enabled:", enabled);
+    };
 
+    initOneSignal();
+  }, []);
 
 
   return (
