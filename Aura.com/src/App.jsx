@@ -54,15 +54,13 @@ const ScrollToHashElement = () => {
 };
 
 const App = () => {
-  useEffect(() => {
-  // multiple init se bachne ke liye ek flag use karte hain
+useEffect(() => {
   if (window.OneSignalInitialized) {
     console.log("⚠️ OneSignal already initialized, skipping...");
     return;
   }
   window.OneSignalInitialized = true;
 
-  // SDK global object
   window.OneSignal = window.OneSignal || [];
 
   window.OneSignal.push(() => {
@@ -71,30 +69,33 @@ const App = () => {
     window.OneSignal.init({
       appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
       notifyButton: { enable: true },
-      allowLocalhostAsSecureOrigin: true, // localhost testing allow
+      allowLocalhostAsSecureOrigin: true,
     });
 
     console.log("✅ OneSignal init called");
 
-    // Safe Slidedown check
-    if (window.OneSignal.Slidedown) {
-      window.OneSignal.Slidedown.promptPush();
-      console.log("📢 Slidedown prompt shown");
-    } else {
-      console.log("⚠️ Slidedown not available yet");
-    }
+    // 👉 Thoda delay dekar force popup prompt dikhao
+    setTimeout(() => {
+      if (window.OneSignal.showSlidedownPrompt) {
+        window.OneSignal.showSlidedownPrompt();
+        console.log("📢 Slidedown forced");
+      } else {
+        console.log("⚠️ Slidedown not available yet");
+      }
+    }, 3000); // 3s delay
 
-    // Status check
+    // ✅ Status check
     window.OneSignal.isPushNotificationsEnabled((enabled) => {
       console.log("🔔 Push Enabled:", enabled);
     });
 
-    // User ID check
+    // ✅ User ID check
     window.OneSignal.getUserId((userId) => {
       console.log("📌 User ID:", userId);
     });
   });
 }, []);
+
 
   return (
      <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
