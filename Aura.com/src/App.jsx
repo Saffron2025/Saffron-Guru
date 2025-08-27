@@ -56,23 +56,29 @@ const ScrollToHashElement = () => {
 
 const App = () => {
    useEffect(() => {
-    const initOneSignal = async () => {
-      await OneSignal.init({
-        appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-        notifyButton: { enable: true },
-        allowLocalhostAsSecureOrigin: true,
-      });
-      console.log("✅ OneSignal init called");
+  const initOneSignal = async () => {
+    await OneSignal.init({
+      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+      notifyButton: { enable: true },
+      allowLocalhostAsSecureOrigin: true,
+    });
+    console.log("✅ OneSignal init called");
 
-      const userId = await OneSignal.getUserId();
-      console.log("📌 User ID:", userId);
+    // 🔔 Force subscription (ye wahi hai jo tum console me run karte the)
+    await OneSignal.registerForPushNotifications();
 
-      const enabled = await OneSignal.isPushNotificationsEnabled();
-      console.log("🔔 Push Enabled:", enabled);
-    };
+    // 📌 UserId check karo
+    const userId = await OneSignal.getUserId();
+    console.log("📌 OneSignal User ID:", userId);
 
-    initOneSignal();
-  }, []);
+    // Status check
+    const enabled = await OneSignal.isPushNotificationsEnabled();
+    console.log("🔔 Push Enabled:", enabled);
+  };
+
+  initOneSignal();
+}, []);
+
 
 
   return (
