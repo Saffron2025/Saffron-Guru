@@ -55,39 +55,7 @@ const ScrollToHashElement = () => {
 
 const App = () => {
 useEffect(() => {
-  if (window.OneSignalInitialized) {
-    console.log("⚠️ OneSignal already initialized, skipping...");
-    return;
-  }
-  window.OneSignalInitialized = true;
-
-  window.OneSignal = window.OneSignal || [];
-  window.OneSignal.push(function () {
-    console.log("✅ OneSignal init starting...");
-
-    window.OneSignal.init({
-      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-      notifyButton: { enable: true },
-      serviceWorkerPath: "OneSignalSDKWorker.js",
-      serviceWorkerUpdaterPath: "OneSignalSDKUpdaterWorker.js",
-      allowLocalhostAsSecureOrigin: true, // local test ke liye
-    });
-
-    console.log("✅ OneSignal init called");
-
-    // 👉 Show prompt manually
-    window.OneSignal.showSlidedownPrompt();
-
-    // 👉 subscription change event
-    window.OneSignal.on("subscriptionChange", function (isSubscribed) {
-      console.log("🔔 Subscription state:", isSubscribed);
-      if (isSubscribed) {
-        window.OneSignal.getUserId().then(function (userId) {
-          console.log("📌 User ID:", userId);
-        });
-      }
-    });
-  });
+  keepAlive()
 }, []);
 
 
