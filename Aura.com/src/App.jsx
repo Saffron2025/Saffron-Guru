@@ -55,27 +55,34 @@ const ScrollToHashElement = () => {
 };
 
 const App = () => {
-  useEffect(() => {
-    OneSignal.init({
-      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-      notifyButton: { enable: true },
-      allowLocalhostAsSecureOrigin: true,
-    });
+   useEffect(() => {
+  keepAlive();
 
-    // ✅ Permission check
-    OneSignal.Notifications.requestPermission().then((permission) => {
-      console.log("🔔 Permission:", permission); // "granted" | "denied" | "default"
-    });
+  // ✅ SDK load hone ke baad init
+  if (window.OneSignal) {
+    window.OneSignal.push(function () {
+      console.log("✅ OneSignal init called");
 
-    // ✅ Subscription listener
-    OneSignal.Notifications.addEventListener("permissionChange", (e) => {
-      console.log("🔔 Permission changed:", e.to);
-    });
+      window.OneSignal.init({
+        appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+        notifyButton: { enable: true },
+        allowLocalhostAsSecureOrigin: true,
+      });
 
-    OneSignal.Notifications.addEventListener("click", (e) => {
-      console.log("🔔 Notification clicked:", e);
+      // subscription aur permission check
+      window.OneSignal.isPushNotificationsEnabled(function (isEnabled) {
+        console.log("🔔 Push enabled:", isEnabled);
+      });
+
+      window.OneSignal.getUserId(function (userId) {
+        console.log("📌 User ID:", userId);
+      });
     });
-  }, []);
+  } else {
+    console.error("❌ OneSignal SDK not loaded yet");
+  }
+}, []);
+
 
 
   return (
