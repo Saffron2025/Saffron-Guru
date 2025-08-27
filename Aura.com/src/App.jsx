@@ -1,7 +1,6 @@
 // src/App.jsx
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import OneSignal from "react-onesignal";   // ✅ React-OneSignal import
 import keepAlive from './utils/keepalive';
 import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
@@ -55,20 +54,36 @@ const ScrollToHashElement = () => {
 };
 
 const App = () => {
-  useEffect(() => {
-    // ✅ OneSignal init
-    OneSignal.init({
-      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-      notifyButton: { enable: true },
-    }).then(() => {
-      console.log("✅ OneSignal init called");
-      // force popup prompt
-      OneSignal.Slidedown.promptPush();
-    });
+    useEffect(() => {
+    if (window.OneSignal) {
+      window.OneSignal = window.OneSignal || [];
+      window.OneSignal.push(() => {
+        window.OneSignal.init({
+          appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+          notifyButton: { enable: true },
+          allowLocalhostAsSecureOrigin: true, // local test ke liye
+        });
+        console.log("✅ OneSignal init called");
+
+        // Force popup prompt
+        window.OneSignal.Slidedown.promptPush();
+
+        // Status check
+        window.OneSignal.isPushNotificationsEnabled((enabled) => {
+          console.log("🔔 Push Enabled:", enabled);
+        });
+
+        window.OneSignal.getUserId((userId) => {
+          console.log("📌 User ID:", userId);
+        });
+      });
+    } else {
+      console.error("❌ OneSignal SDK not loaded");
+    }
 
     keepAlive();
   }, []);
-
+  
   return (
      <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
     <Router>
