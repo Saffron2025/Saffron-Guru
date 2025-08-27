@@ -1,7 +1,7 @@
 // src/App.jsx
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import OneSignal from 'react-onesignal';                 // ✅ OneSignal import
+import OneSignal from "react-onesignal";
 import keepAlive from './utils/keepalive';
 import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
@@ -56,25 +56,27 @@ const ScrollToHashElement = () => {
 
 const App = () => {
   useEffect(() => {
-    // backend keep-alive
-    keepAlive();
-
-    // ✅ OneSignal initialization
     OneSignal.init({
-      appId: 'YOUR_ONESIGNAL_APP_ID',   // 👈 apna App ID yaha daalo
-      notifyButton: { enable: true },   // bell icon show karega
-      allowLocalhostAsSecureOrigin: true, // localhost par bhi chale
-    }).then(() => {
-      if (typeof Notification !== 'undefined' && Notification.permission !== 'granted') {
-        OneSignal.Slidedown.promptPush();
-      }
+      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+      notifyButton: { enable: true },
+      allowLocalhostAsSecureOrigin: true,
     });
 
-    // Debugging (optional)
-    OneSignal.on('subscriptionChange', (isSubscribed) => {
-      console.log('🔔 OneSignal subscription changed:', isSubscribed);
+    // ✅ Permission check
+    OneSignal.Notifications.requestPermission().then((permission) => {
+      console.log("🔔 Permission:", permission); // "granted" | "denied" | "default"
+    });
+
+    // ✅ Subscription listener
+    OneSignal.Notifications.addEventListener("permissionChange", (e) => {
+      console.log("🔔 Permission changed:", e.to);
+    });
+
+    OneSignal.Notifications.addEventListener("click", (e) => {
+      console.log("🔔 Notification clicked:", e);
     });
   }, []);
+
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: 'hidden' }}>
