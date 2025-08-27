@@ -55,42 +55,15 @@ const ScrollToHashElement = () => {
 
 const App = () => {
 useEffect(() => {
-  if (window.OneSignalInitialized) {
-    console.log("⚠️ OneSignal already initialized, skipping...");
-    return;
-  }
-  window.OneSignalInitialized = true;
-
   window.OneSignal = window.OneSignal || [];
-  window.OneSignal.push(() => {
-    console.log("✅ OneSignal init starting...");
-
+  window.OneSignal.push(function() {
     window.OneSignal.init({
       appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
       notifyButton: { enable: true },
-      allowLocalhostAsSecureOrigin: true,
-    });
-
-    console.log("✅ OneSignal init called");
-
-    // 👉 Yahan force register kar rahe hain
-    window.OneSignal.registerForPushNotifications({
-      modalPrompt: true
-    }).then(() => {
-      console.log("📢 RegisterForPushNotifications called");
-    });
-
-    // Status check
-    window.OneSignal.isPushNotificationsEnabled((enabled) => {
-      console.log("🔔 Push Enabled:", enabled);
-    });
-
-    // User ID
-    window.OneSignal.getUserId((userId) => {
-      console.log("📌 User ID:", userId);
     });
   });
 }, []);
+
 
 
   return (
