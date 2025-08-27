@@ -62,7 +62,6 @@ useEffect(() => {
   window.OneSignalInitialized = true;
 
   window.OneSignal = window.OneSignal || [];
-
   window.OneSignal.push(() => {
     console.log("✅ OneSignal init starting...");
 
@@ -74,22 +73,19 @@ useEffect(() => {
 
     console.log("✅ OneSignal init called");
 
-    // 👉 Thoda delay dekar force popup prompt dikhao
-    setTimeout(() => {
-      if (window.OneSignal.showSlidedownPrompt) {
-        window.OneSignal.showSlidedownPrompt();
-        console.log("📢 Slidedown forced");
-      } else {
-        console.log("⚠️ Slidedown not available yet");
-      }
-    }, 3000); // 3s delay
+    // 👉 Yahan force register kar rahe hain
+    window.OneSignal.registerForPushNotifications({
+      modalPrompt: true
+    }).then(() => {
+      console.log("📢 RegisterForPushNotifications called");
+    });
 
-    // ✅ Status check
+    // Status check
     window.OneSignal.isPushNotificationsEnabled((enabled) => {
       console.log("🔔 Push Enabled:", enabled);
     });
 
-    // ✅ User ID check
+    // User ID
     window.OneSignal.getUserId((userId) => {
       console.log("📌 User ID:", userId);
     });
