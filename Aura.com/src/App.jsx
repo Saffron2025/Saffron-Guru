@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import keepAlive from './utils/keepalive';
@@ -6,7 +5,8 @@ import ScrollToTop from './Components/ScrollToTop';
 import Layout from './Layout';
 
 // ✅ Firebase imports
-import { getFCMToken, onMessageListener } from './firebase';
+import { messaging, getFCMToken } from './firebase';
+import { onMessage } from "firebase/messaging";
 
 // 📄 Pages
 import Home from './Pages/Home';
@@ -60,7 +60,7 @@ const App = () => {
   useEffect(() => {
     keepAlive();
 
-    // ✅ Ask for notification permission
+    // ✅ Ask for notification permission once
     Notification.requestPermission().then((permission) => {
       if (permission === "granted") {
         console.log("✅ Notification permission granted.");
@@ -70,13 +70,13 @@ const App = () => {
       }
     });
 
-    // ✅ Foreground notifications
-    onMessageListener()
-      .then((payload) => {
-        console.log("📩 Foreground Notification:", payload);
-        alert(`${payload.notification.title}: ${payload.notification.body}`);
-      })
-      .catch(err => console.log("Notification listener error:", err));
+    // ✅ Foreground notifications (only one listener)
+    const unsubscribe = onMessage(messaging, (payload) => {
+      console.log("📩 Foreground Notification:", payload);
+      alert(`${payload.notification.title}: ${payload.notification.body}`);
+    });
+
+    return () => unsubscribe(); // cleanup listener
   }, []);
 
   return (
@@ -85,13 +85,10 @@ const App = () => {
         <ScrollToTop />
         <ScrollToHashElement />
         <Routes>
-          {/* Public Routes */}
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/verify-otp" element={<OtpVerify />} />
-
-          {/* Protected Routes */}
           <Route path="/home" element={<Layout><Home /></Layout>} />
           <Route path="/features" element={<Layout><Feature /></Layout>} />
           <Route path="/DefendPro" element={<DefendPro />} />
@@ -103,7 +100,7 @@ const App = () => {
           <Route path="/why-us" element={<Layout><WhyChooseUs /></Layout>} />
           <Route path="/userdashboard" element={<Layout><UserDashboard /></Layout>} />
           <Route path="/solution" element={<Solution />} />
-          <Route path="/resources" element={<Layout><Resources /></Layout>} /> {/* ✅ fixed */}
+          <Route path="/resources" element={<Layout><Resources /></Layout>} />
           <Route path="/HowSaffronWorks" element={<HowSaffronWorks />} />
           <Route path="/Fox" element={<Fox />} />
           <Route path="/CBS" element={<CBS />} />
@@ -123,8 +120,6 @@ const App = () => {
           <Route path="/ReadFAQ" element={<ReadFAQ />} />
           <Route path="/FixMyTech" element={<FixMyTech />} />
           <Route path="/product/:id" element={<ProductDetail />} />
-
-          {/* Fallback */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
