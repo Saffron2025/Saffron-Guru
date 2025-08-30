@@ -5,15 +5,27 @@ require('dotenv').config();
 const admin = require("firebase-admin");
 
 const authRoutes = require('./routes/auth');
-
 const app = express();
 
-// ✅ Firebase Admin init (serviceAccountKey.json ko project root me rakho aur .gitignore me add karo)
-const serviceAccount = require("./serviceAccountKey.json");
+// ================== 🔥 FIREBASE ADMIN INIT ==================
+let serviceAccount = null;
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+try {
+  // Parse service account JSON from env
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+} catch (err) {
+  console.error("❌ Error parsing FIREBASE_SERVICE_ACCOUNT:", err.message);
+}
+
+if (serviceAccount) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+  console.log("✅ Firebase Admin initialized");
+} else {
+  console.error("❌ Firebase Admin not initialized (missing FIREBASE_SERVICE_ACCOUNT)");
+}
+// =============================================================
 
 // ✅ Temporary token store (baad me MongoDB model use kar sakte ho)
 let tokens = [];
