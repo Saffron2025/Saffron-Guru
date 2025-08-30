@@ -2,7 +2,7 @@
 importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js");
 importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging-compat.js");
 
-// ✅ Same config
+// ✅ Firebase config (same as firebase.js but compat version)
 firebase.initializeApp({
   apiKey: "AIzaSyBNLDA0VPn5MawlQ3sBc6QzuRaOtCrfaoI",
   authDomain: "saffron-guru.firebaseapp.com",
@@ -15,11 +15,15 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// ✅ Background notification
+// ✅ Background notifications
 messaging.onBackgroundMessage((payload) => {
   console.log("📩 Background Message:", payload);
-  self.registration.showNotification(payload.notification.title, {
+
+  const notificationTitle = payload.notification.title;
+  const notificationOptions = {
     body: payload.notification.body,
-    icon: "/logo192.png" // make sure this exists in public/
-  });
+    icon: "/logo192.png" // make sure this file exists in public/
+  };
+
+  self.registration.showNotification(notificationTitle, notificationOptions);
 });

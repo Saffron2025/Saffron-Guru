@@ -1,8 +1,7 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken } from "firebase/messaging";
 
-// ✅ Firebase config (from your Firebase console)
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyBNLDA0VPn5MawlQ3sBc6QzuRaOtCrfaoI",
   authDomain: "saffron-guru.firebaseapp.com",
@@ -13,26 +12,31 @@ const firebaseConfig = {
   measurementId: "G-LN8DVSVKQR"
 };
 
-// ✅ Initialize Firebase app
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// ✅ Messaging instance export
 export const messaging = getMessaging(app);
 
-// ✅ Get FCM Token function
+// ✅ Get FCM Token with explicit SW registration
 export const getFCMToken = async () => {
   try {
+    // Explicitly register service worker
+    const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+    console.log("✅ Service Worker registered:", registration);
+
     const token = await getToken(messaging, {
-      vapidKey: "BM-Keh8pxBwAJRFYU2kgqCzvc4MojsD3rYdmsVexChm9RkL_pK1XaBUmqtRS3eUtX_h2oSsUbV_n6O5sWEBet4U" // replace with your Web Push certificate key
+      vapidKey: "BM-Keh8pxBwAJRFYU2kgqCzvc4MojsD3rYdmsVexChm9RkL_pK1XaBUmqtRS3eUtX_h2oSsUbV_n6O5sWEBet4U",
+      serviceWorkerRegistration: registration,
     });
 
     if (token) {
-      console.log("✅ FCM Token:", token);
+      console.log("✅ FCM Token generated:", token);
       return token;
     } else {
-      console.log("❌ No registration token available. Request permission to generate one.");
+      console.warn("⚠️ No token generated. Check permissions or HTTPS.");
+      return null;
     }
   } catch (error) {
-    console.error("❌ Error retrieving FCM token:", error);
+    console.error("❌ Error while getting FCM token:", error);
+    return null;
   }
 };

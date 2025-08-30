@@ -8,7 +8,7 @@ import Layout from './Layout';
 import { messaging, getFCMToken } from './firebase';
 import { onMessage } from "firebase/messaging";
 
-// 📄 Pages
+// 📄 Pages import (same as before)
 import Home from './Pages/Home';
 import Feature from './Pages/Feature';
 import DefendPro from './Pages/DefendPro';
@@ -60,23 +60,36 @@ const App = () => {
   useEffect(() => {
     keepAlive();
 
-    // ✅ Ask for notification permission once
-    Notification.requestPermission().then((permission) => {
+    // ✅ Ask for permission + get token
+    Notification.requestPermission().then(async (permission) => {
       if (permission === "granted") {
         console.log("✅ Notification permission granted.");
-        getFCMToken(); // fetch token
+        const token = await getFCMToken();
+        if (token) {
+          // send token to backend
+          fetch("https://saffron-guru-backend.onrender.com/api/notifications/register-token", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ token })
+          })
+            .then(res => res.json())
+            .then(data => console.log("📩 Token saved on backend:", data))
+            .catch(err => console.error("❌ Error saving token:", err));
+        } else {
+          console.warn("⚠️ Token not generated.");
+        }
       } else {
         console.log("❌ Notification permission denied.");
       }
     });
 
-    // ✅ Foreground notifications (only one listener)
+    // ✅ Foreground notification listener
     const unsubscribe = onMessage(messaging, (payload) => {
       console.log("📩 Foreground Notification:", payload);
       alert(`${payload.notification.title}: ${payload.notification.body}`);
     });
 
-    return () => unsubscribe(); // cleanup listener
+    return () => unsubscribe();
   }, []);
 
   return (
