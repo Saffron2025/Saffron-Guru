@@ -26,10 +26,10 @@ messaging.onBackgroundMessage((payload) => {
     badge: "/logo192.png",
     actions: [
       { action: "view", title: "👉 Get Now" },
-      { action: "close", title: "❌ Close" }
+      { action: "dismiss", title: "❌ Dismiss" }
     ],
     data: {
-      url: payload.data?.url || payload?.fcmOptions?.link || "https://saffronguru.com" 
+      url: payload?.data?.url || payload?.fcmOptions?.link || "https://saffronguru.com"
     }
   };
 
@@ -42,18 +42,12 @@ self.addEventListener("notificationclick", (event) => {
 
   event.notification.close();
 
-  let targetUrl = event.notification?.data?.url || "https://saffronguru.com";
-
-  event.waitUntil(
-    clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
-      for (let client of windowClients) {
-        if (client.url === targetUrl && "focus" in client) {
-          return client.focus();
-        }
-      }
-      if (clients.openWindow) {
-        return clients.openWindow(targetUrl);
-      }
-    })
-  );
+  if (event.action === "view") {
+    event.waitUntil(clients.openWindow(event.notification.data.url));
+  } else if (event.action === "dismiss") {
+    // ❌ Just close, do nothing
+  } else {
+    // Agar sirf notification box par click hua
+    event.waitUntil(clients.openWindow("https://saffronguru.com"));
+  }
 });

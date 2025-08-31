@@ -70,6 +70,7 @@ app.post("/api/notifications/register-token", async (req, res) => {
 });
 
 // ✅ Send notification to all tokens in DB
+// ✅ Send notification to all tokens in DB
 app.post("/api/notifications/send", async (req, res) => {
   const { title, body, image, url } = req.body;
 
@@ -91,6 +92,14 @@ app.post("/api/notifications/send", async (req, res) => {
         fcmOptions: {
           link: url || "https://www.saffronguru.com",
         },
+        notification: {
+          icon: "https://yourdomain.com/icons/default-icon.png",
+          badge: "https://yourdomain.com/icons/badge.png",
+          actions: [
+            { action: "view", title: "👉 Get Now" },
+            { action: "dismiss", title: "❌ Dismiss" }
+          ]
+        }
       },
       data: {
         url: url || "https://www.saffronguru.com"
