@@ -8,7 +8,7 @@ import Layout from './Layout';
 import { messaging, getFCMToken } from './firebase';
 import { onMessage } from "firebase/messaging";
 
-// 📄 Pages import (same as before)
+// 📄 Pages import
 import Home from './Pages/Home';
 import Feature from './Pages/Feature';
 import DefendPro from './Pages/DefendPro';
@@ -67,11 +67,12 @@ const App = () => {
         const token = await getFCMToken();
         if (token) {
           // send token to backend
-          fetch("https://saffron-guru-backend.onrender.com/api/notifications/register-token", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ token })
-          })
+         fetch("https://saffron-guru-backend.onrender.com/api/notifications/register-token", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ token })
+})
+
             .then(res => res.json())
             .then(data => console.log("📩 Token saved on backend:", data))
             .catch(err => console.error("❌ Error saving token:", err));
@@ -83,10 +84,16 @@ const App = () => {
       }
     });
 
-    // ✅ Foreground notification listener
+    // ✅ Foreground notification listener (System notification instead of alert)
     const unsubscribe = onMessage(messaging, (payload) => {
       console.log("📩 Foreground Notification:", payload);
-      alert(`${payload.notification.title}: ${payload.notification.body}`);
+
+      const { title, body, image } = payload.notification;
+      new Notification(title, {
+        body,
+        icon: "/logo192.png",
+        image: image || undefined
+      });
     });
 
     return () => unsubscribe();

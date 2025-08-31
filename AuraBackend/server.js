@@ -3,31 +3,21 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 const admin = require("firebase-admin");
+const FcmToken = require("./models/FcmToken");
+
+// ✅ Firebase Admin Init using JSON file (keep file in same folder as server.js)
+const serviceAccount = require("./serviceAccountKey.json"); // 👈 yahi file ka naam hai
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+console.log("✅ Firebase Admin initialized");
 
 const authRoutes = require('./routes/auth');
 const app = express();
 
-// ================== 🔥 FIREBASE ADMIN INIT ==================
-let serviceAccount = null;
-
-try {
-  // Parse service account JSON from env
-  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-} catch (err) {
-  console.error("❌ Error parsing FIREBASE_SERVICE_ACCOUNT:", err.message);
-}
-
-if (serviceAccount) {
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-  });
-  console.log("✅ Firebase Admin initialized");
-} else {
-  console.error("❌ Firebase Admin not initialized (missing FIREBASE_SERVICE_ACCOUNT)");
-}
-// =============================================================
-
-// ✅ Temporary token store (baad me MongoDB model use kar sakte ho)
+// ✅ Temporary token store (later move to MongoDB if needed)
 let tokens = [];
 
 // ✅ Middleware
@@ -58,38 +48,62 @@ app.use('/api/auth', authRoutes);
 // ================== 🔥 NOTIFICATION ROUTES ==================
 
 // Register FCM token
-app.post("/api/notifications/register-token", (req, res) => {
+// ================== 🔥 NOTIFICATION ROUTES ==================
+
+// Register FCM token
+app.post("/api/notifications/register-token", async (req, res) => {
   const { token } = req.body;
-  if (token && !tokens.includes(token)) {
-    tokens.push(token);
-    console.log("✅ Token saved:", token);
-  }
-  res.json({ success: true, tokens });
-});
-
-// Send notification to all saved tokens
-app.post("/api/notifications/send", async (req, res) => {
-  const { title, body } = req.body;
-
-  if (tokens.length === 0) {
-    return res.status(400).json({ success: false, msg: "No tokens registered" });
-  }
-
-  const message = {
-    notification: { title, body },
-    tokens: tokens,
-  };
+  if (!token) return res.json({ success: false, msg: "No token received" });
 
   try {
-    const response = await admin.messaging().sendMulticast(message);
+    // Agar token pehle se hai to overwrite nahi karega (upsert true)
+    await FcmToken.updateOne({ token }, { token }, { upsert: true });
+    console.log("✅ Token saved to DB:", token);
+    res.json({ success: true });
+  } catch (err) {
+    console.error("❌ DB Error saving token:", err);
+    res.status(500).json({ success: false, msg: "DB Error" });
+  }
+});
+
+// ✅ Send notification to all tokens in DB
+app.post("/api/notifications/send", async (req, res) => {
+  const { title, body, image, url } = req.body;
+
+  try {
+    const docs = await FcmToken.find();
+    const tokens = docs.map(doc => doc.token);
+
+    if (!tokens.length) {
+      return res.status(400).json({ success: false, msg: "No tokens registered" });
+    }
+
+    const message = {
+      notification: {
+        title,
+        body,
+        image: image || "https://yourdomain.com/default-banner.png",
+      },
+      webpush: {
+        fcmOptions: {
+          link: url || "https://www.saffronguru.com",
+        },
+      },
+      data: {
+        url: url || "https://www.saffronguru.com"
+      },
+      tokens: tokens
+    };
+
+    const response = await admin.messaging().sendEachForMulticast(message);
     console.log("📩 Notifications sent:", response);
     res.json({ success: true, response });
+
   } catch (error) {
     console.error("❌ Error sending notification:", error);
     res.status(500).json({ success: false, error });
   }
 });
-
 // =============================================================
 
 // ✅ Root route
