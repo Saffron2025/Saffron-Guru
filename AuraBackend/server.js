@@ -7,7 +7,6 @@ const FcmToken = require("./models/FcmToken");
 
 // ✅ Firebase Admin Init from ENV (Render me set kiya hai)
 let serviceAccount = null;
-
 try {
   serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 } catch (err) {
@@ -30,9 +29,9 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: [
-    "http://localhost:5173",            // local dev
-    "https://www.saffronguru.com",      // live site (www)
-    "https://saffronguru.com"           // root domain
+    "http://localhost:5173",
+    "https://www.saffronguru.com",
+    "https://saffronguru.com"
   ],
   credentials: true,
 }));
@@ -44,9 +43,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log("❌ MongoDB error:", err));
 
 // ✅ Health check
-app.get('/ping', (req, res) => {
-  res.send("pong ✅ backend alive");
-});
+app.get('/ping', (req, res) => res.send("pong ✅ backend alive"));
 
 // ✅ Auth routes
 app.use('/api/auth', authRoutes);
@@ -59,7 +56,6 @@ app.post("/api/notifications/register-token", async (req, res) => {
   if (!token) return res.json({ success: false, msg: "No token received" });
 
   try {
-    // Agar token already exist hai to update karega (upsert true)
     await FcmToken.updateOne({ token }, { token }, { upsert: true });
     console.log("✅ Token saved to DB:", token);
     res.json({ success: true });
@@ -69,8 +65,7 @@ app.post("/api/notifications/register-token", async (req, res) => {
   }
 });
 
-// ✅ Send notification to all tokens in DB
-// ✅ Send notification to all tokens in DB
+// Send notification
 app.post("/api/notifications/send", async (req, res) => {
   const { title, body, image, url } = req.body;
 
@@ -83,33 +78,42 @@ app.post("/api/notifications/send", async (req, res) => {
     }
 
     const message = {
-      notification: {
-        title,
-        body,
-        image: image || "https://yourdomain.com/default-banner.png",
-      },
+      notification: { title, body, image: image || "https://saffronguru.com/default.png" },
       webpush: {
-        fcmOptions: {
-          link: url || "https://www.saffronguru.com",
-        },
+        fcmOptions: { link: url || "https://saffronguru.com" },
         notification: {
-          icon: "https://yourdomain.com/icons/default-icon.png",
-          badge: "https://yourdomain.com/icons/badge.png",
+          icon: "https://saffronguru.com/icons/default-icon.png",
+          badge: "https://saffronguru.com/icons/badge.png",
           actions: [
             { action: "view", title: "👉 Get Now" },
             { action: "dismiss", title: "❌ Dismiss" }
           ]
         }
       },
-      data: {
-        url: url || "https://www.saffronguru.com"
-      },
+      data: { url: url || "https://saffronguru.com" },
       tokens
     };
 
     const response = await admin.messaging().sendEachForMulticast(message);
-    console.log("📩 Notifications sent:", response);
-    res.json({ success: true, response });
+
+    // ✅ Invalid tokens ko clean karna
+    response.responses.forEach(async (resp, idx) => {
+      if (!resp.success) {
+        const failedToken = tokens[idx];
+        console.log("❌ Failed:", failedToken, resp.error?.code);
+
+        if (
+          resp.error?.code === "messaging/registration-token-not-registered" ||
+          resp.error?.code === "messaging/invalid-argument"
+        ) {
+          await FcmToken.deleteOne({ token: failedToken });
+          console.log("🗑️ Removed invalid token:", failedToken);
+        }
+      }
+    });
+
+    console.log("📩 Notifications sent:", response.successCount);
+    res.json({ success: true, sent: response.successCount });
 
   } catch (error) {
     console.error("❌ Error sending notification:", error);
@@ -119,11 +123,7 @@ app.post("/api/notifications/send", async (req, res) => {
 
 // =============================================================
 
-// ✅ Root route
 app.get('/', (req, res) => res.send('Backend is running!'));
 
-// ✅ Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () =>
-  console.log(`🚀 Server running on port ${PORT}`)
-);
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

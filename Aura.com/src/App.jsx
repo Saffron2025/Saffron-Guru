@@ -60,31 +60,31 @@ const App = () => {
   useEffect(() => {
     keepAlive();
 
-    // ✅ Ask for permission + get token
+    const registerToken = async () => {
+      const token = await getFCMToken();
+      if (token) {
+        await fetch("https://saffron-guru-backend.onrender.com/api/notifications/register-token", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token })
+        })
+          .then(res => res.json())
+          .then(data => console.log("📩 Token saved on backend:", data))
+          .catch(err => console.error("❌ Error saving token:", err));
+      }
+    };
+
+    // ✅ Ask for permission
     Notification.requestPermission().then(async (permission) => {
       if (permission === "granted") {
         console.log("✅ Notification permission granted.");
-        const token = await getFCMToken();
-        if (token) {
-          // send token to backend
-         fetch("https://saffron-guru-backend.onrender.com/api/notifications/register-token", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ token })
-})
-
-            .then(res => res.json())
-            .then(data => console.log("📩 Token saved on backend:", data))
-            .catch(err => console.error("❌ Error saving token:", err));
-        } else {
-          console.warn("⚠️ Token not generated.");
-        }
+        await registerToken();
       } else {
         console.log("❌ Notification permission denied.");
       }
     });
 
-    // ✅ Foreground notification listener (System notification instead of alert)
+    // ✅ Foreground notification listener (system notification)
     const unsubscribe = onMessage(messaging, (payload) => {
       console.log("📩 Foreground Notification:", payload);
 

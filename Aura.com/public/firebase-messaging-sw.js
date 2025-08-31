@@ -1,7 +1,6 @@
 importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js");
 importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging-compat.js");
 
-// ✅ Firebase config (same as frontend)
 firebase.initializeApp({
   apiKey: "AIzaSyBNLDA0VPn5MawlQ3sBc6QzuRaOtCrfaoI",
   authDomain: "saffron-guru.firebaseapp.com",
@@ -14,7 +13,7 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// ✅ Background notifications
+// Background notification
 messaging.onBackgroundMessage((payload) => {
   console.log("📩 Background Message:", payload);
 
@@ -28,26 +27,22 @@ messaging.onBackgroundMessage((payload) => {
       { action: "view", title: "👉 Get Now" },
       { action: "dismiss", title: "❌ Dismiss" }
     ],
-    data: {
-      url: payload?.data?.url || payload?.fcmOptions?.link || "https://saffronguru.com"
-    }
+    data: { url: payload.data?.url || "https://saffronguru.com" }
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
-// ✅ Notification click handler
+// Click handler
 self.addEventListener("notificationclick", (event) => {
   console.log("🔔 Notification clicked:", event);
-
   event.notification.close();
 
   if (event.action === "view") {
     event.waitUntil(clients.openWindow(event.notification.data.url));
   } else if (event.action === "dismiss") {
-    // ❌ Just close, do nothing
+    // Do nothing
   } else {
-    // Agar sirf notification box par click hua
     event.waitUntil(clients.openWindow("https://saffronguru.com"));
   }
 });
