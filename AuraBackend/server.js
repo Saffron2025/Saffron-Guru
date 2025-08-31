@@ -5,7 +5,7 @@ require('dotenv').config();
 const admin = require("firebase-admin");
 const FcmToken = require("./models/FcmToken");
 
-// ✅ Firebase Admin Init from ENV
+// ✅ Firebase Admin Init from ENV (Render me set kiya hai)
 let serviceAccount = null;
 try {
   serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
@@ -65,7 +65,7 @@ app.post("/api/notifications/register-token", async (req, res) => {
   }
 });
 
-// Send notification to ALL tokens
+// Send notification
 app.post("/api/notifications/send", async (req, res) => {
   const { title, body, image, url } = req.body;
 
@@ -96,11 +96,12 @@ app.post("/api/notifications/send", async (req, res) => {
 
     const response = await admin.messaging().sendEachForMulticast(message);
 
-    // ✅ Invalid tokens remove
+    // ✅ Invalid tokens ko clean karna
     response.responses.forEach(async (resp, idx) => {
       if (!resp.success) {
         const failedToken = tokens[idx];
         console.log("❌ Failed:", failedToken, resp.error?.code);
+
         if (
           resp.error?.code === "messaging/registration-token-not-registered" ||
           resp.error?.code === "messaging/invalid-argument"
@@ -117,28 +118,6 @@ app.post("/api/notifications/send", async (req, res) => {
   } catch (error) {
     console.error("❌ Error sending notification:", error);
     res.status(500).json({ success: false, error });
-  }
-});
-
-// ✅ Debug route - send to ONE token only
-app.post("/api/notifications/send-to-one", async (req, res) => {
-  const { token, title, body, image, url } = req.body;
-  if (!token) return res.status(400).json({ success: false, msg: "Token required" });
-
-  const message = {
-    notification: { title, body, image: image || "https://saffronguru.com/default.png" },
-    webpush: { fcmOptions: { link: url || "https://saffronguru.com" } },
-    data: { url: url || "https://saffronguru.com" },
-    token
-  };
-
-  try {
-    const response = await admin.messaging().send(message);
-    console.log("📩 Sent single notification:", response);
-    res.json({ success: true, response });
-  } catch (error) {
-    console.error("❌ Error sending single notification:", error);
-    res.status(500).json({ success: false, error: error.message });
   }
 });
 
