@@ -5,20 +5,26 @@ require('dotenv').config();
 const admin = require("firebase-admin");
 const FcmToken = require("./models/FcmToken");
 
-// ✅ Firebase Admin Init using JSON file (keep file in same folder as server.js)
-const serviceAccount = require("./serviceAccountKey.json"); // 👈 yahi file ka naam hai
+// ✅ Firebase Admin Init from ENV (Render me set kiya hai)
+let serviceAccount = null;
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+try {
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+} catch (err) {
+  console.error("❌ Firebase service account parse error:", err.message);
+}
 
-console.log("✅ Firebase Admin initialized");
+if (serviceAccount) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+  console.log("✅ Firebase Admin initialized");
+} else {
+  console.error("❌ Firebase Admin not initialized (service account missing)");
+}
 
 const authRoutes = require('./routes/auth');
 const app = express();
-
-// ✅ Temporary token store (later move to MongoDB if needed)
-let tokens = [];
 
 // ✅ Middleware
 app.use(express.json());
@@ -48,15 +54,12 @@ app.use('/api/auth', authRoutes);
 // ================== 🔥 NOTIFICATION ROUTES ==================
 
 // Register FCM token
-// ================== 🔥 NOTIFICATION ROUTES ==================
-
-// Register FCM token
 app.post("/api/notifications/register-token", async (req, res) => {
   const { token } = req.body;
   if (!token) return res.json({ success: false, msg: "No token received" });
 
   try {
-    // Agar token pehle se hai to overwrite nahi karega (upsert true)
+    // Agar token already exist hai to update karega (upsert true)
     await FcmToken.updateOne({ token }, { token }, { upsert: true });
     console.log("✅ Token saved to DB:", token);
     res.json({ success: true });
@@ -92,7 +95,7 @@ app.post("/api/notifications/send", async (req, res) => {
       data: {
         url: url || "https://www.saffronguru.com"
       },
-      tokens: tokens
+      tokens
     };
 
     const response = await admin.messaging().sendEachForMulticast(message);
@@ -104,6 +107,7 @@ app.post("/api/notifications/send", async (req, res) => {
     res.status(500).json({ success: false, error });
   }
 });
+
 // =============================================================
 
 // ✅ Root route
