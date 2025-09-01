@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getMessaging, getToken } from "firebase/messaging";
+import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 // Firebase config
 const firebaseConfig = {
@@ -9,17 +9,16 @@ const firebaseConfig = {
   storageBucket: "saffron-guru.appspot.com",
   messagingSenderId: "513374378031",
   appId: "1:513374378031:web:68ad0d2705450e247c4eda",
-  measurementId: "G-LN8DVSVKQR"
+  measurementId: "G-LN8DVSVKQR",
 };
 
-// Initialize Firebase
+// Init
 const app = initializeApp(firebaseConfig);
 export const messaging = getMessaging(app);
 
-// ✅ Get FCM Token with explicit SW registration
+// ✅ Token generator
 export const getFCMToken = async () => {
   try {
-    // Explicitly register service worker
     const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
     console.log("✅ Service Worker registered:", registration);
 
@@ -29,7 +28,7 @@ export const getFCMToken = async () => {
     });
 
     if (token) {
-      console.log("✅ FCM Token generated:", token);
+      console.log("👉 User FCM Token:", token);
       return token;
     } else {
       console.warn("⚠️ No token generated. Check permissions or HTTPS.");
@@ -39,4 +38,13 @@ export const getFCMToken = async () => {
     console.error("❌ Error while getting FCM token:", error);
     return null;
   }
+};
+
+// ✅ Listen foreground messages
+export const listenForeground = (callback) => {
+  const unsubscribe = onMessage(messaging, (payload) => {
+    console.log("📩 Foreground Notification:", payload);
+    callback(payload);
+  });
+  return unsubscribe;
 };

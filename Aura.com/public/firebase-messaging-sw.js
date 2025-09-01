@@ -8,12 +8,12 @@ firebase.initializeApp({
   storageBucket: "saffron-guru.appspot.com",
   messagingSenderId: "513374378031",
   appId: "1:513374378031:web:68ad0d2705450e247c4eda",
-  measurementId: "G-LN8DVSVKQR"
+  measurementId: "G-LN8DVSVKQR",
 });
 
 const messaging = firebase.messaging();
 
-// Background notification
+// ✅ Background notifications
 messaging.onBackgroundMessage((payload) => {
   console.log("📩 Background Message:", payload);
 
@@ -24,16 +24,16 @@ messaging.onBackgroundMessage((payload) => {
     image: payload.notification?.image || undefined,
     badge: "/logo192.png",
     actions: [
-      { action: "view", title: "👉 Get Now" },
-      { action: "dismiss", title: "❌ Dismiss" }
+      { action: "view", title: "👉 View" },   // ✅ Safe wording
+      { action: "dismiss", title: "❌ Dismiss" },
     ],
-    data: { url: payload.data?.url || "https://saffronguru.com" }
+    data: { url: payload.data?.url || "https://saffronguru.com" },
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
-// Click handler
+// ✅ Click handler
 self.addEventListener("notificationclick", (event) => {
   console.log("🔔 Notification clicked:", event);
   event.notification.close();
