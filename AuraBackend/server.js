@@ -5,28 +5,13 @@ require("dotenv").config();
 const admin = require("firebase-admin");
 const FcmToken = require("./models/FcmToken");
 
-let serviceAccount;
+// ✅ Local ke liye json file (prod par ENV se load karna hoga)
+const serviceAccount = require("./serviceAccountKey.json");
 
-try {
-  if (process.env.FIREBASE_SERVICE_ACCOUNT) {
-    // Render/Production ke liye
-    serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-
-    // 🔑 Private key ke \n ko replace karo
-    serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, "\n");
-  } else {
-    // Local development ke liye
-    serviceAccount = require("./serviceAccountKey.json");
-  }
-
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-  });
-
-  console.log("✅ Firebase Admin initialized");
-} catch (err) {
-  console.error("❌ Firebase init error:", err.message);
-}
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+console.log("✅ Firebase Admin initialized");
 
 const authRoutes = require("./routes/auth");
 const app = express();
