@@ -10,6 +10,19 @@
   font-family: 'Outfit', sans-serif;
 }
 
+.learn-more-btn {
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
 /* Futuristic glowing background */
 .it-support-section::before,
 .it-support-section::after {

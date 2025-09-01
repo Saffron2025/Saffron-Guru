@@ -1,6 +1,7 @@
 // ITSupportSection.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './ItSupport.css';
 
 const ItSupport = () => {
@@ -36,6 +37,12 @@ const ItSupport = () => {
               <li>🛡️ Malware Removal</li>
               <li>🐢 Speed & Recovery</li>
             </ul>
+            {/* Learn More Button */}
+            <div className="mt-3">
+              <Link to="/ForYourHome" className="btn btn-primary learn-more-btn">
+                Learn More →
+              </Link>
+            </div>
           </Col>
 
           {/* Business Services */}
@@ -51,6 +58,15 @@ const ItSupport = () => {
               <li>🔐 VPN & Remote Access</li>
               <li>🧰 Ongoing Maintenance</li>
             </ul>
+            {/* Learn More Button */}
+            <div className="mt-3">
+              <Link
+                to="/ForYourBusiness"
+                className="btn btn-success learn-more-btn"
+              >
+                Learn More →
+              </Link>
+            </div>
           </Col>
         </Row>
       </Container>
