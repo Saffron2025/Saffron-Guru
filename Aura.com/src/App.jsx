@@ -65,7 +65,7 @@ const App = () => {
   useEffect(() => {
     keepAlive();
     const API_BASE =
-      import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+      import.meta.env.VITE_API_BASE_URL || "https://saffron-guru-backend.onrender.com";
 
     // 🔹 Save token to backend
     const registerToken = async (token) => {
