@@ -1,10 +1,12 @@
 // ITSupportSection.js
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './ItSupport.css';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import "./ItSupport.css";
 
 const ItSupport = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="it-support-section">
       <Container className="custom-container">
@@ -39,9 +41,12 @@ const ItSupport = () => {
             </ul>
             {/* Learn More Button */}
             <div className="mt-3">
-              <Link to="/ForYourHome" className="btn btn-primary learn-more-btn">
+              <button
+                className="btn btn-primary learn-more-btn"
+                onClick={() => navigate("/for-your-home")}
+              >
                 Learn More →
-              </Link>
+              </button>
             </div>
           </Col>
 
@@ -60,12 +65,12 @@ const ItSupport = () => {
             </ul>
             {/* Learn More Button */}
             <div className="mt-3">
-              <Link
-                to="/ForYourBusiness"
+              <button
                 className="btn btn-success learn-more-btn"
+                onClick={() => navigate("/for-your-business")}
               >
                 Learn More →
-              </Link>
+              </button>
             </div>
           </Col>
         </Row>

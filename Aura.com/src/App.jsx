@@ -146,8 +146,8 @@ const App = () => {
           <Route path="/LearnMore" element={<LearnMore />} />
           <Route path="/microsoft-store" element={<MicrosoftStore />} />
           <Route path="/internet-security" element={<InternetSecurity />} />
-          <Route path="/ForYourBusiness" element={<ForYourBusiness />} />
-          <Route path="/ForYourHome" element={<ForYourHome />} />
+          <Route path="/for-your-business" element={<ForYourBusiness />} />
+          <Route path="/for-your-home" element={<ForYourHome />} />
           <Route path="/ParentSolution" element={<ParentSolution />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/DaysMoneyBack" element={<DaysMoneyBack />} />

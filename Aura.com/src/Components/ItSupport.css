@@ -8,6 +8,7 @@
   overflow: hidden;
   text-align: center;
   font-family: 'Outfit', sans-serif;
+  z-index: 1;
 }
 
 .learn-more-btn {
@@ -15,13 +16,14 @@
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 5;   /* ✅ Button click always on top */
 }
 
 .learn-more-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Futuristic glowing background */
 .it-support-section::before,
@@ -31,7 +33,7 @@
   border-radius: 50%;
   filter: blur(120px);
   opacity: 0.15;
-  z-index: 0;
+  z-index: 0; /* ✅ stays behind cards/buttons */
 }
 .it-support-section::before {
   width: 400px; height: 400px;
@@ -76,12 +78,6 @@
   position: relative;
   z-index: 2;
 }
-/* .center-image {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-  transition: transform 0.6s ease, filter 0.6s ease;
-} */
 .center-image:hover {
   transform: scale(1.05) rotate(-1deg);
   filter: drop-shadow(0 0 25px #00e0ffaa);
@@ -124,6 +120,7 @@
   color: #e2e8f0;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
+  z-index: 3; /* ✅ keep cards above background layers */
   overflow: hidden;
 }
 .service-card::before {

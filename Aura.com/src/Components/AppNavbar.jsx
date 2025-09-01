@@ -39,8 +39,8 @@ const AppNavbar = () => {
             <Nav.Link as={Link} to="/DefendPro">DefendMePro™</Nav.Link>
 
             <NavDropdown title="SafeSupport Assist™" id="safeSupport" className="custom-dropdown">
-              <NavDropdown.Item as={Link} to="/ForYourHome">For Your Home</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/ForYourBusiness">For Your Business</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/for-your-home">For Your Home</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/for-your-business">For Your Business</NavDropdown.Item>
             </NavDropdown>
 
             {/* Solutions Dropdown */}
