@@ -75,7 +75,7 @@ const ProtectionShowcase = () => {
 
           <div className="pshowcase-image-card">
             <img
-              src="/Hero/Digital.webp"
+              src="/Hero/Digital.avif"
               alt="Protection Illustration"
               className="hero-image"
               loading="lazy"
