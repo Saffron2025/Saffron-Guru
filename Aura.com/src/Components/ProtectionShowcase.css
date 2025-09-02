@@ -124,6 +124,7 @@
   transform: translateY(20px);
   opacity: 0;
   animation: introReveal 1.2s ease forwards 0.3s;
+  margin-top: 1.5rem;   /* added spacing below image */
 }
 @keyframes introReveal {
   from { opacity: 0; transform: translateY(20px) scale(0.98); }
@@ -141,14 +142,15 @@
 }
 .pshowcase-intro .sub {
   font-size: 0.95rem;
-  color: var(--muted);
+  color: #1e293b;   /* darker slate blue-gray, much more visible */
   margin-top: 0.6rem;
   display: block;
+  font-weight: 600; /* thoda bold bhi kiya for clarity */
 }
 
 /* Image Card */
 .pshowcase-image-card {
-  margin-top: 1.5rem;
+  margin-top: 0;              /* removed top margin (image is first now) */
   position: relative;
   border-radius: 16px;
   overflow: hidden;

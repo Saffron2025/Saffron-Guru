@@ -54,25 +54,7 @@ const ProtectionShowcase = () => {
       <div className="pshowcase-container">
         {/* LEFT SIDE */}
         <div className="pshowcase-left">
-          <div className="pshowcase-intro">
-            <h3 className="kicker">🚫 Beyond Antivirus</h3>
-            <p>
-              Antivirus Can’t Stop{" "}
-              <span className="highlight">Scammers</span>.
-              <br />
-              <strong className="highlight">DefendMePro™ Protects You</strong>{" "}
-              from <span className="highlight">Scams</span>,{" "}
-              <span className="highlight">Fraud</span>,{" "}
-              <span className="highlight">Identity Theft</span>,{" "}
-              <span className="highlight">Hacking</span>, and{" "}
-              <span className="highlight">Online Takeovers</span>.
-              <br />
-              <span className="sub">
-                With <span className="highlight">Human IT Experts</span>, available 7 days a week.
-              </span>
-            </p>
-          </div>
-
+          {/* Image first */}
           <div className="pshowcase-image-card">
             <img
               src="/Hero/Digital.avif"
@@ -83,6 +65,26 @@ const ProtectionShowcase = () => {
             <div className="badge">🛡 Real Protection</div>
             <div className="badge">💬 Human Help</div>
             <div className="badge">⚡ Instant Action</div>
+          </div>
+
+          {/* Intro after image */}
+          <div className="pshowcase-intro">
+            <h3 className="kicker">🚫 Beyond Antivirus</h3>
+            <p>
+              Antivirus Can’t Stop <span className="highlight">Scammers</span>.
+              <br />
+              <strong className="highlight">DefendMePro™ Protects You</strong>{" "}
+              from <span className="highlight">Scams</span>,{" "}
+              <span className="highlight">Fraud</span>,{" "}
+              <span className="highlight">Identity Theft</span>,{" "}
+              <span className="highlight">Hacking</span>, and{" "}
+              <span className="highlight">Online Takeovers</span>.
+              <br />
+              <span className="sub">
+                With <span className="highlight">Human IT Experts</span>,
+                available 7 days a week.
+              </span>
+            </p>
           </div>
         </div>
 
