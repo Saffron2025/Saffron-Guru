@@ -6,6 +6,8 @@
   color: #ffffff !important;   /* force sab text white */
   position: relative;
   overflow: hidden;
+    margin-top: 80px;
+
 }
 
 /* Floating aurora orbs */
