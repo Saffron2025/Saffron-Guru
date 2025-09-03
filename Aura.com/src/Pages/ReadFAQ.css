@@ -9,6 +9,7 @@
   animation: wrapperFlow 18s infinite alternate ease-in-out;
   position: relative;
   overflow: hidden;
+  margin-top: 90px;
 }
 
 /* 🌀 Animated Gradient Background */

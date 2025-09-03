@@ -135,7 +135,7 @@ const App = () => {
           <Route path="/why-us" element={<Layout><WhyChooseUs /></Layout>} />
           <Route path="/userdashboard" element={<Layout><UserDashboard /></Layout>} />
           <Route path="/solution" element={<Solution />} />
-          <Route path="/resources" element={<Layout><Resources /></Layout>} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/HowSaffronWorks" element={<HowSaffronWorks />} />
           <Route path="/Fox" element={<Fox />} />
           <Route path="/CBS" element={<CBS />} />
