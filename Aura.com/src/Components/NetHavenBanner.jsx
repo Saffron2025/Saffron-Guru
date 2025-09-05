@@ -13,7 +13,14 @@ const NetHavenBanner = () => {
         {/* Left Fixed Image */}
         <div className="nh-image left-image">
           <div className="image-light"></div>
-          <img src="/Hero/NetHavenBanner1.WebP" alt="Parental Safety" loading="lazy" />
+          <img
+            src="/Hero/NetHavenBanner1.WebP"
+            alt="Parental Safety"
+            loading="eager"          // 👈 load immediately
+            fetchpriority="high"     // 👈 highest priority
+            width="400"
+            height="380"             // 👈 reduce layout shift
+          />
         </div>
 
         {/* Center Text */}
@@ -22,15 +29,23 @@ const NetHavenBanner = () => {
             NetHaven™ — AI-Powered Parental Control Solution
           </h1>
           <p className="nh-subtitle">
-            Guide your children toward a safer, healthier digital life with our AI-powered parental control solution — 
-            built to protect, filter, and encourage positive online habits.
+            Guide your children toward a safer, healthier digital life with our
+            AI-powered parental control solution — built to protect, filter, and
+            encourage positive online habits.
           </p>
         </div>
 
         {/* Right Fixed Image */}
         <div className="nh-image right-image">
           <div className="image-light"></div>
-          <img src="/Hero/NetHavenBanner2.WebP" alt="Child Safe Internet" loading="lazy" />
+          <img
+            src="/Hero/NetHavenBanner2.WebP"
+            alt="Child Safe Internet"
+            loading="eager"          // 👈 load immediately
+            fetchpriority="high"     // 👈 highest priority
+            width="400"
+            height="380"
+          />
         </div>
       </div>
     </section>

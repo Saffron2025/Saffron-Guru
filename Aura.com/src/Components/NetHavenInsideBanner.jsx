@@ -13,14 +13,17 @@ const NetHavenInsideBanner = () => {
         {/* Left: Sticky Image */}
         <aside className="inside-image">
           <img
-            src="/Hero/NetHavenInsideBanner.WebP"  /* <- change to your image path */
+            src="/Hero/NetHavenInsideBanner.WebP"   // ✅ optimized image
             alt="NetHaven devices preview"
-            loading="lazy"
+            loading="eager"                        // 👈 ab page load hote hi load hogi
+            fetchpriority="high"                   // 👈 browser ko priority hint
+            width="550" 
+            height="420"                           // 👈 CLS avoid karne ke liye fixed size
           />
           <div className="image-glow" />
         </aside>
 
-        {/* Right: Content (text unchanged) */}
+        {/* Right: Content */}
         <article className="inside-content">
           <h2 className="inside-eyebrow">What’s Inside NetHaven™</h2>
 
@@ -29,7 +32,11 @@ const NetHavenInsideBanner = () => {
           </h3>
 
           <p className="inside-body">
-            NetHaven™ delivers everything you need to protect your children online — in one easy subscription. From setting healthy boundaries to blocking harmful content and tracking online activity, every feature works together to keep your kids safe, focused, and balanced in today’s digital world. With coverage for up to 5 devices, you can protect the entire family across phones, tablets, and computers — all from a single dashboard.
+            NetHaven™ delivers everything you need to protect your children online — in one easy subscription. 
+            From setting healthy boundaries to blocking harmful content and tracking online activity, every feature 
+            works together to keep your kids safe, focused, and balanced in today’s digital world. 
+            With coverage for up to 5 devices, you can protect the entire family across phones, tablets, and 
+            computers — all from a single dashboard.
           </p>
 
           <div className="inside-badges">

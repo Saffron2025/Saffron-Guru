@@ -17,7 +17,10 @@ const SafeKidsBanner = () => {
           <img
             src="/Hero/SafeKidsBanner.WebP"
             alt="Safe Digital World"
-            loading="lazy"
+            loading="eager"           // 👈 load immediately
+            fetchpriority="high"      // 👈 mark as top priority
+            width="500"
+            height="400"              // 👈 prevent layout shift
           />
         </div>
 
@@ -27,9 +30,9 @@ const SafeKidsBanner = () => {
             Imagine a Safer, Healthier Digital World for Your Kids
           </h1>
           <p className="safe-subtitle">
-            Where they explore, learn, and play online — free from harmful content,
-            toxic strangers, and endless scrolling. Where you feel confident knowing
-            they’re protected, even when you’re not in the room.
+            Where they explore, learn, and play online — free from harmful
+            content, toxic strangers, and endless scrolling. Where you feel
+            confident knowing they’re protected, even when you’re not in the room.
           </p>
         </div>
       </div>

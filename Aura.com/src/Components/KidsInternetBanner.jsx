@@ -12,11 +12,10 @@ const KidsInternetBanner = () => {
       <div className="kids-banner-inner">
         {/* Left Text */}
         <div className="kids-banner-text">
-          <h1 className="kids-title">
-            🚸 The Internet Wasn’t Built for Kids
-          </h1>
+          <h1 className="kids-title">🚸 The Internet Wasn’t Built for Kids</h1>
           <p className="kids-subtitle">
-            From inappropriate content and online predators to screen addiction and cyber-bullying — kids face risks every time they go online.
+            From inappropriate content and online predators to screen addiction
+            and cyber-bullying — kids face risks every time they go online.
             Most parents can’t watch over their children 24/7.
           </p>
         </div>
@@ -27,7 +26,9 @@ const KidsInternetBanner = () => {
           <img
             src="/Hero/KidsBanner.WebP"
             alt="Child Online Safety"
-            loading="lazy"
+            loading="eager"            // 👈 ensure eager load
+            fetchpriority="high"       // 👈 tell browser this is top priority
+            width="500" height="400"   // 👈 add width/height to reduce CLS (layout shift)
           />
         </div>
       </div>
