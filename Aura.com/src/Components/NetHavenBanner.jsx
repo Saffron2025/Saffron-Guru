@@ -19,7 +19,7 @@ const NetHavenBanner = () => {
             loading="eager"          // 👈 load immediately
             fetchpriority="high"     // 👈 highest priority
             width="400"
-            height="380"             // 👈 reduce layout shift
+            height="280"             // 👈 reduce layout shift
           />
         </div>
 
@@ -44,7 +44,7 @@ const NetHavenBanner = () => {
             loading="eager"          // 👈 load immediately
             fetchpriority="high"     // 👈 highest priority
             width="400"
-            height="380"
+            height="280"
           />
         </div>
       </div>
