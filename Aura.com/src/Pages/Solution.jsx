@@ -2,6 +2,8 @@ import React from 'react';
 import AppNavbar from '../Components/AppNavbar';
 import AllSection from '../Components/AllSection';
 import { Container, Row, Col } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Solution.css';
 
 const Solution = () => {
@@ -18,10 +20,17 @@ const Solution = () => {
 
       <section className="solution-section fade-slide">
         <Container>
+          {/* Section 1 */}
           <Row className="align-items-center mb-5">
             <Col md={6}>
               <div className="image-wrapper">
-                <img src="/Hero/TheRising.WebP" alt="Scam Awareness" className="solution-img" />
+                <LazyLoadImage
+                  src="/Hero/TheRising.WebP"
+                  alt="Scam Awareness"
+                  effect="blur"
+                  loading="lazy"
+                  className="solution-img"
+                />
               </div>
             </Col>
             <Col md={6}>
@@ -37,10 +46,17 @@ const Solution = () => {
             </Col>
           </Row>
 
+          {/* Section 2 */}
           <Row className="align-items-center mb-5 flex-md-row-reverse">
             <Col md={6}>
               <div className="image-wrapper">
-                <img src="/Hero/FakeTechSupport.WebP" alt="Fake Support" className="solution-img" />
+                <LazyLoadImage
+                  src="/Hero/FakeTechSupport.WebP"
+                  alt="Fake Support"
+                  effect="blur"
+                  loading="lazy"
+                  className="solution-img"
+                />
               </div>
             </Col>
             <Col md={6}>
@@ -56,10 +72,17 @@ const Solution = () => {
             </Col>
           </Row>
 
+          {/* Section 3 */}
           <Row className="align-items-center mb-5">
             <Col md={6}>
               <div className="image-wrapper">
-                <img src="/Hero/RomanceScam.WebP" alt="Romance Scam" className="solution-img" />
+                <LazyLoadImage
+                  src="/Hero/RomanceScam.WebP"
+                  alt="Romance Scam"
+                  effect="blur"
+                  loading="lazy"
+                  className="solution-img"
+                />
               </div>
             </Col>
             <Col md={6}>
@@ -75,10 +98,17 @@ const Solution = () => {
             </Col>
           </Row>
 
+          {/* Section 4 */}
           <Row className="align-items-center mb-5 flex-md-row-reverse">
             <Col md={6}>
               <div className="image-wrapper">
-                <img src="/Hero/EducationScam.WebP" alt="Education First" className="solution-img" />
+                <LazyLoadImage
+                  src="/Hero/EducationScam.WebP"
+                  alt="Education First"
+                  effect="blur"
+                  loading="lazy"
+                  className="solution-img"
+                />
               </div>
             </Col>
             <Col md={6}>
