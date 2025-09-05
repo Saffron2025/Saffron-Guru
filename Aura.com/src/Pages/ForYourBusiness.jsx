@@ -27,16 +27,16 @@ export default function ForYourBusiness() {
       <AppNavbar />
       <div className="business-page">
 
-        {/* Hero Banner 1 */}
+        {/* Hero Banner 1 - eager load */}
         <section className="business-section hero-banner">
           <Container>
             <Row className="align-items-center">
               <Col md={6}>
-                <LazyLoadImage
+                <img
                   src="/Hero/TechFailures.WebP"
                   alt="Tech Issues"
-                  effect="blur"
                   className="business-img"
+                  loading="eager"   // ✅ fast load
                 />
               </Col>
               <Col md={6}>
@@ -53,16 +53,16 @@ export default function ForYourBusiness() {
           </Container>
         </section>
 
-        {/* Hero Banner 2 */}
+        {/* Hero Banner 2 - eager load */}
         <section className="business-section hero-banner">
           <Container>
             <Row className="align-items-center flex-md-row-reverse">
               <Col md={6}>
-                <LazyLoadImage
+                <img
                   src="/Hero/ProvideTechSupport.WebP"
                   alt="Business Live Tech Support"
-                  effect="blur"
                   className="business-img"
+                  loading="eager"   // ✅ fast load
                 />
               </Col>
               <Col md={6}>
@@ -78,16 +78,16 @@ export default function ForYourBusiness() {
           </Container>
         </section>
 
-        {/* Hero Banner 3 */}
+        {/* Hero Banner 3 - eager load */}
         <section className="business-section hero-banner">
           <Container>
             <Row className="align-items-center">
               <Col md={6}>
-                <LazyLoadImage
+                <img
                   src="/Hero/SafeSupport.WebP"
                   alt="Safe Support Assist"
-                  effect="blur"
                   className="business-img"
+                  loading="eager"   // ✅ fast load
                 />
               </Col>
               <Col md={6}>
@@ -113,7 +113,7 @@ export default function ForYourBusiness() {
         </section>
       </div>
 
-      {/* Rest of feature sections */}
+      {/* Rest of feature sections - lazy load remains */}
       <WiFiNetwork />
       <MultiplePrinter />
       <BusinessEmailSupport />
