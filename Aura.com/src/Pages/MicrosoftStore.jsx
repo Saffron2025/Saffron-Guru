@@ -50,7 +50,16 @@ const MicrosoftStore = () => {
                   className="product-card"
                   onClick={() => navigate(`/product/${product.id}`)}
                 >
-                  <Card.Img variant="top" src={product.img} alt={product.name} className="product-img" />
+                  <Card.Img
+                    as="img"
+                    variant="top"
+                    src={product.img}
+                    alt={product.name}
+                    className="product-img"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text className="product-desc">{product.desc}</Card.Text>
@@ -134,6 +143,7 @@ const MicrosoftStore = () => {
           </Row>
         </Container>
       </div>
+
       <AllSection />
     </>
   );

@@ -16,8 +16,9 @@ const InternetSecurity = () => {
 
   return (
     <>
-      <AppNavbar/>
+      <AppNavbar />
       <div className="internet-security-page">
+        {/* 🔹 Hero */}
         <header className="security-hero">
           <h1 className="security-title">🛡️ Internet Security & Online Fraud Protection</h1>
           <p className="security-subtitle">
@@ -29,32 +30,37 @@ const InternetSecurity = () => {
         <Container className="product-grid mt-4">
           <h2 className="store-title">💻 Internet Security Products</h2>
           <Row>
-            {products.filter(p => p.id >= 11).map((product) => (
+            {products.filter((p) => p.id >= 11).map((product) => (
               <Col md={4} sm={6} xs={12} key={product.id} className="mb-4">
-                <Card 
-  className="product-card"
-  onClick={() => {
-    console.log("Clicked product:", product.id);
-    navigate(`/product/${product.id}`);
-  }}
->
-
-                  <Card.Img variant="top" src={product.img} alt={product.name} className="product-img" />
+                <Card
+                  className="product-card"
+                  onClick={() => navigate(`/product/${product.id}`)}
+                >
+                  {/* ✅ Optimized image */}
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    className="product-img"
+                    loading="eager"
+                    fetchpriority="high"
+                    width="400"
+                    height="250"
+                  />
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text className="product-desc">{product.desc}</Card.Text>
                     <Card.Text className="product-price">{product.price}</Card.Text>
-                   <Button 
-  variant="primary" 
-  className="add-btn"
-  onClick={() => {
-    handleAddToCart(product);       // ✅ cart message
-    navigate(`/product/${product.id}`); // ✅ detail page
-  }}
->
-  ➕ Add to Cart
-</Button>
-
+                    <Button
+                      variant="primary"
+                      className="add-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleAddToCart(product);
+                        navigate(`/product/${product.id}`);
+                      }}
+                    >
+                      ➕ Add to Cart
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
@@ -63,7 +69,7 @@ const InternetSecurity = () => {
           {cartMessage && <div className="cart-message">{cartMessage}</div>}
         </Container>
 
-        {/* 🔹 Existing Info Section */}
+        {/* 🔹 Informational Sections */}
         <section className="security-content-section fade-in-section">
           <Container>
             <Row>
@@ -131,7 +137,7 @@ const InternetSecurity = () => {
           </Container>
         </section>
       </div>
-      <AllSection/>
+      <AllSection />
     </>
   );
 };
