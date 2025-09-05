@@ -48,6 +48,8 @@ import IdentifyFakeCalls from "./Pages/IdentifyFakeCalls";
 import ReadFAQ from "./Pages/ReadFAQ";
 import FixMyTech from "./Pages/FixMyTech";
 import ProductDetail from "./Pages/ProductDetail";
+import LiveSupport from "./Pages/LiveSupport";
+
 
 // ✅ Scroll helper
 const ScrollToHashElement = () => {
@@ -155,6 +157,7 @@ const App = () => {
           <Route path="/ReadFAQ" element={<ReadFAQ />} />
           <Route path="/FixMyTech" element={<FixMyTech />} />
           <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/live-support" element={<LiveSupport />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

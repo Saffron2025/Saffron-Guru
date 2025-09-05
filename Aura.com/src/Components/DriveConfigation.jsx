@@ -17,22 +17,28 @@ const DriveConfigation = () => {
   }, []);
 
   return (
-    <section ref={ref} className="svc-banner">
-      <div className="svc-bg" />
-      <div className="svc-card">
-        <div className="svc-header">
-          {/* Icon cluster: folder (main), cloud + server (subs) */}
-          <div className="svc-icon">
+    <section ref={ref} className="drive-banner">
+      <div className="drive-card">
+        <div className="drive-header">
+          {/* Icon cluster */}
+          <div className="drive-icon">
             <FaFolderOpen className="i-main" />
-            <FaCloud className="i-sub sub-a" />
-            <FaServer className="i-sub sub-b" />
+            <FaCloud className="i-sub" />
+            <FaServer className="i-sub" />
           </div>
 
-          <h3 className="svc-head">✅ File Sharing & Drive Configuration</h3>
+          <h3 className="drive-head">📂 File Sharing & Drive Configuration</h3>
         </div>
 
-        <p className="svc-sub">
-          We set up and configure secure file sharing systems and network drives so your team can easily access, store, and collaborate on business documents. Our service includes organizing shared folders, assigning user permissions, and integrating with platforms like OneDrive, Google Drive, or on-premises file servers. We also troubleshoot access issues, resolve sync problems, and apply security settings to ensure files are available to the right people — and only the right people — at all times.
+        <p className="drive-sub">
+          We set up and configure secure file sharing systems and network drives so your 
+          team can easily access, store, and collaborate on business documents.
+        </p>
+        <p className="drive-sub">
+          Our service includes organizing shared folders, assigning user permissions, 
+          and integrating with platforms like OneDrive, Google Drive, or on-premises file servers. 
+          We also troubleshoot access issues, resolve sync problems, and apply security settings 
+          to ensure files are available to the right people — and only the right people — at all times.
         </p>
       </div>
     </section>

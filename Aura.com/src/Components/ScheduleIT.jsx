@@ -18,23 +18,25 @@ const ScheduleIT = () => {
   }, []);
 
   return (
-    <section ref={ref} className="svc-banner">
-      <div className="svc-bg" />
-      <div className="svc-card">
-        <div className="svc-header">
-          <div className="svc-icon">
-            <FaTools className="i-main" />
-            <FaClock className="i-sub sub-a" />
-            <FaShieldAlt className="i-sub sub-b" />
+    <section ref={ref} className="schedule-banner">
+      <div className="schedule-card">
+        <div className="schedule-header">
+          <div className="schedule-icon">
+            <FaTools />
+            <FaClock />
+            <FaShieldAlt />
           </div>
-          <h3 className="svc-head">✅ Scheduled IT Maintenance & Optimization</h3>
+          <h3 className="schedule-head">🛠️⏰🛡️ Scheduled IT Maintenance & Optimization</h3>
         </div>
-        <p className="svc-sub">
-          Consistent, preventative maintenance keeps your technology performing at its best.
-          Systems are checked on a set schedule, updates and security fixes are applied without delay,
+
+        <p className="schedule-sub">
+          Consistent, preventative maintenance keeps your technology performing at its best. 
+          Systems are checked on a set schedule, updates and security fixes are applied without delay, 
           and performance settings are tuned for maximum efficiency.
-          Small problems are caught before they turn into downtime,
-          keeping your business operations smooth, secure, and uninterrupted.
+        </p>
+        <p className="schedule-sub">
+          Small problems are caught before they turn into downtime, keeping your business operations 
+          smooth, secure, and uninterrupted.
         </p>
       </div>
     </section>

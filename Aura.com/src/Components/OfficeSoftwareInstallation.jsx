@@ -9,7 +9,8 @@ const OfficeSoftwareInstallation = () => {
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add('in')),
+      (entries) =>
+        entries.forEach((e) => e.isIntersecting && e.target.classList.add('in')),
       { threshold: 0.12 }
     );
     io.observe(el);
@@ -17,17 +18,16 @@ const OfficeSoftwareInstallation = () => {
   }, []);
 
   return (
-    <section ref={ref} className="svc-banner">
-      <div className="svc-bg" />
-      <div className="svc-card">
-        <div className="svc-header">
-          <div className="svc-icon"><FaTools /></div>
-          <h3 className="svc-head">✅ Office Software Installation & Troubleshooting</h3>
+    <section ref={ref} className="office-banner">
+      <div className="office-card">
+        <div className="office-header">
+          <div className="office-icon"><FaTools /></div>
+          <h3 className="office-head">🛠️ Office Software Installation & Troubleshooting</h3>
         </div>
-        <p className="svc-sub">
-          We install and configure essential business software such as Microsoft Office, accounting tools, and collaboration apps. 
-          Our support covers updates, setup adjustments, and troubleshooting issues like crashes, errors, or compatibility problems — 
-          keeping your applications running smoothly.
+        <p className="office-sub">
+          We install and configure essential business software such as Microsoft Office, accounting tools, 
+          and collaboration apps. Our support covers updates, setup adjustments, and troubleshooting issues 
+          like crashes, errors, or compatibility problems — keeping your applications running smoothly and reliably.
         </p>
       </div>
     </section>

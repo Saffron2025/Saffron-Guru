@@ -5,13 +5,15 @@ import './AllSection.css';
 
 const footerLinks = [
   { label: "Home", path: "/home" },
-
   { label: "About Us", path: "/about" },
   { label: "Privacy Policy", path: "/privacy-policy" },
   { label: "Terms & Conditions", path: "/terms" },
   { label: "Return & Refund Policy", path: "/return-policy" },
   { label: "Why Choose Us?", path: "/why-us" },
   { label: "Contact Us", path: "/contact" },
+
+  // ✅ New Live Support link
+  { label: "Live Support", path: "/live-support", icon: "💬" },
 ];
 
 const AuraFooter = () => {
@@ -23,10 +25,10 @@ const AuraFooter = () => {
             <Link
               key={index}
               to={link.path}
-              className="footer-link"
+              className={`footer-link ${link.label === "Live Support" ? "live-support" : ""}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {link.label}
+              {link.icon && <span className="blink-icon">{link.icon}</span>} {link.label}
             </Link>
           ))}
         </div>

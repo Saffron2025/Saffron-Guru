@@ -2,6 +2,8 @@ import React from 'react';
 import AppNavbar from '../Components/AppNavbar';
 import AllSection from '../Components/AllSection';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './HowSaffronWorks.css';
 
 const HowSaffronWorks = () => {
@@ -20,7 +22,12 @@ const HowSaffronWorks = () => {
         <Container>
           <Row className="mb-5">
             <Col md={6}>
-              <img src="/Hero/ThreatMonitoring.WebP" alt="Real-Time Monitoring" className="saffron-img" />
+              <LazyLoadImage
+                alt="Real-Time Monitoring"
+                src="/Hero/ThreatMonitoring.WebP"
+                effect="blur"
+                className="saffron-img"
+              />
             </Col>
             <Col md={6}>
               <h2>📡 1. Real-Time Threat Monitoring</h2>
@@ -37,7 +44,12 @@ const HowSaffronWorks = () => {
 
           <Row className="mb-5 flex-md-row-reverse">
             <Col md={6}>
-              <img src="/Hero/AlertNotification.WebP" alt="Instant Alerts" className="saffron-img" />
+              <LazyLoadImage
+                alt="Instant Alerts"
+                src="/Hero/AlertNotification.WebP"
+                effect="blur"
+                className="saffron-img"
+              />
             </Col>
             <Col md={6}>
               <h2>🔔 2. Instant Alerts & Notifications</h2>
@@ -50,7 +62,12 @@ const HowSaffronWorks = () => {
 
           <Row className="mb-5">
             <Col md={6}>
-              <img src="/Hero/ExpertSuggestion.WebP" alt="Expert Support" className="saffron-img" />
+              <LazyLoadImage
+                alt="Expert Support"
+                src="/Hero/ExpertSuggestion.WebP"
+                effect="blur"
+                className="saffron-img"
+              />
             </Col>
             <Col md={6}>
               <h2>👨‍💻 3. Expert Human Support</h2>
@@ -67,7 +84,12 @@ const HowSaffronWorks = () => {
 
           <Row className="mb-5 flex-md-row-reverse">
             <Col md={6}>
-              <img src="/Hero/DigitalProtection.WebP" alt="Layers of Protection" className="saffron-img" />
+              <LazyLoadImage
+                alt="Layers of Protection"
+                src="/Hero/DigitalProtection.WebP"
+                effect="blur"
+                className="saffron-img"
+              />
             </Col>
             <Col md={6}>
               <h2>🧱 4. Layered Digital Protection</h2>

@@ -17,15 +17,19 @@ const WiFiNetwork = () => {
   }, []);
 
   return (
-    <section ref={ref} className="svc-banner">
-      <div className="svc-bg" />
-      <div className="svc-card">
-        <div className="svc-header">
-          <div className="svc-icon"><FaWifi /></div>
-          <h3 className="svc-head">✅ Wi-Fi Network & Access Point Configuration</h3>
+    <section ref={ref} className="wifi-banner">
+      <div className="wifi-card">
+        <div className="wifi-header">
+          <div className="wifi-icon"><FaWifi /></div>
+          <h3 className="wifi-head">✅ Wi-Fi Network & Access Point Configuration</h3>
         </div>
-        <p className="svc-sub">
-          We set up and configure a secure, high-performance wireless network for your business, ensuring strong coverage and fast, reliable connections in every workspace. This includes selecting the right hardware, configuring routers and access points, optimizing signal strength, and applying security protocols to protect your data. Whether you have a single office or multiple locations, we make sure your Wi-Fi supports every employee, device, and business application without interruptions.
+        <p className="wifi-sub">
+          We set up and configure a secure, high-performance wireless network for your business, 
+          ensuring strong coverage and fast, reliable connections in every workspace. 
+          This includes selecting the right hardware, configuring routers and access points, 
+          optimizing signal strength, and applying security protocols to protect your data. 
+          Whether you have a single office or multiple locations, we make sure your Wi-Fi supports 
+          every employee, device, and business application without interruptions.
         </p>
       </div>
     </section>

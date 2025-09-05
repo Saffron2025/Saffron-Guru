@@ -4,7 +4,6 @@
   background: rgba(94, 111, 166, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
   color: white;
   font-family: 'Outfit', sans-serif;
   padding: 4rem 1rem 2rem;
@@ -81,9 +80,33 @@
   transition: width 0.4s ease;
   transform: translateX(-50%);
 }
-
 .footer-link:hover::after {
   width: 70%;
+}
+
+/* ✅ Blink effect for Live Support */
+/* 🔥 Smooth Blink / Pulse Effect for Live Support icon */
+.blink-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  display: inline-block;
+  animation: smooth-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes smooth-blink {
+  0%   { opacity: 1; transform: scale(1);   text-shadow: 0 0 5px rgba(0, 255, 204, 0.6); }
+  50%  { opacity: 0.4; transform: scale(1.2); text-shadow: 0 0 15px rgba(0, 255, 204, 0.9); }
+  100% { opacity: 1; transform: scale(1);   text-shadow: 0 0 5px rgba(0, 255, 204, 0.6); }
+}
+
+.footer-link.live-support {
+  color: #00ffcc;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+.footer-link.live-support:hover {
+  background: rgba(0, 255, 204, 0.12);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
 }
 
 .footer-credit {
@@ -106,7 +129,7 @@
   }
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 576px) {
   .footer-link {
     display: block;
@@ -115,7 +138,6 @@
     font-size: 1rem;
     padding: 0.9rem;
   }
-
   .footer-grid {
     gap: 1rem;
   }

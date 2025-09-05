@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { FaBriefcase, FaClock, FaLayerGroup, FaHeadset, FaTools, FaUserCog, FaShieldAlt, FaHandshake } from 'react-icons/fa';
+import { 
+  FaBriefcase, FaClock, FaLayerGroup, FaHeadset, 
+  FaTools, FaUserCog, FaShieldAlt, FaHandshake 
+} from 'react-icons/fa';
 import './WhyChooseSaffronGuruSafeSupportAssist.css';
 
 const WhyChooseSaffronGuruSafeSupportAssist = () => {
@@ -9,7 +12,8 @@ const WhyChooseSaffronGuruSafeSupportAssist = () => {
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add('in')),
+      (entries) =>
+        entries.forEach((e) => e.isIntersecting && e.target.classList.add('in')),
       { threshold: 0.12 }
     );
     io.observe(el);
@@ -28,26 +32,35 @@ const WhyChooseSaffronGuruSafeSupportAssist = () => {
   ];
 
   return (
-    <section ref={ref} className="why-wrap">
-      <div className="why-header">
-        <h2>Why Choose <span className="highlight">Saffron Guru’s Safe Support Assist™</span> for Business</h2>
+    <section ref={ref} className="why-section">
+      <div className="why-top">
+        <h2 className="why-title">
+          Why Choose <span>Saffron Guru’s Safe Support Assist™</span> for Business
+        </h2>
+        <p className="why-sub">
+          A complete IT support solution designed to keep businesses running without interruptions.
+        </p>
       </div>
 
-      <div className="why-grid">
+      <div className="why-steps">
         {points.map((p, i) => (
-          <div className="why-card" key={i}>
-            <div className="icon-box">{p.icon}</div>
-            <h3>{p.title}</h3>
-            <p>{p.desc}</p>
+          <div className="why-step" key={i}>
+            <div className="why-number">{i + 1}</div>
+            <div className="why-content">
+              <div className="why-icon">{p.icon}</div>
+              <div>
+                <h3>{p.title}</h3>
+                <p>{p.desc}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
 
-      {/* ✅ Moved tagline to bottom */}
-      <div className="why-bottom-tagline">
+      <div className="why-footer">
         <p>
-          When your technology works, your business thrives.<br />
-          <strong>Safe Support Assist™</strong> for Business keeps it that way — every day.
+          <strong>Safe Support Assist™</strong> ensures your technology never slows you down.  
+          <br /> When IT runs smoothly, your business can thrive.
         </p>
       </div>
     </section>

@@ -9,7 +9,8 @@ const VPNSetup = () => {
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add('in')),
+      (entries) =>
+        entries.forEach((e) => e.isIntersecting && e.target.classList.add('in')),
       { threshold: 0.12 }
     );
     io.observe(el);
@@ -17,22 +18,28 @@ const VPNSetup = () => {
   }, []);
 
   return (
-    <section ref={ref} className="svc-banner">
-      <div className="svc-bg" />
-      <div className="svc-card">
-        <div className="svc-header">
+    <section ref={ref} className="vpn-banner">
+      <div className="vpn-card">
+        <div className="vpn-header">
           {/* Icon cluster */}
-          <div className="svc-icon">
-            <FaLock className="i-main" />
-            <FaGlobe className="i-sub sub-a" />
-            <FaNetworkWired className="i-sub sub-b" />
+          <div className="vpn-icon">
+            <FaLock />
+            <FaGlobe />
+            <FaNetworkWired />
           </div>
 
-          <h3 className="svc-head">✅ VPN Setup & Remote Access Help</h3>
+          <h3 className="vpn-head">🔒 VPN Setup & Remote Access Help</h3>
         </div>
 
-        <p className="svc-sub">
-          Remote work is only as safe as the connection that supports it. This service ensures your team can log in from anywhere through a secure, encrypted VPN, with permissions matched to their role. Integrated directly into your network, it keeps data protected while eliminating the connection errors, login failures, and performance issues that slow teams down.
+        <p className="vpn-sub">
+          Remote work is only as safe as the connection that supports it. 
+          This service ensures your team can log in from anywhere through 
+          a secure, encrypted VPN, with permissions matched to their role.
+        </p>
+        <p className="vpn-sub">
+          Integrated directly into your network, it keeps data protected while 
+          eliminating connection errors, login failures, and performance issues 
+          that slow teams down — so your team stays safe and productive from anywhere.
         </p>
       </div>
     </section>
