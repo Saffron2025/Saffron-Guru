@@ -19,7 +19,7 @@
 .hero-heading {
   font-size: 2.8rem;
   font-weight: 600;
-  color: white;
+  color: white !important;
 }
 
 .hero-subtext {
@@ -27,7 +27,7 @@
   max-width: 720px;
   margin: auto;
   opacity: 0.9;
-  color: wheat;
+  color: wheat !important;
 }
 
 .solution-section h2 {
