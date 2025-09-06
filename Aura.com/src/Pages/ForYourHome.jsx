@@ -20,53 +20,60 @@ import './ForYourHome.css'
 const ForYourHome = () => {
   return (
     <>
-    <AppNavbar/>
-        <div>
+      <AppNavbar />
+      <div>
+        {/* ✅ Banner Section */}
         <section className="tech-banner-wrapper-ultimate">
-  <div className="tech-banner-content-ultimate">
-    <h1 className="tech-banner-title-ultimate">🧘 You Focus on Life.<br />💻 We Handle the Tech.</h1>
-    <p className="tech-banner-subtext-ultimate">
-      Whether it’s your <strong>Wi-Fi</strong>, <strong>computer</strong>, <strong>smartphone</strong>, or <strong>printer</strong> — our trusted team is always here to fix, guide, and support you with care.
-      <br />
-      <span className="highlight-ultimate">No confusion. No hourly fees. Just help you can count on.</span>
-    </p>
-  </div>
+          <div className="tech-banner-content-ultimate">
+            <h1 className="tech-banner-title-ultimate">
+              🧘 You Focus on Life.<br />💻 We Handle the Tech.
+            </h1>
+            <p className="tech-banner-subtext-ultimate">
+              Whether it’s your <strong>Wi-Fi</strong>, <strong>computer</strong>, <strong>smartphone</strong>, or <strong>printer</strong> — our trusted team is always here to fix, guide, and support you with care.
+              <br />
+              <span className="highlight-ultimate">No confusion. No hourly fees. Just help you can count on.</span>
+            </p>
+          </div>
 
-  <div className="tech-banner-floating-image-ultimate">
-    <img src="/Hero/TechSupportHome.WebP" alt="Tech Help" />
-  </div>
+          <div className="tech-banner-floating-image-ultimate">
+            <img
+              src="/Hero/TechSupportHome.WebP"
+              alt="Tech Help"
+              loading="lazy"
+            />
+          </div>
 
-  <div className="tech-banner-glow-layer"></div>
-</section>
+          <div className="tech-banner-glow-layer"></div>
+        </section>
 
-<section className="tech-help-section-ultimate">
-  <div className="tech-help-content-ultimate">
-    <h2 className="tech-help-title-ultimate">🧰 What Can We Help You With?</h2>
-    <p className="tech-help-subtext-ultimate">
-      From everyday tech problems to device setup — and even the toughest fixes — we don’t give up until your tech works like it should.
-    </p>
-  </div>
-</section>
+        {/* ✅ Help Section */}
+        <section className="tech-help-section-ultimate">
+          <div className="tech-help-content-ultimate">
+            <h2 className="tech-help-title-ultimate">🧰 What Can We Help You With?</h2>
+            <p className="tech-help-subtext-ultimate">
+              From everyday tech problems to device setup — and even the toughest fixes — we don’t give up until your tech works like it should.
+            </p>
+          </div>
+        </section>
+      </div>
 
-
-        </div>
-<WiFiSetupTroubleShooting/>
-<LaptopDesktopRepair/>
-<PrinterSupport/>
-<SoftwareSupport/>
-<SmartTVSupport/>
-<EmailSupport/>
-<MobileDeviceSupport/>
-<RouterNetworkSupport/>
-<VirusRemovalSupport/>
-<DataBackupSupport/>
-<SlowDevicesFix/>
-<MonthlyHealthCheck/>
-<TechTeamBanner/>
-<WhyChooseSafeSupport/>
-        <AllSection/>
-  </>
-
+      {/* ✅ Imported Components */}
+      <WiFiSetupTroubleShooting />
+      <LaptopDesktopRepair />
+      <PrinterSupport />
+      <SoftwareSupport />
+      <SmartTVSupport />
+      <EmailSupport />
+      <MobileDeviceSupport />
+      <RouterNetworkSupport />
+      <VirusRemovalSupport />
+      <DataBackupSupport />
+      <SlowDevicesFix />
+      <MonthlyHealthCheck />
+      <TechTeamBanner />
+      <WhyChooseSafeSupport />
+      <AllSection />
+    </>
   )
 }
 

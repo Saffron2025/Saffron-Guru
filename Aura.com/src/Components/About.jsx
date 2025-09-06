@@ -31,14 +31,24 @@ const About = () => {
               </p>
             </Col>
             <Col md={6}>
-              <img src="/Hero/OurProtection.WebP" alt="Our Story" className="about-image" />
+              <img
+                src="/Hero/OurProtection.WebP"
+                alt="Our Story"
+                className="about-image"
+                loading="lazy"
+              />
             </Col>
           </Row>
 
           {/* Our Mission */}
           <Row className="about-block reverse">
             <Col md={6}>
-              <img src="/Hero/OurMission.WebP" alt="Our Mission" className="OurMission" />
+              <img
+                src="/Hero/OurMission.WebP"
+                alt="Our Mission"
+                className="OurMission"
+                loading="lazy"
+              />
             </Col>
             <Col md={6}>
               <h2 className="about-heading">Our Mission</h2>
@@ -72,14 +82,24 @@ const About = () => {
               </p>
             </Col>
             <Col md={6}>
-              <img src="/Hero/OurJourney.WebP" alt="Achievements" className="about-image" />
+              <img
+                src="/Hero/OurJourney.WebP"
+                alt="Achievements"
+                className="about-image"
+                loading="lazy"
+              />
             </Col>
           </Row>
 
           {/* Our Values */}
           <Row className="about-block reverse">
             <Col md={6}>
-              <img src="/Hero/OurValue.WebP" alt="Our Values" className="OurValue" />
+              <img
+                src="/Hero/OurValue.WebP"
+                alt="Our Values"
+                className="OurValue"
+                loading="lazy"
+              />
             </Col>
             <Col md={6}>
               <h2 className="about-heading">Our Values</h2>
@@ -110,53 +130,62 @@ const About = () => {
               </p>
             </Col>
             <Col md={6}>
-              <img src="/Hero/WhatWeOfferToday.WebP" alt="What We Offer" className="WhatWeOfferToday" />
+              <img
+                src="/Hero/WhatWeOfferToday.WebP"
+                alt="What We Offer"
+                className="WhatWeOfferToday"
+                loading="lazy"
+              />
             </Col>
           </Row>
 
           {/* Vision */}
-       <Row className="about-block reverse">
-  <Col md={6}>
-    <img src="/Hero/OurVision.WebP" alt="Our Vision" className="OurVision" />
-  </Col>
+          <Row className="about-block reverse">
+            <Col md={6}>
+              <img
+                src="/Hero/OurVision.WebP"
+                alt="Our Vision"
+                className="OurVision"
+                loading="lazy"
+              />
+            </Col>
+            <Col md={6}>
+              <h2 className="about-heading">Our Vision for the Future</h2>
+              <p className="about-text">
+                In today’s fast, AI-driven world, digital safety is no longer optional—it’s essential. Cyberattacks and scams are now powered by AI-driven tools that adapt in real time, impersonate trusted voices with deepfakes, and launch highly personalized fraud attempts.
+              </p>
+              <p className="about-text">
+                Our vision is clear: • To protect every home and small business. • To stop cyberattacks and scams before harm. • To reach millions of families across North America and beyond.
+              </p>
+              <p className="about-text">
+                Next April, Saffron Guru will celebrate 10 years of service—a decade of honest, reliable IT support with a commitment to 100% customer satisfaction.
+              </p>
 
-  <Col md={6}>
-    <h2 className="about-heading">Our Vision for the Future</h2>
-    <p className="about-text">
-      In today’s fast, AI-driven world, digital safety is no longer optional—it’s essential. Cyberattacks and scams are now powered by AI-driven tools that adapt in real time, impersonate trusted voices with deepfakes, and launch highly personalized fraud attempts.
-    </p>
-    <p className="about-text">
-      Our vision is clear: • To protect every home and small business. • To stop cyberattacks and scams before harm. • To reach millions of families across North America and beyond.
-    </p>
-    <p className="about-text">
-      Next April, Saffron Guru will celebrate 10 years of service—a decade of honest, reliable IT support with a commitment to 100% customer satisfaction.
-    </p>
+              {/* 👇 Merged BBB Badge + Text */}
+              <div className="about-text trust-bbb">
+                <span>
+                  We’re proud to be BBB Accredited — a recognition of our long-standing commitment to honesty, transparency, and trust.
+                </span>
+                <a
+                  href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="trust-link-block"
+                >
+                  <img
+                    src="/Hero/cdn.WebP"
+                    alt="BBB A+ Rated"
+                    className="trust-full-image"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
 
-    {/* 👇 Merged BBB Badge + Text */}
-    <div className="about-text trust-bbb">
-      <span>
-        We’re proud to be BBB Accredited — a recognition of our long-standing commitment to honesty, transparency, and trust.
-      </span>
-      <a
-        href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="trust-link-block"
-      >
-        <img
-          src="/Hero/cdn.WebP"
-          alt="BBB A+ Rated"
-          className="trust-full-image"
-        />
-      </a>
-    </div>
-
-    <p className="about-text">
-      👉 Call us today and let Saffron Guru be your trusted partner in the digital world. Toll Free +1 844-313-4987
-    </p>
-  </Col>
-</Row>
-
+              <p className="about-text">
+                👉 Call us today and let Saffron Guru be your trusted partner in the digital world. Toll Free +1 844-313-4987
+              </p>
+            </Col>
+          </Row>
 
         </Container>
       </section>
