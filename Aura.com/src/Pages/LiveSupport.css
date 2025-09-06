@@ -138,11 +138,79 @@
   100% { transform: scale(1); opacity: 1; }
 }
 
+/* 🌟 Brand Section with GIF on Left */
+.support-brand-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  border-radius: 14px;
+  background: #f9fafb;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.brand-left {
+  flex: 0 0 auto;
+}
+.saffronGuru-logo-support {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.5);
+  animation: floatUpDown 3s ease-in-out infinite, glowPulse 2.5s infinite;
+}
+
+.brand-right {
+  flex: 1;
+}
+.brand-right h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+}
+.brand-right p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Animations */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(0,150,255,0.4); }
+  50% { box-shadow: 0 0 25px rgba(0,150,255,0.9); }
+  100% { box-shadow: 0 0 10px rgba(0,150,255,0.4); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .support-brand-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .brand-right {
+    margin-top: 1rem;
+  }
+}
+
 /* 🌟 Footer Note */
 .support-footer-note {
   text-align: center;
   max-width: 850px;
-  margin: 4rem auto 0;
+  margin: 3rem auto 0;
   background: #f9fafb;
   padding: 2rem;
   border-radius: 14px;
