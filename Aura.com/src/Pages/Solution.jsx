@@ -11,6 +11,7 @@ const Solution = () => {
     <div className="solution-page">
       <AppNavbar />
       
+      {/* ✅ Hero Section */}
       <header className="solution-hero">
         <h1 className="hero-heading">🛡️ Protecting Our Elders from Online Scams</h1>
         <p className="hero-subtext">
@@ -18,6 +19,7 @@ const Solution = () => {
         </p>
       </header>
 
+      {/* ✅ Main Solution Sections */}
       <section className="solution-section fade-slide">
         <Container>
           {/* Section 1 */}

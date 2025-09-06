@@ -1,25 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Poppins:wght@400;500;600&display=swap');
 
+/* Page Wrapper */
 .solution-page {
   background: #f4f9fc;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-    margin-top: 80px;
-
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
+/* Hero Section */
 .solution-hero {
   text-align: center;
-  padding: 4rem 1rem 3rem;
+  padding: 5rem 1rem 4rem;
   background: linear-gradient(135deg, #183b56, #1f537e);
   color: #fff;
-  animation: fadeInSlide 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.08), transparent 60%),
+              radial-gradient(circle at 70% 40%, rgba(255,255,255,0.06), transparent 60%);
+  animation: gradientPulse 8s infinite alternate;
+  z-index: 0;
 }
 
 .hero-heading {
-  font-size: 2.8rem;
-  font-weight: 600;
-  color: white !important;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #ffd700, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-subtext {
@@ -27,54 +48,85 @@
   max-width: 720px;
   margin: auto;
   opacity: 0.9;
-  color: wheat !important;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  color: white !important;
+}
+
+/* Section Content */
+.solution-section {
+  padding: 4rem 1rem;
 }
 
 .solution-section h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #163b63;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
 }
 
 .solution-section p {
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #333;
+  margin-bottom: 1rem;
 }
 
 .solution-section ul {
   padding-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .solution-section ul li {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.2rem;
 }
 
+.solution-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Image Wrapper */
 .image-wrapper {
   width: 100%;
   display: flex;
-  margin-top: 100px;
   justify-content: center;
+  margin: 2.5rem 0;
+  perspective: 1000px;
 }
 
+/* Images */
 .solution-img {
-  width: 80%;
-  max-width: 420px;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  transform: rotateX(0) rotateY(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .solution-img:hover {
-  transform: scale(1.03);
+  transform: rotateX(4deg) rotateY(-4deg) scale(1.03);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
 }
 
 /* Animations */
 @keyframes fadeInSlide {
   from {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -84,4 +136,13 @@
 
 .fade-slide {
   animation: fadeInSlide 1s ease-in-out;
+}
+
+@keyframes gradientPulse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
