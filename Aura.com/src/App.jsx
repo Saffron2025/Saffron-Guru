@@ -9,9 +9,7 @@ import {
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
 import Layout from "./Layout";
-
-// ✅ Firebase
-import { getFCMToken, listenForeground } from "./firebase";
+import OneSignal from "react-onesignal";
 
 // 📄 Pages
 import Home from "./Pages/Home";
@@ -50,7 +48,6 @@ import FixMyTech from "./Pages/FixMyTech";
 import ProductDetail from "./Pages/ProductDetail";
 import LiveSupport from "./Pages/LiveSupport";
 
-
 // ✅ Scroll helper
 const ScrollToHashElement = () => {
   const { hash } = useLocation();
@@ -65,56 +62,17 @@ const ScrollToHashElement = () => {
 
 const App = () => {
   useEffect(() => {
-    keepAlive();
-    const API_BASE =
-      import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+  keepAlive();
 
-    // 🔹 Save token to backend
-    const registerToken = async (token) => {
-      try {
-        const res = await fetch(`${API_BASE}/api/notifications/register-token`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ token }),
-        });
-        const data = await res.json();
-        console.log("📩 Token saved on backend:", data);
-      } catch (err) {
-        console.error("❌ Error saving token:", err);
-      }
-    };
-
-    // 🔹 Ask permission + token check
-    Notification.requestPermission().then(async (permission) => {
-      if (permission === "granted") {
-        console.log("✅ Notification permission granted.");
-
-        const token = await getFCMToken();
-
-        // ✅ New vs Old token compare
-        if (token && token !== localStorage.getItem("lastToken")) {
-          alert("🔄 Your notification access has been refreshed.");
-          localStorage.setItem("lastToken", token);
-        }
-
-        if (token) await registerToken(token);
-      } else {
-        console.warn("❌ Notification permission denied.");
-      }
+  if (!window.OneSignalInitialized) {
+    OneSignal.init({
+      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+      notifyButton: { enable: true },
+      allowLocalhostAsSecureOrigin: true, // local testing
     });
-
-    // 🔹 Foreground notifications
-    const unsubscribe = listenForeground((payload) => {
-      const { title, body, image } = payload.notification;
-      new Notification(title, {
-        body,
-        icon: "/logo192.png",
-        image: image || undefined,
-      });
-    });
-
-    return () => unsubscribe();
-  }, []);
+    window.OneSignalInitialized = true;
+  }
+}, []);
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: "hidden" }}>
@@ -137,7 +95,7 @@ const App = () => {
           <Route path="/why-us" element={<Layout><WhyChooseUs /></Layout>} />
           <Route path="/userdashboard" element={<Layout><UserDashboard /></Layout>} />
           <Route path="/solution" element={<Solution />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources" element={<Layout><Resources /></Layout>} />
           <Route path="/HowSaffronWorks" element={<HowSaffronWorks />} />
           <Route path="/Fox" element={<Fox />} />
           <Route path="/CBS" element={<CBS />} />
