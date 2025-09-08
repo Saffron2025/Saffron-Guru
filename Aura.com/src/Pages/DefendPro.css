@@ -61,14 +61,17 @@
   z-index: 2;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
+.hero-content .hero-subtext {
+  color: #222 !important;   /* Dark Gray/Black */
+}
 
 
 .hero-subtext {
   font-size: 1.3rem;
   line-height: 1.8;
-  color: #333 !important;
+  color: #004f70;   /* 🔹 Dark blue */
 }
+
 
 /* 🚨 SCAM BANNER */
 .scam-banner {
