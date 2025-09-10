@@ -47,6 +47,7 @@ import ReadFAQ from "./Pages/ReadFAQ";
 import FixMyTech from "./Pages/FixMyTech";
 import ProductDetail from "./Pages/ProductDetail";
 import LiveSupport from "./Pages/LiveSupport";
+import Blog from "./Pages/Blog";
 
 // ✅ Scroll helper
 const ScrollToHashElement = () => {
@@ -62,17 +63,17 @@ const ScrollToHashElement = () => {
 
 const App = () => {
   useEffect(() => {
-  keepAlive();
+    keepAlive();
 
-  if (!window.OneSignalInitialized) {
-    OneSignal.init({
-      appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
-      notifyButton: { enable: true },
-      allowLocalhostAsSecureOrigin: true, // local testing
-    });
-    window.OneSignalInitialized = true;
-  }
-}, []);
+    if (!window.OneSignalInitialized) {
+      OneSignal.init({
+        appId: "008d4144-75d7-4b47-8fe7-537c358496a0",
+        notifyButton: { enable: true },
+        allowLocalhostAsSecureOrigin: true, // local testing
+      });
+      window.OneSignalInitialized = true;
+    }
+  }, []);
 
   return (
     <div style={{ margin: 0, padding: 0, overflowX: "hidden" }}>
@@ -116,6 +117,8 @@ const App = () => {
           <Route path="/FixMyTech" element={<FixMyTech />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/live-support" element={<LiveSupport />} />
+          <Route path="/blog" element={<Blog />} />
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

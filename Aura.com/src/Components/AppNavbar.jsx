@@ -100,6 +100,8 @@ const AppNavbar = () => {
               <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/HowSaffronWorks">How Saffron Works</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/blog">Blog</NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
 
