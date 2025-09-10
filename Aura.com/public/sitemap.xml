@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Homepage -->
   <url>
     <loc>https://www.saffronguru.com/</loc>
@@ -28,10 +29,96 @@
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Contact Page -->
+  <!-- How Saffron Works -->
+  <url>
+    <loc>https://www.saffronguru.com/HowSaffronWorks</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Pricing -->
+  <url>
+    <loc>https://www.saffronguru.com/Pricing</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact -->
   <url>
     <loc>https://www.saffronguru.com/contact</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+  <!-- Blog Home -->
+  <url>
+    <loc>https://www.saffronguru.com/blog</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://www.saffronguru.com/blog/online-scam-guide</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/romance-scam</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/tech-support-scam</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/banking-otp-fraud</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/spam-calls</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/phishing-emails</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/identity-theft</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/online-shopping</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/investment-scam</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/blog/password-safety</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Software Pages -->
+  <url>
+    <loc>https://www.saffronguru.com/microsoft-store</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/internet-security</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>

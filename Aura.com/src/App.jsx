@@ -47,7 +47,9 @@ import ReadFAQ from "./Pages/ReadFAQ";
 import FixMyTech from "./Pages/FixMyTech";
 import ProductDetail from "./Pages/ProductDetail";
 import LiveSupport from "./Pages/LiveSupport";
-import Blog from "./Pages/Blog";
+import BlogHome from "./Pages/Blogs/BlogHome";
+import BlogPost from "./Pages/Blogs/BlogPost";
+
 
 // ✅ Scroll helper
 const ScrollToHashElement = () => {
@@ -117,7 +119,9 @@ const App = () => {
           <Route path="/FixMyTech" element={<FixMyTech />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/live-support" element={<LiveSupport />} />
-          <Route path="/blog" element={<Blog />} />
+            <Route path="/blog" element={<BlogHome />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

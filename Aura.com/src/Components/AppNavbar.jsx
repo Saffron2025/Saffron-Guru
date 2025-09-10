@@ -96,13 +96,28 @@ const AppNavbar = () => {
             <Nav.Link as={Link} to="/Pricing">Pricing</Nav.Link>
 
             {/* Knowledge Center */}
-            <NavDropdown title="Knowledge Center" id="knowledge-dropdown" className="custom-dropdown">
-              <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/HowSaffronWorks">How Saffron Works</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/blog">Blog</NavDropdown.Item>
+           {/* Knowledge Center */}
+<NavDropdown title="Knowledge Center" id="knowledge-dropdown" className="custom-dropdown">
+  <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/HowSaffronWorks">How Saffron Works</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
+</NavDropdown>
 
-            </NavDropdown>
+{/* ✅ Blog ko alag Nav item banao */}
+<NavDropdown title="Blog" id="blog-main-dropdown" className="custom-dropdown">
+  <NavDropdown.Item as={Link} to="/blog/online-scam-guide">🛡️ Online Scam Guide</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/romance-scam">❤️ Romance Scams</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/tech-support-scam">🖥️ Tech Support Scams</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/banking-otp-fraud">💳 Banking & OTP Fraud</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/spam-calls">📞 Spam Calls & Robocalls</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/phishing-emails">📧 Phishing Emails</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/identity-theft">👤 Identity Theft</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/online-shopping">🌐 Online Shopping Safety</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/investment-scam">💰 Investment & Lottery Scams</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/blog/password-safety">🔑 Password Safety</NavDropdown.Item>
+</NavDropdown>
+
+
           </Nav>
 
           {/* Auth Buttons */}

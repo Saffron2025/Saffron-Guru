@@ -331,7 +331,40 @@
 .custom-dropdown .dropdown-item:hover::before {
   opacity: 1;
   transform: translateX(4px);
+
+
 }
+
+/* Submenu container */
+.dropdown-submenu {
+  position: relative;
+}
+
+/* Nested menu hidden by default */
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  top: 0;
+  left: 100%;
+  margin-left: 0.2rem;
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 220px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+/* Show on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Styling submenu items */
+.dropdown-submenu > .dropdown-menu .dropdown-item {
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+}
+
 
 /* 📱 Responsive */
 @media (max-width: 1024px) {
