@@ -819,7 +819,85 @@ const blogs = {
     and connect online without fear. A strong password today ensures 
     your digital peace tomorrow.</p>
   `
+},
+
+"ai-voice-fraud": {
+  title: "🤖 AI Voice Call Frauds – The Rise of Deepfake Scams in 2025",
+  content: `
+    <p>In 2025, scams have entered a dangerous new level – powered by Artificial Intelligence (AI). 
+    Fraudsters now use <strong>AI-generated voices</strong> to mimic family members, banks, or 
+    even government officials. These “deepfake calls” sound so real that seniors often believe 
+    them instantly and fall victim to financial fraud.</p>
+
+    <h2>🔎 What Are AI Voice Call Frauds?</h2>
+    <p>AI voice scams use advanced software that can clone anyone’s voice within minutes. 
+    Scammers only need a short audio clip from YouTube, WhatsApp, or a voicemail to 
+    create a fake copy. They then call seniors pretending to be their son, daughter, 
+    or even bank staff, asking for urgent money transfers.</p>
+
+    <h2>⚠️ Real-Life Examples</h2>
+    <ul>
+      <li>A senior in the U.S. received a call that sounded exactly like his grandson, 
+      saying he was in jail and needed bail money. He transferred $5,000 instantly – 
+      but it was a fraud.</li>
+      <li>In India, a 62-year-old was tricked by a fake “bank manager” voice asking 
+      for OTP verification. Within 10 minutes, ₹3 lakh disappeared from his account.</li>
+    </ul>
+
+    <h2>🚩 Red Flags of Deepfake Voice Calls</h2>
+    <ul>
+      <li>Urgency: “Papa, abhi paisa bhejna hai warna mujhe arrest kar lenge.”</li>
+      <li>Untraceable Payments: Requests for UPI, gift cards, or cryptocurrency.</li>
+      <li>No Video: They avoid WhatsApp video calls and insist on audio only.</li>
+      <li>Unusual Behavior: Loved one’s voice, but asking for money urgently.</li>
+    </ul>
+
+    <h2>✅ How Seniors Can Stay Safe</h2>
+    <ul>
+      <li><strong>Always Verify:</strong> If someone calls asking for money, hang up 
+      and call back on their official or personal number.</li>
+      <li><strong>Set Family Code Words:</strong> Agree on a secret phrase only family 
+      knows. If a caller can’t say it, they’re fake.</li>
+      <li><strong>Never Share OTP:</strong> No genuine bank or official will ever ask 
+      for OTP on call.</li>
+      <li><strong>Limit Public Audio:</strong> Don’t share too many personal voice notes 
+      publicly on WhatsApp groups or social media.</li>
+      <li><strong>Use Caller ID Apps:</strong> Install Truecaller or your carrier’s 
+      fraud detection service.</li>
+    </ul>
+
+    <h2>📊 Statistics</h2>
+    <p>According to a 2025 Cybersecurity Report, <strong>AI-powered scams grew 400% 
+    in the last two years</strong>. Nearly 1 in 3 reported scam calls now use AI voice cloning. 
+    Seniors are the most common targets because they trust familiar voices.</p>
+
+    <h2>❓ FAQs</h2>
+    <p><strong>Q: Can AI really sound like my family member?</strong><br/>
+    A: Yes. AI can copy tone, accent, and even emotional style of speaking 
+    with just 30 seconds of recorded audio.</p>
+
+    <p><strong>Q: How do I confirm if the call is real?</strong><br/>
+    A: Hang up and call your family member directly. Or ask a personal question 
+    only they would know.</p>
+
+    <p><strong>Q: Are these scams happening only abroad?</strong><br/>
+    A: No. India, U.S., and Europe are all seeing a sharp rise in AI-based fraud calls.</p>
+
+    <h2>🔗 Related Reading</h2>
+    <ul>
+      <li><a href="/blog/spam-calls">📞 Spam Calls & Robocalls</a></li>
+      <li><a href="/blog/phishing-emails">📧 Phishing Emails & Fake Links</a></li>
+      <li><a href="/blog/identity-theft">👤 Identity Theft Protection</a></li>
+    </ul>
+
+    <h2>🚀 Final Words</h2>
+    <p>AI is a powerful tool, but in the wrong hands, it becomes a scammer’s weapon. 
+    Seniors must learn to question calls – even if the voice sounds familiar. 
+    In 2025, the golden rule is: <strong>Verify before you trust.</strong> A few seconds 
+    of doubt can save you from losing your hard-earned savings to deepfake scams.</p>
+  `
 }
+
 
 };
 

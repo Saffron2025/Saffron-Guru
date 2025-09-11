@@ -115,7 +115,10 @@ const AppNavbar = () => {
   <NavDropdown.Item as={Link} to="/blog/online-shopping">🌐 Online Shopping Safety</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/blog/investment-scam">💰 Investment & Lottery Scams</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/blog/password-safety">🔑 Password Safety</NavDropdown.Item>
+<NavDropdown.Item as={Link} to="/blog/ai-voice-fraud">🤖 AI Voice Fraud</NavDropdown.Item>
+
 </NavDropdown>
+
 
 
           </Nav>
