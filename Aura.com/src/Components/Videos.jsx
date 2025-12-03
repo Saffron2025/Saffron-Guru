@@ -55,17 +55,31 @@ const Videos = () => {
           <div className="slider-wrapper" ref={sliderRef}>
             {videos.map((video, index) => (
               <div className="video-wrapper" key={index}>
-                {/* ✅ YouTube embed thumbnail + title from start */}
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=0`}
-                  title={video.title}
-                  frameBorder="0"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                
+                {/* 📌 FAST YOUTUBE LAZY-LOADER */}
+                <div
+                  className="yt-thumbnail"
+                  onClick={(e) => {
+                    e.currentTarget.innerHTML = `
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    `;
+                  }}
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                    alt={video.title}
+                    className="yt-thumb-img"
+                  />
+                  <div className="play-btn">▶</div>
+                </div>
+
               </div>
             ))}
           </div>
