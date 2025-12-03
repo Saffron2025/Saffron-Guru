@@ -214,7 +214,7 @@ const Hero = () => {
 
       {/* ✅ Custom Chat Button - Jivo ke left me */}
       <img
-        src="/Hero/ChatImage.Webp"   // apni image ka path yaha daal
+        src="/Hero/ChatImage.webp"   // apni image ka path yaha daal
         alt="Chat With Us"
         className="custom-chat-btn"
         onClick={() => {
