@@ -1,5 +1,5 @@
 import React from 'react';
-import FloatingChat from '../Components/FloatingChat';
+// import FloatingChat from '../Components/FloatingChat';
 
 const UserDashboard = () => {
   return (

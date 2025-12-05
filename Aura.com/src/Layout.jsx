@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import AppNavbar from "./Components/AppNavbar";
 import TopBanner from "./Components/TopBanner";
 import AuraFooter from "./Components/Footer";
-import FloatingChat from "./Components/FloatingChat";
+// import FloatingChat from "./Components/FloatingChat";
 
 const Layout = ({ children }) => {
   const location = useLocation();

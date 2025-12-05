@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import MediaMentions from './MediaMentions';
 import GlobalReach from './GlobalReach';
 import AllSection from './AllSection'
-import FloatingChat from './FloatingChat';
+// import FloatingChat from './FloatingChat';
 import { useState, useEffect } from 'react';
 import Videos from './Videos';
 import SocialMedia from './SocialMedia';
