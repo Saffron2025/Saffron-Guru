@@ -410,3 +410,15 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
+
+
+
+@media (max-width: 1024px) {
+  .dropdown-menu {
+    max-height: 320px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;   /* iPhone smooth scroll */
+    scrollbar-width: thin;
+    scrollbar-color: #00e0ff transparent;
+  }
+}
