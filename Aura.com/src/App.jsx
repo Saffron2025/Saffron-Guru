@@ -49,6 +49,8 @@ import ProductDetail from "./Pages/ProductDetail";
 import LiveSupport from "./Pages/LiveSupport";
 import BlogHome from "./Pages/Blogs/BlogHome";
 import BlogPost from "./Pages/Blogs/BlogPost";
+import ArticleDetail from "./Pages/ArticleDetail";
+import ArticlesList from "./Pages/ArticlesList";
 
 
 // ✅ Scroll helper
@@ -121,6 +123,8 @@ const App = () => {
           <Route path="/live-support" element={<LiveSupport />} />
             <Route path="/blog" element={<BlogHome />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/article" element={<ArticlesList />} />
+        <Route path="/article/:id" element={<ArticleDetail />} />
 
 
           <Route path="*" element={<Navigate to="/" />} />
