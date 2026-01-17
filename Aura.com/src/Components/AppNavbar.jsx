@@ -105,7 +105,7 @@ const AppNavbar = () => {
 
 {/* ✅ Blog ko alag Nav item banao */}
 <NavDropdown title="Blog" id="blog-main-dropdown" className="custom-dropdown">
-    <NavDropdown.Item as={Link} to="/article">🛡️ Online Safety Hub</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/article">🧠 Online Safety Hub</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/blog/online-scam-guide">🛡️ Online Scam Guide</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/blog/romance-scam">❤️ Romance Scams</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/blog/tech-support-scam">🖥️ Tech Support Scams</NavDropdown.Item>
