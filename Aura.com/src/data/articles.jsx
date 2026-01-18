@@ -1,168 +1,258 @@
 export const articles = [
+  // =========================
+  // 1️⃣ Fake Bank Account Freeze Scam
+  // =========================
   {
-    id: "tech-support-scam",
-    title: "Tech Support Scammers Are Injecting Fake Phone Numbers",
-    highlight: "Injecting Fake Phone Numbers",
-    author: "Craig Hale",
-    date: "June 20, 2025",
-    category: "Cyber Security",
+    id: "bank-account-freeze-scam",
+    title: "Fake Bank Account Freeze Messages Are Tricking Thousands of Users",
+    highlight: "Fake Bank Account Freeze Messages",
+    author: "Cyber Safety Desk",
+    date: "July 2, 2025",
+    category: "Online Banking Fraud",
     lead:
-      "Cybercriminals have discovered a highly deceptive method of tricking internet users by injecting fake customer support phone numbers directly into legitimate and trusted websites.",
+      "Scammers are sending fake bank alerts claiming that accounts have been frozen due to suspicious activity, pressuring victims to act immediately.",
     content: [
       {
         type: "p",
         text:
-          "Cybersecurity researchers are raising serious concerns about a growing wave of tech support scams that no longer rely on fake or poorly designed websites. Instead, attackers are now manipulating real, well-known websites to display fraudulent phone numbers, making these scams far more convincing and dangerous for everyday users."
+          "Cybersecurity experts are warning users about a sharp rise in fake bank account freeze scams. These scams typically begin with an alarming message stating that suspicious activity has been detected and the user’s bank account has been temporarily locked."
       },
       {
         type: "p",
         text:
-          "Because the website domain itself is legitimate, users naturally trust what they see on the page. This breaks one of the most basic safety habits taught to internet users: checking the website address. Even cautious and experienced users can fall victim to this technique."
+          "Because the message appears urgent and official, many users panic and follow the instructions without verifying the source."
       },
       {
         type: "blockquote",
         text:
-          "This technique represents a significant evolution in online fraud, as it removes many of the visual warning signs people have been trained to look for."
+          "Scammers rely on fear and urgency to override rational decision-making."
       },
-
       {
         type: "h2",
-        text: "Why Traditional Scam Detection Fails"
+        text: "How the Scam Operates"
       },
       {
         type: "p",
         text:
-          "Most people are taught to identify scams by checking for suspicious URLs, spelling mistakes, or unusual website designs. Unfortunately, this new attack method bypasses all of these checks. Victims see a familiar brand, a secure HTTPS connection, and professionally written content — all of which create a false sense of safety."
+          "Victims receive SMS messages, emails, or automated calls pretending to be from a bank. These messages often include fake links or phone numbers that connect victims directly to scammers."
       },
-      {
-        type: "p",
-        text:
-          "Older adults are particularly vulnerable, as they are more likely to trust established brand names and less likely to question information displayed on an official-looking website."
-      },
-
-      {
-        type: "h2",
-        text: "How the Scam Works"
-      },
-      {
-        type: "p",
-        text:
-          "The attack uses a technique known as search parameter injection or reflected input manipulation. Scammers modify legitimate URLs by adding encoded parameters that cause the website to display attacker-controlled content, such as fake phone numbers, within customer support sections."
-      },
-      {
-        type: "p",
-        text:
-          "Victims often arrive at these manipulated pages through sponsored advertisements on search engines. Although the ad leads to a real website, the displayed support information has been altered through the injected parameters."
-      },
-
       {
         type: "ul",
         items: [
-          "User searches for customer support on Google",
-          "A paid advertisement appears at the top of results",
-          "The link points to a legitimate website",
-          "Injected parameters alter displayed support details",
-          "Victim calls the fraudulent phone number"
+          "Fake SMS or email from a bank",
+          "Urgent warning about account suspension",
+          "Link or phone number provided",
+          "Victim shares OTP or login details",
+          "Money is withdrawn from the account"
         ]
       },
-
-      {
-        type: "h2",
-        text: "What Happens After the Call"
-      },
-      {
-        type: "p",
-        text:
-          "Once the victim calls the fake support number, scammers impersonate trained customer service agents. They use scripted language, professional tone, and technical jargon to gain trust. In many cases, victims are told that their device or account has been compromised."
-      },
-      {
-        type: "p",
-        text:
-          "The scammer may then request sensitive personal information, payment details, or attempt to convince the victim to install remote access software. This allows attackers to fully control the victim’s device and access private data."
-      },
-
-      {
-        type: "ul",
-        items: [
-          "Personal identity theft",
-          "Unauthorized bank transactions",
-          "Long-term account compromise",
-          "Loss of sensitive personal data"
-        ]
-      },
-
-      {
-        type: "h2",
-        text: "Major Brands Affected"
-      },
-      {
-        type: "p",
-        text:
-          "Security researchers have confirmed that this technique has been used against major technology companies, online platforms, and financial institutions. Attackers deliberately choose well-known brands to maximize trust and success rates."
-      },
-      {
-        type: "p",
-        text:
-          "Brands commonly targeted include technology companies, streaming platforms, payment services, and large banks. Because these brands already provide customer support services, victims find the scam believable."
-      },
-
-      {
-        type: "h2",
-        text: "Why Older Adults Are Most at Risk"
-      },
-      {
-        type: "p",
-        text:
-          "Older users are frequently targeted because they are more likely to seek help through phone-based customer support. Scammers exploit this behavior by creating a sense of urgency and authority during calls."
-      },
-      {
-        type: "p",
-        text:
-          "In many cases, victims feel embarrassed after realizing they have been scammed, which leads to underreporting and makes the problem appear smaller than it actually is."
-      },
-
       {
         type: "info",
         text:
-          "Legitimate companies rarely advertise customer support phone numbers through paid search ads or pop-up messages."
+          "Banks never ask for OTPs, PINs, or passwords via messages or phone calls."
       },
-
       {
         type: "h2",
-        text: "How to Protect Yourself"
+        text: "How to Stay Safe"
       },
       {
         type: "p",
         text:
-          "Cybersecurity experts strongly recommend that users never rely on phone numbers shown in online advertisements or pop-up messages. Instead, support contact details should always be found by navigating directly through official website menus."
+          "Always check account alerts by logging in through the official banking app or website. If unsure, contact your bank using the number printed on your card."
+      }
+    ],
+    footer:
+      "Staying calm and verifying alerts independently can protect you from financial fraud."
+  },
+
+  // =========================
+  // 2️⃣ Fake QR Code Payment Scam
+  // =========================
+  {
+    id: "fake-qr-code-scam",
+    title: "Fake QR Code Payment Scams Are Spreading Rapidly",
+    highlight: "Fake QR Code Payment Scams",
+    author: "Online Safety Team",
+    date: "July 5, 2025",
+    category: "Digital Payment Fraud",
+    lead:
+      "Fraudsters are using fake QR codes to redirect victims to malicious payment pages, causing instant financial loss.",
+    content: [
+      {
+        type: "p",
+        text:
+          "QR codes have become a convenient way to make payments, but scammers are now exploiting this trust. Fake QR codes are being placed in public areas or shared via messages."
+      },
+      {
+        type: "blockquote",
+        text:
+          "Scanning a QR code without verification can be as dangerous as clicking a malicious link."
+      },
+      {
+        type: "h2",
+        text: "Common Places Where Fake QR Codes Appear"
       },
       {
         type: "ul",
         items: [
-          "Avoid clicking sponsored support links",
-          "Type website addresses manually",
-          "Never grant remote access to unknown callers",
-          "Take time to verify claims independently",
-          "Consult a trusted family member or professional"
+          "Restaurant tables",
+          "Parking meters",
+          "Fake delivery messages",
+          "Public notice boards",
+          "Email and WhatsApp messages"
         ]
       },
-
       {
         type: "h2",
-        text: "Final Thoughts"
+        text: "What Happens After Scanning"
       },
       {
         type: "p",
         text:
-          "Tech support scams continue to evolve as criminals adapt to user awareness and security improvements. By abusing legitimate websites, attackers have made scams harder to detect and more convincing than ever before."
+          "Victims are redirected to fake payment pages or asked to enter sensitive details, which scammers use to steal money."
       },
       {
-        type: "p",
+        type: "info",
         text:
-          "The most effective defense remains education, patience, and verification. Taking a moment to question what you see online can prevent financial loss, emotional stress, and long-term damage."
+          "Never scan QR codes that demand urgent payments or personal information."
       }
     ],
     footer:
-      "Staying informed and cautious online is one of the most powerful tools for protecting yourself and your loved ones from evolving cyber threats."
+      "Use official apps and trusted sources to stay safe from QR code fraud."
+  },
+
+  // =========================
+  // 3️⃣ Fake Delivery / Courier Scam
+  // =========================
+  {
+    id: "fake-delivery-scam",
+    title: "Fake Delivery Messages Are Targeting Online Shoppers",
+    highlight: "Fake Delivery Messages",
+    author: "Fraud Awareness Unit",
+    date: "July 8, 2025",
+    category: "E-commerce Scams",
+    lead:
+      "Scammers are impersonating courier companies and sending fake delivery failure messages to steal money and personal details.",
+    content: [
+      {
+        type: "p",
+        text:
+          "As online shopping grows, fake delivery scams have become increasingly common. Victims receive messages claiming that a package could not be delivered."
+      },
+      {
+        type: "h2",
+        text: "How Victims Are Tricked"
+      },
+      {
+        type: "ul",
+        items: [
+          "Fake tracking links",
+          "Small redelivery fee requests",
+          "Imitation courier websites",
+          "Urgent delivery warnings"
+        ]
+      },
+      {
+        type: "blockquote",
+        text:
+          "Scammers know that people are expecting packages and exploit this expectation."
+      },
+      {
+        type: "info",
+        text:
+          "Courier companies do not ask for payment via random links or messages."
+      }
+    ],
+    footer:
+      "Verify deliveries directly through official courier websites or apps."
+  },
+
+  // =========================
+  // 4️⃣ Fake Tech Support Pop-Up Scam
+  // =========================
+  {
+    id: "tech-support-popup-scam",
+    title: "Fake Tech Support Pop-Ups Are Still Fooling Users",
+    highlight: "Fake Tech Support Pop-Ups",
+    author: "Cyber Research Group",
+    date: "July 10, 2025",
+    category: "Tech Support Scams",
+    lead:
+      "Pop-ups claiming your computer is infected are still one of the most effective tools used by scammers.",
+    content: [
+      {
+        type: "p",
+        text:
+          "These scams display alarming warnings stating that viruses have been detected. Victims are instructed to call a number immediately."
+      },
+      {
+        type: "blockquote",
+        text:
+          "Legitimate security software does not demand immediate phone calls."
+      },
+      {
+        type: "h2",
+        text: "Why These Scams Work"
+      },
+      {
+        type: "p",
+        text:
+          "The pop-ups create fear, especially among less tech-savvy users, leading them to trust the fake support agents."
+      },
+      {
+        type: "info",
+        text:
+          "Close the browser and never call numbers shown in pop-ups."
+      }
+    ],
+    footer:
+      "Education and awareness remain the strongest defense against tech support fraud."
+  },
+
+  // =========================
+  // 5️⃣ Fake Refund Scam
+  // =========================
+  {
+    id: "fake-refund-scam",
+    title: "Fake Refund Scams Are Draining Digital Wallets",
+    highlight: "Fake Refund Scams",
+    author: "Digital Safety Analysts",
+    date: "July 12, 2025",
+    category: "Payment App Fraud",
+    lead:
+      "Scammers claim that money was sent by mistake and pressure victims to return it, resulting in real financial loss.",
+    content: [
+      {
+        type: "p",
+        text:
+          "Fake refund scams often target users of digital payment apps. Victims receive messages asking them to return money urgently."
+      },
+      {
+        type: "h2",
+        text: "How the Scam Unfolds"
+      },
+      {
+        type: "ul",
+        items: [
+          "Fake payment notification",
+          "Urgent refund request",
+          "Threats of legal action",
+          "Victim sends money",
+          "Scammer disappears"
+        ]
+      },
+      {
+        type: "blockquote",
+        text:
+          "Never return money outside the official app process."
+      },
+      {
+        type: "info",
+        text:
+          "Payment platforms handle refunds internally and do not require direct transfers."
+      }
+    ],
+    footer:
+      "Always verify transactions within official payment apps before taking action."
   }
 ];

@@ -180,3 +180,36 @@
     font-size: 27px;
   }
 }
+/* ===============================
+   RELATED ARTICLES
+================================ */
+.related-articles {
+  margin-top: 70px;
+  padding-top: 30px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.related-articles h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.related-articles ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.related-articles li {
+  margin-bottom: 12px;
+}
+
+.related-articles a {
+  font-size: 18px;
+  color: #7a0c0c;
+  text-decoration: none;
+}
+
+.related-articles a:hover {
+  text-decoration: underline;
+}
