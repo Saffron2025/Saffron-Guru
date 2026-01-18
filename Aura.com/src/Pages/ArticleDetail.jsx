@@ -11,23 +11,49 @@ const ArticleDetail = () => {
 
   if (!article) return <h2>Article not found</h2>;
 
-  // ✅ RELATED ARTICLES (same category, exclude current)
-  // ✅ RELATED ARTICLES (exclude current article only)
-const relatedArticles = articles
-  .filter((a) => a.id !== article.id)
-  .slice(0, 3);
+  const relatedArticles = articles
+    .filter((a) => a.id !== article.id)
+    .slice(0, 3);
 
+  // ✅ SEO JSON-LD
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.lead,
+    author: {
+      "@type": "Organization",
+      name: article.author,
+    },
+    datePublished: article.date,
+    articleSection: article.category,
+    publisher: {
+      "@type": "Organization",
+      name: "Saffron Guru",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.saffronguru.com/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.saffronguru.com/article/${article.id}`,
+    },
+  };
 
   return (
     <>
       <AppNavbar />
 
+      {/* ✅ SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+      </script>
+
       <div className="article-wrapper">
         <article className="article-card">
-
           <h1 className="article-title">
-  {article.title.replace(article.highlight, "").trim()}{" "}
-
+            {article.title.replace(article.highlight, "").trim()}{" "}
             <span>{article.highlight}</span>
           </h1>
 
@@ -63,22 +89,18 @@ const relatedArticles = articles
 
           <div className="article-footer">{article.footer}</div>
 
-          {/* ✅ RELATED ARTICLES SECTION */}
-          {/* ✅ RELATED ARTICLES SECTION */}
-{relatedArticles.length > 0 && (
-  <div className="related-articles">
-    <h3>Related Articles</h3>
-    <ul>
-      {relatedArticles.map((ra) => (
-        <li key={ra.id}>
-          <Link to={`/article/${ra.id}`}>{ra.title}</Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-)}
-
-
+          {relatedArticles.length > 0 && (
+            <div className="related-articles">
+              <h3>Related Articles</h3>
+              <ul>
+                {relatedArticles.map((ra) => (
+                  <li key={ra.id}>
+                    <Link to={`/article/${ra.id}`}>{ra.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </article>
       </div>
 

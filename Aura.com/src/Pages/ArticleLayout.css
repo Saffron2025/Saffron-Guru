@@ -1,7 +1,7 @@
-/* ===============================
-   EDITORIAL THEME (REFINED)
-   Professional + Senior Friendly
-================================ */
+/* ==================================================
+   GLOBAL THEME VARIABLES
+   Professional • Editorial • Senior Friendly
+================================================== */
 
 :root {
   --bg: #f4f5f7;
@@ -12,9 +12,10 @@
   --accent: #8b0000;
 }
 
-/* ===============================
-   PAGE BACKGROUND
-================================ */
+/* ==================================================
+   PAGE WRAPPER
+================================================== */
+
 .article-wrapper {
   background: var(--bg);
   padding: 100px 16px;
@@ -23,9 +24,10 @@
   font-family: "Georgia", "Times New Roman", serif;
 }
 
-/* ===============================
-   ARTICLE CONTAINER
-================================ */
+/* ==================================================
+   ARTICLE CONTAINER (CARD)
+================================================== */
+
 .article-card {
   max-width: 920px;
   width: 100%;
@@ -34,9 +36,10 @@
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
 }
 
-/* ===============================
-   TITLE
-================================ */
+/* ==================================================
+   ARTICLE TITLE
+================================================== */
+
 .article-title {
   font-size: 46px;
   font-weight: 700;
@@ -49,20 +52,22 @@
   color: var(--accent);
 }
 
-/* ===============================
-   META
-================================ */
+/* ==================================================
+   META INFO
+================================================== */
+
 .article-meta {
   margin-top: 20px;
+  padding-bottom: 26px;
   font-size: 15px;
   color: var(--muted);
-  padding-bottom: 26px;
   border-bottom: 1px solid var(--border);
 }
 
-/* ===============================
+/* ==================================================
    LEAD PARAGRAPH
-================================ */
+================================================== */
+
 .article-lead {
   margin-top: 42px;
   font-size: 25px;
@@ -71,9 +76,10 @@
   color: #1a1a1a;
 }
 
-/* ===============================
-   BODY TEXT
-================================ */
+/* ==================================================
+   ARTICLE BODY – TEXT
+================================================== */
+
 .article-body p {
   font-size: 21.5px;
   line-height: 2.1;
@@ -81,9 +87,10 @@
   color: var(--text);
 }
 
-/* ===============================
-   SECTION HEADINGS
-================================ */
+/* ==================================================
+   ARTICLE BODY – HEADINGS
+================================================== */
+
 .article-body h2 {
   margin-top: 78px;
   margin-bottom: 24px;
@@ -95,9 +102,10 @@
   padding-bottom: 10px;
 }
 
-/* ===============================
-   BLOCKQUOTE
-================================ */
+/* ==================================================
+   ARTICLE BODY – BLOCKQUOTE
+================================================== */
+
 .article-body blockquote {
   margin: 68px 0;
   padding-left: 36px;
@@ -108,9 +116,10 @@
   color: #333;
 }
 
-/* ===============================
-   LISTS
-================================ */
+/* ==================================================
+   ARTICLE BODY – LISTS
+================================================== */
+
 .article-body ul {
   margin-left: 26px;
   margin-bottom: 44px;
@@ -122,9 +131,10 @@
   margin-bottom: 18px;
 }
 
-/* ===============================
-   INFO BOX
-================================ */
+/* ==================================================
+   INFO / WARNING BOX
+================================================== */
+
 .info-box {
   background: #f9f9f9;
   border-left: 4px solid var(--accent);
@@ -134,9 +144,10 @@
   color: #222;
 }
 
-/* ===============================
+/* ==================================================
    INLINE CODE
-================================ */
+================================================== */
+
 .article-body code {
   background: #eeeeee;
   padding: 4px 8px;
@@ -144,9 +155,10 @@
   border-radius: 4px;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* ==================================================
+   ARTICLE FOOTER
+================================================== */
+
 .article-footer {
   margin-top: 80px;
   padding-top: 30px;
@@ -155,34 +167,10 @@
   color: var(--muted);
 }
 
-/* ===============================
-   MOBILE / SENIOR FRIENDLY
-================================ */
-@media (max-width: 768px) {
-  .article-card {
-    padding: 46px 28px;
-  }
-
-  .article-title {
-    font-size: 34px;
-  }
-
-  .article-lead {
-    font-size: 23px;
-  }
-
-  .article-body p,
-  .article-body ul li {
-    font-size: 20.5px;
-  }
-
-  .article-body h2 {
-    font-size: 27px;
-  }
-}
-/* ===============================
+/* ==================================================
    RELATED ARTICLES
-================================ */
+================================================== */
+
 .related-articles {
   margin-top: 70px;
   padding-top: 30px;
@@ -206,13 +194,18 @@
 
 .related-articles a {
   font-size: 18px;
-  color: #7a0c0c;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .related-articles a:hover {
   text-decoration: underline;
 }
+
+/* ==================================================
+   ARTICLE LIST PAGE (INDEX)
+================================================== */
+
 .article-list-card {
   padding: 48px 56px;
 }
@@ -224,4 +217,31 @@
 .article-list-card p {
   font-size: 18px;
   line-height: 1.7;
+}
+
+/* ==================================================
+   MOBILE / SENIOR FRIENDLY RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+  .article-card {
+    padding: 46px 28px;
+  }
+
+  .article-title {
+    font-size: 34px;
+  }
+
+  .article-lead {
+    font-size: 23px;
+  }
+
+  .article-body p,
+  .article-body ul li {
+    font-size: 20.5px;
+  }
+
+  .article-body h2 {
+    font-size: 27px;
+  }
 }
