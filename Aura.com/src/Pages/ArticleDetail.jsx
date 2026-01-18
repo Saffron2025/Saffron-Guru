@@ -26,7 +26,8 @@ const relatedArticles = articles
         <article className="article-card">
 
           <h1 className="article-title">
-            {article.title.replace(article.highlight, "")}
+  {article.title.replace(article.highlight, "").trim()}{" "}
+
             <span>{article.highlight}</span>
           </h1>
 
