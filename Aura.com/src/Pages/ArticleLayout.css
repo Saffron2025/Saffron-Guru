@@ -213,3 +213,15 @@
 .related-articles a:hover {
   text-decoration: underline;
 }
+.article-list-card {
+  padding: 48px 56px;
+}
+
+.article-list-card h2 {
+  font-size: 26px;
+}
+
+.article-list-card p {
+  font-size: 18px;
+  line-height: 1.7;
+}

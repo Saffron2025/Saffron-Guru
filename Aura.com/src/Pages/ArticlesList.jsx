@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import { articles } from "../data/articles";
 import AppNavbar from "../Components/AppNavbar";
 import AllSection from '../Components/AllSection'
+import './ArticleLayout.css'
 
 const ArticlesList = () => {
   return (
     <>    
     <AppNavbar/>
-    <div className="article-wrapper">
-      <div className="article-card">
+  <div className="article-wrapper">
+  <div className="article-card article-list-card">
+
         <h1 className="article-title">Latest Articles</h1>
 
         {articles.map((a) => (
