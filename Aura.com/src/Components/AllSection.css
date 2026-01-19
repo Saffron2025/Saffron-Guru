@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
 
+/* ===============================
+   FOOTER BASE
+================================ */
 .aura-footer {
   background: rgba(94, 111, 166, 0.95);
   backdrop-filter: blur(20px);
@@ -11,7 +14,7 @@
   overflow: hidden;
 }
 
-/* Floating stars / pixel dust */
+/* Floating dust */
 .aura-footer::before {
   content: '';
   position: absolute;
@@ -23,12 +26,11 @@
   background-size: 30px 30px;
   animation: drift 80s linear infinite;
   pointer-events: none;
-  z-index: 0;
 }
 
 @keyframes drift {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(60px, 60px); }
+  from { transform: translate(0,0); }
+  to { transform: translate(60px,60px); }
 }
 
 /* ===============================
@@ -39,8 +41,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 
 .footer-link {
@@ -50,25 +52,23 @@
   font-weight: 600;
   padding: 0.7rem 1.5rem;
   border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
   transition: all 0.4s ease;
-  position: relative;
-  display: inline-block;
   animation: fadeIn 0.8s ease forwards;
-  transform: translateY(12px);
   opacity: 0;
-  letter-spacing: 0.6px;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
+  transform: translateY(12px);
+  position: relative;
 }
 
 .footer-link:hover {
   transform: translateY(-4px) scale(1.06);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 16px rgba(255,255,255,0.2);
 }
 
+/* underline */
 .footer-link::after {
   content: '';
   position: absolute;
@@ -76,27 +76,40 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #fff, #3cf, #ff7af5, #fff);
+  background: linear-gradient(90deg,#fff,#3cf,#ff7af5,#fff);
   transition: width 0.4s ease;
   transform: translateX(-50%);
 }
-.footer-link:hover::after {
-  width: 70%;
-}
+.footer-link:hover::after { width: 70%; }
 
-/* Live Support */
+/* ===============================
+   LIVE SUPPORT BLINK
+================================ */
 .footer-link.live-support {
   color: #00ffcc;
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+  text-shadow: 0 0 10px rgba(0,255,204,0.7);
 }
+
 .footer-link.live-support:hover {
-  background: rgba(0, 255, 204, 0.12);
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  background: rgba(0,255,204,0.12);
+  box-shadow: 0 0 22px rgba(0,255,204,0.45);
+}
+
+.blink-icon {
+  margin-right: 8px;
+  animation: smooth-blink 1.2s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes smooth-blink {
+  0%   { opacity: 1; transform: scale(1); }
+  50%  { opacity: 0.4; transform: scale(1.25); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 /* ===============================
-   SOCIAL MEDIA SECTION
+   SOCIAL MEDIA
 ================================ */
 .footer-social {
   margin-top: 3rem;
@@ -104,8 +117,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 
 .social-link {
@@ -114,39 +127,34 @@
   gap: 0.6rem;
   padding: 0.7rem 1.4rem;
   border-radius: 14px;
-  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(8px);
   transition: all 0.4s ease;
   animation: fadeIn 0.9s ease forwards;
   opacity: 0;
   transform: translateY(10px);
+  color: inherit;
 }
 
-/* 🔥 IMPORTANT: remove white force */
-.social-link { color: inherit; }
+.social-link:hover {
+  transform: translateY(-4px) scale(1.06);
+}
 
+/* Icons */
 .social-icon {
   font-size: 1.4rem;
 }
 
-/* ===============================
-   OFFICIAL BRAND COLORS
-================================ */
-
-/* X (Twitter) */
+/* X */
 .social-link.x-twitter {
-  color: #000000;
+  color: #000;
 }
 .social-link.x-twitter:hover {
   background: rgba(0,0,0,0.15);
   box-shadow: 0 0 18px rgba(0,0,0,0.35);
-}
-.social-link.x-twitter .social-icon {
-  filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
 }
 
 /* Facebook */
@@ -157,9 +165,6 @@
   background: rgba(24,119,242,0.15);
   box-shadow: 0 0 18px rgba(24,119,242,0.4);
 }
-.social-link.facebook .social-icon {
-  filter: drop-shadow(0 0 6px rgba(24,119,242,0.6));
-}
 
 /* YouTube */
 .social-link.youtube {
@@ -169,24 +174,20 @@
   background: rgba(255,0,0,0.15);
   box-shadow: 0 0 18px rgba(255,0,0,0.4);
 }
-.social-link.youtube .social-icon {
-  filter: drop-shadow(0 0 6px rgba(255,0,0,0.6));
-}
 
 /* ===============================
    FOOTER CREDIT
 ================================ */
 .footer-credit {
-  font-size: 0.9rem;
   margin-top: 3rem;
-  color: #ffffffcc;
-  z-index: 1;
-  position: relative;
   text-align: center;
-  letter-spacing: 0.4px;
+  font-size: 0.9rem;
+  color: #ffffffcc;
 }
 
-/* Animation */
+/* ===============================
+   ANIMATION
+================================ */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -202,13 +203,9 @@
   .social-link {
     width: 100%;
     justify-content: center;
-    text-align: center;
   }
 
-  .footer-grid {
-    gap: 1rem;
-  }
-
+  .footer-grid,
   .footer-social {
     gap: 1rem;
   }

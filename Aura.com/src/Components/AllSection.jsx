@@ -1,4 +1,3 @@
-// src/components/AuraFooter.js
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
@@ -13,7 +12,7 @@ const footerLinks = [
   { label: "Return & Refund Policy", path: "/return-policy" },
   { label: "Why Choose Us?", path: "/why-us" },
   { label: "Contact Us", path: "/contact" },
-  { label: "Live Support", path: "/live-support" },
+  { label: "Live Support", path: "/live-support", live: true },
 ];
 
 const socialLinks = [
@@ -42,23 +41,22 @@ const AuraFooter = () => {
     <footer className="aura-footer">
       <div className="container">
 
-        {/* Footer navigation links */}
+        {/* Footer Links */}
         <div className="footer-grid">
           {footerLinks.map((link, index) => (
             <Link
               key={index}
               to={link.path}
-              className={`footer-link ${
-                link.label === "Live Support" ? "live-support" : ""
-              }`}
+              className={`footer-link ${link.live ? "live-support" : ""}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              {link.live && <span className="blink-icon">💬</span>}
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* 🔥 Social Media Section */}
+        {/* Social Media */}
         <div className="footer-social">
           {socialLinks.map((social, index) => (
             <a
@@ -75,10 +73,11 @@ const AuraFooter = () => {
           ))}
         </div>
 
-        {/* Footer credit */}
+        {/* Footer Credit */}
         <div className="footer-credit">
           &copy; {new Date().getFullYear()} Saffron Guru LLC. All rights reserved.
         </div>
+
       </div>
     </footer>
   );
