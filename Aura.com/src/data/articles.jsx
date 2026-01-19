@@ -168,45 +168,69 @@ export const articles = [
   },
 
   // =========================
-  // 4️⃣ Fake Tech Support Pop-Up Scam
+  // 4️⃣ NEW: Tech Support Phone Number Injection Scam (REPLACED)
   // =========================
   {
-    id: "tech-support-popup-scam",
-    title: "Fake Tech Support Pop-Ups Are Still Fooling Users",
-    highlight: "Fake Tech Support Pop-Ups",
-    author: "Cyber Research Group",
-    date: "July 10, 2025",
+    id: "tech-support-scam",
+    title: "Fake Tech Support Numbers Are Being Injected Into Real Websites",
+    highlight: "Tech Support Phone Injection Scam",
+    author: "Cyber Threat Watch",
+    date: "July 15, 2025",
     category: "Tech Support Scams",
     lead:
-      "Pop-ups claiming your computer is infected are still one of the most effective tools used by scammers.",
+      "Scammers are placing fake tech support phone numbers directly onto legitimate websites, making the scams harder to detect.",
     content: [
       {
         type: "p",
         text:
-          "These scams display alarming warnings stating that viruses have been detected. Victims are instructed to call a number immediately."
-      },
-      {
-        type: "blockquote",
-        text:
-          "Legitimate security software does not demand immediate phone calls."
-      },
-      {
-        type: "h2",
-        text: "Why These Scams Work"
+          "Cybersecurity researchers have discovered a new technique where scammers inject fake tech support phone numbers into genuine websites belonging to well-known brands."
       },
       {
         type: "p",
         text:
-          "The pop-ups create fear, especially among less tech-savvy users, leading them to trust the fake support agents."
+          "Unlike traditional scams, this method is highly deceptive because users see the correct website address in their browser, lowering suspicion."
+      },
+      {
+        type: "blockquote",
+        text:
+          "Seeing a legitimate domain does not always mean the information displayed on the page is trustworthy."
+      },
+      {
+        type: "h2",
+        text: "How This Scam Works"
+      },
+      {
+        type: "p",
+        text:
+          "Attackers use malicious URL parameters or online ads to modify how content appears on official websites, inserting fake phone numbers into support sections."
+      },
+      {
+        type: "ul",
+        items: [
+          "User clicks a sponsored search result",
+          "URL contains hidden parameters",
+          "Fake support number appears on a real site",
+          "Victim calls the number",
+          "Scammer steals personal or payment data"
+        ]
       },
       {
         type: "info",
         text:
-          "Close the browser and never call numbers shown in pop-ups."
+          "Major companies rarely advertise tech support phone numbers through online ads."
+      },
+      {
+        type: "h2",
+        text: "How to Protect Yourself"
+      },
+      {
+        type: "p",
+        text:
+          "Always navigate directly to the company’s official homepage and locate support options manually. Avoid calling numbers displayed after clicking ads."
       }
     ],
     footer:
-      "Education and awareness remain the strongest defense against tech support fraud."
+      "Being cautious with search results and URLs can prevent falling victim to advanced tech support scams."
   },
 
   // =========================
