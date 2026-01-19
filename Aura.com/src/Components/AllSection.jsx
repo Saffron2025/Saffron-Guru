@@ -1,7 +1,9 @@
 // src/components/AuraFooter.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './AllSection.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import "./AllSection.css";
 
 const footerLinks = [
   { label: "Home", path: "/home" },
@@ -11,24 +13,27 @@ const footerLinks = [
   { label: "Return & Refund Policy", path: "/return-policy" },
   { label: "Why Choose Us?", path: "/why-us" },
   { label: "Contact Us", path: "/contact" },
-  { label: "Live Support", path: "/live-support", icon: "💬" },
+  { label: "Live Support", path: "/live-support" },
 ];
 
 const socialLinks = [
   {
     label: "X (Twitter)",
     url: "https://x.com/Saffron_Guru",
-    icon: "🐦",
+    icon: <FaXTwitter />,
+    className: "x-twitter",
   },
   {
     label: "Facebook",
     url: "https://www.facebook.com/saffronguru/",
-    icon: "📘",
+    icon: <FaFacebookF />,
+    className: "facebook",
   },
   {
     label: "YouTube",
     url: "https://www.youtube.com/@SaffronGuruLLC",
-    icon: "▶️",
+    icon: <FaYoutube />,
+    className: "youtube",
   },
 ];
 
@@ -43,10 +48,12 @@ const AuraFooter = () => {
             <Link
               key={index}
               to={link.path}
-              className={`footer-link ${link.label === "Live Support" ? "live-support" : ""}`}
+              className={`footer-link ${
+                link.label === "Live Support" ? "live-support" : ""
+              }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {link.icon && <span className="blink-icon">{link.icon}</span>} {link.label}
+              {link.label}
             </Link>
           ))}
         </div>
@@ -59,7 +66,7 @@ const AuraFooter = () => {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-link"
+              className={`social-link ${social.className}`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <span className="social-icon">{social.icon}</span>
