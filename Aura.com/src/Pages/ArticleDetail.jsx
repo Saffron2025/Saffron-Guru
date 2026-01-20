@@ -11,44 +11,11 @@ const ArticleDetail = () => {
 
   if (!article) return <h2>Article not found</h2>;
 
-  const relatedArticles = articles
-    .filter((a) => a.id !== article.id)
-    .slice(0, 3);
-
-  // ✅ SEO JSON-LD
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
-    description: article.lead,
-    author: {
-      "@type": "Organization",
-      name: article.author,
-    },
-    datePublished: article.date,
-    articleSection: article.category,
-    publisher: {
-      "@type": "Organization",
-      name: "Saffron Guru",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.saffronguru.com/logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.saffronguru.com/article/${article.id}`,
-    },
-  };
+  const relatedArticles = articles.filter((a) => a.id !== article.id).slice(0, 3);
 
   return (
     <>
       <AppNavbar />
-
-      {/* ✅ SEO */}
-      <script type="application/ld+json">
-        {JSON.stringify(articleSchema)}
-      </script>
 
       <div className="article-wrapper">
         <article className="article-card">
@@ -59,6 +26,16 @@ const ArticleDetail = () => {
 
           <div className="article-meta">
             By {article.author} • {article.date} • {article.category}
+          </div>
+
+          {/* ✅ ARTICLE IMAGE */}
+          <div className="article-image-wrap">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="article-image"
+              loading="lazy"
+            />
           </div>
 
           <p className="article-lead">{article.lead}</p>
@@ -78,29 +55,23 @@ const ArticleDetail = () => {
                   </ul>
                 );
               if (block.type === "info")
-                return (
-                  <div key={i} className="info-box">
-                    {block.text}
-                  </div>
-                );
+                return <div key={i} className="info-box">{block.text}</div>;
               return null;
             })}
           </div>
 
           <div className="article-footer">{article.footer}</div>
 
-          {relatedArticles.length > 0 && (
-            <div className="related-articles">
-              <h3>Related Articles</h3>
-              <ul>
-                {relatedArticles.map((ra) => (
-                  <li key={ra.id}>
-                    <Link to={`/article/${ra.id}`}>{ra.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          <div className="related-articles">
+            <h3>Related Articles</h3>
+            <ul>
+              {relatedArticles.map((ra) => (
+                <li key={ra.id}>
+                  <Link to={`/article/${ra.id}`}>{ra.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </article>
       </div>
 

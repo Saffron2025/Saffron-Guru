@@ -2,13 +2,14 @@ export const articles = [
   // =========================
   // 1️⃣ Bank Account Freeze Alert Scam
   // =========================
-  {
+     {
     id: "bank-account-freeze-scam",
     title: "Fake Bank Account Freeze Warnings Are Being Used to Trap Customers",
     highlight: "Bank Account Freeze Alert Scam",
     author: "Craig Hale",
-    date: "June 28, 2025",
+    date: "Jan 20, 2026",
     category: "Online Banking Fraud",
+    image: "/Hero/bank-scam.webp",
     lead:
       "Cybercriminals are circulating fake bank alerts that falsely claim accounts have been frozen, pushing users into hurried decisions that lead to financial loss.",
     content: [
@@ -55,17 +56,17 @@ export const articles = [
     footer:
       "Verifying alerts directly through official banking apps remains the safest defense against such scams."
   },
-
   // =========================
   // 2️⃣ QR Code Payment Redirection Scam
   // =========================
-  {
+   {
     id: "fake-qr-code-scam",
     title: "Fraudsters Are Using Malicious QR Codes to Hijack Digital Payments",
     highlight: "QR Code Payment Redirection Scam",
     author: "Craig Hale",
-    date: "July 1, 2025",
+    date: "Jan 19, 2026",
     category: "Digital Payment Fraud",
+    image: "/Hero/qr-scam.webp",
     lead:
       "Fake QR codes are being used to redirect unsuspecting users to fraudulent payment pages, resulting in instant monetary losses.",
     content: [
@@ -111,13 +112,14 @@ export const articles = [
   // =========================
   // 3️⃣ Fake Delivery Notification Scam
   // =========================
-  {
+   {
     id: "fake-delivery-scam",
     title: "Fake Courier Alerts Are Being Used to Exploit Online Shoppers",
     highlight: "Fake Delivery Notification Scam",
     author: "Craig Hale",
-    date: "July 4, 2025",
+    date: "Jan 18, 2026",
     category: "E-commerce Fraud",
+    image: "/Hero/delivery-scam.webp",
     lead:
       "Scammers are impersonating delivery companies and sending misleading notifications to steal money and sensitive details.",
     content: [
@@ -162,65 +164,134 @@ export const articles = [
   // =========================
   // 4️⃣ Tech Support Phone Injection Scam
   // =========================
-  {
+{
     id: "tech-support-scam",
-    title: "Scammers Are Injecting Fake Support Numbers Into Legitimate Websites",
+    title: "Tech Support Scammers Are Forcing Fake Phone Numbers Into Legitimate Websites",
     highlight: "Tech Support Phone Injection Scam",
     author: "Craig Hale",
-    date: "July 10, 2025",
+    date: "Jan 17, 2026",
     category: "Tech Support Scams",
+    image: "/Hero/tech-support-scam.webp",
     lead:
-      "A sophisticated scam technique is placing fraudulent tech support numbers directly onto real company websites.",
+      "Cybersecurity experts are warning users about a growing scam in which fraudsters inject fake tech support phone numbers directly into real company websites, making the threat far harder to detect.",
     content: [
       {
         type: "p",
         text:
-          "Security researchers have uncovered campaigns where attackers manipulate how web pages are displayed, inserting fake support contact details."
+          "Fake tech support scams are evolving, with attackers now exploiting legitimate websites to display their own malicious phone numbers. Security researchers say this new approach allows scammers to bypass traditional warning signs that cautious users usually rely on."
       },
       {
         type: "p",
         text:
-          "Because the website itself is genuine, users are far more likely to trust the information shown."
+          "Unlike classic phishing attempts that rely on fake domains, this technique abuses genuine websites belonging to well-known brands. As a result, users see a correct web address in their browser, giving the page an appearance of legitimacy."
       },
       {
         type: "blockquote",
         text:
-          "A real website does not always mean the content has not been altered."
+          "Seeing a trusted domain no longer guarantees that the information displayed on the page is genuine."
       },
       {
         type: "h2",
-        text: "How the Attack Takes Place"
+        text: "How the Scam Is Being Carried Out"
+      },
+      {
+        type: "p",
+        text:
+          "According to researchers, attackers are using a method known as search parameter injection, also referred to as a reflected input vulnerability. This allows scammers to manipulate how content appears on a webpage by adding malicious parameters to a legitimate URL."
+      },
+      {
+        type: "p",
+        text:
+          "In many cases, scammers purchase online advertisements that impersonate major brands. Clicking on these ads may lead users to the official website, but with altered URL parameters that inject fake tech support numbers into support or help sections."
       },
       {
         type: "ul",
         items: [
-          "User clicks a sponsored search advertisement",
-          "URL parameters alter page appearance",
-          "Fake phone number is displayed",
-          "Victim calls the number",
-          "Personal or payment data is extracted"
+          "Scammer creates a malicious URL using search parameters",
+          "The URL points to a real, trusted website",
+          "Injected parameters modify page content",
+          "Fake support phone number is displayed",
+          "User calls the number believing it is legitimate"
+        ]
+      },
+      {
+        type: "blockquote",
+        text:
+          "Because the browser shows a legitimate domain, users are far less likely to question what they see."
+      },
+      {
+        type: "h2",
+        text: "What Happens When the Number Is Called"
+      },
+      {
+        type: "p",
+        text:
+          "Once a victim calls the fake support number, the scammer poses as a representative of the brand. Their goal is to convince the caller to share personal information, payment card details, or even grant remote access to their device."
+      },
+      {
+        type: "p",
+        text:
+          "In more advanced cases, victims may be guided into installing remote access software, allowing attackers to fully control their system and extract sensitive data."
+      },
+      {
+        type: "info",
+        text:
+          "Legitimate tech support teams do not ask for remote access, passwords, or payment details during unsolicited calls."
+      },
+      {
+        type: "h2",
+        text: "Major Brands Affected"
+      },
+      {
+        type: "p",
+        text:
+          "Researchers report that this attack technique has been observed affecting a wide range of high-profile organizations, including technology companies, financial institutions, and online services."
+      },
+      {
+        type: "p",
+        text:
+          "Brands reportedly impacted include Apple, PayPal, Netflix, Microsoft, HP, Facebook, and major banking institutions. The widespread nature of the campaign increases the risk for everyday users."
+      },
+      {
+        type: "h2",
+        text: "How Users Can Protect Themselves"
+      },
+      {
+        type: "p",
+        text:
+          "Security experts recommend exercising caution when encountering tech support phone numbers through search results or advertisements. One key warning sign is when a phone number appears embedded within the URL itself."
+      },
+      {
+        type: "ul",
+        items: [
+          "Avoid clicking sponsored ads for tech support",
+          "Check URLs for unusual parameters or encoded characters",
+          "Be cautious of phrases like 'Call Now' or 'Immediate Support'",
+          "Navigate directly to the company’s homepage",
+          "Locate support options manually from the official site"
         ]
       },
       {
         type: "info",
         text:
-          "Reputable companies rarely promote support phone numbers through online ads."
+          "Major companies typically do not advertise tech support phone numbers through online ads."
       }
     ],
     footer:
-      "Manually navigating to official support pages is the safest way to avoid such scams."
+      "Navigating directly to official websites and avoiding sponsored support links remains the most effective way to stay protected from these increasingly deceptive scams."
   },
 
   // =========================
   // 5️⃣ Fake Refund Manipulation Scam
   // =========================
-  {
+    {
     id: "fake-refund-scam",
     title: "Fake Refund Claims Are Being Used to Pressure Digital Payment Users",
     highlight: "Fake Refund Manipulation Scam",
     author: "Craig Hale",
-    date: "July 13, 2025",
+    date: "Jan 16, 2026",
     category: "Payment App Fraud",
+    image: "/Hero/refund-scam.webp",
     lead:
       "Fraudsters are exploiting refund misunderstandings to convince users to transfer real money voluntarily.",
     content: [
