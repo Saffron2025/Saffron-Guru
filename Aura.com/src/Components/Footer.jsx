@@ -148,13 +148,12 @@ const Footer = () => {
 
 <MediaMentions/>
 
-{/* <FloatingChat/> */}
 
 
     <GlobalReach/>
 
     <AllSection/>
-    {/* <Disclaimer/> */}
+
     </>
   );
 };

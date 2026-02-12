@@ -93,7 +93,7 @@ const App = () => {
           <Route path="/features" element={<Layout><Feature /></Layout>} />
           <Route path="/DefendPro" element={<DefendPro />} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
-          <Route path="/about-us" element={<Layout><About /></Layout>} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />
           <Route path="/terms" element={<Layout><Terms /></Layout>} />
           <Route path="/return-policy" element={<Layout><ReturnPolicy /></Layout>} />

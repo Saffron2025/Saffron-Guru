@@ -1,12 +1,14 @@
 // src/Components/About.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AppNavbar from './AppNavbar';
 import AllSection from './AllSection';
 import './About.css';
 
 const About = () => {
   return (
     <>
+    <AppNavbar/>
       <section className="about-section">
         <Container>
 
