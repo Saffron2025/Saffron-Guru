@@ -6,7 +6,7 @@ import "./AllSection.css";
 
 const footerLinks = [
   { label: "Home", path: "/home" },
-  { label: "About Us", path: "/about" },
+  { label: "About us", path: "/about-us" },
   { label: "Privacy Policy", path: "/privacy-policy" },
   { label: "Terms & Conditions", path: "/terms" },
   { label: "Return & Refund Policy", path: "/return-policy" },

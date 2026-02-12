@@ -27,7 +27,7 @@ const AppNavbar = () => {
       <Container>
         <Navbar.Brand as={Link} to="/" className="SaffronLogo-brand">
 <div className="logo-wrapper">
-    <img src="/Products/SaffronGuruLogo.gif" alt="Aura Logo" className="saffronGuru-logo" />
+    <img src="/Products/SaffronGuruLogo.gif" alt="Saffron Guru Logo" className="saffronGuru-logo" />
   </div>
         </Navbar.Brand>
 
@@ -98,7 +98,7 @@ const AppNavbar = () => {
             {/* Knowledge Center */}
            {/* Knowledge Center */}
 <NavDropdown title="Knowledge Center" id="knowledge-dropdown" className="custom-dropdown">
-  <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/about-us">About</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/HowSaffronWorks">How Saffron Works</NavDropdown.Item>
   <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
 </NavDropdown>
