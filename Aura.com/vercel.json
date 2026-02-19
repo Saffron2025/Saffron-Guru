@@ -12,6 +12,11 @@
     },
 
     {
+      "src": "^/(assets|Hero|Products|resources|vite.svg|manifest.json|OneSignalSDKWorker.js|OneSignalSDKUpdaterWorker.js|SaffronGuruLogo-192.webp|SaffronGuruLogo-512.webp|favicon.ico|robots.txt|sitemap.xml)/(.*)",
+      "dest": "/$1/$2"
+    },
+
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
