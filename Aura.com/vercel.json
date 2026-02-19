@@ -1,8 +1,14 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "^/logo$",
+      "status": 404,
+      "dest": "/404.html"
+    },
+    {
+      "src": "^/aura-logo.png$",
+      "status": 404,
+      "dest": "/404.html"
     }
   ]
 }
