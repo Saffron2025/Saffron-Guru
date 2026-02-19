@@ -127,7 +127,8 @@ const App = () => {
         <Route path="/article/:id" element={<ArticleDetail />} />
 
 
-          <Route path="*" element={<Navigate to="/" />} />
+<Route path="*" element={<h1>404 - Page Not Found</h1>} />
+
         </Routes>
       </Router>
     </div>
