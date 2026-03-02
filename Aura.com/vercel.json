@@ -4,7 +4,7 @@
       "handle": "filesystem"
     },
     {
-      "src": "^/(login|signup|verify-otp|home|features|DefendPro|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|solution|resources|HowSaffronWorks|Fox|CBS|ABC11|NewYorkPolice|ABCNational|AccountIn|LearnMore|microsoft-store|internet-security|for-your-business|for-your-home|ParentSolution|Pricing|DaysMoneyBack|IdentifyFakeCalls|ReadFAQ|FixMyTech|product/.*|live-support|blog|blog/.*|article|article/.*)$",
+      "src": "^/(login|signup|verify-otp|home|features|DefendPro|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|solution|resources|HowSaffronWorks|Fox|CBS|ABC11|NewYorkPolice|ABCNational|AccountIn|LearnMore|microsoft-store|internet-security|for-your-business|for-your-home|Parent-Solution|Pricing|DaysMoneyBack|IdentifyFakeCalls|ReadFAQ|FixMyTech|product/.*|live-support|blog|blog/.*|article|article/.*)$",
       "dest": "/index.html"
     },
     {
