@@ -113,7 +113,7 @@ const App = () => {
           <Route path="/internet-security" element={<InternetSecurity />} />
           <Route path="/for-your-business" element={<ForYourBusiness />} />
           <Route path="/for-your-home" element={<ForYourHome />} />
-          <Route path="/ParentSolution" element={<ParentSolution />} />
+          <Route path="/Parent-Solution" element={<ParentSolution />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/DaysMoneyBack" element={<DaysMoneyBack />} />
           <Route path="/IdentifyFakeCalls" element={<IdentifyFakeCalls />} />

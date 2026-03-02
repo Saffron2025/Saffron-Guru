@@ -46,7 +46,7 @@ const AppNavbar = () => {
             {/* Solutions Dropdown */}
             <NavDropdown title="Solutions" id="solutions-dropdown" className="custom-dropdown">
               <NavDropdown.Item as={Link} to="/solution">Protection of our Society</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/ParentSolution">NetHaven™</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Parent-Solution">NetHaven™</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/FixMyTech">FixMyTech™</NavDropdown.Item>
 
               <NavDropdown.Item onClick={() => window.location.href = "/DefendPro?item=identity-theft"}>
