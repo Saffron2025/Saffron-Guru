@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { GiConfirmed, GiReceiveMoney, GiLockedChest } from 'react-icons/gi';
 import { MdSupportAgent } from 'react-icons/md';
@@ -18,17 +18,7 @@ import './Home.css';
 
 const Hero = () => {
   // ✅ JivoSite script inject karo jab HomePage load ho
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//code.jivosite.com/widget/MXUMRaRyWc";
-    script.async = true;
-    document.body.appendChild(script);
 
-    return () => {
-      // Cleanup: agar user dusre page par chala jaye
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <>
