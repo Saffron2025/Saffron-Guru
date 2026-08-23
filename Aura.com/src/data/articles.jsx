@@ -1,4 +1,226 @@
 export const articles = [
+
+  // =========================
+// 6️⃣ AI-Powered Scam Attacks
+// =========================
+{
+  id: "ai-powered-scam-attacks",
+
+  title: "How Scammers Are Using AI to Scam Innocent People in America",
+
+  highlight: "AI-Powered Scam Attacks",
+
+  author: "Craig Hale",
+
+  date: "Jan 15, 2026",
+
+  category: "AI & Cybersecurity Fraud",
+
+  image: "/Hero/ai-scam.webp",
+
+  lead:
+    "Scammers are increasingly using artificial intelligence to create convincing messages, fake voices, and personalized scams that make it harder for innocent people to recognize fraud.",
+
+  content: [
+
+    {
+      type: "p",
+      text:
+        "Artificial intelligence is making scams faster, more convincing, and easier to personalize. Criminals can use AI tools to create realistic messages, imitate communication styles, and make fraudulent requests appear to come from someone the victim already knows."
+    },
+
+    {
+      type: "p",
+      text:
+        "From fake customer support messages to convincing voice impersonation, AI is giving scammers new ways to build trust and pressure victims into making quick decisions."
+    },
+
+    {
+      type: "blockquote",
+      text:
+        "AI can make a scam look personal, professional, and believable within minutes."
+    },
+
+    {
+      type: "h2",
+      text: "How Scammers Are Using AI"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "AI-generated messages that look professional and trustworthy",
+        "Fake voices that imitate family members, friends, or business representatives",
+        "Personalized phishing messages using information found online",
+        "Fake customer-service conversations and support agents",
+        "AI-generated images and documents used to make scams appear legitimate"
+      ]
+    },
+
+    {
+      type: "h2",
+      text: "Why AI-Powered Scams Are Dangerous"
+    },
+
+    {
+      type: "p",
+      text:
+        "Traditional warning signs such as poor grammar, awkward wording, or obviously fake messages are becoming less reliable. AI allows scammers to create polished communication that can appear authentic and professional."
+    },
+
+    {
+      type: "p",
+      text:
+        "Scammers may also use information available on social media or public websites to make their messages more personal. A victim may receive a request that appears to come from a family member, coworker, company, or other trusted person."
+    },
+
+    {
+      type: "h2",
+      text: "How to Protect Yourself"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "Never send passwords, PINs, or one-time codes through unsolicited messages",
+        "Verify unexpected requests through a separate trusted communication method",
+        "Be cautious when someone creates a strong sense of urgency",
+        "Avoid clicking unexpected links or downloading unknown files",
+        "Contact banks and companies directly using known official contact information",
+        "Do not trust a voice or video alone when money is being requested"
+      ]
+    },
+
+    {
+      type: "info",
+      text:
+        "If someone unexpectedly asks for money, account information, or an urgent transfer—even if their voice or message seems genuine—stop and verify the request independently."
+    }
+
+  ],
+
+  footer:
+    "Taking a moment to verify an unexpected request can prevent an AI-powered scam from turning into a serious financial loss."
+},
+
+
+// =========================
+// 7️⃣ Call Spoofing Scam
+// =========================
+{
+  id: "call-spoofing-scam",
+
+  title: "How Call Spoofing Is Destroying Lives in the USA and Canada",
+
+  highlight: "Call Spoofing & Phone Fraud",
+
+  author: "Craig Hale",
+
+  date: "Jan 14, 2026",
+
+  category: "Phone Fraud",
+
+  image: "/Hero/call-spoofing.webp",
+
+  lead:
+    "Call spoofing allows scammers to disguise their real phone number and make calls appear to come from trusted businesses, government agencies, local numbers, or even people victims know.",
+
+  content: [
+
+    {
+      type: "p",
+      text:
+        "A phone call displaying a familiar number can create an immediate sense of trust. Scammers exploit that trust by manipulating caller ID information and pretending to represent banks, government agencies, technology companies, or other legitimate organizations."
+    },
+
+    {
+      type: "p",
+      text:
+        "These calls can quickly become stressful because scammers often create fear and urgency. Victims may be told that their account has been compromised, that a payment is due, or that immediate action is required."
+    },
+
+    {
+      type: "blockquote",
+      text:
+        "A familiar number does not always mean a familiar caller."
+    },
+
+    {
+      type: "h2",
+      text: "How Call Spoofing Works"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "Scammer changes the caller ID displayed on the victim's phone",
+        "The call may appear to come from a local or familiar number",
+        "Caller claims there is an urgent problem",
+        "Victim is pressured to provide information or make a payment",
+        "Scammer may continue contacting the victim using different numbers"
+      ]
+    },
+
+    {
+      type: "h2",
+      text: "Why Call Spoofing Is Dangerous"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "Victims may believe the caller is legitimate",
+        "Scammers can create fear and urgency",
+        "Personal and financial information may be requested",
+        "Fraudsters can impersonate banks, government agencies, or businesses",
+        "Repeated calls can cause financial and emotional stress"
+      ]
+    },
+
+    {
+      type: "h2",
+      text: "How to Prevent Call Spoofing Scams"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "Do not trust caller ID alone",
+        "Never provide passwords, PINs, or OTPs during an unexpected call",
+        "Hang up and call the organization back using its official number",
+        "Avoid making payments because of an urgent phone demand",
+        "Block suspicious numbers and report repeated scam calls",
+        "Be especially cautious when callers threaten arrest, account closure, or immediate financial penalties"
+      ]
+    },
+
+    {
+      type: "h2",
+      text: "How to Stay Alert"
+    },
+
+    {
+      type: "ul",
+      items: [
+        "Slow down when a caller creates urgency",
+        "Ask for the caller's name and department",
+        "Do not share sensitive information just because the caller knows some personal details",
+        "Verify unexpected requests independently",
+        "Talk to family members or trusted people if a call feels suspicious"
+      ]
+    },
+
+    {
+      type: "info",
+      text:
+        "If a caller demands immediate payment, threatens you, or asks for sensitive information, hang up and verify the request independently. A legitimate organization should not require you to make a rushed decision over an unexpected call."
+    }
+
+  ],
+
+  footer:
+    "Caller ID can be manipulated. Staying calm, hanging up, and verifying the caller through an official channel can help protect you from devastating phone scams."
+},
   // =========================
   // 1️⃣ Bank Account Freeze Alert Scam
   // =========================

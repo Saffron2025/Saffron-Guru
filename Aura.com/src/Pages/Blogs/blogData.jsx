@@ -1,4 +1,3 @@
-// src/Pages/Blog/blogData.js
 const blogs = {
 "online-scam-guide": {
   title: "🛡️ Online Scam Guide 2025",
