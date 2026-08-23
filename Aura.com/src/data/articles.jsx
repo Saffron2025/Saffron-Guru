@@ -12,7 +12,7 @@ export const articles = [
 
   author: "Craig Hale",
 
-  date: "Jan 15, 2026",
+  date: "Aug 23, 2026",
 
   category: "AI & Cybersecurity Fraud",
 
@@ -116,7 +116,7 @@ export const articles = [
 
   author: "Craig Hale",
 
-  date: "Jan 14, 2026",
+  date: "Aug 23, 2026",
 
   category: "Phone Fraud",
 
