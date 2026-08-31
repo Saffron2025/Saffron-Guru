@@ -429,7 +429,7 @@ const Hero = () => {
             </ul>
 
             <Link
-              to="/ParentSolution"
+              to="/Parent-Solution"
               className="aura-btn"
             >
               Learn More
