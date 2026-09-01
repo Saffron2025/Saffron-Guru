@@ -1161,7 +1161,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(145deg, #03040a, #07080c);
+
+  background-image:
+    /* linear-gradient(rgba(3, 4, 10, 0.55), rgba(3, 4, 10, 0.55)), */
+    url('/Hero/background.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   overflow: hidden;
   text-align: center;
 }

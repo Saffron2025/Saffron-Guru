@@ -445,51 +445,28 @@ const Hero = () => {
       {/* =========================================
           AURA PROMISE SECTION
       ========================================== */}
+<section className="custom-feature-section">
 
-      <section className="custom-feature-section">
+  <div className="feature-intro">
+    <h2 className="feature-title">
+      Effortless IT Help. Anytime. Anywhere.
+    </h2>
 
-        <div className="feature-intro">
+    <p className="feature-subtext">
+      Get professional, fast, and secure support for your home or business —
+      with remote access or an on-site technician whenever you need us.
+    </p>
+  </div>
 
-          <h2 className="feature-title">
-            Effortless IT Help. Anytime. Anywhere.
-          </h2>
+  <div className="image-wrapper">
+    <img
+      src="/Hero/SP.WebP"
+      alt="Online Protection"
+      className="custom-hero-img"
+    />
+  </div>
 
-          <p className="feature-subtext">
-            Get professional, fast, and secure support for your home or
-            business — with remote access or an on-site technician whenever
-            you need us.
-          </p>
-
-        </div>
-
-
-        <div className="image-wrapper">
-
-          <span className="aura-glow-ring"></span>
-
-          <img
-            src="/Hero/SP.WebP"
-            alt="Responsive"
-            className="custom-hero-img"
-          />
-
-        </div>
-
-
-        <div className="feature-bottom">
-
-          <p className="feature-note">
-            Saffron Guru actively detects threats in real-time across
-            your devices.
-          </p>
-
-          <button className="feature-button">
-            Explore Protection Plans
-          </button>
-
-        </div>
-
-      </section>
+</section>
 
 
       {/* Custom Chat Button - Jivo ke left me */}

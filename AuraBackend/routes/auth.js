@@ -17,46 +17,81 @@ const transporter = nodemailer.createTransport({
 });
 
 // Send OTP
+// Send OTP
 router.post('/send-otp', async (req, res) => {
-  const { name, email, password } = req.body;
+  try {
+    const { name, email, password } = req.body;
 
-  const userExist = await User.findOne({ email });
-  if (userExist) return res.status(400).json({ msg: 'User already exists' });
+    // Validate input
+    if (!name || !email || !password) {
+      return res.status(400).json({
+        msg: 'Please fill all required fields'
+      });
+    }
 
-  const otp = Math.floor(100000 + Math.random() * 900000).toString();
-  otpStore.set(email, { otp, name, password, createdAt: Date.now() });
+    // Check existing user
+    const userExist = await User.findOne({ email });
 
-  await transporter.sendMail({
-    from: process.env.MAIL_USER,
-    to: email,
-    subject: 'Your OTP for Saffron Guru Signup',
-    html: `<p>Your OTP is: <b>${otp}</b></p>`
-  });
+    if (userExist) {
+      return res.status(400).json({
+        msg: 'User already exists'
+      });
+    }
 
-  res.json({ msg: 'OTP sent to your email address' });
-});
+    // Generate OTP
+    const otp = Math.floor(
+      100000 + Math.random() * 900000
+    ).toString();
 
-// Verify OTP
-router.post('/verify-otp', async (req, res) => {
-  const { email, otp } = req.body;
-  const entry = otpStore.get(email);
+    // Send email FIRST
+    await transporter.sendMail({
+      from: process.env.MAIL_USER,
+      to: email,
+      subject: 'Your OTP for Saffron Guru Signup',
+      html: `
+        <div style="
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          text-align: center;
+        ">
+          <h2>Saffron Guru Signup</h2>
 
-  if (!entry) return res.status(400).json({ msg: 'OTP not found. Please request again.' });
-  if (Date.now() - entry.createdAt > 5 * 60 * 1000) {
-    otpStore.delete(email);
-    return res.status(400).json({ msg: 'OTP expired' });
+          <p>Your verification OTP is:</p>
+
+          <h1 style="
+            letter-spacing: 5px;
+            color: #2563eb;
+          ">
+            ${otp}
+          </h1>
+
+          <p>This OTP will expire in 5 minutes.</p>
+        </div>
+      `
+    });
+
+    // Store OTP only after email is successfully sent
+    otpStore.set(email, {
+      otp,
+      name,
+      password,
+      createdAt: Date.now()
+    });
+
+    console.log(`OTP successfully sent to: ${email}`);
+
+    return res.status(200).json({
+      msg: 'OTP sent to your email address'
+    });
+
+  } catch (err) {
+    console.error('SEND OTP ERROR:', err);
+
+    return res.status(500).json({
+      msg: err.message || 'Failed to send OTP. Please try again.'
+    });
   }
-
-  if (entry.otp !== otp) return res.status(400).json({ msg: 'Invalid OTP' });
-
-  const hashedPassword = await bcrypt.hash(entry.password, 10);
-  const newUser = new User({ name: entry.name, email, password: hashedPassword });
-  await newUser.save();
-
-  otpStore.delete(email);
-  res.status(201).json({ msg: 'Signup successful. You can now login.' });
 });
-
 // Login
 router.post('/login', async (req, res) => {
   const { email, password, turnstileToken } = req.body;
@@ -158,8 +193,66 @@ router.put('/change-password', verifyToken, async (req, res) => {
   }
 });
 
+// Verify OTP
+router.post('/verify-otp', async (req, res) => {
+  try {
+    const { email, otp } = req.body;
 
+    const entry = otpStore.get(email);
+
+    if (!entry) {
+      return res.status(400).json({
+        msg: 'OTP not found. Please request again.'
+      });
+    }
+
+    // OTP expires after 5 minutes
+    if (Date.now() - entry.createdAt > 5 * 60 * 1000) {
+      otpStore.delete(email);
+
+      return res.status(400).json({
+        msg: 'OTP expired. Please request again.'
+      });
+    }
+
+    // Check OTP
+    if (entry.otp !== otp) {
+      return res.status(400).json({
+        msg: 'Invalid OTP'
+      });
+    }
+
+    // Hash password
+    const hashedPassword = await bcrypt.hash(entry.password, 10);
+
+    // Create user
+    const newUser = new User({
+      name: entry.name,
+      email,
+      password: hashedPassword
+    });
+
+    await newUser.save();
+
+    // Delete OTP after successful signup
+    otpStore.delete(email);
+
+    return res.status(201).json({
+      msg: 'Signup successful. You can now login.'
+    });
+
+  } catch (err) {
+    console.error('VERIFY OTP ERROR:', err);
+
+    return res.status(500).json({
+      msg: 'OTP verification failed'
+    });
+  }
+});
 
 
 
 module.exports = router;
+
+
+
