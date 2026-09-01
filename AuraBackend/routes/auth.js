@@ -20,17 +20,21 @@ const transporter = nodemailer.createTransport({
 // Send OTP
 router.post('/send-otp', async (req, res) => {
   try {
+    console.log("1️⃣ SEND OTP request received");
+
     const { name, email, password } = req.body;
 
-    // Validate input
     if (!name || !email || !password) {
       return res.status(400).json({
         msg: 'Please fill all required fields'
       });
     }
 
-    // Check existing user
+    console.log("2️⃣ Checking user in MongoDB...");
+
     const userExist = await User.findOne({ email });
+
+    console.log("3️⃣ MongoDB check completed");
 
     if (userExist) {
       return res.status(400).json({
@@ -38,39 +42,21 @@ router.post('/send-otp', async (req, res) => {
       });
     }
 
-    // Generate OTP
     const otp = Math.floor(
       100000 + Math.random() * 900000
     ).toString();
 
-    // Send email FIRST
+    console.log("4️⃣ Sending email...");
+
     await transporter.sendMail({
       from: process.env.MAIL_USER,
       to: email,
       subject: 'Your OTP for Saffron Guru Signup',
-      html: `
-        <div style="
-          font-family: Arial, sans-serif;
-          padding: 20px;
-          text-align: center;
-        ">
-          <h2>Saffron Guru Signup</h2>
-
-          <p>Your verification OTP is:</p>
-
-          <h1 style="
-            letter-spacing: 5px;
-            color: #2563eb;
-          ">
-            ${otp}
-          </h1>
-
-          <p>This OTP will expire in 5 minutes.</p>
-        </div>
-      `
+      html: `<h2>Your OTP is: ${otp}</h2>`
     });
 
-    // Store OTP only after email is successfully sent
+    console.log("5️⃣ Email sent successfully");
+
     otpStore.set(email, {
       otp,
       name,
@@ -78,7 +64,7 @@ router.post('/send-otp', async (req, res) => {
       createdAt: Date.now()
     });
 
-    console.log(`OTP successfully sent to: ${email}`);
+    console.log("6️⃣ OTP stored successfully");
 
     return res.status(200).json({
       msg: 'OTP sent to your email address'
@@ -88,7 +74,7 @@ router.post('/send-otp', async (req, res) => {
     console.error('SEND OTP ERROR:', err);
 
     return res.status(500).json({
-      msg: err.message || 'Failed to send OTP. Please try again.'
+      msg: err.message || 'Failed to send OTP'
     });
   }
 });
