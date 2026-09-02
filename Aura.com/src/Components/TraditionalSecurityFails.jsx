@@ -1,53 +1,145 @@
-// src/Components/TraditionalSecurityFails.js
+// src/Components/TraditionalSecurityFails.jsx
+
 import React from 'react';
 import './TraditionalSecurityFails.css';
 
 const TraditionalSecurityFails = () => {
+  const failures = [
+    {
+      icon: '🖥️',
+      title: 'Pop-Up Scam Protection',
+      text: 'Fake alerts that freeze your screen and display urgent phone numbers can still slip through traditional protection.',
+    },
+    {
+      icon: '📞',
+      title: 'Impersonation & Refund Scams',
+      text: 'Scammers pretending to be from Amazon, Microsoft, or your bank may go completely unnoticed.',
+    },
+    {
+      icon: '💻',
+      title: 'Remote Access Traps',
+      text: 'Remote access tools can be misused by scammers, while traditional security may not recognize the danger.',
+    },
+    {
+      icon: '🌐',
+      title: 'Fake Website Detection',
+      text: 'Scammers can copy the appearance of banks, payment platforms, and security companies to steal information.',
+    },
+    {
+      icon: '🔄',
+      title: 'Evolving Scam Tactics',
+      text: 'Traditional protection often depends on updates, while scam techniques continue changing rapidly.',
+    },
+    {
+      icon: '🧠',
+      title: 'Human Manipulation',
+      text: 'Traditional security can protect files, but it cannot always warn you when a scammer is manipulating your trust.',
+    },
+  ];
+
   return (
-    <section className="traditional-fails-section">
-      <div className="traditional-fails-banner">
-        <div className="fails-content-wrapper">
-          
-          {/* ✅ Image Left */}
-          <div className="right-image">
+    <section className="traditional-security-section">
+
+      {/* Background Decorations */}
+      <div className="traditional-security-orb orb-one"></div>
+      <div className="traditional-security-orb orb-two"></div>
+
+      <div className="traditional-security-container">
+
+        {/* LEFT SIDE IMAGE */}
+        <div className="traditional-security-visual">
+
+          <div className="traditional-image-glow"></div>
+
+          <div className="traditional-image-frame">
             <img
               src="/Hero/TraditionalFails.WebP"
-              alt="Security Gap Illustration"
-              className="fails-image-right"
+              alt="Traditional security protection gaps"
+              className="traditional-security-image"
             />
+
+            <div className="traditional-image-overlay"></div>
           </div>
 
-          {/* ✅ Content Right */}
-          <div className="left-content">
-            <h2 className="fails-heading">❌ Why Traditional Security Falls Short</h2>
+          {/* Floating Warning Card */}
+          <div className="traditional-warning-card">
+            <div className="traditional-warning-icon">⚠️</div>
 
-            <div className="fails-point">
-              🛑 It doesn’t block full-screen pop-up scams
-              <p>Fake alerts that freeze your screen and display urgent phone numbers still slip through.</p>
-            </div>
-            <div className="fails-point">
-              🛑 It doesn’t detect refund scams or impersonation calls
-              <p>Scammers pretending to be from Amazon, Microsoft, or your bank go completely unnoticed.</p>
-            </div>
-            <div className="fails-point">
-              🛑 It doesn’t stop remote access traps
-              <p>Tools like AnyDesk and TeamViewer are often misused — traditional security rarely flags them.</p>
-            </div>
-            <div className="fails-point">
-              🛑 It doesn’t warn you about fake websites
-              <p>Scammers copy the exact look of PayPal, your bank, or antivirus companies.</p>
-            </div>
-            <div className="fails-point">
-              🛑 It doesn’t keep up with evolving scam tactics
-              <p>Most protection relies on signature updates — but scam methods change every week.</p>
-            </div>
-            <div className="fails-point">
-              🛑 It doesn’t protect decision-making — only files
-              <p>It can't warn you when you're being manipulated by a voice that sounds trustworthy.</p>
+            <div>
+              <strong>Security Gap Detected</strong>
+              <span>Traditional protection isn't enough</span>
             </div>
           </div>
+
         </div>
+
+
+        {/* RIGHT SIDE CONTENT */}
+        <div className="traditional-security-content">
+
+          <div className="traditional-security-badge">
+            ⚠️ SECURITY LIMITATIONS
+          </div>
+
+          <h2 className="traditional-security-heading">
+            Why Traditional Security
+            <span> Falls Short.</span>
+          </h2>
+
+          <p className="traditional-security-intro">
+            Traditional antivirus was designed primarily to protect against
+            malicious files and software.
+          </p>
+
+          <p className="traditional-security-description">
+            But today's biggest digital threats often rely on
+            <strong> scams, impersonation, manipulation, and deception.</strong>
+          </p>
+
+
+          {/* FAILURES GRID */}
+          <div className="traditional-failures-grid">
+
+            {failures.map((failure, index) => (
+              <div
+                className="traditional-failure-card"
+                key={index}
+              >
+
+                <div className="traditional-failure-icon">
+                  {failure.icon}
+                </div>
+
+                <div className="traditional-failure-content">
+                  <h3>{failure.title}</h3>
+                  <p>{failure.text}</p>
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
+
+          {/* Bottom Warning */}
+          <div className="traditional-bottom-warning">
+
+            <div className="traditional-bottom-warning-icon">
+              🛡️
+            </div>
+
+            <p>
+              Modern threats require more than basic antivirus protection.
+              You need security designed for the way scams actually work
+              today.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
   );
 };

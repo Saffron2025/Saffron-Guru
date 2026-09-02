@@ -5,7 +5,7 @@ import { MdSupportAgent } from 'react-icons/md';
 import { PiTelevisionSimpleBold } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 import CookieConsent from '../Components/CookieConsent';
-
+import Footer from '../Components/Footer';
 import {
   Clock,
   ShieldOff,
@@ -445,29 +445,44 @@ const Hero = () => {
       {/* =========================================
           AURA PROMISE SECTION
       ========================================== */}
-<section className="custom-feature-section">
+<section className="online-protection-section">
 
-  <div className="feature-intro">
-    <h2 className="feature-title">
-      Effortless IT Help. Anytime. Anywhere.
+  <div className="online-protection-content">
+
+    <div className="protection-badge">
+      <span className="protection-dot"></span>
+      ONLINE PROTECTION
+    </div>
+
+    <h2 className="online-protection-title">
+      Effortless IT Help.
+      <span> Anytime. Anywhere.</span>
     </h2>
 
-    <p className="feature-subtext">
-      Get professional, fast, and secure support for your home or business —
+    <p className="online-protection-text">
+      Get professional, fast, and secure support for your home or business
       with remote access or an on-site technician whenever you need us.
     </p>
+
   </div>
 
-  <div className="image-wrapper">
+
+  {/* IMAGE */}
+  <div className="online-protection-image-wrapper">
+
+    <div className="image-corner-decoration decoration-one"></div>
+    <div className="image-corner-decoration decoration-two"></div>
+
     <img
       src="/Hero/SP.WebP"
       alt="Online Protection"
-      className="custom-hero-img"
+      className="online-protection-image"
     />
+
   </div>
 
 </section>
-
+<Footer/>
 
       {/* Custom Chat Button - Jivo ke left me */}
 

@@ -1,24 +1,37 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+
 import AppNavbar from "./Components/AppNavbar";
-import TopBanner from "./Components/TopBanner";
 import AuraFooter from "./Components/Footer";
-// import FloatingChat from "./Components/FloatingChat";
+import CallUs from "./Components/CallUs";
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const noChatPaths = ["/about", "/privacy-policy", "/terms", "/return-policy", "/why-us", "/contact"];
 
-  const userId = `user-${Date.now()}`; // dynamic userId
+  // Jin pages par Footer nahi dikhana
+  const noFooterPaths = [
+    "/about",
+    "/privacy-policy",
+    "/terms",
+    "/return-policy",
+    "/why-us",
+    "/contact",
+  ];
 
   return (
     <>
-      {/* <TopBanner /> */}
+      {/* ================= Navbar ================= */}
       <AppNavbar />
+
+      {/* ================= Current Page Content ================= */}
       {children}
-      {!noChatPaths.includes(location.pathname) && <AuraFooter />}
-      {/* {!noChatPaths.includes(location.pathname) && (
-        <FloatingChat role="user" name="Website Visitor" userId={userId} />
+
+      {/* ================= Call Us ================= */}
+      <CallUs />
+
+      {/* ================= Footer ================= */}
+      {/* {!noFooterPaths.includes(location.pathname) && (
+        <AuraFooter />
       )} */}
     </>
   );

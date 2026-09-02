@@ -1,47 +1,179 @@
 // src/Components/EverythingSafe.jsx
-import React, { useEffect, useRef } from 'react';
-import './EverythingYouNeedTostay.css'; // Same styling reused
+
+import React, { useEffect, useRef } from "react";
+import "./EverythingYouNeedTostay.css";
 
 const EverythingSafe = ({ expand }) => {
-  const sectionRef = useRef();
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     if (expand && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 150);
     }
   }, [expand]);
 
   return (
     <section
       id="identity-theft"
-      className="everything-safe-banner"
+      className="everything-safe-section"
       ref={sectionRef}
     >
-      <div className="everything-safe-wrapper">
-        {/* ✅ Left: Image */}
-        <div className="everything-safe-image">
-          <img src="/Hero/EveryThingStay.WebP" alt="Everything Safe" />
-        </div>
+      {/* Background decorations */}
+      <div className="everything-safe-orb orb-one"></div>
+      <div className="everything-safe-orb orb-two"></div>
+      <div className="everything-safe-grid"></div>
 
-        {/* ✅ Right: Text Content */}
-        <div className="everything-safe-text">
-          <h2 className="reality-numbers-heading">🛡️ Everything You Need to Stay Safe — In One Place</h2>
+      <div className="everything-safe-container">
 
-          <div className="reality-point">
-            🔐 <strong>Identity Theft Protection</strong><br />
-            Your identity controls everything — your money, credit, and reputation.<br />
-            DefendMePro equips you with advanced monitoring tools that detect leaks, unauthorized use, or suspicious activity tied to your personal info.<br />
-            If something’s off, you get an instant alert — so you can act before real damage is done.
+        {/* LEFT IMAGE SIDE */}
+        <div className="everything-safe-visual">
+
+          <div className="everything-safe-image-glow"></div>
+
+          <div className="everything-safe-image-card">
+
+            <div className="everything-safe-image-top">
+              <span>🛡️</span>
+              <span>DEFENDME PROTECTION</span>
+            </div>
+
+            <img
+              src="/Hero/EveryThingStay.WebP"
+              alt="Digital Security Protection"
+              className="everything-safe-main-image"
+            />
+
           </div>
 
-          <div className="reality-point">
-            🔒 <strong>Zero-Day Threat Defense</strong><br />
-            Some cyber threats are so new and sophisticated, your existing security won’t even see them coming.<br />
-            DefendMePro adds a critical layer of Zero-Day Threat Defense — using advanced tools like AppGuard to lock down your system at the process level, stopping unknown malware, ransomware, and exploit attempts before they can launch.<br />
-            No updates. No detection delays. Just airtight, proactive defense.
+          {/* Floating Security Card */}
+          <div className="everything-safe-floating-card">
+
+            <div className="everything-safe-floating-icon">
+              🔐
+            </div>
+
+            <div>
+              <strong>Identity Protected</strong>
+              <small>Security monitoring active</small>
+            </div>
+
           </div>
+
+          {/* Small floating badge */}
+          <div className="everything-safe-status">
+            <span></span>
+            Protection Active
+          </div>
+
         </div>
+
+
+        {/* RIGHT CONTENT SIDE */}
+        <div className="everything-safe-content">
+
+          <div className="everything-safe-badge">
+            🛡️ COMPLETE DIGITAL PROTECTION
+          </div>
+
+          <h2 className="everything-safe-heading">
+            Everything You Need
+            <span> To Stay Safe.</span>
+          </h2>
+
+          <p className="everything-safe-intro">
+            Powerful protection tools working together to help defend your
+            identity, devices, and personal information.
+          </p>
+
+
+          {/* IDENTITY PROTECTION */}
+          <div className="everything-safe-feature-card">
+
+            <div className="everything-safe-feature-icon">
+              🔐
+            </div>
+
+            <div className="everything-safe-feature-content">
+
+              <h3>Identity Theft Protection</h3>
+
+              <p>
+                Your identity controls everything — your money, credit, and
+                reputation.
+              </p>
+
+              <p>
+                DefendMePro helps you monitor for potential leaks,
+                unauthorized use, or suspicious activity connected to your
+                personal information.
+              </p>
+
+              <div className="everything-safe-feature-footer">
+                <span>⚡</span>
+                Get alerts when something suspicious needs attention.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* ZERO DAY PROTECTION */}
+          <div className="everything-safe-feature-card zero-day-card">
+
+            <div className="everything-safe-feature-icon">
+              🔒
+            </div>
+
+            <div className="everything-safe-feature-content">
+
+              <h3>Zero-Day Threat Defense</h3>
+
+              <p>
+                Some cyber threats are so new and sophisticated that traditional
+                security may not recognize them immediately.
+              </p>
+
+              <p>
+                DefendMePro adds an extra layer of protection designed to help
+                reduce exposure to unknown malware, ransomware, and suspicious
+                exploit attempts.
+              </p>
+
+              <div className="everything-safe-feature-footer">
+                <span>🛡️</span>
+                Proactive protection designed for emerging threats.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* Bottom highlight */}
+          <div className="everything-safe-bottom-message">
+
+            <div className="everything-safe-bottom-icon">
+              🛡️
+            </div>
+
+            <p>
+              Stay safer with powerful protection tools designed to help
+              protect what matters most —
+              <strong> your identity and digital life.</strong>
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
   );
 };

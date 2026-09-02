@@ -1,181 +1,811 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+/* =========================================================
+   ⚠️ TRADITIONAL SECURITY FAILS
+   PREMIUM CYBER SECURITY DESIGN
+========================================================= */
 
-.traditional-fails-section {
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #edf2f7 0%, #e2ebf7 100%);
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.traditional-security-section {
+  position: relative;
+
+  padding: 80px 25px;
+
   font-family: 'Nunito', sans-serif;
-  color: #222;
-  position: relative;
-  animation: fadeIn 1s ease-out;
-  overflow-x: hidden; /* ✅ prevent horizontal cut */
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #fff7f5 45%,
+      #f3f8ff 100%
+    );
 }
 
-/* Inner card */
-.traditional-fails-banner {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 3rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.traditional-fails-banner:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.1);
-}
 
-/* Heading */
-.fails-heading {
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  color: #002b45;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-.fails-heading::after {
-  content: "";
+/* =========================================================
+   BACKGROUND ORBS
+========================================================= */
+
+.traditional-security-orb {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background: #007acc;
-  border-radius: 2px;
+
+  border-radius: 50%;
+
+  filter: blur(70px);
+
+  pointer-events: none;
+
+  opacity: 0.5;
 }
 
-/* Points */
-.fails-point {
-  font-size: 1.2rem;
-  margin-bottom: 1.4rem;
+
+.orb-one {
+  width: 350px;
+  height: 350px;
+
+  top: -150px;
+  left: -120px;
+
+  background: rgba(255, 80, 60, 0.18);
+}
+
+
+.orb-two {
+  width: 420px;
+  height: 420px;
+
+  right: -180px;
+  bottom: -200px;
+
+  background: rgba(0, 119, 255, 0.12);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.traditional-security-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(350px, 0.85fr)
+    minmax(0, 1.15fr);
+
+  gap: 70px;
+
+  align-items: center;
+
+  padding: 45px;
+
+  border-radius: 32px;
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  border:
+    1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 25px 80px rgba(15, 23, 42, 0.12);
+
+  backdrop-filter:
+    blur(18px);
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.traditional-security-visual {
+  position: relative;
+
   display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  line-height: 1.7;
-  color: #333;
-  padding: 1rem;
-  border-radius: 12px;
-  background: #f8fbff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-.fails-point:hover {
-  background: #eef6ff;
-  transform: translateX(4px);
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 540px;
 }
 
-.fails-point::before {
-  content: "⚠️";
-  font-size: 1.3rem;
-  flex-shrink: 0;
-  margin-top: 2px;
+
+/* IMAGE GLOW */
+
+.traditional-image-glow {
+  position: absolute;
+
+  width: 340px;
+  height: 340px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 95, 70, 0.3),
+      rgba(255, 150, 100, 0.1),
+      transparent 70%
+    );
+
+  filter: blur(25px);
+
+  animation:
+    traditionalGlow 5s ease-in-out infinite;
 }
 
-.fails-point p {
-  font-size: 1rem;
-  color: #555;
-  margin: 0.3rem 0 0;
+
+@keyframes traditionalGlow {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+
 }
 
-/* Layout */
-.fails-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.5rem;
-  flex-wrap: wrap; /* ✅ ensures wrapping instead of cutting */
-}
 
-.left-content {
-  flex: 1 1 58%;
-  min-width: 320px;
-  order: 1; /* ✅ Desktop: text right */
-}
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
 
-.right-image {
-  flex: 1 1 40%;
-  text-align: center;
-  order: 0; /* ✅ Desktop: image left */
-}
+.traditional-image-frame {
+  position: relative;
 
-/* Right image card */
-.fails-image-right {
   width: 100%;
-  max-width: 400px;
+
+  max-width: 500px;
+
+  padding: 12px;
+
+  border-radius:
+    90px 25px
+    90px 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 235, 230, 0.8)
+    );
+
+  border:
+    1px solid rgba(255, 90, 70, 0.2);
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.18);
+
+  transform:
+    rotate(-2deg);
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+
+  overflow: hidden;
+}
+
+
+.traditional-image-frame:hover {
+  transform:
+    rotate(0deg)
+    translateY(-8px);
+
+  box-shadow:
+    0 35px 80px rgba(15, 23, 42, 0.22);
+}
+
+
+/* =========================================================
+   IMAGE - FULL IMAGE SHOW
+========================================================= */
+
+.traditional-security-image {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius:
+    78px 15px
+    78px 15px;
+}
+
+
+/* IMAGE OVERLAY */
+
+.traditional-image-overlay {
+  position: absolute;
+
+  inset: 12px;
+
+  pointer-events: none;
+
+  border-radius:
+    78px 15px
+    78px 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 70, 50, 0.05),
+      transparent 45%,
+      rgba(0, 119, 255, 0.08)
+    );
+}
+
+
+/* =========================================================
+   FLOATING WARNING CARD
+========================================================= */
+
+.traditional-warning-card {
+  position: absolute;
+
+  left: -20px;
+  bottom: 35px;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 20px;
+
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-  border: 4px solid #ffffff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 0; /* ✅ remove hardcoded 200px */
-}
-.fails-image-right:hover {
-  transform: scale(1.03);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  border:
+    1px solid rgba(255, 80, 60, 0.2);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.18);
+
+  backdrop-filter:
+    blur(15px);
+
+  animation:
+    warningFloat 4s ease-in-out infinite;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
-/* ✅ Tablet Responsive */
-@media (max-width: 992px) {
-  .fails-content-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@keyframes warningFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
-  .right-image {
-    order: 0; /* Image upar */
-    margin-bottom: 2rem;
+  50% {
+    transform: translateY(-10px);
+  }
+
+}
+
+
+.traditional-warning-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 1.4rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff7a59,
+      #e63946
+    );
+}
+
+
+.traditional-warning-card div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.traditional-warning-card strong {
+  color: #111827;
+
+  font-size: 0.9rem;
+
+  font-weight: 800;
+}
+
+
+.traditional-warning-card span {
+  color: #6b7280;
+
+  font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.traditional-security-content {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.traditional-security-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 8px 16px;
+
+  margin-bottom: 18px;
+
+  border-radius: 50px;
+
+  background:
+    rgba(255, 80, 60, 0.1);
+
+  border:
+    1px solid rgba(255, 80, 60, 0.22);
+
+  color: #d62828;
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.traditional-security-heading {
+  margin: 0 0 18px;
+
+  color: #111827 !important;
+
+  font-size:
+    clamp(2.2rem, 4vw, 3.5rem);
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+.traditional-security-heading span {
+  color: #e63946;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.traditional-security-intro {
+  margin-bottom: 10px;
+
+  color: #1f2937 !important;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  line-height: 1.75;
+}
+
+
+.traditional-security-description {
+  margin-bottom: 28px;
+
+  color: #374151 !important;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+}
+
+
+.traditional-security-description strong {
+  color: #d62828;
+}
+
+
+/* =========================================================
+   FAILURES GRID
+========================================================= */
+
+.traditional-failures-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   FAILURE CARD
+========================================================= */
+
+.traditional-failure-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fffafa
+    );
+
+  border:
+    1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
+}
+
+
+.traditional-failure-card:hover {
+  transform:
+    translateY(-6px);
+
+  border:
+    1px solid rgba(230, 57, 70, 0.25);
+
+  box-shadow:
+    0 15px 30px rgba(230, 57, 70, 0.12);
+}
+
+
+/* ICON */
+
+.traditional-failure-icon {
+  width: 48px;
+  height: 48px;
+
+  min-width: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 1.3rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 120, 90, 0.18),
+      rgba(230, 57, 70, 0.12)
+    );
+}
+
+
+/* CONTENT */
+
+.traditional-failure-content h3 {
+  margin: 0 0 6px;
+
+  color: #111827 !important;
+
+  font-size: 0.98rem;
+
+  font-weight: 800;
+
+  line-height: 1.35;
+}
+
+
+.traditional-failure-content p {
+  margin: 0;
+
+  color: #4b5563 !important;
+
+  font-size: 0.86rem;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   BOTTOM WARNING
+========================================================= */
+
+.traditional-bottom-warning {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111827,
+      #2b1b1f
+    );
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.18);
+}
+
+
+.traditional-bottom-warning-icon {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  font-size: 1.5rem;
+}
+
+
+.traditional-bottom-warning p {
+  margin: 0;
+
+  color: #ffffff !important;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .traditional-security-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 40px;
+  }
+
+
+  .traditional-security-visual {
+    min-height: auto;
+  }
+
+
+  .traditional-image-frame {
+    max-width: 600px;
+  }
+
+
+  .traditional-security-content {
     width: 100%;
   }
 
-  .left-content {
-    order: 1; /* Text neeche */
-    width: 100%;
-  }
-
-  .fails-heading {
-    text-align: center;
-  }
-
-  .fails-heading::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .fails-image-right {
-    max-width: 90%;
-    height: auto; /* ✅ maintain aspect ratio */
-  }
 }
 
-/* ✅ Mobile Responsive */
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .traditional-security-section {
+    padding: 55px 18px;
+  }
+
+
+  .traditional-security-container {
+    padding: 28px;
+
+    border-radius: 24px;
+  }
+
+
+  .traditional-failures-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .traditional-warning-card {
+    left: 5px;
+
+    bottom: 15px;
+  }
+
+
+  .traditional-security-heading {
+    font-size: 2.3rem;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 576px) {
-  .traditional-fails-banner {
-    padding: 2rem 1.2rem;
+
+  .traditional-security-section {
+    padding: 40px 12px;
   }
 
-  .fails-heading {
-    font-size: 1.8rem;
+
+  .traditional-security-container {
+    padding: 20px 16px;
+
+    gap: 35px;
+
+    border-radius: 20px;
   }
 
-  .fails-point {
+
+  .traditional-security-heading {
+    font-size: 1.9rem;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .traditional-security-intro {
     font-size: 1rem;
-    padding: 0.8rem;
-    text-align: left; /* keep readability */
   }
 
-  .fails-point p {
+
+  .traditional-security-description {
+    font-size: 0.92rem;
+  }
+
+
+  .traditional-failure-card {
+    padding: 15px;
+
+    gap: 11px;
+  }
+
+
+  .traditional-failure-icon {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    font-size: 1.15rem;
+  }
+
+
+  .traditional-failure-content h3 {
+    font-size: 0.9rem;
+  }
+
+
+  .traditional-failure-content p {
+    font-size: 0.8rem;
+  }
+
+
+  .traditional-image-frame {
+    padding: 8px;
+
+    border-radius:
+      55px 18px
+      55px 18px;
+
+    transform: rotate(0deg);
+  }
+
+
+  .traditional-security-image {
+    border-radius:
+      48px 12px
+      48px 12px;
+  }
+
+
+  .traditional-warning-card {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    margin-top: -20px;
+
+    padding: 12px 15px;
+
+    width: fit-content;
+  }
+
+
+  .traditional-bottom-warning {
+    align-items: flex-start;
+
+    padding: 16px;
+  }
+
+
+  .traditional-bottom-warning p {
     font-size: 0.85rem;
   }
 
-  .fails-image-right {
-    max-width: 100%;
-  }
 }

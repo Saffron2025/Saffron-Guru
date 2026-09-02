@@ -1,158 +1,1646 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
-/* 🛡️ HERO BANNER */
-.hero-banner {
-  background: linear-gradient(160deg, #eef5ff 0%, #cfd9df 100%);
-  padding: 5rem 2rem;
-  text-align: center;
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.defend-hero,
+.scam-story-section {
   font-family: 'Nunito', sans-serif;
-  color: #1a1a1a;
-  margin-top: 20px;
 }
 
-.hero-horizontal-container {
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.defend-hero {
+  position: relative;
+
+  padding: 80px 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fcff 0%,
+      #edf7ff 45%,
+      #f6f8ff 100%
+    );
+
+  border-bottom:
+    1px solid rgba(0, 180, 255, 0.12);
+}
+
+
+/* =========================================================
+   HERO BACKGROUND
+========================================================= */
+
+.hero-bg-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.hero-orb-one {
+  width: 420px;
+  height: 420px;
+
+  top: -200px;
+  right: -100px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 224, 255, 0.18),
+      rgba(0, 119, 255, 0.05),
+      transparent 70%
+    );
+
+  filter: blur(30px);
+}
+
+
+.hero-orb-two {
+  width: 350px;
+  height: 350px;
+
+  bottom: -180px;
+  left: -120px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 119, 255, 0.12),
+      transparent 70%
+    );
+
+  filter: blur(40px);
+}
+
+
+/* Grid decoration */
+
+.hero-grid {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.35;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 119, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 119, 255, 0.05) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    40px 40px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.defend-hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    0.9fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.defend-hero-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* BADGE */
+
+.hero-security-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 18px;
+
+  border-radius: 50px;
+
+  margin-bottom: 25px;
+
+  color: #0077b6;
+
+  background:
+    rgba(255, 255, 255, 0.75);
+
+  border:
+    1px solid rgba(0, 180, 255, 0.22);
+
+  box-shadow:
+    0 8px 25px rgba(0, 119, 255, 0.08);
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.badge-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #00c6ff;
+
+  box-shadow:
+    0 0 0 5px rgba(0, 198, 255, 0.12);
+
+  animation:
+    heroPulse 2s infinite;
+}
+
+
+@keyframes heroPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 0.7;
+  }
+
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.hero-brand-row {
   display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+
+.hero-logo-wrapper {
+  width: 85px;
+  height: 85px;
+
+  display: flex;
+
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+
+  padding: 7px;
+
+  border-radius:
+    28px 12px
+    28px 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #e9f8ff
+    );
+
+  border:
+    1px solid rgba(0, 180, 255, 0.2);
+
+  box-shadow:
+    0 12px 35px rgba(0, 119, 255, 0.15);
+
+  transform:
+    rotate(-3deg);
 }
+
 
 .hero-logo {
-  width: 110px;
-  height: auto;
-  border-radius: 50%;
-  background: #ffffff;
-  padding: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  transition: transform 0.4s ease;
-}
-.hero-logo:hover {
-  transform: scale(1.08);
-}
+  width: 100%;
+  height: 100%;
 
-.hero-title-right {
-  font-size: 2.6rem;
-  font-weight: 700;
-  font-family: 'Orbitron', sans-serif;
-  color: #004f70;
-  text-shadow: 0 0 6px rgba(0, 79, 112, 0.25);
-}
+  object-fit: contain;
 
-.hero-content {
-  max-width: 850px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.95); 
-  border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  position: relative;
-  z-index: 1;
+  display: block;
 }
 
 
-.hero-heading {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #003366 !important;   /* 🔹 force dark blue */
+.hero-brand-text span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 0.72rem;
+
   font-weight: 800;
-  position: relative;
-  z-index: 2;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-.hero-content .hero-subtext {
-  color: #222 !important;   /* Dark Gray/Black */
+
+  letter-spacing: 2px;
+
+  margin-bottom: 4px;
 }
 
 
-.hero-subtext {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: #004f70;   /* 🔹 Dark blue */
+.hero-brand-text h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size:
+    clamp(
+      1.7rem,
+      3vw,
+      2.4rem
+    );
+
+  font-weight: 800;
 }
 
 
-/* 🚨 SCAM BANNER */
-.scam-banner {
-  background: #fdfdfd;
-  padding: 5rem 2rem;
-  font-family: 'Nunito', sans-serif;
+.hero-brand-text h1 span {
+  display: inline;
+
+  color: #0077ff;
+
+  font-size: inherit;
+
+  letter-spacing: 0;
 }
 
-.scam-banner-container {
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.hero-main-heading {
+  margin:
+    0
+    0
+    22px;
+
+  font-size:
+    clamp(
+      2.5rem,
+      5vw,
+      4.2rem
+    );
+
+  line-height: 1.08;
+
+  font-weight: 900;
+
+  color: #111827;
+
+  letter-spacing: -1.5px;
+}
+
+
+.hero-main-heading span {
+  background:
+    linear-gradient(
+      90deg,
+      #00a8cc,
+      #0077ff,
+      #6d5dfc
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero-description {
+  margin-bottom: 15px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.85;
+
+  color: #334155;
+
+  max-width: 650px;
+}
+
+
+.hero-description-strong {
+  color: #1f2937;
+}
+
+
+.hero-description-strong strong {
+  color: #0077ff;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   HERO PROTECTION POINTS
+========================================================= */
+
+.hero-protection-points {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+
+.hero-point {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.scam-banner-text {
-  flex: 1 1 550px;
-  animation: slideUp 1.2s ease forwards;
-}
+  flex-direction: column;
 
-.scam-banner-heading {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #002b45;
-  margin-bottom: 1.2rem;
-}
+  gap: 12px;
 
-.scam-banner-para {
-  font-size: 1.25rem;
-  line-height: 1.9;
-  color: #222;
-  margin-bottom: 1.2rem;
-}
+  padding: 18px;
 
-.scam-banner-warning {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #a10000;
-  background: #ffeaea;
-  padding: 1rem 1.4rem;
-  border-left: 8px solid #a10000;
-  border-radius: 10px;
-  margin-top: 1.2rem;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-}
-
-.scam-banner-image {
-  flex: 1 1 400px;
-  text-align: center;
-}
-.scam-banner-image img {
-  max-width: 90%;
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.scam-banner-image img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.25);
+
+  background:
+    rgba(255, 255, 255, 0.75);
+
+  border:
+    1px solid rgba(0, 119, 255, 0.1);
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* 🌟 Animations */
-@keyframes softFade {
-  from { opacity: 0; transform: scale(0.96); }
-  to { opacity: 1; transform: scale(1); }
-}
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+
+.hero-point:hover {
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 18px 35px rgba(0, 119, 255, 0.12);
 }
 
-/* 📱 Responsive */
+
+.hero-point-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 1.35rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 224, 255, 0.22),
+      rgba(0, 119, 255, 0.15)
+    );
+}
+
+
+.hero-point strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 0.92rem;
+
+  margin-bottom: 5px;
+}
+
+
+.hero-point span {
+  color: #64748b;
+
+  font-size: 0.78rem;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 530px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-visual-glow {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 224, 255, 0.28),
+      rgba(0, 119, 255, 0.12),
+      transparent 70%
+    );
+
+  filter:
+    blur(25px);
+
+  animation:
+    visualGlow 5s ease-in-out infinite;
+}
+
+
+@keyframes visualGlow {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+}
+
+
+/* Shield Card */
+
+.hero-shield-card {
+  position: relative;
+
+  width: 380px;
+  height: 380px;
+
+  padding: 22px;
+
+  border-radius:
+    90px 25px
+    90px 25px;
+
+  z-index: 2;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(230, 247, 255, 0.9)
+    );
+
+  border:
+    1px solid rgba(0, 180, 255, 0.25);
+
+  box-shadow:
+    0 30px 70px rgba(0, 119, 255, 0.2);
+
+  transform:
+    rotate(4deg);
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.hero-shield-card:hover {
+  transform:
+    rotate(0deg)
+    scale(1.03);
+}
+
+
+.hero-shield-inner {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius:
+    65px 18px
+    65px 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf9ff,
+      #ffffff
+    );
+}
+
+
+.hero-shield-inner img {
+  width: 85%;
+  height: 85%;
+
+  object-fit: contain;
+
+  display: block;
+
+  animation:
+    shieldFloat 4s ease-in-out infinite;
+}
+
+
+@keyframes shieldFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateY(-12px);
+  }
+
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.hero-floating-card {
+  position: absolute;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 18px;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  backdrop-filter:
+    blur(12px);
+
+  border:
+    1px solid rgba(0, 180, 255, 0.2);
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.12);
+
+  animation:
+    heroCardFloat 4s ease-in-out infinite;
+}
+
+
+.hero-card-top {
+  top: 60px;
+  left: -20px;
+}
+
+
+.hero-card-bottom {
+  bottom: 60px;
+  right: -20px;
+
+  animation-delay: 1.5s;
+}
+
+
+.hero-card-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 1.2rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00e0ff,
+      #0077ff
+    );
+}
+
+
+.hero-floating-card strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 0.85rem;
+
+  margin-bottom: 3px;
+}
+
+
+.hero-floating-card small {
+  color: #64748b;
+
+  font-size: 0.72rem;
+}
+
+
+@keyframes heroCardFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateY(-10px);
+  }
+
+}
+
+
+/* =========================================================
+   SCAM STORY SECTION
+========================================================= */
+
+.scam-story-section {
+  position: relative;
+
+  padding: 100px 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fbff
+    );
+}
+
+
+.scam-story-container {
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    0.9fr
+    1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   SCAM IMAGE
+========================================================= */
+
+.scam-story-image-area {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.scam-image-glow {
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 224, 255, 0.22),
+      transparent 70%
+    );
+
+  filter:
+    blur(30px);
+}
+
+
+.scam-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 480px;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  border-radius:
+    80px 22px
+    80px 22px;
+
+  border:
+    1px solid rgba(0, 180, 255, 0.25);
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.18);
+
+  transform:
+    rotate(-3deg);
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.scam-image-wrapper:hover {
+  transform:
+    rotate(0deg)
+    scale(1.02);
+}
+
+
+.scam-image-wrapper img {
+  width: 100%;
+
+  height: 480px;
+
+  display: block;
+
+  object-fit: contain;
+
+  background: #f5fbff;
+
+  transition:
+    transform 0.6s ease;
+}
+
+
+.scam-image-wrapper:hover img {
+  transform:
+    scale(1.04);
+}
+
+
+.scam-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 224, 255, 0.06),
+      rgba(0, 119, 255, 0.08)
+    );
+}
+
+
+/* Floating card */
+
+.scam-image-card {
+  position: absolute;
+
+  z-index: 4;
+
+  bottom: 30px;
+  right: -20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 20px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  border:
+    1px solid rgba(0, 180, 255, 0.18);
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.14);
+
+  backdrop-filter:
+    blur(12px);
+}
+
+
+.scam-image-card-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 1.3rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff1f1,
+      #ffe4e4
+    );
+}
+
+
+.scam-image-card strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 0.88rem;
+
+  margin-bottom: 4px;
+}
+
+
+.scam-image-card span {
+  color: #64748b;
+
+  font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   SCAM CONTENT
+========================================================= */
+
+.scam-story-content {
+  position: relative;
+}
+
+
+/* Badge */
+
+.scam-story-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 9px 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 50px;
+
+  color: #0077b6;
+
+  font-size: 0.76rem;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+
+  background:
+    rgba(0, 191, 255, 0.08);
+
+  border:
+    1px solid rgba(0, 180, 255, 0.18);
+}
+
+
+.scam-story-badge span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #00c6ff;
+}
+
+
+/* Heading */
+
+.scam-story-heading {
+  margin:
+    0
+    0
+    20px;
+
+  color: #111827;
+
+  font-size:
+    clamp(
+      2.2rem,
+      4vw,
+      3.6rem
+    );
+
+  font-weight: 900;
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+
+.scam-story-heading span {
+  background:
+    linear-gradient(
+      90deg,
+      #0077ff,
+      #00bcd4
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Intro */
+
+.scam-story-intro {
+  color: #374151;
+
+  font-size: 1.1rem;
+
+  line-height: 1.85;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   SCAM HIGHLIGHT
+========================================================= */
+
+.scam-story-highlight {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding: 22px;
+
+  margin-bottom: 25px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 224, 255, 0.1),
+      rgba(0, 119, 255, 0.07)
+    );
+
+  border:
+    1px solid rgba(0, 180, 255, 0.18);
+}
+
+
+.scam-story-highlight-icon {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  font-size: 1.4rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00d4ff,
+      #0077ff
+    );
+}
+
+
+.scam-story-highlight strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 1rem;
+
+  margin-bottom: 7px;
+}
+
+
+.scam-story-highlight p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 0.92rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   EXAMPLES GRID
+========================================================= */
+
+.scam-example-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+.scam-example {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.07);
+
+  box-shadow:
+    0 8px 22px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.scam-example:hover {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(0, 119, 255, 0.1);
+}
+
+
+.scam-example > span {
+  width: 44px;
+  height: 44px;
+
+  min-width: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  font-size: 1.25rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 224, 255, 0.15),
+      rgba(0, 119, 255, 0.12)
+    );
+}
+
+
+.scam-example strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 0.88rem;
+
+  margin-bottom: 4px;
+}
+
+
+.scam-example small {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 0.72rem;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   WARNING
+========================================================= */
+
+.scam-warning-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 20px;
+
+  margin-top: 25px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111827,
+      #163a5c
+    );
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.16);
+}
+
+
+.scam-warning-icon {
+  font-size: 1.6rem;
+}
+
+
+.scam-warning-box p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+}
+
+
+.scam-warning-box strong {
+  color: #6ee7ff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .defend-hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .hero-visual {
+    min-height: 480px;
+  }
+
+
+  .defend-hero-content {
+    max-width: 850px;
+  }
+
+
+  .scam-story-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+
+  .scam-story-image-area {
+    order: 2;
+  }
+
+
+  .scam-story-content {
+    order: 1;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL SCREEN
+========================================================= */
+
 @media (max-width: 768px) {
-  .hero-title-right { font-size: 2rem; }
-  .hero-heading { font-size: 1.6rem; }
-  .hero-subtext { font-size: 1.1rem; }
 
-  .scam-banner-container { flex-direction: column; text-align: center; }
-  .scam-banner-heading { font-size: 1.8rem; }
-  .scam-banner-para { font-size: 1.1rem; }
+  .defend-hero {
+    padding:
+      60px
+      22px;
+  }
+
+
+  .scam-story-section {
+    padding:
+      70px
+      22px;
+  }
+
+
+  .hero-protection-points {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .hero-shield-card {
+    width: 330px;
+    height: 330px;
+  }
+
+
+  .hero-floating-card {
+    transform: scale(0.92);
+  }
+
+
+  .hero-card-top {
+    left: -5px;
+  }
+
+
+  .hero-card-bottom {
+    right: -5px;
+  }
+
+
+  .scam-image-wrapper img {
+    height: 420px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+  .defend-hero {
+    padding:
+      50px
+      16px;
+  }
+
+
+  .scam-story-section {
+    padding:
+      60px
+      16px;
+  }
+
+
+  .hero-security-badge {
+    font-size: 0.65rem;
+
+    padding:
+      8px
+      13px;
+
+    letter-spacing: 0.8px;
+  }
+
+
+  .hero-brand-row {
+    gap: 12px;
+  }
+
+
+  .hero-logo-wrapper {
+    width: 65px;
+    height: 65px;
+  }
+
+
+  .hero-brand-text h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .hero-main-heading {
+    font-size: 2.45rem;
+
+    letter-spacing: -0.8px;
+  }
+
+
+  .hero-description {
+    font-size: 0.98rem;
+
+    line-height: 1.75;
+  }
+
+
+  .hero-protection-points {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .hero-point {
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 14px;
+  }
+
+
+  .hero-visual {
+    min-height: 390px;
+  }
+
+
+  .hero-shield-card {
+    width: 280px;
+    height: 280px;
+
+    padding: 15px;
+
+    border-radius:
+      65px 18px
+      65px 18px;
+  }
+
+
+  .hero-shield-inner {
+    border-radius:
+      50px 14px
+      50px 14px;
+  }
+
+
+  .hero-floating-card {
+    padding:
+      10px
+      12px;
+
+    gap: 8px;
+  }
+
+
+  .hero-floating-card strong {
+    font-size: 0.72rem;
+  }
+
+
+  .hero-floating-card small {
+    font-size: 0.62rem;
+  }
+
+
+  .hero-card-icon {
+    width: 35px;
+    height: 35px;
+
+    font-size: 1rem;
+  }
+
+
+  .hero-card-top {
+    top: 15px;
+    left: -5px;
+  }
+
+
+  .hero-card-bottom {
+    bottom: 15px;
+    right: -5px;
+  }
+
+
+  /* Scam */
+
+  .scam-story-heading {
+    font-size: 2.25rem;
+  }
+
+
+  .scam-story-intro {
+    font-size: 0.98rem;
+
+    line-height: 1.75;
+  }
+
+
+  .scam-story-highlight {
+    padding: 17px;
+
+    gap: 12px;
+  }
+
+
+  .scam-story-highlight-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+  }
+
+
+  .scam-example-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .scam-story-image-area {
+    min-height: 390px;
+  }
+
+
+  .scam-image-wrapper {
+    border-radius:
+      55px 16px
+      55px 16px;
+  }
+
+
+  .scam-image-wrapper img {
+    width: 100%;
+
+    height: 340px;
+
+    object-fit: contain;
+  }
+
+
+  .scam-image-card {
+    bottom: 5px;
+    right: 0;
+
+    padding:
+      11px
+      14px;
+  }
+
+
+  .scam-image-card-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .scam-warning-box {
+    align-items: flex-start;
+
+    padding: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero-main-heading {
+    font-size: 2.05rem;
+  }
+
+
+  .hero-brand-text h1 {
+    font-size: 1.25rem;
+  }
+
+
+  .hero-brand-text span {
+    font-size: 0.58rem;
+  }
+
+
+  .hero-shield-card {
+    width: 240px;
+    height: 240px;
+  }
+
+
+  .hero-floating-card {
+    transform: scale(0.8);
+  }
+
+
+  .hero-card-top {
+    left: -25px;
+  }
+
+
+  .hero-card-bottom {
+    right: -25px;
+  }
+
+
+  .scam-story-heading {
+    font-size: 2rem;
+  }
+
 }

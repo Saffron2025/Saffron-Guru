@@ -101,7 +101,7 @@ const Footer = () => {
     </div>
 
     <div className="graph-data-callout">
-      <h4 className="callout-title">$16 billion was lost in 2024</h4>
+      <h4 className="callout-title">$16 billion was lost in 2025</h4>
       <p className="callout-description">
         Since 2020, the amount lost to online <br />
         crime has nearly tripled. (FBI)
