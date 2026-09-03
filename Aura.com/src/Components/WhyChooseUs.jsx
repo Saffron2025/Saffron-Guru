@@ -3,10 +3,11 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./WhyChooseUs.css";
 import AllSection from "./AllSection";
-
+import AppNavbar from "./AppNavbar";
 export default function WhyChooseUs() {
   return (
     <>
+    <AppNavbar/>
       <section className="why-section">
         <Container>
           <header className="why-header">

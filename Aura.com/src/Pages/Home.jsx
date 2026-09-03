@@ -5,6 +5,7 @@ import { MdSupportAgent } from 'react-icons/md';
 import { PiTelevisionSimpleBold } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 import CookieConsent from '../Components/CookieConsent';
+import AppNavbar from '../Components/AppNavbar';
 import Footer from '../Components/Footer';
 import {
   Clock,
@@ -30,7 +31,7 @@ const Hero = () => {
       {/* =========================================
           CALL US TOGGLE - RIGHT MIDDLE
       ========================================== */}
-
+<AppNavbar/>
       <div
         className={`aura-call-toggle ${
           callOpen ? 'aura-call-toggle-open' : ''

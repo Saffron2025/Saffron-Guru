@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { PhoneCall, X } from "lucide-react";
 import "./CallUs.css";
-
+import AppNavbar from "./AppNavbar";
 const CallUs = () => {
   const [callOpen, setCallOpen] = useState(false);
 
   return (
+    <>    
+    <AppNavbar/>
     <div
       className={`aura-call-toggle ${
         callOpen ? "aura-call-toggle-open" : ""
@@ -58,6 +60,8 @@ const CallUs = () => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 

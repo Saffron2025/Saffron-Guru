@@ -3,10 +3,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Terms.css';
 import AllSection from './AllSection';
+import AppNavbar from './AppNavbar';
 
 const Terms = () => {
   return (
     <>
+    <AppNavbar/>
       <section className="terms-section">
         <Container>
           <Row>

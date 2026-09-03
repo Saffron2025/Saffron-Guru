@@ -2,11 +2,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './PrivacyPolicy.css';
+import AppNavbar from './AppNavbar';
 import AllSection from './AllSection';
 
 const PrivacyPolicy = () => {
   return (
     <>
+    <AppNavbar/>
       <section className="privacy-policy-section">
         <Container>
           <Row>

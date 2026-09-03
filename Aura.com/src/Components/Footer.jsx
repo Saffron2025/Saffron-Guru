@@ -38,7 +38,7 @@ const Footer = () => {
               crimes with new scams emerging daily.
             </p>
             <p className="graph-description mb-4">
-              Aura proactively protects you and your family, pushing the odds <br />
+              Saffron Guru proactively protects you and your family, pushing the odds <br />
               in your favor.
             </p>
             

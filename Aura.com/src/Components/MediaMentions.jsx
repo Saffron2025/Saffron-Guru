@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import './MediaMentions.css';
 
 const mediaHighlights = [
-  { text: '9+ Years in Business', icon: '⏳' },
+  { text: '10+ Years in Business', icon: '⏳' },
   { text: '5★ Rated Support, Trusted by Thousands', icon: '⭐' },
   { text: '7 Days a Week – Real Human Support', icon: '👩‍💻' },
   { text: '100,000+ Tech Issues Resolved', icon: '🛠️' },

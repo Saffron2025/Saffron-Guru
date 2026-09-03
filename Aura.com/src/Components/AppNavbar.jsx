@@ -11,6 +11,8 @@ import "./AppNavbar.css";
 
 const AppNavbar = () => {
   const [fadeIn, setFadeIn] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [supportOpen, setSupportOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setFadeIn(true), 50);
@@ -18,17 +20,35 @@ const AppNavbar = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Close mobile/tablet navbar
+  const closeNavbar = () => {
+    setExpanded(false);
+  };
+
+  // Close support popup
+  const closeSupportPopup = () => {
+    setSupportOpen(false);
+  };
+
   return (
     <Navbar
-      expand="lg"
+      expand="xxl"
       fixed="top"
+      expanded={expanded}
+      onToggle={(isExpanded) => setExpanded(isExpanded)}
       className={`aura-navbar ${fadeIn ? "fade-in-blur" : ""}`}
     >
-      {/* Normal Container hi rakho */}
-      <Container>
-        
-        {/* LOGO */}
-        <Navbar.Brand as={Link} to="/" className="SaffronLogo-brand">
+      <Container fluid>
+
+        {/* ==========================
+            LOGO
+        ========================== */}
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="SaffronLogo-brand"
+          onClick={closeNavbar}
+        >
           <div className="logo-wrapper">
             <img
               src="/Products/SaffronGuruLogo.gif"
@@ -38,25 +58,38 @@ const AppNavbar = () => {
           </div>
         </Navbar.Brand>
 
-        {/* MOBILE TOGGLE */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* ==========================
+            MOBILE TOGGLE
+        ========================== */}
+      <Navbar.Toggle
+  aria-controls="basic-navbar-nav"
+/>
 
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="justify-content-between"
         >
-          {/* NAV LINKS */}
-          <Nav className="mx-auto aura-nav-links">
-            
+          {/* ==========================
+              NAV LINKS
+          ========================== */}
+          <Nav
+            className="mx-auto aura-nav-links"
+            onSelect={closeNavbar}
+          >
+
+            {/* HOME */}
             <Nav.Link as={Link} to="/home">
               Home
             </Nav.Link>
 
+            {/* DEFENDMEPRO */}
             <Nav.Link as={Link} to="/DefendPro">
               DefendMePro™
             </Nav.Link>
 
-            {/* SAFE SUPPORT */}
+            {/* ==========================
+                SAFE SUPPORT
+            ========================== */}
             <NavDropdown
               title="SafeSupport Assist™"
               id="safeSupport"
@@ -71,7 +104,9 @@ const AppNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* SOLUTIONS */}
+            {/* ==========================
+                SOLUTIONS
+            ========================== */}
             <NavDropdown
               title="Solutions"
               id="solutions-dropdown"
@@ -90,36 +125,43 @@ const AppNavbar = () => {
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=identity-theft")
-                }
+                onClick={() => {
+                  closeNavbar();
+                  window.location.href =
+                    "/DefendPro?item=identity-theft";
+                }}
               >
                 👤 Identity Theft Protection
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=fraud-detection")
-                }
+                onClick={() => {
+                  closeNavbar();
+                  window.location.href =
+                    "/DefendPro?item=fraud-detection";
+                }}
               >
                 ⚠️ Fraud Detection
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=scam-protection")
-                }
+                onClick={() => {
+                  closeNavbar();
+                  window.location.href =
+                    "/DefendPro?item=scam-protection";
+                }}
               >
                 🔔 Scam Protection
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 onClick={() => {
+                  closeNavbar();
+
                   const t = Date.now();
-                  window.location.href = `/DefendPro?item=scam-alerts&t=${t}`;
+
+                  window.location.href =
+                    `/DefendPro?item=scam-alerts&t=${t}`;
                 }}
               >
                 🔔 Scam Alerts Hub
@@ -127,60 +169,76 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
+                  closeNavbar();
+
                   const t = Date.now();
-                  window.location.href = `/DefendPro?item=financial-security&t=${t}`;
+
+                  window.location.href =
+                    `/DefendPro?item=financial-security&t=${t}`;
                 }}
               >
                 💰 Financial Security
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=password-manager")
-                }
+                onClick={() => {
+                  closeNavbar();
+
+                  window.location.href =
+                    "/DefendPro?item=password-manager";
+                }}
               >
                 🔑 Password Manager
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=antivirus")
-                }
+                onClick={() => {
+                  closeNavbar();
+
+                  window.location.href =
+                    "/DefendPro?item=antivirus";
+                }}
               >
                 🖥️ Antivirus & Device Security
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=vpn")
-                }
+                onClick={() => {
+                  closeNavbar();
+
+                  window.location.href =
+                    "/DefendPro?item=vpn";
+                }}
               >
                 🌐 VPN & Online Privacy
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=spam-call")
-                }
+                onClick={() => {
+                  closeNavbar();
+
+                  window.location.href =
+                    "/DefendPro?item=spam-call";
+                }}
               >
                 📞 Spam Call Protection
               </NavDropdown.Item>
 
               <NavDropdown.Item
-                onClick={() =>
-                  (window.location.href =
-                    "/DefendPro?item=human-support")
-                }
+                onClick={() => {
+                  closeNavbar();
+
+                  window.location.href =
+                    "/DefendPro?item=human-support";
+                }}
               >
                 👤 Human Support
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* SOFTWARE */}
+            {/* ==========================
+                SOFTWARE
+            ========================== */}
             <NavDropdown
               title="Software"
               id="software-dropdown"
@@ -195,11 +253,14 @@ const AppNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
+            {/* PRICING */}
             <Nav.Link as={Link} to="/Pricing">
               Pricing
             </Nav.Link>
 
-            {/* KNOWLEDGE CENTER */}
+            {/* ==========================
+                KNOWLEDGE CENTER
+            ========================== */}
             <NavDropdown
               title="Knowledge Center"
               id="knowledge-dropdown"
@@ -218,7 +279,9 @@ const AppNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* BLOG */}
+            {/* ==========================
+                BLOG
+            ========================== */}
             <NavDropdown
               title="Blog"
               id="blog-main-dropdown"
@@ -309,23 +372,94 @@ const AppNavbar = () => {
           </Nav>
 
           {/* ==========================
-              GET SUPPORT BUTTON
+              GET SUPPORT
           ========================== */}
           <div className="aura-support-container">
+
             <Button
-              as={Link}
-              to="/support"
+              type="button"
               className="aura-get-support-btn"
+              onClick={() => setSupportOpen(!supportOpen)}
+              aria-expanded={supportOpen}
+              aria-controls="support-popup"
             >
-              <span className="support-icon">✦</span>
+              <span className="support-icon">
+                ✦
+              </span>
 
               <span className="support-text">
                 Get Support Now
               </span>
             </Button>
+
+            {/* ==========================
+                SUPPORT POPUP
+            ========================== */}
+            {supportOpen && (
+              <div
+                id="support-popup"
+                className="support-popup"
+              >
+
+                {/* CLOSE */}
+                <button
+                  type="button"
+                  className="support-popup-close"
+                  onClick={closeSupportPopup}
+                  aria-label="Close support information"
+                >
+                  ✕
+                </button>
+
+                {/* ICON */}
+                {/* <div className="support-popup-icon">
+                  ✦
+                </div> */}
+
+                <div className="support-popup-content">
+
+                  {/* PHONE */}
+                  <div className="support-phone">
+                    Call Toll-Free:{" "}
+                    <a href="tel:8443134987">
+                      844-313-4987
+                    </a>
+                  </div>
+
+                  {/* AVAILABILITY */}
+                  <div className="support-availability">
+                    Available 7 Days a Week
+                  </div>
+
+                  {/* DIVIDER */}
+                  <div className="support-divider"></div>
+
+                  {/* MAIN MESSAGE */}
+                  <div className="support-main-text">
+                    We Fix Tech. We Protect Your Digital Life.
+                  </div>
+
+                  {/* PREMIUM TAGLINE */}
+                  <div className="support-tagline-wrapper">
+
+                    <span className="tagline-line"></span>
+
+                    <span className="support-tagline">
+                      Miles Above the Rest
+                    </span>
+
+                    <span className="tagline-line"></span>
+
+                  </div>
+
+                </div>
+              </div>
+            )}
+
           </div>
 
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );

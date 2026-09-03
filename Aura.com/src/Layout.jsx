@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* ================= Navbar ================= */}
-      <AppNavbar />
+      {/* <AppNavbar /> */}
 
       {/* ================= Current Page Content ================= */}
       {children}

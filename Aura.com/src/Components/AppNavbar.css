@@ -1,30 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
-/* 🌌 Navbar Base */
+
+/* =========================================================
+   🌌 NAVBAR BASE
+========================================================= */
+
 .aura-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1050;
+
   background: rgba(15, 23, 42, 0.92);
+
   backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+
   border-bottom: 1px solid rgba(0, 255, 255, 0.08);
+
   transition: all 0.35s ease;
+
   font-family: "Outfit", sans-serif;
 }
 
+
+/* =========================================================
+   🌈 NAVBAR BOTTOM GLOW LINE
+========================================================= */
+
 .aura-navbar::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: 0;
+
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #00e0ff, #0077ff, #ff00c8);
+
+  background:
+    linear-gradient(
+      90deg,
+      #00e0ff,
+      #0077ff,
+      #ff00c8
+    );
+
   background-size: 300% 100%;
-  animation: glowLine 6s linear infinite;
+
+  animation:
+    glowLine 6s linear infinite;
 }
+
 
 @keyframes glowLine {
   0% {
@@ -36,17 +65,31 @@
   }
 }
 
-/* ✅ Shrink effect on scroll */
+
+/* =========================================================
+   🔥 SCROLL EFFECT
+========================================================= */
+
 .aura-navbar.scrolled {
   padding: 0.3rem 0;
+
   background: rgba(10, 15, 30, 0.96);
-  box-shadow: 0 6px 22px rgba(0, 255, 255, 0.12);
+
+  box-shadow:
+    0 6px 22px rgba(0, 255, 255, 0.12);
 }
 
-/* ✨ Fade-in effect */
+
+/* =========================================================
+   ✨ FADE-IN EFFECT
+========================================================= */
+
 .aura-navbar.fade-in-blur {
-  animation: fadeInBlur 0.9s ease forwards;
+  animation:
+    fadeInBlur
+    0.9s ease forwards;
 }
+
 
 @keyframes fadeInBlur {
   from {
@@ -60,167 +103,334 @@
   }
 }
 
-/* 🌟 Logo */
+
+/* =========================================================
+   🌟 LOGO
+========================================================= */
+
 .SaffronLogo-brand {
   font-size: 1.75rem;
+
   font-weight: 700;
+
   color: #fff !important;
+
   letter-spacing: 0.5px;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+
+  text-shadow:
+    0 0 10px rgba(0, 255, 255, 0.4);
 }
+
 
 .logo-wrapper {
   height: 60px;
+
   display: flex;
+
   align-items: center;
 }
 
+
 .saffronGuru-logo {
   height: 50px;
+
   width: auto;
+
   transform: scale(1.5);
-  animation: logoPulse 3s infinite ease-in-out;
+
+  animation:
+    logoPulse
+    3s infinite ease-in-out;
 }
 
+
 .saffronGuru-logo:hover {
-  transform: scale(1.07) rotate(-2deg);
-  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.6));
+  transform:
+    scale(1.07)
+    rotate(-2deg);
+
+  filter:
+    drop-shadow(
+      0 0 12px
+      rgba(0, 255, 255, 0.6)
+    );
 }
+
 
 @keyframes logoPulse {
   0%,
   100% {
-    filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.3));
+    filter:
+      drop-shadow(
+        0 0 4px
+        rgba(0, 255, 255, 0.3)
+      );
   }
 
   50% {
-    filter: drop-shadow(0 0 14px rgba(0, 255, 255, 0.7));
+    filter:
+      drop-shadow(
+        0 0 14px
+        rgba(0, 255, 255, 0.7)
+      );
   }
 }
 
-/* 🌐 Nav Links */
+
+/* =========================================================
+   🌐 NAV LINKS
+========================================================= */
+
 .aura-nav-links .nav-link {
   color: #dbeafe !important;
   font-size: 0.95rem;
   font-weight: 500;
-  margin: 0 1.1rem;
+  margin: 0 0.65rem;
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
   transition: all 0.25s ease;
   position: relative;
   padding-bottom: 6px;
   letter-spacing: 0.3px;
+  white-space: nowrap;
 }
+
 
 .aura-nav-links .nav-link:hover {
   color: #00e0ff !important;
-  text-shadow: 0 0 12px #00e0ff, 0 0 24px #0077ff;
+
+  text-shadow:
+    0 0 12px #00e0ff,
+    0 0 24px #0077ff;
+
   transform: scale(1.08);
 }
 
+
 .aura-nav-links .nav-link::after {
-  content: '';
+  content: "";
+
   position: absolute;
+
   left: 0;
   bottom: 0;
+
   width: 0%;
+
   height: 2px;
+
   border-radius: 2px;
-  background: linear-gradient(90deg, #00c3ff, #0077ff, #22d3ee);
-  transition: width 0.35s ease;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00c3ff,
+      #0077ff,
+      #22d3ee
+    );
+
+  transition:
+    width 0.35s ease;
 }
+
 
 .aura-nav-links .nav-link:hover::after {
   width: 100%;
 }
 
-/* 🔹 Auth Buttons */
-/*
-.aura-auth-buttons {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+
+/* =========================================================
+   🔽 DROPDOWN
+========================================================= */
+
+.custom-dropdown .dropdown-menu {
+  background:
+    linear-gradient(
+      145deg,
+      #0a1124,
+      #0d1630
+    );
+
+  border-radius: 12px;
+
+  transform:
+    perspective(600px)
+    rotateX(0deg);
+
+  border:
+    1px solid
+    rgba(0, 255, 255, 0.15);
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 255, 255, 0.12);
+
+  padding:
+    0.4rem 0;
+
+  overflow: hidden;
 }
 
-.aura-sign-in {
-  color: #38bdf8 !important;
+
+.custom-dropdown .dropdown-item {
+  color: #9ae6ff;
+
   font-weight: 500;
-  text-decoration: none !important;
-  transition: all 0.3s ease;
+
+  padding:
+    10px 22px;
+
+  transition:
+    all 0.3s ease;
+
+  position: relative;
 }
 
-.aura-sign-in:hover {
-  color: #fff !important;
-  text-shadow: 0 0 8px rgba(0,255,255,0.4);
+
+.custom-dropdown .dropdown-item:hover {
+  background:
+    rgba(0, 255, 255, 0.08);
+
+  color: #fff;
+
+  transform:
+    translateX(6px);
 }
 
-.aura-start-trial-btn {
-  background: linear-gradient(90deg, #00c3ff, #0077ff, #22d3ee);
-  color: #fff !important;
-  font-weight: 600;
-  border: none;
-  padding: 7px 18px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 0 transparent;
+
+.custom-dropdown .dropdown-item::before {
+  content: "➜";
+
+  position: absolute;
+
+  left: 6px;
+
+  opacity: 0;
+
+  transition:
+    all 0.3s ease;
+
+  color: #00e0ff;
 }
 
-.aura-start-trial-btn:hover {
-  transform: scale(1.06) translateY(-2px);
-  box-shadow: 0 0 18px rgba(0,195,255,0.5);
+
+.custom-dropdown .dropdown-item:hover::before {
+  opacity: 1;
+
+  transform:
+    translateX(4px);
 }
-*/
 
 
-/* ==========================================
-   ✨ GET SUPPORT BUTTON
-========================================== */
+/* =========================================================
+   🔹 NESTED DROPDOWN
+========================================================= */
+
+.dropdown-submenu {
+  position: relative;
+}
+
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+
+  top: 0;
+  left: 100%;
+
+  margin-left: 0.2rem;
+
+  position: absolute;
+
+  background: #fff;
+
+  border-radius: 8px;
+
+  min-width: 220px;
+
+  box-shadow:
+    0 8px 16px
+    rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-submenu > .dropdown-menu .dropdown-item {
+  font-size: 0.95rem;
+
+  padding:
+    0.6rem 1rem;
+}
+
+
+/* =========================================================
+   ✦ GET SUPPORT CONTAINER
+========================================================= */
 
 .aura-support-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
   margin-left: auto;
-
-  /* 🔥 Sirf button right shift */
   position: relative;
-  left: 80px;
-
+  left: 0;
   flex-shrink: 0;
+  min-width: 0;
 }
+
+
+/* =========================================================
+   ✦ GET SUPPORT BUTTON
+========================================================= */
 
 .aura-get-support-btn {
   position: relative;
+
   overflow: hidden;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
-  /* Text ko exact center ke liye gap remove */
   gap: 0;
 
-  background: linear-gradient(
-    135deg,
-    #00e0ff 0%,
-    #0077ff 50%,
-    #6d28d9 100%
-  ) !important;
+  background:
+    linear-gradient(
+      135deg,
+      #00e0ff 0%,
+      #0077ff 50%,
+      #6d28d9 100%
+    ) !important;
 
   color: #ffffff !important;
 
-  border: 1px solid rgba(0, 224, 255, 0.55) !important;
+  border:
+    1px solid
+    rgba(0, 224, 255, 0.55)
+    !important;
 
   border-radius: 14px;
 
-  /* 🔥 BUTTON SIZE */
   min-width: 230px;
+
   min-height: 66px;
 
-  padding: 16px 38px;
+  padding:
+    16px 38px;
 
-  /* 🔥 TEXT SIZE */
-  font-family: "Outfit", sans-serif;
+  font-family:
+    "Outfit",
+    sans-serif;
+
   font-size: 1.3rem;
+
   font-weight: 700;
 
   letter-spacing: 0.7px;
@@ -230,246 +440,1202 @@
   white-space: nowrap;
 
   box-shadow:
-    0 8px 25px rgba(0, 119, 255, 0.30),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    0 8px 25px
+    rgba(0, 119, 255, 0.30),
 
-  transition: all 0.3s ease;
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.25);
+
+  transition:
+    all 0.3s ease;
 }
 
-/* 🔥 TEXT EXACT CENTER */
+
 .support-text {
   position: absolute;
+
   left: 50%;
   top: 50%;
 
-  transform: translate(-50%, -50%);
+  transform:
+    translate(-50%, -50%);
 
   white-space: nowrap;
+
   text-align: center;
 
   z-index: 2;
 }
 
-/* Shine Effect */
+
+/* =========================================================
+   ✨ BUTTON SHINE
+========================================================= */
+
 .aura-get-support-btn::before {
   content: "";
 
   position: absolute;
 
   top: 0;
+
   left: -120%;
 
   width: 70%;
+
   height: 100%;
 
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.35),
-    transparent
-  );
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent
+    );
 
-  transform: skewX(-25deg);
+  transform:
+    skewX(-25deg);
 
-  transition: left 0.6s ease;
+  transition:
+    left 0.6s ease;
 
   z-index: 1;
 }
 
-/* Hover */
-.aura-get-support-btn:hover {
-  transform: translateY(-4px) scale(1.05);
 
-  filter: brightness(1.15);
+.aura-get-support-btn:hover {
+  transform:
+    translateY(-4px)
+    scale(1.05);
+
+  filter:
+    brightness(1.15);
 
   color: #ffffff !important;
 
   box-shadow:
-    0 10px 32px rgba(0, 224, 255, 0.45),
-    0 0 30px rgba(0, 119, 255, 0.35);
+    0 10px 32px
+    rgba(0, 224, 255, 0.45),
+
+    0 0 30px
+    rgba(0, 119, 255, 0.35);
 }
 
-/* Shine movement */
+
 .aura-get-support-btn:hover::before {
   left: 160%;
 }
 
-/* 🔥 Icon left side */
+
+/* =========================================================
+   ✦ SUPPORT BUTTON ICON
+========================================================= */
+
 .support-icon {
   position: absolute;
 
   left: 22px;
+
   top: 50%;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   font-size: 1.2rem;
 
   z-index: 2;
 
-  animation: supportPulse 2s infinite ease-in-out;
+  animation:
+    supportPulse
+    2s infinite ease-in-out;
 }
+
 
 @keyframes supportPulse {
   0%,
   100% {
-    transform: translateY(-50%) scale(1);
-    filter: drop-shadow(0 0 2px #ffffff);
+    transform:
+      translateY(-50%)
+      scale(1);
+
+    filter:
+      drop-shadow(
+        0 0 2px
+        #ffffff
+      );
   }
 
   50% {
-    transform: translateY(-50%) scale(1.25);
-    filter: drop-shadow(0 0 8px #ffffff);
+    transform:
+      translateY(-50%)
+      scale(1.25);
+
+    filter:
+      drop-shadow(
+        0 0 8px
+        #ffffff
+      );
   }
 }
 
 
-/* 📱 Mobile Support Button */
-@media (max-width: 1024px) {
+/* =========================================================
+   💎 PREMIUM SUPPORT POPUP
+========================================================= */
 
-  .aura-support-container {
-    width: 100%;
-    margin: 1rem 0 0;
-
-    /* Mobile par right shift nahi hoga */
-    left: 0;
-  }
-
-  .aura-get-support-btn {
-    width: 100%;
-    min-width: 0;
-    min-height: 58px;
-
-    padding: 11px 20px;
-    font-size: 1rem;
-  }
-}
-
-
-/* 🔽 Dropdown Styling */
-.custom-dropdown .dropdown-menu {
-  background: linear-gradient(145deg, #0a1124, #0d1630);
-  border-radius: 12px;
-  transform: perspective(600px) rotateX(0deg);
-
-  border: 1px solid rgba(0, 255, 255, 0.15);
-  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.12);
-  padding: 0.4rem 0;
-  overflow: hidden;
-}
-
-.custom-dropdown .dropdown-item {
-  color: #9ae6ff;
-  font-weight: 500;
-  padding: 10px 22px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.custom-dropdown .dropdown-item:hover {
-  background: rgba(0, 255, 255, 0.08);
-  color: #fff;
-  transform: translateX(6px);
-}
-
-.custom-dropdown .dropdown-item::before {
-  content: '➜';
+.support-popup {
   position: absolute;
-  left: 6px;
-  opacity: 0;
-  transition: all 0.3s ease;
-  color: #00e0ff;
+
+  top:
+    calc(100% + 18px);
+
+  right: 0;
+
+  width: 410px;
+
+  padding:
+    34px 30px 30px;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(0, 229, 255, 0.14),
+      transparent 32%
+    ),
+
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(139, 92, 246, 0.16),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      145deg,
+      #071525 0%,
+      #0b1830 48%,
+      #10152d 100%
+    );
+
+  border:
+    1px solid
+    rgba(76, 224, 255, 0.35);
+
+  border-radius:
+    26px;
+
+  box-shadow:
+
+    0 25px 70px
+    rgba(0, 0, 0, 0.60),
+
+    0 0 35px
+    rgba(0, 224, 255, 0.12),
+
+    0 0 70px
+    rgba(124, 58, 237, 0.08),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.10);
+
+  backdrop-filter:
+    blur(24px);
+
+  -webkit-backdrop-filter:
+    blur(24px);
+
+  overflow:
+    hidden;
+
+  z-index:
+    1100;
+
+  animation:
+    supportPopupIn
+    0.4s
+    cubic-bezier(
+      0.16,
+      1,
+      0.3,
+      1
+    )
+    forwards;
 }
 
-.custom-dropdown .dropdown-item:hover::before {
-  opacity: 1;
-  transform: translateX(4px);
+
+@keyframes supportPopupIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-18px)
+      scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
 }
 
 
-/* Submenu container */
-.dropdown-submenu {
-  position: relative;
-}
+/* =========================================================
+   🌈 ANIMATED TOP BORDER
+========================================================= */
 
-/* Nested menu hidden by default */
-.dropdown-submenu > .dropdown-menu {
-  display: none;
+.support-popup::before {
+  content: "";
+
+  position: absolute;
+
   top: 0;
-  left: 100%;
-  margin-left: 0.2rem;
+
+  left: 7%;
+
+  width: 86%;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #22d3ee,
+      #60a5fa,
+      #a78bfa,
+      #c084fc,
+      transparent
+    );
+
+  background-size:
+    200% 100%;
+
+  animation:
+    popupBorderGlow
+    4s linear infinite;
+
+  box-shadow:
+    0 0 15px
+    rgba(34, 211, 238, 0.75);
+}
+
+
+@keyframes popupBorderGlow {
+  0% {
+    background-position:
+      0% 50%;
+  }
+
+  100% {
+    background-position:
+      200% 50%;
+  }
+}
+
+
+/* =========================================================
+   ✨ AMBIENT LIGHT
+========================================================= */
+
+.support-popup::after {
+  content: "";
+
   position: absolute;
-  background: #fff;
-  border-radius: 8px;
-  min-width: 220px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+
+  width: 220px;
+  height: 220px;
+
+  top: -130px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(34, 211, 238, 0.20),
+      transparent 68%
+    );
+
+  filter:
+    blur(20px);
+
+  pointer-events:
+    none;
+
+  z-index:
+    0;
 }
 
-/* Show on hover */
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+
+/* =========================================================
+   ❌ CLOSE BUTTON
+========================================================= */
+
+.support-popup-close {
+  position: absolute;
+
+  top: 13px;
+
+  right: 14px;
+
+  width: 34px;
+
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.14);
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  color:
+    rgba(255, 255, 255, 0.85);
+
+  font-size:
+    0.82rem;
+
+  cursor:
+    pointer;
+
+  z-index:
+    20;
+
+  transition:
+    all 0.3s ease;
 }
 
-/* Styling submenu items */
-.dropdown-submenu > .dropdown-menu .dropdown-item {
-  font-size: 0.95rem;
-  padding: 0.6rem 1rem;
+
+.support-popup-close:hover {
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(239, 68, 68, 0.35),
+      rgba(190, 24, 93, 0.25)
+    );
+
+  border-color:
+    rgba(248, 113, 113, 0.65);
+
+  box-shadow:
+    0 0 18px
+    rgba(248, 113, 113, 0.25);
+
+  transform:
+    rotate(90deg)
+    scale(1.08);
 }
 
 
-/* 📱 Responsive */
+/* =========================================================
+   ✦ PREMIUM POPUP ICON
+========================================================= */
+
+.support-popup-icon {
+  position: relative;
+
+  width: 62px;
+
+  height: 62px;
+
+  margin:
+    0 auto 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #06b6d4 0%,
+      #2563eb 48%,
+      #7c3aed 100%
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.25);
+
+  color:
+    #ffffff;
+
+  font-size:
+    1.45rem;
+
+  box-shadow:
+
+    0 12px 28px
+    rgba(37, 99, 235, 0.30),
+
+    0 0 25px
+    rgba(34, 211, 238, 0.20),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.35);
+
+  z-index:
+    5;
+
+  animation:
+    supportIconFloat
+    3.5s ease-in-out infinite;
+}
+
+
+.support-popup-icon::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -5px;
+
+  border-radius: 24px;
+
+  border:
+    1px solid
+    rgba(34, 211, 238, 0.20);
+
+  animation:
+    iconRing
+    2.8s ease-in-out infinite;
+}
+
+
+@keyframes supportIconFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateY(-5px);
+  }
+}
+
+
+@keyframes iconRing {
+
+  0%,
+  100% {
+    opacity: 0.25;
+
+    transform:
+      scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+
+    transform:
+      scale(1.08);
+  }
+}
+
+
+/* =========================================================
+   📞 POPUP CONTENT
+========================================================= */
+
+.support-popup-content {
+  position: relative;
+
+  text-align: center;
+
+  z-index: 5;
+}
+
+
+/* =========================================================
+   📞 PHONE
+========================================================= */
+
+.support-phone {
+  color:
+    #f8fafc;
+
+  font-size:
+    1.15rem;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.5;
+
+  letter-spacing:
+    0.15px;
+}
+
+
+.support-phone a {
+  color:
+    #67e8f9;
+
+  text-decoration:
+    none;
+
+  font-weight:
+    700;
+
+  transition:
+    all 0.25s ease;
+
+  white-space:
+    nowrap;
+}
+
+
+.support-phone a:hover {
+  color:
+    #ffffff;
+
+  text-shadow:
+    0 0 8px #22d3ee,
+    0 0 20px #2563eb;
+}
+
+
+/* =========================================================
+   🕐 AVAILABILITY
+========================================================= */
+
+.support-availability {
+  margin-top:
+    6px;
+
+  color:
+    #94a3b8;
+
+  font-size:
+    0.88rem;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.4px;
+}
+
+
+/* =========================================================
+   ─── PREMIUM DIVIDER
+========================================================= */
+
+.support-divider {
+  width:
+    78%;
+
+  height:
+    1px;
+
+  margin:
+    20px auto;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(34, 211, 238, 0.65),
+      rgba(139, 92, 246, 0.65),
+      transparent
+    );
+
+  box-shadow:
+    0 0 8px
+    rgba(34, 211, 238, 0.18);
+}
+
+
+/* =========================================================
+   🛡️ MAIN MESSAGE
+========================================================= */
+
+.support-main-text {
+  color:
+    #f8fafc;
+
+  font-size:
+    1.05rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.6;
+
+  letter-spacing:
+    0.1px;
+
+  padding:
+    0 8px;
+}
+
+
+/* =========================================================
+   🏆 MILES ABOVE THE REST
+========================================================= */
+
+.support-tagline-wrapper {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+
+  margin-top:
+    22px;
+
+  width:
+    100%;
+}
+
+
+/* LEFT LINE */
+
+.tagline-line {
+  width:
+    34px;
+
+  height:
+    1px;
+
+  flex-shrink:
+    0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #22d3ee
+    );
+
+  box-shadow:
+    0 0 7px
+    rgba(34, 211, 238, 0.45);
+}
+
+
+/* RIGHT LINE */
+
+.tagline-line:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      #a78bfa,
+      transparent
+    );
+
+  box-shadow:
+    0 0 7px
+    rgba(167, 139, 250, 0.45);
+}
+
+
+/* =========================================================
+   ⭐ LUXURY TAGLINE
+========================================================= */
+
+.support-tagline {
+  position:
+    relative;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-style:
+    italic;
+
+  font-weight:
+    700;
+
+  font-size:
+    1.17rem;
+
+  letter-spacing:
+    0.7px;
+
+  white-space:
+    nowrap;
+
+  background:
+    linear-gradient(
+      90deg,
+      #67e8f9 0%,
+      #ffffff 35%,
+      #ffffff 55%,
+      #c4b5fd 100%
+    );
+
+  background-size:
+    250% auto;
+
+  -webkit-background-clip:
+    text;
+
+  background-clip:
+    text;
+
+  -webkit-text-fill-color:
+    transparent;
+
+  animation:
+    taglineShine
+    4s ease-in-out infinite;
+
+  filter:
+    drop-shadow(
+      0 0 8px
+      rgba(34, 211, 238, 0.30)
+    );
+}
+
+
+@keyframes taglineShine {
+
+  0% {
+    background-position:
+      0% 50%;
+  }
+
+  50% {
+    background-position:
+      100% 50%;
+  }
+
+  100% {
+    background-position:
+      0% 50%;
+  }
+}
+
+
+/* =========================================================
+   📱 TABLET + MOBILE
+========================================================= */
+
 @media (max-width: 1024px) {
 
   .aura-navbar .navbar-collapse {
-    background: rgba(10, 20, 40, 0.96);
-    padding: 1rem;
-    border-radius: 10px;
+    background:
+      rgba(10, 20, 40, 0.98);
+
+    padding:
+      1rem;
+
+    border-radius:
+      10px;
+
+    margin-top:
+      8px;
+
+    max-height:
+      calc(100vh - 90px);
+
+    overflow-y:
+      auto;
+
+    -webkit-overflow-scrolling:
+      touch;
+
+    scrollbar-width:
+      thin;
+
+    scrollbar-color:
+      #00e0ff
+      transparent;
   }
+
 
   .aura-nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
+    flex-direction:
+      column;
+
+    width:
+      100%;
+
+    margin:
+      1rem 0 !important;
   }
+
 
   .aura-nav-links .nav-link {
-    margin: 0.6rem 0;
-    width: 100%;
+    margin:
+      0.6rem 0;
+
+    width:
+      100%;
+  }
+
+
+  /* ======================================
+     SUPPORT CONTAINER
+  ====================================== */
+
+  .aura-support-container {
+    width:
+      100%;
+
+    margin:
+      1rem 0 0;
+
+    left:
+      0;
+
+    justify-content:
+      center;
+  }
+
+
+  /* ======================================
+     SUPPORT BUTTON
+  ====================================== */
+
+  .aura-get-support-btn {
+    width:
+      100%;
+
+    min-width:
+      0;
+
+    min-height:
+      58px;
+
+    padding:
+      11px 20px;
+
+    font-size:
+      1rem;
+  }
+
+
+  /* ======================================
+     SUPPORT POPUP
+  ====================================== */
+
+  .support-popup {
+    position:
+      relative;
+
+    top:
+      auto;
+
+    right:
+      auto;
+
+    width:
+      100%;
+
+    margin-top:
+      14px;
+
+    padding:
+      30px 18px 26px;
+
+    border-radius:
+      22px;
+  }
+
+
+  .support-popup-icon {
+    width:
+      54px;
+
+    height:
+      54px;
+
+    border-radius:
+      18px;
+
+    font-size:
+      1.3rem;
+  }
+
+
+  .support-phone {
+    font-size:
+      1.02rem;
+  }
+
+
+  .support-availability {
+    font-size:
+      0.85rem;
+  }
+
+
+  .support-main-text {
+    font-size:
+      0.96rem;
+
+    line-height:
+      1.55;
+  }
+
+
+  .support-tagline-wrapper {
+    gap:
+      8px;
+
+    margin-top:
+      19px;
+  }
+
+
+  .tagline-line {
+    width:
+      24px;
+  }
+
+
+  .support-tagline {
+    font-size:
+      1rem;
+
+    letter-spacing:
+      0.4px;
   }
 }
 
 
-/* 🍔 Toggler */
+/* =========================================================
+   🍔 NAVBAR TOGGLER
+========================================================= */
+
 .navbar-toggler {
-  border: none !important;
-  outline: none !important;
+  border:
+    none !important;
+
+  outline:
+    none !important;
+
+  box-shadow:
+    none !important;
+
+  padding:
+    6px !important;
 }
+
+
+.navbar-toggler:focus {
+  box-shadow:
+    none !important;
+}
+
+
+.navbar-toggler:active {
+  outline:
+    none !important;
+}
+
 
 .navbar-toggler-icon {
-  display: inline-block;
-  width: 34px !important;
-  height: 34px !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  display:
+    inline-block;
 
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  width:
+    34px !important;
+
+  height:
+    34px !important;
+
+  background-repeat:
+    no-repeat;
+
+  background-position:
+    center;
+
+  background-size:
+    100% 100%;
+
+  background-image:
+    url(
+      "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"
+    ) !important;
 }
 
 
-/* 📱 Mobile Dropdown Scroll */
+/* =========================================================
+   📱 MOBILE DROPDOWN SCROLL
+========================================================= */
+
 @media (max-width: 1024px) {
 
   .dropdown-menu {
-    max-height: 320px !important;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
+    max-height:
+      320px !important;
 
-    scrollbar-width: thin;
-    scrollbar-color: #00e0ff transparent;
+    overflow-y:
+      auto !important;
+
+    -webkit-overflow-scrolling:
+      touch;
+
+    scrollbar-width:
+      thin;
+
+    scrollbar-color:
+      #00e0ff
+      transparent;
+  }
+
+}
+
+
+/* =========================================================
+   📱 SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .aura-navbar .navbar-collapse {
+    padding:
+      0.8rem;
+  }
+
+
+  .support-popup {
+    padding:
+      27px 12px 23px;
+
+    border-radius:
+      20px;
+  }
+
+
+  .support-popup-icon {
+    width:
+      50px;
+
+    height:
+      50px;
+
+    border-radius:
+      16px;
+  }
+
+
+  .support-popup-close {
+    width:
+      31px;
+
+    height:
+      31px;
+
+    top:
+      10px;
+
+    right:
+      10px;
+  }
+
+
+  .support-phone {
+    font-size:
+      0.94rem;
+  }
+
+
+  .support-availability {
+    font-size:
+      0.81rem;
+  }
+
+
+  .support-main-text {
+    font-size:
+      0.91rem;
+
+    padding:
+      0 2px;
+  }
+
+
+  .support-tagline-wrapper {
+    gap:
+      5px;
+  }
+
+
+  .tagline-line {
+    width:
+      17px;
+  }
+
+
+  .support-tagline {
+    font-size:
+      0.89rem;
+
+    letter-spacing:
+      0.2px;
+  }
+
+}
+
+
+/* =========================================================
+   📱 EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .support-phone {
+    font-size:
+      0.88rem;
+  }
+
+
+  .support-main-text {
+    font-size:
+      0.87rem;
+  }
+
+
+  .support-tagline {
+    font-size:
+      0.82rem;
+  }
+
+
+  .tagline-line {
+    width:
+      12px;
   }
 
 }

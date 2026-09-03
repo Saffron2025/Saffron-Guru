@@ -3,10 +3,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './ReturnPolicy.css';
 import AllSection from './AllSection';
-
+import AppNavbar from './AppNavbar';
 const ReturnPolicy = () => {
   return (
     <>
+    <AppNavbar/>
       <section className="return-section">
         <Container>
           <Row>
