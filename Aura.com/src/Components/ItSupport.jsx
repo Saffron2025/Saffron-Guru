@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./ItSupport.css";
 
@@ -8,15 +8,11 @@ const ItSupport = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const section = sectionRef.current;
-
-    if (!section) return;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          section.classList.add("it-support-visible");
-          observer.unobserve(section);
+          entry.target.classList.add("it-support-visible");
+          observer.unobserve(entry.target);
         }
       },
       {
@@ -24,17 +20,22 @@ const ItSupport = () => {
       }
     );
 
-    observer.observe(section);
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section ref={sectionRef} className="it-support-section">
+    <section
+      ref={sectionRef}
+      className="it-support-section"
+    >
 
-      {/* =====================================================
-          ANIMATED BACKGROUND
-      ===================================================== */}
+      {/* =========================
+          BACKGROUND
+      ========================== */}
 
       <div className="it-grid-background"></div>
 
@@ -45,30 +46,35 @@ const ItSupport = () => {
 
       <Container className="it-support-container">
 
-        {/* =====================================================
-            SECTION INTRO
-        ===================================================== */}
+        {/* =========================
+            SECTION HEADER
+        ========================== */}
 
         <div className="it-support-header">
 
           <div className="it-eyebrow">
             <span className="eyebrow-dot"></span>
-            <span>PROFESSIONAL IT SUPPORT</span>
+
+            <span>
+              IT SUPPORT YOU CAN RELY ON
+            </span>
+
             <span className="eyebrow-line"></span>
           </div>
 
 
           <h2 className="it-section-title">
-            Technology Help,
+            Technology Problems?
             <br />
-            <span>When You Need It.</span>
+            <span>
+              We've Got You Covered.
+            </span>
           </h2>
 
 
           <p className="it-section-subtitle">
-            Reliable remote and on-site IT support designed to
-            keep your technology running smoothly — at home,
-            with your family, or across your business.
+            Professional IT support for your home and business —
+            from everyday technology problems to complete IT solutions.
           </p>
 
 
@@ -76,17 +82,17 @@ const ItSupport = () => {
 
             <div className="it-pill">
               <span>✓</span>
-              Remote Support
+              Fast Response
             </div>
 
             <div className="it-pill">
               <span>✓</span>
-              On-Site Support
+              Remote + On-Site
             </div>
 
             <div className="it-pill">
               <span>✓</span>
-              Home & Business
+              Professional Support
             </div>
 
           </div>
@@ -95,92 +101,301 @@ const ItSupport = () => {
 
 
         {/* =====================================================
-            FEATURE IMAGE
+            HOME IT SUPPORT
+            IMAGE LEFT + CONTENT RIGHT
         ===================================================== */}
 
-        <div className="it-image-area">
-
-          <div className="image-ring image-ring-one"></div>
-          <div className="image-ring image-ring-two"></div>
-          <div className="image-ring image-ring-three"></div>
-
-          <div className="image-light"></div>
+        <div className="it-support-row home-support-row">
 
 
-          <div className="it-image-card">
+          {/* =========================
+              HOME IMAGE
+          ========================== */}
 
-            {/* Browser style top bar */}
-            <div className="image-topbar">
+          <div className="it-image-area">
 
-              <div className="window-dots">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className="image-light"></div>
+
+            <div className="image-ring image-ring-one"></div>
+            <div className="image-ring image-ring-two"></div>
+            <div className="image-ring image-ring-three"></div>
+
+
+            <div className="it-image-card">
+
+              <div className="image-topbar">
+
+                <div className="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div className="window-title">
+                  HOME IT SUPPORT
+                </div>
+
+                <div className="online-status">
+                  <span></span>
+                  AVAILABLE
+                </div>
+
               </div>
 
-              <div className="window-title">
-                IT SUPPORT CENTER
+
+              <img
+                src="/Hero/ItSupport.WebP"
+                // alt="Home IT Support"
+                className="it-main-image"
+              />
+
+
+              <div className="image-shade"></div>
+
+
+              <div className="floating-info floating-info-left">
+
+                <div className="floating-icon blue-icon">
+                  ⚡
+                </div>
+
+                <div>
+                  <small>
+                    QUICK HELP
+                  </small>
+
+                  <strong>
+                    Fast & Reliable
+                  </strong>
+                </div>
+
               </div>
 
-              <div className="online-status">
-                <span></span>
-                AVAILABLE
+
+              <div className="floating-info floating-info-right">
+
+                <div className="floating-icon green-icon">
+                  ✓
+                </div>
+
+                <div>
+                  <small>
+                    SUPPORT STATUS
+                  </small>
+
+                  <strong>
+                    Here When You Need Us
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <div className="image-center-badge">
+
+                <span>
+                  ✓
+                </span>
+
+                <div>
+                  <small>
+                    YOUR TECHNOLOGY
+                  </small>
+
+                  <strong>
+                    Our Problem To Solve
+                  </strong>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* =========================
+              HOME SERVICES
+          ========================== */}
+
+          <div className="service-card home-card">
+
+            <div className="card-glow"></div>
+
+            <div className="card-number">
+              01
+            </div>
+
+            <div className="card-watermark">
+              HOME
+            </div>
+
+
+            <div className="service-card-header">
+
+              <div className="service-icon home-icon">
+                🏠
+              </div>
+
+              <div className="service-heading-text">
+
+                <span className="service-label">
+                  FOR YOUR HOME
+                </span>
+
+                <h3>
+                  Home IT Support
+                </h3>
+
               </div>
 
             </div>
 
 
-            <img
-              src="/Hero/ItSupport.WebP"
-              alt="Remote and On-Site IT Support"
-              className="it-main-image"
-            />
+            <p className="service-description">
+              Get professional help with the technology
+              you use every day. From setting up your devices
+              to fixing frustrating problems, we'll help you
+              get everything working properly.
+            </p>
 
 
-            <div className="image-shade"></div>
+            <div className="card-divider"></div>
 
 
-            {/* Left floating badge */}
-            <div className="floating-info floating-info-left">
+            <div className="services-list-heading">
 
-              <div className="floating-icon blue-icon">
-                ⚡
-              </div>
+              <span>
+                WHAT WE CAN HELP WITH
+              </span>
 
-              <div>
-                <small>QUICK HELP</small>
-                <strong>Fast & Reliable</strong>
-              </div>
+              <div></div>
 
             </div>
 
 
-            {/* Right floating badge */}
-            <div className="floating-info floating-info-right">
+            <ul className="services-list">
 
-              <div className="floating-icon green-icon">
-                ✓
-              </div>
+              <li>
+                <span className="service-list-icon">
+                  📶
+                </span>
 
-              <div>
-                <small>SUPPORT STATUS</small>
-                <strong>Here When You Need Us</strong>
-              </div>
+                <span className="service-list-text">
+                  Wi-Fi & Internet Setup
+                </span>
 
-            </div>
+                <b>✓</b>
+              </li>
 
 
-            {/* Center bottom badge */}
-            <div className="image-center-badge">
+              <li>
+                <span className="service-list-icon">
+                  💻
+                </span>
 
-              <span>✓</span>
+                <span className="service-list-text">
+                  Laptop & Desktop Setup
+                </span>
 
-              <div>
-                <small>YOUR TECHNOLOGY</small>
-                <strong>Our Problem To Solve</strong>
-              </div>
+                <b>✓</b>
+              </li>
 
-            </div>
+
+              <li>
+                <span className="service-list-icon">
+                  🖨️
+                </span>
+
+                <span className="service-list-text">
+                  Printer & Scanner Setup
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  📱
+                </span>
+
+                <span className="service-list-text">
+                  Smart TV & Device Setup
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🧹
+                </span>
+
+                <span className="service-list-text">
+                  Computer Cleanup & Optimization
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🔐
+                </span>
+
+                <span className="service-list-text">
+                  Virus & Malware Removal
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  💾
+                </span>
+
+                <span className="service-list-text">
+                  Data Backup & Recovery
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🛠️
+                </span>
+
+                <span className="service-list-text">
+                  General Tech Troubleshooting
+                </span>
+
+                <b>✓</b>
+              </li>
+
+            </ul>
+
+
+            <button
+              className="service-cta home-cta"
+              onClick={() => navigate("/for-your-home")}
+            >
+
+              <span>
+                Explore Home Support
+              </span>
+
+              <strong>
+                →
+              </strong>
+
+            </button>
 
           </div>
 
@@ -188,364 +403,305 @@ const ItSupport = () => {
 
 
         {/* =====================================================
-            SERVICES TITLE
+            BUSINESS IT SUPPORT
+            IMAGE LEFT + CONTENT RIGHT
         ===================================================== */}
 
-        <div className="services-section-heading">
+        <div className="it-support-row business-support-row">
 
-          <div className="heading-line"></div>
 
-          <div className="services-heading-content">
+          {/* =========================
+              BUSINESS IMAGE
+          ========================== */}
 
-            <span>HOW CAN WE HELP?</span>
+          <div className="it-image-area business-image-area">
 
-            <h3>
-              Support For Every Situation
-            </h3>
+            <div className="image-light business-image-light"></div>
+
+            <div className="image-ring image-ring-one"></div>
+            <div className="image-ring image-ring-two"></div>
+            <div className="image-ring image-ring-three"></div>
+
+
+            <div className="it-image-card business-image-card">
+
+              <div className="image-topbar">
+
+                <div className="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div className="window-title">
+                  BUSINESS IT SUPPORT
+                </div>
+
+                <div className="online-status">
+                  <span></span>
+                  AVAILABLE
+                </div>
+
+              </div>
+
+
+              <img
+                src="/Hero/BusinessItSupport.Webp"
+                // alt="Business IT Support"
+                className="it-main-image"
+              />
+
+
+              <div className="image-shade business-image-shade"></div>
+
+
+              <div className="floating-info floating-info-left">
+
+                <div className="floating-icon green-icon">
+                  ⚡
+                </div>
+
+                <div>
+                  <small>
+                    BUSINESS READY
+                  </small>
+
+                  <strong>
+                    Reliable IT
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <div className="floating-info floating-info-right">
+
+                <div className="floating-icon blue-icon">
+                  ✓
+                </div>
+
+                <div>
+                  <small>
+                    SUPPORT STATUS
+                  </small>
+
+                  <strong>
+                    Always Connected
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <div className="image-center-badge">
+
+                <span>
+                  ✓
+                </span>
+
+                <div>
+                  <small>
+                    YOUR BUSINESS
+                  </small>
+
+                  <strong>
+                    Technology That Works
+                  </strong>
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
 
-          <div className="heading-line heading-line-right"></div>
+
+          {/* =========================
+              BUSINESS SERVICES
+          ========================== */}
+
+          <div className="service-card business-card">
+
+            <div className="card-glow"></div>
+
+            <div className="card-number">
+              02
+            </div>
+
+            <div className="card-watermark">
+              BUSINESS
+            </div>
+
+
+            <div className="service-card-header">
+
+              <div className="service-icon business-icon">
+                🏢
+              </div>
+
+              <div className="service-heading-text">
+
+                <span className="service-label">
+                  FOR YOUR BUSINESS
+                </span>
+
+                <h3>
+                  Business IT Support
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <p className="service-description">
+              Keep your business technology reliable,
+              secure, connected, and ready for work.
+              From networks and devices to security and
+              ongoing maintenance, we're here to help.
+            </p>
+
+
+            <div className="card-divider"></div>
+
+
+            <div className="services-list-heading">
+
+              <span>
+                WHAT WE CAN HELP WITH
+              </span>
+
+              <div></div>
+
+            </div>
+
+
+            <ul className="services-list">
+
+              <li>
+                <span className="service-list-icon">
+                  🌐
+                </span>
+
+                <span className="service-list-text">
+                  Business Network Setup
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  📡
+                </span>
+
+                <span className="service-list-text">
+                  Wi-Fi & Access Point Installation
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  💻
+                </span>
+
+                <span className="service-list-text">
+                  Computer & Laptop Setup
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🔐
+                </span>
+
+                <span className="service-list-text">
+                  Cybersecurity & Antivirus
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  💾
+                </span>
+
+                <span className="service-list-text">
+                  Data Backup Solutions
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  ☁️
+                </span>
+
+                <span className="service-list-text">
+                  Cloud & Email Setup
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🛠️
+                </span>
+
+                <span className="service-list-text">
+                  IT Troubleshooting & Repairs
+                </span>
+
+                <b>✓</b>
+              </li>
+
+
+              <li>
+                <span className="service-list-icon">
+                  🔧
+                </span>
+
+                <span className="service-list-text">
+                  Ongoing IT Maintenance & Support
+                </span>
+
+                <b>✓</b>
+              </li>
+
+            </ul>
+
+
+            <button
+              className="service-cta business-cta"
+              onClick={() => navigate("/for-your-business")}
+            >
+
+              <span>
+                Explore Business Support
+              </span>
+
+              <strong>
+                →
+              </strong>
+
+            </button>
+
+          </div>
 
         </div>
-
-
-        {/* =====================================================
-            SERVICE CARDS
-        ===================================================== */}
-
-        <Row className="service-layout">
-
-          {/* ===================================================
-              HOME SUPPORT
-          =================================================== */}
-
-          <Col
-            xs={12}
-            md={6}
-            className="service-column"
-          >
-
-            <div className="service-card home-card">
-
-              <div className="card-glow"></div>
-
-              <div className="card-number">
-                01
-              </div>
-
-
-              <div className="card-watermark">
-                HOME
-              </div>
-
-
-              {/* Card Header */}
-              <div className="service-card-header">
-
-                <div className="service-icon home-icon">
-                  🏠
-                </div>
-
-                <div className="service-heading-text">
-
-                  <span className="service-label">
-                    FOR YOUR HOME
-                  </span>
-
-                  <h3>
-                    Home IT Support
-                  </h3>
-
-                </div>
-
-              </div>
-
-
-              {/* IMPORTANT: LARGE DESCRIPTION */}
-              <p className="service-description">
-
-                Get professional help with the technology
-                you use every day. From setting up your devices
-                to fixing frustrating problems, we'll help you
-                get everything working properly.
-
-              </p>
-
-
-              {/* Divider */}
-              <div className="card-divider"></div>
-
-
-              {/* Services title */}
-              <div className="services-list-heading">
-
-                <span>
-                  WHAT WE CAN HELP WITH
-                </span>
-
-                <div></div>
-
-              </div>
-
-
-              {/* Services */}
-              <ul className="services-list">
-
-                <li>
-                  <span className="service-list-icon">📶</span>
-                  <span className="service-list-text">
-                    Wi-Fi & Internet Setup
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">💻</span>
-                  <span className="service-list-text">
-                    Laptop & Desktop Setup
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🖨️</span>
-                  <span className="service-list-text">
-                    Printer Installation & Fix
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🧩</span>
-                  <span className="service-list-text">
-                    Software Support
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">📺</span>
-                  <span className="service-list-text">
-                    Smart TV Help
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">📧</span>
-                  <span className="service-list-text">
-                    Email & Mobile Support
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🛡️</span>
-                  <span className="service-list-text">
-                    Malware Removal
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🐢</span>
-                  <span className="service-list-text">
-                    Speed & Recovery
-                  </span>
-                  <b>✓</b>
-                </li>
-
-              </ul>
-
-
-              {/* CTA */}
-              <button
-                type="button"
-                className="service-cta home-cta"
-                onClick={() => navigate("/for-your-home")}
-              >
-
-                <span>
-                  Explore Home Support
-                </span>
-
-                <strong>
-                  →
-                </strong>
-
-              </button>
-
-            </div>
-
-          </Col>
-
-
-          {/* ===================================================
-              BUSINESS SUPPORT
-          =================================================== */}
-
-          <Col
-            xs={12}
-            md={6}
-            className="service-column"
-          >
-
-            <div className="service-card business-card">
-
-              <div className="card-glow"></div>
-
-              <div className="card-number">
-                02
-              </div>
-
-
-              <div className="card-watermark">
-                BUSINESS
-              </div>
-
-
-              {/* Card Header */}
-              <div className="service-card-header">
-
-                <div className="service-icon business-icon">
-                  🏢
-                </div>
-
-                <div className="service-heading-text">
-
-                  <span className="service-label">
-                    FOR YOUR BUSINESS
-                  </span>
-
-                  <h3>
-                    Business IT Support
-                  </h3>
-
-                </div>
-
-              </div>
-
-
-              {/* IMPORTANT: LARGE DESCRIPTION */}
-              <p className="service-description">
-
-                Keep your business technology reliable,
-                secure, connected, and ready for work.
-                From networks and devices to security and
-                ongoing maintenance, we're here to help.
-
-              </p>
-
-
-              {/* Divider */}
-              <div className="card-divider"></div>
-
-
-              {/* Services title */}
-              <div className="services-list-heading">
-
-                <span>
-                  WHAT WE CAN HELP WITH
-                </span>
-
-                <div></div>
-
-              </div>
-
-
-              {/* Services */}
-              <ul className="services-list">
-
-                <li>
-                  <span className="service-list-icon">📡</span>
-                  <span className="service-list-text">
-                    Network & Access Point
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🖨️</span>
-                  <span className="service-list-text">
-                    Shared Printer Setup
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">✉️</span>
-                  <span className="service-list-text">
-                    Business Email Help
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🛡️</span>
-                  <span className="service-list-text">
-                    Security & Firewall
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">📱</span>
-                  <span className="service-list-text">
-                    Device Management
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">☁️</span>
-                  <span className="service-list-text">
-                    Cloud & Backup
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🔐</span>
-                  <span className="service-list-text">
-                    VPN & Remote Access
-                  </span>
-                  <b>✓</b>
-                </li>
-
-                <li>
-                  <span className="service-list-icon">🧰</span>
-                  <span className="service-list-text">
-                    Ongoing Maintenance
-                  </span>
-                  <b>✓</b>
-                </li>
-
-              </ul>
-
-
-              {/* CTA */}
-              <button
-                type="button"
-                className="service-cta business-cta"
-                onClick={() => navigate("/for-your-business")}
-              >
-
-                <span>
-                  Explore Business Support
-                </span>
-
-                <strong>
-                  →
-                </strong>
-
-              </button>
-
-            </div>
-
-          </Col>
-
-        </Row>
 
 
         {/* =====================================================
@@ -561,13 +717,15 @@ const ItSupport = () => {
             </div>
 
             <div>
+
               <strong>
-                Reliable Support
+                Professional Support
               </strong>
 
               <span>
-                Technology help you can count on
+                Experienced & reliable
               </span>
+
             </div>
 
           </div>
@@ -583,13 +741,15 @@ const ItSupport = () => {
             </div>
 
             <div>
+
               <strong>
-                Remote + On-Site
+                Fast Response
               </strong>
 
               <span>
-                Support wherever you need it
+                Quick help when needed
               </span>
+
             </div>
 
           </div>
@@ -601,23 +761,24 @@ const ItSupport = () => {
           <div className="trust-item">
 
             <div className="trust-icon purple">
-              🛡️
+              🔒
             </div>
 
             <div>
+
               <strong>
-                Security Focused
+                Secure & Trusted
               </strong>
 
               <span>
-                Keeping your technology safer
+                Your technology is safe
               </span>
+
             </div>
 
           </div>
 
         </div>
-
 
       </Container>
 
