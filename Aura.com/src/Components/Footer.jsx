@@ -115,20 +115,146 @@ const Footer = () => {
   {/* <div className="content-center"> */}
 <ProtectionShowcase/>
 
-   <div className="protection-shared-cta">
-  <div className="cta-line">
-    <img src="/Hero/discount.WebP" alt="offer" className="cta-icon" />
-    <span className="VeterenText">
-      🎖️ We offer <strong>special pricing for seniors and veterans</strong>.  
-      <br /> Please speak to our expert to learn more.
-    </span>
+  
+
+<div className="protection-shared-cta">
+
+  {/* Background Effects */}
+  <div className="cta-bg-grid"></div>
+  <div className="cta-glow-orb orb-one"></div>
+  <div className="cta-glow-orb orb-two"></div>
+  <div className="cta-glow-orb orb-three"></div>
+
+  {/* Decorative Flag Glow */}
+  <div className="cta-flag-glow"></div>
+
+  <div className="cta-main">
+
+    {/* LEFT CONTENT */}
+    <div className="cta-left">
+
+      <div className="cta-image-wrap">
+        <div className="cta-image-ring"></div>
+        <div className="cta-image-ring ring-two"></div>
+
+        <img
+          src="/Hero/discount.WebP"
+          alt="Special offer"
+          className="cta-icon"
+        />
+
+        <div className="cta-image-badge">
+          <span>★</span>
+          <small>Special</small>
+          <strong>Offer</strong>
+        </div>
+      </div>
+
+      <div className="cta-content">
+
+        <span className="cta-eyebrow">
+          <span className="eyebrow-star">✦</span>
+          EXCLUSIVE SUPPORT OFFER
+        </span>
+
+        <h2 className="cta-title">
+          Support That
+          <span> Honors Your Service</span>
+        </h2>
+
+        <span className="VeterenText">
+          🎖️ We offer{" "}
+          <strong>special pricing for seniors and veterans</strong>.
+          <br />
+
+          <span className="cta-subtext">
+            Please speak to our expert to learn more.
+          </span>
+        </span>
+
+        <div className="cta-trust-row">
+
+          <div className="cta-trust-item">
+            <span className="trust-icon">🛡️</span>
+            <span>Trusted Support</span>
+          </div>
+
+          <div className="cta-trust-divider"></div>
+
+          <div className="cta-trust-item">
+            <span className="trust-icon">🇺🇸</span>
+            <span>Proudly Serving</span>
+          </div>
+
+          <div className="cta-trust-divider"></div>
+
+          <div className="cta-trust-item">
+            <span className="trust-icon">⚡</span>
+            <span>Expert Help</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT VISUAL */}
+    <div className="cta-visual">
+
+      <div className="visual-glow"></div>
+
+      <div className="visual-circle circle-one"></div>
+      <div className="visual-circle circle-two"></div>
+
+      <div className="cta-second-image">
+        <img
+          src="/Hero/veteran-support.webp"
+          alt="Veteran and senior support"
+        />
+      </div>
+
+      <div className="visual-ribbon">
+        <span>🇺🇸</span>
+        <div>
+          <small>DEDICATED TO</small>
+          <strong>Our Veterans</strong>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
+  {/* BUTTONS */}
   <div className="cta-buttons">
-    <Link className="cta-btn primary" to="/contact">📞 Call Us</Link>
-    <Link className="cta-btn secondary" to="/LearnMore">📘 Learn More</Link>
+
+    <Link className="cta-btn primary" to="/contact">
+      <span className="btn-icon">📞</span>
+
+      <span className="btn-text">
+        <small>Talk to an Expert</small>
+        Call Us
+      </span>
+
+      <span className="btn-arrow">→</span>
+    </Link>
+
+    <Link className="cta-btn secondary" to="/LearnMore">
+      <span className="btn-icon">📘</span>
+
+      <span className="btn-text">
+        <small>Discover More</small>
+        Learn More
+      </span>
+
+      <span className="btn-arrow">→</span>
+    </Link>
+
   </div>
+
 </div>
+
 
 
     <ItSupport/>

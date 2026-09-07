@@ -14,40 +14,244 @@ const AppNavbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
 
+  /* =========================================================
+     RESPONSIVE MODE
+
+     Phone:
+       <= 767px -> Hamburger
+
+     Tablet:
+       768px - 1199px
+       Touch/coarse pointer -> Hamburger
+
+     Laptop/Desktop:
+       Mouse/trackpad -> Full navbar
+       >= 1200px -> Full navbar
+  ========================================================= */
+
+  const getCompactMode = () => {
+    if (typeof window === "undefined") {
+      return false;
+    }
+
+    const width = window.innerWidth;
+
+    const coarsePointer =
+      window.matchMedia &&
+      window.matchMedia("(pointer: coarse)").matches;
+
+    const touchDevice =
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0;
+
+    /* PHONE */
+    if (width <= 767) {
+      return true;
+    }
+
+    /* TABLET */
+    if (
+      width <= 1199 &&
+      (coarsePointer || touchDevice)
+    ) {
+      return true;
+    }
+
+    /* LAPTOP / DESKTOP */
+    return false;
+  };
+
+  const [isCompact, setIsCompact] = useState(
+    getCompactMode
+  );
+
+  /* =========================================================
+     FADE IN
+  ========================================================= */
+
   useEffect(() => {
-    const timer = setTimeout(() => setFadeIn(true), 50);
+    const timer = setTimeout(() => {
+      setFadeIn(true);
+    }, 50);
 
     return () => clearTimeout(timer);
   }, []);
 
-  // Close mobile/tablet navbar
+  /* =========================================================
+     RESPONSIVE LISTENER
+  ========================================================= */
+
+  useEffect(() => {
+    const handleResize = () => {
+      const compact = getCompactMode();
+
+      setIsCompact(compact);
+
+      if (!compact) {
+        setExpanded(false);
+        setSupportOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    const pointerQuery =
+      window.matchMedia
+        ? window.matchMedia("(pointer: coarse)")
+        : null;
+
+    const handlePointerChange = () => {
+      handleResize();
+    };
+
+    if (pointerQuery) {
+      if (pointerQuery.addEventListener) {
+        pointerQuery.addEventListener(
+          "change",
+          handlePointerChange
+        );
+      } else if (pointerQuery.addListener) {
+        pointerQuery.addListener(
+          handlePointerChange
+        );
+      }
+    }
+
+    return () => {
+      window.removeEventListener(
+        "resize",
+        handleResize
+      );
+
+      if (pointerQuery) {
+        if (pointerQuery.removeEventListener) {
+          pointerQuery.removeEventListener(
+            "change",
+            handlePointerChange
+          );
+        } else if (pointerQuery.removeListener) {
+          pointerQuery.removeListener(
+            "change",
+            handlePointerChange
+          );
+        }
+      }
+    };
+  }, []);
+
+  /* =========================================================
+     CLOSE NAVBAR
+  ========================================================= */
+
   const closeNavbar = () => {
     setExpanded(false);
   };
 
-  // Close support popup
+  /* =========================================================
+     CLOSE SUPPORT POPUP
+  ========================================================= */
+
   const closeSupportPopup = () => {
     setSupportOpen(false);
   };
 
+  /* =========================================================
+     HANDLE NAVIGATION
+  ========================================================= */
+
+  const handleNavigation = () => {
+    closeNavbar();
+    setSupportOpen(false);
+  };
+
+  /* =========================================================
+     ESCAPE KEY
+  ========================================================= */
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setExpanded(false);
+        setSupportOpen(false);
+      }
+    };
+
+    document.addEventListener(
+      "keydown",
+      handleKeyDown
+    );
+
+    return () => {
+      document.removeEventListener(
+        "keydown",
+        handleKeyDown
+      );
+    };
+  }, []);
+
+  /* =========================================================
+     BODY SCROLL LOCK
+  ========================================================= */
+
+  useEffect(() => {
+    if (expanded && isCompact) {
+      document.body.classList.add(
+        "navbar-menu-open"
+      );
+    } else {
+      document.body.classList.remove(
+        "navbar-menu-open"
+      );
+    }
+
+    return () => {
+      document.body.classList.remove(
+        "navbar-menu-open"
+      );
+    };
+  }, [expanded, isCompact]);
+
+  /* =========================================================
+     CLOSE WHEN SWITCHING TO DESKTOP
+  ========================================================= */
+
+  useEffect(() => {
+    if (!isCompact) {
+      setExpanded(false);
+      setSupportOpen(false);
+    }
+  }, [isCompact]);
+
   return (
     <Navbar
-      expand="xxl"
+      expand={isCompact ? false : "xl"}
       fixed="top"
-      expanded={expanded}
-      onToggle={(isExpanded) => setExpanded(isExpanded)}
-      className={`aura-navbar ${fadeIn ? "fade-in-blur" : ""}`}
+      expanded={isCompact ? expanded : true}
+      onToggle={(isExpanded) => {
+        if (isCompact) {
+          setExpanded(isExpanded);
+        }
+      }}
+      className={`
+        aura-navbar
+        ${fadeIn ? "fade-in-blur" : ""}
+        ${isCompact ? "compact-navbar" : "desktop-navbar"}
+      `}
     >
-      <Container fluid>
+      <Container
+        fluid
+        className="aura-navbar-container"
+      >
 
-        {/* ==========================
+        {/* =====================================================
             LOGO
-        ========================== */}
+        ===================================================== */}
+
         <Navbar.Brand
           as={Link}
           to="/"
           className="SaffronLogo-brand"
-          onClick={closeNavbar}
+          onClick={handleNavigation}
         >
           <div className="logo-wrapper">
             <img
@@ -58,75 +262,111 @@ const AppNavbar = () => {
           </div>
         </Navbar.Brand>
 
-        {/* ==========================
-            MOBILE TOGGLE
-        ========================== */}
-      <Navbar.Toggle
-  aria-controls="basic-navbar-nav"
-/>
+
+        {/* =====================================================
+            MOBILE / TABLET HAMBURGER
+        ===================================================== */}
+
+        {isCompact && (
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            aria-label="Toggle navigation"
+          />
+        )}
+
+
+        {/* =====================================================
+            NAVBAR COLLAPSE
+        ===================================================== */}
 
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className="justify-content-between"
+          className="aura-navbar-collapse"
         >
-          {/* ==========================
+
+          {/* ===================================================
               NAV LINKS
-          ========================== */}
+          =================================================== */}
+
           <Nav
-            className="mx-auto aura-nav-links"
-            onSelect={closeNavbar}
+            className="aura-nav-links"
+            onSelect={handleNavigation}
           >
 
             {/* HOME */}
-            <Nav.Link as={Link} to="/home">
+
+            <Nav.Link
+              as={Link}
+              to="/home"
+            >
               Home
             </Nav.Link>
 
+
             {/* DEFENDMEPRO */}
-            <Nav.Link as={Link} to="/DefendPro">
+
+            <Nav.Link
+              as={Link}
+              to="/DefendPro"
+            >
               DefendMePro™
             </Nav.Link>
 
-            {/* ==========================
-                SAFE SUPPORT
-            ========================== */}
+
+            {/* SAFE SUPPORT */}
+
             <NavDropdown
               title="SafeSupport Assist™"
               id="safeSupport"
               className="custom-dropdown"
             >
-              <NavDropdown.Item as={Link} to="/for-your-home">
+              <NavDropdown.Item
+                as={Link}
+                to="/for-your-home"
+              >
                 For Your Home
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/for-your-business">
+              <NavDropdown.Item
+                as={Link}
+                to="/for-your-business"
+              >
                 For Your Business
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* ==========================
-                SOLUTIONS
-            ========================== */}
+
+            {/* SOLUTIONS */}
+
             <NavDropdown
               title="Solutions"
               id="solutions-dropdown"
               className="custom-dropdown"
             >
-              <NavDropdown.Item as={Link} to="/solution">
+              <NavDropdown.Item
+                as={Link}
+                to="/solution"
+              >
                 Protection of our Society
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/Parent-Solution">
+              <NavDropdown.Item
+                as={Link}
+                to="/Parent-Solution"
+              >
                 NetHaven™
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/FixMyTech">
+              <NavDropdown.Item
+                as={Link}
+                to="/FixMyTech"
+              >
                 FixMyTech™
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
                   window.location.href =
                     "/DefendPro?item=identity-theft";
                 }}
@@ -136,7 +376,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
                   window.location.href =
                     "/DefendPro?item=fraud-detection";
                 }}
@@ -146,7 +386,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
                   window.location.href =
                     "/DefendPro?item=scam-protection";
                 }}
@@ -156,7 +396,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   const t = Date.now();
 
@@ -169,7 +409,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   const t = Date.now();
 
@@ -182,7 +422,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   window.location.href =
                     "/DefendPro?item=password-manager";
@@ -193,7 +433,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   window.location.href =
                     "/DefendPro?item=antivirus";
@@ -204,7 +444,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   window.location.href =
                     "/DefendPro?item=vpn";
@@ -215,7 +455,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   window.location.href =
                     "/DefendPro?item=spam-call";
@@ -226,7 +466,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 onClick={() => {
-                  closeNavbar();
+                  handleNavigation();
 
                   window.location.href =
                     "/DefendPro?item=human-support";
@@ -236,58 +476,81 @@ const AppNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* ==========================
-                SOFTWARE
-            ========================== */}
+
+            {/* SOFTWARE */}
+
             <NavDropdown
               title="Software"
               id="software-dropdown"
               className="custom-dropdown"
             >
-              <NavDropdown.Item as={Link} to="/microsoft-store">
+              <NavDropdown.Item
+                as={Link}
+                to="/microsoft-store"
+              >
                 Microsoft Store
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/internet-security">
+              <NavDropdown.Item
+                as={Link}
+                to="/internet-security"
+              >
                 Internet Security
               </NavDropdown.Item>
             </NavDropdown>
 
+
             {/* PRICING */}
-            <Nav.Link as={Link} to="/Pricing">
+
+            <Nav.Link
+              as={Link}
+              to="/Pricing"
+            >
               Pricing
             </Nav.Link>
 
-            {/* ==========================
-                KNOWLEDGE CENTER
-            ========================== */}
+
+            {/* KNOWLEDGE CENTER */}
+
             <NavDropdown
               title="Knowledge Center"
               id="knowledge-dropdown"
               className="custom-dropdown"
             >
-              <NavDropdown.Item as={Link} to="/about-us">
+              <NavDropdown.Item
+                as={Link}
+                to="/about-us"
+              >
                 About
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/HowSaffronWorks">
+              <NavDropdown.Item
+                as={Link}
+                to="/HowSaffronWorks"
+              >
                 How Saffron Works
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/resources">
+              <NavDropdown.Item
+                as={Link}
+                to="/resources"
+              >
                 Resources
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* ==========================
-                BLOG
-            ========================== */}
+
+            {/* BLOG */}
+
             <NavDropdown
               title="Blog"
               id="blog-main-dropdown"
               className="custom-dropdown"
             >
-              <NavDropdown.Item as={Link} to="/article">
+              <NavDropdown.Item
+                as={Link}
+                to="/article"
+              >
                 🧠 Online Safety Hub
               </NavDropdown.Item>
 
@@ -371,18 +634,23 @@ const AppNavbar = () => {
 
           </Nav>
 
-          {/* ==========================
+
+          {/* =====================================================
               GET SUPPORT
-          ========================== */}
+          ===================================================== */}
+
           <div className="aura-support-container">
 
             <Button
               type="button"
               className="aura-get-support-btn"
-              onClick={() => setSupportOpen(!supportOpen)}
+              onClick={() =>
+                setSupportOpen(!supportOpen)
+              }
               aria-expanded={supportOpen}
               aria-controls="support-popup"
             >
+
               <span className="support-icon">
                 ✦
               </span>
@@ -390,18 +658,18 @@ const AppNavbar = () => {
               <span className="support-text">
                 Get Support Now
               </span>
+
             </Button>
 
-            {/* ==========================
-                SUPPORT POPUP
-            ========================== */}
+
+            {/* SUPPORT POPUP */}
+
             {supportOpen && (
               <div
                 id="support-popup"
                 className="support-popup"
               >
 
-                {/* CLOSE */}
                 <button
                   type="button"
                   className="support-popup-close"
@@ -411,14 +679,8 @@ const AppNavbar = () => {
                   ✕
                 </button>
 
-                {/* ICON */}
-                {/* <div className="support-popup-icon">
-                  ✦
-                </div> */}
-
                 <div className="support-popup-content">
 
-                  {/* PHONE */}
                   <div className="support-phone">
                     Call Toll-Free:{" "}
                     <a href="tel:8443134987">
@@ -426,22 +688,17 @@ const AppNavbar = () => {
                     </a>
                   </div>
 
-                  {/* AVAILABILITY */}
                   <div className="support-availability">
                     Available 7 Days a Week
                   </div>
 
-                  {/* DIVIDER */}
                   <div className="support-divider"></div>
 
-                  {/* MAIN MESSAGE */}
                   <div className="support-main-text">
                     We Fix Tech. We Protect Your Digital Life.
                   </div>
 
-                  {/* PREMIUM TAGLINE */}
                   <div className="support-tagline-wrapper">
-
                     <span className="tagline-line"></span>
 
                     <span className="support-tagline">
@@ -449,10 +706,10 @@ const AppNavbar = () => {
                     </span>
 
                     <span className="tagline-line"></span>
-
                   </div>
 
                 </div>
+
               </div>
             )}
 

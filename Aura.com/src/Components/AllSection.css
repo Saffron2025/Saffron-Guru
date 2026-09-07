@@ -1,484 +1,544 @@
-/* ============================================
-   AuraFooter.css – Premium Professional Footer
-   Ultra-modern with animations, transitions, 
-   transformations & glassmorphism effects
-   ============================================ */
+/* =========================================================
+   AURA FOOTER
+   SIMPLE • PREMIUM • CLEAN
+========================================================= */
 
-/* ----- Base Footer ----- */
 .aura-footer {
-  background: linear-gradient(145deg, #0a0f1e 0%, #141b2b 50%, #0f1628 100%);
-  color: #e8edf5;
-  padding: 3rem 1.5rem 1.8rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  width: 100%;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+
+  margin-top: 80px;
+
+  padding: 55px 20px 28px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      180deg,
+      #0b1424 0%,
+      #08111f 100%
+    );
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
 }
 
-/* Animated Background Glow */
+
+/* =========================================================
+   TOP SUBTLE GLOW
+========================================================= */
+
 .aura-footer::before {
-  content: '';
+  content: "";
+
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 30% 50%, rgba(245, 158, 11, 0.03) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
-  animation: floatGlow 20s ease-in-out infinite alternate;
+
+  top: -120px;
+  left: 50%;
+
+  width: 600px;
+  height: 200px;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(245, 158, 11, 0.10),
+      transparent 70%
+    );
+
   pointer-events: none;
-  z-index: 0;
 }
 
-@keyframes floatGlow {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(2%, -2%) rotate(2deg); }
-  66% { transform: translate(-1%, 3%) rotate(-1deg); }
-  100% { transform: translate(3%, 1%) rotate(3deg); }
-}
+
+/* =========================================================
+   FOOTER CONTAINER
+========================================================= */
 
 .aura-footer .container {
-  max-width: 1280px;
+  position: relative;
+  z-index: 2;
+
+  max-width: 1250px;
+
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-  position: relative;
-  z-index: 1;
 }
 
-/* ---- Footer Grid (Links) with 3D Transform ---- */
-.aura-footer .footer-grid {
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer-grid {
   display: flex;
-  flex-wrap: wrap;
+
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  gap: 0.6rem 1.8rem;
-  row-gap: 0.8rem;
-  padding: 0.8rem 0 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  flex-wrap: wrap;
+
+  gap: 12px 28px;
+
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   INDIVIDUAL LINK
+========================================================= */
+
+.footer-link {
   position: relative;
-}
 
-/* Decorative Line */
-.aura-footer .footer-grid::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 20%;
-  width: 60%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.3), rgba(251, 191, 36, 0.5), rgba(245, 158, 11, 0.3), transparent);
-  animation: shimmerLine 4s ease-in-out infinite;
-}
-
-@keyframes shimmerLine {
-  0%, 100% { opacity: 0.3; transform: scaleX(0.8); }
-  50% { opacity: 1; transform: scaleX(1); }
-}
-
-.aura-footer .footer-link {
-  color: #c8d0e0;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 450;
-  padding: 0.4rem 0.2rem;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  letter-spacing: 0.02em;
   display: inline-flex;
+
   align-items: center;
-  gap: 0.4rem;
-  opacity: 0;
-  animation: fadeSlideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  transform-origin: center;
+
+  gap: 6px;
+
+  padding: 7px 3px;
+
+  color: #b9c5d5;
+
+  text-decoration: none;
+
+  font-family:
+    "Poppins",
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 0.93rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.01em;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.aura-footer .footer-link:hover {
-  color: #ffffff;
-  transform: translateY(-3px) scale(1.05);
-  text-shadow: 0 4px 20px rgba(245, 158, 11, 0.2);
-}
 
-/* Underline with gradient and animation */
-.aura-footer .footer-link::after {
-  content: '';
+.footer-link::after {
+  content: "";
+
   position: absolute;
+
   left: 50%;
-  bottom: -2px;
+  bottom: 0;
+
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #f59e0b, #fcd34d, #f59e0b);
-  background-size: 200% 100%;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  border-radius: 10px;
+
   transform: translateX(-50%);
-  border-radius: 2px;
-  box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+
+  background:
+    linear-gradient(
+      90deg,
+      #f59e0b,
+      #fbbf24
+    );
+
+  transition:
+    width 0.3s ease;
 }
 
-.aura-footer .footer-link:hover::after {
-  width: 80%;
-  animation: shimmerUnderline 1.5s ease-in-out infinite;
-}
 
-@keyframes shimmerUnderline {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-
-/* Live Support Badge with Pulse */
-.aura-footer .live-support {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.08));
-  padding: 0.3rem 1.2rem 0.3rem 0.9rem;
-  border-radius: 50px;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.05);
-}
-
-.aura-footer .live-support:hover {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(251, 191, 36, 0.15));
-  border-color: #f59e0b;
-  transform: translateY(-3px) scale(1.08) rotate(-1deg);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.2);
-}
-
-.aura-footer .blink-icon {
-  display: inline-block;
-  font-size: 1.1rem;
-  line-height: 1;
-  animation: pulseBlink 1.4s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
-  transition: transform 0.3s ease;
-}
-
-.aura-footer .live-support:hover .blink-icon {
-  transform: scale(1.3) rotate(10deg);
-}
-
-@keyframes pulseBlink {
-  0%, 100% { opacity: 0.6; transform: scale(0.9); }
-  50% { opacity: 1; transform: scale(1.2); }
-}
-
-/* ---- Social Media Row with Glassmorphism ---- */
-.aura-footer .footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem 2.5rem;
-  padding: 0.4rem 0 0.6rem;
-}
-
-.aura-footer .social-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: #c8d0e0;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 450;
-  padding: 0.5rem 1.6rem 0.5rem 1rem;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  opacity: 0;
-  animation: fadeSlideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Glassmorphism Shine Effect */
-.aura-footer .social-link::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  pointer-events: none;
-}
-
-.aura-footer .social-link:hover::before {
-  opacity: 1;
-}
-
-.aura-footer .social-link .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  z-index: 1;
-}
-
-.aura-footer .social-link:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 255, 255, 0.03);
+.footer-link:hover {
   color: #ffffff;
+
+  transform:
+    translateY(-2px);
 }
 
-.aura-footer .social-link:hover .social-icon {
-  background: rgba(255, 255, 255, 0.15);
-  transform: scale(1.15) rotate(-5deg);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
-/* Social Brand Colors with Glow */
-.aura-footer .social-link.x-twitter:hover {
-  border-color: #1DA1F2;
-  box-shadow: 0 12px 40px -8px rgba(29, 161, 242, 0.2), 0 0 40px rgba(29, 161, 242, 0.05);
-}
-.aura-footer .social-link.x-twitter:hover .social-icon {
-  color: #1DA1F2;
-  text-shadow: 0 0 20px rgba(29, 161, 242, 0.3);
+
+/* =========================================================
+   LIVE SUPPORT
+========================================================= */
+
+.footer-link.live-support {
+  color: #fbbf24;
+
+  font-weight: 700;
 }
 
-.aura-footer .social-link.facebook:hover {
-  border-color: #1877F2;
-  box-shadow: 0 12px 40px -8px rgba(24, 119, 242, 0.2), 0 0 40px rgba(24, 119, 242, 0.05);
-}
-.aura-footer .social-link.facebook:hover .social-icon {
-  color: #1877F2;
-  text-shadow: 0 0 20px rgba(24, 119, 242, 0.3);
+
+.footer-link.live-support:hover {
+  color: #ffd76a;
 }
 
-.aura-footer .social-link.youtube:hover {
-  border-color: #FF0000;
-  box-shadow: 0 12px 40px -8px rgba(255, 0, 0, 0.2), 0 0 40px rgba(255, 0, 0, 0.05);
-}
-.aura-footer .social-link.youtube:hover .social-icon {
-  color: #FF0000;
-  text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-}
 
-/* ---- Footer Credit with Gradient & Animation ---- */
-.aura-footer .footer-credit {
-  text-align: center;
+.blink-icon {
+  display: inline-flex;
+
   font-size: 0.9rem;
-  color: #94a3b8;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 1.8rem;
-  margin-top: 0.4rem;
-  letter-spacing: 0.03em;
-  font-weight: 350;
-  opacity: 0.7;
-  transition: all 0.4s ease;
-  position: relative;
+
+  animation:
+    livePulse 2s ease-in-out infinite;
 }
 
-.aura-footer .footer-credit:hover {
-  opacity: 1;
-  transform: scale(1.02);
-}
 
-.aura-footer .footer-credit span {
-  background: linear-gradient(90deg, #f59e0b, #fbbf24, #f59e0b);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
-  animation: shimmerText 3s ease-in-out infinite;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
+@keyframes livePulse {
 
-.aura-footer .footer-credit span:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.3));
-}
-
-@keyframes shimmerText {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-
-/* Floating Particles Effect */
-.aura-footer .footer-credit::before {
-  content: '✦ ✧ ✦ ✧ ✦';
-  display: block;
-  font-size: 0.6rem;
-  letter-spacing: 8px;
-  color: rgba(245, 158, 11, 0.15);
-  margin-bottom: 0.8rem;
-  animation: floatParticles 8s ease-in-out infinite;
-}
-
-@keyframes floatParticles {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
-  50% { transform: translateY(-4px) scale(1.1); opacity: 0.6; }
-}
-
-/* ===== Enhanced Animations ===== */
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
+  0%,
   100% {
+    transform: scale(1);
+
     opacity: 1;
-    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+
+    opacity: 0.65;
   }
 }
 
-/* Hover Ripple Effect for Links */
-.aura-footer .footer-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
-  transform: translate(-50%, -50%);
-  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-  pointer-events: none;
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
+.footer-social {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  padding: 28px 0;
 }
 
-.aura-footer .footer-link:hover::before {
-  width: 200%;
-  padding-bottom: 200%;
+
+/* =========================================================
+   SOCIAL LINK
+========================================================= */
+
+.social-link {
+  min-width: 130px;
+
+  padding: 10px 15px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  border-radius: 10px;
+
+  color: #aebdce;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  text-decoration: none;
+
+  font-family:
+    "Poppins",
+    "Inter",
+    sans-serif;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* ===== Responsive Design ===== */
+
+/* =========================================================
+   SOCIAL ICON
+========================================================= */
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  font-size: 0.9rem;
+
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.social-link:hover {
+  transform:
+    translateY(-4px);
+
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.07);
+
+  border-color:
+    rgba(245, 158, 11, 0.25);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.social-link:hover .social-icon {
+  transform:
+    scale(1.1);
+}
+
+
+/* =========================================================
+   X / TWITTER
+========================================================= */
+
+.social-link.x-twitter:hover .social-icon {
+  background: #000000;
+}
+
+
+/* =========================================================
+   FACEBOOK
+========================================================= */
+
+.social-link.facebook:hover .social-icon {
+  background: #1877f2;
+}
+
+
+/* =========================================================
+   YOUTUBE
+========================================================= */
+
+.social-link.youtube:hover .social-icon {
+  background: #ff0000;
+}
+
+
+/* =========================================================
+   FOOTER CREDIT
+========================================================= */
+
+.footer-credit {
+
+  padding-top: 23px;
+
+  text-align: center;
+
+  color: #718096;
+
+  font-family:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 0.78rem;
+
+  font-weight: 400;
+
+  letter-spacing: 0.03em;
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+  .aura-footer {
+    padding-top: 60px;
+  }
+
+  .footer-grid {
+    gap: 15px 35px;
+  }
+
+  .footer-link {
+    font-size: 0.95rem;
+  }
+
+  .social-link {
+    min-width: 140px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
 @media (max-width: 768px) {
+
   .aura-footer {
-    padding: 2.5rem 1.2rem 1.5rem;
+
+    margin-top: 60px;
+
+    padding:
+      45px 18px 25px;
   }
-  
-  .aura-footer .footer-grid {
-    gap: 0.4rem 1.2rem;
-    row-gap: 0.6rem;
-    padding: 0.4rem 0 0.8rem;
+
+  .footer-grid {
+
+    gap: 10px 20px;
+
+    padding-bottom: 25px;
   }
-  
-  .aura-footer .footer-link {
+
+  .footer-link {
+
     font-size: 0.88rem;
-    padding: 0.3rem 0.1rem;
   }
-  
-  .aura-footer .live-support {
-    padding: 0.2rem 0.9rem 0.2rem 0.7rem;
+
+  .footer-social {
+
+    padding: 24px 0;
+
+    gap: 10px;
   }
-  
-  .aura-footer .social-link {
-    font-size: 0.88rem;
-    padding: 0.4rem 1.2rem 0.4rem 0.8rem;
-    gap: 0.5rem;
-  }
-  
-  .aura-footer .social-link .social-icon {
-    font-size: 1rem;
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-  
-  .aura-footer .footer-credit {
-    font-size: 0.8rem;
+
+  .social-link {
+
+    min-width: 125px;
   }
 }
 
-@media (max-width: 480px) {
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+
   .aura-footer {
-    padding: 2rem 0.8rem 1.2rem;
+
+    margin-top: 45px;
+
+    padding:
+      40px 15px 22px;
   }
-  
-  .aura-footer .footer-grid {
-    gap: 0.3rem 0.8rem;
-    row-gap: 0.4rem;
+
+  .footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 6px 15px;
+
+    text-align: center;
   }
-  
-  .aura-footer .footer-link {
-    font-size: 0.78rem;
-    padding: 0.2rem 0.1rem;
+
+  .footer-link {
+
+    justify-content: center;
+
+    padding: 9px 3px;
+
+    font-size: 0.84rem;
   }
-  
-  .aura-footer .social-link {
-    font-size: 0.78rem;
-    padding: 0.3rem 0.9rem 0.3rem 0.6rem;
-    gap: 0.4rem;
+
+  .footer-social {
+
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 9px;
+
+    padding: 23px 0;
   }
-  
-  .aura-footer .social-link .social-icon {
-    font-size: 0.9rem;
-    width: 1.4rem;
-    height: 1.4rem;
+
+  .social-link {
+
+    width: 100%;
+
+    max-width: 280px;
+
+    min-width: 0;
+
+    padding: 10px 15px;
   }
-  
-  .aura-footer .footer-credit {
-    font-size: 0.7rem;
-    padding-top: 1.2rem;
-  }
-  
-  .aura-footer .footer-credit::before {
-    font-size: 0.4rem;
-    letter-spacing: 5px;
-    margin-bottom: 0.5rem;
+
+  .footer-credit {
+
+    padding-top: 20px;
+
+    font-size: 0.72rem;
+
+    line-height: 1.6;
   }
 }
 
-/* Smooth Scroll & Performance */
-.aura-footer * {
-  will-change: transform, opacity;
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .footer-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .footer-link {
+
+    font-size: 0.86rem;
+  }
 }
 
-/* Optional: Dark mode support */
-@media (prefers-color-scheme: light) {
-  .aura-footer {
-    background: linear-gradient(145deg, #f8fafc 0%, #eef2f6 50%, #e8edf2 100%);
-    color: #1e293b;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-  }
-  
-  .aura-footer .footer-link {
-    color: #475569;
-  }
-  
-  .aura-footer .footer-link:hover {
-    color: #0f172a;
-  }
-  
-  .aura-footer .social-link {
-    color: #475569;
-    background: rgba(0, 0, 0, 0.03);
-    border-color: rgba(0, 0, 0, 0.06);
-  }
-  
-  .aura-footer .social-link:hover {
-    background: rgba(0, 0, 0, 0.06);
-    color: #0f172a;
-  }
-  
-  .aura-footer .footer-credit {
-    color: #64748b;
-  }
-  
-  .aura-footer .footer-grid {
-    border-bottom-color: rgba(0, 0, 0, 0.06);
-  }
-  
-  .aura-footer .footer-credit {
-    border-top-color: rgba(0, 0, 0, 0.06);
-  }
-  
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .aura-footer *,
   .aura-footer::before {
-    background: radial-gradient(circle at 30% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+
+    animation: none !important;
+
+    transition: none !important;
   }
 }

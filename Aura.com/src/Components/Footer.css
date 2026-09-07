@@ -1392,444 +1392,1229 @@ footer, .footer, .aura-footer {
     max-width: 180px;
   }
 }
-/* ============================================
-   Protection CTA Section – Premium Design
-   Professional, Unique & Beautiful
-   ============================================ */
+/* =========================================================
+   PREMIUM FULL WIDTH PROTECTION CTA
+========================================================= */
 
-/* ----- Main CTA Container ----- */
+/* =========================================================
+   FULL WIDTH PREMIUM CTA
+========================================================= */
+
+
 .protection-shared-cta {
-  margin: 4rem 0 2rem;
-  padding: 3rem 3.5rem;
-  /* background: linear-gradient(145deg, #0a1628 0%, #141b2b 50%, #1a2a4a 100%); */
-  border-radius: 32px;
   position: relative;
+  width: 100%;
+  margin: 55px 0 30px;
+  padding: 48px 55px 42px;
+
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-  text-align: center;
-}
-
-/* ----- Animated Background Glow ----- */
-.protection-shared-cta::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: 
-    radial-gradient(ellipse at 30% 40%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
-    radial-gradient(ellipse at 70% 60%, rgba(245, 158, 11, 0.06) 0%, transparent 40%),
-    radial-gradient(ellipse at 50% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
-  animation: ctaGlowPremium 15s ease-in-out infinite alternate;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes ctaGlowPremium {
-  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25% { transform: translate(3%, -4%) rotate(2deg) scale(1.08); }
-  50% { transform: translate(-3%, 3%) rotate(-3deg) scale(0.95); }
-  75% { transform: translate(4%, -2%) rotate(4deg) scale(1.05); }
-  100% { transform: translate(-2%, 4%) rotate(-2deg) scale(0.98); }
-}
-
-/* ----- Decorative Border Animation ----- */
-.protection-shared-cta::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
   border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
+
+  background:
+    linear-gradient(
+      135deg,
+      #071a35 0%,
+      #0a2445 48%,
+      #06152b 100%
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  color: #fff;
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND GRID
+========================================================= */
+
+.cta-bg-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+  opacity: 0.35;
+
   pointer-events: none;
-  z-index: 0;
 }
 
-/* ----- Hover Effect ----- */
-.protection-shared-cta:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+
+/* =========================================================
+   GLOW ORBS
+========================================================= */
+
+.cta-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5px);
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* ----- CTA Line / Row ----- */
-.cta-line {
+.orb-one {
+  width: 300px;
+  height: 300px;
+
+  top: -150px;
+  left: -80px;
+
+  background: rgba(30, 104, 205, 0.24);
+
+  animation: orbFloatOne 7s ease-in-out infinite;
+}
+
+.orb-two {
+  width: 260px;
+  height: 260px;
+
+  right: -90px;
+  bottom: -130px;
+
+  background: rgba(255, 190, 60, 0.16);
+
+  animation: orbFloatTwo 8s ease-in-out infinite;
+}
+
+.orb-three {
+  width: 160px;
+  height: 160px;
+
+  right: 35%;
+  top: -80px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  filter: blur(20px);
+}
+
+
+/* =========================================================
+   FLAG GLOW
+========================================================= */
+
+.cta-flag-glow {
+  position: absolute;
+
+  right: -120px;
+  top: 15%;
+
+  width: 520px;
+  height: 260px;
+
+  opacity: 0.08;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      #d71920 0,
+      #d71920 14px,
+      #fff 14px,
+      #fff 28px
+    );
+
+  transform: rotate(-12deg);
+  filter: blur(1px);
+
+  mask-image: linear-gradient(
+    to left,
+    black,
+    transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to left,
+    black,
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.cta-main {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 45px;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.cta-left {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   DISCOUNT IMAGE CONTAINER
+   IMPORTANT:
+   CONTAINER SIZE IS FIXED
+========================================================= */
+
+.cta-image-wrap {
+  position: relative;
+
+  flex: 0 0 180px;
+
+  width: 180px;
+  height: 180px;
+
+  min-width: 145px;
+  min-height: 145px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
+  .cta-image-wrap {
+  transform: translateX(100px);
+}
 }
 
-/* ----- Icon Image ----- */
+
+/* =========================================================
+   DISCOUNT IMAGE
+   ⭐ ONLY THIS IMAGE IS MADE BIGGER
+   ⭐ IT DOES NOT CHANGE CONTAINER SIZE
+========================================================= */
+
 .cta-icon {
-  width: 90px;
-  height: 90px;
+  position: relative;
+
+  width: 200px;
+  height: 200px;
+  left: 150px;
+
+  max-width: none;
+  max-height: none;
+
+  object-fit: contain;
+
+  z-index: 3;
+
+  /*
+     SCALE ONLY THE IMAGE
+     Container remains 145px
+  */
+  transform: scale(1.35);
+
+  filter:
+    drop-shadow(0 12px 20px rgba(0, 0, 0, 0.3));
+
+  animation: imageFloat 4s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   IMAGE RINGS
+   ⭐ SAME SIZE - DO NOT INCREASE
+========================================================= */
+
+.cta-image-ring {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+
   border-radius: 50%;
-  object-fit: cover;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(59, 130, 246, 0.15));
-  padding: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  animation: iconFloat 4s ease-in-out infinite;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  z-index: 1;
+
+  border: 1px solid rgba(255, 193, 72, 0.55);
+
+  box-shadow:
+    0 0 25px rgba(255, 193, 72, 0.12);
+
+  animation: ringPulse 3s ease-in-out infinite;
 }
 
-@keyframes iconFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-10px) scale(1.05); }
+.cta-image-ring::before {
+  content: "";
+
+  position: absolute;
+  inset: 8px;
+
+  border-radius: inherit;
+
+  border: 1px dashed rgba(255, 255, 255, 0.18);
 }
 
-.cta-icon:hover {
-  transform: scale(1.15) rotate(-5deg);
-  box-shadow: 0 12px 40px rgba(245, 158, 11, 0.3);
-  border-color: rgba(245, 158, 11, 0.3);
+
+/* SECOND RING */
+
+.ring-two {
+  width: 155px;
+  height: 155px;
+
+  border-color: rgba(75, 151, 255, 0.2);
+
+  animation:
+    ringRotate 15s linear infinite;
 }
 
-/* ----- Veteran Text ----- */
+
+/* =========================================================
+   IMAGE BADGE
+========================================================= */
+
+.cta-image-badge {
+  position: absolute;
+
+  /* IMAGE KE UPAR */
+  right: 18px;
+  bottom: 25px;
+
+  width: 75px;
+  height: 65px;
+
+  background: linear-gradient(135deg, #ffd75a, #f2ad18);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 20;
+
+  transform: rotate(6deg);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(255, 190, 40, 0.35);
+
+  color: #071a36;
+}
+
+.cta-image-badge span {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.cta-image-badge small {
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.cta-image-badge strong {
+  font-size: 11px;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   CONTENT
+   ⭐ SLIGHTLY RIGHT
+========================================================= */
+
+.cta-content {
+  max-width: 690px;
+
+  transform: translateX(30px);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 10px;
+
+  color: #f7c95d;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.eyebrow-star {
+  font-size: 16px;
+
+  animation:
+    starPulse 2s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.cta-title {
+  margin: 0 0 13px;
+
+  font-size: clamp(28px, 3vw, 42px);
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  color: #fff;
+}
+
+.cta-title span {
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #f8c95c
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   VETERAN TEXT
+========================================================= */
+
 .VeterenText {
-  font-family: 'Inter', 'Space Grotesk', -apple-system, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: black;
-  max-width: 650px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+  display: block;
+
+  font-size: 18px;
+
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .VeterenText strong {
-  font-weight: 600;
-  background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShimmer 3s ease-in-out infinite;
-  position: relative;
+  color: #ffd36b;
+  font-weight: 800;
 }
 
-.VeterenText strong::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, #f59e0b, #fbbf24);
-  border-radius: 1px;
-  opacity: 0.3;
-  -webkit-text-fill-color: initial;
-}
-
-@keyframes gradientShimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-/* ----- Veteran Emoji Badge (🎖️) ----- */
-.VeterenText .veteran-badge {
+.cta-subtext {
   display: inline-block;
-  font-size: 2rem;
-  margin-right: 0.3rem;
-  animation: badgePulse 2.5s ease-in-out infinite;
-  vertical-align: middle;
+
+  margin-top: 3px;
+
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 0.62);
 }
 
-@keyframes badgePulse {
-  0%, 100% { transform: scale(1) rotate(0deg); }
-  25% { transform: scale(1.1) rotate(-5deg); }
-  50% { transform: scale(1.15) rotate(0deg); }
-  75% { transform: scale(1.1) rotate(5deg); }
-}
 
-/* ----- CTA Buttons Container ----- */
-.cta-buttons {
+/* =========================================================
+   TRUST ROW
+========================================================= */
+
+.cta-trust-row {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-  margin-top: 0.5rem;
+
+  gap: 15px;
+
+  margin-top: 20px;
 }
 
-/* ----- Base Button Styles ----- */
-.cta-btn {
-  display: inline-flex;
+.cta-trust-item {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.trust-icon {
+  font-size: 15px;
+}
+
+.cta-trust-divider {
+  width: 1px;
+  height: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   SECOND IMAGE / RIGHT VISUAL
+========================================================= */
+
+.cta-visual {
+  position: relative;
+
+  width: 270px;
+  height: 220px;
+
+  flex-shrink: 0;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  padding: 0.9rem 2.2rem;
-  border-radius: 50px;
-  font-family: 'Inter', 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.visual-glow {
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(53, 137, 255, 0.22),
+      transparent 68%
+    );
+
+  filter: blur(8px);
+}
+
+.visual-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.circle-one {
+  width: 205px;
+  height: 205px;
+
+  animation:
+    visualRotate 20s linear infinite;
+}
+
+.circle-two {
+  width: 170px;
+  height: 170px;
+
+  border-color: rgba(255, 198, 78, 0.25);
+
+  animation:
+    visualRotateReverse 14s linear infinite;
+}
+
+
+/* =========================================================
+   SECOND IMAGE
+========================================================= */
+
+.cta-second-image {
   position: relative;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
   overflow: hidden;
-  border: none;
-  cursor: pointer;
-  letter-spacing: 0.02em;
-  min-width: 160px;
+
+  border: 4px solid rgba(255, 255, 255, 0.14);
+
+  background: #0d2b50;
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.38),
+    0 0 35px rgba(56, 137, 255, 0.15);
+
+  z-index: 3;
 }
 
-/* ----- Primary Button (Call Us) ----- */
+.cta-second-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+.cta-visual:hover .cta-second-image img {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   VISUAL RIBBON
+========================================================= */
+
+.visual-ribbon {
+  position: absolute;
+
+  right: -5px;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(5, 20, 40, 0.92);
+
+  border: 1px solid rgba(255, 199, 76, 0.35);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.3);
+
+  z-index: 5;
+
+  transform: rotate(-2deg);
+
+  animation:
+    ribbonFloat 4s ease-in-out infinite;
+}
+
+.visual-ribbon > span {
+  font-size: 23px;
+}
+
+.visual-ribbon div {
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-ribbon small {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.visual-ribbon strong {
+  color: #ffd15f;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.cta-buttons {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  margin-top: 28px;
+
+  z-index: 5;
+}
+
+.cta-btn {
+  position: relative;
+
+  min-width: 190px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 15px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+  overflow: hidden;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+}
+
+.cta-btn .btn-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  font-size: 18px;
+
+  flex-shrink: 0;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  line-height: 1.15;
+}
+
+.btn-text small {
+  margin-bottom: 3px;
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  opacity: 0.65;
+}
+
+.btn-arrow {
+  margin-left: auto;
+
+  font-size: 21px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.cta-btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
 .cta-btn.primary {
-  background: linear-gradient(135deg, #f59e0b, #fbbf24);
-  color: #0a1628;
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.25);
+  color: #071a35;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd76a,
+      #e9a928
+    );
+
+  box-shadow:
+    0 10px 25px rgba(233, 169, 40, 0.2);
 }
 
-.cta-btn.primary::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity 0.5s ease;
+.cta-btn.primary .btn-icon {
+  background: rgba(255, 255, 255, 0.35);
 }
 
-.cta-btn.primary:hover {
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 15px 45px rgba(245, 158, 11, 0.4);
-}
 
-.cta-btn.primary:hover::before {
-  opacity: 1;
-}
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
 
-.cta-btn.primary:active {
-  transform: translateY(0) scale(0.98);
-}
-
-/* ----- Secondary Button (Learn More) ----- */
 .cta-btn.secondary {
-  background: rgba(255, 255, 255, 0.06);
-  color: #e2e8f0;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
-.cta-btn.secondary::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 50px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(59, 130, 246, 0.3));
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: -1;
-  filter: blur(4px);
+.cta-btn.secondary .btn-icon {
+  background: rgba(76, 148, 255, 0.15);
 }
 
 .cta-btn.secondary:hover {
-  transform: translateY(-3px) scale(1.04);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(245, 158, 11, 0.3);
-  color: #ffffff;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 205, 88, 0.45);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.cta-btn.secondary:hover::before {
-  opacity: 1;
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes imageFloat {
+  0%,
+  100% {
+    transform: scale(1.35) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.35) translateY(-7px);
+  }
 }
 
-/* ----- Button Icons ----- */
-.cta-btn .btn-icon {
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
-  display: inline-block;
+@keyframes badgeFloat {
+  0%,
+  100% {
+    transform: rotate(6deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(6deg) translateY(-5px);
+  }
 }
 
-.cta-btn:hover .btn-icon {
-  transform: scale(1.2) rotate(-5deg);
+@keyframes ringPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
 }
 
-.cta-btn.primary:hover .btn-icon {
-  animation: phoneRing 0.6s ease-in-out 3;
+@keyframes ringRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes phoneRing {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-15deg); }
-  75% { transform: rotate(15deg); }
+@keyframes visualRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* ----- Shine Effect (Both Buttons) ----- */
-.cta-btn::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent 40%,
-    rgba(255, 255, 255, 0.05) 45%,
-    rgba(255, 255, 255, 0.08) 50%,
-    rgba(255, 255, 255, 0.05) 55%,
-    transparent 60%
-  );
-  transform: translateX(-100%) rotate(25deg);
-  transition: transform 0.8s ease;
-  pointer-events: none;
+@keyframes visualRotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }
 
-.cta-btn:hover::after {
-  transform: translateX(100%) rotate(25deg);
+@keyframes starPulse {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
-/* ===== Responsive Design ===== */
-@media (max-width: 992px) {
+@keyframes ribbonFloat {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-2deg) translateY(-4px);
+  }
+}
+
+@keyframes orbFloatOne {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(25px, 20px);
+  }
+}
+
+@keyframes orbFloatTwo {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-20px, -15px);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
   .protection-shared-cta {
-    padding: 2.5rem 2rem;
-    margin: 3rem 0 1.5rem;
+    padding: 40px 35px;
   }
-  
-  .cta-line {
-    gap: 1.5rem;
+
+  .cta-main {
+    gap: 25px;
   }
-  
+
+  .cta-left {
+    gap: 22px;
+  }
+
+  /*
+     Container stays fixed
+  */
+  .cta-image-wrap {
+    flex: 0 0 140px;
+
+    width: 140px;
+    height: 140px;
+
+    min-width: 140px;
+    min-height: 140px;
+  }
+
+  /*
+     Image gets bigger INSIDE
+  */
   .cta-icon {
-    width: 75px;
-    height: 75px;
+    width: 105px;
+    height: 105px;
+
+    transform: scale(1.35);
   }
-  
-  .VeterenText {
-    font-size: 1.1rem;
-    max-width: 550px;
+
+  .cta-image-ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ring-two {
+    width: 145px;
+    height: 145px;
+  }
+
+  .cta-content {
+    transform: translateX(20px);
+  }
+
+  .cta-visual {
+    width: 220px;
+    height: 190px;
+  }
+
+  .cta-second-image {
+    width: 145px;
+    height: 145px;
+  }
+
+  .circle-one {
+    width: 175px;
+    height: 175px;
+  }
+
+  .circle-two {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cta-trust-row {
+    gap: 10px;
+  }
+
+  .cta-trust-item {
+    font-size: 10px;
   }
 }
 
-@media (max-width: 768px) {
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
   .protection-shared-cta {
-    padding: 2rem 1.5rem;
+    margin-top: 35px;
+
+    padding: 35px 22px 28px;
+
     border-radius: 24px;
-    margin: 2.5rem 0 1.5rem;
   }
-  
-  .cta-line {
+
+  .cta-main {
     flex-direction: column;
-    gap: 1rem;
+    align-items: stretch;
+
+    gap: 30px;
   }
-  
+
+  .cta-left {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  /*
+     Mobile container remains controlled
+  */
+  .cta-image-wrap {
+    flex: 0 0 145px;
+
+    width: 145px;
+    height: 145px;
+
+    min-width: 145px;
+    min-height: 145px;
+
+    margin: 0 auto 5px;
+  }
+
+  /*
+     Only image is visually enlarged
+  */
   .cta-icon {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
+
+    transform: scale(1.3);
   }
-  
+
+  .cta-image-ring {
+    width: 135px;
+    height: 135px;
+  }
+
+  .ring-two {
+    width: 155px;
+    height: 155px;
+  }
+
+  /*
+     Keep mobile text centered
+  */
+  .cta-content {
+    max-width: none;
+
+    transform: translateX(0);
+  }
+
+  .cta-eyebrow {
+    justify-content: center;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+  }
+
   .VeterenText {
-    font-size: 1rem;
-    max-width: 100%;
-    padding: 0 0.5rem;
+    font-size: 16px;
   }
-  
-  .VeterenText .veteran-badge {
-    font-size: 1.6rem;
+
+  .cta-subtext {
+    font-size: 13px;
   }
-  
+
+  .cta-trust-row {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+  }
+
+  .cta-trust-divider {
+    display: none;
+  }
+
+  .cta-visual {
+    width: 100%;
+    height: 205px;
+
+    margin-top: -5px;
+  }
+
   .cta-buttons {
     flex-direction: column;
-    width: 100%;
-    gap: 1rem;
+
+    margin-top: 20px;
   }
-  
+
   .cta-btn {
     width: 100%;
-    max-width: 320px;
-    padding: 0.8rem 1.8rem;
-    font-size: 0.95rem;
-    justify-content: center;
+    min-width: 0;
+  }
+
+  .visual-ribbon {
+    right: calc(50% - 115px);
   }
 }
 
-@media (max-width: 480px) {
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
   .protection-shared-cta {
-    padding: 1.5rem 1rem;
+    padding: 30px 17px 24px;
+
     border-radius: 20px;
-    margin: 2rem 0 1rem;
   }
-  
+
+  .cta-image-wrap {
+    width: 140px;
+    height: 140px;
+
+    min-width: 140px;
+    min-height: 140px;
+
+    flex-basis: 140px;
+  }
+
   .cta-icon {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
+    width: 115px;
+    height: 115px;
+
+    transform: scale(1.3);
   }
-  
+
+  .cta-title {
+    font-size: 27px;
+  }
+
   .VeterenText {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 15px;
   }
-  
-  .VeterenText .veteran-badge {
-    font-size: 1.3rem;
+
+  .cta-trust-item {
+    font-size: 9px;
   }
-  
-  .cta-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.88rem;
-    max-width: 280px;
-    min-width: unset;
+
+  .cta-visual {
+    height: 190px;
   }
-  
-  .cta-btn .btn-icon {
-    font-size: 1rem;
+
+  .cta-second-image {
+    width: 135px;
+    height: 135px;
+  }
+
+  .circle-one {
+    width: 165px;
+    height: 165px;
+  }
+
+  .circle-two {
+    width: 145px;
+    height: 145px;
+  }
+
+  .visual-ribbon {
+    transform: scale(0.9) rotate(-2deg);
+
+    right: calc(50% - 105px);
   }
 }
 
-/* ===== Dark Mode Support (already dark) ===== */
-/* No changes needed - it's already optimized for dark background */
+/* =========================================
+   DISCOUNT IMAGE - CENTER INSIDE CIRCLE
+========================================= */
 
-/* ===== Print Styles ===== */
-@media print {
-  .protection-shared-cta {
-    background: #f5f5f5 !important;
-    border: 1px solid #ddd !important;
-    box-shadow: none !important;
-    padding: 2rem !important;
-  }
-  
-  .VeterenText {
-    color: #333 !important;
-  }
-  
-  .VeterenText strong {
-    -webkit-text-fill-color: #000 !important;
-    background: none !important;
-  }
-  
-  .cta-btn {
-    border: 1px solid #999 !important;
-  }
-  
-  .cta-btn.primary {
-    background: #ddd !important;
-    color: #000 !important;
-  }
-  
-  .cta-btn.secondary {
-    background: #eee !important;
-    color: #000 !important;
-    border-color: #999 !important;
-  }
-  
-  .protection-shared-cta::before,
-  .protection-shared-cta::after {
-    display: none !important;
-  }
+.cta-image-wrap {
+  position: relative !important;
+  width: 300px !important;
+  height: 300px !important;
+  flex: 0 0 300px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Outer + inner circles exactly centered */
+.cta-image-ring {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Discount image inside the circle */
+.cta-icon {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+
+  width: 230px !important;
+  height: 230px !important;
+
+  object-fit: contain !important;
+
+  transform: translate(-50%, -50%) !important;
+
+  z-index: 5 !important;
 }
