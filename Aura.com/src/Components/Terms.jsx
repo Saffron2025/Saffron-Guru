@@ -126,9 +126,9 @@ const Terms = () => {
                 <br />
                 <strong>Saffron Guru LLC – Corporate Office</strong>
                 <br />
-                6565 N. MacArthur Blvd, Suite 225
+4070 N Belt Line Rd Ste 152
                 <br />
-                Irving, TX 75039
+                Irving, TX 75038
                 <br />
                 United States
                 <br />
