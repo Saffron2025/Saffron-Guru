@@ -542,3 +542,9 @@
     transition: none !important;
   }
 }
+
+.social-link.linkedin:hover {
+  color: #0a66c2;
+  transform: translateY(-5px) scale(1.05);
+  text-shadow: 0 0 15px rgba(10, 102, 194, 0.7);
+}

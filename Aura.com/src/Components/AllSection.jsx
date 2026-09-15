@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./AllSection.css";
 
@@ -33,6 +33,12 @@ const socialLinks = [
     url: "https://www.youtube.com/@SaffronGuruLLC",
     icon: <FaYoutube />,
     className: "youtube",
+  },
+{
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/company/saffron-guru/",
+    icon: <FaLinkedinIn />,
+    className: "linkedin",
   },
 ];
 
