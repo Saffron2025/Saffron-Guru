@@ -9,7 +9,7 @@ export const articles = [
 
   title: "Why Antivirus Alone Is No Longer Enough to Protect Your Digital Life",
 
-  highlight: "Modern Digital Security",
+  // highlight: "Modern Digital Security",
 
   author: "Saffron Guru",
 
@@ -83,6 +83,7 @@ export const articles = [
 
     {
       type: "p",
+      blue: true,
       text:
         "These attacks often succeed because they appear legitimate and create urgency. The victim is pressured to act before having time to verify what is happening."
     },
@@ -113,6 +114,7 @@ export const articles = [
 
     {
       type: "p",
+      blue: true,
       text:
         "Software-download controls reduce the risk of accidentally installing malicious or unwanted programs disguised as legitimate applications."
     },
@@ -133,7 +135,8 @@ export const articles = [
       type: "p",
       text:
         "Identity protection helps customers recognize signs that personal information may have been exposed or misused.",
-      bold: true
+      bold: true,
+      blue: true
     },
 
     {
@@ -144,7 +147,8 @@ export const articles = [
 
     {
       type: "h2",
-      text: "Human Guidance Remains Essential"
+      text: "Human Guidance Remains Essential",
+      // blue: true,
     },
 
     {
@@ -170,7 +174,8 @@ export const articles = [
     {
       type: "h2",
       text: "Going Beyond Traditional IT Support",
-      bold: true
+      bold: true,
+      // blue: true
     },
 
     {
@@ -183,7 +188,8 @@ export const articles = [
       type: "p",
       text:
         "As online threats have evolved, our responsibility has evolved with them.",
-      bold: true
+      bold: true,
+      blue: true
     },
 
     {
@@ -208,19 +214,23 @@ export const articles = [
       type: "p",
       text:
         "Your security should protect more than your computer. It should help protect your entire digital life.",
-      bold: true
+      bold: true,
+      blue: true
     },
 
     {
       type: "p",
       text: "Saffron Guru",
-      bold: true
+      bold: true,
+      blue: true,
+      footerBrand: true
     },
 
     {
       type: "p",
       text: "Miles Above the Rest",
-      bold: true
+      bold: true,
+      footerTagline: true
     }
 
   ],

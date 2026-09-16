@@ -259,8 +259,52 @@
   display: block;
 }
 
+
+
 @media (max-width: 768px) {
+
   .article-image {
     height: 260px;
   }
+
+}
+
+/* ==================================================
+   SPECIAL ARTICLE TEXT
+================================================== */
+
+.article-bold {
+  font-weight: 700 !important;
+}
+
+.article-blue {
+  color: #0066ff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 8px rgba(0, 102, 255, 0.15);
+}
+
+/* ==================================================
+   SAFFRON GURU
+================================================== */
+.footer-brand {
+  color: #111111 !important;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+  font-size: 42px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+  line-height: 1 !important;
+  margin-top: 45px !important;
+  margin-bottom: 0 !important;
+}
+/* ==================================================
+   MILES ABOVE THE REST
+================================================== */
+
+.footer-tagline {
+  color: #111111 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  margin-top: 15px !important;
+  margin-bottom: 0 !important;
 }
