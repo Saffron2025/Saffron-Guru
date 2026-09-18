@@ -548,3 +548,8 @@
   transform: translateY(-5px) scale(1.05);
   text-shadow: 0 0 15px rgba(10, 102, 194, 0.7);
 }
+
+.social-link.pinterest:hover {
+  color: #e60023;
+  transform: translateY(-5px) scale(1.05);
+}
