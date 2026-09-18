@@ -64,35 +64,59 @@ const AuraFooter = () => {
             <Link
               key={index}
               to={link.path}
-              className={`footer-link ${link.live ? "live-support" : ""}`}
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`footer-link ${
+                link.live ? "live-support" : ""
+              }`}
+              style={{
+                animationDelay: `${index * 0.1}s`,
+              }}
             >
-              {link.live && <span className="blink-icon">💬</span>}
+              {link.live && (
+                <span className="blink-icon">💬</span>
+              )}
+
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* Social Media */}
-        <div className="footer-social">
-          {socialLinks.map((social, index) => (
-            <a
-              key={index}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`social-link ${social.className}`}
-              style={{ animationDelay: `${index * 0.15}s` }}
-            >
-              <span className="social-icon">{social.icon}</span>
-              {social.label}
-            </a>
-          ))}
+        {/* =================================================
+            SOCIAL MEDIA SEPARATE SECTION
+        ================================================= */}
+
+        <div className="social-media-section">
+
+          <h3 className="social-media-title">
+            CONNECT WITH US ON SOCIAL MEDIA
+          </h3>
+
+          <div className="footer-social">
+            {socialLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`social-link ${social.className}`}
+                style={{
+                  animationDelay: `${index * 0.15}s`,
+                }}
+              >
+                <span className="social-icon">
+                  {social.icon}
+                </span>
+
+                {social.label}
+              </a>
+            ))}
+          </div>
+
         </div>
 
         {/* Footer Credit */}
         <div className="footer-credit">
-          &copy; {new Date().getFullYear()} Saffron Guru LLC. All rights reserved.
+          &copy; {new Date().getFullYear()} Saffron Guru LLC.
+          All rights reserved.
         </div>
 
       </div>

@@ -4,7 +4,7 @@ import './SocialMedia.css'; // Make sure this file is created
 const SocialMedia = () => {
   return (
     <section className="social-media-section">
-      <h2 className="social-title">Connect with Us on Social Media</h2>
+      <h2 className="social-title">See What Customers Say About Us</h2>
       <div className="social-buttons">
         <a
           href="https://www.facebook.com/saffronguru/reviews" // Replace with real URL later

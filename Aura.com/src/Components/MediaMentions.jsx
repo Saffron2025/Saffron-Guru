@@ -25,7 +25,7 @@ const MediaMentions = () => {
   return (
     <section className="media-section py-5">
       <Container>
-        <h2 className="media-heading text-center mb-4">🔒 Why Millions Trust Us</h2>
+        <h2 className="media-heading text-center mb-4">🔒 Why Customers Rely on Saffron Guru</h2>
 
         <div className="media-carousel-wrapper">
           <button className="arrow-btn left" onClick={() => scroll('left')}>←</button>
