@@ -1,14 +1,16 @@
 /* =========================================================
    AURA FOOTER
-   SIMPLE • PREMIUM • CLEAN
+   PREMIUM • CLEAN • RESPONSIVE
 ========================================================= */
 
 .aura-footer {
   width: 100%;
   position: relative;
   overflow: hidden;
+
   margin-top: 80px;
   padding: 55px 20px 28px;
+
   box-sizing: border-box;
 
   background:
@@ -33,6 +35,7 @@
   content: "";
 
   position: absolute;
+
   top: -120px;
   left: 50%;
 
@@ -56,12 +59,58 @@
    FOOTER CONTAINER
 ========================================================= */
 
-.aura-footer .container {
+.footer-container {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
   position: relative;
   z-index: 2;
 
-  max-width: 1250px;
-  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN FOOTER LINKS SECTION
+========================================================= */
+
+.footer-links-section {
+  width: 100%;
+
+  text-align: center;
+
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   QUICK LINKS TITLE
+========================================================= */
+
+.footer-title {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 1.25rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
 }
 
 
@@ -69,18 +118,15 @@
    FOOTER LINKS
 ========================================================= */
 
-.footer-grid {
+.footer-links {
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   flex-wrap: wrap;
 
   gap: 12px 28px;
-
-  padding-bottom: 30px;
-
-  border-bottom:
-    1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -92,9 +138,11 @@
   position: relative;
 
   display: inline-flex;
-  align-items: center;
 
-  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
 
   padding: 7px 3px;
 
@@ -119,6 +167,10 @@
     transform 0.3s ease;
 }
 
+
+/* =========================================================
+   FOOTER LINK UNDERLINE
+========================================================= */
 
 .footer-link::after {
   content: "";
@@ -161,25 +213,38 @@
 
 
 /* =========================================================
-   LIVE SUPPORT
+   LIVE SUPPORT LINK
 ========================================================= */
 
-.footer-link.live-support {
+.live-support-link {
   color: #fbbf24;
 
   font-weight: 700;
 }
 
 
-.footer-link.live-support:hover {
+.live-support-link:hover {
   color: #ffd76a;
 }
 
 
-.blink-icon {
-  display: inline-flex;
+/* =========================================================
+   LIVE DOT
+========================================================= */
 
-  font-size: 0.9rem;
+.live-dot {
+  width: 7px;
+  height: 7px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 4px rgba(34, 197, 94, 0.12),
+    0 0 12px rgba(34, 197, 94, 0.65);
 
   animation:
     livePulse 2s ease-in-out infinite;
@@ -187,6 +252,7 @@
 
 
 @keyframes livePulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -202,6 +268,7 @@
 
 /* =========================================================
    SOCIAL MEDIA SEPARATE CONTAINER
+   ONLY THIS SECTION HAS LIGHT BACKGROUND
 ========================================================= */
 
 .social-media-section {
@@ -209,11 +276,10 @@
 
   margin-top: 28px;
 
-  padding: 30px 25px 28px;
+  padding: 30px 25px 30px;
 
   box-sizing: border-box;
 
-  /* SCREENSHOT JESA LIGHT BLUE → WHITE */
   background:
     linear-gradient(
       105deg,
@@ -222,7 +288,8 @@
       #f7f7fb 100%
     );
 
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border:
+    1px solid rgba(255, 255, 255, 0.65);
 
   border-radius: 16px;
 
@@ -233,8 +300,10 @@
 
   overflow: hidden;
 }
+
+
 /* =========================================================
-   SUBTLE BLUE GLOW
+   SOCIAL SECTION GLOW
 ========================================================= */
 
 .social-media-section::before {
@@ -256,13 +325,13 @@
       rgba(96, 165, 250, 0.16),
       transparent 70%
     );
-display: none;
+
   pointer-events: none;
 }
 
 
 /* =========================================================
-   SOCIAL MEDIA HEADING
+   SOCIAL MEDIA TITLE
 ========================================================= */
 
 .social-media-title {
@@ -297,7 +366,7 @@ display: none;
 
 
 /* =========================================================
-   HEADING ACCENT
+   SOCIAL TITLE ACCENT
 ========================================================= */
 
 .social-media-title::after {
@@ -326,7 +395,7 @@ display: none;
 
 
 /* =========================================================
-   SOCIAL MEDIA
+   SOCIAL MEDIA BUTTON CONTAINER
 ========================================================= */
 
 .footer-social {
@@ -365,7 +434,6 @@ display: none;
 
   border-radius: 10px;
 
-  /* DEFAULT TEXT BLACK */
   color: #111111;
 
   background:
@@ -392,6 +460,21 @@ display: none;
     background 0.3s ease,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SOCIAL LABEL
+========================================================= */
+
+.social-label {
+  color: inherit;
+
+  line-height: 1;
+
+  white-space: nowrap;
 }
 
 
@@ -414,50 +497,56 @@ display: none;
 
   color: #ffffff;
 
+  flex-shrink: 0;
+
   transition:
     transform 0.3s ease,
+    box-shadow 0.3s ease,
     background 0.3s ease;
 }
 
 
 /* =========================================================
    DEFAULT BRAND COLORS
-   NO HOVER REQUIRED
 ========================================================= */
 
 /* X */
+
 .social-link.x-twitter .social-icon {
   background: #000000;
 }
 
 
 /* Facebook */
+
 .social-link.facebook .social-icon {
   background: #1877f2;
 }
 
 
 /* YouTube */
+
 .social-link.youtube .social-icon {
   background: #ff0000;
 }
 
 
 /* LinkedIn */
+
 .social-link.linkedin .social-icon {
   background: #0a66c2;
 }
 
 
 /* Pinterest */
+
 .social-link.pinterest .social-icon {
   background: #e60023;
 }
 
 
 /* =========================================================
-   HOVER
-   SAME COLORS + ORIGINAL LIFT EFFECT
+   SOCIAL HOVER
 ========================================================= */
 
 .social-link:hover {
@@ -467,7 +556,7 @@ display: none;
   color: #111111;
 
   background:
-    rgba(255, 255, 255, 0.60);
+    rgba(255, 255, 255, 0.65);
 
   border-color:
     rgba(96, 165, 250, 0.45);
@@ -480,57 +569,33 @@ display: none;
 .social-link:hover .social-icon {
   transform:
     scale(1.1);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.18);
 }
 
 
 /* =========================================================
-   HOVER BRAND COLORS
+   KEEP BRAND COLORS DURING HOVER
 ========================================================= */
 
-/* X */
 .social-link.x-twitter:hover .social-icon {
   background: #000000;
 }
 
 
-/* Facebook */
 .social-link.facebook:hover .social-icon {
   background: #1877f2;
 }
 
 
-/* YouTube */
 .social-link.youtube:hover .social-icon {
   background: #ff0000;
 }
 
 
-/* LinkedIn */
-.social-link.linkedin:hover {
-  color: #111111;
-
-  transform:
-    translateY(-5px) scale(1.05);
-
-  text-shadow:
-    0 0 15px rgba(10, 102, 194, 0.25);
-}
-
-
 .social-link.linkedin:hover .social-icon {
   background: #0a66c2;
-}
-
-
-/* Pinterest */
-.social-link.pinterest:hover {
-  color: #111111;
-
-  transform:
-    translateY(-5px) scale(1.05);
-
-  text-shadow:
-    0 0 15px rgba(230, 0, 35, 0.20);
 }
 
 
@@ -540,11 +605,139 @@ display: none;
 
 
 /* =========================================================
+   FIND US ONLINE / CRUNCHBASE
+========================================================= */
+
+.crunchbase-section {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  text-align: center;
+
+  border-top:
+    1px solid rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================================================
+   FIND US ONLINE TITLE
+========================================================= */
+
+.crunchbase-title {
+  margin: 0 0 13px;
+
+  color: #111111;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 1rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CRUNCHBASE LINK
+========================================================= */
+
+.crunchbase-link {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 20px;
+
+  text-decoration: none;
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.30);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.45);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.crunchbase-link:hover {
+  transform:
+    translateY(-3px);
+
+  background:
+    rgba(255, 255, 255, 0.70);
+
+  border-color:
+    rgba(255, 255, 255, 0.75);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   CRUNCHBASE LOGO
+========================================================= */
+
+.crunchbase-logo {
+  display: block;
+
+  width: 150px;
+
+  height: auto;
+
+  max-width: 100%;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.crunchbase-link:hover .crunchbase-logo {
+  transform:
+    scale(1.03);
+}
+
+
+/* =========================================================
    FOOTER CREDIT
 ========================================================= */
 
 .footer-credit {
-  padding-top: 23px;
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.08);
 
   text-align: center;
 
@@ -560,6 +753,8 @@ display: none;
   font-weight: 400;
 
   letter-spacing: 0.03em;
+
+  line-height: 1.6;
 }
 
 
@@ -573,20 +768,29 @@ display: none;
     padding-top: 60px;
   }
 
-  .footer-grid {
+
+  .footer-links {
     gap: 15px 35px;
   }
+
 
   .footer-link {
     font-size: 0.95rem;
   }
 
+
   .social-link {
     min-width: 140px;
   }
 
+
   .social-media-title {
     font-size: 1.45rem;
+  }
+
+
+  .crunchbase-logo {
+    width: 155px;
   }
 
 }
@@ -606,10 +810,13 @@ display: none;
   }
 
 
-  .footer-grid {
-    gap: 10px 20px;
-
+  .footer-links-section {
     padding-bottom: 25px;
+  }
+
+
+  .footer-links {
+    gap: 10px 20px;
   }
 
 
@@ -622,7 +829,7 @@ display: none;
     margin-top: 24px;
 
     padding:
-      27px 18px 25px;
+      27px 18px 27px;
 
     border-radius: 14px;
   }
@@ -639,6 +846,23 @@ display: none;
 
   .social-link {
     min-width: 125px;
+  }
+
+
+  .crunchbase-section {
+    margin-top: 27px;
+
+    padding-top: 20px;
+  }
+
+
+  .crunchbase-title {
+    font-size: 0.92rem;
+  }
+
+
+  .crunchbase-logo {
+    width: 145px;
   }
 
 }
@@ -658,7 +882,12 @@ display: none;
   }
 
 
-  .footer-grid {
+  .footer-links-section {
+    padding-bottom: 22px;
+  }
+
+
+  .footer-links {
     display: grid;
 
     grid-template-columns:
@@ -683,7 +912,7 @@ display: none;
     margin-top: 24px;
 
     padding:
-      23px 15px 24px;
+      23px 15px 25px;
 
     border-radius: 13px;
   }
@@ -730,7 +959,34 @@ display: none;
   }
 
 
+  .crunchbase-section {
+    margin-top: 24px;
+
+    padding-top: 18px;
+  }
+
+
+  .crunchbase-title {
+    font-size: 0.88rem;
+
+    margin-bottom: 11px;
+  }
+
+
+  .crunchbase-link {
+    padding:
+      8px 17px;
+  }
+
+
+  .crunchbase-logo {
+    width: 135px;
+  }
+
+
   .footer-credit {
+    margin-top: 24px;
+
     padding-top: 20px;
 
     font-size: 0.72rem;
@@ -747,7 +1003,13 @@ display: none;
 
 @media (max-width: 360px) {
 
-  .footer-grid {
+  .aura-footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+
+  .footer-links {
     grid-template-columns: 1fr;
   }
 
@@ -772,6 +1034,16 @@ display: none;
 
   .social-media-title::after {
     width: 45px;
+  }
+
+
+  .social-link {
+    max-width: 260px;
+  }
+
+
+  .crunchbase-logo {
+    width: 125px;
   }
 
 }
