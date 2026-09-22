@@ -35,6 +35,10 @@ const footerLinks = [
     path: "/terms",
   },
   {
+    label: "Our Story",
+    path: "/our-story",
+  },
+  {
     label: "Return & Refund Policy",
     path: "/return-policy",
   },
@@ -46,10 +50,7 @@ const footerLinks = [
     label: "Contact Us",
     path: "/contact",
   },
-  {
-    label: "Our Story",
-    path: "/our-story",
-  },
+  
   {
     label: "Live Support",
     path: "/live-support",
