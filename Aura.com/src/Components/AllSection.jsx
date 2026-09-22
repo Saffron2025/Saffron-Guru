@@ -95,7 +95,7 @@ const socialLinks = [
 
   {
     label: "Pinterest",
-    url: "https://in.pinterest.com/SaffronGuruSince2016/",
+    url: "https://www.pinterest.com/SaffronGuruSince2016/",
     icon: <FaPinterestP />,
     className: "pinterest",
   },

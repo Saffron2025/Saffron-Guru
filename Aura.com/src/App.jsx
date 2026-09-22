@@ -5,7 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-
+import OurStory from "./Pages/OurStory";
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
 import Layout from "./Layout";
@@ -537,6 +537,11 @@ const App = () => {
               </Layout>
             }
           />
+          <Route
+            path="/our-story"
+            element={<OurStory />}
+          />
+
 
 
           {/* =========================

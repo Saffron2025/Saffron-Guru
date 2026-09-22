@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { GiConfirmed, GiReceiveMoney, GiLockedChest } from 'react-icons/gi';
+import TenYear from '../Components/10Year';
+import {
+  GiConfirmed,
+  GiReceiveMoney,
+  GiLockedChest
+} from 'react-icons/gi';
+
 import { MdSupportAgent } from 'react-icons/md';
 import { PiTelevisionSimpleBold } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 import CookieConsent from '../Components/CookieConsent';
 import AppNavbar from '../Components/AppNavbar';
 import Footer from '../Components/Footer';
+
 import {
   Clock,
   ShieldOff,
@@ -21,6 +28,7 @@ import {
 
 import './Home.css';
 
+
 const Hero = () => {
 
   // Call Us Toggle
@@ -28,10 +36,12 @@ const Hero = () => {
 
   return (
     <>
+      <AppNavbar />
+
       {/* =========================================
-          CALL US TOGGLE - RIGHT MIDDLE
+          CALL US TOGGLE
       ========================================== */}
-<AppNavbar/>
+
       <div
         className={`aura-call-toggle ${
           callOpen ? 'aura-call-toggle-open' : ''
@@ -122,7 +132,12 @@ const Hero = () => {
 
           <Row className="align-items-center">
 
-            <Col md={6} className="aura-hero-left-col">
+            {/* LEFT CONTENT */}
+
+            <Col
+              md={6}
+              className="aura-hero-left-col"
+            >
 
               <h1 className="aura-hero-title fade-in-top">
                 Complete <br />
@@ -141,6 +156,8 @@ const Hero = () => {
 
             </Col>
 
+
+            {/* RIGHT IMAGE */}
 
             <Col
               md={6}
@@ -163,7 +180,7 @@ const Hero = () => {
 
       </section>
 
-
+<TenYear/>
       {/* =========================================
           TRUST SECTION
       ========================================== */}
@@ -174,9 +191,14 @@ const Hero = () => {
 
           <Row className="text-center justify-content-center gx-3 gy-4">
 
-            {/* 1 */}
 
-            <Col xs={12} sm={6} md={4}>
+            {/* 1 - BBB */}
+
+            <Col
+              xs={12}
+              sm={6}
+              md={4}
+            >
 
               <a
                 href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick"
@@ -202,7 +224,7 @@ const Hero = () => {
             <CookieConsent />
 
 
-            {/* 2 */}
+            {/* 2 - TrustedSite */}
 
             <Col
               xs={12}
@@ -233,7 +255,7 @@ const Hero = () => {
             </Col>
 
 
-            {/* 3 */}
+            {/* 3 - Support */}
 
             <Col
               xs={12}
@@ -259,7 +281,7 @@ const Hero = () => {
             </Col>
 
 
-            {/* 4 */}
+            {/* 4 - Money Back */}
 
             <Col
               xs={12}
@@ -288,7 +310,7 @@ const Hero = () => {
             </Col>
 
 
-            {/* 5 */}
+            {/* 5 - Security */}
 
             <Col
               xs={12}
@@ -314,7 +336,7 @@ const Hero = () => {
             </Col>
 
 
-            {/* 6 */}
+            {/* 6 - Devices */}
 
             <Col
               xs={12}
@@ -354,7 +376,7 @@ const Hero = () => {
 
         <div className="row align-items-center justify-content-center gx-5">
 
-          {/* Image Section */}
+          {/* IMAGE */}
 
           <div className="col-lg-6 mb-4 mb-lg-0">
 
@@ -377,7 +399,7 @@ const Hero = () => {
           </div>
 
 
-          {/* Content Section */}
+          {/* CONTENT */}
 
           <div className="col-lg-5 text-content">
 
@@ -444,51 +466,65 @@ const Hero = () => {
 
 
       {/* =========================================
-          AURA PROMISE SECTION
+          ONLINE PROTECTION SECTION
       ========================================== */}
-<section className="online-protection-section">
 
-  <div className="online-protection-content">
+      <section className="online-protection-section">
 
-    <div className="protection-badge">
-      <span className="protection-dot"></span>
-      ONLINE PROTECTION
-    </div>
+        <div className="online-protection-content">
 
-    <h2 className="online-protection-title">
-      Effortless IT Help.
-      <span> Anytime. Anywhere.</span>
-    </h2>
+          <div className="protection-badge">
 
-    <p className="online-protection-text">
-      Get professional, fast, and secure support for your home or business
-      with remote access or an on-site technician whenever you need us.
-    </p>
+            <span className="protection-dot"></span>
 
-  </div>
+            ONLINE PROTECTION
+
+          </div>
 
 
-  {/* IMAGE */}
-  <div className="online-protection-image-wrapper">
+          <h2 className="online-protection-title">
 
-    <div className="image-corner-decoration decoration-one"></div>
-    <div className="image-corner-decoration decoration-two"></div>
+            Effortless IT Help.
 
-    <img
-      src="/Hero/SP.WebP"
-      alt="Online Protection"
-      className="online-protection-image"
-    />
+            <span>
+              Anytime. Anywhere.
+            </span>
 
-  </div>
+          </h2>
 
-</section>
-<Footer/>
 
-      {/* Custom Chat Button - Jivo ke left me */}
+          <p className="online-protection-text">
+            Get professional, fast, and secure support for your home or business
+            with remote access or an on-site technician whenever you need us.
+          </p>
+
+        </div>
+
+
+        {/* IMAGE */}
+
+        <div className="online-protection-image-wrapper">
+
+          <div className="image-corner-decoration decoration-one"></div>
+
+          <div className="image-corner-decoration decoration-two"></div>
+
+          <img
+            src="/Hero/SP.WebP"
+            alt="Online Protection"
+            className="online-protection-image"
+          />
+
+        </div>
+
+      </section>
+
+
+      <Footer />
 
     </>
   );
 };
+
 
 export default Hero;
