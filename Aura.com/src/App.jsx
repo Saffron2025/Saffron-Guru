@@ -539,7 +539,7 @@ const App = () => {
           />
           <Route
             path="/our-story"
-            element={<OurStory />}
+            element={<Layout><OurStory /></Layout>}
           />
 
 
