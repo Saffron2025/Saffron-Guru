@@ -510,6 +510,7 @@
    DEFAULT BRAND COLORS
 ========================================================= */
 
+
 /* X */
 
 .social-link.x-twitter .social-icon {
@@ -521,6 +522,19 @@
 
 .social-link.facebook .social-icon {
   background: #1877f2;
+}
+
+
+/* Instagram */
+
+.social-link.instagram .social-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
 }
 
 
@@ -586,6 +600,19 @@
 
 .social-link.facebook:hover .social-icon {
   background: #1877f2;
+}
+
+
+/* Instagram */
+
+.social-link.instagram:hover .social-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
 }
 
 

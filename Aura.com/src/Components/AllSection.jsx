@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import {
   FaFacebookF,
+  FaInstagram,
   FaYoutube,
   FaLinkedinIn,
   FaPinterestP,
@@ -11,7 +12,6 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import "./AllSection.css";
-
 
 // ===============================
 // FOOTER NAVIGATION LINKS
@@ -53,7 +53,6 @@ const footerLinks = [
   },
 ];
 
-
 // ===============================
 // SOCIAL MEDIA LINKS
 // ===============================
@@ -71,6 +70,13 @@ const socialLinks = [
     url: "https://www.facebook.com/saffronguru/",
     icon: <FaFacebookF />,
     className: "facebook",
+  },
+
+  {
+    label: "Instagram",
+    url: "https://www.instagram.com/saffrongurullc/",
+    icon: <FaInstagram />,
+    className: "instagram",
   },
 
   {
@@ -95,6 +101,9 @@ const socialLinks = [
   },
 ];
 
+// ===============================
+// AURA FOOTER COMPONENT
+// ===============================
 
 const AuraFooter = () => {
   return (
@@ -142,7 +151,6 @@ const AuraFooter = () => {
 
         </div>
 
-
         {/* =========================================
             SOCIAL MEDIA SECTION
         ========================================= */}
@@ -152,7 +160,6 @@ const AuraFooter = () => {
           <h3 className="social-media-title">
             CONNECT WITH US ON SOCIAL MEDIA
           </h3>
-
 
           {/* -----------------------------------------
               SOCIAL MEDIA BUTTONS
@@ -171,6 +178,7 @@ const AuraFooter = () => {
                 style={{
                   animationDelay: `${index * 0.15}s`,
                 }}
+                aria-label={social.label}
               >
 
                 <span className="social-icon">
@@ -187,7 +195,6 @@ const AuraFooter = () => {
 
           </div>
 
-
           {/* =========================================
               FIND US ONLINE / CRUNCHBASE
           ========================================= */}
@@ -197,7 +204,6 @@ const AuraFooter = () => {
             <p className="crunchbase-title">
               Find Us Online
             </p>
-
 
             <a
               href="https://www.crunchbase.com/organization/saffron-guru#overview"
@@ -219,7 +225,6 @@ const AuraFooter = () => {
 
         </div>
 
-
         {/* =========================================
             COPYRIGHT
         ========================================= */}
@@ -236,6 +241,5 @@ const AuraFooter = () => {
     </footer>
   );
 };
-
 
 export default AuraFooter;
