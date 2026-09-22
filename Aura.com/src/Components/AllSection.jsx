@@ -47,6 +47,10 @@ const footerLinks = [
     path: "/contact",
   },
   {
+    label: "Our Story",
+    path: "/our-story",
+  },
+  {
     label: "Live Support",
     path: "/live-support",
     live: true,
