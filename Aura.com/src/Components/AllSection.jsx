@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -50,7 +51,6 @@ const footerLinks = [
     label: "Contact Us",
     path: "/contact",
   },
-  
   {
     label: "Live Support",
     path: "/live-support",
@@ -69,12 +69,7 @@ const socialLinks = [
     icon: <FaXTwitter />,
     className: "x-twitter",
   },
-{
-  label: "Medium",
-  url: "https://medium.com/@SaffronGuruLLC",
-  icon: <FaMedium />,
-  className: "medium",
-},
+
   {
     label: "Facebook",
     url: "https://www.facebook.com/saffronguru/",
@@ -206,7 +201,7 @@ const AuraFooter = () => {
           </div>
 
           {/* =========================================
-              FIND US ONLINE / CRUNCHBASE
+              FIND US ONLINE
           ========================================= */}
 
           <div className="crunchbase-section">
@@ -215,21 +210,51 @@ const AuraFooter = () => {
               Find Us Online
             </p>
 
-            <a
-              href="https://www.crunchbase.com/organization/saffron-guru#overview"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="crunchbase-link"
-              aria-label="Saffron Guru on Crunchbase"
-            >
+            <div className="find-online-links">
 
-              <img
-                src="/Products/crunchbase-logo.webp"
-                alt="Crunchbase"
-                className="crunchbase-logo"
-              />
+              {/* -----------------------------------------
+                  CRUNCHBASE
+              ----------------------------------------- */}
 
-            </a>
+              <a
+                href="https://www.crunchbase.com/organization/saffron-guru#overview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="crunchbase-link"
+                aria-label="Saffron Guru on Crunchbase"
+              >
+
+                <img
+                  src="/Products/crunchbase-logo.webp"
+                  alt="Crunchbase"
+                  className="crunchbase-logo"
+                />
+
+              </a>
+
+              {/* -----------------------------------------
+                  MEDIUM
+              ----------------------------------------- */}
+
+              <a
+                href="https://medium.com/@SaffronGuruLLC"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="medium-find-link"
+                aria-label="Saffron Guru on Medium"
+              >
+
+                <span className="medium-find-icon">
+                  <FaMedium />
+                </span>
+
+                <span className="medium-find-text">
+                  Medium
+                </span>
+
+              </a>
+
+            </div>
 
           </div>
 

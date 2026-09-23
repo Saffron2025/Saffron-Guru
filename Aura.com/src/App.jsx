@@ -530,7 +530,7 @@ const App = () => {
           />
 
           <Route
-            path="/article/:id"
+            path="/articles/:id"
             element={
               <Layout>
                 <ArticleDetail />

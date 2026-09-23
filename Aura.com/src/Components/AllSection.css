@@ -1110,3 +1110,124 @@
 .social-link.medium:hover .social-icon {
   color: #ffffff;
 }
+
+/* =========================================================
+   FIND US ONLINE LINKS
+   CRUNCHBASE + MEDIUM
+========================================================= */
+
+.find-online-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   MEDIUM FIND US ONLINE
+========================================================= */
+
+.medium-find-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 42px;
+  padding: 8px 18px;
+
+  text-decoration: none;
+
+  border-radius: 9px;
+
+  color: #111111;
+
+  background: rgba(255, 255, 255, 0.30);
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  font-family:
+    "Poppins",
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* Medium Logo */
+
+.medium-find-icon {
+  width: 25px;
+  height: 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #000000;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  flex-shrink: 0;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* Medium Text */
+
+.medium-find-text {
+  color: inherit;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+
+/* Medium Hover */
+
+.medium-find-link:hover {
+  transform: translateY(-3px);
+
+  color: #ffffff;
+
+  background: #000000;
+
+  border-color: #000000;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+.medium-find-link:hover .medium-find-icon {
+  background: #ffffff;
+
+  color: #000000;
+
+  transform: scale(1.08);
+
+  box-shadow:
+    0 4px 10px rgba(255, 255, 255, 0.20);
+}

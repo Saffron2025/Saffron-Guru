@@ -42,7 +42,7 @@ const ArticlesList = () => {
 
                 {/* IMAGE */}
                 <Link
-                  to={`/article/${a.id}`}
+                  to={`/articles/${a.id}`}
                   className="article-list-image-link"
                 >
                   <div className="article-list-image-wrap">
@@ -87,7 +87,7 @@ const ArticlesList = () => {
 
                   {/* TITLE */}
                   <h2 className="article-list-heading">
-                    <Link to={`/article/${a.id}`}>
+                    <Link to={`/articles/${a.id}`}>
                       {a.title}
                     </Link>
                   </h2>
@@ -101,7 +101,7 @@ const ArticlesList = () => {
 
                   {/* BUTTON */}
                   <Link
-                    to={`/article/${a.id}`}
+                    to={`/articles/${a.id}`}
                     className="article-read-btn"
                   >
                     <span>
