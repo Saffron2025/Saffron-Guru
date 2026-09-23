@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
   FaPinterestP,
+  FaMedium,
 } from "react-icons/fa";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -69,7 +69,12 @@ const socialLinks = [
     icon: <FaXTwitter />,
     className: "x-twitter",
   },
-
+{
+  label: "Medium",
+  url: "https://medium.com/@SaffronGuruLLC",
+  icon: <FaMedium />,
+  className: "medium",
+},
   {
     label: "Facebook",
     url: "https://www.facebook.com/saffronguru/",

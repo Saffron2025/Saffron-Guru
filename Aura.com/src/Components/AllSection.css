@@ -1090,3 +1090,23 @@
   }
 
 }
+
+/* Medium - visible before hover */
+.social-link.medium {
+  color: #000000;
+}
+
+.social-link.medium .social-icon {
+  color: #000000;
+}
+
+.social-link.medium:hover {
+  color: #ffffff;
+  background: #000000;
+  border-color: #000000;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.social-link.medium:hover .social-icon {
+  color: #ffffff;
+}

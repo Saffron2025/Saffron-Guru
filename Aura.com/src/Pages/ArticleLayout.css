@@ -308,3 +308,817 @@
   margin-top: 15px !important;
   margin-bottom: 0 !important;
 }
+
+/* =========================================================
+   SAFFRON GURU - ARTICLE LIST
+   PREMIUM CYBERSECURITY STYLE
+========================================================= */
+
+
+/* =========================================================
+   MAIN ARTICLE PAGE BACKGROUND
+========================================================= */
+
+.article-wrapper {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 115px 5% 90px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 5% 15%,
+      rgba(0, 183, 255, 0.09),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 75%,
+      rgba(99, 102, 241, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #f2f7fc 50%,
+      #f8fbff 100%
+    );
+}
+
+
+/* =========================================================
+   ARTICLE MAIN CARD
+========================================================= */
+
+.article-list-card {
+  position: relative;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 55px 55px 65px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 25px 80px rgba(15, 23, 42, 0.10);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.articles-list-header {
+  max-width: 850px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.articles-list-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 7px 15px;
+
+  margin-bottom: 15px;
+
+  border-radius: 50px;
+
+  background:
+    rgba(0, 140, 255, 0.07);
+
+  border:
+    1px solid rgba(0, 140, 255, 0.15);
+
+  color: #0077b6;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.article-list-card .article-title {
+  margin: 0;
+
+  color: #071b33;
+
+  font-size:
+    clamp(42px, 5vw, 62px);
+
+  line-height: 1.05;
+
+  font-weight: 850;
+
+  letter-spacing: -1.5px;
+}
+
+
+.article-list-card .article-title span {
+  background:
+    linear-gradient(
+      90deg,
+      #008cff 0%,
+      #635bff 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   HEADER SUBTITLE
+========================================================= */
+
+.articles-list-subtitle {
+  max-width: 680px;
+
+  margin: 18px auto 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   ARTICLE LIST CONTAINER
+========================================================= */
+
+.articles-list-container {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   ARTICLE ITEM
+========================================================= */
+
+.article-list-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    340px minmax(0, 1fr);
+
+  gap: 35px;
+
+  padding: 32px 0;
+
+  border-bottom:
+    1px solid rgba(15, 23, 42, 0.08);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* Last item */
+
+.article-list-item:last-child {
+  border-bottom: none;
+
+  padding-bottom: 5px;
+}
+
+
+/* =========================================================
+   IMAGE LINK
+========================================================= */
+
+.article-list-image-link {
+  display: block;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.article-list-image-wrap {
+  width: 100%;
+  height: 215px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #f1f6fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.10);
+
+  border: 1px solid rgba(0, 140, 255, 0.12);
+}
+
+
+.article-list-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  /* poori image visible */
+  object-fit: contain;
+
+  /* image ke around halka space */
+  padding: 6px;
+
+  box-sizing: border-box;
+
+  transition: transform 0.4s ease;
+}
+
+
+.article-list-item:hover .article-list-image {
+  transform: scale(1.03);
+}
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.article-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 45%,
+      rgba(5, 20, 40, 0.55) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE GLOW
+========================================================= */
+
+.article-list-image-wrap::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 3;
+
+  inset: 0;
+
+  border-radius: 20px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.article-category-badge {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 16px;
+
+  bottom: 16px;
+
+  max-width: calc(100% - 32px);
+
+  padding: 7px 13px;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  border-radius: 50px;
+
+  background:
+    rgba(5, 20, 40, 0.78);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.20);
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.article-list-item:hover
+.article-list-image-wrap {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 42px
+    rgba(0, 140, 255, 0.16);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.article-list-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.article-list-meta {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin: 0 0 11px;
+
+  color: #8491a3;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+.article-author {
+  color: #0077b6;
+
+  font-weight: 700;
+}
+
+
+.article-meta-dot {
+  color: #008cff;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   ARTICLE HEADING
+========================================================= */
+
+.article-list-heading {
+  margin: 0 0 14px;
+
+  font-size: 25px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+
+.article-list-heading a {
+  color: #071b33;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.article-list-heading a:hover {
+  color: #008cff;
+}
+
+
+/* =========================================================
+   LEAD
+========================================================= */
+
+.article-list-lead {
+  max-width: 750px;
+
+  margin: 0 0 20px;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 3;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   READ FULL ARTICLE BUTTON
+========================================================= */
+
+.article-read-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  width: fit-content;
+
+  padding: 11px 17px 11px 19px;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #008cff 0%,
+      #635bff 100%
+    );
+
+  color: #ffffff !important;
+
+  text-decoration: none !important;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 22px
+    rgba(0, 140, 255, 0.20);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.article-read-btn:hover {
+  color: #ffffff !important;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 30px
+    rgba(0, 140, 255, 0.30);
+}
+
+
+/* =========================================================
+   BUTTON ARROW
+========================================================= */
+
+.article-read-arrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 19px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.article-read-btn:hover
+.article-read-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   SMALL BLUE LINE
+========================================================= */
+
+.article-list-content::before {
+  content: "";
+
+  width: 35px;
+
+  height: 3px;
+
+  margin-bottom: 13px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #008cff,
+      #635bff
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .article-list-card {
+    padding: 45px 35px 55px;
+  }
+
+
+  .article-list-item {
+    grid-template-columns:
+      280px minmax(0, 1fr);
+
+    gap: 25px;
+  }
+
+
+  .article-list-image-wrap {
+    height: 190px;
+  }
+
+
+  .article-list-heading {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 750px) {
+
+  .article-wrapper {
+    padding:
+      95px
+      4%
+      65px;
+  }
+
+
+  .article-list-card {
+    padding:
+      40px
+      28px
+      50px;
+
+    border-radius: 25px;
+  }
+
+
+  .article-list-item {
+    grid-template-columns:
+      240px minmax(0, 1fr);
+
+    gap: 20px;
+  }
+
+
+  .article-list-image-wrap {
+    height: 170px;
+
+    border-radius: 17px;
+  }
+
+
+  .article-list-heading {
+    font-size: 20px;
+  }
+
+
+  .article-list-lead {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .article-wrapper {
+    padding:
+      90px
+      15px
+      55px;
+  }
+
+
+  .article-list-card {
+    padding:
+      32px
+      20px
+      40px;
+
+    border-radius: 22px;
+  }
+
+
+  .articles-list-header {
+    margin-bottom: 30px;
+  }
+
+
+  .articles-list-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .article-list-card .article-title {
+    font-size: 38px;
+  }
+
+
+  .articles-list-subtitle {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* ARTICLE */
+
+  .article-list-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 27px 0;
+  }
+
+
+  .article-list-image-wrap {
+    width: 100%;
+
+    height: 220px;
+
+    border-radius: 17px;
+  }
+
+
+  .article-list-content {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+
+  .article-list-content::before {
+    margin-bottom: 11px;
+  }
+
+
+  .article-list-heading {
+    font-size: 21px;
+
+    line-height: 1.35;
+  }
+
+
+  .article-list-meta {
+    font-size: 11px;
+  }
+
+
+  .article-list-lead {
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    -webkit-line-clamp: 4;
+  }
+
+
+  .article-read-btn {
+    width: fit-content;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .article-wrapper {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+
+  .article-list-card {
+    padding:
+      28px
+      17px
+      35px;
+  }
+
+
+  .article-list-card .article-title {
+    font-size: 34px;
+  }
+
+
+  .article-list-image-wrap {
+    height: 195px;
+  }
+
+
+  .article-list-heading {
+    font-size: 19px;
+  }
+
+
+  .article-read-btn {
+    width: 100%;
+  }
+
+}
