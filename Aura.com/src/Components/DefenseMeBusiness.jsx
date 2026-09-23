@@ -14,7 +14,7 @@ const DefendMeBusiness = () => {
         />
       </div>
 
-      <h2 className="business-heading">💼 DefendMePro for Business</h2>
+      <h2 className="business-heading">💼 DefendMe Pro™ for Business</h2>
       <p className="business-subtitle">Digital Protection that Works Just as Hard as You Do.</p>
 
       <p className="business-point">
@@ -32,7 +32,7 @@ const DefendMeBusiness = () => {
 
       <div className="business-warning">
         ⚠️ One breach can bankrupt a business.<br />
-        <strong>DefendMePro makes sure yours isn’t next.</strong>
+        <strong>DefendMe Pro™ makes sure yours isn’t next.</strong>
       </div>
     </section>
   );

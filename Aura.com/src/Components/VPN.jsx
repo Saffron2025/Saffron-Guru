@@ -40,7 +40,7 @@ const VpnPrivacy = ({ expand }) => {
         </p>
 
         <p className="vpn-description">
-          DefendMePro helps protect your online activity with privacy-focused
+          DefendMe Pro™ helps protect your online activity with privacy-focused
           tools designed to make your internet connection more secure and your
           personal information less exposed.
         </p>

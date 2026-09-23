@@ -20,7 +20,7 @@ const WhatDefendMeProIncludes = () => {
         </h2>
 
         <p className="includes-intro">
-          DefendMePro brings together multiple layers of protection to help
+          DefendMe Pro™ brings together multiple layers of protection to help
           you stay safer from scams, suspicious activity, phishing attempts,
           remote access threats, and other digital risks.
         </p>
@@ -213,7 +213,7 @@ const WhatDefendMeProIncludes = () => {
     <div id="what-defendmepro-includes">
 
       <ExpandableSection
-        title="🧰 What DefendMePro Includes"
+        title="🧰 What DefendMe Pro™ Includes"
         content={content}
       />
 

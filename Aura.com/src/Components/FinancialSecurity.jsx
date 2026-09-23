@@ -42,7 +42,7 @@ const content = (
           <h4>Smart Financial Protection</h4>
 
           <p>
-            DefendMePro helps identify suspicious activity, detect
+            DefendMe Pro™ helps identify suspicious activity, detect
             payment-related scams, and guide you away from dangerous
             transactions before it's too late.
           </p>

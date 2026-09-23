@@ -22,7 +22,7 @@ const content = (
 
       <p className="fraud-detection-description">
         Digital fraud moves fast — from fake transactions to suspicious
-        account activity. DefendMePro helps you stay aware of unusual
+        account activity. DefendMe Pro™ helps you stay aware of unusual
         financial activity and potential security risks.
       </p>
 

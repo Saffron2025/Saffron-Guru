@@ -122,7 +122,7 @@ const ProtectionShowcase = () => {
         <h1>
           Secure Your World with
           <br />
-          <span>DefendMePro™</span>
+          <span>DefendMe Pro™</span>
         </h1>
 
         <p>
@@ -206,7 +206,7 @@ const ProtectionShowcase = () => {
             </h2>
 
             <p className="ps-intro-main">
-              <strong>DefendMePro™</strong> protects you from the
+              <strong>DefendMe Pro™</strong> protects you from the
               digital threats that traditional antivirus can't handle.
             </p>
 

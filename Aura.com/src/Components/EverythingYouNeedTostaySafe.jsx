@@ -108,7 +108,7 @@ const EverythingSafe = ({ expand }) => {
               </p>
 
               <p>
-                DefendMePro helps you monitor for potential leaks,
+                DefendMe Pro™ helps you monitor for potential leaks,
                 unauthorized use, or suspicious activity connected to your
                 personal information.
               </p>
@@ -140,7 +140,7 @@ const EverythingSafe = ({ expand }) => {
               </p>
 
               <p>
-                DefendMePro adds an extra layer of protection designed to help
+                DefendMe Pro™ adds an extra layer of protection designed to help
                 reduce exposure to unknown malware, ransomware, and suspicious
                 exploit attempts.
               </p>

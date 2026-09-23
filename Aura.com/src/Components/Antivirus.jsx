@@ -41,7 +41,7 @@ const Antivirus = ({ expand }) => {
         </p>
 
         <p className="antivirus-description">
-          DefendMePro goes beyond basic antivirus protection by helping secure
+          DefendMe Pro™ goes beyond basic antivirus protection by helping secure
           your devices and reduce exposure to suspicious activity.
         </p>
 

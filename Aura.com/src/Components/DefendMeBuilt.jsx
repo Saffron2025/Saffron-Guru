@@ -17,7 +17,7 @@ const DefendMeBuilt = () => {
 
           <h2 className="defendmepro-heading">  
             That’s Why We Built <br />
-            <span className="gradient-text">DefendMePro.</span>  
+            <span className="gradient-text">DefendMe Pro™</span>  
           </h2>  
 
           <p className="defendmepro-intro">  

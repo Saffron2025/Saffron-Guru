@@ -37,7 +37,7 @@ const SpamCallProtection = ({ expand }) => {
         </p>
 
         <p className="spam-call-description">
-          DefendMePro helps identify and block known spam numbers, filter
+          DefendMe Pro™ helps identify and block known spam numbers, filter
           telemarketers, and reduce unwanted robocall interruptions.
         </p>
 

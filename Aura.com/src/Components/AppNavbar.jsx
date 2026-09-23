@@ -309,7 +309,7 @@ const AppNavbar = () => {
               as={Link}
               to="/DefendPro"
             >
-              DefendMePro™
+              DefendMe Pro™
             </Nav.Link>
 
 

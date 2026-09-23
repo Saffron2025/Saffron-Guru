@@ -89,7 +89,7 @@ const DefendMePro = () => {
                 <span>SMART SECURITY</span>
 
                 <h1>
-                  DefendMe<span>Pro™</span>
+                  DefendMe<span> Pro™</span>
                 </h1>
               </div>
 
@@ -108,7 +108,7 @@ const DefendMePro = () => {
             </p>
 
             <p className="hero-description hero-description-strong">
-              <strong>DefendMePro</strong> helps you stay aware, protected,
+              <strong>DefendMe Pro™</strong> helps you stay aware, protected,
               and prepared against the threats traditional security can miss.
             </p>
 

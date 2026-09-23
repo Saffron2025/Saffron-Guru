@@ -41,7 +41,7 @@ const PasswordManager = ({ expand }) => {
         </p>
 
         <p className="security-feature-description">
-          DefendMePro includes a secure password management system designed to
+          DefendMe Pro™ includes a secure password management system designed to
           help you create, store, and manage strong passwords securely across
           your devices.
         </p>
