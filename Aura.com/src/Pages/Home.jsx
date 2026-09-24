@@ -125,61 +125,94 @@ const Hero = () => {
 
       <section className="aura-hero-section d-flex align-items-center">
 
-        <div className="wing wing-left"></div>
-        <div className="wing wing-right"></div>
+  {/* Decorative Wings */}
+  <div className="wing wing-left"></div>
+  <div className="wing wing-right"></div>
 
-        <Container>
+  <Container>
+    <Row className="align-items-center">
 
-          <Row className="align-items-center">
+      {/* ================= LEFT CONTENT ================= */}
+      <Col
+        md={6}
+        className="aura-hero-left-col"
+      >
 
-            {/* LEFT CONTENT */}
-
-            <Col
-              md={6}
-              className="aura-hero-left-col"
-            >
-
-              <h1 className="aura-hero-title fade-in-top">
-                Complete <br />
-                Online Protection
-              </h1>
-
-              <strong className="aura-hero-subheadline glow-text">
-                Remote + On-Site IT Support for Homes and Small Businesses
-              </strong>
-
-              <p className="aura-hero-description fade-in-bottom">
-                From tech troubles to identity theft to scam protection —
-                we secure your home & business with AI-powered tools and
-                real human support. Works across all your devices.
-              </p>
-
-            </Col>
+        {/* SERVING IMAGE */}
+        <div className="hero-serving-image-wrapper">
+          <img
+            src="/Products/serving-badge.webp"
+            alt="Serving Customers"
+            className="hero-serving-image"
+          />
+        </div>
 
 
-            {/* RIGHT IMAGE */}
+        {/* MAIN HEADER */}
+        <h1 className="aura-hero-title">
+          Expert IT Support <br />
+          & Complete Online Protection
+        </h1>
 
-            <Col
-              md={6}
-              className="aura-hero-right-col d-flex justify-content-center"
-            >
 
-              <div className="aura-mockup-glow-ring pulse-ring"></div>
+        {/* SUB HEADER */}
+        <h2 className="aura-hero-subheadline">
+          Remote & On-Site Tech Assistance for Homes and Small Businesses
+        </h2>
 
-              <img
-                src="/Hero/Header Banner Img.avif"
-                alt="App Preview"
-                className="aura-iphone-mockup hover-tilt"
-              />
 
-            </Col>
+        {/* 7 DAYS IMAGE */}
+        <div className="hero-days-image-wrapper">
+          <img
+            src="/Products/available-7-days.webp"
+            alt="Available 7 Days a Week"
+            className="hero-days-image"
+          />
+        </div>
 
-          </Row>
 
-        </Container>
+        {/* DESCRIPTION */}
+        <p className="aura-hero-description">
+          From everyday tech troubles to evolving digital threats, our
+          advanced security solutions and real human support keep your
+          technology running smoothly and help you stay safe online in an
+          increasingly complex digital world, with protection against
+          identity theft, online scams, and hacking attempts.
+        </p>
 
-      </section>
 
+        {/* THIRD IMAGE */}
+        <div className="hero-third-image-wrapper">
+          <img
+            src="/Products/online-support.webp"
+            alt="Online IT Support"
+            className="hero-third-image"
+          />
+        </div>
+
+      </Col>
+
+
+      {/* ================= RIGHT IMAGE ================= */}
+      <Col
+        md={6}
+        className="aura-hero-right-col d-flex justify-content-center"
+      >
+
+        <div className="aura-mockup-glow-ring pulse-ring"></div>
+
+        <img
+          src="/Hero/Header Banner Img.avif"
+          alt="Complete Online Protection"
+          className="aura-iphone-mockup hover-tilt"
+        />
+
+      </Col>
+
+    </Row>
+  </Container>
+
+</section>
 <TenYear/>
       {/* =========================================
           TRUST SECTION
