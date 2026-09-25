@@ -216,10 +216,16 @@
    LIVE SUPPORT LINK
 ========================================================= */
 
-.live-support-link {
-  color: #fbbf24;
+/* =========================================================
+   LIVE SUPPORT — NEXT LINE & CENTER
+========================================================= */
 
-  font-weight: 700;
+.live-support-link {
+  flex-basis: 100%;
+  width: max-content;
+  margin: 8px auto 0;
+
+  justify-content: center;
 }
 
 
@@ -1176,4 +1182,81 @@
     height: 46px;
   }
 
+}
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-credit {
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: center;
+
+  color: #8190a6;
+
+  font-family:
+    "Poppins",
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Copyright Symbol */
+
+.copyright-symbol {
+  width: 18px;
+  height: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #8b9ab0;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  border: 1px solid rgba(139, 154, 176, 0.65);
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   COPYRIGHT — MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+  .footer-credit {
+    margin-top: 20px;
+    padding-top: 16px;
+
+    gap: 7px;
+
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+  }
+
+  .copyright-symbol {
+    width: 16px;
+    height: 16px;
+
+    font-size: 0.7rem;
+  }
 }

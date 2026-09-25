@@ -354,12 +354,14 @@ const AuraFooter = () => {
             COPYRIGHT
         ========================================= */}
 
-        <div className="footer-credit">
+        {/* =========================================
+    COPYRIGHT
+========================================= */}
 
-          &copy; {new Date().getFullYear()} Saffron Guru LLC.
-          All rights reserved.
-
-        </div>
+<div className="footer-credit">
+  <span className="copyright-symbol">©</span>
+  <span>2016–2026 Saffron Guru LLC. All rights reserved.</span>
+</div>
 
       </div>
 
