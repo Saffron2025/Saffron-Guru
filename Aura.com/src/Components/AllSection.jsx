@@ -120,9 +120,9 @@ const AuraFooter = () => {
 
       <div className="footer-container">
 
-        {/* -----------------------------------------
+        {/* =========================================
             FOOTER LINKS
-        ----------------------------------------- */}
+        ========================================= */}
 
         <div className="footer-links-section">
 
@@ -133,7 +133,6 @@ const AuraFooter = () => {
           <div className="footer-links">
 
             {footerLinks.map((link, index) => (
-
               <Link
                 key={index}
                 to={link.path}
@@ -141,15 +140,12 @@ const AuraFooter = () => {
                   link.live ? "live-support-link" : ""
                 }`}
               >
-
                 {link.label}
 
                 {link.live && (
                   <span className="live-dot"></span>
                 )}
-
               </Link>
-
             ))}
 
           </div>
@@ -166,14 +162,13 @@ const AuraFooter = () => {
             CONNECT WITH US ON SOCIAL MEDIA
           </h3>
 
-          {/* -----------------------------------------
+          {/* =========================================
               SOCIAL MEDIA BUTTONS
-          ----------------------------------------- */}
+          ========================================= */}
 
           <div className="footer-social">
 
             {socialLinks.map((social, index) => (
-
               <a
                 key={index}
                 href={social.url}
@@ -185,7 +180,6 @@ const AuraFooter = () => {
                 }}
                 aria-label={social.label}
               >
-
                 <span className="social-icon">
                   {social.icon}
                 </span>
@@ -193,9 +187,7 @@ const AuraFooter = () => {
                 <span className="social-label">
                   {social.label}
                 </span>
-
               </a>
-
             ))}
 
           </div>
@@ -212,46 +204,144 @@ const AuraFooter = () => {
 
             <div className="find-online-links">
 
-              {/* -----------------------------------------
+              {/* =====================================
                   CRUNCHBASE
-              ----------------------------------------- */}
+              ===================================== */}
 
               <a
                 href="https://www.crunchbase.com/organization/saffron-guru#overview"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="crunchbase-link"
+                className="find-online-link crunchbase-find-link"
                 aria-label="Saffron Guru on Crunchbase"
               >
+                <span className="find-online-logo crunchbase-logo-box">
+                  <img
+                    src="/Products/crunchbase-logo.webp"
+                    alt="Crunchbase"
+                    className="find-online-image crunchbase-image"
+                  />
+                </span>
 
-                <img
-                  src="/Products/crunchbase-logo.webp"
-                  alt="Crunchbase"
-                  className="crunchbase-logo"
-                />
-
+                <span className="find-online-text">
+                  Crunchbase
+                </span>
               </a>
 
-              {/* -----------------------------------------
+              {/* =====================================
                   MEDIUM
-              ----------------------------------------- */}
+              ===================================== */}
 
               <a
                 href="https://medium.com/@SaffronGuruLLC"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="medium-find-link"
+                className="find-online-link medium-find-link"
                 aria-label="Saffron Guru on Medium"
               >
-
-                <span className="medium-find-icon">
+                <span className="find-online-logo medium-find-icon">
                   <FaMedium />
                 </span>
 
-                <span className="medium-find-text">
+                <span className="find-online-text medium-find-text">
                   Medium
                 </span>
+              </a>
 
+              {/* =====================================
+                  DUN & BRADSTREET
+              ===================================== */}
+
+              <a
+                href="https://www.dnb.com/business-directory/company-profiles/saffron-guru-llc.8e05994a5c3af9b2ae4331c02f1b81af"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link dnb-find-link"
+                aria-label="Saffron Guru on Dun & Bradstreet"
+              >
+                <span className="find-online-logo dnb-logo-box">
+                  <img
+                    src="/Products/dnb-logo.webp"
+                    alt="Dun & Bradstreet"
+                    className="find-online-image dnb-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  Dun & Bradstreet
+                </span>
+              </a>
+
+              {/* =====================================
+                  G2
+              ===================================== */}
+
+              <a
+                href="https://www.g2.com/sellers/saffron-guru#profiles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link g2-find-link"
+                aria-label="Saffron Guru on G2"
+              >
+                <span className="find-online-logo g2-logo-box">
+                  <img
+                    src="/Products/g2-logo.webp"
+                    alt="G2"
+                    className="find-online-image g2-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  G2
+                </span>
+              </a>
+
+              {/* =====================================
+                  BBB
+              ===================================== */}
+
+              <a
+                href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link bbb-find-link"
+                aria-label="Saffron Guru on Better Business Bureau"
+              >
+                <span className="find-online-logo bbb-logo-box">
+                  <img
+                    src="/Products/bbb-logo.webp"
+                    alt="Better Business Bureau"
+                    className="find-online-image bbb-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  BBB
+                </span>
+              </a>
+
+              {/* =====================================
+                  MANTA.COM
+              ===================================== */}
+
+              <a
+                href="https://www.manta.com/c/m1hjcv6/saffron-guru-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link manta-find-link"
+                aria-label="Saffron Guru on Manta"
+              >
+                <span className="find-online-logo manta-logo-box">
+                  <img
+                    src="/Products/manta-logo.webp"
+                    alt="Manta.com"
+                    className="find-online-image manta-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  Manta.com
+                </span>
               </a>
 
             </div>

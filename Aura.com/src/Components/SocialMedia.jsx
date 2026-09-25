@@ -51,7 +51,7 @@ const SocialMedia = () => {
             <img
               src="/Products/trustpilot.webp"
               alt="Trustpilot"
-              className="review-platform-logo"
+              className="review-platform-logo trustpilot-logo"
             />
 
           </div>
@@ -93,7 +93,7 @@ const SocialMedia = () => {
             <img
               src="/Products/bbb.webp"
               alt="Better Business Bureau"
-              className="review-platform-logo"
+              className="review-platform-logo bbb-logo"
             />
 
           </div>
@@ -135,7 +135,7 @@ const SocialMedia = () => {
             <img
               src="/Products/smartcustomer.webp"
               alt="SmartCustomer"
-              className="review-platform-logo"
+              className="review-platform-logo smartcustomer-logo"
             />
 
           </div>
@@ -235,6 +235,49 @@ const SocialMedia = () => {
           </span>
 
         </a>
+
+
+        {/* =================================================
+            G2
+        ================================================= */}
+
+        <a
+          href="https://www.g2.com/products/saffron-guru-llc/reviews"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-btn"
+        >
+
+          <div className="social-logo-box social-g2-box">
+
+            <img
+              src="/Products/g2-logo.webp"
+              alt="G2"
+              className="review-platform-logo g2-logo"
+            />
+
+          </div>
+
+
+          <div className="social-btn-content">
+
+            <span className="social-platform">
+              G2
+            </span>
+
+            <span className="social-action">
+              Read customer reviews
+            </span>
+
+          </div>
+
+
+          <span className="social-arrow">
+            →
+          </span>
+
+        </a>
+
 
       </div>
 
