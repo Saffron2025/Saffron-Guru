@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AppNavbar from "../Components/AppNavbar";
 import AllSection from "../Components/AllSection";
 import "./Veterans.css";
@@ -901,6 +902,31 @@ const Veterans = () => {
           </div>
 
         </section>
+
+        {/* =====================================================
+            FIXED FULL PROTECTION BUTTON
+        ===================================================== */}
+
+        <Link
+          to="/LearnMore"
+          className="fixed-protection-button"
+          aria-label="Explore Full Protection"
+        >
+          <span className="fixed-protection-glow"></span>
+
+          <span className="fixed-protection-shield">
+            <FaShieldAlt />
+          </span>
+
+          <span className="fixed-protection-content">
+            <small>SAFFRON GURU</small>
+            <strong>Explore Full Protection</strong>
+          </span>
+
+          <span className="fixed-protection-arrow">
+            <FaArrowRight />
+          </span>
+        </Link>
 
       </main>
 

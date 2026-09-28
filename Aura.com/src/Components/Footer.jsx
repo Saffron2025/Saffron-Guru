@@ -240,7 +240,7 @@ const Footer = () => {
       <span className="btn-arrow">→</span>
     </Link>
 
-    <Link className="cta-btn secondary" to="/LearnMore">
+    <Link className="cta-btn secondary" to="/Veterens">
       <span className="btn-icon">📘</span>
 
       <span className="btn-text">

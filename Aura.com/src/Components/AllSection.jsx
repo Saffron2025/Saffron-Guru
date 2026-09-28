@@ -9,7 +9,7 @@ import {
   FaPinterestP,
   FaMedium,
 } from "react-icons/fa";
-
+import { FaFlagUsa } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import "./AllSection.css";
@@ -52,9 +52,10 @@ const footerLinks = [
     path: "/contact",
   },
   {
-    label: "Veterans Special Offer",
-    path: "/Veterens",
-  },
+  label: "Veterans Special Offer",
+  path: "/Veterens",
+},
+  
   {
     label: "Live Support",
     path: "/live-support",
@@ -144,7 +145,58 @@ const AuraFooter = () => {
                   link.live ? "live-support-link" : ""
                 }`}
               >
-                {link.label}
+                {link.label === "Veterans Special Offer" ? (
+  <>
+    <span className="veterans-footer-flag" aria-hidden="true">
+      <svg
+        viewBox="0 0 32 22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="32" height="22" rx="1" fill="#fff" />
+
+        <rect y="0" width="32" height="2" fill="#b22234" />
+        <rect y="4" width="32" height="2" fill="#b22234" />
+        <rect y="8" width="32" height="2" fill="#b22234" />
+        <rect y="12" width="32" height="2" fill="#b22234" />
+        <rect y="16" width="32" height="2" fill="#b22234" />
+        <rect y="20" width="32" height="2" fill="#b22234" />
+
+        <rect width="14" height="12" fill="#3c3b6e" />
+
+        <g fill="#fff">
+          <circle cx="2" cy="2" r="0.6" />
+          <circle cx="5" cy="2" r="0.6" />
+          <circle cx="8" cy="2" r="0.6" />
+          <circle cx="11" cy="2" r="0.6" />
+
+          <circle cx="3.5" cy="4" r="0.6" />
+          <circle cx="6.5" cy="4" r="0.6" />
+          <circle cx="9.5" cy="4" r="0.6" />
+          <circle cx="12.5" cy="4" r="0.6" />
+
+          <circle cx="2" cy="6" r="0.6" />
+          <circle cx="5" cy="6" r="0.6" />
+          <circle cx="8" cy="6" r="0.6" />
+          <circle cx="11" cy="6" r="0.6" />
+
+          <circle cx="3.5" cy="8" r="0.6" />
+          <circle cx="6.5" cy="8" r="0.6" />
+          <circle cx="9.5" cy="8" r="0.6" />
+          <circle cx="12.5" cy="8" r="0.6" />
+
+          <circle cx="2" cy="10" r="0.6" />
+          <circle cx="5" cy="10" r="0.6" />
+          <circle cx="8" cy="10" r="0.6" />
+          <circle cx="11" cy="10" r="0.6" />
+        </g>
+      </svg>
+    </span>
+
+    <span>Veterans Special Offer</span>
+  </>
+) : (
+  link.label
+)}
 
                 {link.live && (
                   <span className="live-dot"></span>

@@ -1310,3 +1310,28 @@
   box-shadow:
     0 5px 14px rgba(0, 0, 0, 0.17);
 }
+
+.veterans-footer-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 16px;
+  flex-shrink: 0;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.veterans-footer-flag svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.footer-link:hover .veterans-footer-flag {
+  transform: scale(1.15);
+  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.3));
+}
