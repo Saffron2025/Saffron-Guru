@@ -2988,3 +2988,315 @@
     transition: none;
   }
 }
+
+
+/* =========================================================
+   FIXED EXPLORE FULL PROTECTION BUTTON
+   SKY BLUE / LIGHT BLUE PREMIUM STYLE
+========================================================= */
+
+.fixed-protection-button {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  width: 330px;
+  max-width: calc(100vw - 32px);
+  min-height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 12px 22px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #38bdf8 0%,
+    #0ea5e9 50%,
+    #0284c7 100%
+  );
+
+  border: 2px solid rgba(186, 230, 253, 0.95);
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.60),
+    0 0 25px rgba(56, 189, 248, 0.35),
+    0 0 45px rgba(14, 165, 233, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.fixed-protection-button::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.65s ease;
+
+  pointer-events: none;
+}
+
+.fixed-protection-button:hover {
+  color: #ffffff;
+
+  transform:
+    translateX(-50%)
+    translateY(-6px)
+    scale(1.02);
+
+  background: linear-gradient(
+    135deg,
+    #7dd3fc 0%,
+    #38bdf8 45%,
+    #0284c7 100%
+  );
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.70),
+    0 0 35px rgba(56, 189, 248, 0.55),
+    0 0 65px rgba(14, 165, 233, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.60);
+}
+
+.fixed-protection-button:hover::before {
+  left: 130%;
+}
+
+.fixed-protection-icon {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0284c7;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 1rem;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35),
+    0 0 12px rgba(255, 255, 255, 0.25);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.fixed-protection-button:hover .fixed-protection-icon {
+  transform:
+    rotate(-8deg)
+    scale(1.10);
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.45),
+    0 0 15px rgba(255, 255, 255, 0.45);
+}
+
+.fixed-protection-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1.15;
+}
+
+.fixed-protection-small {
+  margin-bottom: 3px;
+
+  color: #e0f2fe;
+
+  font-size: 0.52rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+
+  text-shadow:
+    0 2px 4px rgba(0, 40, 70, 0.80);
+}
+
+.fixed-protection-title {
+  color: #ffffff;
+
+  font-size: 0.90rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+
+  text-shadow:
+    0 2px 5px rgba(0, 45, 75, 0.65);
+}
+
+.fixed-protection-arrow {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.28);
+
+  border-radius: 50%;
+
+  font-size: 0.78rem;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.20);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.fixed-protection-button:hover .fixed-protection-arrow {
+  transform: translateX(5px);
+
+  background:
+    rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   FIXED BUTTON - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .fixed-protection-button {
+    left: 50%;
+    bottom: 14px;
+
+    width: calc(100vw - 28px);
+    max-width: 380px;
+
+    min-height: 58px;
+
+    padding: 10px 16px;
+
+    gap: 10px;
+
+    border-radius: 45px;
+
+    font-size: 0.75rem;
+  }
+
+  .fixed-protection-icon {
+    width: 34px;
+    height: 34px;
+
+    font-size: 0.90rem;
+  }
+
+  .fixed-protection-small {
+    font-size: 0.46rem;
+  }
+
+  .fixed-protection-title {
+    font-size: 0.76rem;
+  }
+
+  .fixed-protection-arrow {
+    width: 29px;
+    height: 29px;
+
+    font-size: 0.70rem;
+  }
+}
+
+
+/* =========================================================
+   FIXED BUTTON - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .fixed-protection-button {
+    width: calc(100vw - 20px);
+
+    bottom: 10px;
+
+    min-height: 55px;
+
+    padding: 9px 13px;
+
+    gap: 8px;
+  }
+
+  .fixed-protection-icon {
+    width: 31px;
+    height: 31px;
+
+    font-size: 0.82rem;
+  }
+
+  .fixed-protection-small {
+    font-size: 0.42rem;
+  }
+
+  .fixed-protection-title {
+    font-size: 0.70rem;
+    letter-spacing: 0.02em;
+  }
+
+  .fixed-protection-arrow {
+    width: 27px;
+    height: 27px;
+  }
+}

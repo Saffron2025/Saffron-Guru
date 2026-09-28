@@ -362,6 +362,13 @@
    HERO DESCRIPTION
 ========================================================= */
 
+/* =========================================================
+   HERO DESCRIPTION - CLEAN BLACK TEXT
+========================================================= */
+/* =========================================================
+   HERO DESCRIPTION - CLEAN BLACK TEXT
+========================================================= */
+
 .hero-description {
   margin-bottom: 15px;
 
@@ -369,21 +376,40 @@
 
   line-height: 1.85;
 
-  color: #334155;
+  color: #000000 !important;
 
   max-width: 650px;
+
+  /* REMOVE ALL SHADOW */
+  text-shadow: none !important;
+
+  filter: none !important;
+
+  box-shadow: none !important;
 }
 
 
+/* SECOND DESCRIPTION */
 .hero-description-strong {
-  color: #1f2937;
+  color: #000000 !important;
+
+  text-shadow: none !important;
+
+  filter: none !important;
+
+  box-shadow: none !important;
 }
 
 
+/* DefendMe Pro™ blue rahega */
 .hero-description-strong strong {
-  color: #0077ff;
+  color: #0077ff !important;
 
   font-weight: 800;
+
+  text-shadow: none !important;
+
+  filter: none !important;
 }
 
 
