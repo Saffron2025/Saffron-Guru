@@ -221,10 +221,9 @@
 ========================================================= */
 
 .live-support-link {
-  flex-basis: 100%;
+  flex-basis: auto;
   width: max-content;
-  margin: 8px auto 0;
-
+  margin: 0;
   justify-content: center;
 }
 
@@ -1259,4 +1258,55 @@
 
     font-size: 0.7rem;
   }
+}
+
+/* =========================================================
+   F6S LOGO
+========================================================= */
+
+.f6s-logo-box {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   F6S IMAGE
+   FULL LOGO • NO CROP • NO STRETCH
+========================================================= */
+
+.f6s-image {
+  max-width: 100%;
+  max-height: 100%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* =========================================================
+   F6S HOVER
+========================================================= */
+
+.f6s-find-link:hover {
+  background: rgba(255, 255, 255, 0.88);
+
+  border-color: rgba(0, 0, 0, 0.15);
+
+  box-shadow:
+    0 9px 24px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   F6S LOGO HOVER
+========================================================= */
+
+.f6s-find-link:hover .f6s-logo-box {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.17);
 }

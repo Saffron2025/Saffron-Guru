@@ -164,7 +164,7 @@ const Footer = () => {
 
         <span className="VeterenText">
           🎖️ We offer{" "}
-          <strong>special pricing for seniors and veterans</strong>.
+          <strong>special pricing for veterans</strong>.
           <br />
 
           <span className="cta-subtext">

@@ -1,0 +1,2719 @@
+/* =========================================================
+   VETERANS PAGE
+   FULL IMAGE BACKGROUND
+   PREMIUM TEXT VISIBILITY
+   SCROLL ANIMATIONS
+========================================================= */
+
+.veterans-page {
+  --navy: #020914;
+  --red: #d5001a;
+  --red-bright: #ff1731;
+  --gold: #ffd35c;
+  --gold-light: #ffe9a2;
+  --white: #ffffff;
+  --muted: #d5dce6;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background-color: #020914;
+
+  background-image: url("/Hero/veterans-bg.webp");
+
+  background-size: cover;
+
+  background-position: center top;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.veterans-page *,
+.veterans-page *::before,
+.veterans-page *::after {
+  box-sizing: border-box;
+}
+
+.veterans-page a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.veterans-container {
+  width: min(1180px, calc(100% - 42px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+
+   IMPORTANT:
+   TOP PADDING ADDED SO CONTENT DOES NOT GO
+   BEHIND NAVBAR
+========================================================= */
+
+.veterans-hero {
+  position: relative;
+
+  min-height: 980px;
+
+  padding-top: 105px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: transparent;
+}
+
+
+/* =========================================================
+   HERO IMAGE DARK OVERLAY
+   SOLID COLOR - NO GRADIENT
+========================================================= */
+
+.hero-dark-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background-color:
+    rgba(0, 5, 17, 0.68);
+}
+
+
+/* =========================================================
+   EXTRA LEFT DARKNESS FOR TEXT
+========================================================= */
+
+.veterans-hero::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 72%;
+
+  height: 100%;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  background-color:
+    rgba(0, 6, 18, 0.22);
+}
+
+
+/* =========================================================
+   HERO INNER
+========================================================= */
+
+.hero-inner {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(1360px, calc(100% - 80px));
+
+  min-height: 875px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   HERO LEFT PANEL
+
+   Stronger dark transparency makes every text readable
+========================================================= */
+
+.hero-left {
+  position: relative;
+
+  z-index: 10;
+
+  width: 67%;
+
+  padding:
+    42px
+    48px
+    125px;
+
+  border-radius: 32px;
+
+  background-color:
+    rgba(0, 5, 17, 0.70);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.13);
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.58);
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* =========================================================
+   TOP STARS
+========================================================= */
+
+.hero-top-decoration {
+  width: 330px;
+
+  margin:
+    0 auto
+    8px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  color: var(--gold);
+
+  font-size: 1.25rem;
+
+  filter:
+    drop-shadow(0 3px 5px #000);
+}
+
+.hero-top-decoration span {
+  width: 88px;
+
+  height: 2px;
+
+  background-color: var(--gold);
+
+  box-shadow:
+    0 0 8px rgba(255, 211, 92, 0.35);
+}
+
+
+/* =========================================================
+   OFFER BADGE
+========================================================= */
+
+.veterans-offer-badge {
+  width: fit-content;
+
+  min-width: 450px;
+
+  margin:
+    0 auto
+    24px;
+
+  padding:
+    11px
+    25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 19px;
+
+  border:
+    2px solid var(--gold);
+
+  border-radius: 60px;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(166, 0, 20, 0.96);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.60),
+    0 0 28px rgba(255, 0, 30, 0.35);
+
+  font-size: 1.03rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.03em;
+
+  text-shadow:
+    0 2px 5px #000;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.veterans-offer-badge:hover {
+  transform:
+    translateY(-4px)
+    scale(1.015);
+
+  box-shadow:
+    0 15px 38px rgba(0, 0, 0, 0.65),
+    0 0 40px rgba(255, 0, 30, 0.45);
+}
+
+.veterans-offer-badge svg {
+  color: var(--gold);
+
+  font-size: 0.95rem;
+
+  filter:
+    drop-shadow(0 2px 3px #000);
+}
+
+
+/* =========================================================
+   SUPPORTING LINE
+========================================================= */
+
+.supporting-line {
+  width: 100%;
+
+  margin-bottom: 23px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.supporting-line span {
+  width: 72px;
+
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background-color: var(--gold);
+
+  box-shadow:
+    0 0 7px rgba(255, 211, 92, 0.35);
+}
+
+.supporting-line svg {
+  color: var(--gold);
+
+  font-size: 0.50rem;
+
+  filter:
+    drop-shadow(0 2px 3px #000);
+}
+
+.supporting-line p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.27em;
+
+  white-space: nowrap;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 6px 12px #000000;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero-title {
+  position: relative;
+
+  margin: 0;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(3.25rem, 5.15vw, 5.3rem);
+
+  font-weight: 900;
+
+  line-height: 0.99;
+
+  letter-spacing: -0.055em;
+
+  text-align: left;
+
+  text-shadow:
+    0 4px 6px #000000,
+    0 9px 18px #000000,
+    0 18px 35px rgba(0, 0, 0, 0.9);
+}
+
+
+/* WHITE TITLE */
+
+.title-white {
+  display: block;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 4px 5px #000000,
+    0 8px 18px #000000,
+    0 14px 30px #000000;
+}
+
+
+/* GOLD TITLE */
+
+.title-gold {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #ffd35c;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 7px 16px #000000,
+    0 15px 30px rgba(0, 0, 0, 0.9);
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 750px;
+  margin: 30px 0 20px;
+
+  color: #ffffff !important;  /* YE TEXT KA MAIN COLOR HAI */
+
+  font-size: 1.07rem;
+  font-weight: 500;
+  line-height: 1.55;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 6px 13px #000000,
+    0 12px 22px rgba(0, 0, 0, 0.85);
+}
+.hero-description strong {
+  color: #ffd45f;
+
+  font-weight: 900;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 6px 10px #000000;
+}
+
+
+/* =========================================================
+   THANK YOU LINE
+========================================================= */
+
+.thank-you-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin:
+    27px 0
+    19px;
+
+  filter:
+    drop-shadow(0 3px 5px #000);
+}
+
+.thank-line {
+  width: 85px;
+
+  height: 2px;
+
+  background-color: var(--gold);
+
+  box-shadow:
+    0 0 8px rgba(255, 211, 92, 0.35);
+}
+
+.flag-emoji {
+  font-size: 1.30rem;
+
+  line-height: 1;
+}
+
+.thank-you-line strong {
+  color: #ffd45f;
+
+  font-size: 0.86rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.17em;
+
+  white-space: nowrap;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 7px 12px #000000;
+}
+
+
+/* =========================================================
+   OFFER DESCRIPTION
+========================================================= */
+
+.offer-description {
+  max-width: 740px;
+
+  margin:
+    0 0
+    28px;
+
+  color: #ffffff;
+
+  font-size: 0.99rem;
+
+  font-weight: 500;
+
+  line-height: 1.58;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 7px 15px #000000;
+}
+
+
+/* =========================================================
+   CALL BUTTON
+========================================================= */
+
+.hero-call-button {
+  width: 625px;
+
+  max-width: 100%;
+
+  min-height: 91px;
+
+  padding:
+    8px
+    20px
+    8px
+    9px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  border:
+    2px solid rgba(255, 125, 125, 0.95);
+
+  border-radius: 60px;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(211, 0, 27, 0.97);
+
+  box-shadow:
+    0 13px 35px rgba(0, 0, 0, 0.65),
+    0 0 32px rgba(255, 0, 30, 0.35);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.hero-call-button:hover {
+  color: #ffffff;
+
+  transform:
+    translateY(-5px)
+    scale(1.015);
+
+  background-color:
+    #ed001d;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.75),
+    0 0 42px rgba(255, 0, 30, 0.50);
+}
+
+
+/* PHONE ICON */
+
+.call-icon {
+  width: 73px;
+  height: 73px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #c90019;
+
+  background-color: #ffffff;
+
+  font-size: 1.5rem;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.42);
+
+  transition:
+    transform 0.35s ease;
+}
+
+.hero-call-button:hover .call-icon {
+  transform:
+    rotate(-8deg)
+    scale(1.08);
+}
+
+
+/* CALL TEXT */
+
+.call-content {
+  flex: 1;
+
+  text-align: left;
+}
+
+.call-content small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #ffe9ec;
+
+  font-size: 0.67rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.call-content strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 1.18rem;
+
+  font-weight: 900;
+
+  text-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.50);
+}
+
+
+/* ARROW */
+
+.call-arrow {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(255, 255, 255, 0.15);
+
+  transition:
+    transform 0.35s ease;
+}
+
+.hero-call-button:hover .call-arrow {
+  transform:
+    translateX(5px);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.hero-services {
+  width: 100%;
+
+  max-width: 750px;
+
+  margin-top: 40px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.hero-service {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding:
+    0 22px;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.hero-service:first-child {
+  padding-left: 0;
+}
+
+.hero-service:last-child {
+  padding-right: 0;
+}
+
+.hero-service:hover {
+  transform:
+    translateY(-6px);
+}
+
+.service-icon {
+  width: 57px;
+  height: 57px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    2px solid var(--gold);
+
+  border-radius: 50%;
+
+  color: var(--gold);
+
+  background-color:
+    rgba(0, 5, 17, 0.82);
+
+  box-shadow:
+    0 6px 17px rgba(0, 0, 0, 0.62);
+
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.hero-service:hover .service-icon {
+  transform:
+    rotate(8deg)
+    scale(1.08);
+
+  background-color:
+    rgba(255, 211, 92, 0.14);
+}
+
+.service-text strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 0.88rem;
+
+  line-height: 1.15;
+
+  font-weight: 900;
+
+  text-shadow:
+    0 3px 5px #000000,
+    0 6px 10px #000000;
+}
+
+.service-divider {
+  width: 1px;
+
+  height: 58px;
+
+  flex-shrink: 0;
+
+  background-color:
+    rgba(255, 255, 255, 0.50);
+
+  box-shadow:
+    0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================================================
+   FLAG WAVES
+========================================================= */
+
+.flag-wave {
+  position: absolute;
+
+  left: -5%;
+  bottom: -90px;
+
+  width: 110%;
+
+  height: 155px;
+
+  z-index: 8;
+
+  pointer-events: none;
+
+  border-radius:
+    50% 50% 0 0;
+}
+
+.flag-wave-one {
+  background-color:
+    rgba(3, 17, 38, 0.94);
+
+  transform:
+    rotate(-1deg);
+}
+
+.flag-wave-two {
+  bottom: -118px;
+
+  height: 35px;
+
+  background-color:
+    rgba(207, 0, 25, 0.90);
+
+  transform:
+    rotate(1.5deg);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+.section-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: #ffffff;
+
+  font-size: 0.65rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.20em;
+
+  text-shadow:
+    0 3px 6px #000000;
+}
+
+.section-eyebrow span {
+  width: 45px;
+
+  height: 2px;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    0 2px 5px #000000;
+}
+
+.section-eyebrow.gold {
+  color: var(--gold);
+}
+
+.section-eyebrow.gold span {
+  background-color: var(--gold);
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(2.4rem, 4.7vw, 4.1rem);
+
+  font-weight: 900;
+
+  line-height: 1.04;
+
+  letter-spacing: -0.04em;
+
+  text-shadow:
+    0 4px 8px #000000,
+    0 10px 25px rgba(0, 0, 0, 0.90);
+}
+
+.section-heading h2 span {
+  color: var(--gold);
+
+  text-shadow:
+    0 4px 8px #000000,
+    0 10px 18px #000000;
+}
+
+.section-heading p {
+  max-width: 710px;
+
+  margin:
+    22px auto
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.94);
+
+  font-size: 0.94rem;
+
+  line-height: 1.75;
+
+  text-shadow:
+    0 3px 7px #000000,
+    0 7px 14px #000000;
+}
+
+
+/* =========================================================
+   THANK YOU SECTION
+========================================================= */
+
+.veterans-thanks-section {
+  position: relative;
+
+  padding:
+    125px
+    0
+    135px;
+
+  background-color:
+    rgba(1, 8, 19, 0.45);
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.benefits-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-top: 58px;
+}
+
+.benefit-card {
+  position: relative;
+
+  min-height: 290px;
+
+  padding:
+    27px
+    24px
+    23px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 20px;
+
+  background-color:
+    rgba(2, 10, 24, 0.78);
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.50);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.benefit-card:hover {
+  transform:
+    translateY(-10px);
+
+  border-color:
+    rgba(255, 211, 92, 0.65);
+
+  box-shadow:
+    0 28px 55px rgba(0, 0, 0, 0.62),
+    0 0 25px rgba(255, 211, 92, 0.10);
+}
+
+.card-number {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  color:
+    white !important;
+
+  font-size: 3rem;
+
+  font-weight: 900;
+}
+
+.benefit-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.50);
+
+  border-radius: 15px;
+
+  color: var(--gold);
+
+  background-color:
+    rgba(255, 211, 92, 0.09);
+
+  font-size: 1.4rem;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform:
+    rotate(-5deg)
+    scale(1.08);
+}
+
+.benefit-card h3 {
+  margin:
+    0 0
+    12px;
+
+  color: #ffffff;
+
+  font-size: 1.25rem;
+
+  text-shadow:
+    0 3px 6px #000;
+}
+
+.benefit-card p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.82);
+
+  font-size: 0.86rem;
+
+  line-height: 1.7;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.benefit-bottom {
+  position: absolute;
+
+  left: 24px;
+  right: 24px;
+  bottom: 20px;
+
+  padding-top: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.15);
+
+  color: var(--gold);
+
+  font-size: 0.62rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+
+/* =========================================================
+   PACKAGE
+========================================================= */
+
+.veterans-package-section {
+  padding:
+    125px
+    0;
+
+  background-color:
+    rgba(1, 8, 19, 0.42);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+.package-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 24px;
+
+  margin-top: 58px;
+}
+
+.package-card {
+  position: relative;
+
+  padding:
+    42px
+    38px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 24px;
+
+  background-color:
+    rgba(2, 10, 24, 0.80);
+
+  backdrop-filter: blur(9px);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.52);
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.package-card:hover {
+  transform:
+    translateY(-10px);
+
+  border-color:
+    rgba(255, 211, 92, 0.58);
+
+  box-shadow:
+    0 32px 65px rgba(0, 0, 0, 0.65);
+}
+
+.featured-package {
+  border-color:
+    rgba(255, 211, 92, 0.48);
+
+  background-color:
+    rgba(30, 6, 14, 0.80);
+}
+
+.featured-label {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  padding:
+    9px
+    18px;
+
+  border-radius:
+    0 0 0 15px;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(207, 0, 25, 0.96);
+
+  font-size: 0.58rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.10em;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.package-number {
+  position: absolute;
+
+  top: 24px;
+  right: 30px;
+
+  color: white;
+  font-size: 4rem;
+
+  font-weight: 900;
+}
+
+.package-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 23px;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.42);
+
+  border-radius: 17px;
+
+  color: var(--gold);
+
+  background-color:
+    rgba(255, 211, 92, 0.09);
+
+  font-size: 1.5rem;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.package-card:hover .package-icon {
+  transform:
+    rotate(5deg)
+    scale(1.08);
+}
+
+.package-label {
+  color: var(--gold);
+
+  font-size: 0.64rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.package-card h3 {
+  margin:
+    9px 0
+    12px;
+
+  color: #ffffff;
+
+  font-size: 1.65rem;
+
+  text-shadow:
+    0 3px 7px #000;
+}
+
+.package-card > p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.80);
+
+  font-size: 0.90rem;
+
+  line-height: 1.7;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.package-divider {
+  height: 1px;
+
+  margin:
+    27px 0
+    20px;
+
+  background-color:
+    rgba(255, 255, 255, 0.17);
+}
+
+.package-card > small {
+  color: #ffffff;
+
+  font-size: 0.62rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.13em;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.package-card ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin:
+    17px
+    0
+    0;
+}
+
+.package-card li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    8px
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.82);
+
+  font-size: 0.84rem;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.package-card li svg {
+  flex-shrink: 0;
+
+  color: var(--gold);
+
+  font-size: 0.72rem;
+
+  filter:
+    drop-shadow(0 2px 3px #000);
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.veterans-security-section {
+  position: relative;
+
+  padding:
+    125px
+    0;
+
+  background-color:
+    rgba(1, 8, 19, 0.46);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+.security-container {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.85fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.security-content .section-eyebrow {
+  justify-content: flex-start;
+}
+
+.security-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(2.5rem, 4.5vw, 4.2rem);
+
+  line-height: 1.02;
+
+  font-weight: 900;
+
+  text-shadow:
+    0 5px 10px #000000,
+    0 12px 24px #000000;
+}
+
+.security-content h2 span {
+  color: var(--gold);
+}
+
+.security-content > p {
+  max-width: 620px;
+
+  margin:
+    23px 0;
+
+  color:
+    rgba(255, 255, 255, 0.88);
+
+  line-height: 1.8;
+
+  text-shadow:
+    0 3px 7px #000000,
+    0 8px 16px #000000;
+}
+
+
+/* =========================================================
+   SECURITY POINTS
+========================================================= */
+
+.security-points {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 13px;
+
+  margin:
+    30px 0;
+}
+
+.security-point {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 13px;
+
+  background-color:
+    rgba(2, 10, 24, 0.80);
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.30);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.security-point:hover {
+  transform:
+    translateX(7px);
+
+  border-color:
+    rgba(255, 211, 92, 0.50);
+}
+
+.security-point span {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.38);
+
+  border-radius: 10px;
+
+  color: var(--gold);
+
+  background-color:
+    rgba(255, 211, 92, 0.08);
+}
+
+.security-point strong {
+  color: #ffffff;
+
+  font-size: 0.77rem;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+
+/* =========================================================
+   SECURITY BUTTON
+========================================================= */
+
+.security-button {
+  width: fit-content;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding:
+    14px
+    20px;
+
+  border-radius: 50px;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(207, 0, 25, 0.97);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.50);
+
+  font-size: 0.82rem;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.security-button:hover {
+  color: #ffffff;
+
+  transform:
+    translateY(-4px);
+
+  background-color:
+    #ed001d;
+}
+
+
+/* =========================================================
+   SECURITY VISUAL
+========================================================= */
+
+.security-visual {
+  min-height: 520px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.security-circle {
+  width: 350px;
+  height: 350px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.60);
+
+  border-radius: 50%;
+
+  background-color:
+    rgba(0, 7, 20, 0.48);
+
+  box-shadow:
+    0 0 0 35px rgba(255, 211, 92, 0.04),
+    0 0 0 70px rgba(255, 211, 92, 0.02),
+    0 30px 80px rgba(0, 0, 0, 0.58);
+
+  animation:
+    slowPulse 4s ease-in-out infinite;
+}
+
+.security-circle-inner {
+  width: 210px;
+  height: 210px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.60);
+
+  border-radius: 50%;
+
+  background-color:
+    rgba(2, 16, 38, 0.94);
+
+  box-shadow:
+    inset 0 0 35px rgba(255, 211, 92, 0.08),
+    0 15px 30px rgba(0, 0, 0, 0.50);
+}
+
+.security-circle-inner svg {
+  margin-bottom: 12px;
+
+  color: var(--gold);
+
+  font-size: 3rem;
+
+  filter:
+    drop-shadow(0 3px 5px #000);
+}
+
+.security-circle-inner span {
+  color: #ffffff;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.20em;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.security-circle-inner strong {
+  margin-top: 4px;
+
+  color: var(--gold);
+
+  font-size: 1rem;
+
+  letter-spacing: 0.12em;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.security-floating-card {
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding:
+    13px
+    16px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 14px;
+
+  background-color:
+    rgba(2, 10, 24, 0.90);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.55);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.security-floating-card:hover {
+  border-color:
+    rgba(255, 211, 92, 0.50);
+
+  transform:
+    translateY(-6px);
+}
+
+.security-floating-card > svg {
+  color: var(--gold);
+
+  font-size: 1.2rem;
+
+  filter:
+    drop-shadow(0 2px 4px #000);
+}
+
+.security-floating-card small {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #c4cfdd;
+
+  font-size: 0.50rem;
+
+  letter-spacing: 0.12em;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.security-floating-card strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 0.72rem;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+.security-floating-card.first {
+  top: 55px;
+  right: -5px;
+}
+
+.security-floating-card.second {
+  bottom: 80px;
+  left: 0;
+}
+
+.security-floating-card.third {
+  bottom: 10px;
+  right: 20px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.veterans-final-cta {
+  position: relative;
+
+  padding:
+    115px
+    20px;
+
+  text-align: center;
+
+  background-color:
+    rgba(1, 8, 19, 0.55);
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+.final-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+.final-stars {
+  margin-bottom: 18px;
+
+  color: var(--gold);
+
+  letter-spacing: 0.55em;
+
+  font-size: 0.75rem;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.final-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  padding:
+    9px
+    18px;
+
+  border:
+    1px solid rgba(255, 211, 92, 0.50);
+
+  border-radius: 50px;
+
+  color: var(--gold);
+
+  background-color:
+    rgba(2, 10, 24, 0.78);
+
+  font-size: 0.65rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.13em;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.final-container h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    "Trebuchet MS",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(2.7rem, 5vw, 4.8rem);
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  text-shadow:
+    0 5px 12px #000000,
+    0 12px 25px #000000;
+}
+
+.final-container p {
+  max-width: 700px;
+
+  margin:
+    23px auto
+    28px;
+
+  color:
+    rgba(255, 255, 255, 0.88);
+
+  line-height: 1.8;
+
+  text-shadow:
+    0 3px 7px #000000,
+    0 8px 15px #000000;
+}
+
+.final-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding:
+    16px
+    28px;
+
+  border-radius: 50px;
+
+  color: #ffffff;
+
+  background-color:
+    rgba(207, 0, 25, 0.97);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.55);
+
+  font-size: 0.78rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.final-button:hover {
+  color: #ffffff;
+
+  transform:
+    translateY(-5px)
+    scale(1.02);
+
+  background-color:
+    #ed001d;
+}
+
+.final-note {
+  display: block;
+
+  margin-top: 18px;
+
+  color:
+    rgba(255, 255, 255, 0.62);
+
+  font-size: 0.67rem;
+
+  text-shadow:
+    0 2px 4px #000;
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.scroll-reveal {
+  opacity: 0;
+
+  visibility: hidden;
+
+  will-change:
+    transform,
+    opacity;
+
+  transition:
+    opacity 0.85s ease,
+    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* FROM TOP */
+
+.reveal-down {
+  transform:
+    translateY(-55px)
+    scale(0.97);
+}
+
+
+/* FROM BOTTOM */
+
+.reveal-up {
+  transform:
+    translateY(70px)
+    scale(0.97);
+}
+
+
+/* FROM LEFT */
+
+.reveal-left {
+  transform:
+    translateX(-80px)
+    scale(0.97);
+}
+
+
+/* FROM RIGHT */
+
+.reveal-right {
+  transform:
+    translateX(80px)
+    scale(0.97);
+}
+
+
+/* SCALE */
+
+.reveal-scale {
+  transform:
+    scale(0.72);
+}
+
+
+/* VISIBLE */
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform:
+    translate3d(0, 0, 0)
+    scale(1);
+}
+
+
+/* =========================================================
+   ANIMATION DELAYS
+========================================================= */
+
+.delay-1 {
+  transition-delay: 0.12s;
+}
+
+.delay-2 {
+  transition-delay: 0.24s;
+}
+
+.delay-3 {
+  transition-delay: 0.36s;
+}
+
+.delay-4 {
+  transition-delay: 0.48s;
+}
+
+
+/* =========================================================
+   PULSE
+========================================================= */
+
+@keyframes slowPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.025);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .veterans-hero {
+    padding-top: 95px;
+  }
+
+  .hero-inner {
+    width:
+      min(
+        calc(100% - 50px),
+        1000px
+      );
+  }
+
+  .hero-left {
+    width: 72%;
+
+    padding-left: 32px;
+
+    padding-right: 32px;
+  }
+
+  .hero-title {
+    font-size:
+      clamp(
+        3rem,
+        6vw,
+        4.7rem
+      );
+  }
+
+  .hero-services {
+    max-width: 680px;
+  }
+
+  .hero-service {
+    padding:
+      0
+      11px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero-service strong {
+    font-size: 0.78rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .veterans-page {
+    background-attachment: scroll;
+  }
+
+  .veterans-hero {
+    min-height: 920px;
+
+    padding-top: 90px;
+  }
+
+  .hero-dark-overlay {
+    background-color:
+      rgba(0, 5, 17, 0.72);
+  }
+
+  .veterans-hero::after {
+    width: 100%;
+
+    background-color:
+      rgba(0, 6, 18, 0.12);
+  }
+
+  .hero-inner {
+    width:
+      calc(100% - 36px);
+
+    min-height: 820px;
+  }
+
+  .hero-left {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin:
+      0 auto;
+
+    padding:
+      32px
+      28px
+      105px;
+
+    background-color:
+      rgba(0, 5, 17, 0.74);
+  }
+
+  .hero-title {
+    font-size:
+      clamp(
+        2.8rem,
+        8vw,
+        4.4rem
+      );
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  .hero-services {
+    max-width: 100%;
+  }
+
+  .security-container {
+    grid-template-columns:
+      1fr;
+  }
+
+  .security-content {
+    text-align: center;
+  }
+
+  .security-content .section-eyebrow {
+    justify-content: center;
+  }
+
+  .security-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .security-points {
+    max-width: 650px;
+
+    margin:
+      30px
+      auto;
+  }
+
+  .security-button {
+    margin:
+      0 auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .veterans-container {
+    width:
+      calc(100% - 28px);
+  }
+
+  .veterans-hero {
+    min-height: 980px;
+
+    padding-top: 80px;
+  }
+
+  .hero-dark-overlay {
+    background-color:
+      rgba(0, 5, 17, 0.76);
+  }
+
+  .hero-inner {
+    width:
+      calc(100% - 28px);
+
+    min-height: 900px;
+  }
+
+  .hero-left {
+    width: 100%;
+
+    padding:
+      25px
+      16px
+      105px;
+
+    border-radius: 25px;
+
+    background-color:
+      rgba(0, 5, 17, 0.78);
+
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.65);
+  }
+
+  .hero-top-decoration {
+    width: 230px;
+
+    gap: 9px;
+
+    font-size: 0.9rem;
+  }
+
+  .hero-top-decoration span {
+    width: 55px;
+  }
+
+  .veterans-offer-badge {
+    min-width: 0;
+
+    width: 100%;
+
+    max-width: 350px;
+
+    padding:
+      10px
+      14px;
+
+    gap: 11px;
+
+    font-size: 0.72rem;
+  }
+
+  .supporting-line {
+    gap: 6px;
+
+    margin-bottom: 18px;
+  }
+
+  .supporting-line span {
+    width: 24px;
+  }
+
+  .supporting-line p {
+    font-size: 0.48rem;
+
+    letter-spacing: 0.14em;
+  }
+
+  .hero-title {
+    text-align: center;
+
+    font-size:
+      clamp(
+        2.30rem,
+        11vw,
+        3.35rem
+      );
+
+    line-height: 1.02;
+  }
+
+  .hero-description {
+    margin:
+      21px
+      auto
+      15px;
+
+    text-align: center;
+
+    font-size: 0.84rem;
+
+    line-height: 1.58;
+  }
+
+  .thank-you-line {
+    justify-content: center;
+
+    gap: 6px;
+
+    margin:
+      20px
+      0
+      16px;
+  }
+
+  .thank-line {
+    width: 27px;
+  }
+
+  .flag-emoji {
+    font-size: 0.94rem;
+  }
+
+  .thank-you-line strong {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.08em;
+  }
+
+  .offer-description {
+    margin:
+      0
+      auto
+      22px;
+
+    text-align: center;
+
+    font-size: 0.77rem;
+
+    line-height: 1.6;
+  }
+
+  .hero-call-button {
+    width: 100%;
+
+    min-height: 70px;
+
+    gap: 10px;
+
+    padding:
+      6px
+      12px
+      6px
+      6px;
+  }
+
+  .call-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.1rem;
+  }
+
+  .call-content small {
+    font-size: 0.47rem;
+
+    letter-spacing: 0.07em;
+  }
+
+  .call-content strong {
+    font-size: 0.76rem;
+  }
+
+  .call-arrow {
+    width: 34px;
+    height: 34px;
+
+    font-size: 0.9rem;
+  }
+
+  .hero-services {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap:
+      17px
+      5px;
+
+    margin-top: 30px;
+  }
+
+  .hero-service {
+    padding:
+      0
+      6px;
+  }
+
+  .hero-service:first-child {
+    padding-left: 6px;
+  }
+
+  .hero-service:last-child {
+    padding-right: 6px;
+  }
+
+  .service-divider {
+    display: none;
+  }
+
+  .service-icon {
+    width: 43px;
+    height: 43px;
+
+    border-width: 1px;
+  }
+
+  .service-icon svg {
+    font-size: 1rem;
+  }
+
+  .service-text strong {
+    font-size: 0.67rem;
+  }
+
+
+  /* SECTIONS */
+
+  .veterans-thanks-section,
+  .veterans-package-section,
+  .veterans-security-section {
+    padding:
+      85px
+      0;
+  }
+
+  .section-eyebrow {
+    font-size: 0.51rem;
+
+    letter-spacing: 0.12em;
+  }
+
+  .section-eyebrow span {
+    width: 25px;
+  }
+
+  .section-heading h2,
+  .security-content h2 {
+    font-size: 2.22rem;
+
+    line-height: 1.08;
+  }
+
+  .section-heading p {
+    font-size: 0.81rem;
+  }
+
+
+  /* BENEFITS */
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-top: 40px;
+  }
+
+  .benefit-card {
+    min-height: 270px;
+  }
+
+
+  /* PACKAGE */
+
+  .package-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 40px;
+  }
+
+  .package-card {
+    padding:
+      32px
+      23px;
+  }
+
+  .package-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .package-card li {
+    font-size: 0.78rem;
+  }
+
+
+  /* SECURITY */
+
+  .security-points {
+    grid-template-columns:
+      1fr;
+
+    gap: 10px;
+  }
+
+  .security-point strong {
+    font-size: 0.72rem;
+  }
+
+  .security-visual {
+    min-height: 390px;
+  }
+
+  .security-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .security-circle-inner {
+    width: 155px;
+    height: 155px;
+  }
+
+  .security-circle-inner svg {
+    font-size: 2rem;
+  }
+
+  .security-circle-inner span {
+    font-size: 0.48rem;
+  }
+
+  .security-circle-inner strong {
+    font-size: 0.72rem;
+  }
+
+  .security-floating-card {
+    padding:
+      9px
+      11px;
+  }
+
+  .security-floating-card strong {
+    font-size: 0.57rem;
+  }
+
+  .security-floating-card small {
+    font-size: 0.42rem;
+  }
+
+  .security-floating-card.first {
+    top: 35px;
+    right: -3px;
+  }
+
+  .security-floating-card.second {
+    left: -3px;
+    bottom: 65px;
+  }
+
+  .security-floating-card.third {
+    right: 0;
+    bottom: 20px;
+  }
+
+
+  /* FINAL */
+
+  .veterans-final-cta {
+    padding:
+      85px
+      18px;
+  }
+
+  .final-container h2 {
+    font-size: 2.55rem;
+  }
+
+  .final-container p {
+    font-size: 0.82rem;
+  }
+
+  .final-button {
+    padding:
+      14px
+      20px;
+
+    font-size: 0.66rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .veterans-hero {
+    padding-top: 75px;
+  }
+
+  .hero-title {
+    font-size: 2.12rem;
+  }
+
+  .veterans-offer-badge {
+    font-size: 0.64rem;
+  }
+
+  .supporting-line p {
+    font-size: 0.42rem;
+  }
+
+  .thank-you-line strong {
+    font-size: 0.50rem;
+  }
+
+  .call-content strong {
+    font-size: 0.69rem;
+  }
+
+  .service-text strong {
+    font-size: 0.61rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .scroll-reveal {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: none !important;
+
+    transition: none !important;
+  }
+
+  .security-circle {
+    animation: none;
+  }
+
+  .hero-call-button,
+  .veterans-offer-badge,
+  .benefit-card,
+  .package-card,
+  .security-point,
+  .security-button,
+  .final-button {
+    transition: none;
+  }
+}

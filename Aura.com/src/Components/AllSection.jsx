@@ -52,6 +52,10 @@ const footerLinks = [
     path: "/contact",
   },
   {
+    label: "Veterans Special Offer",
+    path: "/Veterens",
+  },
+  {
     label: "Live Support",
     path: "/live-support",
     live: true,
@@ -344,6 +348,30 @@ const AuraFooter = () => {
                 </span>
               </a>
 
+              {/* =====================================
+                  F6S
+              ===================================== */}
+
+              <a
+                href="https://www.f6s.com/company/saffron-guru-llc#about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link f6s-find-link"
+                aria-label="Saffron Guru on F6S"
+              >
+                <span className="find-online-logo f6s-logo-box">
+                  <img
+                    src="/Products/F6S-Logo.webp"
+                    alt="F6S"
+                    className="find-online-image f6s-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  F6S
+                </span>
+              </a>
+
             </div>
 
           </div>
@@ -354,14 +382,13 @@ const AuraFooter = () => {
             COPYRIGHT
         ========================================= */}
 
-        {/* =========================================
-    COPYRIGHT
-========================================= */}
+        <div className="footer-credit">
+          <span className="copyright-symbol">©</span>
 
-<div className="footer-credit">
-  <span className="copyright-symbol">©</span>
-  <span>2016–2026 Saffron Guru LLC. All rights reserved.</span>
-</div>
+          <span>
+            2016–2026 Saffron Guru LLC. All rights reserved.
+          </span>
+        </div>
 
       </div>
 
