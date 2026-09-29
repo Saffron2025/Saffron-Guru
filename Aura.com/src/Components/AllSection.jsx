@@ -424,6 +424,30 @@ const AuraFooter = () => {
                 </span>
               </a>
 
+              {/* =====================================
+                  GOODFIRMS
+              ===================================== */}
+
+              <a
+                href="https://www.goodfirms.co/company/saffron-guru-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link goodfirms-find-link"
+                aria-label="Saffron Guru on GoodFirms"
+              >
+                <span className="find-online-logo goodfirms-logo-box">
+                  <img
+                    src="/Products/goodfirms-logo.webp"
+                    alt="GoodFirms"
+                    className="find-online-image goodfirms-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  GoodFirms
+                </span>
+              </a>
+
             </div>
 
           </div>
