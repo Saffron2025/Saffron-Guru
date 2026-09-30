@@ -128,8 +128,8 @@ const ScamAlertsHub = ({ expand }) => {
         <div className="scam-alerts-image-border"></div>
 
         <img
-          src="/Products/scam-alerts-hub.webp"
-          alt="Scam Alerts Hub and Online Security Alerts"
+          src="/Products/saffron-guru-scam-alerts-hub.webp"
+          alt="Saffron Guru scam alerts hub"
           className="scam-alerts-image"
         />
 

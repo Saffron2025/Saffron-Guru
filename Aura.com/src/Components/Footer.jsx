@@ -138,8 +138,8 @@ const Footer = () => {
         <div className="cta-image-ring ring-two"></div>
 
         <img
-          src="/Hero/discount.WebP"
-          alt="Special offer"
+          src="/Hero/saffron-guru-special-offer.webp"
+          alt="Saffron Guru special offer"
           className="cta-icon"
         />
 
@@ -209,8 +209,8 @@ const Footer = () => {
 
       <div className="cta-second-image">
         <img
-          src="/Hero/veteran-support.webp"
-          alt="Veteran and senior support"
+          src="/Hero/saffron-guru-veteran-and-senior-support.webp"
+          alt="Saffron Guru support for veterans and seniors"
         />
       </div>
 

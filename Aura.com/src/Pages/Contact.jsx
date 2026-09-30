@@ -87,8 +87,8 @@ const Contact = () => {
                   <div className="image-light"></div>
 
                   <img
-                    src="/Products/contact-support.webp"
-                    alt="Saffron Guru IT Support"
+                    src="/Products/saffron-guru-contact-it-support.webp"
+                    alt="Contact Saffron Guru IT support team"
                     className="contact-support-image"
                   />
 
@@ -292,8 +292,8 @@ const Contact = () => {
                 <div className="contact-badge">
 
                   <img
-                    src="/Products/serving-badge.webp"
-                    alt="Serving Since 2016"
+                    src="/Products/saffron-guru-serving-since-2016.webp"
+                    alt="Saffron Guru serving customers since 2016"
                     className="contact-badge-image"
                   />
 
@@ -303,8 +303,8 @@ const Contact = () => {
                 <div className="contact-badge">
 
                   <img
-                    src="/Products/real-human-it-support.webp"
-                    alt="Real Human IT Support"
+                    src="/Products/saffron-guru-real-human-it-support.webp"
+                    alt="Real human IT support from Saffron Guru"
                     className="contact-badge-image"
                   />
 

@@ -58,8 +58,8 @@ const DefendMeBuilt = () => {
         <div className="defendmepro-image">  
           <div className="defendme-image-wrapper">  
             <img  
-              src="/Hero/DefenceMeBuilt.WebP"  
-              alt="DefendMePro Protection Illustration"  
+              src="/Hero/defendme-pro-protection-built-for-real-life.webp"  
+              alt="DefendMe Pro protection built for real life"  
             />  
             <div className="defendme-image-overlay"></div>  
           </div>  

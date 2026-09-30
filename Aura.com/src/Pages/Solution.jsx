@@ -27,8 +27,8 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/TheRising.WebP"
-                  alt="Scam Awareness"
+                  src="/Hero/rising-online-scams-against-seniors.webp"
+                  alt="Rising online scams targeting seniors"
                   effect="blur"
                   loading="lazy"
                   className="solution-img"
@@ -53,8 +53,8 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/FakeTechSupport.WebP"
-                  alt="Fake Support"
+                  src="/Hero/fake-tech-support-scam-warning.webp"
+                  alt="Fake tech support scam warning"
                   effect="blur"
                   loading="lazy"
                   className="solution-img"
@@ -79,8 +79,8 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/RomanceScam.WebP"
-                  alt="Romance Scam"
+                  src="/Hero/romance-scam-warning.webp"
+                  alt="Romance scam warning for seniors"
                   effect="blur"
                   loading="lazy"
                   className="solution-img"
@@ -105,8 +105,8 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/EducationScam.WebP"
-                  alt="Education First"
+                  src="/Hero/scam-education-for-seniors.webp"
+                  alt="Scam awareness education for seniors"
                   effect="blur"
                   loading="lazy"
                   className="solution-img"

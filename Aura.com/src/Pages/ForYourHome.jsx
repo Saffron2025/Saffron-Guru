@@ -37,8 +37,8 @@ const ForYourHome = () => {
 
           <div className="tech-banner-floating-image-ultimate">
             <img
-              src="/Hero/TechSupportHome.WebP"
-              alt="Tech Help"
+              src="/Hero/saffron-guru-tech-help-at-home.webp"
+              alt="Saffron Guru tech help for home users and seniors"
               loading="lazy"
             />
           </div>

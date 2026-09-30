@@ -395,7 +395,7 @@ const LiveSupport = () => {
               <div className="brand-logo-wrapper">
 
                 <img
-                  src="/Products/SaffronGuruLogo.gif"
+                  src="/Products/saffron-guru-logo.gif"
                   alt="Saffron Guru Logo"
                   className="saffronGuru-logo-support"
                 />
@@ -481,8 +481,8 @@ const LiveSupport = () => {
 
               <div className="support-badge">
                 <img
-                  src="/Products/serving-badge.webp"
-                  alt="Serving Since 2016"
+                  src="/Products/saffron-guru-serving-since-2016.webp"
+                  alt="Saffron Guru serving customers since 2016"
                   className="support-badge-image"
                 />
               </div>
@@ -492,8 +492,8 @@ const LiveSupport = () => {
 
               <div className="support-badge">
                 <img
-                  src="/Products/real-human-it-support.webp"
-                  alt="Real Human IT Support"
+                  src="/Products/saffron-guru-real-human-it-support.webp"
+                  alt="Real human IT support from Saffron Guru"
                   className="support-badge-image"
                 />
               </div>
@@ -503,8 +503,8 @@ const LiveSupport = () => {
 
               <div className="support-badge">
                 <img
-                  src="/Products/available-7-days.webp"
-                  alt="Available 7 Days a Week"
+                  src="/Products/saffron-guru-available-7-days-a-week.webp"
+                  alt="Saffron Guru tech support available 7 days a week"
                   className="support-badge-image"
                 />
               </div>

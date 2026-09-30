@@ -53,7 +53,7 @@ const FixMyTech = () => {
           <div className="fix-card show" ref={addRef}>
             <div className="fix-card-inner">
               <div className="fix-img-wrapper">
-                <img src="/resources/FixMyTechHome.Webp" alt="FixMyTech Home" className="fix-img" />
+                <img src="/resources/fixmytech-home-remote-support.webp" alt="FixMyTech Home remote tech support by Saffron Guru" className="fix-img" />
               </div>
               <div className="fix-content">
                 <h2>🏠 FixMyTech™ Home — $89.99 + taxes</h2>
@@ -75,7 +75,7 @@ const FixMyTech = () => {
           <div className="fix-card show" ref={addRef}>
             <div className="fix-card-inner reverse">
               <div className="fix-img-wrapper">
-                <img src="/resources/FixMyTechBusiness.Webp" alt="FixMyTech Business" className="fix-img" />
+                <img src="/resources/fixmytech-business-remote-support.webp" alt="FixMyTech Business remote tech support by Saffron Guru" className="fix-img" />
               </div>
               <div className="fix-content">
                 <h2>🏢 FixMyTech™ Business — $149.99 + taxes</h2>

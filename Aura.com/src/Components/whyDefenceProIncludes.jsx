@@ -169,8 +169,8 @@ const WhatDefendMeProIncludes = () => {
         <div className="includes-image-wrapper">
 
           <img
-            src="/Products/what-defendmepro-includes.webp"
-            alt="DefendMePro Protection Features"
+            src="/Products/defendme-pro-features.webp"
+            alt="What DefendMe Pro by Saffron Guru includes"
           />
 
           <div className="includes-image-overlay"></div>

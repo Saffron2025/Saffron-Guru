@@ -154,8 +154,8 @@ const RealityNumber = () => {
         <div className="reality-image-wrapper">
 
           <img
-            src="/Products/reality-numbers.webp"
-            alt="Cybercrime statistics and online scam protection"
+            src="/Products/cybercrime-statistics.webp"
+            alt="Cybercrime and online scam statistics"
           />
 
           <div className="reality-image-overlay"></div>

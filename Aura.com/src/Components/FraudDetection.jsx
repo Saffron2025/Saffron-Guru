@@ -81,8 +81,8 @@ const content = (
       <div className="fraud-image-border"></div>
 
       <img
-        src="/Hero/FraudDetection.webp"
-        alt="Fraud Detection and Online Security"
+        src="/Hero/saffron-guru-fraud-detection.webp"
+        alt="Saffron Guru fraud detection"
         className="fraud-detection-image"
       />
 

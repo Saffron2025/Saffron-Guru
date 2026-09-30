@@ -166,8 +166,8 @@ const ProtectionShowcase = () => {
             <div className="ps-image-glow"></div>
 
             <img
-              src="/Hero/Digital.avif"
-              alt="DefendMePro Digital Protection"
+              src="/Hero/defendme-pro-digital-protection.avif"
+              alt="DefendMe Pro digital protection by Saffron Guru"
               className="hero-image"
               loading="lazy"
             />
@@ -452,8 +452,8 @@ export default ProtectionShowcase;
 //           <div className="pshowcase-image">
 
 //             <img
-//               src="/Hero/Digital.avif"
-//               alt="DefendMePro Digital Protection"
+//               src="/Hero/defendme-pro-digital-protection.avif"
+//               alt="DefendMe Pro digital protection by Saffron Guru"
 //               loading="lazy"
 //             />
 

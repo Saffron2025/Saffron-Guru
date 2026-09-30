@@ -274,7 +274,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo crunchbase-logo-box">
                   <img
                     src="/Products/crunchbase-logo.webp"
-                    alt="Crunchbase"
+                    alt="Saffron Guru on Crunchbase"
                     className="find-online-image crunchbase-image"
                   />
                 </span>
@@ -318,7 +318,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo dnb-logo-box">
                   <img
                     src="/Products/dnb-logo.webp"
-                    alt="Dun & Bradstreet"
+                    alt="Saffron Guru on Dun & Bradstreet"
                     className="find-online-image dnb-image"
                   />
                 </span>
@@ -342,7 +342,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo g2-logo-box">
                   <img
                     src="/Products/g2-logo.webp"
-                    alt="G2"
+                    alt="Saffron Guru on G2"
                     className="find-online-image g2-image"
                   />
                 </span>
@@ -366,7 +366,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo bbb-logo-box">
                   <img
                     src="/Products/bbb-logo.webp"
-                    alt="Better Business Bureau"
+                    alt="Saffron Guru on Better Business Bureau"
                     className="find-online-image bbb-image"
                   />
                 </span>
@@ -390,7 +390,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo manta-logo-box">
                   <img
                     src="/Products/manta-logo.webp"
-                    alt="Manta.com"
+                    alt="Saffron Guru on Manta"
                     className="find-online-image manta-image"
                   />
                 </span>
@@ -413,8 +413,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo f6s-logo-box">
                   <img
-                    src="/Products/F6S-Logo.webp"
-                    alt="F6S"
+                    src="/Products/f6s-logo.webp"
+                    alt="Saffron Guru on F6S"
                     className="find-online-image f6s-image"
                   />
                 </span>
@@ -438,7 +438,7 @@ const AuraFooter = () => {
                 <span className="find-online-logo goodfirms-logo-box">
                   <img
                     src="/Products/goodfirms-logo.webp"
-                    alt="GoodFirms"
+                    alt="Saffron Guru on GoodFirms"
                     className="find-online-image goodfirms-image"
                   />
                 </span>

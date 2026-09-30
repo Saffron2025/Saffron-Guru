@@ -23,8 +23,8 @@ const HowSaffronWorks = () => {
           <Row className="mb-5">
             <Col md={6}>
               <img
-                src="/Hero/ThreatMonitoring.WebP"
-                alt="Real-Time Monitoring"
+                src="/Hero/saffron-guru-real-time-threat-monitoring.webp"
+                alt="Saffron Guru real-time threat monitoring dashboard"
                 className="saffron-img"
                 loading="eager"   // ✅ fast load
               />
@@ -46,8 +46,8 @@ const HowSaffronWorks = () => {
           <Row className="mb-5 flex-md-row-reverse">
             <Col md={6}>
               <img
-                src="/Hero/AlertNotification.WebP"
-                alt="Instant Alerts"
+                src="/Hero/saffron-guru-instant-scam-alerts.webp"
+                alt="Saffron Guru instant scam alerts and notifications"
                 className="saffron-img"
                 loading="eager"
               />
@@ -65,8 +65,8 @@ const HowSaffronWorks = () => {
           <Row className="mb-5">
             <Col md={6}>
               <img
-                src="/Hero/ExpertSuggestion.WebP"
-                alt="Expert Support"
+                src="/Hero/saffron-guru-expert-human-support.webp"
+                alt="Saffron Guru expert giving one-on-one tech support"
                 className="saffron-img"
                 loading="eager"
               />
@@ -88,8 +88,8 @@ const HowSaffronWorks = () => {
           <Row className="mb-5 flex-md-row-reverse">
             <Col md={6}>
               <img
-                src="/Hero/DigitalProtection.WebP"
-                alt="Layers of Protection"
+                src="/Hero/saffron-guru-layers-of-protection.webp"
+                alt="Layers of online protection from Saffron Guru"
                 className="saffron-img"
                 loading="eager"
               />

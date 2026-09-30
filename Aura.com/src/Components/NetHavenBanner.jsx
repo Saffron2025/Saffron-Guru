@@ -14,8 +14,8 @@ const NetHavenBanner = () => {
         <div className="nh-image left-image">
           <div className="image-light"></div>
           <img
-            src="/Hero/NetHavenBanner1.WebP"
-            alt="Parental Safety"
+            src="/Hero/nethaven-ai-parental-control.webp"
+            alt="NetHaven AI-powered parental control by Saffron Guru"
             loading="eager"          // 👈 load immediately
             fetchpriority="high"     // 👈 highest priority
             width="400"
@@ -39,8 +39,8 @@ const NetHavenBanner = () => {
         <div className="nh-image right-image">
           <div className="image-light"></div>
           <img
-            src="/Hero/NetHavenBanner2.WebP"
-            alt="Child Safe Internet"
+            src="/Hero/nethaven-child-safe-internet.webp"
+            alt="NetHaven safe internet for children"
             loading="eager"          // 👈 load immediately
             fetchpriority="high"     // 👈 highest priority
             width="400"

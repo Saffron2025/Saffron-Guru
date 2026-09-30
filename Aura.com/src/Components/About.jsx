@@ -34,8 +34,8 @@ const About = () => {
             </Col>
             <Col md={6}>
               <img
-                src="/Hero/OurProtection.WebP"
-                alt="Our Story"
+                src="/Hero/saffron-guru-our-story.webp"
+                alt="The Saffron Guru story"
                 className="about-image"
                 loading="lazy"
               />
@@ -46,8 +46,8 @@ const About = () => {
           <Row className="about-block reverse">
             <Col md={6}>
               <img
-                src="/Hero/OurMission.WebP"
-                alt="Our Mission"
+                src="/Hero/saffron-guru-mission.webp"
+                alt="Saffron Guru mission"
                 className="OurMission"
                 loading="lazy"
               />
@@ -85,8 +85,8 @@ const About = () => {
             </Col>
             <Col md={6}>
               <img
-                src="/Hero/OurJourney.WebP"
-                alt="Achievements"
+                src="/Hero/saffron-guru-journey-and-achievements.webp"
+                alt="Saffron Guru journey and achievements"
                 className="about-image"
                 loading="lazy"
               />
@@ -97,8 +97,8 @@ const About = () => {
           <Row className="about-block reverse">
             <Col md={6}>
               <img
-                src="/Hero/OurValue.WebP"
-                alt="Our Values"
+                src="/Hero/saffron-guru-values.webp"
+                alt="Saffron Guru values"
                 className="OurValue"
                 loading="lazy"
               />
@@ -133,8 +133,8 @@ const About = () => {
             </Col>
             <Col md={6}>
               <img
-                src="/Hero/WhatWeOfferToday.WebP"
-                alt="What We Offer"
+                src="/Hero/saffron-guru-services-today.webp"
+                alt="Saffron Guru services today"
                 className="WhatWeOfferToday"
                 loading="lazy"
               />
@@ -145,8 +145,8 @@ const About = () => {
           <Row className="about-block reverse">
             <Col md={6}>
               <img
-                src="/Hero/OurVision.WebP"
-                alt="Our Vision"
+                src="/Hero/saffron-guru-vision.webp"
+                alt="Saffron Guru vision for the future"
                 className="OurVision"
                 loading="lazy"
               />
@@ -175,8 +175,8 @@ const About = () => {
                   className="trust-link-block"
                 >
                   <img
-                    src="/Hero/cdn.WebP"
-                    alt="BBB A+ Rated"
+                    src="/Hero/saffron-guru-bbb-a-plus-rating.webp"
+                    alt="Saffron Guru BBB A+ rating"
                     className="trust-full-image"
                     loading="lazy"
                   />

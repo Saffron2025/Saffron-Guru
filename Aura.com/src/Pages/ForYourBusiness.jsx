@@ -33,8 +33,8 @@ export default function ForYourBusiness() {
             <Row className="align-items-center">
               <Col md={6}>
                 <img
-                  src="/Hero/TechFailures.WebP"
-                  alt="Tech Issues"
+                  src="/Hero/business-tech-failures.webp"
+                  alt="Small business tech problems slowing down work"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
@@ -59,8 +59,8 @@ export default function ForYourBusiness() {
             <Row className="align-items-center flex-md-row-reverse">
               <Col md={6}>
                 <img
-                  src="/Hero/ProvideTechSupport.WebP"
-                  alt="Business Live Tech Support"
+                  src="/Hero/saffron-guru-business-live-tech-support.webp"
+                  alt="Saffron Guru live tech support for small businesses"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
@@ -84,8 +84,8 @@ export default function ForYourBusiness() {
             <Row className="align-items-center">
               <Col md={6}>
                 <img
-                  src="/Hero/SafeSupport.WebP"
-                  alt="Safe Support Assist"
+                  src="/Hero/safe-support-assist-for-business.webp"
+                  alt="Safe Support Assist for business by Saffron Guru"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />

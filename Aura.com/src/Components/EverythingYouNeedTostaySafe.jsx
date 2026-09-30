@@ -43,8 +43,8 @@ const EverythingSafe = ({ expand }) => {
             </div>
 
             <img
-              src="/Hero/EveryThingStay.WebP"
-              alt="Digital Security Protection"
+              src="/Hero/saffron-guru-everything-you-need-to-stay-safe.webp"
+              alt="Everything you need to stay safe online with Saffron Guru"
               className="everything-safe-main-image"
             />
 

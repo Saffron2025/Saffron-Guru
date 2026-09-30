@@ -53,8 +53,8 @@ const TraditionalSecurityFails = () => {
 
           <div className="traditional-image-frame">
             <img
-              src="/Hero/TraditionalFails.WebP"
-              alt="Traditional security protection gaps"
+              src="/Hero/traditional-security-gaps.webp"
+              alt="Gaps in traditional antivirus protection"
               className="traditional-security-image"
             />
 

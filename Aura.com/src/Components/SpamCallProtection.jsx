@@ -99,8 +99,8 @@ const SpamCallProtection = ({ expand }) => {
 
         <div className="spam-call-image-box">
           <img
-            src="/Products/spam-call-protection.webp"
-            alt="Spam Call Protection"
+            src="/Products/saffron-guru-spam-call-protection.webp"
+            alt="Saffron Guru spam call protection"
           />
         </div>
 

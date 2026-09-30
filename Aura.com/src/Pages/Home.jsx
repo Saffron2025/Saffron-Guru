@@ -141,8 +141,8 @@ const Hero = () => {
         {/* SERVING IMAGE */}
         <div className="hero-serving-image-wrapper">
           <img
-            src="/Products/serving-badge.webp"
-            alt="Serving Customers"
+            src="/Products/saffron-guru-serving-since-2016.webp"
+            alt="Saffron Guru serving customers since 2016"
             className="hero-serving-image"
           />
         </div>
@@ -164,8 +164,8 @@ const Hero = () => {
         {/* 7 DAYS IMAGE */}
         <div className="hero-days-image-wrapper">
           <img
-            src="/Products/available-7-days.webp"
-            alt="Available 7 Days a Week"
+            src="/Products/saffron-guru-available-7-days-a-week.webp"
+            alt="Saffron Guru tech support available 7 days a week"
             className="hero-days-image"
           />
         </div>
@@ -184,8 +184,8 @@ const Hero = () => {
         {/* THIRD IMAGE */}
         <div className="hero-third-image-wrapper">
           <img
-            src="/Products/online-support.webp"
-            alt="Online IT Support"
+            src="/Products/saffron-guru-online-it-support.webp"
+            alt="Saffron Guru online IT support"
             className="hero-third-image"
           />
         </div>
@@ -202,8 +202,8 @@ const Hero = () => {
         <div className="aura-mockup-glow-ring pulse-ring"></div>
 
         <img
-          src="/Hero/Header Banner Img.avif"
-          alt="Complete Online Protection"
+          src="/Hero/saffron-guru-remote-onsite-tech-support.avif"
+          alt="Saffron Guru remote and on-site tech support for homes and small businesses"
           className="aura-iphone-mockup hover-tilt"
         />
 
@@ -243,8 +243,8 @@ const Hero = () => {
                 <div className="trust-card bbb-card">
 
                   <img
-                    src="/Hero/cdn.WebP"
-                    alt="BBB A+ Rated"
+                    src="/Hero/saffron-guru-bbb-a-plus-rating.webp"
+                    alt="Saffron Guru BBB A+ rating"
                   />
 
                 </div>
@@ -418,8 +418,8 @@ const Hero = () => {
               <span className="aura-feature-glow-ring"></span>
 
               <img
-                src="/Hero/Parental Solution.WebP"
-                alt="Parental Solution"
+                src="/Hero/saffron-guru-parental-control-solution.webp"
+                alt="Saffron Guru parental control solution to protect kids online"
                 className="hero-img"
               />
 
@@ -543,8 +543,8 @@ const Hero = () => {
           <div className="image-corner-decoration decoration-two"></div>
 
           <img
-            src="/Hero/SP.WebP"
-            alt="Online Protection"
+            src="/Hero/saffron-guru-online-protection.webp"
+            alt="Saffron Guru online protection and IT help"
             className="online-protection-image"
           />
 

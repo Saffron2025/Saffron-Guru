@@ -14,8 +14,8 @@ const DaysMoneyBack = () => {
           <div className="moneyback-toprow">
             <div className="moneyback-left">
               <img 
-                src="/Hero/MoneyBack.WebP" 
-                alt="30-Day Money Back Guarantee" 
+                src="/Hero/saffron-guru-30-day-money-back-guarantee.webp" 
+                alt="Saffron Guru 30-day money back guarantee" 
                 className="moneyback-image"
                 loading="lazy"
               />
@@ -23,8 +23,8 @@ const DaysMoneyBack = () => {
            <div className="moneyback-right">
   <h1 className="moneyback-heading">
     <img 
-      src="/Hero/shield.WebP" 
-      alt="Shield Icon" 
+      src="/Hero/defendme-pro-shield.webp" 
+      alt="Saffron Guru protection shield" 
       className="moneyback-shield" 
     />
     30-Day Money Back Guarantee

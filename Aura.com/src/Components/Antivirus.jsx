@@ -106,8 +106,8 @@ const Antivirus = ({ expand }) => {
         <div className="antivirus-image-glow"></div>
 
         <img
-          src="/Products/antivirus.webp"
-          alt="Antivirus and Device Security"
+          src="/Products/saffron-guru-antivirus-device-security.webp"
+          alt="Saffron Guru antivirus and device security"
           className="antivirus-main-image"
         />
 

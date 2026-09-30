@@ -15,11 +15,11 @@ const videos = [
 
 // 📰 News Links
 const newsLinks = [
-  { icon: "/Hero/FoxNews.WebP", label: "Fox: Social Security Scam", url: "/Fox" },
-  { icon: "/Hero/CBS.WebP", label: "CBS: Eagan Couple Nearly Scammed", url: "/CBS" },
-  { icon: "/Hero/ABC11.WebP", label: "ABC11: Tech Support Scam", url: "/ABC11" },
-  { icon: "/Hero/NewYorkPolice.WebP", label: "New York PD: Scam Alert", url: "/NewYorkPolice" },
-  { icon: "/Hero/ABCNational.WebP", label: "ABC: $4.8B Lost by Seniors", url: "/ABCNational" },
+  { icon: "/Hero/fox-news-video-thumbnail.webp", label: "Fox: Social Security Scam", url: "/Fox" },
+  { icon: "/Hero/cbs-news-video-thumbnail.webp", label: "CBS: Eagan Couple Nearly Scammed", url: "/CBS" },
+  { icon: "/Hero/abc11-news-video-thumbnail.webp", label: "ABC11: Tech Support Scam", url: "/ABC11" },
+  { icon: "/Hero/new-york-police-video-thumbnail.webp", label: "New York PD: Scam Alert", url: "/NewYorkPolice" },
+  { icon: "/Hero/abc-national-news-video-thumbnail.webp", label: "ABC: $4.8B Lost by Seniors", url: "/ABCNational" },
 ];
 
 const Videos = () => {
@@ -97,7 +97,7 @@ const Videos = () => {
               className="news-link"
               onClick={() => navigate(item.url)}
             >
-              <img src={item.icon} alt="news" className="news-icon" />
+              <img src={item.icon} alt="News channel logo" className="news-icon" />
               {item.label}
             </div>
           ))}

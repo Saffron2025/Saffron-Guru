@@ -8,8 +8,8 @@ const DefendMeBusiness = () => {
       {/* Image block */}
       <div className="business-image-container">
         <img
-          src="/Hero/DefendMeProForBusiness.WebP"
-          alt="Cybersecurity for business"
+          src="/Hero/defendme-pro-cybersecurity-for-business.webp"
+          alt="DefendMe Pro cybersecurity for business by Saffron Guru"
           className="business-image"
         />
       </div>

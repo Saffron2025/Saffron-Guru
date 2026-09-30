@@ -22,7 +22,7 @@ const TenYear = () => {
             <span className="anniversary-light-sweep"></span>
 
             <img
-              src="/Products/10th Year Aniv.webp"
+              src="/Products/saffron-guru-10-year-anniversary.webp"
               alt="10 Years of Saffron Guru"
               className="saffron-10-years-image"
             />

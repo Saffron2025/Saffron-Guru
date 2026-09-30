@@ -3,7 +3,7 @@ export const products = [
 { 
   id: 1, 
   name: "Office 2016 Pro Plus", 
-  img: "/Products/Office2016ProPlus.WebP", 
+  img: "/Products/microsoft-office-2016-professional-plus.webp", 
   price: "$99.99", 
   desc: "Classic productivity suite trusted by millions.",
   longDesc: `
@@ -38,7 +38,7 @@ Microsoft Office 2016 Pro Plus remains a **reliable, cost-effective choice** for
 { 
   id: 2, 
   name: "Office 2019 Pro Plus", 
-  img: "/Products/Office 2019 Pro Plus.Webp", 
+  img: "/Products/microsoft-office-2019-professional-plus.webp", 
   price: "$129.99", 
   desc: "Modern productivity apps with cloud sync.",
   longDesc: `
@@ -72,7 +72,7 @@ Office 2019 Pro Plus combines **modern upgrades, cloud integration, and one-time
 { 
   id: 3, 
   name: "Office 2021 Pro Plus", 
-  img: "/Products/Office 2021 Pro Plus.Webp", 
+  img: "/Products/microsoft-office-2021-professional-plus.webp", 
   price: "$149.99", 
   desc: "Latest one-time Office license.",
   longDesc: `
@@ -106,7 +106,7 @@ Office 2021 Pro Plus is the **best balance of modern features and affordability*
  { 
   id: 4, 
   name: "Office 2024 Pro Plus", 
-  img: "/Products/Office 2024 Pro Plus.Webp", 
+  img: "/Products/microsoft-office-2024-professional-plus.webp", 
   price: "$199.99", 
   desc: "Upcoming future-ready Office tools.",
   longDesc: `
@@ -144,7 +144,7 @@ Office 2024 Pro Plus is the **most advanced Office suite ever released**, combin
 { 
   id: 5, 
   name: "Project 2019 / 2021 Pro", 
-  img: "/Products/Project 2019  2021 Pro.Webp", 
+  img: "/Products/microsoft-project-2019-2021-professional.webp", 
   price: "$179.99", 
   desc: "Advanced project management for professionals.",
   longDesc: `
@@ -181,7 +181,7 @@ Project Pro 2019 / 2021 empowers professionals with the tools to **deliver proje
 { 
   id: 6, 
   name: "Visio 2019 / 2021 Pro", 
-  img: "/Products/Visio 2019  2021 Pro.Webp", 
+  img: "/Products/microsoft-visio-2019-2021-professional.webp", 
   price: "$159.99", 
   desc: "Powerful diagramming and flowcharts.",
   longDesc: `
@@ -219,7 +219,7 @@ Visio 2019 / 2021 Pro is the ultimate tool for anyone who needs to **visualize, 
  { 
   id: 7, 
   name: "Windows 11 Home", 
-  img: "/Products/Windows 11 Home.Webp", 
+  img: "/Products/microsoft-windows-11-home.webp", 
   price: "$119.99", 
   desc: "For everyday use with latest features.",
   longDesc: `
@@ -254,7 +254,7 @@ Windows 11 Home offers the **perfect balance of performance, security, and style
 { 
   id: 8, 
   name: "Windows 11 Pro", 
-  img: "/Products/Windows 11 Pro.Webp", 
+  img: "/Products/microsoft-windows-11-pro.webp", 
   price: "$199.99", 
   desc: "For power users & businesses.",
   longDesc: `
@@ -289,7 +289,7 @@ Windows 11 Pro is a **reliable, business-ready OS** that balances **performance,
 { 
   id: 9, 
   name: "Windows Server 2019 Standard / Datacenter", 
-  img: "/Products/Windows Server 2019 Standard  Datacenter.Webp", 
+  img: "/Products/microsoft-windows-server-2019-standard-datacenter.webp", 
   price: "$399.99", 
   desc: "Reliable server OS for enterprise.",
   longDesc: `
@@ -323,7 +323,7 @@ Windows Server 2019 Standard / Datacenter delivers **unmatched reliability, secu
 { 
   id: 10, 
   name: "Windows Server 2022 Standard / Datacenter", 
-  img: "/Products/Windows Server 2022 Standard  Datacenter.Webp", 
+  img: "/Products/microsoft-windows-server-2022-standard-datacenter.webp", 
   price: "$499.99", 
   desc: "Next-gen secure server platform.",
   longDesc: `
@@ -359,7 +359,7 @@ Windows Server 2022 Standard / Datacenter represents a **secure, cloud-ready, an
 {
   id: 11,
   name: "Norton 360 Premium (10 Devices)",
-  img: "/Products/Norton360Premium.Webp",
+  img: "/Products/norton-360-premium.webp",
   price: "$99.99",
   desc: "Complete security suite with antivirus, VPN & dark web monitoring.",
   longDesc: `
@@ -408,7 +408,7 @@ Norton 360 Premium for 10 Devices delivers robust, all-in-one protection for ind
 { 
   id: 12, 
   name: "Norton 360 with LifeLock Ultimate Plus", 
-  img: "/Products/NortonLifeLock.Webp", 
+  img: "/Products/norton-lifelock.webp", 
   price: "$149.99", 
   desc: "High-end Norton protection including LifeLock identity protection.",
   longDesc: `
@@ -444,7 +444,7 @@ In short, Norton 360 with LifeLock Ultimate Plus offers **complete peace of mind
 { 
   id: 13, 
   name: "McAfee Total Protection – Family (10 Devices)", 
-  img: "/Products/McAfeeTotalProtection.Webp", 
+  img: "/Products/mcafee-total-protection.webp", 
   price: "$89.99", 
   desc: "Family protection plan with antivirus, VPN, and password manager.",
   longDesc: `
@@ -486,7 +486,7 @@ McAfee Total Protection – Family (10 Devices) is a smart choice for households
 { 
   id: 14, 
   name: "McAfee LiveSafe (Unlimited Devices)", 
-  img: "/Products/McAfeeLiveSafe.Webp", 
+  img: "/Products/mcafee-livesafe.webp", 
   price: "$129.99", 
   desc: "Covers unlimited devices with antivirus, VPN, and identity protection.",
   longDesc: `
@@ -529,7 +529,7 @@ McAfee LiveSafe (Unlimited Devices) is a **premium all-in-one solution** for hou
 { 
   id: 15, 
   name: "Symantec Endpoint Protection (SEP)", 
-  img: "/Products/SymantecSEP.Webp", 
+  img: "/Products/symantec-endpoint-protection.webp", 
   price: "$249.99", 
   desc: "Enterprise-grade endpoint protection from Symantec (Broadcom).",
   longDesc: `
@@ -572,7 +572,7 @@ Symantec Endpoint Protection (SEP) is a **battle-tested enterprise solution** th
 { 
   id: 16, 
   name: "McAfee Endpoint Security (ENS)", 
-  img: "/Products/McAfeeENS.Webp", 
+  img: "/Products/mcafee-endpoint-security.webp", 
   price: "$229.99", 
   desc: "Business endpoint protection with threat prevention and firewall.",
   longDesc: `
@@ -613,7 +613,7 @@ McAfee Endpoint Security (ENS) delivers **comprehensive endpoint protection for 
 { 
   id: 17, 
   name: "CrowdStrike Falcon Endpoint Protection", 
-  img: "/Products/CrowdStrikeFalcon.Webp", 
+  img: "/Products/crowdstrike-falcon.webp", 
   price: "$299.99", 
   desc: "Next-gen AI-powered endpoint detection and response.",
   longDesc: `
