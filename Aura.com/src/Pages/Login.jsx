@@ -12,6 +12,15 @@ const Login = () => {
 
   // Turnstile CAPTCHA rendering
   useEffect(() => {
+    // Load the Cloudflare check only on this page (it used to load on every page)
+    if (!window.turnstile && !document.getElementById('cf-turnstile-script')) {
+      const sc = document.createElement('script');
+      sc.id = 'cf-turnstile-script';
+      sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      sc.async = true;
+      sc.defer = true;
+      document.head.appendChild(sc);
+    }
     const interval = setInterval(() => {
       if (window.turnstile && captchaRef.current && !captchaRef.current.hasChildNodes()) {
         window.turnstile.render(captchaRef.current, {

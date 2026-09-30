@@ -265,6 +265,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo crunchbase-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/crunchbase-logo.webp"
                     alt="Saffron Guru on Crunchbase"
                     className="find-online-image crunchbase-image"
@@ -309,6 +311,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo dnb-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/dnb-logo.webp"
                     alt="Saffron Guru on Dun & Bradstreet"
                     className="find-online-image dnb-image"
@@ -333,6 +337,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo g2-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/g2-logo.webp"
                     alt="Saffron Guru on G2"
                     className="find-online-image g2-image"
@@ -357,6 +363,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo bbb-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/bbb-logo.webp"
                     alt="Saffron Guru on Better Business Bureau"
                     className="find-online-image bbb-image"
@@ -381,6 +389,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo manta-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/manta-logo.webp"
                     alt="Saffron Guru on Manta"
                     className="find-online-image manta-image"
@@ -405,6 +415,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo f6s-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/f6s-logo.webp"
                     alt="Saffron Guru on F6S"
                     className="find-online-image f6s-image"
@@ -429,6 +441,8 @@ const AuraFooter = () => {
               >
                 <span className="find-online-logo goodfirms-logo-box">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/Products/goodfirms-logo.webp"
                     alt="Saffron Guru on GoodFirms"
                     className="find-online-image goodfirms-image"

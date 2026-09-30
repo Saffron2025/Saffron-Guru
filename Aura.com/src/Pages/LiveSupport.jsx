@@ -395,7 +395,7 @@ const LiveSupport = () => {
               <div className="brand-logo-wrapper">
 
                 <img
-                  src="/Products/saffron-guru-logo.gif"
+                  src="/Products/saffron-guru-logo.webp"
                   alt="Saffron Guru Logo"
                   className="saffronGuru-logo-support"
                 />

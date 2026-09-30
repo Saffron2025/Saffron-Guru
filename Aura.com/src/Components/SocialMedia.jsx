@@ -49,6 +49,8 @@ const SocialMedia = () => {
           <div className="social-logo-box">
 
             <img
+                    loading="lazy"
+                    decoding="async"
               src="/Products/trustpilot-logo.webp"
               alt="Saffron Guru reviews on Trustpilot"
               className="review-platform-logo trustpilot-logo"
@@ -91,6 +93,8 @@ const SocialMedia = () => {
           <div className="social-logo-box">
 
             <img
+                    loading="lazy"
+                    decoding="async"
               src="/Products/saffron-guru-bbb-profile.webp"
               alt="Saffron Guru on Better Business Bureau"
               className="review-platform-logo bbb-logo"
@@ -133,6 +137,8 @@ const SocialMedia = () => {
           <div className="social-logo-box">
 
             <img
+                    loading="lazy"
+                    decoding="async"
               src="/Products/smartcustomer-logo.webp"
               alt="Saffron Guru reviews on SmartCustomer"
               className="review-platform-logo smartcustomer-logo"
@@ -251,6 +257,8 @@ const SocialMedia = () => {
           <div className="social-logo-box social-g2-box">
 
             <img
+                    loading="lazy"
+                    decoding="async"
               src="/Products/g2-logo.webp"
               alt="Saffron Guru on G2"
               className="review-platform-logo g2-logo"

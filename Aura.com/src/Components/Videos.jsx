@@ -73,6 +73,8 @@ const Videos = () => {
                   }}
                 >
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                     alt={video.title}
                     className="yt-thumb-img"
@@ -97,7 +99,9 @@ const Videos = () => {
               className="news-link"
               onClick={() => navigate(item.url)}
             >
-              <img src={item.icon} alt="News channel logo" className="news-icon" />
+              <img
+                    loading="lazy"
+                    decoding="async" src={item.icon} alt="News channel logo" className="news-icon" />
               {item.label}
             </div>
           ))}

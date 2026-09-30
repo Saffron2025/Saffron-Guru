@@ -263,23 +263,31 @@
     </script>
 
     <!-- ===================================================== -->
-    <!-- 🔹 CLOUDFLARE TURNSTILE -->
+    <!-- 🔹 FONTS (all website fonts in ONE request, loaded without blocking the page) -->
     <!-- ===================================================== -->
 
-    <script
-      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-      async
-      defer
-    ></script>
-
-    <!-- ===================================================== -->
-    <!-- 🔹 FONT AWESOME -->
-    <!-- ===================================================== -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Nunito:wght@400;500;600;700;800;900&amp;family=Orbitron:wght@500;600;700;800&amp;family=Outfit:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;family=Raleway:wght@400;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Urbanist:wght@400;600;800&amp;display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;family=Nunito:wght@400;500;600;700;800;900&amp;family=Orbitron:wght@500;600;700;800&amp;family=Outfit:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;family=Raleway:wght@400;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Urbanist:wght@400;600;800&amp;display=swap" /></noscript>
+
+    <!-- ===================================================== -->
+    <!-- 🔹 FONT AWESOME (icons, loaded without blocking the page) -->
+    <!-- ===================================================== -->
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   </head>
 
   <body>

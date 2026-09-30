@@ -255,7 +255,7 @@ const AppNavbar = () => {
         >
           <div className="logo-wrapper">
             <img
-              src="/Products/saffron-guru-logo.gif"
+              src="/Products/saffron-guru-logo.webp"
               alt="Saffron Guru Logo"
               className="saffronGuru-logo"
             />
