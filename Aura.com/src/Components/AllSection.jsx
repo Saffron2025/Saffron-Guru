@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
-  FaYoutube,
   FaLinkedinIn,
   FaPinterestP,
   FaMedium,
@@ -87,13 +86,6 @@ const socialLinks = [
     url: "https://www.instagram.com/saffrongurullc/",
     icon: <FaInstagram />,
     className: "instagram",
-  },
-
-  {
-    label: "YouTube",
-    url: "https://www.youtube.com/@SaffronGuruLLC",
-    icon: <FaYoutube />,
-    className: "youtube",
   },
 
   {
