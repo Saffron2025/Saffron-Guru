@@ -182,3 +182,9 @@
   .sgs-btn { width: 100%; text-align: center; }
   .sgs-cta-buttons { width: 100%; }
 }
+
+/* Official BBB seal above the trust points */
+.sgs-bbb { display: block; width: max-content; margin: 0 auto 22px; transition: transform 0.15s ease; }
+.sgs-bbb:hover { transform: translateY(-2px); }
+.sgs-bbb img { display: block; width: 293px; max-width: 100%; height: auto; }
+

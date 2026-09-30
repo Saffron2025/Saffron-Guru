@@ -238,7 +238,6 @@ export default function ForYourBusiness() {
           { icon: '📅', label: 'Serving businesses since 2016' },
           { icon: '🧑‍💻', label: 'Real technicians, not bots' },
           { icon: '🗓️', label: 'Live help 7 days a week' },
-          { icon: '⭐', label: 'BBB A+ rated' },
           { icon: '🤝', label: 'Long-term partnerships' },
         ]}
       />

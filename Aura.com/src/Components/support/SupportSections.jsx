@@ -104,9 +104,27 @@ export const CheckList = ({ id, title, intro, points, tone = "light" }) => (
 );
 
 /* Trust points and a clear way to reach a real person */
+const BBB_PROFILE =
+  "https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick";
+
 export const TrustCallBand = ({ heading, text, points }) => (
   <section className="sgs-cta-section">
     <div className="sgs-container">
+      {/* Official BBB Accredited Business seal - links to our real BBB profile */}
+      <a
+        href={BBB_PROFILE}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sgs-bbb"
+        title="Saffron Guru LLC BBB Business Review"
+      >
+        <img
+          src="/Hero/saffron-guru-bbb-a-plus-rating.webp"
+          alt="Saffron Guru BBB A+ rating"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
       <ul className="sgs-trust">
         {points.map((p) => (
           <li key={p.label}>
