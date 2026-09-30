@@ -1,0 +1,184 @@
+/* Shared sections for the Safe Support Assist pages - sky blue, easy to read */
+.sgs-tiles-section,
+.sgs-extra-section,
+.sgs-steps-section,
+.sgs-check-section,
+.sgs-cta-section {
+  font-family: 'Nunito', sans-serif;
+  padding: 56px 16px;
+}
+.sgs-container { max-width: 1120px; margin: 0 auto; }
+.sgs-narrow { max-width: 860px; }
+.sgs-anchor { scroll-margin-top: 90px; }
+
+.sgs-title {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px;
+}
+.sgs-title span { color: #0284c7; }
+.sgs-subtitle {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #334155;
+  margin: 0 auto 32px;
+  max-width: 760px;
+}
+
+/* ---------- tiles ---------- */
+.sgs-tiles-section { background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%); }
+.sgs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.sgs-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 124px;
+  padding: 16px 10px;
+  background: #fff;
+  border: 2px solid #bae6fd;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.sgs-tile:hover,
+.sgs-tile:focus-visible {
+  transform: translateY(-3px);
+  border-color: #0284c7;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.18);
+  color: #0f172a;
+  outline: none;
+}
+.sgs-tile-featured { border-color: #f97316; background: #fff7ed; }
+.sgs-tile-featured:hover { border-color: #ea580c; }
+.sgs-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 50px; height: 50px; border-radius: 50%;
+  background: #e0f2fe; font-size: 1.5rem;
+}
+.sgs-tile-featured .sgs-icon { background: #ffedd5; }
+.sgs-label { font-size: 1rem; font-weight: 700; line-height: 1.3; }
+
+/* ---------- extra service cards ---------- */
+.sgs-extra-section { background: #ffffff; }
+.sgs-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.sgs-card {
+  background: #f8fcff;
+  border: 1px solid #bae6fd;
+  border-radius: 18px;
+  padding: 24px 22px;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.06);
+}
+.sgs-card-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  background: #e0f2fe; font-size: 1.7rem; margin-bottom: 14px;
+}
+.sgs-card h3 { font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 0 0 8px; }
+.sgs-card p { font-size: 1.07rem; line-height: 1.6; color: #334155; margin: 0; }
+
+/* ---------- steps ---------- */
+.sgs-steps-section { background: #f0f9ff; }
+.sgs-steps {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.sgs-step {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 22px 24px;
+  border: 1px solid #bae6fd;
+  text-align: center;
+}
+.sgs-step-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: #0284c7; color: #fff; font-weight: 800; font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.sgs-step h3 { font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 0 0 8px; }
+.sgs-step p { font-size: 1.07rem; line-height: 1.6; color: #334155; margin: 0; }
+
+/* ---------- checklist ---------- */
+.sgs-light { background: #ffffff; }
+.sgs-blue { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
+.sgs-blue .sgs-title, .sgs-blue .sgs-subtitle, .sgs-blue .sgs-checks li { color: #fff; }
+.sgs-checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.sgs-checks li {
+  display: flex; gap: 14px; align-items: flex-start;
+  font-size: 1.12rem; line-height: 1.6; color: #1e293b;
+  background: rgba(2, 132, 199, 0.06);
+  border-radius: 14px; padding: 14px 18px;
+}
+.sgs-blue .sgs-checks li { background: rgba(255, 255, 255, 0.12); }
+.sgs-check {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: #16a34a; color: #fff; font-weight: 800;
+}
+
+/* ---------- trust + call ---------- */
+.sgs-cta-section { background: #ffffff; }
+.sgs-trust {
+  list-style: none; padding: 0; margin: 0 0 28px;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+}
+.sgs-trust li {
+  background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 999px;
+  padding: 10px 18px; font-size: 1.05rem; font-weight: 700; color: #0f172a;
+}
+.sgs-cta {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border-radius: 22px; padding: 32px 36px; color: #fff;
+  box-shadow: 0 14px 32px rgba(2, 132, 199, 0.28);
+}
+.sgs-cta h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); font-weight: 800; margin: 0 0 6px; color: #fff; }
+.sgs-cta p { font-size: 1.12rem; margin: 0; opacity: 0.95; }
+.sgs-cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; flex-shrink: 0; }
+.sgs-btn {
+  display: inline-block; padding: 14px 24px; border-radius: 12px;
+  font-size: 1.12rem; font-weight: 800; text-decoration: none; white-space: nowrap;
+  transition: transform 0.15s ease;
+}
+.sgs-btn:hover { transform: translateY(-2px); }
+.sgs-btn-primary { background: #f97316; color: #fff; }
+.sgs-btn-primary:hover { color: #fff; background: #ea580c; }
+.sgs-btn-secondary { background: #fff; color: #0369a1; }
+.sgs-btn-secondary:hover { color: #075985; }
+
+@media (max-width: 1000px) {
+  .sgs-grid { grid-template-columns: repeat(3, 1fr); }
+  .sgs-steps { grid-template-columns: 1fr; }
+  .sgs-cta { flex-direction: column; text-align: center; }
+  .sgs-cta-buttons { justify-content: center; }
+}
+@media (max-width: 640px) {
+  .sgs-tiles-section, .sgs-extra-section, .sgs-steps-section, .sgs-check-section, .sgs-cta-section { padding: 40px 16px; }
+  .sgs-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .sgs-tile { min-height: 112px; }
+  .sgs-cta { padding: 26px 20px; }
+  .sgs-btn { width: 100%; text-align: center; }
+  .sgs-cta-buttons { width: 100%; }
+}
