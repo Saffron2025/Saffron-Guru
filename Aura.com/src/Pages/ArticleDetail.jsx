@@ -4,10 +4,24 @@ import { articles } from "../data/articles";
 import AppNavbar from "../Components/AppNavbar";
 import AllSection from "../Components/AllSection";
 import "./ArticleLayout.css";
+import { usePageMeta, cleanTitle, shortDescription } from "../utils/pageMeta";
 
 const ArticleDetail = () => {
   const { id } = useParams();
   const article = articles.find((a) => a.id === id);
+
+  usePageMeta(
+    article
+      ? {
+          title: cleanTitle(article.title),
+          description: shortDescription(article.lead),
+          path: `/articles/${article.id}`,
+          image: article.image,
+          type: "article",
+        }
+      : { title: "Article Not Found", path: `/articles/${id}`, noindex: true },
+    [id]
+  );
 
   if (!article) return <h2>Article not found</h2>;
 

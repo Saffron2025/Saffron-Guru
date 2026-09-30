@@ -2,9 +2,9 @@ const blogs = {
 
   
 "online-scam-guide": {
-  title: "🛡️ Online Scam Guide 2025",
+  title: "🛡️ Online Scam Guide",
   content: `
-    <p>In 2025, online scams have reached new levels of sophistication. 
+    <p>Today, online scams have reached new levels of sophistication. 
     Criminals are now using Artificial Intelligence, deepfakes, and social engineering 
     to trick people. Seniors, who may not always be updated with the latest 
     technology, are unfortunately the most common targets.</p>
@@ -19,7 +19,7 @@ const blogs = {
     </ul>
 
     <h2>⚠️ Common Online Scams</h2>
-    <p>Here are the most common types of scams in 2025:</p>
+    <p>Here are the most common types of scams:</p>
     <ul>
       <li><strong>Fake Antivirus Pop-Ups:</strong> Messages claiming your computer is infected and asking you to call a number.</li>
       <li><strong>Phishing Emails:</strong> Fake bank or tax authority messages that steal your passwords.</li>
@@ -65,15 +65,15 @@ const blogs = {
     <h2>🚀 Final Words</h2>
     <p>Online scams will keep evolving, but knowledge is the best defense. 
     By staying alert, verifying every call or email, and using reliable security 
-    tools, seniors can protect themselves and their hard-earned money in 2025.</p>
+    tools, seniors can protect themselves and their hard-earned money.</p>
   `
 },
 
 
   "romance-scam": {
-  title: "❤️ Romance Scams Explained – Protecting Seniors in 2025",
+  title: "❤️ Romance Scams Explained – Protecting Seniors",
   content: `
-    <p>Romance scams are one of the fastest-growing types of online fraud in 2025. 
+    <p>Romance scams are one of the fastest-growing types of online fraud. 
     They are not just financial traps, but also emotional ones. Seniors are often 
     targeted because scammers know that loneliness and trust can be exploited. 
     Understanding how these scams work is the first step to avoiding them.</p>
@@ -132,7 +132,7 @@ const blogs = {
 
     <h2>🔗 Related Reading</h2>
     <ul>
-      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide 2025</a></li>
+      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide</a></li>
       <li><a href="/blog/identity-theft">👤 Identity Theft Protection</a></li>
       <li><a href="/blog/investment-scam">💰 Investment & Lottery Scams</a></li>
     </ul>
@@ -141,15 +141,15 @@ const blogs = {
     <p>Romance scams may look like harmless conversations at first, but they can 
     drain bank accounts and leave deep emotional scars. Always verify, involve 
     your family, and remember: true love will never ask for urgent money transfers. 
-    In 2025, staying safe online means staying alert and informed.</p>
+    Today, staying safe online means staying alert and informed.</p>
   `
 },
 
 
   "tech-support-scam": {
-  title: "🖥️ Fake Tech Support Scams – How to Stay Safe in 2025",
+  title: "🖥️ Fake Tech Support Scams – How to Stay Safe",
   content: `
-    <p>Tech support scams have been around for years, but in 2025 they have 
+    <p>Tech support scams have been around for years, but today they have 
     become more advanced. Fraudsters no longer just rely on pop-ups; they now 
     use AI-generated voices, fake websites, and even cloned customer service 
     numbers to trick people. Seniors are particularly at risk because scammers 
@@ -218,7 +218,7 @@ const blogs = {
 
     <h2>🔗 Related Reading</h2>
     <ul>
-      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide 2025</a></li>
+      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide</a></li>
       <li><a href="/blog/phishing-emails">📧 Phishing Emails & Fake Links</a></li>
       <li><a href="/blog/spam-calls">📞 Spam Calls & Robocalls</a></li>
     </ul>
@@ -227,15 +227,14 @@ const blogs = {
     <p>Tech support scams thrive on fear. The moment you see urgent warnings, 
     pause and think: “Is this real?” Always verify through official channels, 
     involve your family in decisions, and never rush into payments or downloads. 
-    Staying calm and cautious is the best defense against tech support scams 
-    in 2025.</p>
+    Staying calm and cautious is the best defense against tech support scams.</p>
   `
 },
 
   "banking-otp-fraud": {
-  title: "💳 Banking & OTP Fraud – How to Stay Safe in 2025",
+  title: "💳 Banking & OTP Fraud – How to Stay Safe",
   content: `
-    <p>Banking fraud has become one of the biggest threats to seniors in 2025. 
+    <p>Banking fraud has become one of the biggest threats to seniors. 
     Criminals no longer need to steal your debit card or checkbook. Instead, they 
     use phone calls, fake SMS, and phishing websites to trick you into sharing 
     your <strong>OTP (One-Time Password)</strong> or banking PIN. Once they have it, 
@@ -308,17 +307,17 @@ const blogs = {
     <p>Banking & OTP frauds succeed because they exploit fear and urgency. Remember, 
     banks will never ask for your OTP, PIN, or CVV over calls or SMS. If you stay 
     calm, verify through official numbers, and involve your family in such decisions, 
-    you can keep your hard-earned savings safe in 2025.</p>
+    you can keep your hard-earned savings safe.</p>
   `
 },
 
 
   "spam-calls": {
-  title: "📞 Spam Calls & Robocalls – A Senior’s Guide to Safety in 2025",
+  title: "📞 Spam Calls & Robocalls – A Senior’s Guide to Safety",
   content: `
     <p>Every day, millions of people across the world receive unwanted spam calls 
     and robocalls. For seniors, these calls are more than just an annoyance – 
-    they can lead to fraud, financial loss, and even identity theft. In 2025, 
+    they can lead to fraud, financial loss, and even identity theft. Today, 
     robocall technology has become more sophisticated, making it harder to 
     distinguish fake calls from real ones. This guide explains how these scams 
     work and how seniors can protect themselves.</p>
@@ -389,7 +388,7 @@ const blogs = {
     </ul>
 
     <h2>🚀 Final Words</h2>
-    <p>Spam calls and robocalls will continue in 2025, but you don’t have to fall victim. 
+    <p>Spam calls and robocalls will continue, but you don’t have to fall victim. 
     Remember: <strong>legitimate organizations never ask for urgent money or sensitive 
     details over the phone</strong>. Protect yourself by ignoring suspicious calls, 
     reporting them, and involving your family whenever you’re unsure. Caution is the 
@@ -398,10 +397,10 @@ const blogs = {
 },
 
   "phishing-emails": {
-  title: "📧 Phishing Emails & Fake Links – Don’t Get Trapped in 2025",
+  title: "📧 Phishing Emails & Fake Links – Don’t Get Trapped",
   content: `
     <p>Phishing emails are one of the oldest yet most dangerous scams. 
-    In 2025, fraudsters have become even smarter by creating emails that 
+    Today, fraudsters have become even smarter by creating emails that 
     look exactly like messages from banks, government agencies, or even 
     your relatives. For seniors, these emails are particularly risky because 
     they often look so real that it’s hard to tell the difference.</p>
@@ -468,7 +467,7 @@ const blogs = {
 
     <h2>🔗 Related Reading</h2>
     <ul>
-      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide 2025</a></li>
+      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide</a></li>
       <li><a href="/blog/banking-otp-fraud">💳 Banking & OTP Fraud</a></li>
       <li><a href="/blog/identity-theft">👤 Identity Theft Protection</a></li>
     </ul>
@@ -479,12 +478,12 @@ const blogs = {
     Remember: <strong>banks and companies never ask for sensitive details 
     through email links</strong>. Stay alert, involve your family, and 
     always verify before you act. With these habits, seniors can stay 
-    safe from phishing scams in 2025.</p>
+    safe from phishing scams.</p>
   `
 },
 
   "identity-theft": {
-  title: "👤 Identity Theft Protection – Safeguard Your Personal Details in 2025",
+  title: "👤 Identity Theft Protection – Safeguard Your Personal Details",
   content: `
     <p>Identity theft is one of the fastest-growing cybercrimes worldwide. 
     For seniors, it can be especially devastating because fraudsters use 
@@ -560,17 +559,17 @@ const blogs = {
     <p>Identity theft is not just a financial crime – it’s a theft of your peace of mind. 
     Seniors must be extra cautious, as fraudsters often see them as “easy targets.” 
     By shredding documents, using strong digital protection, and staying alert, 
-    you can reduce the chances of identity theft in 2025. Always involve your family 
+    you can reduce the chances of identity theft. Always involve your family 
     if you notice anything unusual – quick action can save months of stress.</p>
   `
 },
 
   "online-shopping": {
-  title: "🌐 Safe Online Shopping for Seniors – Shop Smart, Shop Safe in 2025",
+  title: "🌐 Safe Online Shopping for Seniors – Shop Smart, Shop Safe",
   content: `
     <p>Online shopping is convenient and exciting, but it also comes with 
     risks—especially for seniors who may not be familiar with the latest 
-    digital tricks. In 2025, fraudsters are running highly convincing 
+    digital tricks. Today, fraudsters are running highly convincing 
     fake shopping websites, fake discount offers, and unsafe payment pages 
     to trick people into giving away money or personal details.</p>
 
@@ -643,14 +642,14 @@ const blogs = {
     must stay alert, shop from trusted sources, and never rush into 
     “limited-time” offers without verifying. <strong>If a deal looks too good 
     to be true, it probably is.</strong> Shopping smart is the best way to 
-    stay protected in 2025.</p>
+    stay protected.</p>
   `
 },
 
   "investment-scam": {
-  title: "💰 Investment & Lottery Scams – Don’t Fall for Quick Money Traps in 2025",
+  title: "💰 Investment & Lottery Scams – Don’t Fall for Quick Money Traps",
   content: `
-    <p>In 2025, one of the biggest scams affecting seniors worldwide is the 
+    <p>Today, one of the biggest scams affecting seniors worldwide is the 
     promise of <strong>easy money through investments and lotteries</strong>. 
     Fraudsters know that many seniors look for safe ways to grow their savings 
     or are excited by the idea of winning a prize. Unfortunately, these criminals 
@@ -725,7 +724,7 @@ const blogs = {
 
     <h2>🔗 Related Reading</h2>
     <ul>
-      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide 2025</a></li>
+      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide</a></li>
       <li><a href="/blog/banking-otp-fraud">💳 Banking & OTP Fraud</a></li>
       <li><a href="/blog/password-safety">🔑 Password Safety & Account Security</a></li>
     </ul>
@@ -734,18 +733,18 @@ const blogs = {
     <p>Seniors must remember: <strong>if something sounds too good to be true, it probably is.</strong> 
     Fraudsters use greed, trust, and urgency to trick victims. By asking questions, 
     involving family, and verifying investments, seniors can save themselves from 
-    losing hard-earned money. In 2025, awareness is your best shield against 
+    losing hard-earned money. Today, awareness is your best shield against 
     investment and lottery scams.</p>
   `
 },
 
   "password-safety": {
-  title: "🔑 Password Safety & Account Security – Strong Defenses for Seniors in 2025",
+  title: "🔑 Password Safety & Account Security – Strong Defenses for Seniors",
   content: `
     <p>Passwords are the digital keys to your life. From bank accounts to 
     social media, your entire identity online is protected by a string 
     of characters. Sadly, weak or reused passwords are one of the biggest 
-    reasons seniors become victims of fraud. In 2025, cybercriminals have 
+    reasons seniors become victims of fraud. Today, cybercriminals have 
     advanced hacking tools, but the good news is that with the right 
     password habits, you can stay safe.</p>
 
@@ -809,7 +808,7 @@ const blogs = {
     <ul>
       <li><a href="/blog/identity-theft">👤 Identity Theft Protection</a></li>
       <li><a href="/blog/phishing-emails">📧 Phishing Emails & Fake Links</a></li>
-      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide 2025</a></li>
+      <li><a href="/blog/online-scam-guide">🛡️ Online Scam Guide</a></li>
     </ul>
 
     <h2>🚀 Final Words</h2>
@@ -823,9 +822,9 @@ const blogs = {
 },
 
 "ai-voice-fraud": {
-  title: "🤖 AI Voice Call Frauds – The Rise of Deepfake Scams in 2025",
+  title: "🤖 AI Voice Call Frauds – The Rise of Deepfake Scams",
   content: `
-    <p>In 2025, scams have entered a dangerous new level – powered by Artificial Intelligence (AI). 
+    <p>Today, scams have entered a dangerous new level – powered by Artificial Intelligence (AI). 
     Fraudsters now use <strong>AI-generated voices</strong> to mimic family members, banks, or 
     even government officials. These “deepfake calls” sound so real that seniors often believe 
     them instantly and fall victim to financial fraud.</p>
@@ -867,10 +866,11 @@ const blogs = {
       fraud detection service.</li>
     </ul>
 
-    <h2>📊 Statistics</h2>
-    <p>According to a 2025 Cybersecurity Report, <strong>AI-powered scams grew 400% 
-    in the last two years</strong>. Nearly 1 in 3 reported scam calls now use AI voice cloning. 
-    Seniors are the most common targets because they trust familiar voices.</p>
+    <h2>📊 Why This Is Growing</h2>
+    <p>Voice cloning tools have become cheap and easy to use, and a few seconds of someone's voice
+    from a video or voicemail can be enough to copy it. Law enforcement agencies, including the FBI,
+    have warned the public about criminals using AI-generated voices to impersonate family members
+    and ask for money. Seniors are often targeted because they trust familiar voices.</p>
 
     <h2>❓ FAQs</h2>
     <p><strong>Q: Can AI really sound like my family member?</strong><br/>
@@ -894,7 +894,7 @@ const blogs = {
     <h2>🚀 Final Words</h2>
     <p>AI is a powerful tool, but in the wrong hands, it becomes a scammer’s weapon. 
     Seniors must learn to question calls – even if the voice sounds familiar. 
-    In 2025, the golden rule is: <strong>Verify before you trust.</strong> A few seconds 
+    Today, the golden rule is: <strong>Verify before you trust.</strong> A few seconds 
     of doubt can save you from losing your hard-earned savings to deepfake scams.</p>
   `
 }

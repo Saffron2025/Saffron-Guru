@@ -1075,6 +1075,42 @@ export const articles = [
         ]
       },
       {
+        type: "p",
+        text:
+          "One of the most damaging versions starts with a text message and continues with a phone call. A caller who says they are from the bank's fraud department already knows a few of your details and tells you that your savings are at risk. They then ask you to move your money to a new \"secure\" account. That account belongs to the criminals. A real bank will never ask you to move your money to keep it safe."
+      },
+      {
+        type: "h2",
+        text:
+          "Warning Signs of a Fake Bank Alert"
+      },
+      {
+        type: "ul",
+        items: [
+          "The message says your account is frozen, locked or restricted and asks you to act within minutes or hours",
+          "The link looks close to your bank's web address but is slightly different",
+          "You are asked for a one-time code, PIN, password or your full card number",
+          "A caller asks you to move money to a \"safe\" or \"protected\" account",
+          "The message uses a general greeting such as \"Dear Customer\" instead of your name",
+          "The text comes from an unknown number or the email comes from a personal address"
+        ]
+      },
+      {
+        type: "h2",
+        text:
+          "What To Do If You Receive One"
+      },
+      {
+        type: "ul",
+        items: [
+          "Do not click any link and do not call any number in the message",
+          "Open your bank's official app, or call the phone number printed on the back of your card",
+          "If you already shared details, call your bank right away to lock the account and change your passwords",
+          "In the United States, forward scam texts to 7726 (SPAM) and report the fraud at reportfraud.ftc.gov",
+          "If you are unsure, stop and ask a family member or call Saffron Guru before doing anything"
+        ]
+      },
+      {
         type: "info",
         text:
           "Banks do not request passwords, PINs, or one-time codes through unsolicited messages."
@@ -1127,6 +1163,41 @@ export const articles = [
         ]
       },
       {
+        type: "p",
+        text:
+          "A common trick is to place a printed sticker with a fake QR code over the real one on a parking meter, a sign or a menu. When you scan it, you land on a page that looks like a normal payment or parking website, but your card details and money go straight to the criminals. Some people have also received unexpected packages or letters with a QR code that promises to reveal who sent them. Scanning these codes can lead to fake login pages or harmful downloads."
+      },
+      {
+        type: "h2",
+        text:
+          "How to Check a QR Code Before You Pay"
+      },
+      {
+        type: "ul",
+        items: [
+          "Look closely for a sticker placed over the original code, or any sign that the code has been tampered with",
+          "After scanning, read the web address your phone shows before you open it",
+          "When possible, pay through the official app or a website address you type in yourself",
+          "Be careful with QR codes that arrive in unexpected emails, texts, letters or packages",
+          "Never enter your bank login or card details on a page you reached from an unknown QR code",
+          "For parking, use the official city parking app or pay at the machine instead"
+        ]
+      },
+      {
+        type: "h2",
+        text:
+          "If You Already Paid Through a Fake QR Code"
+      },
+      {
+        type: "ul",
+        items: [
+          "Call your bank or card company right away and ask them to dispute the payment",
+          "Change any password you typed on the fake page",
+          "Tell the business or parking operator so they can remove the fake code",
+          "Report it at reportfraud.ftc.gov and keep screenshots of the page and payment"
+        ]
+      },
+      {
         type: "info",
         text:
           "Users should avoid scanning QR codes that prompt urgent payments or request personal information."
@@ -1176,6 +1247,42 @@ export const articles = [
           "Requests for small processing fees",
           "Lookalike courier websites",
           "Time-sensitive delivery warnings"
+        ]
+      },
+      {
+        type: "p",
+        text:
+          "In the United States, these messages often pretend to come from USPS, UPS, FedEx or Amazon. The text says your package is on hold and asks you to pay a small redelivery fee or \"confirm\" your address. The fee is small on purpose. The real goal is to collect your full card details and personal information, which are then used for much larger fraud."
+      },
+      {
+        type: "h2",
+        text:
+          "Warning Signs of a Fake Delivery Message"
+      },
+      {
+        type: "ul",
+        items: [
+          "You were not expecting a package, or the message does not name what was ordered",
+          "You are asked to pay a small fee or update your address through a link",
+          "The link does not go to the official website, such as usps.com, ups.com or fedex.com",
+          "The message says the package will be returned or destroyed today unless you act now",
+          "The text comes from a random phone number or an unusual email address",
+          "USPS does not send texts or emails with links unless you signed up for tracking updates"
+        ]
+      },
+      {
+        type: "h2",
+        text:
+          "What To Do Instead"
+      },
+      {
+        type: "ul",
+        items: [
+          "Do not click the link or reply to the message",
+          "Check your delivery by typing the official courier website yourself, or open the tracking link in your original order email",
+          "If you entered card details, call your bank right away to cancel the card",
+          "Forward the text to 7726 (SPAM), and report fake USPS messages to spam@uspis.gov",
+          "Report the scam at reportfraud.ftc.gov to help protect others"
         ]
       },
       {
@@ -1349,6 +1456,41 @@ export const articles = [
           "Psychological pressure is applied",
           "User sends money manually",
           "Scammer cuts all contact"
+        ]
+      },
+      {
+        type: "p",
+        text:
+          "On payment apps such as Zelle, Venmo or Cash App, a stranger may send you money \"by mistake\" and then beg you to send it back. Sometimes the original payment came from a stolen account and is later reversed, so you lose the money you returned. In another version, a caller pretending to be from Amazon, Microsoft or your bank says you were refunded too much. They ask to connect to your computer to \"fix\" it, change what you see on the screen so it looks like extra money arrived, and then pressure you to send the difference back with gift cards, wire transfers or cryptocurrency."
+      },
+      {
+        type: "h2",
+        text:
+          "Warning Signs of a Refund Scam"
+      },
+      {
+        type: "ul",
+        items: [
+          "A stranger says they sent you money by mistake and asks you to return it quickly",
+          "A caller says you were over-refunded and must pay back the difference",
+          "You are asked to pay with gift cards, cryptocurrency, a wire transfer or a payment app",
+          "You are asked to install a program or open a website that lets someone control your computer",
+          "The caller becomes angry, emotional or threatens police or legal action"
+        ]
+      },
+      {
+        type: "h2",
+        text:
+          "What To Do"
+      },
+      {
+        type: "ul",
+        items: [
+          "Check your balance yourself in your own banking or payment app, not on a screen someone else shows you",
+          "Do not send money back yourself. Ask the sender to contact their bank or the payment app to reverse it",
+          "Never let a stranger connect to your computer or phone",
+          "If you already sent money, contact your bank or the payment app right away",
+          "Report the scam at reportfraud.ftc.gov, and call Saffron Guru if someone has accessed your computer"
         ]
       },
       {

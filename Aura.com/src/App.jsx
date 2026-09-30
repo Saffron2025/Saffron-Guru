@@ -9,6 +9,7 @@ import OurStory from "./Pages/OurStory";
 import Veterans from "./Pages/Veterans";
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
+import { RouteMeta } from "./utils/pageMeta";
 import Layout from "./Layout";
 import OneSignal from "react-onesignal";
 
@@ -120,6 +121,8 @@ const App = () => {
       <Router>
 
         <ScrollToTop />
+
+        <RouteMeta />
 
         <ScrollToHashElement />
 

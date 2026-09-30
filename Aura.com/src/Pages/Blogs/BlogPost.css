@@ -59,3 +59,9 @@
   padding: 0 4px;
   border-radius: 4px;
 }
+/* More safety guides at the end of each post */
+.blog-more { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+.blog-more h2 { font-size: 1.4rem; margin-bottom: 12px; }
+.blog-more ul { padding-left: 20px; }
+.blog-more li { margin-bottom: 8px; font-size: 1.05rem; }
+.blog-more p { margin-top: 16px; font-size: 1.05rem; }
