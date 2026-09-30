@@ -137,6 +137,8 @@ const content = (
       <div className="financial-image-wrapper">
 
         <img
+        loading="lazy"
+        decoding="async"
           src="/Products/saffron-guru-financial-security-protection.webp"
           alt="Saffron Guru financial security protection"
         />

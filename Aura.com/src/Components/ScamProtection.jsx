@@ -136,6 +136,8 @@ const ScamProtection = ({ expand, scrollRef }) => {
         <div className="scam-image-border"></div>
 
         <img
+        loading="lazy"
+        decoding="async"
           src="/Products/saffron-guru-scam-protection.webp"
           alt="Saffron Guru scam protection"
           className="scam-protection-image"

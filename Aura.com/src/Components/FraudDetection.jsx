@@ -81,6 +81,8 @@ const content = (
       <div className="fraud-image-border"></div>
 
       <img
+        loading="lazy"
+        decoding="async"
         src="/Hero/saffron-guru-fraud-detection.webp"
         alt="Saffron Guru fraud detection"
         className="fraud-detection-image"

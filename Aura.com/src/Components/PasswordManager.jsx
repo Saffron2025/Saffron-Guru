@@ -98,6 +98,8 @@ const PasswordManager = ({ expand }) => {
         <div className="image-glow"></div>
 
         <img
+        loading="lazy"
+        decoding="async"
           src="/Products/saffron-guru-password-manager.webp"
           alt="Saffron Guru secure password manager"
           className="security-main-image"

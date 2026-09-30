@@ -103,6 +103,8 @@ const LiveSupport = ({ expand }) => {
         <div className="live-support-image-glow"></div>
 
         <img
+        loading="lazy"
+        decoding="async"
           src="/Products/saffron-guru-live-human-support.webp"
           alt="Saffron Guru live human customer support"
           className="live-support-image"

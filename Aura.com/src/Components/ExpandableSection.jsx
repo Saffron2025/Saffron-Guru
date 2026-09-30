@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react';
 import './ExpandableSection.css';
 
 const ExpandableSection = ({ title, content, defaultExpand }) => {
-  const [expanded, setExpanded] = useState(false);
+  // Open by default so customers (and Google) see every feature straight away.
+  // Visitors can still click "Hide" to close a section.
+  const [expanded, setExpanded] = useState(true);
 
   useEffect(() => {
     if (defaultExpand) {

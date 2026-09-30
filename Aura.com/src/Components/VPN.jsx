@@ -102,6 +102,8 @@ const VpnPrivacy = ({ expand }) => {
         <div className="vpn-image-glow"></div>
 
         <img
+        loading="lazy"
+        decoding="async"
           src="/Products/saffron-guru-vpn-privacy.webp"
           alt="Saffron Guru VPN and online privacy"
           className="vpn-main-image"
