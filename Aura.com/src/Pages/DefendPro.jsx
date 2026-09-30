@@ -20,6 +20,7 @@ import VpnPrivacy from '../Components/VPN.jsx';
 import SpamCallProtection from '../Components/SpamCallProtection.jsx';
 import LiveSupport from '../Components/LiveSupport.jsx';
 import DefendMeBusiness from '../Components/DefenseMeBusiness.jsx';
+import DefendProFeatureGrid from '../Components/DefendProFeatureGrid.jsx';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -191,10 +192,17 @@ const DefendMePro = () => {
 
 
       {/* =====================================================
+          WHAT'S INCLUDED - feature tiles (click to jump)
+      ====================================================== */}
+
+      <DefendProFeatureGrid />
+
+
+      {/* =====================================================
           SCAM STORY SECTION
       ====================================================== */}
 
-      <section className="scam-story-section">
+      <section className="scam-story-section dp-anchor" id="dp-story">
 
         <div className="scam-story-container">
 
@@ -340,13 +348,16 @@ const DefendMePro = () => {
           EXISTING SECTIONS
       ====================================================== */}
 
-      <RealityNumber />
+      <div id="dp-numbers" className="dp-anchor"><RealityNumber /></div>
 
-      <TraditionalSecurityFails />
+      <div id="dp-traditional" className="dp-anchor"><TraditionalSecurityFails /></div>
 
-      <DefendMeBuilt />
+      <div id="dp-built" className="dp-anchor"><DefendMeBuilt /></div>
 
-      <WhatDefendMeProIncludes />
+      <div id="dp-includes" className="dp-anchor"><WhatDefendMeProIncludes /></div>
+
+
+      <div id="dp-identity" className="dp-anchor">
 
 
       <EverythingSafe
@@ -357,6 +368,12 @@ const DefendMePro = () => {
             : 'none'
         }
       />
+
+
+      </div>
+
+
+      <div id="dp-fraud" className="dp-anchor">
 
 
       <FraudDetection
@@ -370,6 +387,12 @@ const DefendMePro = () => {
       />
 
 
+      </div>
+
+
+      <div id="dp-scam" className="dp-anchor">
+
+
       <ScamProtection
         expand={searchParams.get('item') === 'scam-protection'}
         scrollRef={scamRef}
@@ -379,6 +402,12 @@ const DefendMePro = () => {
             : 'none'
         }
       />
+
+
+      </div>
+
+
+      <div id="dp-alerts" className="dp-anchor">
 
 
       <ScamAlertsHub
@@ -391,6 +420,12 @@ const DefendMePro = () => {
       />
 
 
+      </div>
+
+
+      <div id="dp-finance" className="dp-anchor">
+
+
       <FinancialSecurity
         expand={searchParams.get('item') === 'financial-security'}
         key={
@@ -399,6 +434,12 @@ const DefendMePro = () => {
             : 'none'
         }
       />
+
+
+      </div>
+
+
+      <div id="dp-password" className="dp-anchor">
 
 
       <PasswordManager
@@ -411,6 +452,12 @@ const DefendMePro = () => {
       />
 
 
+      </div>
+
+
+      <div id="dp-antivirus" className="dp-anchor">
+
+
       <Antivirus
         expand={searchParams.get('item') === 'antivirus'}
         key={
@@ -419,6 +466,12 @@ const DefendMePro = () => {
             : 'none'
         }
       />
+
+
+      </div>
+
+
+      <div id="dp-vpn" className="dp-anchor">
 
 
       <VpnPrivacy
@@ -431,6 +484,12 @@ const DefendMePro = () => {
       />
 
 
+      </div>
+
+
+      <div id="dp-spam" className="dp-anchor">
+
+
       <SpamCallProtection
         expand={searchParams.get('item') === 'spam-call'}
         key={
@@ -439,6 +498,12 @@ const DefendMePro = () => {
             : 'none'
         }
       />
+
+
+      </div>
+
+
+      <div id="dp-support" className="dp-anchor">
 
 
       <LiveSupport
@@ -451,7 +516,10 @@ const DefendMePro = () => {
       />
 
 
-      <DefendMeBusiness />
+      </div>
+
+
+      <div id="dp-business" className="dp-anchor"><DefendMeBusiness /></div>
 
       <AllSection />
 

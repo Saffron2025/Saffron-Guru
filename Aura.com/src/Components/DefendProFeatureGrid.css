@@ -1,0 +1,115 @@
+/* "What's included" tiles on the DefendMe Pro page - sky blue, easy to read */
+.dpg-section {
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 56px 16px 64px;
+  font-family: 'Nunito', sans-serif;
+}
+.dpg-container { max-width: 1120px; margin: 0 auto; }
+
+.dpg-title {
+  text-align: center;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px;
+}
+.dpg-title span { color: #0284c7; }
+.dpg-subtitle {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #334155;
+  margin: 0 0 32px;
+}
+
+.dpg-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.dpg-grid-learn { grid-template-columns: repeat(5, 1fr); }
+
+.dpg-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 132px;
+  padding: 18px 12px;
+  background: #ffffff;
+  border: 2px solid #bae6fd;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.dpg-tile:hover,
+.dpg-tile:focus-visible {
+  transform: translateY(-3px);
+  border-color: #0284c7;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.18);
+  color: #0f172a;
+  outline: none;
+}
+.dpg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  font-size: 1.6rem;
+}
+.dpg-label { font-size: 1.02rem; font-weight: 700; line-height: 1.3; }
+
+.dpg-small-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0369a1;
+  margin: 36px 0 16px;
+}
+.dpg-grid-learn .dpg-tile { min-height: 110px; background: #f8fcff; }
+
+.dpg-business {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+  padding: 24px 28px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dpg-business:hover,
+.dpg-business:focus-visible { transform: translateY(-3px); color: #ffffff; box-shadow: 0 16px 34px rgba(2, 132, 199, 0.38); outline: none; }
+.dpg-business-icon {
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 2rem;
+}
+.dpg-business strong { display: block; font-size: 1.45rem; font-weight: 800; }
+.dpg-business small { display: block; font-size: 1.05rem; opacity: 0.95; margin-top: 4px; }
+.dpg-business-arrow { margin-left: auto; font-size: 2rem; font-weight: 700; }
+
+/* the sections the tiles jump to: leave room for the fixed menu bar */
+.dp-anchor { scroll-margin-top: 90px; }
+
+@media (max-width: 1000px) {
+  .dpg-grid, .dpg-grid-learn { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .dpg-section { padding: 40px 16px 48px; }
+  .dpg-grid, .dpg-grid-learn { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .dpg-tile { min-height: 116px; }
+  .dpg-business { flex-direction: column; text-align: center; gap: 12px; padding: 22px 18px; }
+  .dpg-business-arrow { margin-left: 0; }
+}
