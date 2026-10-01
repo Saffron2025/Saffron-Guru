@@ -4,6 +4,13 @@
       "handle": "filesystem"
     },
     {
+      "src": "^/features/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/DefendPro"
+      }
+    },
+    {
       "src": "^/Hero/ABC11\\.WebP$",
       "status": 301,
       "headers": {

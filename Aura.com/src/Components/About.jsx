@@ -15,7 +15,7 @@ const About = () => {
           {/* Our Story */}
           <Row className="about-block">
             <Col md={6}>
-              <h2 className="about-heading">Our Story</h2>
+              <h1 className="about-heading">Our Story</h1>
               <p className="about-text">
                 We were founded and proudly incorporated in Dover, Delaware, in April 2016 — starting out as a dedicated American business with one mission: to provide honest, reliable IT support and a trusted online software store for home users, small businesses, and professionals.
               </p>

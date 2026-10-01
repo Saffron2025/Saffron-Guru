@@ -119,11 +119,11 @@ const ProtectionShowcase = () => {
           <span className="ps-live-dot"></span>
         </div>
 
-        <h1>
+        <h2 className="ps-hero-title">
           Secure Your World with
           <br />
           <span>DefendMe Pro™</span>
-        </h1>
+        </h2>
 
         <p>
           Complete Digital Protection with{" "}

@@ -26,9 +26,9 @@ const SafeKidsBanner = () => {
 
         {/* Right Text */}
         <div className="safe-text">
-          <h1 className="safe-title">
+          <h2 className="safe-title">
             Imagine a Safer, Healthier Digital World for Your Kids
-          </h1>
+          </h2>
           <p className="safe-subtitle">
             Where they explore, learn, and play online — free from harmful
             content, toxic strangers, and endless scrolling. Where you feel

@@ -319,7 +319,7 @@
 
 /* Hero heading */
 
-.pshowcase-hero h1 {
+.pshowcase-hero .ps-hero-title {
   margin: 1.7rem 0 0;
 
   color: #ffffff;
@@ -339,7 +339,7 @@
   font-weight: 800;
 }
 
-.pshowcase-hero h1 span {
+.pshowcase-hero .ps-hero-title span {
   display: inline-block;
 
   background:
@@ -1731,7 +1731,7 @@
     padding: 8px 12px;
   }
 
-  .pshowcase-hero h1 {
+  .pshowcase-hero .ps-hero-title {
     font-size: clamp(
       1.75rem,
       9vw,
