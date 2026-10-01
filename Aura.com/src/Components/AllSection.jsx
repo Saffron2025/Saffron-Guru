@@ -454,6 +454,32 @@ const AuraFooter = () => {
                 </span>
               </a>
 
+              {/* =====================================
+                  TECHBEHEMOTHS
+              ===================================== */}
+
+              <a
+                href="https://techbehemoths.com/company/saffron-guru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on TechBehemoths"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/techbehemoths-logo.webp"
+                    alt="Saffron Guru on TechBehemoths"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  TechBehemoths
+                </span>
+              </a>
+
             </div>
 
           </div>
