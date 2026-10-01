@@ -297,7 +297,7 @@ const AppNavbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/home"
+              to="/"
             >
               Home
             </Nav.Link>

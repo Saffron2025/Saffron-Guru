@@ -11,6 +11,13 @@
       }
     },
     {
+      "src": "^/Veterens/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/veterans"
+      }
+    },
+    {
       "src": "^/Hero/ABC11\\.WebP$",
       "status": 301,
       "headers": {
@@ -617,7 +624,7 @@
       "dest": "/extension-privacy.html"
     },
     {
-      "src": "^/(login|signup|verify-otp|home|features|DefendPro|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|solution|resources|HowSaffronWorks|Fox|CBS|ABC11|NewYorkPolice|ABCNational|AccountIn|LearnMore|microsoft-store|internet-security|for-your-business|for-your-home|Parent-Solution|Pricing|DaysMoneyBack|IdentifyFakeCalls|ReadFAQ|FixMyTech|our-story|why-human-support|product/.*|live-support|blog|blog/.*|article|article/.*|articles|articles/.*)$",
+      "src": "^/(login|signup|verify-otp|home|features|DefendPro|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|solution|resources|HowSaffronWorks|Fox|CBS|ABC11|NewYorkPolice|ABCNational|AccountIn|LearnMore|microsoft-store|internet-security|for-your-business|for-your-home|Parent-Solution|Pricing|DaysMoneyBack|IdentifyFakeCalls|ReadFAQ|FixMyTech|our-story|veterans|why-human-support|product/.*|live-support|blog|blog/.*|article|article/.*|articles|articles/.*)$",
       "dest": "/index.html"
     },
     {

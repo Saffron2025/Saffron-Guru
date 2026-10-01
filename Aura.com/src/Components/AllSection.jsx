@@ -20,7 +20,7 @@ import "./AllSection.css";
 const footerLinks = [
   {
     label: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     label: "About us",
@@ -52,7 +52,7 @@ const footerLinks = [
   },
   {
   label: "Veterans Special Offer",
-  path: "/Veterens",
+  path: "/veterans",
 },
   
   {

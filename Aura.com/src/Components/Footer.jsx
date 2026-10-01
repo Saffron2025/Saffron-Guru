@@ -244,7 +244,7 @@ const Footer = () => {
       <span className="btn-arrow">→</span>
     </Link>
 
-    <Link className="cta-btn secondary" to="/Veterens">
+    <Link className="cta-btn secondary" to="/veterans">
       <span className="btn-icon">📘</span>
 
       <span className="btn-text">

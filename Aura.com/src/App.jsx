@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import OurStory from "./Pages/OurStory";
 import WhyHumanSupport from "./Pages/WhyHumanSupport";
@@ -555,10 +556,11 @@ const App = () => {
             path="/our-story"
             element={<Layout><OurStory /></Layout>}
           />
-            <Route
-            path="/Veterens"
+          <Route
+            path="/veterans"
             element={<Layout><Veterans /></Layout>}
           />
+          <Route path="/Veterens" element={<Navigate to="/veterans" replace />} />
 
 
           {/* =========================
