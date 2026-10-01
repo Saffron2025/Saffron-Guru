@@ -77,7 +77,7 @@ const Veterans = () => {
 
               {/* OFFER BOX */}
               <div className="vet-offer">
-                <p className="vet-offer-title">🇺🇸 Veteran Pricing Available</p>
+                <p className="vet-offer-title">★ Veteran Pricing Available</p>
                 <p className="vet-offer-text">
                   Call us and let us know you served. We will explain the veteran
                   options available to you, with no pressure.
@@ -167,7 +167,7 @@ const Veterans = () => {
         {/* ================= FINAL CALL ================= */}
         <section className="veterans-final-cta">
           <div className="final-container">
-            <div className="final-label">🇺🇸 VETERANS SPECIAL OFFER 🇺🇸</div>
+            <div className="final-label">★ VETERANS SPECIAL OFFER ★</div>
             <h2>Thank You For Your Service.</h2>
             <p>Call today to hear about veteran pricing for your home or business.</p>
             <a href={PHONE_LINK} className="final-button">
