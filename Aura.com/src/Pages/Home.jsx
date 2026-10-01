@@ -181,6 +181,29 @@ const Hero = () => {
         </p>
 
 
+        {/* TWO MAIN PATHS - call-to-action buttons */}
+        <div className="hero-cta-paths">
+          <Link to="/DefendPro" className="hero-cta-path hero-cta-protect">
+            <span className="hero-cta-icon" aria-hidden="true">🛡️</span>
+            <span className="hero-cta-text">
+              <strong>Protection Far Beyond Antivirus</strong>
+              <small>Guards your identity, accounts and money</small>
+            </span>
+          </Link>
+
+          <Link to="/for-your-home" className="hero-cta-path hero-cta-support">
+            <span className="hero-cta-icon" aria-hidden="true">🧑‍💻</span>
+            <span className="hero-cta-text">
+              <strong>Your Own IT Department</strong>
+              <small>Real technicians, 7 days a week</small>
+            </span>
+          </Link>
+        </div>
+        <p className="hero-cta-business">
+          Business owner? <Link to="/for-your-business">See IT support for businesses →</Link>
+        </p>
+
+
         {/* THIRD IMAGE */}
         <div className="hero-third-image-wrapper">
           <img
