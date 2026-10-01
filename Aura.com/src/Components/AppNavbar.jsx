@@ -495,7 +495,7 @@ const AppNavbar = () => {
                 as={Link}
                 to="/internet-security"
               >
-                Internet Security
+                Antivirus & Internet Security
               </NavDropdown.Item>
             </NavDropdown>
 

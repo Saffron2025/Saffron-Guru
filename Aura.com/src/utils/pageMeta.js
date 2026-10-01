@@ -113,7 +113,7 @@ const PAGES = {
   "/AccountIn": { title: "Account" , noindex: true },
   "/LearnMore": { title: "Learn More About DefendMe Pro" },
   "/microsoft-store": { title: "Microsoft Office and Windows Licenses" },
-  "/internet-security": { title: "Internet Security and Antivirus Software" },
+  "/internet-security": { title: "Antivirus & Internet Security Software" },
   "/for-your-business": { title: "IT Support for Small Businesses" },
   "/for-your-home": { title: "Home Tech Support for Seniors and Families" },
   "/Parent-Solution": { title: "NetHaven Parental Control" },
