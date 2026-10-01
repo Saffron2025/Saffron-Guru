@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import OurStory from "./Pages/OurStory";
+import WhyHumanSupport from "./Pages/WhyHumanSupport";
 import Veterans from "./Pages/Veterans";
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -541,6 +542,15 @@ const App = () => {
               </Layout>
             }
           />
+          <Route
+            path="/why-human-support"
+            element={
+              <Layout>
+                <WhyHumanSupport />
+              </Layout>
+            }
+          />
+
           <Route
             path="/our-story"
             element={<Layout><OurStory /></Layout>}

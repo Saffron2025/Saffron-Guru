@@ -126,6 +126,11 @@ const PAGES = {
   "/blog": { title: "Online Safety Blog", description: "Easy-to-read guides from Saffron Guru on avoiding scams, fake tech support, phishing, identity theft and fraud, written for seniors and families." },
   "/article": { title: "Online Safety Hub: Scam Alerts and Guides", description: "The latest scam alerts and protection guides from Saffron Guru: crypto scams, call spoofing, fake delivery and refund scams, tech support scams and more." },
   "/Veterens": { title: "Tech Support for Veterans" },
+  "/why-human-support": {
+    title: "Scammers Don't Hack Computers. They Hack Trust.",
+    description: "Americans 60+ reported $7.7 billion in losses to online crime in 2025 (FBI). How scammers win trust, why software alone cannot stop them, and how Saffron Guru protects you with real people.",
+    type: "article",
+  },
   "/login": { title: "Log In", noindex: true },
   "/signup": { title: "Sign Up", noindex: true },
   "/verify-otp": { title: "Verify", noindex: true },

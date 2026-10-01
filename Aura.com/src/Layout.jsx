@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import AppNavbar from "./Components/AppNavbar";
 import AuraFooter from "./Components/Footer";
 import CallUs from "./Components/CallUs";
+import AnnouncementBar from "./Components/AnnouncementBar";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -22,6 +23,9 @@ const Layout = ({ children }) => {
     <>
       {/* ================= Navbar ================= */}
       {/* <AppNavbar /> */}
+
+      {/* ================= Top announcement strip ================= */}
+      <AnnouncementBar />
 
       {/* ================= Current Page Content ================= */}
       {children}
