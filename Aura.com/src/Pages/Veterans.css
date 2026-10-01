@@ -3300,3 +3300,86 @@
     height: 27px;
   }
 }
+
+
+/* =========================================================
+   VETERANS PAGE v2: BIGGER, CLEARER, EASIER TO READ
+   (overrides the original styles above)
+========================================================= */
+.vet-v2 { font-family: 'Nunito', sans-serif; }
+.vet-v2 .veterans-hero { min-height: 0; padding: 130px 0 70px; }
+.vet-v2 .hero-inner { min-height: 0; width: min(1120px, calc(100% - 32px)); }
+.vet-v2 .hero-left { width: 100%; max-width: 760px; }
+.vet-v2 .hero-dark-overlay { background-color: rgba(0, 5, 17, 0.82); }
+
+.vet-v2 .hero-title { margin: 22px 0 18px; }
+.vet-lead {
+  margin: 0 0 26px; color: #ffffff; font-size: 1.3rem; line-height: 1.65; font-weight: 600;
+  text-shadow: 0 2px 6px #000;
+}
+.vet-lead strong { color: #ffd45f; }
+
+.vet-offer {
+  background: rgba(255, 255, 255, 0.97); color: #0f172a;
+  border: 3px solid #ffd45f; border-radius: 20px; padding: 26px 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45); max-width: 620px;
+}
+.vet-offer-title { margin: 0 0 8px; font-size: 1.55rem; font-weight: 900; color: #7f1d1d; }
+.vet-offer-text { margin: 0 0 18px; font-size: 1.18rem; line-height: 1.6; color: #1e293b; }
+.vet-phone {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: #b91c1c; color: #ffffff !important; text-decoration: none;
+  font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 900; letter-spacing: 0.02em;
+  padding: 14px 26px; border-radius: 14px; box-shadow: 0 8px 20px rgba(185, 28, 28, 0.35);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.vet-phone:hover { background: #991b1b; transform: translateY(-2px); }
+.vet-offer-small { margin: 12px 0 0; font-size: 1.05rem; font-weight: 700; color: #334155; }
+
+.vet-trust { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 28px; }
+.vet-bbb { display: block; background: #fff; border-radius: 10px; padding: 6px; }
+.vet-bbb img { display: block; width: 240px; max-width: 100%; height: auto; }
+.vet-trust ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.vet-trust li { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.12rem; font-weight: 700; text-shadow: 0 2px 4px #000; }
+.vet-trust li svg { color: #ffd45f; flex-shrink: 0; }
+
+/* sections */
+.vet-v2 .veterans-package-section { padding: 70px 0; background-color: rgba(1, 8, 19, 0.8); }
+.vet-v2 .section-heading h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
+.vet-v2 .section-heading p { font-size: 1.2rem; color: #f1f5f9; }
+.vet-v2 .package-grid { margin-top: 36px; }
+.vet-v2 .package-card { background-color: rgba(2, 10, 24, 0.94); padding: 32px 30px; }
+.vet-v2 .package-card:hover { transform: none; }
+.vet-v2 .package-card h3 { font-size: 1.7rem; }
+.vet-v2 .package-card li { font-size: 1.15rem; color: #ffffff; padding: 9px 0; align-items: flex-start; line-height: 1.45; }
+.vet-v2 .package-card li svg { font-size: 1rem; margin-top: 4px; }
+.vet-v2 .package-label { font-size: 0.95rem; }
+
+.vet-steps-section { padding: 70px 0; background: rgba(2, 10, 24, 0.9); }
+.vet-steps { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.vet-steps li {
+  background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 212, 95, 0.4);
+  border-radius: 20px; padding: 28px 24px; text-align: center;
+}
+.vet-step-num {
+  display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px;
+  border-radius: 50%; background: #ffd45f; color: #0f172a; font-weight: 900; font-size: 1.5rem; margin-bottom: 12px;
+}
+.vet-steps h3 { color: #fff; font-size: 1.4rem; margin: 0 0 8px; }
+.vet-steps p { color: #f1f5f9; font-size: 1.15rem; line-height: 1.6; margin: 0; }
+
+.vet-v2 .veterans-final-cta { padding: 80px 0; }
+.vet-v2 .final-container p { font-size: 1.25rem; color: #fff; }
+.vet-v2 .final-button { font-size: 1.35rem; }
+.vet-v2 .final-note { font-size: 1rem; color: #e2e8f0; }
+
+@media (max-width: 900px) {
+  .vet-steps { grid-template-columns: 1fr; }
+  .vet-v2 .package-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .vet-v2 .veterans-hero { padding: 110px 0 50px; }
+  .vet-offer { padding: 22px 18px; }
+  .vet-phone { width: 100%; justify-content: center; }
+  .vet-lead { font-size: 1.15rem; }
+}
