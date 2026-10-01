@@ -3314,7 +3314,7 @@
 }
 
 /* bigger, brighter text */
-.vet-v3 .hero-description { font-size: 1.28rem; line-height: 1.65; font-weight: 600; max-width: 720px; }
+.vet-v3 .hero-description { color: #ffffff !important; font-size: 1.28rem; line-height: 1.65; font-weight: 600; max-width: 720px; }
 .vet-v3 .thank-you-line strong { font-size: 1rem; }
 .vet-v3 .flag-emoji { display: inline-flex; color: #ffffff; font-size: 1.35rem; filter: drop-shadow(0 2px 3px #000); }
 .vet-v3 .service-text strong { font-size: 1rem; }
