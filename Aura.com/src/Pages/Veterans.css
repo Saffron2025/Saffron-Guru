@@ -3424,3 +3424,7 @@
 .vet-v3 .benefit-card { min-height: 0; display: flex; flex-direction: column; }
 .vet-v3 .benefit-card p { margin-bottom: 22px; }
 .vet-v3 .benefit-bottom { position: static; margin-top: auto; }
+/* DefendMe Pro protection cards are links */
+.vet-protect-grid .benefit-card { color: #ffffff; text-decoration: none; }
+.vet-protect-grid .benefit-card:hover { color: #ffffff; }
+.vet-protect-grid .benefit-card:hover .benefit-bottom span { color: #ffd45f; }

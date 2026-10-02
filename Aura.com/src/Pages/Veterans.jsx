@@ -16,17 +16,32 @@ import {
   FaStar,
   FaWifi,
   FaDatabase,
-  FaVirusSlash,
   FaTools,
   FaArrowRight,
   FaFlagUsa,
   FaUserCheck,
   FaCalendarCheck,
   FaUserShield,
+  FaExclamationTriangle,
+  FaBan,
+  FaPhoneSlash,
+  FaKey,
+  FaGlobe,
 } from "react-icons/fa";
 
 const PHONE_LINK = "tel:+18443134987";
 const PHONE_TEXT = "844-313-4987";
+const PROTECTION = [
+  { item: "identity-theft", icon: <FaUserShield />, title: "Identity Theft Protection", text: "Help keeping your personal details safe, and support if your identity is ever misused." },
+  { item: "fraud-detection", icon: <FaExclamationTriangle />, title: "Fraud Detection & Alerts", text: "Watch for signs of fraud on your accounts so problems can be caught early." },
+  { item: "scam-protection", icon: <FaBan />, title: "Scam Protection & Alerts", text: "Help spotting fake calls, emails, texts and pop-ups before they cost you money." },
+  { item: "spam-call", icon: <FaPhoneSlash />, title: "Spam Call Protection", text: "Fewer robocalls and scam calls reaching your phone." },
+  { item: "password-manager", icon: <FaKey />, title: "Password Manager", text: "Strong passwords for every account, without having to remember them all." },
+  { item: "vpn", icon: <FaGlobe />, title: "VPN & Online Privacy", text: "Keep your connection private, especially on public Wi-Fi." },
+  { item: "antivirus", icon: <FaLaptop />, title: "Device Security & Antivirus", text: "Protection for your computer and phone against viruses and malware." },
+  { item: "human-support", icon: <FaHeadset />, title: "Real People to Call", text: "Patient technicians who answer your questions in plain English." },
+];
+
 const BBB_PROFILE =
   "https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick";
 
@@ -191,38 +206,8 @@ const Veterans = () => {
                   <a href={PHONE_LINK} className="vet-flag-phone">
                     <FaPhoneAlt /> {PHONE_TEXT}
                   </a>
-                  <p className="vet-flag-small">Real people, 7 days a week</p>
                 </div>
               </div>
-
-
-              {/* CALL BUTTON */}
-              <a
-                href={PHONE_LINK}
-                className="hero-call-button scroll-reveal reveal-scale delay-2"
-              >
-
-                <span className="call-icon">
-                  <FaPhoneAlt />
-                </span>
-
-                <span className="call-content">
-
-                  <small>
-                    CALL US TO KNOW MORE
-                  </small>
-
-                  <strong>
-                    Speak With Our Support Team
-                  </strong>
-
-                </span>
-
-                <span className="call-arrow">
-                  <FaArrowRight />
-                </span>
-
-              </a>
 
 
               {/* SERVICES */}
@@ -338,7 +323,7 @@ const Veterans = () => {
 
                 <span></span>
 
-                A SPECIAL THANK YOU
+                FROM OUR DEFENDME PRO™ PACKAGE
 
                 <span></span>
 
@@ -346,137 +331,42 @@ const Veterans = () => {
 
               <h2 className="scroll-reveal reveal-up">
 
-                Your Service Deserves
+                Protection for Your
 
                 <br />
 
                 <span>
-                  Dedicated Technology Support.
+                  Identity, Money &amp; Devices
                 </span>
 
               </h2>
 
               <p className="scroll-reveal reveal-up delay-1">
-                We appreciate the service and sacrifice of U.S.
-                veterans. Saffron Guru provides technology support
-                designed to help make your digital life safer,
-                easier, and more reliable.
+                Scammers target veterans and their benefits. DefendMe Pro
+                brings together the protection that matters most today,
+                with real people to call when something feels wrong.
               </p>
 
             </div>
 
 
-            <div className="benefits-grid">
-
-              <div className="benefit-card scroll-reveal reveal-up delay-1">
-
-                <div className="card-number">
-                  01
-                </div>
-
-                <div className="benefit-icon">
-                  <FaShieldAlt />
-                </div>
-
-                <h3>
-                  Online Security
-                </h3>
-
-                <p>
-                  Help protect your devices, accounts, data,
-                  and digital life with security-focused
-                  technology solutions.
-                </p>
-
-                <div className="benefit-bottom">
-                  <span>PROTECTION</span>
-                  <FaArrowRight />
-                </div>
-
-              </div>
-
-
-              <div className="benefit-card scroll-reveal reveal-up delay-2">
-
-                <div className="card-number">
-                  02
-                </div>
-
-                <div className="benefit-icon">
-                  <FaLaptop />
-                </div>
-
-                <h3>
-                  IT Support
-                </h3>
-
-                <p>
-                  Professional help with everyday technology
-                  problems, setup, troubleshooting, and more.
-                </p>
-
-                <div className="benefit-bottom">
-                  <span>TECHNOLOGY</span>
-                  <FaArrowRight />
-                </div>
-
-              </div>
-
-
-              <div className="benefit-card scroll-reveal reveal-up delay-3">
-
-                <div className="card-number">
-                  03
-                </div>
-
-                <div className="benefit-icon">
-                  <FaUserShield />
-                </div>
-
-                <h3>
-                  Scam &amp; Virus Protection
-                </h3>
-
-                <p>
-                  Help with antivirus, viruses, fake pop-ups,
-                  suspicious calls and emails, and keeping
-                  your accounts safe.
-                </p>
-
-                <div className="benefit-bottom">
-                  <span>SECURITY</span>
-                  <FaArrowRight />
-                </div>
-
-              </div>
-
-
-              <div className="benefit-card scroll-reveal reveal-up delay-4">
-
-                <div className="card-number">
-                  04
-                </div>
-
-                <div className="benefit-icon">
-                  <FaHeadset />
-                </div>
-
-                <h3>
-                  Reliable Support
-                </h3>
-
-                <p>
-                  Get professional assistance when you
-                  need help with your technology.
-                </p>
-
-                <div className="benefit-bottom">
-                  <span>ASSISTANCE</span>
-                  <FaArrowRight />
-                </div>
-
-              </div>
-
+            <div className="benefits-grid vet-protect-grid">
+              {PROTECTION.map((item, n) => (
+                <Link
+                  key={item.title}
+                  to={`/DefendPro?item=${item.item}`}
+                  className="benefit-card"
+                >
+                  <div className="card-number">{String(n + 1).padStart(2, "0")}</div>
+                  <div className="benefit-icon">{item.icon}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <div className="benefit-bottom">
+                    <span>LEARN MORE</span>
+                    <FaArrowRight />
+                  </div>
+                </Link>
+              ))}
             </div>
 
           </div>
@@ -506,7 +396,7 @@ const Veterans = () => {
 
               <h2 className="scroll-reveal reveal-up">
 
-                Help at Home
+                Tech Help at Home
 
                 <br />
 
@@ -561,27 +451,42 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Wi-Fi &amp; Internet Setup
+                    Wi-Fi &amp; Internet Setup and Fixes
                   </li>
 
                   <li>
                     <FaCheck />
-                    Laptop &amp; Desktop Setup
+                    Laptop &amp; Desktop Setup and Troubleshooting
                   </li>
 
                   <li>
                     <FaCheck />
-                    Printer &amp; Scanner Setup
+                    Printer &amp; Scanner Setup and Troubleshooting
                   </li>
 
                   <li>
                     <FaCheck />
-                    Smart TV &amp; Device Setup
+                    Email &amp; Outlook Help
                   </li>
 
                   <li>
                     <FaCheck />
-                    Computer Cleanup &amp; Optimization
+                    iPhone, Android &amp; Tablet Help
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Smart TV &amp; Streaming Setup
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Accounting Software Help
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Slow Computer Fixes
                   </li>
 
                   <li>
@@ -596,12 +501,17 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Help Spotting Scam Calls, Emails &amp; Pop-ups
+                    Help After a Scam or If Someone Got Into Your Computer
                   </li>
 
                   <li>
                     <FaCheck />
-                    General Tech Troubleshooting
+                    Locked Out of an Account
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Video Calls With Family
                   </li>
 
                 </ul>
@@ -648,17 +558,32 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Business Network Setup
+                    Managed IT Support for Your Whole Office
                   </li>
 
                   <li>
                     <FaCheck />
-                    Wi-Fi &amp; Access Point Installation
+                    Server Setup, Support &amp; Troubleshooting
                   </li>
 
                   <li>
                     <FaCheck />
-                    Computer &amp; Laptop Setup
+                    Server &amp; Data Backup
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Business Application Support
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Microsoft 365 &amp; Business Email
+                  </li>
+
+                  <li>
+                    <FaCheck />
+                    Business Network &amp; Wi-Fi
                   </li>
 
                   <li>
@@ -668,22 +593,12 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Data Backup Solutions
+                    Computer &amp; Laptop Setup and Repair
                   </li>
 
                   <li>
                     <FaCheck />
-                    Cloud &amp; Email Setup
-                  </li>
-
-                  <li>
-                    <FaCheck />
-                    IT Troubleshooting &amp; Repairs
-                  </li>
-
-                  <li>
-                    <FaCheck />
-                    Ongoing IT Maintenance &amp; Support
+                    Ongoing IT Maintenance
                   </li>
 
                 </ul>
@@ -742,11 +657,11 @@ const Veterans = () => {
                 <div className="security-point scroll-reveal reveal-left delay-1">
 
                   <span>
-                    <FaVirusSlash />
+                    <FaUserShield />
                   </span>
 
                   <strong>
-                    Virus &amp; Malware Removal
+                    Identity Theft Protection
                   </strong>
 
                 </div>
@@ -759,7 +674,7 @@ const Veterans = () => {
                   </span>
 
                   <strong>
-                    Antivirus &amp; Hacker Protection
+                    Antivirus &amp; Malware Protection
                   </strong>
 
                 </div>
@@ -793,18 +708,18 @@ const Veterans = () => {
               </div>
 
 
-              <a
-                href={PHONE_LINK}
-                className="security-button scroll-reveal reveal-scale"
+              <Link
+                to="/DefendPro"
+                className="security-button"
               >
 
-                <FaPhoneAlt />
+                <FaShieldAlt />
 
-                Call Us About Veteran Support
+                See Everything in DefendMe Pro™
 
                 <FaArrowRight />
 
-              </a>
+              </Link>
 
             </div>
 
@@ -926,7 +841,7 @@ const Veterans = () => {
 
               <FaPhoneAlt />
 
-              CALL {PHONE_TEXT}
+              TALK TO OUR TEAM
 
               <FaArrowRight />
 
