@@ -254,7 +254,7 @@ const Veterans = () => {
                   </div>
 
                   <div className="service-text">
-                    <strong>Scam &amp; Hacker</strong>
+                    <strong>Scam &amp; Fraud</strong>
                     <strong>Protection</strong>
                   </div>
 
