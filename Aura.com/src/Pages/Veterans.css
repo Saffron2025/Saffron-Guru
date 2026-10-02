@@ -3413,3 +3413,10 @@
   .vet-flag-phone { width: 100%; justify-content: center; }
   .vet-badge { font-size: 0.95rem; }
 }
+
+/* icon row wraps instead of being cut off on smaller screens */
+.vet-v3 .hero-services { flex-wrap: wrap; row-gap: 14px; max-width: 100%; }
+@media (max-width: 900px) {
+  .vet-v3 .hero-services .service-divider { display: none; }
+  .vet-v3 .hero-services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+}

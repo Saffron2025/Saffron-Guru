@@ -213,7 +213,7 @@ const Veterans = () => {
                   </small>
 
                   <strong>
-                    Speak With Our Team: {PHONE_TEXT}
+                    Speak With Our Support Team
                   </strong>
 
                 </span>
