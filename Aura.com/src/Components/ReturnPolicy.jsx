@@ -20,13 +20,13 @@ const ReturnPolicy = () => {
                 </p>
 
                 <p className="return-text">
-                  If for any reason you’re not satisfied with your Digital Security Package (<strong>DefendMePro™</strong>), our Parental Control Tool (<strong>NetHaven™</strong>), our Remote IT Support (<strong>SafeSupport Assist™</strong>), or any standalone third-party software (such as Microsoft, Adobe, Norton, and others) within the first 30 days, just call us toll-free at  
+                  If for any reason you’re not satisfied with your Digital Security Package (<strong>DefendMe PRO™</strong>), our Parental Control Tool (<strong>NetHaven™</strong>), our Remote IT Support (<strong>SafeSupport Assist™</strong>), or any standalone third-party software (such as Microsoft, Adobe, Norton, and others) within the first 30 days, just call us toll-free at  
                   <span className="phone"> 📞+1 844-313-4987</span>. We’ll refund you — quickly and fairly.
                 </p>
 
                 <h2 className="return-subheading">✅ Covered by Our 30-Day Guarantee</h2>
                 <ul className="return-list">
-                  <li><strong>DefendMePro™</strong> – complete digital security against scams and cyberattacks.</li>
+                  <li><strong>DefendMe PRO™</strong> – complete digital security against scams and cyberattacks.</li>
                   <li><strong>NetHaven™</strong> – AI-powered parental controls for safe browsing.</li>
                   <li><strong>SafeSupport Assist™</strong> – unlimited remote help for your everyday technology.</li>
                   <li><strong>Standalone Third-Party Software</strong> – Microsoft, Adobe, Norton, McAfee, and more (refundable within 30 days).</li>

@@ -57,10 +57,10 @@ const MORE_SERVICES = [
     text: 'Gmail, Facebook, Apple ID or Microsoft account? We walk you through the official recovery steps and help you set up passwords you can actually remember.',
   },
   {
-    id: 'home-video',
-    icon: '📹',
-    label: 'Video Calls With Family',
-    text: 'We set up Zoom, FaceTime, WhatsApp and similar apps, get your camera and microphone working, and practice a call with you until it feels easy.',
+    id: 'home-apps',
+    icon: '📲',
+    label: 'Apps & Accounts Assistance',
+    text: 'Setup and help with the apps and accounts you use every day, such as email, Zoom, FaceTime and WhatsApp, banking and shopping apps, plus secure logins and account settings.',
   },
   {
     id: 'home-photos',

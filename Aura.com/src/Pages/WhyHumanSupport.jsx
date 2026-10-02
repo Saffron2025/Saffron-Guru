@@ -206,7 +206,7 @@ const WhyHumanSupport = () => {
             <div className="whs-answer">
               <Link to="/DefendPro" className="whs-card whs-card-blue">
                 <span className="whs-card-icon" aria-hidden="true">🛡️</span>
-                <h3>DefendMe Pro™</h3>
+                <h3>DefendMe PRO™</h3>
                 <p>Protection far beyond antivirus, for your identity, your accounts and your money.</p>
                 <span className="whs-card-link">See what is included →</span>
               </Link>

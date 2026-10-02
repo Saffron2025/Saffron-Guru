@@ -9,12 +9,12 @@ const DefendMeBusiness = () => {
       <div className="business-image-container">
         <img
           src="/Hero/defendme-pro-cybersecurity-for-business.webp"
-          alt="DefendMe Pro cybersecurity for business by Saffron Guru"
+          alt="DefendMe PRO™ cybersecurity for business by Saffron Guru"
           className="business-image"
         />
       </div>
 
-      <h2 className="business-heading">💼 DefendMe Pro™ for Business</h2>
+      <h2 className="business-heading">💼 DefendMe PRO™ for Business</h2>
       <p className="business-subtitle">Digital Protection that Works Just as Hard as You Do.</p>
 
       <p className="business-point">
@@ -32,7 +32,7 @@ const DefendMeBusiness = () => {
 
       <div className="business-warning">
         ⚠️ One breach can bankrupt a business.<br />
-        <strong>DefendMe Pro™ makes sure yours isn’t next.</strong>
+        <strong>DefendMe PRO™ makes sure yours isn’t next.</strong>
       </div>
     </section>
   );

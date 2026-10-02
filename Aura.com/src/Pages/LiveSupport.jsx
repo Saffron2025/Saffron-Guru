@@ -191,7 +191,7 @@ const LiveSupport = () => {
                 <p>
                   You can also call us about suspicious pop-ups,
                   unusual account activity, unsafe downloads, or a
-                  DefendMe Pro™ security alert.
+                  DefendMe PRO™ security alert.
                 </p>
 
                 <button
@@ -455,7 +455,7 @@ const LiveSupport = () => {
             <p>
               Every day, older adults are targeted by increasingly
               convincing scam calls, fraudulent emails, deceptive
-              pop-ups, and other online threats. DefendMe Pro™ was built
+              pop-ups, and other online threats. DefendMe PRO™ was built
               to help stand between our customers and those risks,
               combining advanced security solutions with direct access
               to real people who can step in when something seems

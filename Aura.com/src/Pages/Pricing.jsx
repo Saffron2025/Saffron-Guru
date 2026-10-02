@@ -32,7 +32,7 @@ const Pricing = () => {
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🛡️ DefendMePro™ Home</h3>
+                  <h3>🛡️ DefendMe PRO™ Home</h3>
                   <p>
                     Protect your home and family with complete digital security
                     and scam defence.
@@ -61,7 +61,7 @@ const Pricing = () => {
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🛡️ DefendMePro™ Business</h3>
+                  <h3>🛡️ DefendMe PRO™ Business</h3>
                   <p>
                     Protect your business with end-to-end security, scam
                     defence, and advanced threat protection.
@@ -184,7 +184,7 @@ const Pricing = () => {
               <Card className="pricing-card h-100">
                 <Card.Body>
                   <h3>
-                    🛡️💻 DefendMePro™ + SaffeSupport Assist™ Home Combo
+                    🛡️💻 DefendMe PRO™ + SaffeSupport Assist™ Home Combo
                   </h3>
                   <p>
                     Complete protection + your unlimited personal IT support
@@ -195,7 +195,7 @@ const Pricing = () => {
                   <p>Covers up to 3 devices</p>
                   <ul>
                     <li>
-                      DefendMePro™ Home (Antivirus, VPN, Scam Protection)
+                      DefendMe PRO™ Home (Antivirus, VPN, Scam Protection)
                     </li>
                     <li>
                       SaffeSupport Assist™ Home (Remote IT Support + Email Help)
@@ -287,7 +287,7 @@ const Pricing = () => {
               <Card className="pricing-card h-100">
                 <Card.Body>
                   <h3>
-                    🛡️💻 DefendMePro™ + SaffeSupport Assist™ Business Combo
+                    🛡️💻 DefendMe PRO™ + SaffeSupport Assist™ Business Combo
                   </h3>
                   <p>End-to-end business protection with expert IT support</p>
                   <h4>$89.99/month + tax (billed yearly)</h4>
@@ -295,7 +295,7 @@ const Pricing = () => {
                   <p>Covers up to 10 devices</p>
                   <ul>
                     <li>
-                      DefendMePro™ Business (Zero-Day Threat & End-to-End
+                      DefendMe PRO™ Business (Zero-Day Threat & End-to-End
                       Security)
                     </li>
                     <li>

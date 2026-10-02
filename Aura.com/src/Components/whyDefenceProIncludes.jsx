@@ -20,7 +20,7 @@ const WhatDefendMeProIncludes = () => {
         </h2>
 
         <p className="includes-intro">
-          DefendMe Pro™ brings together multiple layers of protection to help
+          DefendMe PRO™ brings together multiple layers of protection to help
           you stay safer from scams, suspicious activity, phishing attempts,
           remote access threats, and other digital risks.
         </p>
@@ -172,7 +172,7 @@ const WhatDefendMeProIncludes = () => {
         loading="lazy"
         decoding="async"
             src="/Products/defendme-pro-features.webp"
-            alt="What DefendMe Pro by Saffron Guru includes"
+            alt="What DefendMe PRO™ by Saffron Guru includes"
           />
 
           <div className="includes-image-overlay"></div>
@@ -215,7 +215,7 @@ const WhatDefendMeProIncludes = () => {
     <div id="what-defendmepro-includes">
 
       <ExpandableSection
-        title="🧰 What DefendMe Pro™ Includes"
+        title="🧰 What DefendMe PRO™ Includes"
         content={content}
       />
 

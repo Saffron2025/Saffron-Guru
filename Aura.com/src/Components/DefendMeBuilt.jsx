@@ -17,7 +17,7 @@ const DefendMeBuilt = () => {
 
           <h2 className="defendmepro-heading">  
             That’s Why We Built <br />
-            <span className="gradient-text">DefendMe Pro™</span>  
+            <span className="gradient-text">DefendMe PRO™</span>  
           </h2>  
 
           <p className="defendmepro-intro">  
@@ -59,7 +59,7 @@ const DefendMeBuilt = () => {
           <div className="defendme-image-wrapper">  
             <img  
               src="/Hero/defendme-pro-protection-built-for-real-life.webp"  
-              alt="DefendMe Pro protection built for real life"  
+              alt="DefendMe PRO™ protection built for real life"  
             />  
             <div className="defendme-image-overlay"></div>  
           </div>  

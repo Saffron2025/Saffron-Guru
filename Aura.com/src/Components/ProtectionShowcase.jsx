@@ -122,7 +122,7 @@ const ProtectionShowcase = () => {
         <h2 className="ps-hero-title">
           Secure Your World with
           <br />
-          <span>DefendMe Pro™</span>
+          <span>DefendMe PRO™</span>
         </h2>
 
         <p>
@@ -167,7 +167,7 @@ const ProtectionShowcase = () => {
 
             <img
               src="/Hero/defendme-pro-digital-protection.avif"
-              alt="DefendMe Pro digital protection by Saffron Guru"
+              alt="DefendMe PRO™ digital protection by Saffron Guru"
               className="hero-image"
               loading="lazy"
             />
@@ -206,7 +206,7 @@ const ProtectionShowcase = () => {
             </h2>
 
             <p className="ps-intro-main">
-              <strong>DefendMe Pro™</strong> protects you from the
+              <strong>DefendMe PRO™</strong> protects you from the
               digital threats that traditional antivirus can't handle.
             </p>
 

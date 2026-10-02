@@ -133,7 +133,7 @@ const MicrosoftStore = () => {
                 <h2>🧠 Always Think Before You Click</h2>
                 <p>
                   No real Microsoft agent will ever ask for your passwords, remote access, or payment on a call.<br />
-                  If you’re ever unsure, speak to a real tech expert or use our <strong>DefendMePro™</strong> service to block scams instantly.
+                  If you’re ever unsure, speak to a real tech expert or use our <strong>DefendMe PRO™</strong> service to block scams instantly.
                 </p>
                 <Link to="/contact" className="cta-button">
                   💬 Talk to Our Scam Protection Experts Today

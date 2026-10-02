@@ -75,7 +75,7 @@ const LearnMore = () => {
 
               <div className="learn-eyebrow">
                 <span className="learn-eyebrow-dot"></span>
-                DEFENDME PRO™ DIGITAL PROTECTION
+                DefendMe PRO™ DIGITAL PROTECTION
               </div>
 
               <h1 className="learn-hero-title">
@@ -84,7 +84,7 @@ const LearnMore = () => {
               </h1>
 
               <p className="learn-hero-description">
-                DefendMe Pro™ is designed to help protect you from today's
+                DefendMe PRO™ is designed to help protect you from today's
                 digital threats while giving you access to human support when
                 technology gets complicated.
               </p>
@@ -117,7 +117,7 @@ const LearnMore = () => {
 
                   <img
                     src="/Products/defendme-pro-learn-more.webp"
-                    alt="DefendMe Pro online protection by Saffron Guru"
+                    alt="DefendMe PRO™ online protection by Saffron Guru"
                     className="learn-product-image"
                   />
 
@@ -131,7 +131,7 @@ const LearnMore = () => {
                 </div>
 
                 <div className="learn-shield-title">
-                  DefendMe Pro™
+                  DefendMe PRO™
                 </div>
 
                 <div className="learn-shield-subtitle">
@@ -156,7 +156,7 @@ const LearnMore = () => {
           <div className="learn-content-container">
 
             <div className="learn-section-label">
-              WHY DEFENDME PRO™
+              WHY DefendMe PRO™
             </div>
 
             <h2 className="learn-section-title">
@@ -176,7 +176,7 @@ const LearnMore = () => {
 
                 <p>
                   <strong>
-                    DefendMe Pro™ is a next-generation protection system
+                    DefendMe PRO™ is a next-generation protection system
                   </strong>{" "}
                   designed not just to block threats — but to walk with you
                   through them.
@@ -184,7 +184,7 @@ const LearnMore = () => {
 
                 <p>
                   From real-time scam alerts to human-powered IT assistance,
-                  DefendMe Pro™ empowers you with tools and guidance to
+                  DefendMe PRO™ empowers you with tools and guidance to
                   navigate the digital world safely.
                 </p>
 
@@ -248,7 +248,7 @@ const LearnMore = () => {
               </h2>
 
               <p>
-                Most software stops at scanning for viruses. DefendMe Pro™
+                Most software stops at scanning for viruses. DefendMe PRO™
                 goes further with protection, privacy, monitoring and human
                 assistance.
               </p>
@@ -360,7 +360,7 @@ const LearnMore = () => {
 
             <p>
               Trusted by seniors, families, and professionals across the
-              country. Discover what DefendMe Pro™ can do for your digital
+              country. Discover what DefendMe PRO™ can do for your digital
               life.
             </p>
 
@@ -368,7 +368,7 @@ const LearnMore = () => {
               to="/DefendPro"
               className="learn-explore-btn"
             >
-              <span>Explore DefendMe Pro™</span>
+              <span>Explore DefendMe PRO™</span>
               <span className="learn-explore-arrow">→</span>
             </Link>
 

@@ -105,7 +105,7 @@ const InternetSecurity = () => {
                   <li>Don’t click on links from unknown senders — always verify first.</li>
                 </ol>
 
-                <h2 className="section-heading">🛡️ DefendMePro™ Can Help</h2>
+                <h2 className="section-heading">🛡️ DefendMe PRO™ Can Help</h2>
                 <p>
                   Our security system includes real-time scam detection, phishing protection, and U.S.-based human support...
                 </p>
@@ -129,7 +129,7 @@ const InternetSecurity = () => {
                 <h2 className="section-heading">🌐 Resources for Internet Safety</h2>
                 <ul className="resource-links">
                   <li><a href="/resources">📚 Scam & Fraud Prevention Guides</a></li>
-                  <li><a href="/DefendPro">🛠️ How DefendMePro Works</a></li>
+                  <li><a href="/DefendPro">🛠️ How DefendMe PRO™ Works</a></li>
                   <li><a href="/contact">💬 Talk to an Expert</a></li>
                 </ul>
               </Col>

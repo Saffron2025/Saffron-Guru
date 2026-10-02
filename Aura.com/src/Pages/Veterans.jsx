@@ -323,7 +323,7 @@ const Veterans = () => {
 
                 <span></span>
 
-                FROM OUR DEFENDME PRO™ PACKAGE
+                FROM OUR DefendMe PRO™ PACKAGE
 
                 <span></span>
 
@@ -342,7 +342,7 @@ const Veterans = () => {
               </h2>
 
               <p className="scroll-reveal reveal-up delay-1">
-                Scammers target veterans and their benefits. DefendMe Pro
+                Scammers target veterans and their benefits. DefendMe PRO™
                 brings together the protection that matters most today,
                 with real people to call when something feels wrong.
               </p>
@@ -486,7 +486,7 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Slow Computer Fixes
+                    Computer Speed &amp; Performance Tune-ups
                   </li>
 
                   <li>
@@ -501,17 +501,17 @@ const Veterans = () => {
 
                   <li>
                     <FaCheck />
-                    Help After a Scam or If Someone Got Into Your Computer
+                    Scam Recovery &amp; Computer Cleanup
                   </li>
 
                   <li>
                     <FaCheck />
-                    Locked Out of an Account
+                    Account Recovery &amp; Lockout Help
                   </li>
 
                   <li>
                     <FaCheck />
-                    Video Calls With Family
+                    Apps &amp; Accounts Assistance
                   </li>
 
                 </ul>
@@ -715,7 +715,7 @@ const Veterans = () => {
 
                 <FaShieldAlt />
 
-                See Everything in DefendMe Pro™
+                See Everything in DefendMe PRO™
 
                 <FaArrowRight />
 

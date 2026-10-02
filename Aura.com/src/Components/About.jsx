@@ -26,7 +26,7 @@ const About = () => {
                 But as the digital landscape changed, so did the threats. We saw scams, hacking, and identity theft reaching deeper into people’s lives — especially targeting seniors and vulnerable communities. It became clear that traditional tech support wasn’t enough anymore.
               </p>
               <p className="about-text">
-                That’s why we created DefendMePro™ — our all-in-one digital protection service. It combines expert IT support, advanced cyber-threat blocking, fraud prevention, and scam defence into a single, trusted solution.
+                That’s why we created DefendMe PRO™ — our all-in-one digital protection service. It combines expert IT support, advanced cyber-threat blocking, fraud prevention, and scam defence into a single, trusted solution.
               </p>
               <p className="about-text">
                 Whether we’re fixing your computer, solving a tech issue at your business, stopping a scam in its tracks, or protecting your entire family’s digital life, our mission is simple and unwavering: To keep you, your family, and your business safe — and to give you complete peace of mind in today’s connected world.
@@ -123,7 +123,7 @@ const About = () => {
               <h2 className="about-heading">What We Offer Today</h2>
               <ul className="about-list">
                 <li>🛡️ NetHaven™ – AI-powered parental control tool</li>
-                <li>🔐 DefendMePro™ – Total Scam & Security Shield</li>
+                <li>🔐 DefendMe PRO™ – Total Scam & Security Shield</li>
                 <li>💡 Personal Guidance – Stay ahead of scams with expert tips</li>
                 <li>🤝 Trusted IT Support – For nearly a decade of dependable care</li>
               </ul>

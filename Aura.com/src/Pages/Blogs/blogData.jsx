@@ -34,7 +34,7 @@ const blogs = {
       <li>Never share OTP, PIN, or CVV with anyone.</li>
       <li>Do not click on unknown links or attachments.</li>
       <li>Always ask a trusted family member before transferring money.</li>
-      <li>Use scam protection tools like DefendMePro™ or reliable antivirus.</li>
+      <li>Use scam protection tools like DefendMe PRO™ or reliable antivirus.</li>
       <li>Enable two-factor authentication on all accounts.</li>
     </ul>
 

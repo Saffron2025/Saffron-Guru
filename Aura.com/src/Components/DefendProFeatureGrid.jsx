@@ -21,8 +21,8 @@ const LEARN = [
   { id: "dp-story", icon: "⚠️", label: "The Threat Isn't Just Malware" },
   { id: "dp-numbers", icon: "📊", label: "The Reality in Numbers" },
   { id: "dp-traditional", icon: "🧱", label: "Why Traditional Security Falls Short" },
-  { id: "dp-built", icon: "✨", label: "Why We Built DefendMe Pro" },
-  { id: "dp-includes", icon: "🧰", label: "Everything DefendMe Pro Includes" },
+  { id: "dp-built", icon: "✨", label: "Why We Built DefendMe PRO™" },
+  { id: "dp-includes", icon: "🧰", label: "Everything DefendMe PRO™ Includes" },
 ];
 
 function goTo(e, id) {
@@ -46,7 +46,7 @@ const DefendProFeatureGrid = () => (
   <section className="dpg-section" aria-labelledby="dpg-title">
     <div className="dpg-container">
       <h2 id="dpg-title" className="dpg-title">
-        What's Included in <span>DefendMe Pro™</span>
+        What's Included in <span>DefendMe PRO™</span>
       </h2>
       <p className="dpg-subtitle">
         One package, complete protection. Tap any feature to read more.
@@ -72,7 +72,7 @@ const DefendProFeatureGrid = () => (
       >
         <span className="dpg-business-icon" aria-hidden="true">💼</span>
         <span>
-          <strong>DefendMe Pro™ for Business</strong>
+          <strong>DefendMe PRO™ for Business</strong>
           <small>All Home plan features, plus endpoint protection and direct tech specialist access for your whole team</small>
         </span>
         <span className="dpg-business-arrow" aria-hidden="true">→</span>
