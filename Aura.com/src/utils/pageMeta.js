@@ -123,7 +123,7 @@ const PAGES = {
   "/IdentifyFakeCalls": { title: "How to Identify Fake Calls", description: "How to spot fake calls from people pretending to be your bank, Microsoft, Amazon or the government, and what to do if you get one." },
   "/ReadFAQ": { title: "Frequently Asked Questions", description: "Answers to common questions about Saffron Guru tech support, DefendMe PRO™ protection, remote help and billing." },
   "/FixMyTech": { title: "FixMyTech Remote Tech Support", description: "FixMyTech one-time remote tech support for home and business: fast fixes from real Saffron Guru technicians." },
-  "/live-support": { title: "Live Tech Support", description: "Talk to a real technician today. Saffron Guru live tech support for computers, phones, printers and online safety, 7 days a week." },
+  "/live-support": { title: "Live Tech Support & Online Protection", description: "Talk to a real technician today. Saffron Guru live tech support for computers, phones, printers and online safety, 7 days a week." },
   "/blog": { title: "Online Safety Blog", description: "Easy-to-read guides from Saffron Guru on avoiding scams, fake tech support, phishing, identity theft and fraud, written for seniors and families." },
   "/article": { title: "Online Safety Hub: Scam Alerts and Guides", description: "The latest scam alerts and protection guides from Saffron Guru: crypto scams, call spoofing, fake delivery and refund scams, tech support scams and more." },
   "/veterans": { title: "Tech Support for Veterans", description: "Special tech support and online protection offer for veterans and their families from Saffron Guru." },

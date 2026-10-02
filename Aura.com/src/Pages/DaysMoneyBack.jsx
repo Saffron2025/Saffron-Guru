@@ -44,6 +44,24 @@ const DaysMoneyBack = () => {
               If you’re not completely satisfied within the first 30 days, we’ll give you a full refund — no questions asked.
             </p>
 
+            {/* Official BBB seal, linked to the real BBB profile */}
+            <a
+              href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="moneyback-bbb"
+              aria-label="Saffron Guru BBB Accredited Business profile"
+            >
+              <img
+                src="/Hero/saffron-guru-bbb-a-plus-rating.webp"
+                alt="Saffron Guru BBB Accredited Business, A+ rating"
+                width="293"
+                height="61"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+
             <h2 className="moneyback-subheading">How It Works</h2>
             <ol className="moneyback-steps">
               <li><strong>Try our services, risk-free.</strong> From complete digital protection to IT support, explore everything we offer with full confidence.</li>

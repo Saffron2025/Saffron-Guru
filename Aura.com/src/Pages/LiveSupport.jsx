@@ -33,8 +33,8 @@ const LiveSupport = () => {
           </div>
 
           <h1 className="support-title">
-            Live IT Support &
-            <span> Online Safety Assistance</span>
+            Live Tech Support &
+            <span> Online Protection</span>
           </h1>
 
           <p className="support-subtitle">

@@ -208,3 +208,8 @@
     font-size: 1.05rem;
   }
 }
+
+/* Official BBB seal */
+.moneyback-bbb { display: block; width: max-content; max-width: 100%; margin: 18px auto 8px; transition: transform 0.15s ease; }
+.moneyback-bbb:hover { transform: translateY(-2px); }
+.moneyback-bbb img { display: block; width: 293px; max-width: 100%; height: auto; }
