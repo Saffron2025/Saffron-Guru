@@ -39,7 +39,7 @@ const EverythingSafe = ({ expand }) => {
 
             <div className="everything-safe-image-top">
               <span>🛡️</span>
-              <span>DEFENDME PROTECTION</span>
+              <span>DefendMe PRO™ Protection</span>
             </div>
 
             <img
