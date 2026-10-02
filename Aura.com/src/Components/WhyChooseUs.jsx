@@ -13,6 +13,21 @@ export default function WhyChooseUs() {
           <header className="why-header">
             <h1>Why Families Trust Saffron Guru</h1>
             <p className="sub">✅ U.S.-Based Company · Support 7 Days a Week</p>
+            <a
+              href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606/#sealclick"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="why-bbb"
+              aria-label="Saffron Guru BBB Accredited Business profile"
+            >
+              <img
+                src="/Hero/saffron-guru-bbb-a-plus-rating.webp"
+                alt="Saffron Guru BBB Accredited Business, A+ rating"
+                width="293"
+                height="61"
+                decoding="async"
+              />
+            </a>
             <p className="intro">
               For nearly 10 years, Saffron Guru has been more than just a tech
               service. We’re a dedicated American company—a safety net for

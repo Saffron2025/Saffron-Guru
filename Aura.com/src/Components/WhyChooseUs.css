@@ -124,3 +124,8 @@
     margin-bottom: 1rem;
   }
 }
+
+/* Official BBB seal */
+.why-bbb { display: block; width: max-content; max-width: 100%; margin: 14px auto 18px; transition: transform 0.15s ease; }
+.why-bbb:hover { transform: translateY(-2px); }
+.why-bbb img { display: block; width: 293px; max-width: 100%; height: auto; }
