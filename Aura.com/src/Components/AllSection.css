@@ -1399,3 +1399,9 @@
 .social-link.vimeo:hover .social-icon {
   background: #1ab7ea;
 }
+
+/* Behance */
+.social-link.behance .social-icon,
+.social-link.behance:hover .social-icon {
+  background: #1769ff;
+}
