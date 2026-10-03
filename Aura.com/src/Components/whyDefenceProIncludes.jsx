@@ -171,7 +171,7 @@ const WhatDefendMeProIncludes = () => {
           <img
         loading="lazy"
         decoding="async"
-            src="/Products/defendme-pro-features.webp"
+            src="/Products/saffron-guru-defendme-pro-features.webp"
             alt="What DefendMe PRO™ by Saffron Guru includes"
           />
 

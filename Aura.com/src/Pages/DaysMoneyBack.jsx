@@ -23,7 +23,7 @@ const DaysMoneyBack = () => {
            <div className="moneyback-right">
   <h1 className="moneyback-heading">
     <img 
-      src="/Hero/defendme-pro-shield.webp" 
+      src="/Hero/saffron-guru-defendme-pro-shield.webp" 
       alt="Saffron Guru protection shield" 
       className="moneyback-shield" 
     />

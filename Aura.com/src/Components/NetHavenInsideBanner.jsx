@@ -13,7 +13,7 @@ const NetHavenInsideBanner = () => {
         {/* Left: Sticky Image */}
         <aside className="inside-image">
           <img
-            src="/Hero/nethaven-devices-preview.webp"   // ✅ optimized image
+            src="/Hero/saffron-guru-nethaven-devices-preview.webp"   // ✅ optimized image
             alt="What's inside NetHaven parental control by Saffron Guru"
             loading="eager"                        // 👈 ab page load hote hi load hogi
             fetchpriority="high"                   // 👈 browser ko priority hint

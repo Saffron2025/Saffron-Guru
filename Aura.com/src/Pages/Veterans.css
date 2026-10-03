@@ -25,7 +25,7 @@
 
   background-color: #020914;
 
-  background-image: url("/Hero/veterans-bg.webp");
+  background-image: url("/Hero/saffron-guru-tech-support-for-veterans.webp");
 
   background-size: cover;
 
@@ -3428,3 +3428,11 @@
 .vet-protect-grid .benefit-card { color: #ffffff; text-decoration: none; }
 .vet-protect-grid .benefit-card:hover { color: #ffffff; }
 .vet-protect-grid .benefit-card:hover .benefit-bottom span { color: #ffd45f; }
+
+/* background photo is now a real <img> (indexable by Google), same look as before */
+.vet-v3 { isolation: isolate; background-image: none !important; }
+.vet-bg-img {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  z-index: -1; pointer-events: none;
+}

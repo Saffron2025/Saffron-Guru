@@ -9,12 +9,12 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.saffronguru.com/</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/abc-national-news-video-thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/abc11-news-video-thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/cbs-news-video-thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-digital-protection.avif</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/fox-news-video-thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/new-york-police-video-thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-abc-news-video.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-abc11-news-video.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-cbs-news-video.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-digital-protection.avif</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-fox-news-video.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bbb-a-plus-rating.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-business-it-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-home-it-support.webp</image:loc></image:image>
@@ -23,21 +23,21 @@
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-remote-onsite-tech-support.avif</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-special-offer.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-veteran-and-senior-support.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/bbb-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/crunchbase-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/dnb-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/f6s-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/g2-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/goodfirms-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/manta-logo.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-bbb.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-crunchbase.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-dun-and-bradstreet.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-f6s.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-g2.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-goodfirms.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-manta.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-10-year-anniversary.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-available-7-days-a-week.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-bbb-profile.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-logo.gif</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-online-it-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-serving-since-2016.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/smartcustomer-logo.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/trustpilot-logo.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-smartcustomer.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-trustpilot.webp</image:loc></image:image>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -91,15 +91,15 @@
   <!-- DefendMe Pro -->
   <url>
     <loc>https://www.saffronguru.com/DefendPro</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-cybersecurity-for-business.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-protection-built-for-real-life.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-scam-trap-protection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-shield.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-cybersecurity-for-business.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-protection-built-for-real-life.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-scam-trap-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-shield.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-everything-you-need-to-stay-safe.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-fraud-detection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/traditional-security-gaps.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/cybercrime-statistics.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/defendme-pro-features.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-traditional-security-gaps.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-cybercrime-statistics.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-defendme-pro-features.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-antivirus-device-security.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-financial-security-protection.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-live-human-support.webp</image:loc></image:image>
@@ -133,10 +133,10 @@
   <!-- Solution -->
   <url>
     <loc>https://www.saffronguru.com/solution</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/fake-tech-support-scam-warning.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/rising-online-scams-against-seniors.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/romance-scam-warning.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/scam-education-for-seniors.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-fake-tech-support-scam-warning.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-rising-online-scams-against-seniors.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-romance-scam-warning.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-education-for-seniors.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -144,7 +144,7 @@
   <!-- Learn More -->
   <url>
     <loc>https://www.saffronguru.com/LearnMore</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Products/defendme-pro-learn-more.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-defendme-pro-learn-more.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -152,16 +152,16 @@
   <!-- Microsoft Store -->
   <url>
     <loc>https://www.saffronguru.com/microsoft-store</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2016-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2019-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2021-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2024-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-project-2019-2021-professional.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-visio-2019-2021-professional.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-11-home.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-11-pro.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-server-2019-standard-datacenter.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-server-2022-standard-datacenter.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2016-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2019-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2021-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2024-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-project-2019-2021-professional.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -169,23 +169,23 @@
   <!-- Internet Security -->
   <url>
     <loc>https://www.saffronguru.com/internet-security</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Products/crowdstrike-falcon.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/mcafee-endpoint-security.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/mcafee-livesafe.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/mcafee-total-protection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2016-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2019-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2021-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-office-2024-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-project-2019-2021-professional.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-visio-2019-2021-professional.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-11-home.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-11-pro.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-server-2019-standard-datacenter.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/microsoft-windows-server-2022-standard-datacenter.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/norton-360-premium.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/norton-lifelock.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/symantec-endpoint-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-crowdstrike-falcon.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-endpoint-security.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-livesafe.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-total-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2016-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2019-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2021-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2024-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-project-2019-2021-professional.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-norton-360-premium.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-norton-lifelock.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-symantec-endpoint-protection.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -193,8 +193,8 @@
   <!-- For Your Business -->
   <url>
     <loc>https://www.saffronguru.com/for-your-business</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/business-tech-failures.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/safe-support-assist-for-business.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-business-tech-failures.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-safe-support-assist-for-business.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-business-live-tech-support.webp</image:loc></image:image>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
@@ -211,12 +211,12 @@
   <!-- Parent Solution -->
   <url>
     <loc>https://www.saffronguru.com/Parent-Solution</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/child-online-safety.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/nethaven-ai-parental-control.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/nethaven-child-safe-internet.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/nethaven-devices-preview.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/nethaven-parental-control-protection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/safe-digital-world-for-kids.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-child-online-safety.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-ai-parental-control.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-child-safe-internet.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-devices-preview.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-parental-control-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-safe-digital-world-for-kids.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -231,7 +231,7 @@
   <!-- 30 Days Money Back -->
   <url>
     <loc>https://www.saffronguru.com/DaysMoneyBack</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/defendme-pro-shield.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-shield.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-30-day-money-back-guarantee.webp</image:loc></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -259,8 +259,8 @@
   <!-- Fix My Tech -->
   <url>
     <loc>https://www.saffronguru.com/FixMyTech</loc>
-    <image:image><image:loc>https://www.saffronguru.com/resources/fixmytech-business-remote-support.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/resources/fixmytech-home-remote-support.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/resources/saffron-guru-fixmytech-business-remote-support.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/resources/saffron-guru-fixmytech-home-remote-support.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -397,15 +397,15 @@
   <!-- Articles Listing -->
   <url>
     <loc>https://www.saffronguru.com/article</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/ai-scam.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/antivirus-protection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/bank-scam.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/call-spoofing.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/crypto-scams.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/delivery-scam.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/qr-scam.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/refund-scam.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/tech-support-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-ai-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-antivirus-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bank-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-call-spoofing.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-crypto-scams.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-delivery-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-qr-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-refund-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-tech-support-scam.webp</image:loc></image:image>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -414,63 +414,63 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/crypto-scams-getting-smarter</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/crypto-scams.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-crypto-scams.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/antivirus-alone-not-enough</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/antivirus-protection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-antivirus-protection.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/ai-powered-scam-attacks</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/ai-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-ai-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/call-spoofing-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/call-spoofing.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-call-spoofing.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/bank-account-freeze-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/bank-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bank-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-qr-code-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/qr-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-qr-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-delivery-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/delivery-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-delivery-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/tech-support-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/tech-support-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-tech-support-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-refund-scam</loc>
-    <image:image><image:loc>https://www.saffronguru.com/Hero/refund-scam.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-refund-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>

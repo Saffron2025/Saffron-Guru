@@ -17,7 +17,7 @@ export const articles = [
 
   category: "Crypto Scam & Cybersecurity",
 
-  image: "/Hero/crypto-scams.webp",
+  image: "/Hero/saffron-guru-crypto-scams.webp",
 
   lead:
     "Crypto scams are becoming more polished, more believable, and more aggressive. Understanding the common patterns can help you spot the danger before you click, send, invest, or approve anything.",
@@ -585,7 +585,7 @@ export const articles = [
   lead:
     "Traditional antivirus remains important, but modern cyber threats target far more than computer viruses. Protecting your entire digital life requires multiple layers of security and real human guidance.",
 
-  image: "/Hero/antivirus-protection.webp",
+  image: "/Hero/saffron-guru-antivirus-protection.webp",
 
   content: [
 
@@ -821,7 +821,7 @@ export const articles = [
 
   category: "AI & Cybersecurity Fraud",
 
-  image: "/Hero/ai-scam.webp",
+  image: "/Hero/saffron-guru-ai-scam.webp",
 
   lead:
     "Scammers are increasingly using artificial intelligence to create convincing messages, fake voices, and personalized scams that make it harder for innocent people to recognize fraud.",
@@ -925,7 +925,7 @@ export const articles = [
 
   category: "Phone Fraud",
 
-  image: "/Hero/call-spoofing.webp",
+  image: "/Hero/saffron-guru-call-spoofing.webp",
 
   lead:
     "Call spoofing allows scammers to disguise their real phone number and make calls appear to come from trusted businesses, government agencies, local numbers, or even people victims know.",
@@ -1036,7 +1036,7 @@ export const articles = [
     author: "Craig Hale",
     date: "Jan 20, 2026",
     category: "Online Banking Fraud",
-    image: "/Hero/bank-scam.webp",
+    image: "/Hero/saffron-guru-bank-scam.webp",
     lead:
       "Cybercriminals are circulating fake bank alerts that falsely claim accounts have been frozen, pushing users into hurried decisions that lead to financial loss.",
     content: [
@@ -1129,7 +1129,7 @@ export const articles = [
     author: "Craig Hale",
     date: "Jan 19, 2026",
     category: "Digital Payment Fraud",
-    image: "/Hero/qr-scam.webp",
+    image: "/Hero/saffron-guru-qr-scam.webp",
     lead:
       "Fake QR codes are being used to redirect unsuspecting users to fraudulent payment pages, resulting in instant monetary losses.",
     content: [
@@ -1217,7 +1217,7 @@ export const articles = [
     author: "Craig Hale",
     date: "Jan 18, 2026",
     category: "E-commerce Fraud",
-    image: "/Hero/delivery-scam.webp",
+    image: "/Hero/saffron-guru-delivery-scam.webp",
     lead:
       "Scammers are impersonating delivery companies and sending misleading notifications to steal money and sensitive details.",
     content: [
@@ -1305,7 +1305,7 @@ export const articles = [
     author: "Craig Hale",
     date: "Jan 17, 2026",
     category: "Tech Support Scams",
-    image: "/Hero/tech-support-scam.webp",
+    image: "/Hero/saffron-guru-tech-support-scam.webp",
     lead:
       "Cybersecurity experts are warning users about a growing scam in which fraudsters inject fake tech support phone numbers directly into real company websites, making the threat far harder to detect.",
     content: [
@@ -1425,7 +1425,7 @@ export const articles = [
     author: "Craig Hale",
     date: "Jan 16, 2026",
     category: "Payment App Fraud",
-    image: "/Hero/refund-scam.webp",
+    image: "/Hero/saffron-guru-refund-scam.webp",
     lead:
       "Fraudsters are exploiting refund misunderstandings to convince users to transfer real money voluntarily.",
     content: [

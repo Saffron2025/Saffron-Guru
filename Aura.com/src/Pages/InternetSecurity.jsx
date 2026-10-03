@@ -39,7 +39,7 @@ const InternetSecurity = () => {
                   {/* ✅ Optimized image */}
                   <img
                     src={product.img}
-                    alt={product.name}
+                    alt={`${product.name} from Saffron Guru`}
                     className="product-img"
                     loading="eager"
                     fetchpriority="high"

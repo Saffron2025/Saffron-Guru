@@ -11,6 +11,475 @@
       }
     },
     {
+      "src": "^/Hero/abc-national-news-video-thumbnail\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-awareness-abc-news-video.webp"
+      }
+    },
+    {
+      "src": "^/Hero/abc11-news-video-thumbnail\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-awareness-abc11-news-video.webp"
+      }
+    },
+    {
+      "src": "^/Hero/ai-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-ai-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/antivirus-protection\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-antivirus-protection.webp"
+      }
+    },
+    {
+      "src": "^/Hero/background\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-background.webp"
+      }
+    },
+    {
+      "src": "^/Hero/bank-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-bank-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/business-tech-failures\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-business-tech-failures.webp"
+      }
+    },
+    {
+      "src": "^/Hero/call-spoofing\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-call-spoofing.webp"
+      }
+    },
+    {
+      "src": "^/Hero/cbs-news-video-thumbnail\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-awareness-cbs-news-video.webp"
+      }
+    },
+    {
+      "src": "^/Hero/child-online-safety\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-child-online-safety.webp"
+      }
+    },
+    {
+      "src": "^/Hero/crypto-scams\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-crypto-scams.webp"
+      }
+    },
+    {
+      "src": "^/Hero/defendme-pro-cybersecurity-for-business\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-defendme-pro-cybersecurity-for-business.webp"
+      }
+    },
+    {
+      "src": "^/Hero/defendme-pro-digital-protection\\.avif$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-defendme-pro-digital-protection.avif"
+      }
+    },
+    {
+      "src": "^/Hero/defendme-pro-protection-built-for-real-life\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-defendme-pro-protection-built-for-real-life.webp"
+      }
+    },
+    {
+      "src": "^/Hero/defendme-pro-scam-trap-protection\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-defendme-pro-scam-trap-protection.webp"
+      }
+    },
+    {
+      "src": "^/Hero/defendme-pro-shield\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-defendme-pro-shield.webp"
+      }
+    },
+    {
+      "src": "^/Hero/delivery-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-delivery-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/fake-tech-support-scam-warning\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-fake-tech-support-scam-warning.webp"
+      }
+    },
+    {
+      "src": "^/Hero/fox-news-video-thumbnail\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-awareness-fox-news-video.webp"
+      }
+    },
+    {
+      "src": "^/Hero/nethaven-ai-parental-control\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-nethaven-ai-parental-control.webp"
+      }
+    },
+    {
+      "src": "^/Hero/nethaven-child-safe-internet\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-nethaven-child-safe-internet.webp"
+      }
+    },
+    {
+      "src": "^/Hero/nethaven-devices-preview\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-nethaven-devices-preview.webp"
+      }
+    },
+    {
+      "src": "^/Hero/nethaven-parental-control-protection\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-nethaven-parental-control-protection.webp"
+      }
+    },
+    {
+      "src": "^/Hero/new-york-police-video-thumbnail\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp"
+      }
+    },
+    {
+      "src": "^/Hero/qr-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-qr-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/refund-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-refund-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/rising-online-scams-against-seniors\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-rising-online-scams-against-seniors.webp"
+      }
+    },
+    {
+      "src": "^/Hero/romance-scam-warning\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-romance-scam-warning.webp"
+      }
+    },
+    {
+      "src": "^/Hero/safe-digital-world-for-kids\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-safe-digital-world-for-kids.webp"
+      }
+    },
+    {
+      "src": "^/Hero/safe-support-assist-for-business\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-safe-support-assist-for-business.webp"
+      }
+    },
+    {
+      "src": "^/Hero/scam-education-for-seniors\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-scam-education-for-seniors.webp"
+      }
+    },
+    {
+      "src": "^/Hero/tech-support-scam\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-tech-support-scam.webp"
+      }
+    },
+    {
+      "src": "^/Hero/traditional-security-gaps\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-traditional-security-gaps.webp"
+      }
+    },
+    {
+      "src": "^/Hero/veterans-bg\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Hero/saffron-guru-tech-support-for-veterans.webp"
+      }
+    },
+    {
+      "src": "^/Products/bbb-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-bbb.webp"
+      }
+    },
+    {
+      "src": "^/Products/crowdstrike-falcon\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-crowdstrike-falcon.webp"
+      }
+    },
+    {
+      "src": "^/Products/crunchbase-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-crunchbase.webp"
+      }
+    },
+    {
+      "src": "^/Products/cybercrime-statistics\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-cybercrime-statistics.webp"
+      }
+    },
+    {
+      "src": "^/Products/defendme-pro-features\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-defendme-pro-features.webp"
+      }
+    },
+    {
+      "src": "^/Products/defendme-pro-learn-more\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-defendme-pro-learn-more.webp"
+      }
+    },
+    {
+      "src": "^/Products/dnb-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-dun-and-bradstreet.webp"
+      }
+    },
+    {
+      "src": "^/Products/f6s-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-f6s.webp"
+      }
+    },
+    {
+      "src": "^/Products/g2-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-g2.webp"
+      }
+    },
+    {
+      "src": "^/Products/goodfirms-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-goodfirms.webp"
+      }
+    },
+    {
+      "src": "^/Products/manta-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-manta.webp"
+      }
+    },
+    {
+      "src": "^/Products/mcafee-endpoint-security\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-mcafee-endpoint-security.webp"
+      }
+    },
+    {
+      "src": "^/Products/mcafee-livesafe\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-mcafee-livesafe.webp"
+      }
+    },
+    {
+      "src": "^/Products/mcafee-total-protection\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-mcafee-total-protection.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-office-2016-professional-plus\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-office-2019-professional-plus\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-office-2021-professional-plus\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-office-2024-professional-plus\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-project-2019-2021-professional\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-project-2019-2021-professional.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-visio-2019-2021-professional\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-windows-11-home\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-11-home.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-windows-11-pro\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-11-pro.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-windows-server-2019-standard-datacenter\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp"
+      }
+    },
+    {
+      "src": "^/Products/microsoft-windows-server-2022-standard-datacenter\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp"
+      }
+    },
+    {
+      "src": "^/Products/norton-360-premium\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-norton-360-premium.webp"
+      }
+    },
+    {
+      "src": "^/Products/norton-lifelock\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-norton-lifelock.webp"
+      }
+    },
+    {
+      "src": "^/Products/smartcustomer-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-smartcustomer.webp"
+      }
+    },
+    {
+      "src": "^/Products/sortlist-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-sortlist.webp"
+      }
+    },
+    {
+      "src": "^/Products/symantec-endpoint-protection\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-symantec-endpoint-protection.webp"
+      }
+    },
+    {
+      "src": "^/Products/techbehemoths-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-techbehemoths.webp"
+      }
+    },
+    {
+      "src": "^/Products/trustpilot-logo\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-on-trustpilot.webp"
+      }
+    },
+    {
+      "src": "^/resources/fixmytech-business-remote-support\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/resources/saffron-guru-fixmytech-business-remote-support.webp"
+      }
+    },
+    {
+      "src": "^/resources/fixmytech-home-remote-support\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/resources/saffron-guru-fixmytech-home-remote-support.webp"
+      }
+    },
+    {
       "src": "^/Veterens/?$",
       "status": 301,
       "headers": {
@@ -21,14 +490,14 @@
       "src": "^/Hero/ABC11\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/abc11-news-video-thumbnail.webp"
+        "Location": "/Hero/saffron-guru-scam-awareness-abc11-news-video.webp"
       }
     },
     {
       "src": "^/Hero/ABCNational\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/abc-national-news-video-thumbnail.webp"
+        "Location": "/Hero/saffron-guru-scam-awareness-abc-news-video.webp"
       }
     },
     {
@@ -49,28 +518,28 @@
       "src": "^/Hero/CBS\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/cbs-news-video-thumbnail.webp"
+        "Location": "/Hero/saffron-guru-scam-awareness-cbs-news-video.webp"
       }
     },
     {
       "src": "^/Hero/DefenceMeBuilt\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/defendme-pro-protection-built-for-real-life.webp"
+        "Location": "/Hero/saffron-guru-defendme-pro-protection-built-for-real-life.webp"
       }
     },
     {
       "src": "^/Hero/DefendMeProForBusiness\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/defendme-pro-cybersecurity-for-business.webp"
+        "Location": "/Hero/saffron-guru-defendme-pro-cybersecurity-for-business.webp"
       }
     },
     {
       "src": "^/Hero/Digital\\.avif$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/defendme-pro-digital-protection.avif"
+        "Location": "/Hero/saffron-guru-defendme-pro-digital-protection.avif"
       }
     },
     {
@@ -84,7 +553,7 @@
       "src": "^/Hero/EducationScam\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/scam-education-for-seniors.webp"
+        "Location": "/Hero/saffron-guru-scam-education-for-seniors.webp"
       }
     },
     {
@@ -105,14 +574,14 @@
       "src": "^/Hero/FakeTechSupport\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/fake-tech-support-scam-warning.webp"
+        "Location": "/Hero/saffron-guru-fake-tech-support-scam-warning.webp"
       }
     },
     {
       "src": "^/Hero/FoxNews\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/fox-news-video-thumbnail.webp"
+        "Location": "/Hero/saffron-guru-scam-awareness-fox-news-video.webp"
       }
     },
     {
@@ -140,7 +609,7 @@
       "src": "^/Hero/KidsBanner\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/child-online-safety.webp"
+        "Location": "/Hero/saffron-guru-child-online-safety.webp"
       }
     },
     {
@@ -154,35 +623,35 @@
       "src": "^/Hero/MostParentalCantrollers\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/nethaven-parental-control-protection.webp"
+        "Location": "/Hero/saffron-guru-nethaven-parental-control-protection.webp"
       }
     },
     {
       "src": "^/Hero/NetHavenBanner1\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/nethaven-ai-parental-control.webp"
+        "Location": "/Hero/saffron-guru-nethaven-ai-parental-control.webp"
       }
     },
     {
       "src": "^/Hero/NetHavenBanner2\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/nethaven-child-safe-internet.webp"
+        "Location": "/Hero/saffron-guru-nethaven-child-safe-internet.webp"
       }
     },
     {
       "src": "^/Hero/NetHavenInsideBanner\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/nethaven-devices-preview.webp"
+        "Location": "/Hero/saffron-guru-nethaven-devices-preview.webp"
       }
     },
     {
       "src": "^/Hero/NewYorkPolice\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/new-york-police-video-thumbnail.webp"
+        "Location": "/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp"
       }
     },
     {
@@ -238,7 +707,7 @@
       "src": "^/Hero/RomanceScam\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/romance-scam-warning.webp"
+        "Location": "/Hero/saffron-guru-romance-scam-warning.webp"
       }
     },
     {
@@ -252,28 +721,28 @@
       "src": "^/Hero/SafeKidsBanner\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/safe-digital-world-for-kids.webp"
+        "Location": "/Hero/saffron-guru-safe-digital-world-for-kids.webp"
       }
     },
     {
       "src": "^/Hero/SafeSupport\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/safe-support-assist-for-business.webp"
+        "Location": "/Hero/saffron-guru-safe-support-assist-for-business.webp"
       }
     },
     {
       "src": "^/Hero/ScamTrap\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/defendme-pro-scam-trap-protection.webp"
+        "Location": "/Hero/saffron-guru-defendme-pro-scam-trap-protection.webp"
       }
     },
     {
       "src": "^/Hero/TechFailures\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/business-tech-failures.webp"
+        "Location": "/Hero/saffron-guru-business-tech-failures.webp"
       }
     },
     {
@@ -287,7 +756,7 @@
       "src": "^/Hero/TheRising\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/rising-online-scams-against-seniors.webp"
+        "Location": "/Hero/saffron-guru-rising-online-scams-against-seniors.webp"
       }
     },
     {
@@ -301,7 +770,7 @@
       "src": "^/Hero/TraditionalFails\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/traditional-security-gaps.webp"
+        "Location": "/Hero/saffron-guru-traditional-security-gaps.webp"
       }
     },
     {
@@ -329,7 +798,7 @@
       "src": "^/Hero/shield\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Hero/defendme-pro-shield.webp"
+        "Location": "/Hero/saffron-guru-defendme-pro-shield.webp"
       }
     },
     {
@@ -350,133 +819,133 @@
       "src": "^/Products/CrowdStrikeFalcon\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/crowdstrike-falcon.webp"
+        "Location": "/Products/saffron-guru-crowdstrike-falcon.webp"
       }
     },
     {
       "src": "^/Products/F6S\\-Logo\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/f6s-logo.webp"
+        "Location": "/Products/saffron-guru-on-f6s.webp"
       }
     },
     {
       "src": "^/Products/LearnMore\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/defendme-pro-learn-more.webp"
+        "Location": "/Products/saffron-guru-defendme-pro-learn-more.webp"
       }
     },
     {
       "src": "^/Products/McAfeeENS\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/mcafee-endpoint-security.webp"
+        "Location": "/Products/saffron-guru-mcafee-endpoint-security.webp"
       }
     },
     {
       "src": "^/Products/McAfeeLiveSafe\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/mcafee-livesafe.webp"
+        "Location": "/Products/saffron-guru-mcafee-livesafe.webp"
       }
     },
     {
       "src": "^/Products/McAfeeTotalProtection\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/mcafee-total-protection.webp"
+        "Location": "/Products/saffron-guru-mcafee-total-protection.webp"
       }
     },
     {
       "src": "^/Products/Norton360Premium\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/norton-360-premium.webp"
+        "Location": "/Products/saffron-guru-norton-360-premium.webp"
       }
     },
     {
       "src": "^/Products/NortonLifeLock\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/norton-lifelock.webp"
+        "Location": "/Products/saffron-guru-norton-lifelock.webp"
       }
     },
     {
       "src": "^/Products/Office(?: |%20)2019(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-office-2019-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp"
       }
     },
     {
       "src": "^/Products/Office(?: |%20)2021(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-office-2021-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp"
       }
     },
     {
       "src": "^/Products/Office(?: |%20)2024(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-office-2024-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp"
       }
     },
     {
       "src": "^/Products/Office2016ProPlus\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-office-2016-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp"
       }
     },
     {
       "src": "^/Products/Project(?: |%20)2019(?: |%20)(?: |%20)2021(?: |%20)Pro\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-project-2019-2021-professional.webp"
+        "Location": "/Products/saffron-guru-microsoft-project-2019-2021-professional.webp"
       }
     },
     {
       "src": "^/Products/SymantecSEP\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/symantec-endpoint-protection.webp"
+        "Location": "/Products/saffron-guru-symantec-endpoint-protection.webp"
       }
     },
     {
       "src": "^/Products/Visio(?: |%20)2019(?: |%20)(?: |%20)2021(?: |%20)Pro\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-visio-2019-2021-professional.webp"
+        "Location": "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp"
       }
     },
     {
       "src": "^/Products/Windows(?: |%20)11(?: |%20)Home\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-windows-11-home.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-11-home.webp"
       }
     },
     {
       "src": "^/Products/Windows(?: |%20)11(?: |%20)Pro\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-windows-11-pro.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-11-pro.webp"
       }
     },
     {
       "src": "^/Products/Windows(?: |%20)Server(?: |%20)2019(?: |%20)Standard(?: |%20)(?: |%20)Datacenter\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-windows-server-2019-standard-datacenter.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp"
       }
     },
     {
       "src": "^/Products/Windows(?: |%20)Server(?: |%20)2022(?: |%20)Standard(?: |%20)(?: |%20)Datacenter\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/microsoft-windows-server-2022-standard-datacenter.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp"
       }
     },
     {
@@ -546,7 +1015,7 @@
       "src": "^/Products/reality\\-numbers\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/cybercrime-statistics.webp"
+        "Location": "/Products/saffron-guru-cybercrime-statistics.webp"
       }
     },
     {
@@ -574,7 +1043,7 @@
       "src": "^/Products/smartcustomer\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/smartcustomer-logo.webp"
+        "Location": "/Products/saffron-guru-on-smartcustomer.webp"
       }
     },
     {
@@ -588,7 +1057,7 @@
       "src": "^/Products/trustpilot\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/trustpilot-logo.webp"
+        "Location": "/Products/saffron-guru-on-trustpilot.webp"
       }
     },
     {
@@ -602,21 +1071,21 @@
       "src": "^/Products/what\\-defendmepro\\-includes\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/defendme-pro-features.webp"
+        "Location": "/Products/saffron-guru-defendme-pro-features.webp"
       }
     },
     {
       "src": "^/resources/FixMyTechBusiness\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/resources/fixmytech-business-remote-support.webp"
+        "Location": "/resources/saffron-guru-fixmytech-business-remote-support.webp"
       }
     },
     {
       "src": "^/resources/FixMyTechHome\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/resources/fixmytech-home-remote-support.webp"
+        "Location": "/resources/saffron-guru-fixmytech-home-remote-support.webp"
       }
     },
     {

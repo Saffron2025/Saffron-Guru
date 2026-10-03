@@ -283,7 +283,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/crunchbase-logo.webp"
+                    src="/Products/saffron-guru-on-crunchbase.webp"
                     alt="Saffron Guru on Crunchbase"
                     className="find-online-image crunchbase-image"
                   />
@@ -329,7 +329,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/dnb-logo.webp"
+                    src="/Products/saffron-guru-on-dun-and-bradstreet.webp"
                     alt="Saffron Guru on Dun & Bradstreet"
                     className="find-online-image dnb-image"
                   />
@@ -355,7 +355,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/g2-logo.webp"
+                    src="/Products/saffron-guru-on-g2.webp"
                     alt="Saffron Guru on G2"
                     className="find-online-image g2-image"
                   />
@@ -381,7 +381,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/bbb-logo.webp"
+                    src="/Products/saffron-guru-on-bbb.webp"
                     alt="Saffron Guru on Better Business Bureau"
                     className="find-online-image bbb-image"
                   />
@@ -407,7 +407,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/manta-logo.webp"
+                    src="/Products/saffron-guru-on-manta.webp"
                     alt="Saffron Guru on Manta"
                     className="find-online-image manta-image"
                   />
@@ -433,7 +433,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/f6s-logo.webp"
+                    src="/Products/saffron-guru-on-f6s.webp"
                     alt="Saffron Guru on F6S"
                     className="find-online-image f6s-image"
                   />
@@ -459,7 +459,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/goodfirms-logo.webp"
+                    src="/Products/saffron-guru-on-goodfirms.webp"
                     alt="Saffron Guru on GoodFirms"
                     className="find-online-image goodfirms-image"
                   />
@@ -485,7 +485,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/techbehemoths-logo.webp"
+                    src="/Products/saffron-guru-on-techbehemoths.webp"
                     alt="Saffron Guru on TechBehemoths"
                     className="find-online-image techbehemoths-image"
                   />
@@ -511,7 +511,7 @@ const AuraFooter = () => {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/sortlist-logo.webp"
+                    src="/Products/saffron-guru-on-sortlist.webp"
                     alt="Saffron Guru on Sortlist"
                     className="find-online-image techbehemoths-image"
                   />

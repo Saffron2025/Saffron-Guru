@@ -48,7 +48,7 @@ const BlogPost = () => {
         {/* Banner image (optional) */}
         {blog.image && (
           <div className="blog-banner">
-            {/* <img src={blog.image} alt={blog.title} /> */}
+            {/* <img src={blog.image} alt={`${blog.title} | Saffron Guru`} /> */}
           </div>
         )}
 

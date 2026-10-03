@@ -80,6 +80,15 @@ const Veterans = () => {
       <AppNavbar />
 
       <main className="veterans-page vet-v3">
+        {/* Page background as a real image, so Google can index it */}
+        <img
+          className="vet-bg-img"
+          src="/Hero/saffron-guru-tech-support-for-veterans.webp"
+          alt="Saffron Guru tech support and online protection for U.S. veterans"
+          decoding="async"
+          fetchpriority="high"
+        />
+
 
         {/* =====================================================
             HERO

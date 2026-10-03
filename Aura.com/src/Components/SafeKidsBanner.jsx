@@ -15,8 +15,8 @@ const SafeKidsBanner = () => {
         <div className="safe-image">
           <div className="image-light"></div>
           <img
-            src="/Hero/safe-digital-world-for-kids.webp"
-            alt="A safer digital world for kids"
+            src="/Hero/saffron-guru-safe-digital-world-for-kids.webp"
+            alt="Saffron Guru safer digital world for kids"
             loading="eager"           // 👈 load immediately
             fetchpriority="high"      // 👈 mark as top priority
             width="500"

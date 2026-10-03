@@ -78,7 +78,7 @@ const DefendMePro = () => {
 
               <div className="hero-logo-wrapper">
                 <img
-                  src="/Hero/defendme-pro-shield.webp"
+                  src="/Hero/saffron-guru-defendme-pro-shield.webp"
                   alt="DefendMe PRO™ shield by Saffron Guru"
                   className="hero-logo"
                   loading="eager"
@@ -157,8 +157,8 @@ const DefendMePro = () => {
               <div className="hero-shield-inner">
 
                 <img
-                  src="/Hero/defendme-pro-shield.webp"
-                  alt="DefendMe PRO™ digital protection shield"
+                  src="/Hero/saffron-guru-defendme-pro-shield.webp"
+                  alt="Saffron Guru DefendMe PRO™ digital protection shield"
                   loading="eager"
                 />
 
@@ -214,7 +214,7 @@ const DefendMePro = () => {
             <div className="scam-image-wrapper">
 
               <LazyLoadImage
-                src="/Hero/defendme-pro-scam-trap-protection.webp"
+                src="/Hero/saffron-guru-defendme-pro-scam-trap-protection.webp"
                 alt="DefendMe PRO™ scam trap protection"
                 effect="blur"
                 loading="lazy"

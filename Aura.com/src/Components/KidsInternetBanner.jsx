@@ -24,8 +24,8 @@ const KidsInternetBanner = () => {
         <div className="kids-banner-image">
           <div className="image-glow"></div>
           <img
-            src="/Hero/child-online-safety.webp"
-            alt="Child online safety"
+            src="/Hero/saffron-guru-child-online-safety.webp"
+            alt="Saffron Guru child online safety"
             loading="eager"            // 👈 ensure eager load
             fetchpriority="high"       // 👈 tell browser this is top priority
             width="500" height="400"   // 👈 add width/height to reduce CLS (layout shift)

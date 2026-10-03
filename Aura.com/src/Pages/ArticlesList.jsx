@@ -49,7 +49,7 @@ const ArticlesList = () => {
 
                     <img
                       src={a.image}
-                      alt={a.title}
+                      alt={`${a.title} | Saffron Guru`}
                       className="article-list-image"
                       loading="lazy"
                     />

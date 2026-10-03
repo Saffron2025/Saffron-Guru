@@ -27,7 +27,7 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/rising-online-scams-against-seniors.webp"
+                  src="/Hero/saffron-guru-rising-online-scams-against-seniors.webp"
                   alt="Rising online scams targeting seniors"
                   effect="blur"
                   loading="lazy"
@@ -53,7 +53,7 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/fake-tech-support-scam-warning.webp"
+                  src="/Hero/saffron-guru-fake-tech-support-scam-warning.webp"
                   alt="Fake tech support scam warning"
                   effect="blur"
                   loading="lazy"
@@ -79,7 +79,7 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/romance-scam-warning.webp"
+                  src="/Hero/saffron-guru-romance-scam-warning.webp"
                   alt="Romance scam warning for seniors"
                   effect="blur"
                   loading="lazy"
@@ -105,7 +105,7 @@ const Solution = () => {
             <Col md={6}>
               <div className="image-wrapper">
                 <LazyLoadImage
-                  src="/Hero/scam-education-for-seniors.webp"
+                  src="/Hero/saffron-guru-scam-education-for-seniors.webp"
                   alt="Scam awareness education for seniors"
                   effect="blur"
                   loading="lazy"

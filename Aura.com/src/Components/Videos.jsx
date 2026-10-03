@@ -15,11 +15,11 @@ const videos = [
 
 // 📰 News Links
 const newsLinks = [
-  { icon: "/Hero/fox-news-video-thumbnail.webp", label: "Fox: Social Security Scam", url: "/Fox" },
-  { icon: "/Hero/cbs-news-video-thumbnail.webp", label: "CBS: Eagan Couple Nearly Scammed", url: "/CBS" },
-  { icon: "/Hero/abc11-news-video-thumbnail.webp", label: "ABC11: Tech Support Scam", url: "/ABC11" },
-  { icon: "/Hero/new-york-police-video-thumbnail.webp", label: "New York PD: Scam Alert", url: "/NewYorkPolice" },
-  { icon: "/Hero/abc-national-news-video-thumbnail.webp", label: "ABC: $4.8B Lost by Seniors", url: "/ABCNational" },
+  { icon: "/Hero/saffron-guru-scam-awareness-fox-news-video.webp", label: "Fox: Social Security Scam", url: "/Fox" },
+  { icon: "/Hero/saffron-guru-scam-awareness-cbs-news-video.webp", label: "CBS: Eagan Couple Nearly Scammed", url: "/CBS" },
+  { icon: "/Hero/saffron-guru-scam-awareness-abc11-news-video.webp", label: "ABC11: Tech Support Scam", url: "/ABC11" },
+  { icon: "/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp", label: "New York PD: Scam Alert", url: "/NewYorkPolice" },
+  { icon: "/Hero/saffron-guru-scam-awareness-abc-news-video.webp", label: "ABC: $4.8B Lost by Seniors", url: "/ABCNational" },
 ];
 
 const Videos = () => {
@@ -76,7 +76,7 @@ const Videos = () => {
                     loading="lazy"
                     decoding="async"
                     src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
-                    alt={video.title}
+                    alt={`${video.title} | Saffron Guru scam awareness`}
                     className="yt-thumb-img"
                   />
                   <div className="play-btn">▶</div>

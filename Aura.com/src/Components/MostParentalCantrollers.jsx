@@ -10,7 +10,7 @@ const MostParentalCantrollers = () => {
         {/* Left Image */}
         <div className="nethaven-image">
           <img
-            src="/Hero/nethaven-parental-control-protection.webp"
+            src="/Hero/saffron-guru-nethaven-parental-control-protection.webp"
             alt="NetHaven parental control protection by Saffron Guru"
             loading="eager"           // 👈 load immediately
             fetchpriority="high"      // 👈 browser ko hint: ye important image hai

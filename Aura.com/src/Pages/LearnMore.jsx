@@ -116,7 +116,7 @@ const LearnMore = () => {
                 <div className="learn-product-image-wrap">
 
                   <img
-                    src="/Products/defendme-pro-learn-more.webp"
+                    src="/Products/saffron-guru-defendme-pro-learn-more.webp"
                     alt="DefendMe PRO™ online protection by Saffron Guru"
                     className="learn-product-image"
                   />

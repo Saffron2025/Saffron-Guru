@@ -42,7 +42,7 @@ const ProductDetail = () => {
           <div className="detail-img-wrapper">
             <img
               src={mainImg}
-              alt={product.name}
+              alt={`${product.name} from Saffron Guru`}
               className="detail-img zoom-img"
               style={zoomStyle}
               onMouseMove={handleMouseMove}

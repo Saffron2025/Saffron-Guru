@@ -145,7 +145,7 @@ const ItSupport = () => {
 
               <img
                 src="/Hero/saffron-guru-home-it-support.webp"
-                // alt="Home IT Support"
+                // alt="Saffron Guru home IT support"
                 className="it-main-image"
               />
 
@@ -447,7 +447,7 @@ const ItSupport = () => {
 
               <img
                 src="/Hero/saffron-guru-business-it-support.webp"
-                // alt="Business IT Support"
+                // alt="Saffron Guru business IT support"
                 className="it-main-image"
               />
 

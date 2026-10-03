@@ -49,7 +49,7 @@ const ArticleDetail = () => {
           <div className="article-image-wrap">
             <img
               src={article.image}
-              alt={article.title}
+              alt={`${article.title} | Saffron Guru`}
               className="article-image"
               loading="lazy"
             />

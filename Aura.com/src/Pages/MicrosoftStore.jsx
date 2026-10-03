@@ -6,16 +6,16 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const products = [
-  { id: 1, name: "Office 2016 Pro Plus", img: "/Products/microsoft-office-2016-professional-plus.webp", price: "$99.99", desc: "Classic productivity suite trusted by millions." },
-  { id: 2, name: "Office 2019 Pro Plus", img: "/Products/microsoft-office-2019-professional-plus.webp", price: "$129.99", desc: "Modern productivity apps with cloud sync." },
-  { id: 3, name: "Office 2021 Pro Plus", img: "/Products/microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "Latest one-time Office license." },
-  { id: 4, name: "Office 2024 Pro Plus", img: "/Products/microsoft-office-2024-professional-plus.webp", price: "$199.99", desc: "Upcoming future-ready Office tools." },
-  { id: 5, name: "Project 2019 / 2021 Pro", img: "/Products/microsoft-project-2019-2021-professional.webp", price: "$179.99", desc: "Advanced project management for professionals." },
-  { id: 6, name: "Visio 2019 / 2021 Pro", img: "/Products/microsoft-visio-2019-2021-professional.webp", price: "$159.99", desc: "Powerful diagramming and flowcharts." },
-  { id: 7, name: "Windows 11 Home", img: "/Products/microsoft-windows-11-home.webp", price: "$119.99", desc: "For everyday use with latest features." },
-  { id: 8, name: "Windows 11 Pro", img: "/Products/microsoft-windows-11-pro.webp", price: "$199.99", desc: "For power users & businesses." },
-  { id: 9, name: "Windows Server 2019 Standard / Datacenter", img: "/Products/microsoft-windows-server-2019-standard-datacenter.webp", price: "$399.99", desc: "Reliable server OS for enterprise." },
-  { id: 10, name: "Windows Server 2022 Standard / Datacenter", img: "/Products/microsoft-windows-server-2022-standard-datacenter.webp", price: "$499.99", desc: "Next-gen secure server platform." },
+  { id: 1, name: "Office 2016 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp", price: "$99.99", desc: "Classic productivity suite trusted by millions." },
+  { id: 2, name: "Office 2019 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp", price: "$129.99", desc: "Modern productivity apps with cloud sync." },
+  { id: 3, name: "Office 2021 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "Latest one-time Office license." },
+  { id: 4, name: "Office 2024 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", price: "$199.99", desc: "Upcoming future-ready Office tools." },
+  { id: 5, name: "Project 2019 / 2021 Pro", img: "/Products/saffron-guru-microsoft-project-2019-2021-professional.webp", price: "$179.99", desc: "Advanced project management for professionals." },
+  { id: 6, name: "Visio 2019 / 2021 Pro", img: "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp", price: "$159.99", desc: "Powerful diagramming and flowcharts." },
+  { id: 7, name: "Windows 11 Home", img: "/Products/saffron-guru-microsoft-windows-11-home.webp", price: "$119.99", desc: "For everyday use with latest features." },
+  { id: 8, name: "Windows 11 Pro", img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", price: "$199.99", desc: "For power users & businesses." },
+  { id: 9, name: "Windows Server 2019 Standard / Datacenter", img: "/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp", price: "$399.99", desc: "Reliable server OS for enterprise." },
+  { id: 10, name: "Windows Server 2022 Standard / Datacenter", img: "/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp", price: "$499.99", desc: "Next-gen secure server platform." },
 ];
 
 const MicrosoftStore = () => {
