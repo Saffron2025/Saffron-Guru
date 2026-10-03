@@ -1393,3 +1393,9 @@
   transform: scale(1.05);
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.17);
 }
+
+/* Vimeo */
+.social-link.vimeo .social-icon,
+.social-link.vimeo:hover .social-icon {
+  background: #1ab7ea;
+}

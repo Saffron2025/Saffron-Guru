@@ -7,6 +7,8 @@ import {
   FaLinkedinIn,
   FaPinterestP,
   FaMedium,
+  FaYoutube,
+  FaVimeoV,
 } from "react-icons/fa";
 import { FaFlagUsa } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -100,6 +102,20 @@ const socialLinks = [
     url: "https://www.pinterest.com/SaffronGuruSince2016/",
     icon: <FaPinterestP />,
     className: "pinterest",
+  },
+
+  {
+    label: "YouTube",
+    url: "https://www.youtube.com/@SaffronGuru",
+    icon: <FaYoutube />,
+    className: "youtube",
+  },
+
+  {
+    label: "Vimeo",
+    url: "https://vimeo.com/saffronguru",
+    icon: <FaVimeoV />,
+    className: "vimeo",
   },
 ];
 
@@ -477,6 +493,32 @@ const AuraFooter = () => {
 
                 <span className="find-online-text">
                   TechBehemoths
+                </span>
+              </a>
+
+              {/* =====================================
+                  SORTLIST
+              ===================================== */}
+
+              <a
+                href="https://www.sortlist.com/agency/saffron-guru-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on Sortlist"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/sortlist-logo.webp"
+                    alt="Saffron Guru on Sortlist"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  Sortlist
                 </span>
               </a>
 
