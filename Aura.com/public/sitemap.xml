@@ -41,6 +41,8 @@
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-on-trustpilot.webp</image:loc></image:image>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
+      <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-logo-512.png</image:loc><image:title>Saffron Guru logo</image:title></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-logo-static.webp</image:loc><image:title>Saffron Guru logo (blue shield)</image:title></image:image>
   </url>
 
   <!-- Features -->
