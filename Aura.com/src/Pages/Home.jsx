@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import CookieConsent from '../Components/CookieConsent';
 import AppNavbar from '../Components/AppNavbar';
 import Footer from '../Components/Footer';
+import OurPromise from '../Components/OurPromise';
 
 import {
   Clock,
@@ -423,6 +424,8 @@ const Hero = () => {
 
       </section>
 
+
+      <OurPromise />
 
       {/* =========================================
           PARENTAL SECTION
