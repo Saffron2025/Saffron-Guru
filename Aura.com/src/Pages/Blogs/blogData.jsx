@@ -2,6 +2,7 @@ const blogs = {
 
   
 "online-scam-guide": {
+  image: "/Hero/saffron-guru-rising-online-scams-against-seniors.webp",
   title: "🛡️ Online Scam Guide",
   content: `
     <p>Today, online scams have reached new levels of sophistication. 
@@ -71,6 +72,7 @@ const blogs = {
 
 
   "romance-scam": {
+  image: "/Hero/saffron-guru-romance-scam-warning.webp",
   title: "❤️ Romance Scams Explained – Protecting Seniors",
   content: `
     <p>Romance scams are one of the fastest-growing types of online fraud. 
@@ -147,6 +149,7 @@ const blogs = {
 
 
   "tech-support-scam": {
+  image: "/Hero/saffron-guru-fake-tech-support-scam-warning.webp",
   title: "🖥️ Fake Tech Support Scams – How to Stay Safe",
   content: `
     <p>Tech support scams have been around for years, but today they have 
@@ -232,6 +235,7 @@ const blogs = {
 },
 
   "banking-otp-fraud": {
+  image: "/Hero/saffron-guru-bank-scam.webp",
   title: "💳 Banking & OTP Fraud – How to Stay Safe",
   content: `
     <p>Banking fraud has become one of the biggest threats to seniors. 
@@ -313,6 +317,7 @@ const blogs = {
 
 
   "spam-calls": {
+  image: "/Products/saffron-guru-spam-call-protection.webp",
   title: "📞 Spam Calls & Robocalls – A Senior’s Guide to Safety",
   content: `
     <p>Every day, millions of people across the world receive unwanted spam calls 
@@ -397,6 +402,7 @@ const blogs = {
 },
 
   "phishing-emails": {
+  image: "/Hero/saffron-guru-instant-scam-alerts.webp",
   title: "📧 Phishing Emails & Fake Links – Don’t Get Trapped",
   content: `
     <p>Phishing emails are one of the oldest yet most dangerous scams. 
@@ -483,6 +489,7 @@ const blogs = {
 },
 
   "identity-theft": {
+  image: "/Hero/saffron-guru-fraud-detection.webp",
   title: "👤 Identity Theft Protection – Safeguard Your Personal Details",
   content: `
     <p>Identity theft is one of the fastest-growing cybercrimes worldwide. 
@@ -565,6 +572,7 @@ const blogs = {
 },
 
   "online-shopping": {
+  image: "/Products/saffron-guru-financial-security-protection.webp",
   title: "🌐 Safe Online Shopping for Seniors – Shop Smart, Shop Safe",
   content: `
     <p>Online shopping is convenient and exciting, but it also comes with 
@@ -647,6 +655,7 @@ const blogs = {
 },
 
   "investment-scam": {
+  image: "/Hero/saffron-guru-crypto-scams.webp",
   title: "💰 Investment & Lottery Scams – Don’t Fall for Quick Money Traps",
   content: `
     <p>Today, one of the biggest scams affecting seniors worldwide is the 
@@ -739,6 +748,7 @@ const blogs = {
 },
 
   "password-safety": {
+  image: "/Products/saffron-guru-password-manager.webp",
   title: "🔑 Password Safety & Account Security – Strong Defenses for Seniors",
   content: `
     <p>Passwords are the digital keys to your life. From bank accounts to 
@@ -822,6 +832,7 @@ const blogs = {
 },
 
 "ai-voice-fraud": {
+  image: "/Hero/saffron-guru-ai-scam.webp",
   title: "🤖 AI Voice Call Frauds – The Rise of Deepfake Scams",
   content: `
     <p>Today, scams have entered a dangerous new level – powered by Artificial Intelligence (AI). 

@@ -60,6 +60,38 @@ for (const [route, page] of Object.entries(data)) {
   html = setTag(html, /<meta[^>]*name="twitter:description"[^>]*>/i, `<meta name="twitter:description" content="${esc(description)}" />`);
   html = html.replace("</head>", `${style}\n  </head>`);
 
+  // Structured data so Google understands articles and products
+  const ld = [];
+  const org = { "@type": "Organization", name: "Saffron Guru LLC", url: SITE + "/", logo: { "@type": "ImageObject", url: SITE + "/Products/saffron-guru-logo-512.png" } };
+  if (route.startsWith("/articles/") || route.startsWith("/blog/")) {
+    const post = {
+      "@context": "https://schema.org", "@type": "BlogPosting",
+      headline: title.replace(/ \| Saffron Guru$/, "").slice(0, 110),
+      description, mainEntityOfPage: url, url,
+      author: { "@type": "Organization", name: "Saffron Guru", url: SITE + "/" },
+      publisher: org, inLanguage: "en-US",
+    };
+    if (m.image) post.image = [image];
+    if (m.date) { const d = new Date(m.date + " UTC"); if (!isNaN(d)) post.datePublished = d.toISOString().slice(0, 10); }
+    ld.push(post);
+  }
+  if (route.startsWith("/product/") && m.price) {
+    const price = String(m.price).replace(/[^0-9.]/g, "");
+    ld.push({
+      "@context": "https://schema.org", "@type": "Product",
+      name: m.title, description, image: [image], brand: { "@type": "Brand", name: /^(Office|Windows|Project|Visio)/.test(m.title) ? "Microsoft" : m.title.split(" ")[0] },
+      offers: { "@type": "Offer", url, priceCurrency: "USD", price, availability: "https://schema.org/InStock", seller: org },
+    });
+  }
+  if (route !== "/") {
+    const crumbs = [{ "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" }];
+    const sect = route.startsWith("/articles/") ? ["Online Safety Hub", "/article"] : route.startsWith("/blog/") ? ["Blog", "/blog"] : route.startsWith("/product/") ? ["Microsoft Store", "/microsoft-store"] : null;
+    if (sect) crumbs.push({ "@type": "ListItem", position: 2, name: sect[0], item: SITE + sect[1] });
+    crumbs.push({ "@type": "ListItem", position: crumbs.length + 1, name: title.replace(/ \| Saffron Guru$/, ""), item: url });
+    ld.push({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs });
+  }
+  if (ld.length) html = html.replace("</head>", ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, "\\u003c")}</script>`).join("\n") + "\n  </head>");
+
   const links = (page.links || []).map((h) => `<a href="${esc(h)}">${esc(h === "/" ? "Home" : h.replace(/^\//, "").replace(/[-/]/g, " "))}</a>`).join(" ");
   const content = `<div class="sg-pre">
 ${page.body}

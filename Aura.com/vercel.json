@@ -8,6 +8,27 @@
       "handle": "filesystem"
     },
     {
+      "src": "^/about/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/about-us"
+      }
+    },
+    {
+      "src": "^/index\\.php.*$",
+      "status": 301,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
+      "src": "^/home/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
       "src": "^/about-us/?$",
       "dest": "/_p/about-us.html"
     },
@@ -214,6 +235,74 @@
     {
       "src": "^/veterans/?$",
       "dest": "/_p/veterans.html"
+    },
+    {
+      "src": "^/product/1/?$",
+      "dest": "/_p/product__1.html"
+    },
+    {
+      "src": "^/product/2/?$",
+      "dest": "/_p/product__2.html"
+    },
+    {
+      "src": "^/product/3/?$",
+      "dest": "/_p/product__3.html"
+    },
+    {
+      "src": "^/product/4/?$",
+      "dest": "/_p/product__4.html"
+    },
+    {
+      "src": "^/product/5/?$",
+      "dest": "/_p/product__5.html"
+    },
+    {
+      "src": "^/product/6/?$",
+      "dest": "/_p/product__6.html"
+    },
+    {
+      "src": "^/product/7/?$",
+      "dest": "/_p/product__7.html"
+    },
+    {
+      "src": "^/product/8/?$",
+      "dest": "/_p/product__8.html"
+    },
+    {
+      "src": "^/product/9/?$",
+      "dest": "/_p/product__9.html"
+    },
+    {
+      "src": "^/product/10/?$",
+      "dest": "/_p/product__10.html"
+    },
+    {
+      "src": "^/product/11/?$",
+      "dest": "/_p/product__11.html"
+    },
+    {
+      "src": "^/product/12/?$",
+      "dest": "/_p/product__12.html"
+    },
+    {
+      "src": "^/product/13/?$",
+      "dest": "/_p/product__13.html"
+    },
+    {
+      "src": "^/product/14/?$",
+      "dest": "/_p/product__14.html"
+    },
+    {
+      "src": "^/product/15/?$",
+      "dest": "/_p/product__15.html"
+    },
+    {
+      "src": "^/product/16/?$",
+      "dest": "/_p/product__16.html"
+    },
+    {
+      "src": "^/product/17/?$",
+      "dest": "/_p/product__17.html"
     },
     {
       "src": "^/features/?$",

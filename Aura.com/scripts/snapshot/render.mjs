@@ -61,7 +61,7 @@ const stubPlugin = {
               tag === "img" ? React.createElement("img", {src, alt}) : React.createElement(tag, {href, className}, children);
             return new Proxy(C, { get: (t, k) => (typeof k === "string" && /^[A-Z]/.test(k) ? make("div") : t[k]) }); };
           ${lines.join("\n")}
-          export default new Proxy({}, { get: () => make("div") });`,
+          export default make("div");`,
         loader: "js",
       };
     });
@@ -83,6 +83,7 @@ for (const r of routes) {
   let pattern = r, params = {};
   if (r.startsWith("/blog/")) { pattern = "/blog/:slug"; params = { slug: r.slice(6) }; }
   else if (r.startsWith("/articles/")) { pattern = "/articles/:id"; params = { id: r.slice(10) }; }
+  else if (r.startsWith("/product/")) { pattern = "/product/:id"; params = { id: r.slice(9) }; }
   const comp = routeComp[pattern];
   if (!comp || !imports[comp]) { console.log("no component for", r); continue; }
   jobs.push({ route: r, comp, file: imports[comp], params });
@@ -93,8 +94,10 @@ const entry = `import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 ${comps.map((c) => `import ${c} from ${JSON.stringify(path.join(ROOT, "src", jobs.find((j) => j.comp === c).file))};`).join("\n")}
 import * as Meta from ${JSON.stringify(path.join(ROOT, "src/utils/pageMeta.js"))};
+import { products } from ${JSON.stringify(path.join(ROOT, "src/data/productsData.jsx"))};
+import { articles } from ${JSON.stringify(path.join(ROOT, "src/data/articles.jsx"))};
 export const C = { ${comps.join(", ")} };
-export { renderToStaticMarkup, React, Meta };`;
+export { renderToStaticMarkup, React, Meta, products, articles };`;
 fs.writeFileSync(path.join(OUT_DIR, "entry.jsx"), entry);
 
 await esbuild.build({
@@ -113,7 +116,7 @@ globalThis.document = { getElementById: () => null, querySelector: () => null, q
 
 process.env.NODE_PATH = G;
 const mod = await import(path.join(OUT_DIR, "bundle.mjs"));
-const { C, renderToStaticMarkup, React, Meta } = mod;
+const { C, renderToStaticMarkup, React, Meta, products, articles } = mod;
 
 const out = {};
 for (const j of jobs) {
@@ -121,7 +124,15 @@ for (const j of jobs) {
   try {
     const html = renderToStaticMarkup(React.createElement(C[j.comp]));
     let meta = globalThis.__META;
+    if (j.route.startsWith("/product/")) {
+      const pr = products.find((x) => String(x.id) === j.params.id);
+      meta = pr ? { title: Meta.cleanTitle(pr.name), description: pr.desc ? Meta.shortDescription(pr.desc) : undefined, path: j.route, image: pr.img, type: "product", price: pr.price } : null;
+    }
     if (!meta) { const p = Meta.PAGES[j.route] || {}; meta = { ...p, path: p.canonical || j.route }; }
+    if (j.route.startsWith("/articles/")) {
+      const ar = articles.find((x) => x.id === j.params.id);
+      if (ar) meta = { ...meta, author: ar.author, date: ar.date };
+    }
     out[j.route] = { html, meta };
     console.log("ok", j.route, html.length);
   } catch (e) {
