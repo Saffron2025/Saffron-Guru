@@ -1,7 +1,219 @@
 {
   "routes": [
     {
+      "src": "^/$",
+      "dest": "/_p/home.html"
+    },
+    {
       "handle": "filesystem"
+    },
+    {
+      "src": "^/about-us/?$",
+      "dest": "/_p/about-us.html"
+    },
+    {
+      "src": "^/our-story/?$",
+      "dest": "/_p/our-story.html"
+    },
+    {
+      "src": "^/contact/?$",
+      "dest": "/_p/contact.html"
+    },
+    {
+      "src": "^/why-us/?$",
+      "dest": "/_p/why-us.html"
+    },
+    {
+      "src": "^/DefendPro/?$",
+      "dest": "/_p/DefendPro.html"
+    },
+    {
+      "src": "^/resources/?$",
+      "dest": "/_p/resources.html"
+    },
+    {
+      "src": "^/HowSaffronWorks/?$",
+      "dest": "/_p/HowSaffronWorks.html"
+    },
+    {
+      "src": "^/solution/?$",
+      "dest": "/_p/solution.html"
+    },
+    {
+      "src": "^/LearnMore/?$",
+      "dest": "/_p/LearnMore.html"
+    },
+    {
+      "src": "^/microsoft-store/?$",
+      "dest": "/_p/microsoft-store.html"
+    },
+    {
+      "src": "^/internet-security/?$",
+      "dest": "/_p/internet-security.html"
+    },
+    {
+      "src": "^/for-your-business/?$",
+      "dest": "/_p/for-your-business.html"
+    },
+    {
+      "src": "^/for-your-home/?$",
+      "dest": "/_p/for-your-home.html"
+    },
+    {
+      "src": "^/Parent-Solution/?$",
+      "dest": "/_p/Parent-Solution.html"
+    },
+    {
+      "src": "^/Pricing/?$",
+      "dest": "/_p/Pricing.html"
+    },
+    {
+      "src": "^/DaysMoneyBack/?$",
+      "dest": "/_p/DaysMoneyBack.html"
+    },
+    {
+      "src": "^/IdentifyFakeCalls/?$",
+      "dest": "/_p/IdentifyFakeCalls.html"
+    },
+    {
+      "src": "^/ReadFAQ/?$",
+      "dest": "/_p/ReadFAQ.html"
+    },
+    {
+      "src": "^/FixMyTech/?$",
+      "dest": "/_p/FixMyTech.html"
+    },
+    {
+      "src": "^/live-support/?$",
+      "dest": "/_p/live-support.html"
+    },
+    {
+      "src": "^/Fox/?$",
+      "dest": "/_p/Fox.html"
+    },
+    {
+      "src": "^/CBS/?$",
+      "dest": "/_p/CBS.html"
+    },
+    {
+      "src": "^/ABC11/?$",
+      "dest": "/_p/ABC11.html"
+    },
+    {
+      "src": "^/NewYorkPolice/?$",
+      "dest": "/_p/NewYorkPolice.html"
+    },
+    {
+      "src": "^/ABCNational/?$",
+      "dest": "/_p/ABCNational.html"
+    },
+    {
+      "src": "^/blog/?$",
+      "dest": "/_p/blog.html"
+    },
+    {
+      "src": "^/blog/online-scam-guide/?$",
+      "dest": "/_p/blog__online-scam-guide.html"
+    },
+    {
+      "src": "^/blog/romance-scam/?$",
+      "dest": "/_p/blog__romance-scam.html"
+    },
+    {
+      "src": "^/blog/tech-support-scam/?$",
+      "dest": "/_p/blog__tech-support-scam.html"
+    },
+    {
+      "src": "^/blog/banking-otp-fraud/?$",
+      "dest": "/_p/blog__banking-otp-fraud.html"
+    },
+    {
+      "src": "^/blog/spam-calls/?$",
+      "dest": "/_p/blog__spam-calls.html"
+    },
+    {
+      "src": "^/blog/phishing-emails/?$",
+      "dest": "/_p/blog__phishing-emails.html"
+    },
+    {
+      "src": "^/blog/identity-theft/?$",
+      "dest": "/_p/blog__identity-theft.html"
+    },
+    {
+      "src": "^/blog/online-shopping/?$",
+      "dest": "/_p/blog__online-shopping.html"
+    },
+    {
+      "src": "^/blog/investment-scam/?$",
+      "dest": "/_p/blog__investment-scam.html"
+    },
+    {
+      "src": "^/blog/password-safety/?$",
+      "dest": "/_p/blog__password-safety.html"
+    },
+    {
+      "src": "^/blog/ai-voice-fraud/?$",
+      "dest": "/_p/blog__ai-voice-fraud.html"
+    },
+    {
+      "src": "^/article/?$",
+      "dest": "/_p/article.html"
+    },
+    {
+      "src": "^/articles/crypto-scams-getting-smarter/?$",
+      "dest": "/_p/articles__crypto-scams-getting-smarter.html"
+    },
+    {
+      "src": "^/articles/antivirus-alone-not-enough/?$",
+      "dest": "/_p/articles__antivirus-alone-not-enough.html"
+    },
+    {
+      "src": "^/articles/ai-powered-scam-attacks/?$",
+      "dest": "/_p/articles__ai-powered-scam-attacks.html"
+    },
+    {
+      "src": "^/articles/call-spoofing-scam/?$",
+      "dest": "/_p/articles__call-spoofing-scam.html"
+    },
+    {
+      "src": "^/articles/bank-account-freeze-scam/?$",
+      "dest": "/_p/articles__bank-account-freeze-scam.html"
+    },
+    {
+      "src": "^/articles/fake-qr-code-scam/?$",
+      "dest": "/_p/articles__fake-qr-code-scam.html"
+    },
+    {
+      "src": "^/articles/fake-delivery-scam/?$",
+      "dest": "/_p/articles__fake-delivery-scam.html"
+    },
+    {
+      "src": "^/articles/tech-support-scam/?$",
+      "dest": "/_p/articles__tech-support-scam.html"
+    },
+    {
+      "src": "^/articles/fake-refund-scam/?$",
+      "dest": "/_p/articles__fake-refund-scam.html"
+    },
+    {
+      "src": "^/privacy-policy/?$",
+      "dest": "/_p/privacy-policy.html"
+    },
+    {
+      "src": "^/terms/?$",
+      "dest": "/_p/terms.html"
+    },
+    {
+      "src": "^/return-policy/?$",
+      "dest": "/_p/return-policy.html"
+    },
+    {
+      "src": "^/why-human-support/?$",
+      "dest": "/_p/why-human-support.html"
+    },
+    {
+      "src": "^/veterans/?$",
+      "dest": "/_p/veterans.html"
     },
     {
       "src": "^/features/?$",

@@ -91,7 +91,7 @@ export function usePageMeta(options, deps) {
 }
 
 /* Titles for the fixed pages of the website */
-const PAGES = {
+export const PAGES = {
   "/": { title: null },
   "/home": { title: null, canonical: "/" },
   "/features": { title: "Features" },
