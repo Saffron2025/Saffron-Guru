@@ -33,7 +33,7 @@ function setTag(html, re, replacement) {
   return re.test(html) ? html.replace(re, replacement) : html.replace("</head>", `  ${replacement}\n  </head>`);
 }
 
-const style = `<style id="sg-pre-style">.sg-pre{max-width:960px;margin:0 auto;padding:110px 18px 40px;font-family:Nunito,Arial,sans-serif;color:#0f172a;line-height:1.6}.sg-pre img{max-width:100%;height:auto;max-height:260px;display:block;margin:12px 0;border-radius:10px}.sg-pre h1{font-size:2rem;margin:0 0 12px}.sg-pre h2{font-size:1.4rem;margin:22px 0 8px}.sg-pre h3,.sg-pre h4{font-size:1.1rem;margin:16px 0 6px}.sg-pre nav a{display:inline-block;margin:0 12px 6px 0;color:#0369a1}</style>`;
+const style = `<style id="sg-pre-style">.sg-pre{max-width:960px;margin:0 auto;padding:110px 18px 40px;font-family:Nunito,Arial,sans-serif;color:#0f172a;line-height:1.6}.sg-pre img{max-width:100%;height:auto;max-height:260px;display:block;margin:12px 0;border-radius:10px}.sg-pre h1{font-size:2rem;margin:0 0 12px}.sg-pre h2{font-size:1.4rem;margin:22px 0 8px}.sg-pre h3,.sg-pre h4{font-size:1.1rem;margin:16px 0 6px}.sg-pre nav a{display:inline-block;margin:0 12px 6px 0;color:#0369a1}.sg-pre-cover{position:fixed;inset:0;z-index:2147483646;background:#0b1324;display:flex;align-items:center;justify-content:center}.sg-pre-cover img{width:72px;height:auto;animation:sgpulse 1.2s ease-in-out infinite}@keyframes sgpulse{0%,100%{opacity:.55}50%{opacity:1}}</style>`;
 
 let count = 0;
 fs.mkdirSync(path.join(DIST, "_p"), { recursive: true });
@@ -93,7 +93,7 @@ for (const [route, page] of Object.entries(data)) {
   if (ld.length) html = html.replace("</head>", ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, "\\u003c")}</script>`).join("\n") + "\n  </head>");
 
   const links = (page.links || []).map((h) => `<a href="${esc(h)}">${esc(h === "/" ? "Home" : h.replace(/^\//, "").replace(/[-/]/g, " "))}</a>`).join(" ");
-  const content = `<div class="sg-pre">
+  const content = `<div class="sg-pre-cover" aria-hidden="true"><img src="/Products/saffron-guru-logo-static.webp" alt="" width="72" height="79"></div><div class="sg-pre">
 ${page.body}
 <nav aria-label="More from Saffron Guru">${links}</nav>
 <p><strong>Saffron Guru LLC</strong> · IT support and online protection since 2016 · Call 844-313-4987 · <a href="/contact">Contact us</a></p>
