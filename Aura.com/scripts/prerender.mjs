@@ -93,7 +93,7 @@ for (const [route, page] of Object.entries(data)) {
   if (ld.length) html = html.replace("</head>", ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, "\\u003c")}</script>`).join("\n") + "\n  </head>");
 
   const links = (page.links || []).map((h) => `<a href="${esc(h)}">${esc(h === "/" ? "Home" : h.replace(/^\//, "").replace(/[-/]/g, " "))}</a>`).join(" ");
-  const content = `<div class="sg-pre-cover" aria-hidden="true"><img src="/Products/saffron-guru-logo-static.webp" alt="" width="72" height="79"></div><div class="sg-pre">
+  const content = `<div class="sg-pre-cover" aria-hidden="true"></div><div class="sg-pre">
 ${page.body}
 <nav aria-label="More from Saffron Guru">${links}</nav>
 <p><strong>Saffron Guru LLC</strong> · IT support and online protection since 2016 · Call 844-313-4987 · <a href="/contact">Contact us</a></p>

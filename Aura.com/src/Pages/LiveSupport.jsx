@@ -76,7 +76,7 @@ const LiveSupport = () => {
               Toll-Free Support
             </span>
 
-            <a href="tel:8443134987">
+            <a href="tel:+18443134987">
               844-313-4987
             </a>
           </div>
@@ -333,7 +333,7 @@ const LiveSupport = () => {
               <div className="emergency-actions">
 
                 <a
-                  href="tel:8443134987"
+                  href="tel:+18443134987"
                   className="emergency-btn"
                 >
                   📞 Call 844-313-4987
