@@ -5,7 +5,15 @@ const PrinterSupport = () => {
   return (
     <section className="printer-section">
       <div className="printer-card">
-        <div className="printer-icon">🖨️</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-printer-setup-troubleshooting.webp"
+          alt="Saffron Guru printer setup and troubleshooting with a friendly technician on the phone"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="printer-title">✅ Printer Setup & Troubleshooting</h3>
         <p className="printer-description">
           We connect your printer to your computer, phone, or Wi-Fi network and make sure it can print, scan, and copy smoothly.
