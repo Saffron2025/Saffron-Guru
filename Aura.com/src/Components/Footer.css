@@ -2670,3 +2670,8 @@ footer, .footer, .aura-footer {
 
   z-index: 5 !important;
 }
+/* Small screens: graph is short, so the two boxes show headline + button only */
+@media (max-width: 991px) {
+  .graph-data-callout .callout-description { display: none; }
+  .graph-data-callout .callout-title { margin-bottom: 0; }
+}
