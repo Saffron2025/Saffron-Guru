@@ -5,7 +5,15 @@ const RouterNetworkSupport = () => {
   return (
     <section className="router-support-wrapper">
       <div className="router-card">
-        <div className="router-icon">🌐</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-router-network-setup-fixes.webp"
+          alt="Saffron Guru router and home network setup and fixes over the phone"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="router-title">✅ Router & Network – Setup & Fixes</h3>
         <p className="router-description">
           Installation and configuration of routers, modems, and home networks to ensure secure and stable connectivity.
