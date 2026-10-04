@@ -5,7 +5,15 @@ const DataBackupSupport = () => {
   return (
     <section className="backup-support-wrapper">
       <div className="backup-card">
-        <div className="backup-icon">💾</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-data-backup-recovery.webp"
+          alt="Saffron Guru data backup and recovery: family photos and documents restored from an external drive and cloud backup"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="backup-title">✅ Data Backup & Recovery</h3>
         <p className="backup-description">
           Secure backup and restoration of important files, documents, photos, and other data from computers, external drives, or cloud storage.

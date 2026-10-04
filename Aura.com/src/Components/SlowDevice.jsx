@@ -5,7 +5,15 @@ const SlowDevicesFix = () => {
   return (
     <section className="slow-fix-wrapper">
       <div className="slow-fix-card">
-        <div className="slow-fix-icon">🐢</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-slow-devices-fix.webp"
+          alt="Saffron Guru slow devices fix: slow computer, laptop and phone made fast again"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="slow-fix-title">✅ Slow Devices Fix</h3>
         <p className="slow-fix-description">
           Diagnosis and resolution of performance issues affecting computers, laptops, tablets, and smartphones.
