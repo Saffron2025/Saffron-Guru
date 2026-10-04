@@ -55,7 +55,7 @@ const About = () => {
             <Col md={6}>
               <h2 className="about-heading">Our Mission</h2>
               <p className="about-text">
-                At Saffron Guru, our mission is simple but urgent: to stop scams before they reach you. Scams are spreading faster than ever. In 2024 alone, Americans lost over $16 billion to online fraud. Seniors, veterans, and families are targeted every day by hackers, impostors, and cybercriminals.
+                At Saffron Guru, our mission is simple but urgent: to stop scams before they reach you. Scams are spreading faster than ever. In 2025 alone, Americans reported $20.9 billion lost to online crime (FBI). Seniors, veterans, and families are targeted every day by hackers, impostors, and cybercriminals.
               </p>
               <p className="about-text">
                 We exist to protect the people most at risk—older adults, vulnerable families, and small businesses—by building a digital safety wall around their lives. Our purpose is not just support—we provide complete online protection and, most importantly, peace of mind.

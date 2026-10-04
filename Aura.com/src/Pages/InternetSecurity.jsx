@@ -123,7 +123,7 @@ const InternetSecurity = () => {
 
                 <h2 className="section-heading">📈 Why Seniors Are the #1 Target</h2>
                 <p>
-                  According to the FBI, adults aged 60+ lost over $3.4 billion to scams in 2024...
+                  According to the FBI, adults aged 60+ reported $7.7 billion lost to online crime in 2025, more than any other age group.
                 </p>
 
                 <h2 className="section-heading">🌐 Resources for Internet Safety</h2>

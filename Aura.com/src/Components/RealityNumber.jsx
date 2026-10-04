@@ -31,14 +31,14 @@ const RealityNumber = () => {
             <div className="reality-stat-icon">💰</div>
 
             <div className="reality-stat-info">
-              <h4>$16.6B</h4>
+              <h4>$20.9B</h4>
               <p>
-                Total losses from cybercrime and online scams reported in
-                2024, representing a significant increase.
+                Total losses from cybercrime and online scams reported to the
+                FBI in 2025, up 26% from 2024.
               </p>
 
               <a
-                href="https://www.reuters.com/world/us/complaints-about-ransomware-attacks-us-infrastructure-rise-9-fbi-says-2025-04-23/?utm_source=chatgpt.com"
+                href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,14 +52,14 @@ const RealityNumber = () => {
             <div className="reality-stat-icon">📁</div>
 
             <div className="reality-stat-info">
-              <h4>859,532</h4>
+              <h4>1 Million+</h4>
               <p>
-                FBI IC3 complaints were filed in 2024 related to internet
-                crime and online threats.
+                FBI IC3 complaints were filed in 2025 related to internet
+                crime and online threats, about 3,000 every day.
               </p>
 
               <a
-                href="https://www.fbi.gov/news/press-releases/fbi-releases-annual-internet-crime-report?utm_source=chatgpt.com"
+                href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -73,14 +73,14 @@ const RealityNumber = () => {
             <div className="reality-stat-icon">🚨</div>
 
             <div className="reality-stat-info">
-              <h4>83%</h4>
+              <h4>201,266</h4>
               <p>
-                Of total reported losses came from cyber-enabled fraud
-                rather than traditional malware attacks.
+                Complaints filed by Americans aged 60 and older in 2025,
+                with an average loss of $38,500 per victim.
               </p>
 
               <a
-                href="https://industrialcyber.co/reports/fbis-internet-crime-report-2024-records-16-6-billion-in-cybercrime-losses-amid-rising-ransomware-threats/?utm_source=chatgpt.com"
+                href="https://www.fbi.gov/news/stories/scammers-target-older-adult-victims"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -94,14 +94,14 @@ const RealityNumber = () => {
             <div className="reality-stat-icon">👥</div>
 
             <div className="reality-stat-info">
-              <h4>$4.9B</h4>
+              <h4>$7.7B</h4>
               <p>
-                Reported losses affecting people aged 60+, showing how
-                seriously scammers target vulnerable communities.
+                Reported losses by people aged 60+ in 2025, up 59% in one
+                year, showing how seriously scammers target older adults.
               </p>
 
               <a
-                href="https://www.fbi.gov/contact-us/field-offices/boston/news/fbi-highlights-growing-number-of-reported-elder-fraud-cases-ahead-of-world-elder-abuse-awareness-day?utm_source=chatgpt.com"
+                href="https://www.fbi.gov/news/stories/scammers-target-older-adult-victims"
                 target="_blank"
                 rel="noopener noreferrer"
               >

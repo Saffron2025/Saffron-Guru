@@ -124,8 +124,7 @@ const MicrosoftStore = () => {
               <section className="store-section scam-stats">
                 <h2>📊 Shocking Stats</h2>
                 <p>
-                  In 2024 alone, over <strong>$1.8 billion</strong> was lost due to fake software scams — many using Microsoft's name.<br />
-                  Over <strong>60%</strong> of victims were aged 50+.
+                  In 2025, Americans aged 60 and older reported over <strong>$1 billion</strong> lost to tech and customer support scams (FBI), many using Microsoft's name.
                 </p>
               </section>
 

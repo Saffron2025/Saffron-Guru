@@ -34,8 +34,8 @@ const Footer = () => {
             </h2>
             <p className="graph-description">
               You probably know more than a few people who have been <br />
-              scammed. Last year, Americans lost over $12.5 billion to online <br />
-              crimes with new scams emerging daily.
+              scammed. In 2025, Americans reported $20.9 billion lost to online <br />
+              crime (FBI), with new scams emerging daily.
             </p>
             <p className="graph-description mb-4">
               Saffron Guru proactively protects you and your family, pushing the odds <br />
@@ -91,19 +91,19 @@ const Footer = () => {
     </svg>
 
     <div className="graph-year-line">
-      <div className="year-item">2021</div>
       <div className="year-item">2022</div>
       <div className="year-item">2023</div>
+      <div className="year-item">2024</div>
       <div className="year-item">
-        2024
+        2025
         <div className="data-point-circle"></div>
       </div>
     </div>
 
     <div className="graph-data-callout">
-      <h4 className="callout-title">$16 billion was lost in 2025</h4>
+      <h4 className="callout-title">$20.9 billion was lost in 2025</h4>
       <p className="callout-description">
-        Since 2020, the amount lost to online <br />
+        Since 2021, the amount lost to online <br />
         crime has nearly tripled. (FBI)
       </p>
     </div>
