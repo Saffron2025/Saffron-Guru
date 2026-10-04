@@ -5,7 +5,15 @@ const LaptopDesktopRepair = () => {
   return (
     <section className="repair-section">
       <div className="repair-card">
-        <div className="repair-icon">🖥️</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-laptop-desktop-setup-repair.webp"
+          alt="Saffron Guru laptop and desktop setup and repair with a live remote technician"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="repair-title">✅ Laptop/Desktop Setup & Repair</h3>
         <p className="repair-description">
           We set up your new or existing computer so it’s ready to use, install essential software, and transfer your files safely.

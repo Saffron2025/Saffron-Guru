@@ -7,7 +7,7 @@ const SoftwareSupport = () => {
       <div className="software-card">
         <img
           className="service-photo"
-          src="/Services/saffron-guru-software-installation-support.webp"
+          src="/Services/saffron-guru-software-installation-fixes-support.webp"
           alt="Saffron Guru software installation and support for home computers"
           width="1200"
           height="800"

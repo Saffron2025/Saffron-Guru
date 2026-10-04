@@ -578,6 +578,20 @@
       }
     },
     {
+      "src": "^/Services/saffron\\-guru\\-wifi\\-setup\\-senior\\-support\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Services/saffron-guru-wifi-setup-troubleshooting.webp"
+      }
+    },
+    {
+      "src": "^/Services/saffron\\-guru\\-software\\-installation\\-support\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Services/saffron-guru-software-installation-fixes-support.webp"
+      }
+    },
+    {
       "src": "^/Products/defendme-pro-features\\.webp$",
       "status": 301,
       "headers": {

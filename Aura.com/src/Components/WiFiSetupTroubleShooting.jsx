@@ -8,7 +8,7 @@ const WiFiSetupTroubleShooting = () => {
   <div className="wifi-card">
     <img
       className="wifi-photo"
-      src="/Services/saffron-guru-wifi-setup-senior-support.webp"
+      src="/Services/saffron-guru-wifi-setup-troubleshooting.webp"
       alt="Saffron Guru Wi-Fi setup help for seniors at home"
       width="1200"
       height="800"
