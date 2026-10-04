@@ -2675,3 +2675,6 @@ footer, .footer, .aura-footer {
   .graph-data-callout .callout-description { display: none; }
   .graph-data-callout .callout-title { margin-bottom: 0; }
 }
+@media (max-width: 991px) {
+  .graph-data-callout.graph-data-callout--total { bottom: 24%; }
+}
