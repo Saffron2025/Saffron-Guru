@@ -1,20 +1,42 @@
 {
-  "short_name": "SaffronGuru",
+  "id": "/",
   "name": "Saffron Guru",
+  "short_name": "Saffron Guru",
+  "description": "Patient IT support and online protection. Real people, 7 days a week. Call +1 844-313-4987.",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "categories": [
+    "utilities",
+    "security",
+    "business"
+  ],
   "icons": [
     {
       "src": "/Products/saffron-guru-logo-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/Products/saffron-guru-logo-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#0f172a",
-  "background_color": "#0f172a"
+  "shortcuts": [
+    {
+      "name": "Live Support",
+      "short_name": "Get help",
+      "url": "/live-support"
+    },
+    {
+      "name": "Contact us",
+      "short_name": "Contact",
+      "url": "/contact"
+    }
+  ]
 }
