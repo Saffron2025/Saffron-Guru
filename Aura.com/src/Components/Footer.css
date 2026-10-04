@@ -462,6 +462,13 @@ footer, .footer, .aura-footer {
   margin: 0;
 }
 
+/* Second box: losses by people 60+ (sits lower, in the empty area under the line) */
+.graph-data-callout.graph-data-callout--seniors {
+  top: 66%;
+  left: 74%;
+  border-top: 3px solid #38bdf8;
+}
+
 /* Verify on FBI.gov button */
 .callout-verify-btn {
   display: inline-flex;
@@ -508,6 +515,7 @@ footer, .footer, .aura-footer {
   .callout-title { font-size: 0.8rem; }
   .callout-description { font-size: 0.65rem; }
   .callout-verify-btn { font-size: 0.62rem; padding: 4px 9px; margin-top: 6px; }
+  .graph-data-callout.graph-data-callout--seniors { top: 68%; left: 68%; }
 }
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */

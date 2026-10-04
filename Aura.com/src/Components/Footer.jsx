@@ -106,12 +106,20 @@ const Footer = () => {
         Since 2021, the amount lost to online <br />
         crime has nearly tripled. (FBI)
       </p>
+    </div>
+
+    <div className="graph-data-callout graph-data-callout--seniors">
+      <h4 className="callout-title">$7.7 billion of that</h4>
+      <p className="callout-description">
+        was lost by Americans aged <br />
+        60 and older in 2025. (FBI)
+      </p>
       <a
         className="callout-verify-btn"
         href="https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Verify the 2025 figure on FBI.gov (opens in a new tab)"
+        aria-label="Verify these 2025 figures on FBI.gov (opens in a new tab)"
       >
         Verify on FBI.gov <span aria-hidden="true">↗</span>
       </a>
