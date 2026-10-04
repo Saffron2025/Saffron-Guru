@@ -6,7 +6,7 @@ import {
   Button,
   Container,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./AppNavbar.css";
 
 const AppNavbar = () => {
@@ -164,6 +164,25 @@ const AppNavbar = () => {
     setSupportOpen(false);
   };
 
+  /* Close the phone menu whenever the page changes */
+  const location = useLocation();
+  useEffect(() => {
+    setExpanded(false);
+    setSupportOpen(false);
+  }, [location.pathname, location.search]);
+
+  /* Close the phone menu when any real link inside it is tapped
+     (also covers tapping the page you are already on) */
+  const handleMenuClick = (event) => {
+    const link = event.target.closest ? event.target.closest("a[href]") : null;
+    if (!link) return;
+    if (link.classList.contains("dropdown-toggle")) return;
+    const href = link.getAttribute("href");
+    if (!href || href === "#") return;
+    setExpanded(false);
+    setSupportOpen(false);
+  };
+
   /* =========================================================
      ESCAPE KEY
   ========================================================= */
@@ -282,6 +301,7 @@ const AppNavbar = () => {
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="aura-navbar-collapse"
+          onClick={handleMenuClick}
         >
 
           {/* ===================================================
