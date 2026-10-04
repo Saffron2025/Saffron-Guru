@@ -15,6 +15,7 @@ import { FaFlagUsa } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import "./AllSection.css";
+import InstallSaffronGuru from "./InstallSaffronGuru";
 
 // ===============================
 // FOOTER NAVIGATION LINKS
@@ -535,6 +536,9 @@ const AuraFooter = () => {
           </div>
 
         </div>
+
+        {/* Install Saffron Guru on phone or computer */}
+        <InstallSaffronGuru />
 
         {/* =========================================
             COPYRIGHT

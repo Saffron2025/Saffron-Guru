@@ -285,6 +285,14 @@
       @media (min-width: 1440px) and (max-width: 1599.98px) { html { zoom: 0.88; } }
       @media (min-width: 1600px) and (max-width: 1799.98px) { html { zoom: 0.92; } }
     </style>
+      <script>
+      /* Keep the browser's install offer so the footer "Install" button can open it */
+      window.addEventListener("beforeinstallprompt", function (e) {
+        e.preventDefault();
+        window.__sgInstallPrompt = e;
+        window.dispatchEvent(new Event("sg-install-ready"));
+      });
+    </script>
   </head>
 
   <body>

@@ -1,0 +1,45 @@
+.sgi-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 26px auto 6px; padding: 0 12px; }
+.sgi-badge {
+  display: flex; align-items: center; gap: 14px; max-width: 520px; width: 100%;
+  padding: 12px 14px; border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(125, 211, 252, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.sgi-badge-logo { width: 48px; height: 48px; border-radius: 12px; flex: 0 0 48px; }
+.sgi-badge-text { display: flex; flex-direction: column; flex: 1; min-width: 0; text-align: left; }
+.sgi-badge-text strong { color: #fff; font-size: 1.02rem; line-height: 1.25; }
+.sgi-badge-text span { color: #b6c4d8; font-size: 0.86rem; line-height: 1.35; }
+.sgi-btn {
+  flex: 0 0 auto; border: 0; cursor: pointer; padding: 10px 20px; border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); color: #fff; font-weight: 800; font-size: 0.95rem;
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.35); transition: transform 0.15s ease, background 0.15s ease;
+}
+.sgi-btn:hover, .sgi-btn:focus-visible { background: linear-gradient(135deg, #0ea5e9, #0284c7); transform: translateY(-1px); }
+.sgi-how { background: none; border: 0; color: #7dd3fc; font-size: 0.85rem; text-decoration: underline; cursor: pointer; padding: 4px; }
+
+.sgi-overlay { position: fixed; inset: 0; z-index: 100000; background: rgba(2, 6, 23, 0.65); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.sgi-modal {
+  position: relative; width: 100%; max-width: 560px; max-height: 90vh; overflow-y: auto;
+  background: #fff; color: #0f172a; border-radius: 18px; padding: 26px 22px 20px; text-align: left;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+.sgi-modal h3 { margin: 0 0 14px; font-size: 1.35rem; font-weight: 800; color: #0f172a; }
+.sgi-close { position: absolute; top: 10px; right: 12px; border: 0; background: #f1f5f9; color: #334155; width: 36px; height: 36px; border-radius: 50%; font-size: 1rem; cursor: pointer; }
+.sgi-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.sgi-tab { border: 1px solid #cbd5e1; background: #f8fafc; color: #334155; border-radius: 999px; padding: 6px 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+.sgi-tab.is-active { background: #0ea5e9; border-color: #0ea5e9; color: #fff; }
+.sgi-steps { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.sgi-steps li { display: flex; gap: 12px; align-items: flex-start; font-size: 1.05rem; line-height: 1.55; color: #1e293b; }
+.sgi-num { flex: 0 0 30px; height: 30px; border-radius: 50%; background: #e0f2fe; color: #0369a1; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.sgi-note { display: block; margin-top: 4px; font-size: 0.92rem; color: #475569; }
+.sgi-ico { display: inline-block; width: 1.25em; height: 1.25em; vertical-align: -0.25em; margin: 0 2px; padding: 1px; color: #0284c7; background: #e0f2fe; border-radius: 6px; }
+.sgi-btn-wide { width: 100%; margin-bottom: 10px; }
+.sgi-help { margin: 4px 0 0; font-size: 0.92rem; color: #475569; }
+.sgi-help a { color: #0284c7; font-weight: 700; }
+
+@media (max-width: 480px) {
+  .sgi-badge { flex-wrap: wrap; }
+  .sgi-badge-text { flex-basis: calc(100% - 62px); }
+  .sgi-btn { width: 100%; }
+  .sgi-steps li { font-size: 1rem; }
+}
