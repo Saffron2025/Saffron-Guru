@@ -73,8 +73,9 @@ export default function OurPromise() {
       <div className="sg-promise-inner">
         <p className="sg-promise-eyebrow">We're in your corner</p>
         <h2 id="sg-promise-title" className="sg-promise-title">
-          Scammers Don't Break In. <span>They Get Invited In.</span>
+          Software Protects Your Computer. <span>We Protect You.</span>
         </h2>
+        <p className="sg-promise-sub">Scammers don't break in. They get invited in.</p>
 
         <blockquote className="sg-promise-story">
           The major antivirus companies sell software that detects a signature file. But when

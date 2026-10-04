@@ -10,9 +10,10 @@
   font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
 }
 .sg-promise-title {
-  color: #2e1065; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 800; line-height: 1.2; margin: 0 0 28px;
+  color: #2e1065; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 800; line-height: 1.2; margin: 0 0 12px;
 }
 .sg-promise-title span { color: #7c3aed; }
+.sg-promise-sub { color: #5b21b6; font-size: clamp(1.1rem, 2.2vw, 1.35rem); font-weight: 600; margin: 0 0 28px; }
 .sg-promise-story {
   max-width: 820px; margin: 0 auto 28px; padding: 22px 26px;
   border-left: 5px solid #7c3aed; border-radius: 12px; background: #fff;
