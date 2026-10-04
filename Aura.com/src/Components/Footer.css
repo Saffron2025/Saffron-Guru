@@ -507,6 +507,7 @@ footer, .footer, .aura-footer {
   }
   .callout-title { font-size: 0.8rem; }
   .callout-description { font-size: 0.65rem; }
+  .callout-verify-btn { font-size: 0.62rem; padding: 4px 9px; margin-top: 6px; }
 }
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */
