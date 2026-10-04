@@ -462,6 +462,31 @@ footer, .footer, .aura-footer {
   margin: 0;
 }
 
+/* Verify on FBI.gov button */
+.callout-verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+.callout-verify-btn:hover,
+.callout-verify-btn:focus-visible {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);
+}
+
 /* Tablet */
 @media (max-width: 991px) {
   .graph-data-callout {

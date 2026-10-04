@@ -106,6 +106,15 @@ const Footer = () => {
         Since 2021, the amount lost to online <br />
         crime has nearly tripled. (FBI)
       </p>
+      <a
+        className="callout-verify-btn"
+        href="https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Verify the 2025 figure on FBI.gov (opens in a new tab)"
+      >
+        Verify on FBI.gov <span aria-hidden="true">↗</span>
+      </a>
     </div>
   </div>
 </Col>

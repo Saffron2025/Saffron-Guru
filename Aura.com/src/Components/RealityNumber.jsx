@@ -96,8 +96,8 @@ const RealityNumber = () => {
             <div className="reality-stat-info">
               <h4>$7.7B</h4>
               <p>
-                Reported losses by people aged 60+ in 2025, up 59% in one
-                year, showing how seriously scammers target older adults.
+                Reported losses by people aged 60+ in 2025, showing how
+                seriously scammers target older adults.
               </p>
 
               <a
