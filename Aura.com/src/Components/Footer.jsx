@@ -111,8 +111,7 @@ const Footer = () => {
     <div className="graph-data-callout graph-data-callout--seniors">
       <h4 className="callout-title">$7.7 billion of that</h4>
       <p className="callout-description">
-        was lost by Americans aged <br />
-        60 and older in 2025. (FBI)
+        was lost by Americans aged 60 and older in 2025. (FBI)
       </p>
       <a
         className="callout-verify-btn"
