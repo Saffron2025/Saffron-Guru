@@ -96,7 +96,7 @@ export const PAGES = {
   "/home": { title: null, canonical: "/" },
   "/features": { title: "Features" },
   "/DefendPro": { title: "DefendMe PRO™ Scam and Fraud Protection", description: "Protection far beyond antivirus: identity theft protection, fraud detection, scam alerts, password manager, VPN and live human support in one package." },
-  "/contact": { title: "Contact Saffron Guru Tech Support", description: "Talk to a real Saffron Guru technician. Call 844-313-4987 or send us a message for help with your computer, phone, printer or online safety." },
+  "/contact": { title: "Contact Saffron Guru Tech Support", description: "Talk to a real Saffron Guru technician. Call +1 844-313-4987 or send us a message for help with your computer, phone, printer or online safety." },
   "/about-us": { title: "About Saffron Guru: Tech Support and Online Protection Since 2016", description: "Since 2016, Saffron Guru has helped homes, seniors and small businesses with patient tech support and protection from online threats." },
   "/our-story": { title: "Our Story", description: "How Saffron Guru began in 2016 and why we still answer every call with care: the story behind our tech support and online protection." },
   "/privacy-policy": { title: "Privacy Policy", description: "How Saffron Guru collects, uses and protects your personal information." },

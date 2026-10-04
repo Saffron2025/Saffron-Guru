@@ -11,6 +11,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist");
 const SITE = "https://www.saffronguru.com";
 const BRAND = "Saffron Guru";
+const PHONE_LINK = '<a href="tel:+18443134987">+1 844-313-4987</a>';
 
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/prerender-data.json"), "utf8"));
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf8");
@@ -93,10 +94,12 @@ for (const [route, page] of Object.entries(data)) {
   if (ld.length) html = html.replace("</head>", ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, "\\u003c")}</script>`).join("\n") + "\n  </head>");
 
   const links = (page.links || []).map((h) => `<a href="${esc(h)}">${esc(h === "/" ? "Home" : h.replace(/^\//, "").replace(/[-/]/g, " "))}</a>`).join(" ");
+  // Every phone number becomes a +1 link so no search engine guesses the wrong country
+  const body = page.body.replace(/(?:\+?1[\s.-]?)?\(?844\)?[\s.-]?313[\s.-]?4987/g, PHONE_LINK);
   const content = `<div class="sg-pre-cover" aria-hidden="true"></div><div class="sg-pre">
-${page.body}
+${body}
 <nav aria-label="More from Saffron Guru">${links}</nav>
-<p><strong>Saffron Guru LLC</strong> · IT support and online protection since 2016 · Call 844-313-4987 · <a href="/contact">Contact us</a></p>
+<p><strong>Saffron Guru LLC</strong> · IT support and online protection since 2016 · Call ${PHONE_LINK} · <a href="/contact">Contact us</a></p>
 </div>`;
   html = html.replace(/<div id="root">\s*<\/div>/, `<div id="root">${content}</div>`);
   if (!html.includes('class="sg-pre"')) throw new Error("could not find the root element in index.html");
