@@ -106,7 +106,7 @@ export default function OurPromise() {
         </p>
 
         <a className="sg-promise-call" href="tel:+18443134987">
-          <FaPhoneAlt aria-hidden="true" /> Call 844-313-4987
+          <FaPhoneAlt aria-hidden="true" /> Call +1 844-313-4987
         </a>
 
         <p className="sg-promise-family">Looking after a parent? We'll treat them like family.</p>

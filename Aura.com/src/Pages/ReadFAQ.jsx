@@ -209,7 +209,7 @@ const ReadFAQ = () => {
               </li>
               <li>
                 Contacts saved: Bank, card, insurer/Medicare, mobile carrier,
-                Saffron Guru 844-313-4987 saved in Contacts.
+                Saffron Guru +1 844-313-4987 saved in Contacts.
               </li>
               <li>
                 Alerts ON: Turn on transaction/login alerts for bank, email,

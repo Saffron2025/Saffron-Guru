@@ -30,7 +30,7 @@ import {
 } from "react-icons/fa";
 
 const PHONE_LINK = "tel:+18443134987";
-const PHONE_TEXT = "844-313-4987";
+const PHONE_TEXT = "+1 844-313-4987";
 const PROTECTION = [
   { item: "identity-theft", icon: <FaUserShield />, title: "Identity Theft Protection", text: "Help keeping your personal details safe, and support if your identity is ever misused." },
   { item: "fraud-detection", icon: <FaExclamationTriangle />, title: "Fraud Detection & Alerts", text: "Watch for signs of fraud on your accounts so problems can be caught early." },

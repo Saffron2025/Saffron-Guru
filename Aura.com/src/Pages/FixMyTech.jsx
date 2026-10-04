@@ -144,7 +144,7 @@ const FixMyTech = () => {
               <Link to="/Pricing" className="cta-btn">⚡ Fix It Now</Link>
               <Link to="/contact" className="cta-btn secondary">📞 Talk to a Tech</Link>
             </div>
-            <p className="note">Prefer talking? Call <strong>844 313 4987</strong>. We’ll guide you patiently, step by step.</p>
+            <p className="note">Prefer talking? Call <strong>+1 844-313-4987</strong>. We’ll guide you patiently, step by step.</p>
           </div>
         </div>
       </section>

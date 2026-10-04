@@ -5,7 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./SupportSections.css";
 
-const PHONE_DISPLAY = "844-313-4987";
+const PHONE_DISPLAY = "+1 844-313-4987";
 const PHONE_LINK = "tel:+18443134987";
 
 function goTo(e, id) {

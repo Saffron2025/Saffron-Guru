@@ -134,7 +134,7 @@ const Terms = () => {
                 <br />
                 <br />
                 <strong>📞 Toll-Free:</strong>{' '}
-                <a href="tel:+18443134987">844-313-4987</a>
+                <a href="tel:+18443134987">+1 844-313-4987</a>
                 <br />
                 <strong>📧 Email:</strong>{' '}
                 <a href="mailto:info@saffronguru.com">info@saffronguru.com</a>

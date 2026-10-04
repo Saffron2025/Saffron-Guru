@@ -41,7 +41,7 @@ const ReturnPolicy = () => {
 
                 <h2 className="return-subheading">📩 How to Request a Refund</h2>
                 <p className="return-text">
-                  To request a refund, simply call us toll-free at <span className="phone">844-313-4987</span>.  
+                  To request a refund, simply call us toll-free at <span className="phone">+1 844-313-4987</span>.  
                   Our team is available <strong>7 days a week</strong> to help you right away.
                 </p>
 

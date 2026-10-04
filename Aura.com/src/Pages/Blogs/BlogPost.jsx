@@ -79,7 +79,7 @@ const BlogPost = () => {
           </ul>
           <p>
             Worried about a call, pop-up or message?{" "}
-            <Link to="/contact">Contact Saffron Guru</Link> or call 844-313-4987.
+            <Link to="/contact">Contact Saffron Guru</Link> or call +1 844-313-4987.
           </p>
         </nav>
       </Container>

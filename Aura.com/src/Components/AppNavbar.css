@@ -1153,6 +1153,12 @@
 
 .support-phone a {
 
+  display:
+    block;
+
+  margin-top:
+    2px;
+
   color:
     #67e8f9;
 

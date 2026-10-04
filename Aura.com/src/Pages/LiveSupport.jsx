@@ -77,7 +77,7 @@ const LiveSupport = () => {
             </span>
 
             <a href="tel:+18443134987">
-              844-313-4987
+              +1 844-313-4987
             </a>
           </div>
 
@@ -336,7 +336,7 @@ const LiveSupport = () => {
                   href="tel:+18443134987"
                   className="emergency-btn"
                 >
-                  📞 Call 844-313-4987
+                  📞 Call +1 844-313-4987
                 </a>
 
                 <button

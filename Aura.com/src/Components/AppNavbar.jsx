@@ -684,7 +684,7 @@ const AppNavbar = () => {
                   <div className="support-phone">
                     Call Toll-Free:{" "}
                     <a href="tel:+18443134987">
-                      844-313-4987
+                      +1 844-313-4987
                     </a>
                   </div>
 

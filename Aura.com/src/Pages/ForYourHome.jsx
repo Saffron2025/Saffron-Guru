@@ -182,7 +182,7 @@ const ForYourHome = () => {
         points={[
           { title: 'You are always in control.', text: 'Nothing happens on your computer without your permission, and you can watch everything we do on your screen.' },
           { title: 'You can end the session at any time,', text: 'with one click.' },
-          { title: 'Check it is really us.', text: 'Our number is 844-313-4987, the same number shown on this website.' },
+          { title: 'Check it is really us.', text: 'Our number is +1 844-313-4987, the same number shown on this website.' },
           { title: 'We never ask for gift cards, cryptocurrency or wire transfers.', text: 'Anyone who does is not Saffron Guru.' },
         ]}
       />

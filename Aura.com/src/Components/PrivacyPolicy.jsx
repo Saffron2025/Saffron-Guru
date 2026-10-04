@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
                   Have a question about your privacy? Reach out to our Privacy & Security Desk at 
                   <strong> Saffron Guru</strong> — email us at 
                   <a className="policy-link" href="mailto:CustomerSupport@SaffronGuru.com"> CustomerSupport@SaffronGuru.com</a> 
-                  {` `}or call toll-free <strong>844-313-4987</strong>. 
+                  {` `}or call toll-free <strong>+1 844-313-4987</strong>. 
                   We’re here to help.
                 </div>
               </div>

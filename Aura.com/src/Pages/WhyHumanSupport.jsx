@@ -226,7 +226,7 @@ const WhyHumanSupport = () => {
                   Hang up, and call someone you trust first. We are here.
                 </p>
               </div>
-              <a href="tel:+18443134987" className="whs-btn">📞 Call 844-313-4987</a>
+              <a href="tel:+18443134987" className="whs-btn">📞 Call +1 844-313-4987</a>
             </div>
 
             <p className="whs-closing">
