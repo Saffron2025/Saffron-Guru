@@ -463,10 +463,19 @@ footer, .footer, .aura-footer {
 }
 
 /* Second box: losses by people 60+ (sits lower, in the empty area under the line) */
+.graph-data-callout { width: 205px; }
+.graph-data-callout .callout-title { font-size: 1.02rem; }
+.graph-data-callout .callout-description { font-size: 0.8rem; }
+/* Left side: losses by people 60+ (empty area above the line) */
 .graph-data-callout.graph-data-callout--seniors {
-  top: 66%;
-  left: 74%;
+  top: 30%;
+  left: 27%;
   border-top: 3px solid #38bdf8;
+}
+/* Right side: total losses (below the line, under the 2025 end) */
+.graph-data-callout.graph-data-callout--total {
+  top: 62%;
+  left: 73%;
 }
 
 /* Verify on FBI.gov button */
@@ -501,7 +510,9 @@ footer, .footer, .aura-footer {
     padding: 8px 12px;
   }
   .callout-title { font-size: 0.85rem; }
-  .callout-description { font-size: 0.7rem; }
+  .callout-description { font-size: 0.7rem; }  .graph-data-callout { width: 175px; }
+  .graph-data-callout .callout-title { font-size: 0.9rem; }
+  .graph-data-callout .callout-description { font-size: 0.72rem; }
 }
 
 /* Mobile */
@@ -515,7 +526,11 @@ footer, .footer, .aura-footer {
   .callout-title { font-size: 0.8rem; }
   .callout-description { font-size: 0.65rem; }
   .callout-verify-btn { font-size: 0.62rem; padding: 4px 9px; margin-top: 6px; }
-  .graph-data-callout.graph-data-callout--seniors { top: 68%; left: 68%; }
+  .graph-data-callout { width: 150px; }
+  .graph-data-callout .callout-title { font-size: 0.82rem; }
+  .graph-data-callout .callout-description { font-size: 0.66rem; }
+  .graph-data-callout.graph-data-callout--seniors { top: 28%; left: 29%; }
+  .graph-data-callout.graph-data-callout--total { top: 66%; left: 71%; }
 }
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */

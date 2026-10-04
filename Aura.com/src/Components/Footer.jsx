@@ -100,25 +100,33 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="graph-data-callout">
+    <div className="graph-data-callout graph-data-callout--total">
       <h4 className="callout-title">$20.9 billion was lost in 2025</h4>
       <p className="callout-description">
-        Since 2021, the amount lost to online <br />
-        crime has nearly tripled. (FBI)
-      </p>
-    </div>
-
-    <div className="graph-data-callout graph-data-callout--seniors">
-      <h4 className="callout-title">$7.7 billion of that</h4>
-      <p className="callout-description">
-        was lost by Americans aged 60 and older in 2025. (FBI)
+        Since 2021, the amount lost to online crime has nearly tripled. (FBI)
       </p>
       <a
         className="callout-verify-btn"
         href="https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Verify these 2025 figures on FBI.gov (opens in a new tab)"
+        aria-label="Verify this figure on FBI.gov (opens in a new tab)"
+      >
+        Verify on FBI.gov <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div className="graph-data-callout graph-data-callout--seniors">
+      <h4 className="callout-title">$7.7 billion lost by people 60+</h4>
+      <p className="callout-description">
+        Americans aged 60 and older were hit hardest in 2025. (FBI)
+      </p>
+      <a
+        className="callout-verify-btn"
+        href="https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Verify this figure on FBI.gov (opens in a new tab)"
       >
         Verify on FBI.gov <span aria-hidden="true">↗</span>
       </a>
