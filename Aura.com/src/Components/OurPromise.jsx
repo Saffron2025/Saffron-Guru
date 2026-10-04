@@ -85,7 +85,7 @@ export default function OurPromise() {
         </blockquote>
 
         <p className="sg-promise-lead">
-          That's why Saffron Guru puts <strong>real people</strong> between you and the scammers.
+          That's why Saffron Guru puts <strong>powerful security</strong> and <strong>real people</strong> between you and the scammers.
           Here is what we do for you:
         </p>
 
