@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/root/.claude/uploads/7a57923d-5de8-59f4-a526-2cad84000192/ccfaf1b4-google357c49424c5b8d03.html\" public/google357c49424c5b8d03.html)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=Claude -c user.email=noreply@anthropic.com commit -qm 'Add Google Search Console HTML file verification *)",
+      "Bash(git push *)"
+    ]
+  }
+}
