@@ -8,6 +8,9 @@ import {
   FaCalendarCheck,
   FaChalkboardTeacher,
   FaPhoneAlt,
+  FaShieldAlt,
+  FaIdCard,
+  FaTools,
 } from 'react-icons/fa';
 import './OurPromise.css';
 
@@ -33,6 +36,16 @@ const PROTECTIONS = [
     text: 'We harden your settings so intruders find the doors shut on your computer, phone and tablet.',
   },
   {
+    icon: FaShieldAlt,
+    title: 'More than antivirus',
+    text: 'Antivirus is just one piece. DefendMe PRO™ Security Solutions adds our own scam blockers on top, plus a real person looking out for you.',
+  },
+  {
+    icon: FaIdCard,
+    title: 'Identity theft protection',
+    text: 'We set you up with identity theft protection from a trusted provider and help you use it, so you know what to do if an alert ever comes in.',
+  },
+  {
     icon: FaHeadset,
     title: 'Real people, 7 days a week',
     text: 'Not sure about an email, a call or a message? Call us first. A patient person picks up.',
@@ -47,6 +60,11 @@ const PROTECTIONS = [
     title: 'We teach you the tricks',
     text: 'We show you, in plain words, how scammers work, so you can spot them before they reach you.',
   },
+  {
+    icon: FaTools,
+    title: 'One call for all your tech',
+    text: "Computer, phone, printer, tablet, or anything else. No running around. Just call us. We find out what's wrong and fix it.",
+  },
 ];
 
 export default function OurPromise() {
@@ -55,12 +73,12 @@ export default function OurPromise() {
       <div className="sg-promise-inner">
         <p className="sg-promise-eyebrow">We're in your corner</p>
         <h2 id="sg-promise-title" className="sg-promise-title">
-          Technology Can't Stop a Phone Call. <span>People Can.</span>
+          Scammers Don't Break In. <span>They Get Invited In.</span>
         </h2>
 
         <blockquote className="sg-promise-story">
           The major antivirus companies sell software that detects a signature file. But when
-          an 82-year-old gets an email saying "Your bank account has been debited $899," calls
+          an 82-year-old grandpa gets an email saying "Your bank account has been debited $899," calls
           the 1-800 number, and a polite voice convinces them to open their screen and buy gift
           cards, no antivirus in the world stops that.
         </blockquote>
