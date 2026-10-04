@@ -5,7 +5,15 @@ const VirusRemovalSupport = () => {
   return (
     <section className="virus-support-wrapper">
       <div className="virus-card">
-        <div className="virus-icon">🛡️</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-virus-spyware-malware-removal.webp"
+          alt="Saffron Guru virus, spyware and malware removal with DefendMe PRO protection"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="virus-title">✅ Virus, Spyware & Malware Removal</h3>
         <p className="virus-description">
           We provide complete detection and removal of viruses, spyware, malware, and other malicious threats, as well as troubleshoot and repair any issues they cause that could compromise your privacy or harm your files.
