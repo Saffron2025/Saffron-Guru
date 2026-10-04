@@ -468,14 +468,18 @@ footer, .footer, .aura-footer {
 .graph-data-callout .callout-description { font-size: 0.8rem; }
 /* Left side: losses by people 60+ (empty area above the line) */
 .graph-data-callout.graph-data-callout--seniors {
-  top: 30%;
-  left: 27%;
+  top: 7%;
+  left: 4%;
+  right: auto;
+  bottom: auto;
   border-top: 3px solid #38bdf8;
 }
-/* Right side: total losses (below the line, under the 2025 end) */
+/* Right side: total losses (below the line, above the year labels) */
 .graph-data-callout.graph-data-callout--total {
-  top: 62%;
-  left: 73%;
+  top: auto;
+  left: auto;
+  right: 4%;
+  bottom: 15%;
 }
 
 /* Verify on FBI.gov button */
@@ -529,8 +533,8 @@ footer, .footer, .aura-footer {
   .graph-data-callout { width: 150px; }
   .graph-data-callout .callout-title { font-size: 0.82rem; }
   .graph-data-callout .callout-description { font-size: 0.66rem; }
-  .graph-data-callout.graph-data-callout--seniors { top: 28%; left: 29%; }
-  .graph-data-callout.graph-data-callout--total { top: 66%; left: 71%; }
+  .graph-data-callout.graph-data-callout--seniors { top: 5%; left: 3%; }
+  .graph-data-callout.graph-data-callout--total { right: 3%; bottom: 14%; }
 }
 
 /* Add any other global or section-specific styles here if AllSection.css is your main stylesheet */
