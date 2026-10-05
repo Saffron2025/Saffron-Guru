@@ -7260,3 +7260,5 @@
 @media (max-width: 767.98px) {
   .reality-stats-list { grid-template-columns: 1fr; }
 }
+
+.reality-mini-highlight a { color: #7dd3fc; font-weight: 700; }
