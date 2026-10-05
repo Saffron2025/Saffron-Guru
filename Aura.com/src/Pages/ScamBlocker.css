@@ -1,7 +1,7 @@
 .sb-page { background: #f8fbff; color: #0f172a; }
 .sb-hero {
   background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 100%);
-  padding: 64px 16px 56px; text-align: center;
+  padding: 130px 16px 56px; text-align: center;
 }
 .sb-hero-inner { max-width: 820px; margin: 0 auto; }
 .sb-hero-icon { width: 72px; height: 72px; margin: 0 auto 14px; display: block; }
@@ -60,5 +60,5 @@
 @media (max-width: 700px) {
   .sb-features { grid-template-columns: 1fr; }
   .sb-btn { width: 100%; justify-content: center; }
-  .sb-hero { padding: 44px 16px 40px; }
+  .sb-hero { padding: 125px 16px 40px; }
 }
