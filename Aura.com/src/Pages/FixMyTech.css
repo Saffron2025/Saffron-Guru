@@ -199,3 +199,5 @@
     font-size: 1.6rem;
   }
 }
+
+#fixmytech-home, #fixmytech-business { scroll-margin-top: 90px; }

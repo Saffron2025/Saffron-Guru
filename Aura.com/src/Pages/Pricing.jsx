@@ -76,7 +76,7 @@ const Pricing = () => {
                     <li>Priority Business Support</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/DefendPro" className="btn btn-outline-primary">
+                    <Link to="/DefendPro#dp-business" className="btn btn-outline-primary">
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -102,7 +102,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/ParentSolution"
+                      to="/Parent-Solution"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -119,7 +119,7 @@ const Pricing = () => {
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🖥️ SaffeSupport Assist™ Home</h3>
+                  <h3>🖥️ Safe Support Assist™ Home</h3>
                   <p>Your personal tech team, just a call away</p>
                   <h4>$24.99/month + tax (billed yearly)</h4>
                   <p>Covers up to 3 devices</p>
@@ -132,7 +132,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/ForYourHome"
+                      to="/for-your-home"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -149,7 +149,7 @@ const Pricing = () => {
             <Col md={6} lg={4}>
               <Card className="pricing-card h-100">
                 <Card.Body>
-                  <h3>🖥️ SaffeSupport Assist™ Business</h3>
+                  <h3>🖥️ Safe Support Assist™ Business</h3>
                   <p>Expert IT support to keep your business running</p>
                   <h4>$59.99/month + tax (billed yearly)</h4>
                   <p>Covers up to 10 devices</p>
@@ -166,7 +166,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/ForYourBusiness"
+                      to="/for-your-business"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -184,7 +184,7 @@ const Pricing = () => {
               <Card className="pricing-card h-100">
                 <Card.Body>
                   <h3>
-                    🛡️💻 DefendMe PRO™ + SaffeSupport Assist™ Home Combo
+                    🛡️💻 DefendMe PRO™ + Safe Support Assist™ Home Combo
                   </h3>
                   <p>
                     Complete protection + your unlimited personal IT support
@@ -198,7 +198,7 @@ const Pricing = () => {
                       DefendMe PRO™ Home (Antivirus, VPN, Scam Protection)
                     </li>
                     <li>
-                      SaffeSupport Assist™ Home (Remote IT Support + Email Help)
+                      Safe Support Assist™ Home (Remote IT Support + Email Help)
                     </li>
                     <li>
                       7-Day Live Support for Security & Tech Issues
@@ -234,7 +234,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/fixmytech"
+                      to="/FixMyTech#fixmytech-home"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -269,7 +269,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/fixmytech"
+                      to="/FixMyTech#fixmytech-business"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -287,7 +287,7 @@ const Pricing = () => {
               <Card className="pricing-card h-100">
                 <Card.Body>
                   <h3>
-                    🛡️💻 DefendMe PRO™ + SaffeSupport Assist™ Business Combo
+                    🛡️💻 DefendMe PRO™ + Safe Support Assist™ Business Combo
                   </h3>
                   <p>End-to-end business protection with expert IT support</p>
                   <h4>$89.99/month + tax (billed yearly)</h4>
@@ -299,7 +299,7 @@ const Pricing = () => {
                       Security)
                     </li>
                     <li>
-                      SaffeSupport Assist™ Business (Remote + On-Site IT Support
+                      Safe Support Assist™ Business (Remote + On-Site IT Support
                       if required)
                     </li>
                     <li>Priority Business Support Line</li>

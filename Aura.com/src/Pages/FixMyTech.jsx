@@ -50,7 +50,7 @@ const FixMyTech = () => {
         <div className="fix-container">
 
           {/* 🏠 Home Plan */}
-          <div className="fix-card show" ref={addRef}>
+          <div className="fix-card show" id="fixmytech-home" ref={addRef}>
             <div className="fix-card-inner">
               <div className="fix-img-wrapper">
                 <img src="/resources/saffron-guru-fixmytech-home-remote-support.webp" alt="FixMyTech Home remote tech support by Saffron Guru" className="fix-img" />
@@ -72,7 +72,7 @@ const FixMyTech = () => {
           </div>
 
           {/* 🏢 Business Plan */}
-          <div className="fix-card show" ref={addRef}>
+          <div className="fix-card show" id="fixmytech-business" ref={addRef}>
             <div className="fix-card-inner reverse">
               <div className="fix-img-wrapper">
                 <img src="/resources/saffron-guru-fixmytech-business-remote-support.webp" alt="FixMyTech Business remote tech support by Saffron Guru" className="fix-img" />
