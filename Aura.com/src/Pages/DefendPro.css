@@ -1671,7 +1671,7 @@
 }
 /* Hero badge: more space under the menu bar, sky blue so it stands out */
 .defend-hero-content .hero-security-badge {
-  margin-top: 28px;
+  margin-top: 58px;
   color: #ffffff;
   background: linear-gradient(135deg, #38bdf8, #0ea5e9);
   border: 1px solid rgba(255, 255, 255, 0.55);
@@ -1683,5 +1683,5 @@
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.35);
 }
 @media (max-width: 767.98px) {
-  .defend-hero-content .hero-security-badge { margin-top: 22px; }
+  .defend-hero-content .hero-security-badge { margin-top: 52px; }
 }
