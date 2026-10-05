@@ -11,6 +11,9 @@ import {
   FaLock,
   FaPhoneAlt,
   FaCheck,
+  FaFish,
+  FaHeadset,
+  FaSlidersH,
 } from "react-icons/fa";
 import "./ScamBlocker.css";
 
@@ -29,6 +32,11 @@ const FEATURES = [
     text: "Scammers ask people to install AnyDesk or TeamViewer so they can take over the computer. The moment one of those sites opens, a big warning tells you to stop if a stranger asked you to do it.",
   },
   {
+    icon: FaFish,
+    title: "Phishing and malware websites stopped",
+    text: "Fake bank, PayPal and delivery pages built to steal your passwords are blocked before they open. The list of dangerous sites updates every 6 hours.",
+  },
+  {
     icon: FaDesktop,
     title: "Look-alike websites caught",
     text: 'Addresses like "paypa1" or "micros0ft" are made to fool you. The blocker spots them and takes you back to safety.',
@@ -38,6 +46,14 @@ const FEATURES = [
     title: "Ads, trackers and pop-ups gone",
     text: "Pages load cleaner and faster, without pop-ups jumping in front of you or companies following you around the internet.",
   },
+];
+
+const ALSO_BLOCKS = [
+  "Hidden crypto miners that secretly use your computer",
+  'Websites nagging you to "Allow notifications"',
+  "Fingerprinting and social media trackers",
+  "Pop-unders that open behind your window",
+  "Endless alert messages that won't let you leave a page",
 ];
 
 const SHOTS = [
@@ -113,6 +129,32 @@ export default function ScamBlocker() {
               </li>
             ))}
           </ul>
+
+          <div className="sb-also">
+            <h3>It also blocks</h3>
+            <ul>
+              {ALSO_BLOCKS.map((t) => (
+                <li key={t}><FaCheck aria-hidden="true" /> {t}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="sb-extras">
+            <div className="sb-extra">
+              <span className="sb-feat-icon" aria-hidden="true"><FaHeadset /></span>
+              <div>
+                <h3>Help is one call away</h3>
+                <p>When a dangerous site is blocked, the warning screen shows our number, so a real person can help you right then.</p>
+              </div>
+            </div>
+            <div className="sb-extra">
+              <span className="sb-feat-icon" aria-hidden="true"><FaSlidersH /></span>
+              <div>
+                <h3>You stay in control</h3>
+                <p>See what was blocked on every page, turn protection on or off with one switch, pick Basic, Balanced or Aggressive, and allow the sites you trust.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="sb-section sb-section--shots">
