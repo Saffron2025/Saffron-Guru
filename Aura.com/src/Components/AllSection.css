@@ -1405,3 +1405,7 @@
 .social-link.behance:hover .social-icon {
   background: #1769ff;
 }
+
+/* Quick Links now sit below the social / "Find us online" box */
+.social-media-section { margin-top: 0; }
+.footer-links-section { margin-top: 32px; }

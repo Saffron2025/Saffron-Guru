@@ -143,89 +143,6 @@ const AuraFooter = () => {
       <div className="footer-container">
 
         {/* =========================================
-            FOOTER LINKS
-        ========================================= */}
-
-        <div className="footer-links-section">
-
-          <h3 className="footer-title">
-            Quick Links
-          </h3>
-
-          <div className="footer-links">
-
-            {footerLinks.map((link, index) => (
-              <Link
-                key={index}
-                to={link.path}
-                className={`footer-link ${
-                  link.live ? "live-support-link" : ""
-                }`}
-              >
-                {link.label === "Veterans Special Offer" ? (
-  <>
-    <span className="veterans-footer-flag" aria-hidden="true">
-      <svg
-        viewBox="0 0 32 22"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="32" height="22" rx="1" fill="#fff" />
-
-        <rect y="0" width="32" height="2" fill="#b22234" />
-        <rect y="4" width="32" height="2" fill="#b22234" />
-        <rect y="8" width="32" height="2" fill="#b22234" />
-        <rect y="12" width="32" height="2" fill="#b22234" />
-        <rect y="16" width="32" height="2" fill="#b22234" />
-        <rect y="20" width="32" height="2" fill="#b22234" />
-
-        <rect width="14" height="12" fill="#3c3b6e" />
-
-        <g fill="#fff">
-          <circle cx="2" cy="2" r="0.6" />
-          <circle cx="5" cy="2" r="0.6" />
-          <circle cx="8" cy="2" r="0.6" />
-          <circle cx="11" cy="2" r="0.6" />
-
-          <circle cx="3.5" cy="4" r="0.6" />
-          <circle cx="6.5" cy="4" r="0.6" />
-          <circle cx="9.5" cy="4" r="0.6" />
-          <circle cx="12.5" cy="4" r="0.6" />
-
-          <circle cx="2" cy="6" r="0.6" />
-          <circle cx="5" cy="6" r="0.6" />
-          <circle cx="8" cy="6" r="0.6" />
-          <circle cx="11" cy="6" r="0.6" />
-
-          <circle cx="3.5" cy="8" r="0.6" />
-          <circle cx="6.5" cy="8" r="0.6" />
-          <circle cx="9.5" cy="8" r="0.6" />
-          <circle cx="12.5" cy="8" r="0.6" />
-
-          <circle cx="2" cy="10" r="0.6" />
-          <circle cx="5" cy="10" r="0.6" />
-          <circle cx="8" cy="10" r="0.6" />
-          <circle cx="11" cy="10" r="0.6" />
-        </g>
-      </svg>
-    </span>
-
-    <span>Veterans Special Offer</span>
-  </>
-) : (
-  link.label
-)}
-
-                {link.live && (
-                  <span className="live-dot"></span>
-                )}
-              </Link>
-            ))}
-
-          </div>
-
-        </div>
-
-        {/* =========================================
             SOCIAL MEDIA SECTION
         ========================================= */}
 
@@ -531,7 +448,116 @@ const AuraFooter = () => {
                 </span>
               </a>
 
+              {/* =====================================
+                  TECHREVIEWER
+              ===================================== */}
+
+              <a
+                href="https://techreviewer.co/companies/saffron-guru-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on Techreviewer"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-techreviewer.svg"
+                    alt="Saffron Guru on Techreviewer"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  Techreviewer
+                </span>
+              </a>
+
             </div>
+
+          </div>
+
+        </div>
+
+        {/* =========================================
+            FOOTER LINKS
+        ========================================= */}
+
+        <div className="footer-links-section">
+
+          <h3 className="footer-title">
+            Quick Links
+          </h3>
+
+          <div className="footer-links">
+
+            {footerLinks.map((link, index) => (
+              <Link
+                key={index}
+                to={link.path}
+                className={`footer-link ${
+                  link.live ? "live-support-link" : ""
+                }`}
+              >
+                {link.label === "Veterans Special Offer" ? (
+  <>
+    <span className="veterans-footer-flag" aria-hidden="true">
+      <svg
+        viewBox="0 0 32 22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="32" height="22" rx="1" fill="#fff" />
+
+        <rect y="0" width="32" height="2" fill="#b22234" />
+        <rect y="4" width="32" height="2" fill="#b22234" />
+        <rect y="8" width="32" height="2" fill="#b22234" />
+        <rect y="12" width="32" height="2" fill="#b22234" />
+        <rect y="16" width="32" height="2" fill="#b22234" />
+        <rect y="20" width="32" height="2" fill="#b22234" />
+
+        <rect width="14" height="12" fill="#3c3b6e" />
+
+        <g fill="#fff">
+          <circle cx="2" cy="2" r="0.6" />
+          <circle cx="5" cy="2" r="0.6" />
+          <circle cx="8" cy="2" r="0.6" />
+          <circle cx="11" cy="2" r="0.6" />
+
+          <circle cx="3.5" cy="4" r="0.6" />
+          <circle cx="6.5" cy="4" r="0.6" />
+          <circle cx="9.5" cy="4" r="0.6" />
+          <circle cx="12.5" cy="4" r="0.6" />
+
+          <circle cx="2" cy="6" r="0.6" />
+          <circle cx="5" cy="6" r="0.6" />
+          <circle cx="8" cy="6" r="0.6" />
+          <circle cx="11" cy="6" r="0.6" />
+
+          <circle cx="3.5" cy="8" r="0.6" />
+          <circle cx="6.5" cy="8" r="0.6" />
+          <circle cx="9.5" cy="8" r="0.6" />
+          <circle cx="12.5" cy="8" r="0.6" />
+
+          <circle cx="2" cy="10" r="0.6" />
+          <circle cx="5" cy="10" r="0.6" />
+          <circle cx="8" cy="10" r="0.6" />
+          <circle cx="11" cy="10" r="0.6" />
+        </g>
+      </svg>
+    </span>
+
+    <span>Veterans Special Offer</span>
+  </>
+) : (
+  link.label
+)}
+
+                {link.live && (
+                  <span className="live-dot"></span>
+                )}
+              </Link>
+            ))}
 
           </div>
 
