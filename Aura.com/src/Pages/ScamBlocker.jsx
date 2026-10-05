@@ -74,13 +74,26 @@ const SHOTS = [
   },
 ];
 
+/* On Windows, when the visitor is NOT already in Edge, the Edge button opens the store page
+   in Microsoft Edge itself (the "microsoft-edge:" link Windows understands). Everywhere else
+   it opens the store page normally. */
+function openInEdge(e) {
+  const ua = navigator.userAgent || "";
+  const isWindows = /Windows/i.test(ua);
+  const isEdge = /Edg\//.test(ua);
+  if (isWindows && !isEdge) {
+    e.preventDefault();
+    window.location.href = "microsoft-edge:" + SCAM_BLOCKER_STORE_URL;
+  }
+}
+
 function InstallButtons() {
   return (
     <div className="sb-buttons">
       <a className="sb-btn sb-btn--chrome" href={SCAM_BLOCKER_STORE_URL} target="_blank" rel="noopener noreferrer">
         <FaChrome aria-hidden="true" /> Add to Chrome
       </a>
-      <a className="sb-btn sb-btn--edge" href={SCAM_BLOCKER_STORE_URL} target="_blank" rel="noopener noreferrer">
+      <a className="sb-btn sb-btn--edge" href={SCAM_BLOCKER_STORE_URL} target="_blank" rel="noopener noreferrer" onClick={openInEdge}>
         <FaEdge aria-hidden="true" /> Add to Microsoft Edge
       </a>
     </div>
