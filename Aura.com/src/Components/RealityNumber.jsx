@@ -121,9 +121,9 @@ const RealityNumber = () => {
             <span>🎯</span>
 
             <div>
-              <strong>1 in 4 Americans</strong>
+              <strong>Scammers target people</strong>
               <small>
-                reported being targeted by online fraud.
+                not just computers. Most scams work by fooling someone, not by breaking in.
               </small>
             </div>
           </div>
@@ -133,9 +133,9 @@ const RealityNumber = () => {
             <span>🛡️</span>
 
             <div>
-              <strong>98%</strong>
+              <strong>Antivirus can't hang up</strong>
               <small>
-                of modern scams bypass antivirus software completely.
+                on a scammer. A real person can, and that's why we're here.
               </small>
             </div>
           </div>
@@ -145,38 +145,7 @@ const RealityNumber = () => {
       </div>
 
 
-      {/* RIGHT IMAGE */}
 
-      <div className="reality-premium-image">
-
-        <div className="reality-image-glow"></div>
-
-        <div className="reality-image-wrapper">
-
-          <img
-        loading="lazy"
-        decoding="async"
-            src="/Products/saffron-guru-cybercrime-statistics.webp"
-            alt="Saffron Guru cybercrime and online scam statistics"
-          />
-
-          <div className="reality-image-overlay"></div>
-
-        </div>
-
-
-        <div className="reality-floating-card">
-
-          <span>📊</span>
-
-          <div>
-            <strong>Digital Threats</strong>
-            <small>Growing every year</small>
-          </div>
-
-        </div>
-
-      </div>
 
     </section>
   );

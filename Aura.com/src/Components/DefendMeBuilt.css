@@ -7254,3 +7254,9 @@
   }
 
 }
+/* Stats image removed (it showed outdated numbers): cards use the full width */
+.reality-premium-section { grid-template-columns: 1fr; }
+.reality-stats-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 767.98px) {
+  .reality-stats-list { grid-template-columns: 1fr; }
+}
