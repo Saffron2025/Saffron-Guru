@@ -13,6 +13,8 @@ import {
   FaUsers,
   FaCheck,
   FaHandHoldingHeart,
+  FaIdCard,
+  FaChartLine,
 } from "react-icons/fa";
 import "./Seniors.css";
 
@@ -33,8 +35,13 @@ const INCLUDED = [
   },
   {
     icon: FaShieldAlt,
-    title: "Protection against scams, built in",
-    text: "DefendMe PRO™ Security Solutions blocks fake virus pop-ups, scam websites and phishing pages before they reach you.",
+    title: "Protection that goes way beyond antivirus",
+    text: "Antivirus only looks for known viruses and bad files. DefendMe PRO™ Security Solutions goes much further. It blocks remote access and controls downloads, so even if a scammer is smooth enough to talk you into it, they still can't get into your computer. It also stops fake pop-ups and scam websites.",
+  },
+  {
+    icon: FaIdCard,
+    title: "Identity theft protection, plus what it can't do alone",
+    text: "We set you up with identity theft protection from a trusted provider, so you're alerted if someone tries to use your name, Social Security number or bank details. But identity theft protection can't stop social engineering, the tricks modern scammers use to fool you directly: fake invoices, fake pop-ups, fake calls from \"your bank.\" That's why you also get DefendMe PRO™ Security Solutions (with a built-in scam blocker and real people on call 7 days a week).",
   },
   {
     icon: FaUserShield,
@@ -45,6 +52,13 @@ const INCLUDED = [
     icon: FaCalendarCheck,
     title: "We check on you every 30 days",
     text: "You don't have to remember to call us. We reach out every month to make sure everything is still safe and working.",
+  },
+  {
+    icon: FaChartLine,
+    title: "Check before you invest",
+    text: "Investment scams are among the costliest scams for people over 60. They usually start with a friendly message, a \"can't-lose\" crypto deal or a professional-looking trading website. Before you send money, call us. We look at the digital footprints scammers can't hide: how old the website is, who registered it, what the app's reputation is, and what other people have reported. Then we tell you plainly if we see the warning signs of a scam.",
+    strong: "A five-minute call can save your life savings.",
+    note: "Please note: we are not investment advisors and we don't recommend investments. We only help you spot fake websites, apps and offers, because we don't want anyone to lose their savings to a scam.",
   },
   {
     icon: FaChalkboardTeacher,
@@ -73,16 +87,16 @@ const FAQS = [
     a: "With us, yes. Nothing happens on your computer without your permission, you can watch everything we do, and you can end the session with one click. We never ask for gift cards, cryptocurrency or wire transfers. Anyone who does is not Saffron Guru.",
   },
   {
-    q: "What devices can you help with?",
-    a: "Windows computers, Macs, laptops, iPhones, Android phones, iPads and tablets, printers, Wi-Fi routers, email, smart TVs and streaming devices.",
+    q: "What devices and software can you help with?",
+    a: "Windows computers, Macs, laptops, iPhones, Android phones, iPads and tablets, printers, Wi-Fi, email and smart TVs. We also help with software: Microsoft Office (Word, Excel, Outlook), accounting programs like QuickBooks and Quicken, Zoom and FaceTime, banking and shopping apps, and most other everyday programs.",
   },
   {
     q: "Can my son or daughter set this up for me?",
     a: "Yes. Many of our customers are signed up by their adult children. Family members can call us, set everything up and stay in the loop, while you get a patient person to call any time.",
   },
   {
-    q: "What should I do if I get a call or pop-up that says my computer is infected?",
-    a: "Do not call the number on the screen and do not let anyone into your computer. Close the page, or turn the computer off if it won't close, and call us at +1 844-313-4987. We'll check it for you.",
+    q: "What should I do if a pop-up says my computer is infected?",
+    a: "If you're a Saffron Guru customer, this is very unlikely to happen. We protect you in layers: blockers in your web browser, protection on the computer itself, and remote access blocking, so fake warnings rarely get through. But if one ever does show up, don't call the number on the screen, and don't let anyone into your computer. Close the page, or turn the computer off if it won't close, and call us at +1 844-313-4987. We'll check it with you. Not a customer yet? Call us anyway. If you're looking at a scary screen right now, getting you safe comes first. Everything else can wait.",
   },
 ];
 
@@ -116,8 +130,8 @@ export default function Seniors() {
             <SilverBadge />
             <h1 className="sr-title">Tech Support and Scam Protection for Seniors</h1>
             <p className="sr-sub">
-              Patient, friendly help with your computer, phone and Wi-Fi, plus real protection from the
-              scams that target people over 60. One number. A real person. Every time.
+              Patient, friendly help with your computer, phone and Wi-Fi, plus advanced security that
+              blocks the scams targeting people over 60. One number. A real person. Every time.
             </p>
             <div className="sr-offer">
               <p className="sr-offer-kicker">For customers 60 and older</p>
@@ -160,12 +174,14 @@ export default function Seniors() {
         <section className="sr-section">
           <h2 className="sr-h2">What Silver Shield for Seniors includes</h2>
           <ul className="sr-cards">
-            {INCLUDED.map(({ icon: Icon, title, text }) => (
+            {INCLUDED.map(({ icon: Icon, title, text, strong, note }) => (
               <li key={title}>
                 <span className="sr-icon" aria-hidden="true"><Icon /></span>
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
+                  {strong && <p className="sr-card-strong">{strong}</p>}
+                  {note && <p className="sr-card-note">{note}</p>}
                 </div>
               </li>
             ))}

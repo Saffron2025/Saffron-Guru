@@ -91,3 +91,6 @@
   .sr-story { padding: 18px; }
   .sr-story p { font-size: 1.06rem; }
 }
+
+.sr-card-strong { margin-top: 10px !important; color: #1d4ed8 !important; font-weight: 800; }
+.sr-card-note { margin-top: 10px !important; font-size: 0.92rem !important; font-style: italic; color: #64748b !important; border-top: 1px dashed #cbd5e1; padding-top: 8px; }
