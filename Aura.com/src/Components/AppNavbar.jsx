@@ -36,24 +36,15 @@ const AppNavbar = () => {
 
     const width = window.innerWidth;
 
-    const coarsePointer =
-      window.matchMedia &&
-      window.matchMedia("(pointer: coarse)").matches;
-
-    const touchDevice =
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0;
 
     /* PHONE */
     if (width <= 767) {
       return true;
     }
 
-    /* TABLET */
-    if (
-      width <= 1199 &&
-      (coarsePointer || touchDevice)
-    ) {
+    /* TABLET and SMALL LAPTOP / WINDOW: the full menu only fits from 1200px,
+       so anything narrower gets the menu button, mouse or touch */
+    if (width <= 1199) {
       return true;
     }
 
