@@ -76,7 +76,10 @@
 }
 
 .tech-banner-floating-image-ultimate img {
-  max-width: 320px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 20px;
   filter: drop-shadow(0 10px 30px rgba(0, 150, 255, 0.25));
   animation: floatImage 6s infinite ease-in-out;
 }
