@@ -109,8 +109,10 @@ export default function ForYourBusiness() {
             <Row className="align-items-center">
               <Col md={6}>
                 <img
-                  src="/Hero/saffron-guru-business-tech-failures.webp"
-                  alt="Saffron Guru IT support for small business tech problems"
+                  src="/Hero/saffron-guru-small-business-it-support.webp"
+                  alt="Saffron Guru small business IT support: a remote technician on a video call fixing a frozen Microsoft Excel for an office team"
+                  width="1200"
+                  height="800"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
