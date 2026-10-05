@@ -237,6 +237,10 @@
       "dest": "/_p/veterans.html"
     },
     {
+      "src": "^/scam-popup-blocker/?$",
+      "dest": "/_p/scam-popup-blocker.html"
+    },
+    {
       "src": "^/product/1/?$",
       "dest": "/_p/product__1.html"
     },
