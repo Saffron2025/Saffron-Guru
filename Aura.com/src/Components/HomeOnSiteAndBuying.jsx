@@ -5,7 +5,7 @@ import './HomeOnSiteAndBuying.css';
 const PHONE_HREF = 'tel:+18443134987';
 const PHONE_TEXT = '+1 844-313-4987';
 
-function Block({ id, eyebrow, title, sub, children, points, close }) {
+function Block({ id, eyebrow, title, sub, children, points, close, showCall = false }) {
   return (
     <section className="sg-hb" id={id} aria-labelledby={`${id}-title`}>
       <div className="sg-hb-inner">
@@ -22,9 +22,11 @@ function Block({ id, eyebrow, title, sub, children, points, close }) {
           ))}
         </ul>
         {close && <p className="sg-hb-close">{close}</p>}
-        <a className="sg-hb-call" href={PHONE_HREF}>
-          <FaPhoneAlt aria-hidden="true" /> Call {PHONE_TEXT}
-        </a>
+        {showCall && (
+          <a className="sg-hb-call" href={PHONE_HREF}>
+            <FaPhoneAlt aria-hidden="true" /> Call {PHONE_TEXT}
+          </a>
+        )}
       </div>
     </section>
   );
@@ -65,6 +67,7 @@ export default function HomeOnSiteAndBuying() {
           { icon: FaBoxOpen, text: 'When it arrives, we set it up for you' },
         ]}
         close={<>Spend less. Buy right. <strong>We'll handle the rest.</strong></>}
+        showCall
       >
         <p>
           Walk into any electronics store and someone will happily sell you the $1,400 laptop, the
