@@ -43,7 +43,12 @@
 }
 
 .tech-banner-content-ultimate {
-  max-width: 60%;
+  flex: 0 1 44%;
+  max-width: 44%;
+}
+.tech-banner-floating-image-ultimate {
+  flex: 1 1 56%;
+  min-width: 0;
 }
 
 .tech-banner-title-ultimate {
@@ -76,8 +81,10 @@
 }
 
 .tech-banner-floating-image-ultimate img {
+  display: block;
   width: 100%;
-  max-width: 420px;
+  max-width: 760px;
+  margin-left: auto;
   height: auto;
   border-radius: 20px;
   filter: drop-shadow(0 10px 30px rgba(0, 150, 255, 0.25));
@@ -167,8 +174,8 @@
   }
 
   .tech-banner-floating-image-ultimate img {
-    margin-top: 2rem;
-    max-width: 280px;
+    margin: 2rem auto 0;
+    max-width: 100%;
   }
 
   .tech-help-title-ultimate {
@@ -178,4 +185,10 @@
   .tech-help-subtext-ultimate {
     font-size: 1.05rem;
   }
+}
+
+@media (max-width: 991px) {
+  .tech-banner-wrapper-ultimate { flex-direction: column; text-align: center; }
+  .tech-banner-content-ultimate, .tech-banner-floating-image-ultimate { max-width: 100%; flex-basis: auto; width: 100%; }
+  .tech-banner-floating-image-ultimate img { margin: 1.5rem auto 0; }
 }
