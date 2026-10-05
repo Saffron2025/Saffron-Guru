@@ -1,0 +1,93 @@
+.sr-page { background: #f8fafc; color: #0f172a; }
+
+.sr-hero {
+  background: linear-gradient(180deg, #e2e8f0 0%, #f1f5f9 55%, #f8fafc 100%);
+  padding: 130px 16px 60px; text-align: center;
+}
+.sr-hero-inner { max-width: 860px; margin: 0 auto; }
+.sr-badge {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; padding: 8px 18px; border-radius: 999px;
+  background: linear-gradient(135deg, #f8fafc, #cbd5e1); border: 1px solid #94a3b8; color: #1e293b;
+  font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.88rem;
+  box-shadow: 0 4px 14px rgba(71, 85, 105, 0.2);
+}
+.sr-badge svg { color: #475569; }
+.sr-title { color: #0f172a; font-size: clamp(1.9rem, 4.4vw, 2.9rem); font-weight: 800; line-height: 1.15; margin: 0 0 14px; }
+.sr-sub { color: #334155; font-size: clamp(1.1rem, 2.2vw, 1.3rem); line-height: 1.6; max-width: 720px; margin: 0 auto 28px; }
+
+.sr-offer {
+  max-width: 620px; margin: 0 auto; padding: 26px 24px; border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%); border: 1px solid #cbd5e1;
+  box-shadow: 0 14px 34px rgba(51, 65, 85, 0.15);
+}
+.sr-offer-kicker { margin: 0; color: #475569; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem; }
+.sr-offer-title { margin: 6px 0 8px; color: #0f172a; font-size: clamp(1.5rem, 3.4vw, 2rem); font-weight: 800; }
+.sr-offer-text { margin: 0 0 18px; color: #334155; font-size: 1.08rem; line-height: 1.55; }
+
+.sr-call {
+  display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 999px;
+  background: #1d4ed8; color: #fff !important; font-size: 1.2rem; font-weight: 800; text-decoration: none;
+  box-shadow: 0 10px 26px rgba(29, 78, 216, 0.3);
+}
+.sr-call:hover { background: #1e40af; }
+
+.sr-section { max-width: 1040px; margin: 0 auto; padding: 56px 16px 8px; }
+.sr-h2 { text-align: center; color: #0f172a; font-size: clamp(1.5rem, 3.2vw, 2.1rem); font-weight: 800; line-height: 1.25; margin: 0 0 18px; }
+.sr-h2 span { color: #1d4ed8; }
+.sr-h2--left { text-align: left; }
+.sr-story { max-width: 780px; margin: 0 auto; padding: 24px 28px; background: #fff; border-left: 5px solid #64748b; border-radius: 12px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07); }
+.sr-story p { font-size: 1.15rem; line-height: 1.75; color: #1e293b; margin: 0 0 14px; }
+.sr-story p:last-child { margin: 0; }
+
+.sr-stat { padding: 48px 16px 0; }
+.sr-stat-inner { max-width: 780px; margin: 0 auto; text-align: center; padding: 30px 24px; border-radius: 20px; background: #0f172a; color: #e2e8f0; }
+.sr-stat-num { margin: 0; font-size: clamp(2.2rem, 6vw, 3.2rem); font-weight: 900; color: #fbbf24; }
+.sr-stat-text { margin: 6px auto 16px; max-width: 560px; font-size: 1.12rem; line-height: 1.55; }
+.sr-stat-link {
+  display: inline-block; padding: 8px 18px; border-radius: 999px; font-weight: 700; font-size: 0.95rem;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); color: #fff !important; text-decoration: none;
+}
+
+.sr-cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.sr-cards li { display: flex; gap: 14px; align-items: flex-start; padding: 22px; background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); }
+.sr-cards h3 { font-size: 1.14rem; font-weight: 700; color: #0f172a; margin: 2px 0 6px; }
+.sr-cards p { margin: 0; color: #475569; font-size: 1.04rem; line-height: 1.6; }
+.sr-icon {
+  flex: 0 0 48px; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 12px; background: linear-gradient(135deg, #64748b, #334155); color: #fff; font-size: 1.3rem;
+}
+.sr-icon--lg { flex-basis: 60px; width: 60px; height: 60px; font-size: 1.6rem; border-radius: 16px; }
+
+.sr-steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: none; }
+.sr-steps li { background: #fff; border-radius: 16px; padding: 24px 20px; text-align: center; border: 1px solid #e2e8f0; }
+.sr-step-num { display: inline-flex; width: 42px; height: 42px; align-items: center; justify-content: center; border-radius: 50%; background: #1d4ed8; color: #fff; font-weight: 800; font-size: 1.15rem; margin-bottom: 10px; }
+.sr-steps h3 { font-size: 1.15rem; font-weight: 800; margin: 0 0 6px; color: #0f172a; }
+.sr-steps p { margin: 0; color: #475569; font-size: 1.03rem; line-height: 1.6; }
+
+.sr-family { padding: 56px 16px 0; }
+.sr-family-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 20px; align-items: flex-start; padding: 28px; border-radius: 20px; background: #e0e7ff; }
+.sr-family-inner p { font-size: 1.1rem; line-height: 1.7; color: #1e293b; margin: 0 0 12px; }
+.sr-checks { list-style: none; padding: 0; margin: 0; }
+.sr-checks li { display: flex; gap: 10px; align-items: flex-start; font-size: 1.06rem; margin-bottom: 8px; color: #1e293b; }
+.sr-checks svg { color: #16a34a; margin-top: 5px; flex: 0 0 auto; }
+
+.sr-faq { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.sr-faq details { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; }
+.sr-faq summary { cursor: pointer; font-weight: 700; font-size: 1.1rem; color: #0f172a; }
+.sr-faq details p { margin: 10px 0 0; color: #334155; font-size: 1.05rem; line-height: 1.65; }
+
+.sr-cta { max-width: 860px; margin: 56px auto; padding: 40px 20px; text-align: center; background: linear-gradient(135deg, #f1f5f9, #e2e8f0); border-radius: 22px; }
+.sr-cta .sr-icon { margin-bottom: 14px; }
+.sr-small { margin: 18px 0 0; color: #475569; font-size: 1rem; }
+.sr-small a { color: #1d4ed8; font-weight: 700; }
+
+@media (max-width: 860px) {
+  .sr-cards, .sr-steps { grid-template-columns: 1fr; }
+  .sr-family-inner { flex-direction: column; }
+}
+@media (max-width: 600px) {
+  .sr-hero { padding: 125px 16px 44px; }
+  .sr-call { width: 100%; justify-content: center; font-size: 1.1rem; padding: 14px 18px; }
+  .sr-story { padding: 18px; }
+  .sr-story p { font-size: 1.06rem; }
+}

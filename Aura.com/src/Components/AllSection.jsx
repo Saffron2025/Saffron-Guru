@@ -58,6 +58,10 @@ const footerLinks = [
   label: "Veterans Special Offer",
   path: "/veterans",
 },
+  {
+    label: "Silver Shield for Seniors",
+    path: "/seniors",
+  },
   
   {
     label: "Live Support",
@@ -500,7 +504,24 @@ const AuraFooter = () => {
                   link.live ? "live-support-link" : ""
                 }`}
               >
-                {link.label === "Veterans Special Offer" ? (
+                {link.label === "Silver Shield for Seniors" ? (
+  <>
+    <span className="seniors-footer-shield" aria-hidden="true">
+      <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sgSilver" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#f8fafc" />
+            <stop offset="0.5" stopColor="#cbd5e1" />
+            <stop offset="1" stopColor="#94a3b8" />
+          </linearGradient>
+        </defs>
+        <path d="M12 1 2 5v8c0 6.5 4.3 11.6 10 14 5.7-2.4 10-7.5 10-14V5L12 1z" fill="url(#sgSilver)" stroke="#64748b" strokeWidth="1" />
+        <path d="m7.5 13.8 3 3 6-6.3" fill="none" stroke="#1e3a8a" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
+    <span>Silver Shield for Seniors</span>
+  </>
+) : link.label === "Veterans Special Offer" ? (
   <>
     <span className="veterans-footer-flag" aria-hidden="true">
       <svg

@@ -126,6 +126,7 @@ export const PAGES = {
   "/live-support": { title: "Live Tech Support & Online Protection", description: "Talk to a real technician today. Saffron Guru live tech support for computers, phones, printers and online safety, 7 days a week." },
   "/blog": { title: "Online Safety Blog", description: "Easy-to-read guides from Saffron Guru on avoiding scams, fake tech support, phishing, identity theft and fraud, written for seniors and families." },
   "/article": { title: "Online Safety Hub: Scam Alerts and Guides", description: "The latest scam alerts and protection guides from Saffron Guru: crypto scams, call spoofing, fake delivery and refund scams, tech support scams and more." },
+  "/seniors": { title: "Tech Support for Seniors: Silver Shield Senior Pricing", description: "Patient tech support and scam protection for seniors 60+. Help with computers, phones, Wi-Fi and email, monthly check-ins, real people 7 days a week, and senior pricing. Call +1 844-313-4987." },
   "/scam-popup-blocker": { title: "Scam Pop-up & Ad Blocker for Chrome and Edge", description: "Block fake virus warnings, scam pop-ups, phishing and malware sites, look-alike websites, crypto miners, ads and trackers, and get a clear warning before remote access sites. By Saffron Guru." },
   "/veterans": { title: "Tech Support for Veterans", description: "Special tech support and online protection offer for veterans and their families from Saffron Guru." },
   "/why-human-support": {

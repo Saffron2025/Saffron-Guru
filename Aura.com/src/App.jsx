@@ -10,6 +10,7 @@ import OurStory from "./Pages/OurStory";
 import WhyHumanSupport from "./Pages/WhyHumanSupport";
 import Veterans from "./Pages/Veterans";
 import ScamBlocker from "./Pages/ScamBlocker";
+import Seniors from "./Pages/Seniors";
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
 import { RouteMeta } from "./utils/pageMeta";
@@ -563,6 +564,11 @@ const App = () => {
                 <WhyHumanSupport />
               </Layout>
             }
+          />
+
+          <Route
+            path="/seniors"
+            element={<Layout><Seniors /></Layout>}
           />
 
           <Route
