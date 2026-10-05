@@ -241,6 +241,10 @@
       "dest": "/_p/scam-popup-blocker.html"
     },
     {
+      "src": "^/seniors/?$",
+      "dest": "/_p/seniors.html"
+    },
+    {
       "src": "^/product/1/?$",
       "dest": "/_p/product__1.html"
     },
