@@ -9,6 +9,7 @@ import {
 import OurStory from "./Pages/OurStory";
 import WhyHumanSupport from "./Pages/WhyHumanSupport";
 import Veterans from "./Pages/Veterans";
+import ScamBlocker from "./Pages/ScamBlocker";
 import keepAlive from "./utils/keepalive";
 import ScrollToTop from "./Components/ScrollToTop";
 import { RouteMeta } from "./utils/pageMeta";
@@ -562,6 +563,11 @@ const App = () => {
                 <WhyHumanSupport />
               </Layout>
             }
+          />
+
+          <Route
+            path="/scam-popup-blocker"
+            element={<Layout><ScamBlocker /></Layout>}
           />
 
           <Route

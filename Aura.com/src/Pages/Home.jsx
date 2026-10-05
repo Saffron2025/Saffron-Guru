@@ -14,6 +14,7 @@ import CookieConsent from '../Components/CookieConsent';
 import AppNavbar from '../Components/AppNavbar';
 import Footer from '../Components/Footer';
 import OurPromise from '../Components/OurPromise';
+import ScamBlockerBand from '../Components/ScamBlockerBand';
 
 import {
   Clock,
@@ -426,6 +427,7 @@ const Hero = () => {
 
 
       <OurPromise />
+      <ScamBlockerBand />
 
       {/* =========================================
           PARENTAL SECTION

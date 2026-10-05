@@ -126,6 +126,7 @@ export const PAGES = {
   "/live-support": { title: "Live Tech Support & Online Protection", description: "Talk to a real technician today. Saffron Guru live tech support for computers, phones, printers and online safety, 7 days a week." },
   "/blog": { title: "Online Safety Blog", description: "Easy-to-read guides from Saffron Guru on avoiding scams, fake tech support, phishing, identity theft and fraud, written for seniors and families." },
   "/article": { title: "Online Safety Hub: Scam Alerts and Guides", description: "The latest scam alerts and protection guides from Saffron Guru: crypto scams, call spoofing, fake delivery and refund scams, tech support scams and more." },
+  "/scam-popup-blocker": { title: "Scam Pop-up & Ad Blocker for Chrome and Edge", description: "Block fake virus warnings, scam pop-ups, look-alike websites, ads and trackers, and get a clear warning before remote access sites. By Saffron Guru." },
   "/veterans": { title: "Tech Support for Veterans", description: "Special tech support and online protection offer for veterans and their families from Saffron Guru." },
   "/why-human-support": {
     title: "Scammers Don't Hack Computers. They Hack Trust.",
