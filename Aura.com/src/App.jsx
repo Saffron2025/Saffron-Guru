@@ -69,15 +69,27 @@ const ScrollToHashElement = () => {
 
   useEffect(() => {
     if (hash) {
-      const element = document.getElementById(
-        hash.replace("#", "")
+      const id = hash.replace("#", "");
+      const go = (behavior) => {
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView({ behavior });
+      };
+      go("smooth");
+      /* Images above the section can load late and push it down, so settle the position again */
+      const timers = [900, 2000, 3500].map((ms) =>
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el && Math.abs(el.getBoundingClientRect().top) > 120) go("auto");
+        }, ms)
       );
-
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-        });
-      }
+      const stop = () => timers.forEach(clearTimeout);
+      window.addEventListener("wheel", stop, { once: true, passive: true });
+      window.addEventListener("touchstart", stop, { once: true, passive: true });
+      return () => {
+        stop();
+        window.removeEventListener("wheel", stop);
+        window.removeEventListener("touchstart", stop);
+      };
     }
   }, [hash]);
 
