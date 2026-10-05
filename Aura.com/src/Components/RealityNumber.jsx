@@ -121,9 +121,17 @@ const RealityNumber = () => {
             <span>🎯</span>
 
             <div>
-              <strong>Scammers target people</strong>
+              <strong>3 in 4 Americans</strong>
               <small>
-                not just computers. Most scams work by fooling someone, not by breaking in.
+                have experienced an online scam or attack (
+                <a
+                  href="https://www.pewresearch.org/internet/2025/07/31/online-scams-and-attacks-in-america-today/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pew Research, 2025
+                </a>
+                ).
               </small>
             </div>
           </div>
