@@ -138,6 +138,26 @@ const RealityNumber = () => {
 
 
           <div className="reality-mini-highlight">
+            <span>💸</span>
+
+            <div>
+              <strong>1 in 5 Americans</strong>
+              <small>
+                have lost money to an online scam (
+                <a
+                  href="https://www.pewresearch.org/internet/2025/07/31/online-scams-and-attacks-in-america-today/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pew Research, 2025
+                </a>
+                ).
+              </small>
+            </div>
+          </div>
+
+
+          <div className="reality-mini-highlight">
             <span>🛡️</span>
 
             <div>

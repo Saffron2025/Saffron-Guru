@@ -7262,3 +7262,6 @@
 }
 
 .reality-mini-highlight a { color: #7dd3fc; font-weight: 700; }
+
+.reality-bottom-highlights { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 991.98px) { .reality-bottom-highlights { grid-template-columns: 1fr; } }
