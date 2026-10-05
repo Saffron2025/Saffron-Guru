@@ -123,9 +123,9 @@ const About = () => {
               <h2 className="about-heading">What We Offer Today</h2>
               <ul className="about-list">
                 <li>🛡️ NetHaven™ – AI-powered parental control tool</li>
-                <li>🔐 DefendMe PRO™ – Total Scam & Security Shield</li>
+                <li>🔐 <strong>DefendMe PRO™ Security Solutions:</strong> complete online protection with built-in scam blocking. <em>Security that goes way beyond antivirus.</em></li>
                 <li>💡 Personal Guidance – Stay ahead of scams with expert tips</li>
-                <li>🤝 Trusted IT Support – For nearly a decade of dependable care</li>
+                <li>🤝 Trusted IT Support – 10 years of dependable care</li>
               </ul>
               <p className="about-text">
                 At Saffron Guru, protection isn’t just a service—it’s a promise.
