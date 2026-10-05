@@ -15,6 +15,7 @@ import SlowDevicesFix from '../Components/SlowDevice.jsx'
 import MonthlyHealthCheck from '../Components/MonthlyDeviceSupport.jsx'
 import TechTeamBanner from '../Components/YourPersonalTech.jsx'
 import WhyChooseSafeSupport from '../Components/WhyChooseSafeSupportAssist.jsx'
+import HomeOnSiteAndBuying from '../Components/HomeOnSiteAndBuying.jsx'
 import {
   ServiceTiles,
   ExtraServices,
@@ -166,6 +167,8 @@ const ForYourHome = () => {
       <Anchor id="home-backup"><DataBackupSupport /></Anchor>
       <Anchor id="home-slow"><SlowDevicesFix /></Anchor>
       <Anchor id="home-checkup"><MonthlyHealthCheck /></Anchor>
+
+      <HomeOnSiteAndBuying />
 
       <ExtraServices
         title="More Ways"

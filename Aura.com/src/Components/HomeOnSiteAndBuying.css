@@ -1,0 +1,50 @@
+.sg-hb {
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+  color: #0c4a6e;
+  padding: 64px 16px;
+  scroll-margin-top: 90px;
+}
+.sg-hb + .sg-hb { background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 100%); border-top: 1px solid #bae6fd; }
+.sg-hb-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.sg-hb-eyebrow {
+  display: inline-block; margin: 0 0 14px; padding: 6px 16px; border-radius: 999px;
+  background: #bae6fd; color: #0369a1;
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.sg-hb-title { color: #082f49; font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 800; line-height: 1.2; margin: 0 0 12px; }
+.sg-hb-sub { color: #0369a1; font-size: clamp(1.1rem, 2.2vw, 1.3rem); font-weight: 600; margin: 0 0 26px; }
+.sg-hb-story {
+  max-width: 780px; margin: 0 auto 26px; padding: 22px 26px;
+  border-left: 5px solid #0ea5e9; border-radius: 12px; background: #fff;
+  box-shadow: 0 8px 24px rgba(3, 105, 161, 0.10);
+  color: #0f172a; font-size: 1.15rem; line-height: 1.7; text-align: left;
+}
+.sg-hb-story p { margin: 0 0 12px; }
+.sg-hb-story p:last-child { margin: 0; }
+.sg-hb-points {
+  list-style: none; margin: 0 auto 28px; padding: 0; max-width: 780px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; text-align: left;
+}
+.sg-hb-points li {
+  display: flex; gap: 12px; align-items: flex-start; padding: 16px;
+  background: #fff; border: 1px solid #bae6fd; border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(3, 105, 161, 0.08);
+}
+.sg-hb-points strong { color: #082f49; font-size: 1.02rem; line-height: 1.45; font-weight: 700; }
+.sg-hb-icon {
+  flex: 0 0 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+  border-radius: 10px; background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; font-size: 1.1rem;
+}
+.sg-hb-close { color: #082f49; font-size: clamp(1.2rem, 2.5vw, 1.5rem); margin: 0 0 22px; }
+.sg-hb-close strong { color: #0284c7; }
+.sg-hb-call {
+  display: inline-flex; align-items: center; gap: 10px; padding: 15px 32px; border-radius: 999px;
+  background: #0284c7; color: #fff !important; font-size: 1.2rem; font-weight: 800; text-decoration: none;
+  box-shadow: 0 10px 28px rgba(2, 132, 199, 0.30);
+}
+.sg-hb-call:hover { background: #0369a1; }
+@media (max-width: 767px) {
+  .sg-hb { padding: 48px 16px; }
+  .sg-hb-points { grid-template-columns: 1fr; }
+  .sg-hb-story { font-size: 1.05rem; padding: 18px; }
+}
