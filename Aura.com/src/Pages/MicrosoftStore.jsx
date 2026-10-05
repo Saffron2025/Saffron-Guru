@@ -135,7 +135,7 @@ const MicrosoftStore = () => {
                   If you’re ever unsure, speak to a real tech expert or use our <strong>DefendMe PRO™</strong> service to block scams instantly.
                 </p>
                 <Link to="/contact" className="cta-button">
-                  💬 Talk to Our Scam Protection Experts Today
+                  💬 Talk to a Scam Protection Expert
                 </Link>
               </section>
             </Col>
