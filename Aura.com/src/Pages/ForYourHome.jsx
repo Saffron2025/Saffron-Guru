@@ -116,7 +116,7 @@ const ForYourHome = () => {
 
           <div className="tech-banner-floating-image-ultimate">
             <img
-              src="/Hero/saffron-guru-home-tech-support-seniors.webp"
+              src="/Hero/saffron-guru-home-tech-support.webp"
               alt="Saffron Guru home tech support: a smiling senior at home on a video call with a friendly Saffron Guru technician, with his printer, router, phone and tablet nearby"
               width="1376"
               height="768"
