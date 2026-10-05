@@ -88,3 +88,8 @@
     padding: 2rem 1.4rem;
   }
 }
+
+.health-check-card .service-photo {
+  display: block; width: 100%; max-width: 560px; height: auto;
+  margin: 0 auto 1.25rem; border-radius: 14px;
+}

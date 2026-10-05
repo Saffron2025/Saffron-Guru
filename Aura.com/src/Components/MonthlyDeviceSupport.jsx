@@ -5,7 +5,15 @@ const MonthlyHealthCheck = () => {
   return (
     <section className="health-check-wrapper">
       <div className="health-check-card">
-        <div className="health-check-icon">🧑‍⚕️</div>
+        <img
+          className="service-photo"
+          src="/Services/saffron-guru-monthly-device-health-checkup.webp"
+          alt="Saffron Guru monthly device health checkup: updates, security, storage and backups checked by a real technician"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
         <h3 className="health-check-title">✅ Monthly Device Health Checkups & Support</h3>
         <p className="health-check-description">
           Comprehensive monthly service to keep your computer, laptop, smartphone, tablet, and printer running at peak performance.
