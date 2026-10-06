@@ -165,10 +165,9 @@
   <url>
     <loc>https://www.saffronguru.com/microsoft-store</loc>
     <lastmod>2026-10-04</lastmod>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2016-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2019-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2021-professional-plus.webp</image:loc><image:title>Saffron Guru Microsoft Office 2021 Professional Plus</image:title></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2024-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home 2024</image:title></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-and-business-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home and Business 2024</image:title></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-365-family.webp</image:loc><image:title>Saffron Guru Microsoft 365 Family</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-project-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Project 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Visio 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
@@ -188,10 +187,9 @@
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-endpoint-security.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-livesafe.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-total-protection.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2016-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2019-professional-plus.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2021-professional-plus.webp</image:loc><image:title>Saffron Guru Microsoft Office 2021 Professional Plus</image:title></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-2024-professional-plus.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home 2024</image:title></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-and-business-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home and Business 2024</image:title></image:image>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-365-family.webp</image:loc><image:title>Saffron Guru Microsoft 365 Family</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-project-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Project 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Visio 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
@@ -608,33 +606,9 @@
   </url>
 
 
-  <url>
-    <loc>https://www.saffronguru.com/product/1</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://www.saffronguru.com/product/2</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://www.saffronguru.com/product/3</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://www.saffronguru.com/product/4</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/5</loc>
@@ -752,6 +726,27 @@
     <loc>https://www.saffronguru.com/product/21</loc>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-proton-vpn-plus.webp</image:loc><image:title>Saffron Guru Proton VPN Plus</image:title></image:image>
     <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/22</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home 2024</image:title></image:image>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/23</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-and-business-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home and Business 2024</image:title></image:image>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/24</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-365-family.webp</image:loc><image:title>Saffron Guru Microsoft 365 Family</image:title></image:image>
+    <lastmod>2026-10-07</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>

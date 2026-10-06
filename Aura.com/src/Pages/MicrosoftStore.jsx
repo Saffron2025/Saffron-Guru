@@ -6,10 +6,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const products = [
-  { id: 1, name: "Office 2016 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp", price: "$99.99", desc: "Classic productivity suite trusted by millions." },
-  { id: 2, name: "Office 2019 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp", price: "$129.99", desc: "Modern productivity apps with cloud sync." },
-  { id: 3, name: "Office 2021 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "A proven one-time Office license." },
-  { id: 4, name: "Office 2024 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", price: "$199.99", desc: "The newest one-time Office license." },
+  { id: 22, name: "Microsoft Office Home 2024", img: "/Products/saffron-guru-microsoft-office-home-2024.webp", price: "$179.99", desc: "Word, Excel, PowerPoint and OneNote. Yours to keep." },
+  { id: 23, name: "Microsoft Office Home & Business 2024", img: "/Products/saffron-guru-microsoft-office-home-and-business-2024.webp", price: "$249.99", desc: "Adds Outlook. Licensed for business use." },
+  { id: 24, name: "Microsoft 365 Family", img: "/Products/saffron-guru-microsoft-365-family.webp", price: "$129.99/year", desc: "Office for up to 6 people, 1 TB storage each." },
   { id: 5, name: "Project 2024 Professional", img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", price: "$179.99", desc: "Plan, schedule and track your projects." },
   { id: 6, name: "Visio 2024 Professional", img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", price: "$159.99", desc: "Professional diagrams, flowcharts and network maps." },
   { id: 7, name: "Windows 11 Home", img: "/Products/saffron-guru-microsoft-windows-11-home.webp", price: "$89.99", desc: "For everyday use with latest features." },
@@ -36,7 +35,7 @@ const MicrosoftStore = () => {
       <header className="store-hero">
         <h1 className="store-title-hero">🛍️ Microsoft Store – Trusted Digital Licenses</h1>
         <p className="store-subtitle">
-          Get genuine Microsoft products with lifetime licenses, no hidden charges, and instant digital delivery.
+          Microsoft Office, Microsoft 365, Windows and Windows Server, with instant digital delivery, no hidden charges, and real people to help you set everything up.
         </p>
       </header>
 

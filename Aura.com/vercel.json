@@ -246,19 +246,43 @@
     },
     {
       "src": "^/product/1/?$",
-      "dest": "/_p/product__1.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/22"
+      }
     },
     {
       "src": "^/product/2/?$",
-      "dest": "/_p/product__2.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/22"
+      }
     },
     {
       "src": "^/product/3/?$",
-      "dest": "/_p/product__3.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/22"
+      }
     },
     {
       "src": "^/product/4/?$",
-      "dest": "/_p/product__4.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/23"
+      }
+    },
+    {
+      "src": "^/product/22/?$",
+      "dest": "/_p/product__22.html"
+    },
+    {
+      "src": "^/product/23/?$",
+      "dest": "/_p/product__23.html"
+    },
+    {
+      "src": "^/product/24/?$",
+      "dest": "/_p/product__24.html"
     },
     {
       "src": "^/product/5/?$",
@@ -686,31 +710,31 @@
       }
     },
     {
-      "src": "^/Products/microsoft-office-2016-professional-plus\\.webp$",
+      "src": "^/Products/(?:saffron-guru-)?microsoft-office-2016-professional-plus\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {
-      "src": "^/Products/microsoft-office-2019-professional-plus\\.webp$",
+      "src": "^/Products/(?:saffron-guru-)?microsoft-office-2019-professional-plus\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {
-      "src": "^/Products/microsoft-office-2021-professional-plus\\.webp$",
+      "src": "^/Products/(?:saffron-guru-)?microsoft-office-2021-professional-plus\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {
-      "src": "^/Products/microsoft-office-2024-professional-plus\\.webp$",
+      "src": "^/Products/(?:saffron-guru-)?microsoft-office-2024-professional-plus\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-and-business-2024.webp"
       }
     },
     {
@@ -1228,28 +1252,28 @@
       "src": "^/Products/Office(?: |%20)2019(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {
       "src": "^/Products/Office(?: |%20)2021(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {
       "src": "^/Products/Office(?: |%20)2024(?: |%20)Pro(?: |%20)Plus\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-and-business-2024.webp"
       }
     },
     {
       "src": "^/Products/Office2016ProPlus\\.WebP$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp"
+        "Location": "/Products/saffron-guru-microsoft-office-home-2024.webp"
       }
     },
     {

@@ -19,7 +19,8 @@ const ProductDetail = () => {
   }
 
   /* Microsoft products vs. security products, so the "more products" row and the back link stay in the right store */
-  const isSecurity = (pid) => pid >= 11 && pid !== 18;
+  const SECURITY_IDS = [11, 12, 13, 14, 15, 16, 17, 19, 20, 21];
+  const isSecurity = (pid) => SECURITY_IDS.includes(pid);
   const inSecurity = isSecurity(product.id);
   const storePath = inSecurity ? "/internet-security" : "/microsoft-store";
   const related = products.filter((p) => p.id !== product.id && isSecurity(p.id) === inSecurity);
@@ -64,7 +65,7 @@ const ProductDetail = () => {
             <ul className="detail-highlights">
               <li>✅ Genuine License & Trusted Vendor</li>
               <li>✅ Instant Digital Delivery</li>
-              <li>✅ {inSecurity ? "Yearly Subscription — Prices Set by the Software Company" : "One-time Payment — No Hidden Charges"}</li>
+              <li>✅ {inSecurity ? "Yearly Subscription — Prices Set by the Software Company" : product.subscription ? "Yearly Subscription — Microsoft's Official Price" : "One-time Payment — No Hidden Charges"}</li>
               <li>✅ Works Across Supported Platforms</li>
               <li>✅ Technical Support for Saffron Guru Clients, 7 Days a Week</li>
             </ul>

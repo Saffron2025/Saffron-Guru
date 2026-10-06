@@ -1,137 +1,87 @@
 export const products = [
   // --- Microsoft Store Products (1–10) ---
-{ 
-  id: 1, 
-  name: "Office 2016 Pro Plus", 
-  img: "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp", 
-  price: "$99.99", 
-  desc: "Classic productivity suite trusted by millions.",
+{
+  id: 22,
+  name: "Microsoft Office Home 2024",
+  img: "/Products/saffron-guru-microsoft-office-home-2024.webp",
+  price: "$179.99",
+  desc: "Word, Excel, PowerPoint and OneNote. Yours to keep.",
   longDesc: `
-Office 2016 Pro Plus is a **classic, offline productivity suite** that has become a trusted standard for professionals, students, and businesses worldwide. It provides powerful versions of Microsoft’s most popular applications, including **Word, Excel, PowerPoint, Outlook, Access, and Publisher**, all optimized for long-term use without recurring subscription fees.
-
-🔹 **Core Features**
-- **Word 2016:** Advanced document creation with smart editing and formatting tools.  
-- **Excel 2016:** Data analysis, formulas, pivot tables, and new chart types for better insights.  
-- **PowerPoint 2016:** Create engaging presentations with transitions, animations, and design tools.  
-- **Outlook 2016:** Manage emails, calendars, and contacts with improved speed and organization.  
-- **Access 2016:** Build and manage databases efficiently.  
-- **Publisher 2016:** Design professional publications and marketing materials.  
-
-🔹 **Key Benefits**
-- **One-Time Purchase:** Lifetime license with no ongoing subscription costs.  
-- **Offline Reliability:** Work without needing constant internet connectivity.  
-- **Improved Stability & Speed:** Optimized performance compared to earlier versions.  
-- **Compatibility:** Supports a wide range of Windows operating systems.  
-- **Familiar Interface:** Easy-to-use ribbon design for users accustomed to older versions.  
-
-🔹 **Who Should Choose This?**
-- **Students & Educators:** Ideal for assignments, research, and learning.  
-- **Professionals:** Suitable for business reports, financial modeling, and presentations.  
-- **Small Businesses:** Perfect for companies seeking reliable tools without recurring expenses.  
-- **Home Users:** Great for everyday tasks like budgeting, emails, and projects.  
-
-✅ **Conclusion:**  
-Microsoft Office 2016 Pro Plus remains a **reliable, cost-effective choice** for anyone who needs powerful productivity tools with a one-time purchase. It offers all the essential Office apps in a stable, familiar environment, making it a top pick for users who want efficiency without ongoing costs.
-`
-},
-
-{ 
-  id: 2, 
-  name: "Office 2019 Pro Plus", 
-  img: "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp", 
-  price: "$129.99", 
-  desc: "Modern productivity apps with cloud sync.",
-  longDesc: `
-Office 2019 Pro Plus is a **modern, one-time purchase productivity suite** designed for individuals, students, and businesses who want advanced features without relying on a Microsoft 365 subscription. It offers all the core Office apps — **Word, Excel, PowerPoint, Outlook, Access, and Publisher** — with upgraded tools to improve performance, creativity, and collaboration.
-
-🔹 **Core Features**
-- **Word 2019:** Smarter document editing with enhanced translation, focus mode, and improved learning tools.  
-- **Excel 2019:** Advanced data analysis with new functions (TEXTJOIN, CONCAT, IFS), better data visualization, and new charts like Funnel & Map.  
-- **PowerPoint 2019:** Stunning presentations with **Morph transitions** and **Zoom navigation** for cinematic storytelling.  
-- **Outlook 2019:** Focused inbox, updated contact cards, and streamlined email/calendar management.  
-- **Access & Publisher 2019:** Reliable tools for database management and professional publication design.  
-
-🔹 **Key Benefits**
-- **One-Time Purchase:** No subscription fees — lifetime license.  
-- **Cloud Integration:** Improved cloud saving and file sharing via OneDrive.  
-- **Better Inking Features:** Enhanced pen, tilt effects, and pressure sensitivity for touch devices.  
-- **Improved Security:** Latest patches and enterprise-grade protection for sensitive files.  
-- **Stable Performance:** Optimized for Windows 10 and Windows 11 systems.  
-
-🔹 **Who Should Choose This?**
-- **Small & Medium Businesses:** Great for companies seeking modern tools without recurring costs.  
-- **Data Analysts & Professionals:** Excel’s advanced data features make it ideal for financial and analytical work.  
-- **Students & Educators:** Perfect for learning, research, and modern classroom needs.  
-- **Creative Presenters:** PowerPoint Morph + Zoom offers a unique, engaging presentation experience.  
-
-✅ **Conclusion:**  
-Office 2019 Pro Plus combines **modern upgrades, cloud integration, and one-time licensing** into a productivity suite that delivers power, flexibility, and security. It’s perfect for professionals and businesses looking for advanced Office features without the commitment of a subscription.
-`
-},
-
-{ 
-  id: 3, 
-  name: "Office 2021 Pro Plus", 
-  img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", 
-  price: "$149.99", 
-  desc: "A proven one-time Office license.",
-  longDesc: `
-Office 2021 Pro Plus is Microsoft’s **latest perpetual license** productivity suite, offering advanced tools for **modern collaboration, data analysis, and secure work management**. It’s built for individuals, students, and businesses who want the newest features of Office with a one-time payment — no subscription required.
-
-🔹 **Core Applications**
-- **Word 2021:** Enhanced collaboration, dark mode, updated commenting, and a refreshed modern design.  
-- **Excel 2021:** New dynamic arrays, XLOOKUP, LET function, and improved performance for handling large datasets.  
-- **PowerPoint 2021:** Advanced features like **Presenter Coach**, improved **Morph transitions**, and **Ink Replay** for engaging presentations.  
-- **Outlook 2021:** Streamlined inbox, translator integration, and improved calendar management for hybrid work.  
-- **Access & Publisher 2021:** Tools for building databases and professional publications with updated templates.  
-
-🔹 **Key Benefits**
-- **Real-Time Co-Authoring:** Multiple users can edit documents simultaneously.  
-- **One-Time Purchase:** Lifetime license without monthly or annual subscription fees.  
-- **Enhanced Collaboration:** Integrated with OneDrive and Microsoft Teams for seamless teamwork.  
-- **Improved Security:** Built-in enterprise-grade protection and frequent updates.  
-- **Optimized for Windows 11:** Fully compatible and designed to take advantage of the latest OS features.  
-
-🔹 **Who Should Choose This?**
-- **Students & Teachers:** Ideal for coursework, research, and presentations with modern collaboration tools.  
-- **Business Professionals:** Perfect for data analysis, financial reporting, and corporate presentations.  
-- **Remote & Hybrid Workers:** Features like real-time collaboration and cloud integration support flexible work models.  
-- **Long-Term Users:** A great choice for those who want the **latest version without ongoing subscription fees**.  
-
-✅ **Conclusion:**  
-Office 2021 Pro Plus is the **best balance of modern features and affordability**, combining real-time collaboration, improved security, and advanced tools — all under a lifetime license. It’s the perfect productivity suite for students, professionals, and businesses looking for the latest Office experience without subscription costs.
-`
-},
-
- { 
-  id: 4, 
-  name: "Office 2024 Pro Plus", 
-  img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", 
-  price: "$199.99", 
-  desc: "The newest one-time Office license.",
-  longDesc: `
-Microsoft Office 2024 Professional Plus is the newest one-time-purchase version of Office. It's installed on your Windows PC and is yours to keep, with **no subscription**.
+Microsoft Office Home 2024 is the current one-time-purchase version of Office for home use. You pay once and it's yours to keep on one Windows PC or Mac, with **no subscription**.
 
 🔹 **Apps included**
-- **Word, Excel, PowerPoint, Outlook, OneNote and Access**  
+- **Word:** letters, documents and recipes.  
+- **Excel:** budgets, lists and household records.  
+- **PowerPoint:** slideshows and presentations.  
+- **OneNote:** a digital notebook for notes, ideas and to-do lists.  
 
-🔹 **What's new in Office 2024**
-- **New look:** a cleaner, more consistent design across all the apps.  
-- **Accessibility ribbon:** easier tools to make your documents, emails and slides accessible, in Word, Excel, PowerPoint and Outlook.  
-- **Word:** "Like" reactions on comments, and Word reopens your documents after an unexpected shutdown.  
-- **Excel:** 14 new text and array functions, charts that update automatically with your data, pictures inside cells with the IMAGE function, and faster performance with many workbooks open.  
-- **PowerPoint:** show your live camera feed on a slide (Cameo), record a presentation as a video, and add closed captions to video and audio.  
-- **Outlook:** better search, and an option to shorten meetings automatically so you get breaks between calls.  
-- **Better file support:** works with OpenDocument (ODF 1.4) files.  
+Outlook is **not** included. If you use Outlook for your email, choose **Office Home & Business 2024** instead.
 
 🔹 **License details**
-- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
-- Works on **Windows 10 and Windows 11**.  
+- **One-time purchase:** $179.99, Microsoft's official price.  
+- For **1 PC or Mac**, for one person, for home use.  
+- Works on **Windows 10, Windows 11 and recent versions of macOS**.  
 - Microsoft supports Office 2024 with security updates until **October 2029**.  
-- Office 2024 does **not** include Copilot (Microsoft's AI assistant); that's only in a Microsoft 365 subscription.  
 
-✅ **Need help installing?**  
-Our technicians can install and activate Office 2024 for you, move your files and email over, and stay on the line until everything works.
+✅ **Our support goes further than installation**  
+Microsoft's own support helps with the product. Saffron Guru clients get help with the real everyday problems: a document you can't find, a file that won't open, Excel suddenly acting strange, a lost toolbar, printing that comes out wrong. Call us 7 days a week and a real person helps you fix it.
+`
+},
+
+{
+  id: 23,
+  name: "Microsoft Office Home & Business 2024",
+  img: "/Products/saffron-guru-microsoft-office-home-and-business-2024.webp",
+  price: "$249.99",
+  desc: "Word, Excel, PowerPoint, OneNote and Outlook, for home or business.",
+  longDesc: `
+Microsoft Office Home & Business 2024 is the current one-time-purchase version of Office that includes **Outlook** and is **licensed for business use**. You pay once and it's yours to keep on one Windows PC or Mac, with **no subscription**.
+
+🔹 **Apps included**
+- **Word, Excel and PowerPoint:** documents, spreadsheets and presentations.  
+- **Outlook:** email, calendar and contacts in one place.  
+- **OneNote:** a digital notebook for notes and ideas.  
+
+🔹 **Who it's for**
+- **Small businesses, home offices and freelancers:** it's approved for commercial use.  
+- **Anyone who uses Outlook** for email at home.  
+
+🔹 **License details**
+- **One-time purchase:** $249.99, Microsoft's official price.  
+- For **1 PC or Mac**.  
+- Works on **Windows 10, Windows 11 and recent versions of macOS**.  
+- Microsoft supports Office 2024 with security updates until **October 2029**.  
+
+✅ **Our support goes further than installation**  
+Saffron Guru clients get help with the real everyday problems: emails that stopped arriving, a missing Outlook folder, a lost file, Excel behaving strangely, setting up your business email. Call us 7 days a week and a real person helps you fix it.
+`
+},
+
+{
+  id: 24,
+  name: "Microsoft 365 Family",
+  img: "/Products/saffron-guru-microsoft-365-family.webp",
+  price: "$129.99/year",
+  subscription: true,
+  desc: "Office for up to 6 people, with 1 TB of cloud storage each.",
+  longDesc: `
+Microsoft 365 Family is Microsoft's yearly subscription for households. One subscription covers **up to 6 people**, and everyone always has the **latest version** of the Office apps, so it never goes out of support.
+
+🔹 **What's included**
+- **Word, Excel, PowerPoint, Outlook and OneNote** on PCs, Macs, phones and tablets.  
+- **1 TB of OneDrive cloud storage per person** (up to 6 TB in total), so family photos and files are backed up safely.  
+- **Each person can sign in on up to 5 devices** at the same time.  
+- **Microsoft Defender** security app.  
+- **Microsoft Copilot** AI features (for the subscription owner).  
+- Each person has their own private account. Nobody sees anyone else's files.  
+
+🔹 **Official Microsoft pricing**
+- **$129.99 a year**, or $12.99 a month.  
+- Renews each year at Microsoft's price. You can cancel any time from your Microsoft account.  
+- We'll help you buy it directly from Microsoft, so it's always in your own name.  
+
+✅ **Our support goes further than installation**  
+We set it up on every device in the family, back up your photos to OneDrive, and help whenever something goes wrong: a lost file, a full storage warning, a document that won't open, Outlook acting up. Call us 7 days a week and a real person helps you fix it.
 `
 },
 
