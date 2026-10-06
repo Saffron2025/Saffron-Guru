@@ -709,10 +709,10 @@
       }
     },
     {
-      "src": "^/Products/microsoft-visio-2019-2021-professional\\.webp$",
+      "src": "^/Products/(?:saffron-guru-)?microsoft-visio-2019-2021-professional\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp"
+        "Location": "/Products/saffron-guru-microsoft-visio-2024-professional.webp"
       }
     },
     {
@@ -1258,7 +1258,7 @@
       "src": "^/Products/Visio(?: |%20)2019(?: |%20)(?: |%20)2021(?: |%20)Pro\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp"
+        "Location": "/Products/saffron-guru-microsoft-visio-2024-professional.webp"
       }
     },
     {

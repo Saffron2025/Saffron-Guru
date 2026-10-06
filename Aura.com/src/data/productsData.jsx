@@ -180,39 +180,35 @@ Project Pro 2019 / 2021 empowers professionals with the tools to **deliver proje
 
 { 
   id: 6, 
-  name: "Visio 2019 / 2021 Pro", 
-  img: "/Products/saffron-guru-microsoft-visio-2019-2021-professional.webp", 
+  name: "Visio 2024 Professional", 
+  img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", 
   price: "$159.99", 
-  desc: "Powerful diagramming and flowcharts.",
+  desc: "Professional diagrams, flowcharts and network maps.",
   longDesc: `
-Microsoft Visio 2019 / 2021 Pro is a **professional diagramming and visualization tool** designed to help businesses, engineers, IT teams, and planners bring complex ideas to life with **clear, structured visuals**. From technical blueprints to organizational workflows, Visio provides **precision, collaboration, and ease-of-use** for all diagramming needs.
+Microsoft Visio Professional 2024 is the newest one-time-purchase version of Visio, Microsoft's program for creating **professional diagrams**: flowcharts, org charts, floor plans, network diagrams, engineering designs and more. It's installed on your Windows PC and is yours to keep, with **no subscription**.
 
-🔹 **Core Features**
-- **Flowcharts & Diagrams:** Create professional diagrams with ready-made templates and shapes.  
-- **Network Maps:** Design IT infrastructure, server layouts, and data flow diagrams.  
-- **Org Charts:** Build organizational charts with drag-and-drop simplicity.  
-- **Engineering & Floor Plans:** Accurate tools for technical designs and layouts.  
-- **Collaboration:** Work simultaneously with colleagues via **Microsoft Teams and SharePoint**.  
+🔹 **What's new in Visio 2024**
+- **More shapes, stencils and templates:** new icons, sticky notes and infographics.  
+- **Professional-only content:** 10+ new Azure stencils, plus more network and software shapes such as Kubernetes shapes and Yourdon-Coad notations.  
+- **Modern look:** the Office 2024 theme and a cleaner, more modern design.  
+- **Search in the title bar:** find commands and shapes faster, the same way as in other Office 2024 apps.  
 
-🔹 **Key Benefits**
-- **Clarity in Communication:** Translate complex information into easy-to-understand visuals.  
-- **Professional Templates:** Access hundreds of pre-built templates to save time.  
-- **Customizability:** Modify shapes, designs, and layouts to suit industry standards.  
-- **Integration:** Seamlessly works with **Excel, PowerPoint, and other Microsoft 365 apps** for data-driven diagrams.  
-- **Collaboration Made Easy:** Real-time co-authoring ensures teams stay aligned.  
+🔹 **What Visio Professional does**
+- **Ready-made templates and shapes** for business, IT, engineering and building plans.  
+- **Flowcharts and org charts:** turn processes and teams into clear visuals.  
+- **Network and IT diagrams:** map servers, networks and software systems.  
+- **Floor plans and engineering drawings:** plan offices, buildings and technical layouts.  
+- **Diagrams linked to data:** connect shapes to data from Excel and other sources, so your diagram updates when the data changes.  
+- **Industry standards:** supports standards like BPMN 2.0 and UML 2.5.  
+- **Comments:** add and reply to comments right on the diagram.  
 
-🔹 **Compatibility & Integration**
-- Runs smoothly on **Windows 10 and 11** with Office suite integration.  
-- Cloud storage integration with **OneDrive and SharePoint**.  
-- File compatibility with earlier Visio versions for smooth upgrades.  
+🔹 **License details**
+- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
+- Works on **Windows 10 and Windows 11**.  
+- Microsoft supports Visio 2024 with security updates until **October 10, 2029**.  
 
-🔹 **Ideal For**
-- **IT Professionals & Engineers:** Create precise technical diagrams and network maps.  
-- **Business Planners & Managers:** Design workflows, timelines, and organizational structures.  
-- **Educators & Researchers:** Illustrate concepts, frameworks, and processes effectively.  
-
-✅ **Conclusion:**  
-Visio 2019 / 2021 Pro is the ultimate tool for anyone who needs to **visualize, plan, and communicate ideas** with clarity. Whether you’re in IT, engineering, business, or education, Visio ensures **professional-grade diagrams** that simplify complexity and enhance productivity.
+✅ **Need help installing?**  
+Our technicians can install and activate Visio Professional 2024 for you, and stay on the line until it's working.
 `
 },
 
