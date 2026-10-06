@@ -81,12 +81,34 @@ for (const [route, page] of Object.entries(data)) {
     ld.push({
       "@context": "https://schema.org", "@type": "Product",
       name: m.title, description, image: [image], brand: { "@type": "Brand", name: /^(Office|Windows|Project|Visio)/.test(m.title) ? "Microsoft" : m.title.split(" ")[0] },
-      offers: { "@type": "Offer", url, priceCurrency: "USD", price, availability: "https://schema.org/InStock", seller: org },
+      offers: {
+        "@type": "Offer", url, priceCurrency: "USD", price, availability: "https://schema.org/InStock", seller: org,
+        // Digital delivery: no shipping cost, delivered the same day (license key by email or phone)
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "USD" },
+          shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" },
+          deliveryTime: {
+            "@type": "ShippingDeliveryTime",
+            handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+            transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "DAY" },
+          },
+        },
+        // Matches the site's Return & Refund Policy: third-party software refundable within 30 days
+        hasMerchantReturnPolicy: {
+          "@type": "MerchantReturnPolicy",
+          applicableCountry: "US",
+          returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+          merchantReturnDays: 30,
+          returnFees: "https://schema.org/FreeReturn",
+          merchantReturnLink: SITE + "/return-policy",
+        },
+      },
     });
   }
   if (route !== "/") {
     const crumbs = [{ "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" }];
-    const sect = route.startsWith("/articles/") ? ["Online Safety Hub", "/article"] : route.startsWith("/blog/") ? ["Blog", "/blog"] : route.startsWith("/product/") ? ["Microsoft Store", "/microsoft-store"] : null;
+    const sect = route.startsWith("/articles/") ? ["Online Safety Hub", "/article"] : route.startsWith("/blog/") ? ["Blog", "/blog"] : route.startsWith("/product/") ? (/^\/product\/(1[1-7]|19|2[01])$/.test(route) ? ["Internet Security", "/internet-security"] : ["Microsoft Store", "/microsoft-store"]) : null;
     if (sect) crumbs.push({ "@type": "ListItem", position: 2, name: sect[0], item: SITE + sect[1] });
     crumbs.push({ "@type": "ListItem", position: crumbs.length + 1, name: title.replace(/ \| Saffron Guru$/, ""), item: url });
     ld.push({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs });
