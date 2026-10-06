@@ -285,6 +285,10 @@
       "dest": "/_p/product__10.html"
     },
     {
+      "src": "^/product/18/?$",
+      "dest": "/_p/product__18.html"
+    },
+    {
       "src": "^/product/11/?$",
       "dest": "/_p/product__11.html"
     },
