@@ -203,7 +203,7 @@ Our technicians can install and activate Visio Professional 2024 for you, and st
   id: 7, 
   name: "Windows 11 Home", 
   img: "/Products/saffron-guru-microsoft-windows-11-home.webp", 
-  price: "$119.99", 
+  price: "$89.99", 
   desc: "For everyday use with latest features.",
   longDesc: `
 Windows 11 Home is built for **everyday users** who want speed, simplicity, and a **beautiful modern interface**. From students to home users, it delivers a smooth experience across work, learning, entertainment, and gaming.  
@@ -238,7 +238,7 @@ Windows 11 Home offers the **perfect balance of performance, security, and style
   id: 8, 
   name: "Windows 11 Pro", 
   img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", 
-  price: "$199.99", 
+  price: "$119.99", 
   desc: "For power users & businesses.",
   longDesc: `
 Windows 11 Pro is designed for **professionals, entrepreneurs, and small businesses** who need more than just a home operating system. It combines all the intuitive features of **Windows 11 Home** with powerful tools for **security, productivity, and remote work**.  
@@ -251,13 +251,13 @@ Windows 11 Pro is designed for **professionals, entrepreneurs, and small busines
 
 🔹 **Productivity & Collaboration**
 - **Snap Layouts & Virtual Desktops:** Manage multiple projects and workflows with ease.  
-- **Microsoft Teams Integration:** Connect with colleagues instantly through chat, video, or calls.  
+- **Hyper-V:** Run virtual machines to test software or older apps safely.  
 - **Domain Join & Azure AD Support:** Easily integrate with workplace networks and cloud-based directories.  
 
 🔹 **Security & Compliance**
 - **Windows Defender & Firewall:** Built-in multi-layer protection against viruses and cyber threats.  
 - **Device Encryption & Secure Boot:** Ensures only trusted software loads at startup.  
-- **Business-Grade Updates:** Access to enterprise-level patches and long-term servicing options.  
+- **Windows Update for Business:** Choose when updates install, so they don't interrupt your work.  
 
 🔹 **Ideal For**
 - **Professionals:** Developers, designers, and consultants who need flexibility and security.  
