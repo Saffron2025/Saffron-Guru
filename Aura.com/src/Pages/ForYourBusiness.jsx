@@ -112,7 +112,7 @@ export default function ForYourBusiness() {
                   src="/Hero/saffron-guru-small-business-it-support.webp"
                   alt="Saffron Guru small business IT support: a remote technician on a video call fixing a frozen Microsoft Excel for an office team"
                   width="1200"
-                  height="800"
+                  height="1200"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
@@ -137,8 +137,10 @@ export default function ForYourBusiness() {
             <Row className="align-items-center flex-md-row-reverse">
               <Col md={6}>
                 <img
-                  src="/Hero/saffron-guru-business-live-tech-support.webp"
-                  alt="Saffron Guru live tech support for small businesses"
+                  src="/Hero/saffron-guru-managed-it-support-productive-office.webp"
+                  alt="Saffron Guru managed IT support for small business: a productive office team with every system running smoothly"
+                  width="1200"
+                  height="1200"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
