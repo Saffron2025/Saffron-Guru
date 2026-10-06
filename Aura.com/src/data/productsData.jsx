@@ -108,7 +108,7 @@ Office 2021 Pro Plus is the **best balance of modern features and affordability*
   name: "Office 2024 Pro Plus", 
   img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", 
   price: "$199.99", 
-  desc: "Upcoming future-ready Office tools.",
+  desc: "The newest one-time Office license.",
   longDesc: `
 Office 2024 Pro Plus is Microsoft’s **next-generation productivity suite**, designed with **AI-powered innovation, cloud intelligence, and enhanced offline tools** to meet the needs of modern work and study. It’s the perfect solution for individuals and businesses seeking **cutting-edge features with a lifetime license**.
 
@@ -288,8 +288,8 @@ Windows 11 Pro is a **reliable, business-ready OS** that balances **performance,
 
 { 
   id: 9, 
-  name: "Windows Server 2019 Standard / Datacenter", 
-  img: "/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter.webp", 
+  name: "Windows Server 2019 Standard", 
+  img: "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp", 
   price: "$399.99", 
   desc: "Reliable server OS for enterprise.",
   longDesc: `
@@ -316,18 +316,18 @@ Windows Server 2019 is a **powerful, enterprise-ready server operating system** 
 - **Hybrid Cloud Users:** Businesses aiming to integrate seamlessly with Azure services.  
 
 ✅ **Conclusion:**  
-Windows Server 2019 Standard / Datacenter delivers **unmatched reliability, security, and scalability**. Trusted worldwide, it’s the **backbone for modern IT infrastructure**, supporting everything from small business needs to large-scale enterprise data centers.
+Windows Server 2019 Standard delivers **unmatched reliability, security, and scalability**. Trusted worldwide, it’s the **backbone for modern IT infrastructure**, supporting everything from small business needs to large-scale enterprise data centers.
 `
 },
 
 { 
   id: 10, 
-  name: "Windows Server 2022 Standard / Datacenter", 
-  img: "/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter.webp", 
+  name: "Windows Server 2022 Standard", 
+  img: "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp", 
   price: "$499.99", 
-  desc: "Next-gen secure server platform.",
+  desc: "Secure, proven server platform.",
   longDesc: `
-Windows Server 2022 is Microsoft’s **latest, next-generation server operating system**, designed to power **modern enterprises and datacenters** with enhanced security, cloud integration, and performance improvements. It brings the reliability of Windows Server with cutting-edge innovations to meet today’s IT challenges.  
+Windows Server 2022 is a **proven, secure server operating system**, designed to power **modern enterprises and datacenters** with enhanced security, cloud integration, and performance improvements. It brings the reliability of Windows Server with cutting-edge innovations to meet today’s IT challenges.  
 
 🔹 **Key Features**
 - **Secured-Core Server:** Hardware root-of-trust, firmware protection, and virtualization-based security (VBS) to defend against sophisticated attacks.  
@@ -350,10 +350,36 @@ Windows Server 2022 is Microsoft’s **latest, next-generation server operating 
 - **Developers & IT Teams:** Building or managing apps with containers, VMs, or hybrid infrastructure.  
 
 ✅ **Conclusion:**  
-Windows Server 2022 Standard / Datacenter represents a **secure, cloud-ready, and high-performance server platform**. With **next-gen security features, Azure hybrid capabilities, and advanced virtualization**, it is the **go-to solution for modern enterprises** needing reliability, scalability, and future-proof infrastructure.
+Windows Server 2022 Standard represents a **secure, cloud-ready, and high-performance server platform**. With **next-gen security features, Azure hybrid capabilities, and advanced virtualization**, it is the **go-to solution for modern enterprises** needing reliability, scalability, and future-proof infrastructure.
 `
 },
 
+
+{
+  id: 18,
+  name: "Windows Server 2025 Standard",
+  img: "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp",
+  price: "$679.99",
+  desc: "The newest Windows Server, with stronger built-in security.",
+  longDesc: `
+Windows Server 2025 is Microsoft's **newest server operating system**, released in November 2024. It gives small and mid-sized businesses a **secure, modern foundation** for file sharing, user accounts, business applications and virtual machines.
+
+🔹 **Key Features**
+- **Stronger Security by Default:** Hardened Active Directory, SMB over QUIC and modern protection against credential theft and ransomware.
+- **Hotpatching:** Install many security updates **without restarting** the server, with Azure Arc.
+- **Hyper-V Improvements:** Run more and larger virtual machines, with GPU partitioning for demanding workloads.
+- **Faster Storage:** Better NVMe storage performance and Storage Spaces Direct improvements.
+- **Hybrid Ready:** Connect to Azure services for backup, monitoring and management from one place.
+
+🔹 **Standard Edition Is Ideal For**
+- **Small and mid-sized businesses** running one or two physical servers.
+- **Offices** that need file sharing, printing, user accounts and business software in one place.
+- **Light virtualization:** includes rights for up to two virtual machines per fully licensed server.
+
+✅ **Conclusion:**
+Windows Server 2025 Standard is the **most up-to-date, secure choice** for a business server. Not sure which version or license your business needs? Call Saffron Guru and we'll help you choose, set it up and keep it running.
+`
+},
 
   // --- Internet Security Products (11–17) ---
 {
