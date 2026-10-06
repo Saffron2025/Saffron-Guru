@@ -208,3 +208,6 @@
   .security-subtitle { font-size: 1.05rem; }
   .section-heading { font-size: 1.5rem; }
 }
+
+/* Card pictures fit inside the card (the width attribute alone made them overflow) */
+.product-card .product-img { width: 100%; max-width: 100%; }
