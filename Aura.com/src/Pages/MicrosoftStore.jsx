@@ -8,7 +8,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 const products = [
   { id: 1, name: "Office 2016 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2016-professional-plus.webp", price: "$99.99", desc: "Classic productivity suite trusted by millions." },
   { id: 2, name: "Office 2019 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp", price: "$129.99", desc: "Modern productivity apps with cloud sync." },
-  { id: 3, name: "Office 2021 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "Latest one-time Office license." },
+  { id: 3, name: "Office 2021 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "A proven one-time Office license." },
   { id: 4, name: "Office 2024 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", price: "$199.99", desc: "The newest one-time Office license." },
   { id: 5, name: "Project 2024 Professional", img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", price: "$179.99", desc: "Plan, schedule and track your projects." },
   { id: 6, name: "Visio 2024 Professional", img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", price: "$159.99", desc: "Professional diagrams, flowcharts and network maps." },

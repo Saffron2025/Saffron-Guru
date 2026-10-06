@@ -74,7 +74,7 @@ Office 2019 Pro Plus combines **modern upgrades, cloud integration, and one-time
   name: "Office 2021 Pro Plus", 
   img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", 
   price: "$149.99", 
-  desc: "Latest one-time Office license.",
+  desc: "A proven one-time Office license.",
   longDesc: `
 Office 2021 Pro Plus is Microsoft’s **latest perpetual license** productivity suite, offering advanced tools for **modern collaboration, data analysis, and secure work management**. It’s built for individuals, students, and businesses who want the newest features of Office with a one-time payment — no subscription required.
 
