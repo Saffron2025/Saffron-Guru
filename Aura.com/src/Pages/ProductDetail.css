@@ -420,3 +420,9 @@
 .related-name { margin: 10px 0 4px; font-weight: 600; font-size: 0.95rem; line-height: 1.35; color: #0f172a; min-height: 2.6em; }
 .related-price { margin: 0; font-weight: 800; color: #2563eb; }
 @media (max-width: 600px) { .related-card { flex-basis: 150px; } }
+
+/* ====== About this store note ====== */
+.store-note { margin: 16px 0 12px; padding: 14px 16px; background: #f1f5f9; border: 1px solid #e2e8f0; border-left: 4px solid #2563eb; border-radius: 10px; }
+.store-note p { margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.6; }
+.store-note strong { color: #0f172a; }
+.store-note .store-note-small { margin-top: 8px; font-size: 0.85rem; color: #64748b; font-style: italic; }

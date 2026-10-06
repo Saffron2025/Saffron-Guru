@@ -66,7 +66,7 @@ const ProductDetail = () => {
               <li>✅ Instant Digital Delivery</li>
               <li>✅ One-time Payment — No Hidden Charges</li>
               <li>✅ Works Across Supported Platforms</li>
-              <li>✅ Technical Support 7 Days a Week, Monday to Sunday</li>
+              <li>✅ Technical Support for Saffron Guru Clients, 7 Days a Week</li>
             </ul>
 
             <Button
@@ -77,7 +77,19 @@ const ProductDetail = () => {
             >
               📞 Check Now
             </Button>
-            <br />
+
+            <div className="store-note" role="note">
+              <p>
+                <strong>About this store:</strong> This store is made for Saffron Guru clients, whose plans
+                include technical support 7 days a week. Not a client yet? You're still welcome to buy.
+                We'll install and activate your software for you. Ongoing technical support is included
+                only with a Saffron Guru plan.
+              </p>
+              <p className="store-note-small">
+                Saffron Guru is an independent company, not affiliated with{" "}
+                {inSecurity ? "Norton, McAfee, Broadcom (Symantec) or CrowdStrike" : "Microsoft"}.
+              </p>
+            </div>
 
             <Link 
               to={storePath}
