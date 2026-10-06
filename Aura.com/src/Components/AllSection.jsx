@@ -478,6 +478,32 @@ const AuraFooter = () => {
                 </span>
               </a>
 
+              {/* =====================================
+                  GLASSDOOR
+              ===================================== */}
+
+              <a
+                href="https://www.glassdoor.com/Overview/Working-at-Saffron-Guru-EI_IE11232498.11,23.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on Glassdoor"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-glassdoor.svg"
+                    alt="Saffron Guru on Glassdoor"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  Glassdoor
+                </span>
+              </a>
+
             </div>
 
           </div>
