@@ -19,7 +19,7 @@ const ProductDetail = () => {
   }
 
   /* Microsoft products vs. security products, so the "more products" row and the back link stay in the right store */
-  const isSecurity = (pid) => pid >= 11 && pid <= 17;
+  const isSecurity = (pid) => pid >= 11 && pid !== 18;
   const inSecurity = isSecurity(product.id);
   const storePath = inSecurity ? "/internet-security" : "/microsoft-store";
   const related = products.filter((p) => p.id !== product.id && isSecurity(p.id) === inSecurity);
@@ -64,7 +64,7 @@ const ProductDetail = () => {
             <ul className="detail-highlights">
               <li>✅ Genuine License & Trusted Vendor</li>
               <li>✅ Instant Digital Delivery</li>
-              <li>✅ One-time Payment — No Hidden Charges</li>
+              <li>✅ {inSecurity ? "Yearly Subscription — Prices Set by the Software Company" : "One-time Payment — No Hidden Charges"}</li>
               <li>✅ Works Across Supported Platforms</li>
               <li>✅ Technical Support for Saffron Guru Clients, 7 Days a Week</li>
             </ul>
@@ -87,7 +87,7 @@ const ProductDetail = () => {
               </p>
               <p className="store-note-small">
                 Saffron Guru is an independent company, not affiliated with{" "}
-                {inSecurity ? "Norton, McAfee, Broadcom (Symantec) or CrowdStrike" : "Microsoft"}.
+                {inSecurity ? "the companies whose products are listed in this store" : "Microsoft"}.
               </p>
             </div>
 

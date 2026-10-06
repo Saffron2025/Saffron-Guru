@@ -305,6 +305,18 @@
       "dest": "/_p/product__14.html"
     },
     {
+      "src": "^/product/19/?$",
+      "dest": "/_p/product__19.html"
+    },
+    {
+      "src": "^/product/20/?$",
+      "dest": "/_p/product__20.html"
+    },
+    {
+      "src": "^/product/21/?$",
+      "dest": "/_p/product__21.html"
+    },
+    {
       "src": "^/product/15/?$",
       "dest": "/_p/product__15.html"
     },

@@ -535,6 +535,95 @@ McAfee LiveSafe (Unlimited Devices) is a **premium all-in-one solution** for hou
 `
 },
 
+{
+  id: 19,
+  name: "Webroot Internet Security Complete (5 Devices)",
+  img: "/Products/saffron-guru-webroot-internet-security-complete.webp",
+  price: "$53.99 first year",
+  desc: "Light, fast antivirus with privacy tools for 5 devices.",
+  longDesc: `
+Webroot Internet Security Complete is Webroot's most complete home protection plan. It covers **up to 5 devices**: Windows PCs, Macs, Chromebooks, Android phones and iPhones. Webroot is known for being very light, so it won't slow down an older computer.
+
+🔹 **What it includes**
+- **Real-time antivirus:** protection against viruses, ransomware and other malware.  
+- **Phishing and web protection:** warns you about dangerous and fake websites before they open.  
+- **Firewall:** watches your internet connection for attacks.  
+- **Password and login protection:** helps keep your accounts safe.  
+- **Anti-tracking and privacy tools:** helps stop websites from following you online.  
+- **System cleaner:** clears junk files and browsing traces to keep your computer running smoothly.  
+- **25 GB of secure cloud storage** for your important files.  
+
+🔹 **Official Webroot pricing**
+- **1 year, 5 devices:** $53.99 for the first year, then $89.99 a year when it renews.  
+- **2 years:** $113.99. **3 years:** $173.99.  
+- **70-day money-back guarantee** from Webroot.  
+- Prices are set by Webroot and may change. We'll always confirm the current price with you before you buy.  
+
+✅ **Where Saffron Guru comes in**  
+Webroot sells the software, but they don't sit with you on the phone. Saffron Guru clients get our technicians to install and set it up on every device, check that it's working, and help with any problem, 7 days a week.
+`
+},
+
+{
+  id: 20,
+  name: "ExpressVPN Basic (10 Devices)",
+  img: "/Products/saffron-guru-expressvpn.webp",
+  price: "$74.85 first year",
+  desc: "Fast, private VPN for Wi-Fi at home and on the go.",
+  longDesc: `
+ExpressVPN is one of the best-known VPN services in the world. A VPN puts a **private, encrypted tunnel** around your internet connection, so people on the same Wi-Fi (at a hotel, airport, café or hospital) can't see what you're doing or steal your passwords.
+
+🔹 **What it does for you**
+- **Safe on public Wi-Fi:** encrypts your connection, so others on the network can't spy on you.  
+- **Hides your location and IP address** from websites and advertisers.  
+- **Network Lock (kill switch):** if the VPN drops, your internet pauses so nothing leaks out.  
+- **Ad and tracker blocking** with ExpressVPN's built-in tools.  
+- **Fast connections** with ExpressVPN's own Lightway technology, good for video calls and streaming.  
+- **Easy apps** for Windows, Mac, iPhone, Android, tablets and more.  
+- **Up to 10 devices** at the same time on the Basic plan.  
+
+🔹 **Official ExpressVPN pricing (Basic plan)**
+- **12 months:** $74.85 for the first term (includes 3 extra months free), then $99.95 a year when it renews.  
+- **24 months:** $78.18 for the first term (includes 4 extra months free).  
+- **Monthly:** $12.99 a month.  
+- **30-day money-back guarantee** from ExpressVPN.  
+- Advanced and Pro plans are also available with more devices and extras. Prices are set by ExpressVPN and may change.  
+
+✅ **Where Saffron Guru comes in**  
+ExpressVPN doesn't set it up for you. Saffron Guru clients get our technicians to install it on every device, turn on the right settings and show you how to use it, 7 days a week.
+`
+},
+
+{
+  id: 21,
+  name: "Proton VPN Plus (10 Devices)",
+  img: "/Products/saffron-guru-proton-vpn-plus.webp",
+  price: "$47.88 first year",
+  desc: "Swiss privacy VPN with built-in ad and malware blocking.",
+  longDesc: `
+Proton VPN is made by Proton, the Swiss company behind Proton Mail. It's known for **strong privacy**: Switzerland has strict privacy laws, and Proton VPN keeps a strict **no-logs policy**, meaning it doesn't record what you do online.
+
+🔹 **What it does for you**
+- **Safe on public Wi-Fi:** encrypts your connection, so others on the network can't see your activity or passwords.  
+- **NetShield:** blocks ads, trackers and known malware websites.  
+- **Kill switch:** if the VPN drops, your internet pauses so nothing leaks out.  
+- **Secure Core:** sends your connection through extra-secure servers in privacy-friendly countries.  
+- **Fast connections** using modern WireGuard technology.  
+- **Easy apps** for Windows, Mac, iPhone, Android and more.  
+- **Up to 10 devices** at the same time.  
+
+🔹 **Official Proton VPN pricing (Plus plan)**
+- **1 year:** $47.88 for the first year ($3.99 a month), then renews at Proton's regular price.  
+- **2 years:** $71.76 for the first term ($2.99 a month).  
+- **Monthly:** $9.99 a month.  
+- **30-day money-back guarantee** from Proton.  
+- Prices are set by Proton and may change. We'll always confirm the current price with you before you buy.  
+
+✅ **Where Saffron Guru comes in**  
+Proton doesn't offer phone support. Saffron Guru clients get our technicians to install Proton VPN on every device, set it up the right way and help any time something isn't working, 7 days a week.
+`
+},
+
 { 
   id: 15, 
   name: "Symantec Endpoint Protection (SEP)", 

@@ -734,4 +734,25 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/19</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-webroot-internet-security-complete.webp</image:loc><image:title>Saffron Guru Webroot Internet Security Complete</image:title></image:image>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/20</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-expressvpn.webp</image:loc><image:title>Saffron Guru ExpressVPN</image:title></image:image>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.saffronguru.com/product/21</loc>
+    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-proton-vpn-plus.webp</image:loc><image:title>Saffron Guru Proton VPN Plus</image:title></image:image>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
