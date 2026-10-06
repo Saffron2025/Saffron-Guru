@@ -225,26 +225,6 @@ const AuraFooter = () => {
               </a>
 
               {/* =====================================
-                  MEDIUM
-              ===================================== */}
-
-              <a
-                href="https://medium.com/@SaffronGuruLLC"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="find-online-link medium-find-link"
-                aria-label="Saffron Guru on Medium"
-              >
-                <span className="find-online-logo medium-find-icon">
-                  <FaMedium />
-                </span>
-
-                <span className="find-online-text medium-find-text">
-                  Medium
-                </span>
-              </a>
-
-              {/* =====================================
                   DUN & BRADSTREET
               ===================================== */}
 
@@ -267,58 +247,6 @@ const AuraFooter = () => {
 
                 <span className="find-online-text">
                   Dun & Bradstreet
-                </span>
-              </a>
-
-              {/* =====================================
-                  G2
-              ===================================== */}
-
-              <a
-                href="https://www.g2.com/sellers/saffron-guru#profiles"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="find-online-link g2-find-link"
-                aria-label="Saffron Guru on G2"
-              >
-                <span className="find-online-logo g2-logo-box">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="/Products/saffron-guru-on-g2.webp"
-                    alt="Saffron Guru on G2"
-                    className="find-online-image g2-image"
-                  />
-                </span>
-
-                <span className="find-online-text">
-                  G2
-                </span>
-              </a>
-
-              {/* =====================================
-                  BBB
-              ===================================== */}
-
-              <a
-                href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="find-online-link bbb-find-link"
-                aria-label="Saffron Guru on Better Business Bureau"
-              >
-                <span className="find-online-logo bbb-logo-box">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="/Products/saffron-guru-on-bbb.webp"
-                    alt="Saffron Guru on Better Business Bureau"
-                    className="find-online-image bbb-image"
-                  />
-                </span>
-
-                <span className="find-online-text">
-                  BBB
                 </span>
               </a>
 
@@ -375,6 +303,32 @@ const AuraFooter = () => {
               </a>
 
               {/* =====================================
+                  SELECTEDFIRMS
+              ===================================== */}
+
+              <a
+                href="https://selectedfirms.co/agency/saffron-guru-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on SelectedFirms"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-selectedfirms.svg"
+                    alt="Saffron Guru on SelectedFirms"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  SelectedFirms
+                </span>
+              </a>
+
+              {/* =====================================
                   GOODFIRMS
               ===================================== */}
 
@@ -401,54 +355,28 @@ const AuraFooter = () => {
               </a>
 
               {/* =====================================
-                  TECHBEHEMOTHS
+                  GLASSDOOR
               ===================================== */}
 
               <a
-                href="https://techbehemoths.com/company/saffron-guru"
+                href="https://www.glassdoor.com/Overview/Working-at-Saffron-Guru-EI_IE11232498.11,23.htm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="find-online-link techbehemoths-find-link"
-                aria-label="Saffron Guru on TechBehemoths"
+                aria-label="Saffron Guru on Glassdoor"
               >
                 <span className="find-online-logo techbehemoths-logo-box">
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/saffron-guru-on-techbehemoths.webp"
-                    alt="Saffron Guru on TechBehemoths"
+                    src="/Products/saffron-guru-on-glassdoor.svg"
+                    alt="Saffron Guru on Glassdoor"
                     className="find-online-image techbehemoths-image"
                   />
                 </span>
 
                 <span className="find-online-text">
-                  TechBehemoths
-                </span>
-              </a>
-
-              {/* =====================================
-                  SORTLIST
-              ===================================== */}
-
-              <a
-                href="https://www.sortlist.com/agency/saffron-guru-llc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="find-online-link techbehemoths-find-link"
-                aria-label="Saffron Guru on Sortlist"
-              >
-                <span className="find-online-logo techbehemoths-logo-box">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="/Products/saffron-guru-on-sortlist.webp"
-                    alt="Saffron Guru on Sortlist"
-                    className="find-online-image techbehemoths-image"
-                  />
-                </span>
-
-                <span className="find-online-text">
-                  Sortlist
+                  Glassdoor
                 </span>
               </a>
 
@@ -479,28 +407,126 @@ const AuraFooter = () => {
               </a>
 
               {/* =====================================
-                  GLASSDOOR
+                  G2
               ===================================== */}
 
               <a
-                href="https://www.glassdoor.com/Overview/Working-at-Saffron-Guru-EI_IE11232498.11,23.htm"
+                href="https://www.g2.com/sellers/saffron-guru#profiles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link g2-find-link"
+                aria-label="Saffron Guru on G2"
+              >
+                <span className="find-online-logo g2-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-g2.webp"
+                    alt="Saffron Guru on G2"
+                    className="find-online-image g2-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  G2
+                </span>
+              </a>
+
+              {/* =====================================
+                  MEDIUM
+              ===================================== */}
+
+              <a
+                href="https://medium.com/@SaffronGuruLLC"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link medium-find-link"
+                aria-label="Saffron Guru on Medium"
+              >
+                <span className="find-online-logo medium-find-icon">
+                  <FaMedium />
+                </span>
+
+                <span className="find-online-text medium-find-text">
+                  Medium
+                </span>
+              </a>
+
+              {/* =====================================
+                  BBB
+              ===================================== */}
+
+              <a
+                href="https://www.bbb.org/us/tx/irving/profile/computer-software/saffron-guru-0875-91317606"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link bbb-find-link"
+                aria-label="Saffron Guru on Better Business Bureau"
+              >
+                <span className="find-online-logo bbb-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-bbb.webp"
+                    alt="Saffron Guru on Better Business Bureau"
+                    className="find-online-image bbb-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  BBB
+                </span>
+              </a>
+
+              {/* =====================================
+                  SORTLIST
+              ===================================== */}
+
+              <a
+                href="https://www.sortlist.com/agency/saffron-guru-llc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="find-online-link techbehemoths-find-link"
-                aria-label="Saffron Guru on Glassdoor"
+                aria-label="Saffron Guru on Sortlist"
               >
                 <span className="find-online-logo techbehemoths-logo-box">
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/Products/saffron-guru-on-glassdoor.svg"
-                    alt="Saffron Guru on Glassdoor"
+                    src="/Products/saffron-guru-on-sortlist.webp"
+                    alt="Saffron Guru on Sortlist"
                     className="find-online-image techbehemoths-image"
                   />
                 </span>
 
                 <span className="find-online-text">
-                  Glassdoor
+                  Sortlist
+                </span>
+              </a>
+
+              {/* =====================================
+                  TECHBEHEMOTHS
+              ===================================== */}
+
+              <a
+                href="https://techbehemoths.com/company/saffron-guru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="find-online-link techbehemoths-find-link"
+                aria-label="Saffron Guru on TechBehemoths"
+              >
+                <span className="find-online-logo techbehemoths-logo-box">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Products/saffron-guru-on-techbehemoths.webp"
+                    alt="Saffron Guru on TechBehemoths"
+                    className="find-online-image techbehemoths-image"
+                  />
+                </span>
+
+                <span className="find-online-text">
+                  TechBehemoths
                 </span>
               </a>
 
