@@ -116,7 +116,7 @@ const InternetSecurity = () => {
                     <li>Scam & Fraud Alerts in Real-Time</li>
                     <li>Dark Web Monitoring</li>
                     <li>Bank Account & Credit Protection</li>
-                    <li>24/7 IT Support & Remote Assistance</li>
+                    <li>IT Support & Remote Assistance, 7 Days a Week</li>
                     <li>Phishing Blocker & Spam Call Filter</li>
                   </ul>
                 </div>

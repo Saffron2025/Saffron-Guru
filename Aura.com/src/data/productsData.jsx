@@ -400,7 +400,7 @@ Norton 360 Premium (10 Devices) is designed to keep your digital life safe acros
 - **Comprehensive Coverage:** Defends against viruses, malware, and ransomware.  
 - **Parental Controls:** Useful if you want to manage children’s online activities.  
 - **Compatibility:** Supports Windows, macOS, Android, and iOS devices.  
-- **Customer Support:** 24/7 help available for installation or issues.  
+- **Customer Support:** Saffron Guru technicians help with installation or issues, 7 days a week.  
 - **Frequent Updates:** Regular security patches keep protection up-to-date.  
 - **Low Performance Impact:** Designed to run smoothly without slowing devices.  
 
@@ -528,7 +528,7 @@ McAfee LiveSafe (Unlimited Devices) is McAfee’s **top-tier protection plan** d
 - **Performance Impact:** Optimized to run quietly without slowing devices.  
 - **Compatibility:** Works seamlessly across PCs, Macs, smartphones, and tablets.  
 - **Regular Updates:** Frequent security patches defend against the latest threats.  
-- **Customer Support:** 24/7 access to McAfee’s global support team.  
+- **Customer Support:** Saffron Guru technicians help with installation or issues, 7 days a week.  
 
 ✅ **Conclusion:**  
 McAfee LiveSafe (Unlimited Devices) is a **premium all-in-one solution** for households and professionals who want maximum flexibility and security. By combining **unlimited device coverage, strong identity protection, parental controls, and a secure VPN**, it ensures complete digital safety. For users with multiple devices and families seeking worry-free online experiences, LiveSafe stands as one of the best choices on the market.

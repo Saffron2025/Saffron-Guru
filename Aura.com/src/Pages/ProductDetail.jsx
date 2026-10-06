@@ -11,13 +11,18 @@ const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find(p => p.id === Number(id));
 
-  const [mainImg, setMainImg] = useState(product?.img);
   const [zoomStyle, setZoomStyle] = useState({});
   const [showPopup, setShowPopup] = useState(false);
 
   if (!product) {
     return <h2 className="text-center mt-5">❌ Product Not Found</h2>;
   }
+
+  /* Microsoft products vs. security products, so the "more products" row and the back link stay in the right store */
+  const isSecurity = (pid) => pid >= 11 && pid <= 17;
+  const inSecurity = isSecurity(product.id);
+  const storePath = inSecurity ? "/internet-security" : "/microsoft-store";
+  const related = products.filter((p) => p.id !== product.id && isSecurity(p.id) === inSecurity);
 
   const handleMouseMove = (e) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
@@ -41,7 +46,7 @@ const ProductDetail = () => {
           {/* 🔹 Left Side Image */}
           <div className="detail-img-wrapper">
             <img
-              src={mainImg}
+              src={product.img}
               alt={`${product.name} from Saffron Guru`}
               className="detail-img zoom-img"
               style={zoomStyle}
@@ -61,7 +66,7 @@ const ProductDetail = () => {
               <li>✅ Instant Digital Delivery</li>
               <li>✅ One-time Payment — No Hidden Charges</li>
               <li>✅ Works Across Supported Platforms</li>
-              <li>✅ 24/7 Technical Support</li>
+              <li>✅ Technical Support 7 Days a Week, Monday to Sunday</li>
             </ul>
 
             <Button
@@ -75,7 +80,7 @@ const ProductDetail = () => {
             <br />
 
             <Link 
-              to={product.id <= 10 ? "/microsoft-store" : "/internet-security"} 
+              to={storePath}
               className="back-link"
             >
               ⬅ Back to Store
@@ -98,6 +103,27 @@ const ProductDetail = () => {
             </ReactMarkdown>
           </div>
         </div>
+
+        {/* 🔹 More products row */}
+        {related.length > 0 && (
+          <section className="related-products" aria-labelledby="related-heading">
+            <div className="related-head">
+              <h2 id="related-heading">{inSecurity ? "More Security Software" : "More from the Microsoft Store"}</h2>
+              <Link to={storePath} className="related-all">View all →</Link>
+            </div>
+            <div className="related-row">
+              {related.map((p) => (
+                <Link key={p.id} to={`/product/${p.id}`} className="related-card">
+                  <div className="related-img">
+                    <img src={p.img} alt={`${p.name} from Saffron Guru`} width="160" height="160" loading="lazy" decoding="async" />
+                  </div>
+                  <p className="related-name">{p.name}</p>
+                  <p className="related-price">{p.price}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </Container>
 
       {/* 🔹 Contact Modal */}
@@ -114,7 +140,7 @@ const ProductDetail = () => {
               +1 844-313-4987
             </strong>
           </p>
-          <p>Our experts are available 24/7 to help you with installation and support.</p>
+          <p>Our experts are available 7 days a week, Monday to Sunday, to help you with installation and support.</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShowPopup(false)}>
