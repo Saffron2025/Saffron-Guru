@@ -20,15 +20,15 @@ const InternetSecurity = () => {
       <div className="internet-security-page">
         {/* 🔹 Hero */}
         <header className="security-hero">
-          <h1 className="security-title">🛡️ Internet Security & Online Fraud Protection</h1>
+          <h1 className="security-title">🛡️ Antivirus & Internet Security Store</h1>
           <p className="security-subtitle">
-            Stay one step ahead of scammers, hackers, and identity thieves with our powerful protection guide.
+            Trusted antivirus and VPN software from Norton, McAfee, Webroot, ExpressVPN and Proton, installed and set up for you by Saffron Guru technicians.
           </p>
         </header>
 
         {/* 🔹 Internet Security Products Grid */}
         <Container className="product-grid mt-4">
-          <h2 className="store-title">💻 Internet Security Products</h2>
+          <h2 className="store-title">💻 Antivirus & VPN Software</h2>
           <Row>
             {products.filter((p) => p.id >= 11 && p.id !== 18).map((product) => (
               <Col md={4} sm={6} xs={12} key={product.id} className="mb-4">
