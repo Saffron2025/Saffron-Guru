@@ -30,7 +30,7 @@ const InternetSecurity = () => {
         <Container className="product-grid mt-4">
           <h2 className="store-title">💻 Internet Security Products</h2>
           <Row>
-            {products.filter((p) => p.id >= 11).map((product) => (
+            {products.filter((p) => p.id >= 11 && p.id <= 17).map((product) => (
               <Col md={4} sm={6} xs={12} key={product.id} className="mb-4">
                 <Card
                   className="product-card"
