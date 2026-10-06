@@ -110,71 +110,58 @@ Office 2021 Pro Plus is the **best balance of modern features and affordability*
   price: "$199.99", 
   desc: "The newest one-time Office license.",
   longDesc: `
-Office 2024 Pro Plus is Microsoft’s **next-generation productivity suite**, designed with **AI-powered innovation, cloud intelligence, and enhanced offline tools** to meet the needs of modern work and study. It’s the perfect solution for individuals and businesses seeking **cutting-edge features with a lifetime license**.
+Microsoft Office 2024 Professional Plus is the newest one-time-purchase version of Office. It's installed on your Windows PC and is yours to keep, with **no subscription**.
 
-🔹 **Core Applications (Upgraded for 2024)**
-- **Word 2024:** Integrated AI writing assistant, real-time translation, and improved document design automation.  
-- **Excel 2024:** Smart AI-powered data insights, predictive forecasting, and seamless Power BI integration.  
-- **PowerPoint 2024:** Advanced AI slide design, automatic layout suggestions, and interactive presentation tools.  
-- **Outlook 2024:** Smart inbox prioritization, AI-driven scheduling, and stronger spam & phishing filters.  
-- **Access & Publisher 2024:** Enhanced cloud sync and new professional-grade templates for databases and publications.  
+🔹 **Apps included**
+- **Word, Excel, PowerPoint, Outlook, OneNote and Access**  
 
-🔹 **Future-Ready Features**
-- **AI Productivity Tools:** Smart Compose, data predictions, and AI slide generation to save time and improve accuracy.  
-- **Cloud-Optimized:** Deep integration with OneDrive & Teams for **hybrid collaboration**.  
-- **Offline Functionality:** Full suite works offline with all major features, ensuring productivity without internet access.  
-- **Cross-Platform Support:** Optimized for **Windows 11, Windows 12 (future release), and latest macOS**.  
+🔹 **What's new in Office 2024**
+- **New look:** a cleaner, more consistent design across all the apps.  
+- **Accessibility ribbon:** easier tools to make your documents, emails and slides accessible, in Word, Excel, PowerPoint and Outlook.  
+- **Word:** "Like" reactions on comments, and Word reopens your documents after an unexpected shutdown.  
+- **Excel:** 14 new text and array functions, charts that update automatically with your data, pictures inside cells with the IMAGE function, and faster performance with many workbooks open.  
+- **PowerPoint:** show your live camera feed on a slide (Cameo), record a presentation as a video, and add closed captions to video and audio.  
+- **Outlook:** better search, and an option to shorten meetings automatically so you get breaks between calls.  
+- **Better file support:** works with OpenDocument (ODF 1.4) files.  
 
-🔹 **Key Benefits**
-- **Enhanced Collaboration:** Real-time co-authoring and instant sharing with Teams & OneDrive.  
-- **Advanced Security:** Enterprise-grade protection against cyber threats, phishing, and data loss.  
-- **AI-Powered Insights:** Smart recommendations and predictive analysis to boost decision-making.  
-- **One-Time Payment:** Lifetime license, no subscription required.  
+🔹 **License details**
+- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
+- Works on **Windows 10 and Windows 11**.  
+- Microsoft supports Office 2024 with security updates until **October 2029**.  
+- Office 2024 does **not** include Copilot (Microsoft's AI assistant); that's only in a Microsoft 365 subscription.  
 
-🔹 **Who Should Choose This?**
-- **Innovators & Businesses:** For those who want **next-gen AI tools** and hybrid work support.  
-- **Students & Researchers:** AI writing help, smart citations, and advanced data visualization tools.  
-- **Long-Term Planners:** Users looking for **future-ready Office tools** without subscription costs.  
-
-✅ **Conclusion:**  
-Office 2024 Pro Plus is the **most advanced Office suite ever released**, combining **AI intelligence, hybrid cloud capabilities, and offline reliability**. It’s built for the future of productivity while retaining Microsoft’s trusted tools — all under a **lifetime license**.
+✅ **Need help installing?**  
+Our technicians can install and activate Office 2024 for you, move your files and email over, and stay on the line until everything works.
 `
 },
 
 { 
   id: 5, 
-  name: "Project 2019 / 2021 Pro", 
-  img: "/Products/saffron-guru-microsoft-project-2019-2021-professional.webp", 
+  name: "Project 2024 Professional", 
+  img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", 
   price: "$179.99", 
-  desc: "Advanced project management for professionals.",
+  desc: "Plan, schedule and track your projects.",
   longDesc: `
-Microsoft Project Pro 2019 / 2021 is a **professional-grade project management solution** built to help teams, managers, and enterprises **plan, track, and execute projects effectively**. Whether you’re overseeing small tasks or large-scale enterprise initiatives, Project Pro equips you with **powerful tools for organization, scheduling, and resource management**.
+Microsoft Project Professional 2024 is the newest one-time-purchase version of Project, Microsoft's program for **planning, scheduling and tracking projects**. It's installed on your Windows PC and is yours to keep, with **no subscription**.
 
-🔹 **Core Features**
-- **Gantt Charts:** Visualize timelines, dependencies, and progress for every task.  
-- **Task Scheduling:** Automates scheduling with intelligent recommendations to avoid conflicts.  
-- **Resource Management:** Allocate people, time, and budget effectively across projects.  
-- **Reporting Tools:** Generate real-time reports with visuals and insights for stakeholders.  
-- **Collaboration Support:** Integrated with Microsoft Teams and SharePoint for streamlined communication.  
+🔹 **What Project Professional does**
+- **Ready-made templates** to get your project started on the right track.  
+- **Automatic scheduling:** start and end dates fill in for you based on how tasks depend on each other.  
+- **Gantt charts and timelines:** see complex schedules at a glance, with multiple timelines and task path highlighting.  
+- **What-if planning:** try different task assignments to find the best plan.  
+- **Baselines:** compare your progress against the original plan.  
+- **Built-in reports:** share clear progress reports with your team or clients.  
+- **Works with Office:** copy and paste easily between Project, Excel, Word and PowerPoint.  
+- **Professional extras:** resource management tools and working with Project Online and Project Server.  
 
-🔹 **Key Benefits**
-- **Improved Efficiency:** Keep projects on schedule and within budget.  
-- **Data-Driven Insights:** Get detailed analytics on performance, costs, and resource usage.  
-- **Customizable Workflows:** Adapt task tracking and reporting to suit your industry and team size.  
-- **Scalable Solution:** Suitable for small teams or enterprise-level organizations.  
+🔹 **License details**
+- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
+- Works on **Windows 10, Windows 11 and Windows Server 2019**.  
+- Needs a 1.6 GHz 2-core processor, 4 GB of memory and 4 GB of free disk space.  
+- Microsoft supports Project 2024 with security updates until **October 10, 2029**.  
 
-🔹 **Compatibility & Integration**
-- Works seamlessly with **Office 365, SharePoint, OneDrive, and Teams**.  
-- Supported on **Windows 10, Windows 11, and Windows Server editions**.  
-- File compatibility with older versions ensures smooth transitions.  
-
-🔹 **Ideal For**
-- **Project Managers:** Plan, execute, and monitor complex tasks.  
-- **Businesses & Enterprises:** Coordinate multiple teams and resources.  
-- **Construction, IT, and Research Teams:** Industries where accurate scheduling and budgeting are critical.  
-
-✅ **Conclusion:**  
-Project Pro 2019 / 2021 empowers professionals with the tools to **deliver projects on time, stay within budget, and maximize team collaboration**. With its modern interface and advanced analytics, it’s the **go-to solution for serious project management.**
+✅ **Need help installing?**  
+Our technicians can install and activate Project Professional 2024 for you, and stay on the line until it's working.
 `
 },
 

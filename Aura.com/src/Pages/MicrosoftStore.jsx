@@ -10,7 +10,7 @@ const products = [
   { id: 2, name: "Office 2019 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2019-professional-plus.webp", price: "$129.99", desc: "Modern productivity apps with cloud sync." },
   { id: 3, name: "Office 2021 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2021-professional-plus.webp", price: "$149.99", desc: "Latest one-time Office license." },
   { id: 4, name: "Office 2024 Pro Plus", img: "/Products/saffron-guru-microsoft-office-2024-professional-plus.webp", price: "$199.99", desc: "The newest one-time Office license." },
-  { id: 5, name: "Project 2019 / 2021 Pro", img: "/Products/saffron-guru-microsoft-project-2019-2021-professional.webp", price: "$179.99", desc: "Advanced project management for professionals." },
+  { id: 5, name: "Project 2024 Professional", img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", price: "$179.99", desc: "Plan, schedule and track your projects." },
   { id: 6, name: "Visio 2024 Professional", img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", price: "$159.99", desc: "Professional diagrams, flowcharts and network maps." },
   { id: 7, name: "Windows 11 Home", img: "/Products/saffron-guru-microsoft-windows-11-home.webp", price: "$119.99", desc: "For everyday use with latest features." },
   { id: 8, name: "Windows 11 Pro", img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", price: "$199.99", desc: "For power users & businesses." },
