@@ -140,8 +140,9 @@ const MicrosoftStore = () => {
           </Row>
 
           <p className="ms-disclaimer" role="note">
-            Saffron Guru is not affiliated with Microsoft. Prices shown are Microsoft's official prices.
-            Product names and trademarks belong to Microsoft Corporation.
+            Saffron Guru is not affiliated with Microsoft. Microsoft software licenses sold through our
+            store are procured from authorized Microsoft partners and distributors. Product names and
+            trademarks belong to Microsoft Corporation. Prices shown are Microsoft's official prices.
           </p>
         </Container>
       </div>

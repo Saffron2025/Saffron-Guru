@@ -89,7 +89,7 @@ const ProductDetail = () => {
               <p className="store-note-small">
                 {inSecurity
                   ? "Saffron Guru is an independent company, not affiliated with the companies whose products are listed in this store."
-                  : "Saffron Guru is not affiliated with Microsoft. Product names and trademarks belong to Microsoft Corporation."}
+                  : "Saffron Guru is not affiliated with Microsoft. Microsoft software licenses sold through our store are procured from authorized Microsoft partners and distributors. Product names and trademarks belong to Microsoft Corporation."}
               </p>
             </div>
 
