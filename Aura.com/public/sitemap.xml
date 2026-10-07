@@ -172,9 +172,7 @@
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Visio 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-pro.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2019-standard.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2025-standard.webp</image:loc><image:title>Saffron Guru Windows Server 2025 Standard</image:title></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2022-standard.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -194,9 +192,7 @@
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-visio-2024-professional.webp</image:loc><image:title>Saffron Guru Microsoft Visio 2024 Professional</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-home.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-11-pro.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2019-standard.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2025-standard.webp</image:loc><image:title>Saffron Guru Windows Server 2025 Standard</image:title></image:image>
-    <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-windows-server-2022-standard.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-norton-360-premium.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-norton-lifelock.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-symantec-endpoint-protection.webp</image:loc></image:image>
@@ -638,19 +634,7 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <url>
-    <loc>https://www.saffronguru.com/product/9</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://www.saffronguru.com/product/10</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/18</loc>

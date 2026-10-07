@@ -9,13 +9,11 @@ const products = [
   { id: 22, name: "Microsoft Office Home 2024", img: "/Products/saffron-guru-microsoft-office-home-2024.webp", price: "$179.99", desc: "Word, Excel, PowerPoint and OneNote. Yours to keep." },
   { id: 23, name: "Microsoft Office Home & Business 2024", img: "/Products/saffron-guru-microsoft-office-home-and-business-2024.webp", price: "$249.99", desc: "Adds Outlook. Licensed for business use." },
   { id: 24, name: "Microsoft 365 Family", img: "/Products/saffron-guru-microsoft-365-family.webp", price: "$129.99/year", desc: "Office for up to 6 people, 1 TB storage each." },
-  { id: 5, name: "Project 2024 Professional", img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", price: "$179.99", desc: "Plan, schedule and track your projects." },
-  { id: 6, name: "Visio 2024 Professional", img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", price: "$159.99", desc: "Professional diagrams, flowcharts and network maps." },
-  { id: 7, name: "Windows 11 Home", img: "/Products/saffron-guru-microsoft-windows-11-home.webp", price: "$89.99", desc: "For everyday use with latest features." },
-  { id: 8, name: "Windows 11 Pro", img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", price: "$119.99", desc: "For power users & businesses." },
-  { id: 18, name: "Windows Server 2025 Standard", img: "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp", price: "$679.99", desc: "The newest Windows Server, with stronger built-in security." },
-  { id: 10, name: "Windows Server 2022 Standard", img: "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp", price: "$499.99", desc: "Secure, proven server platform." },
-  { id: 9, name: "Windows Server 2019 Standard", img: "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp", price: "$399.99", desc: "Reliable server OS for enterprise." },
+  { id: 5, name: "Project 2024 Professional", img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", price: "$1,129.99", desc: "Plan, schedule and track your projects." },
+  { id: 6, name: "Visio 2024 Professional", img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", price: "$579.99", desc: "Professional diagrams, flowcharts and network maps." },
+  { id: 7, name: "Windows 11 Home", img: "/Products/saffron-guru-microsoft-windows-11-home.webp", price: "$139.00", desc: "For everyday use with latest features." },
+  { id: 8, name: "Windows 11 Pro", img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", price: "$199.99", desc: "For power users & businesses." },
+  { id: 18, name: "Windows Server 2025 Standard", img: "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp", price: "$1,176.00", desc: "16-core license. CALs sold separately." },
 ];
 
 const MicrosoftStore = () => {
@@ -33,7 +31,7 @@ const MicrosoftStore = () => {
 
       {/* 🔹 Hero Banner */}
       <header className="store-hero">
-        <h1 className="store-title-hero">🛍️ Microsoft Store – Trusted Digital Licenses</h1>
+        <h1 className="store-title-hero">🛍️ Microsoft Software with Real Human Support</h1>
         <p className="store-subtitle">
           Microsoft Office, Microsoft 365, Windows and Windows Server, with instant digital delivery, no hidden charges, and real people to help you set everything up.
         </p>
@@ -140,6 +138,11 @@ const MicrosoftStore = () => {
               </section>
             </Col>
           </Row>
+
+          <p className="ms-disclaimer" role="note">
+            Saffron Guru is not affiliated with Microsoft. Prices shown are Microsoft's official prices.
+            Product names and trademarks belong to Microsoft Corporation.
+          </p>
         </Container>
       </div>
 

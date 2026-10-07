@@ -63,7 +63,7 @@ const ProductDetail = () => {
             <h3 className="detail-price">{product.price}</h3>
 
             <ul className="detail-highlights">
-              <li>✅ Genuine License & Trusted Vendor</li>
+              <li>✅ {inSecurity ? "Licensed Software From Known Brands" : "Microsoft's Official Price — No Markup"}</li>
               <li>✅ Instant Digital Delivery</li>
               <li>✅ {inSecurity ? "Yearly Subscription — Prices Set by the Software Company" : product.subscription ? "Yearly Subscription — Microsoft's Official Price" : "One-time Payment — No Hidden Charges"}</li>
               <li>✅ Works Across Supported Platforms</li>
@@ -87,8 +87,9 @@ const ProductDetail = () => {
                 only with a Saffron Guru plan.
               </p>
               <p className="store-note-small">
-                Saffron Guru is an independent company, not affiliated with{" "}
-                {inSecurity ? "the companies whose products are listed in this store" : "Microsoft"}.
+                {inSecurity
+                  ? "Saffron Guru is an independent company, not affiliated with the companies whose products are listed in this store."
+                  : "Saffron Guru is not affiliated with Microsoft. Product names and trademarks belong to Microsoft Corporation."}
               </p>
             </div>
 
@@ -121,7 +122,7 @@ const ProductDetail = () => {
         {related.length > 0 && (
           <section className="related-products" aria-labelledby="related-heading">
             <div className="related-head">
-              <h2 id="related-heading">{inSecurity ? "More Security Software" : "More from the Microsoft Store"}</h2>
+              <h2 id="related-heading">{inSecurity ? "More Security Software" : "More Microsoft Software"}</h2>
               <Link to={storePath} className="related-all">View all →</Link>
             </div>
             <div className="related-row">

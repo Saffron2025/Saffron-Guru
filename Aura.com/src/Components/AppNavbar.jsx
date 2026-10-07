@@ -499,7 +499,7 @@ const AppNavbar = () => {
                 as={Link}
                 to="/microsoft-store"
               >
-                Microsoft Store
+                Microsoft Software
               </NavDropdown.Item>
 
               <NavDropdown.Item

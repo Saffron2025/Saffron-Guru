@@ -89,7 +89,7 @@ We set it up on every device in the family, back up your photos to OneDrive, and
   id: 5, 
   name: "Project 2024 Professional", 
   img: "/Products/saffron-guru-microsoft-project-2024-professional.webp", 
-  price: "$179.99", 
+  price: "$1,129.99", 
   desc: "Plan, schedule and track your projects.",
   longDesc: `
 Microsoft Project Professional 2024 is the newest one-time-purchase version of Project, Microsoft's program for **planning, scheduling and tracking projects**. It's installed on your Windows PC and is yours to keep, with **no subscription**.
@@ -105,13 +105,13 @@ Microsoft Project Professional 2024 is the newest one-time-purchase version of P
 - **Professional extras:** resource management tools and working with Project Online and Project Server.  
 
 🔹 **License details**
-- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
+- **One-time purchase:** $1,129.99, Microsoft's official price, for one Windows PC. No monthly or yearly fees.  
 - Works on **Windows 10, Windows 11 and Windows Server 2019**.  
 - Needs a 1.6 GHz 2-core processor, 4 GB of memory and 4 GB of free disk space.  
 - Microsoft supports Project 2024 with security updates until **October 10, 2029**.  
 
-✅ **Need help installing?**  
-Our technicians can install and activate Project Professional 2024 for you, and stay on the line until it's working.
+✅ **Our support goes further than installation**  
+Saffron Guru clients get help with the real everyday problems: a file that won't open, a lost project or diagram, settings that changed, printing that comes out wrong. Call us 7 days a week and a real person helps you fix it.
 `
 },
 
@@ -119,7 +119,7 @@ Our technicians can install and activate Project Professional 2024 for you, and 
   id: 6, 
   name: "Visio 2024 Professional", 
   img: "/Products/saffron-guru-microsoft-visio-2024-professional.webp", 
-  price: "$159.99", 
+  price: "$579.99", 
   desc: "Professional diagrams, flowcharts and network maps.",
   longDesc: `
 Microsoft Visio Professional 2024 is the newest one-time-purchase version of Visio, Microsoft's program for creating **professional diagrams**: flowcharts, org charts, floor plans, network diagrams, engineering designs and more. It's installed on your Windows PC and is yours to keep, with **no subscription**.
@@ -140,12 +140,12 @@ Microsoft Visio Professional 2024 is the newest one-time-purchase version of Vis
 - **Comments:** add and reply to comments right on the diagram.  
 
 🔹 **License details**
-- **One-time purchase** for one Windows PC. No monthly or yearly fees.  
+- **One-time purchase:** $579.99, Microsoft's official price, for one Windows PC. No monthly or yearly fees.  
 - Works on **Windows 10 and Windows 11**.  
 - Microsoft supports Visio 2024 with security updates until **October 10, 2029**.  
 
-✅ **Need help installing?**  
-Our technicians can install and activate Visio Professional 2024 for you, and stay on the line until it's working.
+✅ **Our support goes further than installation**  
+Saffron Guru clients get help with the real everyday problems: a file that won't open, a lost project or diagram, settings that changed, printing that comes out wrong. Call us 7 days a week and a real person helps you fix it.
 `
 },
 
@@ -153,7 +153,7 @@ Our technicians can install and activate Visio Professional 2024 for you, and st
   id: 7, 
   name: "Windows 11 Home", 
   img: "/Products/saffron-guru-microsoft-windows-11-home.webp", 
-  price: "$89.99", 
+  price: "$139.00", 
   desc: "For everyday use with latest features.",
   longDesc: `
 Windows 11 Home is built for **everyday users** who want speed, simplicity, and a **beautiful modern interface**. From students to home users, it delivers a smooth experience across work, learning, entertainment, and gaming.  
@@ -188,7 +188,7 @@ Windows 11 Home offers the **perfect balance of performance, security, and style
   id: 8, 
   name: "Windows 11 Pro", 
   img: "/Products/saffron-guru-microsoft-windows-11-pro.webp", 
-  price: "$119.99", 
+  price: "$199.99", 
   desc: "For power users & businesses.",
   longDesc: `
 Windows 11 Pro is designed for **professionals, entrepreneurs, and small businesses** who need more than just a home operating system. It combines all the intuitive features of **Windows 11 Home** with powerful tools for **security, productivity, and remote work**.  
@@ -219,80 +219,14 @@ Windows 11 Pro is a **reliable, business-ready OS** that balances **performance,
 `
 },
 
-{ 
-  id: 9, 
-  name: "Windows Server 2019 Standard", 
-  img: "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp", 
-  price: "$399.99", 
-  desc: "Reliable server OS for enterprise.",
-  longDesc: `
-Windows Server 2019 is a **powerful, enterprise-ready server operating system** that provides businesses with scalability, advanced security, and hybrid cloud compatibility. Whether deployed on-premises or in the cloud, it’s built to handle **mission-critical workloads** and ensure business continuity.  
 
-🔹 **Key Features**
-- **Hybrid Cloud Integration:** Seamlessly connect on-premises servers with Azure for backup, storage, and disaster recovery.  
-- **Enhanced Security:** Includes **Windows Defender Advanced Threat Protection (ATP)**, Shielded VMs, and built-in malware protection to safeguard enterprise data.  
-- **Software-Defined Datacenter (SDDC):** Streamline infrastructure with virtualization, storage, and networking innovations for optimized performance.  
-- **Hyper-V Virtualization:** Create and manage multiple virtual machines with high efficiency and low overhead.  
-
-🔹 **Standard vs. Datacenter Editions**
-- **Standard Edition:** Ideal for small to mid-sized businesses needing reliable server features with limited virtualization.  
-- **Datacenter Edition:** Designed for enterprises with **highly virtualized** and cloud-intensive environments, offering **unlimited virtualization rights** and advanced features.  
-
-🔹 **Productivity & Management**
-- **Windows Admin Center:** Modern, browser-based management tool for simplified monitoring and control.  
-- **Improved Container Support:** Run Linux and Windows containers side by side, enhancing application development and scalability.  
-- **Storage Spaces Direct:** High-performance, cost-effective storage solution with failover clustering for reliability.  
-
-🔹 **Ideal For**
-- **Enterprises:** Needing a secure, scalable platform for critical workloads.  
-- **Data Centers:** Looking to maximize virtualization and optimize storage solutions.  
-- **Hybrid Cloud Users:** Businesses aiming to integrate seamlessly with Azure services.  
-
-✅ **Conclusion:**  
-Windows Server 2019 Standard delivers **unmatched reliability, security, and scalability**. Trusted worldwide, it’s the **backbone for modern IT infrastructure**, supporting everything from small business needs to large-scale enterprise data centers.
-`
-},
-
-{ 
-  id: 10, 
-  name: "Windows Server 2022 Standard", 
-  img: "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp", 
-  price: "$499.99", 
-  desc: "Secure, proven server platform.",
-  longDesc: `
-Windows Server 2022 is a **proven, secure server operating system**, designed to power **modern enterprises and datacenters** with enhanced security, cloud integration, and performance improvements. It brings the reliability of Windows Server with cutting-edge innovations to meet today’s IT challenges.  
-
-🔹 **Key Features**
-- **Secured-Core Server:** Hardware root-of-trust, firmware protection, and virtualization-based security (VBS) to defend against sophisticated attacks.  
-- **Hybrid Cloud with Azure:** Deeper integration with Azure Arc, Azure Automanage, and Azure Backup to extend on-premises workloads into the cloud.  
-- **Improved Virtualization:** Enhancements to Hyper-V and container support for scalable and efficient application hosting.  
-- **Storage Innovation:** Features like Storage Migration Service, Storage Spaces Direct, and SMB compression improve speed, resilience, and data handling.  
-
-🔹 **Standard vs. Datacenter Editions**
-- **Standard Edition:** Best for businesses with basic virtualization needs and physical servers.  
-- **Datacenter Edition:** Built for enterprises and cloud-heavy workloads, offering **unlimited virtualization** and advanced datacenter features.  
-
-🔹 **Productivity & Management**
-- **Windows Admin Center (WAC):** Unified, browser-based management for on-premises and cloud-connected infrastructure.  
-- **Application Platform:** Improved Kubernetes and container management for developers building cloud-native apps.  
-- **Performance Boosts:** Networking enhancements like UDP performance improvements and faster encrypted connections with **TLS 1.3**.  
-
-🔹 **Ideal For**
-- **Enterprises & Datacenters:** Requiring high security and scalability with hybrid workloads.  
-- **Cloud-Ready Organizations:** Companies looking to leverage Azure services for modernization.  
-- **Developers & IT Teams:** Building or managing apps with containers, VMs, or hybrid infrastructure.  
-
-✅ **Conclusion:**  
-Windows Server 2022 Standard represents a **secure, cloud-ready, and high-performance server platform**. With **next-gen security features, Azure hybrid capabilities, and advanced virtualization**, it is the **go-to solution for modern enterprises** needing reliability, scalability, and future-proof infrastructure.
-`
-},
 
 
 {
   id: 18,
   name: "Windows Server 2025 Standard",
   img: "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp",
-  price: "$679.99",
+  price: "$1,176.00",
   desc: "The newest Windows Server, with stronger built-in security.",
   longDesc: `
 Windows Server 2025 is Microsoft's **newest server operating system**, released in November 2024. It gives small and mid-sized businesses a **secure, modern foundation** for file sharing, user accounts, business applications and virtual machines.
@@ -308,6 +242,12 @@ Windows Server 2025 is Microsoft's **newest server operating system**, released 
 - **Small and mid-sized businesses** running one or two physical servers.
 - **Offices** that need file sharing, printing, user accounts and business software in one place.
 - **Light virtualization:** includes rights for up to two virtual machines per fully licensed server.
+
+🔹 **License details**
+- **Price:** $1,176, Microsoft's suggested price for Windows Server 2025 Standard.  
+- Covers **16 processor cores**. Servers with more cores need additional core licenses.  
+- **Client Access Licenses (CALs)** for users or devices are required and sold separately.  
+- Not sure how many cores or CALs you need? Call us and we'll work it out with you before you buy.
 
 ✅ **Conclusion:**
 Windows Server 2025 Standard is the **most up-to-date, secure choice** for a business server. Not sure which version or license your business needs? Call Saffron Guru and we'll help you choose, set it up and keep it running.

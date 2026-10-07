@@ -301,12 +301,32 @@
       "dest": "/_p/product__8.html"
     },
     {
+      "src": "^/Products/saffron-guru-microsoft-windows-server-2019-standard\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
+      }
+    },
+    {
+      "src": "^/Products/saffron-guru-microsoft-windows-server-2022-standard\\.webp$",
+      "status": 301,
+      "headers": {
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
+      }
+    },
+    {
       "src": "^/product/9/?$",
-      "dest": "/_p/product__9.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/18"
+      }
     },
     {
       "src": "^/product/10/?$",
-      "dest": "/_p/product__10.html"
+      "status": 301,
+      "headers": {
+        "Location": "/product/18"
+      }
     },
     {
       "src": "^/product/18/?$",
@@ -769,28 +789,28 @@
       "src": "^/Products/saffron-guru-microsoft-windows-server-2019-standard-datacenter\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
       "src": "^/Products/saffron-guru-microsoft-windows-server-2022-standard-datacenter\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
       "src": "^/Products/microsoft-windows-server-2019-standard-datacenter\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
       "src": "^/Products/microsoft-windows-server-2022-standard-datacenter\\.webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
@@ -1315,14 +1335,14 @@
       "src": "^/Products/Windows(?: |%20)Server(?: |%20)2019(?: |%20)Standard(?: |%20)(?: |%20)Datacenter\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2019-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
       "src": "^/Products/Windows(?: |%20)Server(?: |%20)2022(?: |%20)Standard(?: |%20)(?: |%20)Datacenter\\.Webp$",
       "status": 301,
       "headers": {
-        "Location": "/Products/saffron-guru-microsoft-windows-server-2022-standard.webp"
+        "Location": "/Products/saffron-guru-microsoft-windows-server-2025-standard.webp"
       }
     },
     {
