@@ -101,7 +101,7 @@ const Videos = () => {
             >
               <img
                     loading="lazy"
-                    decoding="async" src={item.icon} alt="News channel logo" className="news-icon" />
+                    decoding="async" src={item.icon} alt={`Saffron Guru scam awareness — ${item.label}`} className="news-icon" />
               {item.label}
             </div>
           ))}

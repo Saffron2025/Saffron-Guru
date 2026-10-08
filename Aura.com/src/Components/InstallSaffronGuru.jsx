@@ -139,7 +139,7 @@ export default function InstallSaffronGuru() {
   return (
     <div className="sgi-wrap">
       <div className="sgi-badge">
-        <img src="/Products/saffron-guru-logo-192.png" alt="" className="sgi-badge-logo" width="48" height="48" loading="lazy" decoding="async" />
+        <img src="/Products/saffron-guru-logo-192.png" alt="Saffron Guru app icon" className="sgi-badge-logo" width="48" height="48" loading="lazy" decoding="async" />
         <div className="sgi-badge-text">
           <strong>Install Saffron Guru</strong>
           <span>On your phone or computer. One tap to reach us.</span>
