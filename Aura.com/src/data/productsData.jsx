@@ -257,9 +257,9 @@ Windows Server 2025 Standard is the **most up-to-date, secure choice** for a bus
   // --- Internet Security Products (11–17) ---
 {
   id: 11,
-  name: "Norton 360 Premium (10 Devices)",
+  name: "Norton 360 Premium",
   img: "/Products/saffron-guru-norton-360-premium.webp",
-  price: "$99.99",
+  price: "$59.99 first year",
   desc: "Complete security suite with antivirus, VPN & dark web monitoring.",
   longDesc: `
 Norton 360 Premium (10 Devices) is designed to keep your digital life safe across all your devices — computers, smartphones, and tablets. With advanced antivirus and firewall protection, it blocks hackers, malware, and online threats before they can cause damage. 
@@ -300,6 +300,10 @@ Norton 360 Premium (10 Devices) is designed to keep your digital life safe acros
 - **Check compatibility & updates:** Make sure it suits all your devices and gets frequent updates.  
 - **Read reviews & support:** User feedback and reliable support make a big difference in satisfaction.  
 
+🔹 **Official Norton pricing**
+- **1 year, up to 10 devices:** $59.99 for the first year, then $149.99 a year when it renews.  
+- Prices are set by Norton and may change. We'll always confirm the current price with you before you buy.  
+
 ✅ **Conclusion:**  
 Norton 360 Premium for 10 Devices delivers robust, all-in-one protection for individuals and families. Whether you need essential security, advanced features, or parental controls, it ensures privacy, safety, and peace of mind in today’s digital world.`
 },
@@ -308,7 +312,7 @@ Norton 360 Premium for 10 Devices delivers robust, all-in-one protection for ind
   id: 12, 
   name: "Norton 360 with LifeLock Ultimate Plus", 
   img: "/Products/saffron-guru-norton-lifelock.webp", 
-  price: "$149.99", 
+  price: "$299.99 first year", 
   desc: "High-end Norton protection including LifeLock identity protection.",
   longDesc: `
 Norton 360 with LifeLock Ultimate Plus is our most powerful security and identity protection plan. It combines **real-time protection against hackers, viruses, malware, and ransomware** with **up to $3 million in coverage** for financial losses related to identity theft.  
@@ -336,13 +340,17 @@ It also includes **Genie Scam Protection Pro**, an advanced AI-powered assistant
 - Ideal for families and individuals needing **all-in-one protection**.  
 - Backed by Norton’s **60-day money-back guarantee**.  
 
+🔹 **Official Norton pricing**
+- **1 year, unlimited devices:** $299.99 for the first year, then $364.99 a year when it renews.  
+- Prices are set by Norton and may change. We'll always confirm the current price with you before you buy.  
+
 In short, Norton 360 with LifeLock Ultimate Plus offers **complete peace of mind**—protecting your devices, money, identity, and family in today’s digital world.
 `
 },
 
 { 
   id: 13, 
-  name: "McAfee Total Protection – Family (10 Devices)", 
+  name: "McAfee Total Protection", 
   img: "/Products/saffron-guru-mcafee-total-protection.webp", 
   price: "$89.99", 
   desc: "Family protection plan with antivirus, VPN, and password manager.",
@@ -384,7 +392,7 @@ McAfee Total Protection – Family (10 Devices) is a smart choice for households
 
 { 
   id: 14, 
-  name: "McAfee LiveSafe (Unlimited Devices)", 
+  name: "McAfee LiveSafe", 
   img: "/Products/saffron-guru-mcafee-livesafe.webp", 
   price: "$129.99", 
   desc: "Covers unlimited devices with antivirus, VPN, and identity protection.",
@@ -427,7 +435,7 @@ McAfee LiveSafe (Unlimited Devices) is a **premium all-in-one solution** for hou
 
 {
   id: 19,
-  name: "Webroot Internet Security Complete (5 Devices)",
+  name: "Webroot Internet Security Complete",
   img: "/Products/saffron-guru-webroot-internet-security-complete.webp",
   price: "$53.99 first year",
   desc: "Light, fast antivirus with privacy tools for 5 devices.",
@@ -456,9 +464,9 @@ Webroot sells the software, but they don't sit with you on the phone. Saffron Gu
 
 {
   id: 20,
-  name: "ExpressVPN Basic (10 Devices)",
+  name: "ExpressVPN Basic",
   img: "/Products/saffron-guru-expressvpn.webp",
-  price: "$74.85 first year",
+  price: "$83.72 first 28 months",
   desc: "Fast, private VPN for Wi-Fi at home and on the go.",
   longDesc: `
 ExpressVPN is one of the best-known VPN services in the world. A VPN puts a **private, encrypted tunnel** around your internet connection, so people on the same Wi-Fi (at a hotel, airport, café or hospital) can't see what you're doing or steal your passwords.
@@ -473,9 +481,8 @@ ExpressVPN is one of the best-known VPN services in the world. A VPN puts a **pr
 - **Up to 10 devices** at the same time on the Basic plan.  
 
 🔹 **Official ExpressVPN pricing (Basic plan)**
-- **12 months:** $74.85 for the first term (includes 3 extra months free), then $99.95 a year when it renews.  
-- **24 months:** $78.18 for the first term (includes 4 extra months free).  
-- **Monthly:** $12.99 a month.  
+- **2-year plan (2 years + 4 months):** $83.72 for the first 28 months ($2.99 a month), then $99.95 a year when it renews.  
+- Other plan lengths may be offered on ExpressVPN's own website.  
 - **30-day money-back guarantee** from ExpressVPN.  
 - Advanced and Pro plans are also available with more devices and extras. Prices are set by ExpressVPN and may change.  
 
@@ -486,9 +493,9 @@ ExpressVPN doesn't set it up for you. Saffron Guru clients get our technicians t
 
 {
   id: 21,
-  name: "Proton VPN Plus (10 Devices)",
+  name: "Proton VPN Plus",
   img: "/Products/saffron-guru-proton-vpn-plus.webp",
-  price: "$47.88 first year",
+  price: "$53.88 first year",
   desc: "Swiss privacy VPN with built-in ad and malware blocking.",
   longDesc: `
 Proton VPN is made by Proton, the Swiss company behind Proton Mail. It's known for **strong privacy**: Switzerland has strict privacy laws, and Proton VPN keeps a strict **no-logs policy**, meaning it doesn't record what you do online.
@@ -503,8 +510,8 @@ Proton VPN is made by Proton, the Swiss company behind Proton Mail. It's known f
 - **Up to 10 devices** at the same time.  
 
 🔹 **Official Proton VPN pricing (Plus plan)**
-- **1 year:** $47.88 for the first year ($3.99 a month), then renews at Proton's regular price.  
-- **2 years:** $71.76 for the first term ($2.99 a month).  
+- **1 year:** $53.88 for the first 12 months ($4.49 a month), then $83.88 every 12 months.  
+- **2 years:** $83.76 for the first 24 months ($3.49 a month), then $83.88 every 12 months.  
 - **Monthly:** $9.99 a month.  
 - **30-day money-back guarantee** from Proton.  
 - Prices are set by Proton and may change. We'll always confirm the current price with you before you buy.  
