@@ -2513,3 +2513,43 @@ body.navbar-menu-open {
   display: block; margin-top: 2px; color: #67e8f9; font-size: 1.15em; font-weight: 800; white-space: nowrap;
 }
 .support-popup .support-phone a:hover { color: #ffffff; }
+
+
+/* =========================================================
+   CLOSE MENU: big button + hamburger turns into an X
+========================================================= */
+
+.menu-close-btn {
+  display: block;
+  width: calc(100% - 24px);
+  margin: 14px 12px 18px;
+  padding: 16px 12px;
+  min-height: 56px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus-visible {
+  background: rgba(0, 224, 255, 0.2);
+  border-color: #00e0ff;
+  outline: none;
+}
+
+/* three lines -> X while the menu is open */
+.navbar-menu-open .compact-navbar .navbar-toggler-icon::before {
+  top: 10px;
+  box-shadow: none;
+  transform: rotate(45deg);
+}
+
+.navbar-menu-open .compact-navbar .navbar-toggler-icon::after {
+  display: block;
+  top: 10px;
+  transform: rotate(-45deg);
+}

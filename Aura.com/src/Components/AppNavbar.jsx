@@ -726,6 +726,18 @@ const AppNavbar = () => {
 
           </div>
 
+          {/* BIG CLOSE BUTTON (phones/tablets): easy for everyone to find */}
+          {isCompact && (
+            <button
+              type="button"
+              className="menu-close-btn"
+              onClick={closeNavbar}
+              aria-label="Close menu"
+            >
+              <span aria-hidden="true">✕</span> Close menu
+            </button>
+          )}
+
         </Navbar.Collapse>
 
       </Container>
