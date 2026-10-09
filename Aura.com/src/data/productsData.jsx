@@ -262,50 +262,32 @@ Windows Server 2025 Standard is the **most up-to-date, secure choice** for a bus
   price: "$59.99 first year",
   desc: "Complete security suite with antivirus, VPN & dark web monitoring.",
   longDesc: `
-Norton 360 Premium (10 Devices) is designed to keep your digital life safe across all your devices — computers, smartphones, and tablets. With advanced antivirus and firewall protection, it blocks hackers, malware, and online threats before they can cause damage. 
+Norton 360 Premium is a full security package for the whole household. One subscription covers up to **10 computers, phones and tablets** (Windows, Mac, Android and iPhone/iPad). It stops viruses, ransomware and hackers, helps you spot scams, and adds privacy tools on top, so you are not buying five separate programs.
 
-🔹 **Types of Protection Available**
-- **Standard Protection:** Essential antivirus and malware defense.  
-  *Pros:* Simple and effective for everyday use.  
-  *Cons:* Limited advanced features.  
+🔹 **What it includes**
+- **Virus, malware and ransomware protection:** several layers of defense watch your device and block threats before they do damage.  
+- **Scam Protection:** artificial intelligence checks text messages and videos for signs of a scam, including fake "deepfake" videos. Norton Genie, its built-in assistant, gives you plain tips in the moment and answers safety questions.  
+- **Scam reimbursement:** Norton says that if you are scammed online you may be covered for up to $10,000, under its terms and conditions.  
+- **Secure VPN:** hides your connection on public Wi-Fi so strangers cannot watch what you do. It can also be used on a Smart TV.  
+- **Dark Web Monitoring:** Norton watches for your personal details on the dark web and tells you if they show up.  
+- **Password Manager:** creates, saves and fills in strong passwords and card details for you.  
+- **100 GB cloud backup (Windows PCs):** keeps your important files safe if the drive fails, the computer is stolen or ransomware strikes.  
+- **Parental Control and School Time (Windows PCs):** lets you guide what children do online and keep them focused during lessons.  
+- **SafeCam (Windows PCs):** alerts you if someone tries to use your webcam, and helps block them.  
+- **Privacy Monitor:** helps you see where your information is being shared.  
 
-- **Advanced Protection:** Includes standard security plus deeper monitoring tools.  
-  *Pros:* Comprehensive coverage, stronger data protection.  
-  *Cons:* Slightly more complex to manage.  
-
-- **Family Protection:** Adds parental controls and monitoring for kids’ safety.  
-  *Pros:* Keeps children safe online and manages device use.  
-  *Cons:* Initial setup can take some time.  
-
-🔹 **Key Benefits**
-- **Virus & Malware Defense:** Blocks harmful files and threats.  
-- **Privacy Protection:** Secures personal data and online activities.  
-- **Automatic Data Backup:** Keeps your important files safe.  
-- **Parental Controls:** Helps safeguard children from harmful content.  
-- **Identity Theft Monitoring:** Protects personal details from misuse.  
-- **Smooth Device Performance:** Works quietly in the background without slowing you down.  
-
-🔹 **Things to Consider**
-- **Ease of Use:** Interface is beginner-friendly with clear navigation.  
-- **Comprehensive Coverage:** Defends against viruses, malware, and ransomware.  
-- **Parental Controls:** Useful if you want to manage children’s online activities.  
-- **Compatibility:** Supports Windows, macOS, Android, and iOS devices.  
-- **Customer Support:** Saffron Guru technicians help with installation or issues, 7 days a week.  
-- **Frequent Updates:** Regular security patches keep protection up-to-date.  
-- **Low Performance Impact:** Designed to run smoothly without slowing devices.  
-
-🔹 **Choosing the Right Plan**
-- **Prioritize your needs:** Focus on features like family protection or advanced monitoring if required.  
-- **Compare and evaluate:** Look at other options but note Norton 360 Premium’s balance of security and features.  
-- **Check compatibility & updates:** Make sure it suits all your devices and gets frequent updates.  
-- **Read reviews & support:** User feedback and reliable support make a big difference in satisfaction.  
+🔹 **Good to know**
+- Some features, such as cloud backup, Parental Control and SafeCam, work on Windows PCs only. Mac, Android and iPhone get the core protection and the VPN.  
+- **Norton's guarantee:** if its experts cannot remove a virus from your device, you can get your money back. Annual plans also come with a 60-day refund window.  
+- Works on current Windows, Mac, Android and iOS versions. Our technicians will check yours before installing.  
 
 🔹 **Official Norton pricing**
 - **1 year, up to 10 devices:** $59.99 for the first year, then $149.99 a year when it renews.  
 - Prices are set by Norton and may change. We'll always confirm the current price with you before you buy.  
 
-✅ **Conclusion:**  
-Norton 360 Premium for 10 Devices delivers robust, all-in-one protection for individuals and families. Whether you need essential security, advanced features, or parental controls, it ensures privacy, safety, and peace of mind in today’s digital world.`
+✅ **Where Saffron Guru comes in**  
+Norton sells the software, but they don't sit with you on the phone. Saffron Guru clients get our technicians to install and set it up on every device, turn on the right features, and help any time something looks wrong, 7 days a week.
+`
 },
 
 { 
