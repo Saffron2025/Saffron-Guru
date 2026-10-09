@@ -164,8 +164,10 @@ export default function ForYourBusiness() {
             <Row className="align-items-center">
               <Col md={6}>
                 <img
-                  src="/Hero/saffron-guru-safe-support-assist-for-business.webp"
-                  alt="Safe Support Assist for business by Saffron Guru"
+                  src="/Hero/saffron-guru-safe-support-assist-business-it-support.webp"
+                  alt="Saffron Guru Safe Support Assist for business: IT team helping an office worker, with icons for network, printer, apps, cloud, security and backup"
+                  width="1024"
+                  height="1024"
                   className="business-img"
                   loading="eager"   // ✅ fast load
                 />
