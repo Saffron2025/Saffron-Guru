@@ -108,7 +108,7 @@ for (const [route, page] of Object.entries(data)) {
   }
   if (route !== "/") {
     const crumbs = [{ "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" }];
-    const sect = route.startsWith("/articles/") ? ["Online Safety Hub", "/article"] : route.startsWith("/blog/") ? ["Blog", "/blog"] : route.startsWith("/product/") ? (/^\/product\/(1[1-7]|19|2[01])$/.test(route) ? ["Internet Security", "/internet-security"] : ["Microsoft Software", "/microsoft-store"]) : null;
+    const sect = route.startsWith("/articles/") ? ["Online Safety Hub", "/online-safety-hub"] : route.startsWith("/blog/") ? ["Blog", "/blog"] : route.startsWith("/product/") ? (/^\/product\/(1[1-7]|19|2[01])$/.test(route) ? ["Internet Security", "/internet-security"] : ["Microsoft Software", "/microsoft-software"]) : null;
     if (sect) crumbs.push({ "@type": "ListItem", position: 2, name: sect[0], item: SITE + sect[1] });
     crumbs.push({ "@type": "ListItem", position: crumbs.length + 1, name: title.replace(/ \| Saffron Guru$/, ""), item: url });
     ld.push({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs });

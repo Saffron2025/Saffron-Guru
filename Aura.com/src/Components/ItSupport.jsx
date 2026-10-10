@@ -384,7 +384,7 @@ const ItSupport = () => {
 
             <button
               className="service-cta home-cta"
-              onClick={() => navigate("/for-your-home")}
+              onClick={() => navigate("/it-support-home")}
             >
 
               <span>
@@ -686,7 +686,7 @@ const ItSupport = () => {
 
             <button
               className="service-cta business-cta"
-              onClick={() => navigate("/for-your-business")}
+              onClick={() => navigate("/it-support-business")}
             >
 
               <span>

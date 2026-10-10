@@ -40,7 +40,7 @@ const FixMyTech = () => {
             We fix it today — step by step, with no jargon.
           </p>
           <div className="hero-btns">
-            <Link to="/Pricing" className="cta-btn">⚡ Fix It Now</Link>
+            <Link to="/pricing" className="cta-btn">⚡ Fix It Now</Link>
             <Link to="/contact" className="cta-btn secondary">📞 Talk to a Tech</Link>
           </div>
         </div>
@@ -141,7 +141,7 @@ const FixMyTech = () => {
             <h2>📞 Ready to Fix Your Tech?</h2>
             <p>Home — $89.99 + taxes <br/> Business — $149.99 + taxes</p>
             <div className="btn-group">
-              <Link to="/Pricing" className="cta-btn">⚡ Fix It Now</Link>
+              <Link to="/pricing" className="cta-btn">⚡ Fix It Now</Link>
               <Link to="/contact" className="cta-btn secondary">📞 Talk to a Tech</Link>
             </div>
             <p className="note">Prefer talking? Call <strong>+1 844-313-4987</strong>. We’ll guide you patiently, step by step.</p>

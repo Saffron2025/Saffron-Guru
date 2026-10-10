@@ -21,7 +21,7 @@ const ArticlesList = () => {
             </span>
 
             <h1 className="article-title">
-              Latest <span>Articles</span>
+              Online Safety <span>Hub</span>
             </h1>
 
             <p className="articles-list-subtitle">

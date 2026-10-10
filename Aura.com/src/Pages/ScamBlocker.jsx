@@ -205,7 +205,7 @@ export default function ScamBlocker() {
             Rather have us set it up for you? <a href="tel:+18443134987"><FaPhoneAlt aria-hidden="true" /> Call +1 844-313-4987</a>
           </p>
           <p className="sb-small">
-            Want a real person watching out for you too? See <Link to="/DefendPro">DefendMe PRO™ Security Solutions</Link>.
+            Want a real person watching out for you too? See <Link to="/defendme-pro-security">DefendMe PRO™ Security Solutions</Link>.
           </p>
         </section>
       </main>

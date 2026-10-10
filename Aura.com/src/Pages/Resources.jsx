@@ -62,7 +62,7 @@ const Resources = () => {
                   <Card.Text>
                     Understand how scammers pretend to be from Microsoft, Amazon, banks, etc., and what to do if you receive a suspicious call.
                   </Card.Text>
-                  <Button as={Link} to="/IdentifyFakeCalls" variant="warning">
+                  <Button as={Link} to="/spot-fake-calls" variant="warning">
                     Read
                   </Button>
                 </Card.Body>
@@ -114,7 +114,7 @@ const Resources = () => {
                   <Card.Text>
                     Common questions about fraud prevention, answered by experts. Great for families looking to protect loved ones.
                   </Card.Text>
-                  <Button as={Link} to="/ReadFAQ" variant="warning">
+                  <Button as={Link} to="/faq" variant="warning">
                     Read FAQ
                   </Button>
                 </Card.Body>

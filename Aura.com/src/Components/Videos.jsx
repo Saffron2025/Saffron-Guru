@@ -15,11 +15,11 @@ const videos = [
 
 // 📰 News Links
 const newsLinks = [
-  { icon: "/Hero/saffron-guru-scam-awareness-fox-news-video.webp", label: "Fox: Social Security Scam", url: "/Fox" },
-  { icon: "/Hero/saffron-guru-scam-awareness-cbs-news-video.webp", label: "CBS: Eagan Couple Nearly Scammed", url: "/CBS" },
-  { icon: "/Hero/saffron-guru-scam-awareness-abc11-news-video.webp", label: "ABC11: Tech Support Scam", url: "/ABC11" },
-  { icon: "/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp", label: "New York PD: Scam Alert", url: "/NewYorkPolice" },
-  { icon: "/Hero/saffron-guru-scam-awareness-abc-news-video.webp", label: "ABC: $4.8B Lost by Seniors", url: "/ABCNational" },
+  { icon: "/Hero/saffron-guru-scam-awareness-fox-news-video.webp", label: "Fox: Social Security Scam", url: "/featured-on-fox" },
+  { icon: "/Hero/saffron-guru-scam-awareness-cbs-news-video.webp", label: "CBS: Eagan Couple Nearly Scammed", url: "/featured-on-cbs" },
+  { icon: "/Hero/saffron-guru-scam-awareness-abc11-news-video.webp", label: "ABC11: Tech Support Scam", url: "/featured-on-abc11" },
+  { icon: "/Hero/saffron-guru-scam-awareness-ny-state-police-video.webp", label: "New York PD: Scam Alert", url: "/featured-on-ny-police" },
+  { icon: "/Hero/saffron-guru-scam-awareness-abc-news-video.webp", label: "ABC: $4.8B Lost by Seniors", url: "/featured-on-abc-news" },
 ];
 
 const Videos = () => {

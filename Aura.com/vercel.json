@@ -8,6 +8,139 @@
       "handle": "filesystem"
     },
     {
+      "src": "^/DefendPro/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/defendme-pro-security"
+      }
+    },
+    {
+      "src": "^/LearnMore/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/defendme-pro-features"
+      }
+    },
+    {
+      "src": "^/for-your-home/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/it-support-home"
+      }
+    },
+    {
+      "src": "^/for-your-business/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/it-support-business"
+      }
+    },
+    {
+      "src": "^/Parent-Solution/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/parental-control"
+      }
+    },
+    {
+      "src": "^/solution/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/protecting-seniors"
+      }
+    },
+    {
+      "src": "^/HowSaffronWorks/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/how-it-works"
+      }
+    },
+    {
+      "src": "^/FixMyTech/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/fix-my-tech"
+      }
+    },
+    {
+      "src": "^/Pricing/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/pricing"
+      }
+    },
+    {
+      "src": "^/DaysMoneyBack/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/money-back-guarantee"
+      }
+    },
+    {
+      "src": "^/IdentifyFakeCalls/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/spot-fake-calls"
+      }
+    },
+    {
+      "src": "^/ReadFAQ/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/faq"
+      }
+    },
+    {
+      "src": "^/article/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/online-safety-hub"
+      }
+    },
+    {
+      "src": "^/microsoft-store/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/microsoft-software"
+      }
+    },
+    {
+      "src": "^/Fox/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/featured-on-fox"
+      }
+    },
+    {
+      "src": "^/CBS/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/featured-on-cbs"
+      }
+    },
+    {
+      "src": "^/ABC11/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/featured-on-abc11"
+      }
+    },
+    {
+      "src": "^/ABCNational/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/featured-on-abc-news"
+      }
+    },
+    {
+      "src": "^/NewYorkPolice/?$",
+      "status": 301,
+      "headers": {
+        "Location": "/featured-on-ny-police"
+      }
+    },
+    {
       "src": "^/about/?$",
       "status": 301,
       "headers": {
@@ -45,88 +178,88 @@
       "dest": "/_p/why-us.html"
     },
     {
-      "src": "^/DefendPro/?$",
-      "dest": "/_p/DefendPro.html"
+      "src": "^/defendme-pro-security/?$",
+      "dest": "/_p/defendme-pro-security.html"
     },
     {
       "src": "^/resources/?$",
       "dest": "/_p/resources.html"
     },
     {
-      "src": "^/HowSaffronWorks/?$",
-      "dest": "/_p/HowSaffronWorks.html"
+      "src": "^/how-it-works/?$",
+      "dest": "/_p/how-it-works.html"
     },
     {
-      "src": "^/solution/?$",
-      "dest": "/_p/solution.html"
+      "src": "^/protecting-seniors/?$",
+      "dest": "/_p/protecting-seniors.html"
     },
     {
-      "src": "^/LearnMore/?$",
-      "dest": "/_p/LearnMore.html"
+      "src": "^/defendme-pro-features/?$",
+      "dest": "/_p/defendme-pro-features.html"
     },
     {
-      "src": "^/microsoft-store/?$",
-      "dest": "/_p/microsoft-store.html"
+      "src": "^/microsoft-software/?$",
+      "dest": "/_p/microsoft-software.html"
     },
     {
       "src": "^/internet-security/?$",
       "dest": "/_p/internet-security.html"
     },
     {
-      "src": "^/for-your-business/?$",
-      "dest": "/_p/for-your-business.html"
+      "src": "^/it-support-business/?$",
+      "dest": "/_p/it-support-business.html"
     },
     {
-      "src": "^/for-your-home/?$",
-      "dest": "/_p/for-your-home.html"
+      "src": "^/it-support-home/?$",
+      "dest": "/_p/it-support-home.html"
     },
     {
-      "src": "^/Parent-Solution/?$",
-      "dest": "/_p/Parent-Solution.html"
+      "src": "^/parental-control/?$",
+      "dest": "/_p/parental-control.html"
     },
     {
-      "src": "^/Pricing/?$",
-      "dest": "/_p/Pricing.html"
+      "src": "^/pricing/?$",
+      "dest": "/_p/pricing.html"
     },
     {
-      "src": "^/DaysMoneyBack/?$",
-      "dest": "/_p/DaysMoneyBack.html"
+      "src": "^/money-back-guarantee/?$",
+      "dest": "/_p/money-back-guarantee.html"
     },
     {
-      "src": "^/IdentifyFakeCalls/?$",
-      "dest": "/_p/IdentifyFakeCalls.html"
+      "src": "^/spot-fake-calls/?$",
+      "dest": "/_p/spot-fake-calls.html"
     },
     {
-      "src": "^/ReadFAQ/?$",
-      "dest": "/_p/ReadFAQ.html"
+      "src": "^/faq/?$",
+      "dest": "/_p/faq.html"
     },
     {
-      "src": "^/FixMyTech/?$",
-      "dest": "/_p/FixMyTech.html"
+      "src": "^/fix-my-tech/?$",
+      "dest": "/_p/fix-my-tech.html"
     },
     {
       "src": "^/live-support/?$",
       "dest": "/_p/live-support.html"
     },
     {
-      "src": "^/Fox/?$",
-      "dest": "/_p/Fox.html"
+      "src": "^/featured-on-fox/?$",
+      "dest": "/_p/featured-on-fox.html"
     },
     {
-      "src": "^/CBS/?$",
-      "dest": "/_p/CBS.html"
+      "src": "^/featured-on-cbs/?$",
+      "dest": "/_p/featured-on-cbs.html"
     },
     {
-      "src": "^/ABC11/?$",
-      "dest": "/_p/ABC11.html"
+      "src": "^/featured-on-abc11/?$",
+      "dest": "/_p/featured-on-abc11.html"
     },
     {
-      "src": "^/NewYorkPolice/?$",
-      "dest": "/_p/NewYorkPolice.html"
+      "src": "^/featured-on-ny-police/?$",
+      "dest": "/_p/featured-on-ny-police.html"
     },
     {
-      "src": "^/ABCNational/?$",
-      "dest": "/_p/ABCNational.html"
+      "src": "^/featured-on-abc-news/?$",
+      "dest": "/_p/featured-on-abc-news.html"
     },
     {
       "src": "^/blog/?$",
@@ -177,8 +310,8 @@
       "dest": "/_p/blog__ai-voice-fraud.html"
     },
     {
-      "src": "^/article/?$",
-      "dest": "/_p/article.html"
+      "src": "^/online-safety-hub/?$",
+      "dest": "/_p/online-safety-hub.html"
     },
     {
       "src": "^/articles/crypto-scams-getting-smarter/?$",
@@ -376,7 +509,7 @@
       "src": "^/features/?$",
       "status": 301,
       "headers": {
-        "Location": "/DefendPro"
+        "Location": "/defendme-pro-security"
       }
     },
     {
@@ -1490,7 +1623,7 @@
       "dest": "/extension-privacy.html"
     },
     {
-      "src": "^/(login|signup|verify-otp|home|features|DefendPro|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|solution|resources|HowSaffronWorks|Fox|CBS|ABC11|NewYorkPolice|ABCNational|AccountIn|LearnMore|microsoft-store|internet-security|for-your-business|for-your-home|Parent-Solution|Pricing|DaysMoneyBack|IdentifyFakeCalls|ReadFAQ|FixMyTech|our-story|veterans|why-human-support|scam-popup-blocker|seniors|product/.*|live-support|blog|blog/.*|article|article/.*|articles|articles/.*)$",
+      "src": "^/(login|signup|verify-otp|home|features|defendme-pro-security|contact|about-us|privacy-policy|terms|return-policy|why-us|userdashboard|protecting-seniors|resources|how-it-works|featured-on-fox|featured-on-cbs|featured-on-abc11|featured-on-ny-police|featured-on-abc-news|AccountIn|defendme-pro-features|microsoft-software|internet-security|it-support-business|it-support-home|parental-control|pricing|money-back-guarantee|spot-fake-calls|faq|fix-my-tech|our-story|veterans|why-human-support|scam-popup-blocker|seniors|product/.*|live-support|blog|blog/.*|online-safety-hub|articles|articles/.*)$",
       "dest": "/index.html"
     },
     {

@@ -46,7 +46,7 @@ const Pricing = () => {
                     <li>7-Day Live Support</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/DefendPro" className="btn btn-outline-primary">
+                    <Link to="/defendme-pro-security" className="btn btn-outline-primary">
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -76,7 +76,7 @@ const Pricing = () => {
                     <li>Priority Business Support</li>
                   </ul>
                   <div className="d-flex gap-2">
-                    <Link to="/DefendPro#dp-business" className="btn btn-outline-primary">
+                    <Link to="/defendme-pro-security#dp-business" className="btn btn-outline-primary">
                       Learn More
                     </Link>
                     <Button variant="primary" onClick={handleShow}>
@@ -102,7 +102,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/Parent-Solution"
+                      to="/parental-control"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -132,7 +132,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/for-your-home"
+                      to="/it-support-home"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -166,7 +166,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/for-your-business"
+                      to="/it-support-business"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -234,7 +234,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/FixMyTech#fixmytech-home"
+                      to="/fix-my-tech#fixmytech-home"
                       className="btn btn-outline-primary"
                     >
                       Learn More
@@ -269,7 +269,7 @@ const Pricing = () => {
                   </ul>
                   <div className="d-flex gap-2">
                     <Link
-                      to="/FixMyTech#fixmytech-business"
+                      to="/fix-my-tech#fixmytech-business"
                       className="btn btn-outline-primary"
                     >
                       Learn More

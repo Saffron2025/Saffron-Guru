@@ -22,7 +22,7 @@ const ProductDetail = () => {
   const SECURITY_IDS = [11, 12, 13, 14, 15, 16, 17, 19, 20, 21];
   const isSecurity = (pid) => SECURITY_IDS.includes(pid);
   const inSecurity = isSecurity(product.id);
-  const storePath = inSecurity ? "/internet-security" : "/microsoft-store";
+  const storePath = inSecurity ? "/internet-security" : "/microsoft-software";
   const related = products.filter((p) => p.id !== product.id && isSecurity(p.id) === inSecurity);
 
   const handleMouseMove = (e) => {

@@ -74,7 +74,7 @@ const BlogPost = () => {
                 </li>
               ))}
             <li>
-              <Link to="/article">Latest scam alerts in our Online Safety Hub</Link>
+              <Link to="/online-safety-hub">Latest scam alerts in our Online Safety Hub</Link>
             </li>
           </ul>
           <p>

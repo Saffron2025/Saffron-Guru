@@ -203,7 +203,7 @@ const App = () => {
           />
 
           <Route
-            path="/DefendPro"
+            path="/defendme-pro-security"
             element={
               <Layout>
                 <DefendPro />
@@ -285,7 +285,7 @@ const App = () => {
           ========================= */}
 
           <Route
-            path="/solution"
+            path="/protecting-seniors"
             element={
               <Layout>
                 <Solution />
@@ -303,7 +303,7 @@ const App = () => {
           />
 
           <Route
-            path="/HowSaffronWorks"
+            path="/how-it-works"
             element={
               <Layout>
                 <HowSaffronWorks />
@@ -317,7 +317,7 @@ const App = () => {
           ========================= */}
 
           <Route
-            path="/Fox"
+            path="/featured-on-fox"
             element={
               <Layout>
                 <Fox />
@@ -326,7 +326,7 @@ const App = () => {
           />
 
           <Route
-            path="/CBS"
+            path="/featured-on-cbs"
             element={
               <Layout>
                 <CBS />
@@ -335,7 +335,7 @@ const App = () => {
           />
 
           <Route
-            path="/ABC11"
+            path="/featured-on-abc11"
             element={
               <Layout>
                 <ABC11 />
@@ -344,7 +344,7 @@ const App = () => {
           />
 
           <Route
-            path="/NewYorkPolice"
+            path="/featured-on-ny-police"
             element={
               <Layout>
                 <NewYorkPolice />
@@ -353,7 +353,7 @@ const App = () => {
           />
 
           <Route
-            path="/ABCNational"
+            path="/featured-on-abc-news"
             element={
               <Layout>
                 <ABCNational />
@@ -376,7 +376,7 @@ const App = () => {
           />
 
           <Route
-            path="/LearnMore"
+            path="/defendme-pro-features"
             element={
               <Layout>
                 <LearnMore />
@@ -385,7 +385,7 @@ const App = () => {
           />
 
           <Route
-            path="/microsoft-store"
+            path="/microsoft-software"
             element={
               <Layout>
                 <MicrosoftStore />
@@ -408,7 +408,7 @@ const App = () => {
           ========================= */}
 
           <Route
-            path="/for-your-business"
+            path="/it-support-business"
             element={
               <Layout>
                 <ForYourBusiness />
@@ -417,7 +417,7 @@ const App = () => {
           />
 
           <Route
-            path="/for-your-home"
+            path="/it-support-home"
             element={
               <Layout>
                 <ForYourHome />
@@ -426,7 +426,7 @@ const App = () => {
           />
 
           <Route
-            path="/Parent-Solution"
+            path="/parental-control"
             element={
               <Layout>
                 <ParentSolution />
@@ -440,7 +440,7 @@ const App = () => {
           ========================= */}
 
           <Route
-            path="/Pricing"
+            path="/pricing"
             element={
               <Layout>
                 <Pricing />
@@ -449,7 +449,7 @@ const App = () => {
           />
 
           <Route
-            path="/DaysMoneyBack"
+            path="/money-back-guarantee"
             element={
               <Layout>
                 <DaysMoneyBack />
@@ -458,7 +458,7 @@ const App = () => {
           />
 
           <Route
-            path="/IdentifyFakeCalls"
+            path="/spot-fake-calls"
             element={
               <Layout>
                 <IdentifyFakeCalls />
@@ -467,7 +467,7 @@ const App = () => {
           />
 
           <Route
-            path="/ReadFAQ"
+            path="/faq"
             element={
               <Layout>
                 <ReadFAQ />
@@ -476,7 +476,7 @@ const App = () => {
           />
 
           <Route
-            path="/FixMyTech"
+            path="/fix-my-tech"
             element={
               <Layout>
                 <FixMyTech />
@@ -541,7 +541,7 @@ const App = () => {
           ========================= */}
 
           <Route
-            path="/article"
+            path="/online-safety-hub"
             element={
               <Layout>
                 <ArticlesList />
@@ -585,6 +585,29 @@ const App = () => {
             element={<Layout><Veterans /></Layout>}
           />
           <Route path="/Veterens" element={<Navigate to="/veterans" replace />} />
+
+          {/* =========================
+              OLD → CLEAN URL REDIRECTS
+          ========================= */}
+          <Route path="/DefendPro" element={<Navigate to="/defendme-pro-security" replace />} />
+          <Route path="/LearnMore" element={<Navigate to="/defendme-pro-features" replace />} />
+          <Route path="/for-your-home" element={<Navigate to="/it-support-home" replace />} />
+          <Route path="/for-your-business" element={<Navigate to="/it-support-business" replace />} />
+          <Route path="/Parent-Solution" element={<Navigate to="/parental-control" replace />} />
+          <Route path="/solution" element={<Navigate to="/protecting-seniors" replace />} />
+          <Route path="/HowSaffronWorks" element={<Navigate to="/how-it-works" replace />} />
+          <Route path="/FixMyTech" element={<Navigate to="/fix-my-tech" replace />} />
+          <Route path="/Pricing" element={<Navigate to="/pricing" replace />} />
+          <Route path="/DaysMoneyBack" element={<Navigate to="/money-back-guarantee" replace />} />
+          <Route path="/IdentifyFakeCalls" element={<Navigate to="/spot-fake-calls" replace />} />
+          <Route path="/ReadFAQ" element={<Navigate to="/faq" replace />} />
+          <Route path="/article" element={<Navigate to="/online-safety-hub" replace />} />
+          <Route path="/microsoft-store" element={<Navigate to="/microsoft-software" replace />} />
+          <Route path="/Fox" element={<Navigate to="/featured-on-fox" replace />} />
+          <Route path="/CBS" element={<Navigate to="/featured-on-cbs" replace />} />
+          <Route path="/ABC11" element={<Navigate to="/featured-on-abc11" replace />} />
+          <Route path="/ABCNational" element={<Navigate to="/featured-on-abc-news" replace />} />
+          <Route path="/NewYorkPolice" element={<Navigate to="/featured-on-ny-police" replace />} />
 
 
           {/* =========================

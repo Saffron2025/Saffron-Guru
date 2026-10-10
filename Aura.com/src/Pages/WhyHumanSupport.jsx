@@ -204,13 +204,13 @@ const WhyHumanSupport = () => {
             </p>
 
             <div className="whs-answer">
-              <Link to="/DefendPro" className="whs-card whs-card-blue">
+              <Link to="/defendme-pro-security" className="whs-card whs-card-blue">
                 <span className="whs-card-icon" aria-hidden="true">🛡️</span>
                 <h3>DefendMe PRO™</h3>
                 <p>Protection far beyond antivirus, for your identity, your accounts and your money.</p>
                 <span className="whs-card-link">See what is included →</span>
               </Link>
-              <Link to="/for-your-home" className="whs-card whs-card-orange">
+              <Link to="/it-support-home" className="whs-card whs-card-orange">
                 <span className="whs-card-icon" aria-hidden="true">🧑‍💻</span>
                 <h3>Safe Support Assist™</h3>
                 <p>Your own team of patient technicians, ready to help with any device, 7 days a week.</p>

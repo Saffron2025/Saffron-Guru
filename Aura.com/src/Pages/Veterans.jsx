@@ -363,7 +363,7 @@ const Veterans = () => {
               {PROTECTION.map((item, n) => (
                 <Link
                   key={item.title}
-                  to={`/DefendPro?item=${item.item}`}
+                  to={`/defendme-pro-security?item=${item.item}`}
                   className="benefit-card"
                 >
                   <div className="card-number">{String(n + 1).padStart(2, "0")}</div>
@@ -718,7 +718,7 @@ const Veterans = () => {
 
 
               <Link
-                to="/DefendPro"
+                to="/defendme-pro-security"
                 className="security-button"
               >
 
@@ -869,7 +869,7 @@ const Veterans = () => {
         ===================================================== */}
 
         <Link
-          to="/LearnMore"
+          to="/defendme-pro-features"
           className="fixed-protection-button"
           aria-label="Explore Full Protection"
         >

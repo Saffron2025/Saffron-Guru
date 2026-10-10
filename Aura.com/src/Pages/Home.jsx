@@ -185,7 +185,7 @@ const Hero = () => {
 
         {/* TWO MAIN PATHS - call-to-action buttons */}
         <div className="hero-cta-paths">
-          <Link to="/DefendPro" className="hero-cta-path hero-cta-protect">
+          <Link to="/defendme-pro-security" className="hero-cta-path hero-cta-protect">
             <span className="hero-cta-icon" aria-hidden="true">🛡️</span>
             <span className="hero-cta-text">
               <strong>Protection Far Beyond Antivirus</strong>
@@ -193,7 +193,7 @@ const Hero = () => {
             </span>
           </Link>
 
-          <Link to="/for-your-home" className="hero-cta-path hero-cta-support">
+          <Link to="/it-support-home" className="hero-cta-path hero-cta-support">
             <span className="hero-cta-icon" aria-hidden="true">🧑‍💻</span>
             <span className="hero-cta-text">
               <strong>Your Own IT Department</strong>
@@ -202,7 +202,7 @@ const Hero = () => {
           </Link>
         </div>
         <p className="hero-cta-business">
-          Business owner? <Link to="/for-your-business">See IT support for businesses →</Link>
+          Business owner? <Link to="/it-support-business">See IT support for businesses →</Link>
         </p>
 
 
@@ -357,7 +357,7 @@ const Hero = () => {
                 </div>
 
                 <Link
-                  to="/DaysMoneyBack"
+                  to="/money-back-guarantee"
                   className="trust-text"
                 >
                   30-Day Money-Back Guarantee
@@ -513,7 +513,7 @@ const Hero = () => {
             </ul>
 
             <Link
-              to="/Parent-Solution"
+              to="/parental-control"
               className="aura-btn"
             >
               Learn More

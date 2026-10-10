@@ -14,7 +14,7 @@ const BlogHome = () => {
       <p className="text-center text-muted mb-4">
         Easy-to-read guides to help you and your family stay safe online.
         Looking for the latest scam alerts? Visit our{" "}
-        <Link to="/article">Online Safety Hub</Link>.
+        <Link to="/online-safety-hub">Online Safety Hub</Link>.
       </p>
 
       <Row xs={1} md={2} lg={3} className="g-4">

@@ -318,7 +318,7 @@ const AppNavbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/DefendPro"
+              to="/defendme-pro-security"
             >
               DefendMe PRO™
             </Nav.Link>
@@ -333,14 +333,14 @@ const AppNavbar = () => {
             >
               <NavDropdown.Item
                 as={Link}
-                to="/for-your-home"
+                to="/it-support-home"
               >
                 For Your Home
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 as={Link}
-                to="/for-your-business"
+                to="/it-support-business"
               >
                 For Your Business
               </NavDropdown.Item>
@@ -356,21 +356,21 @@ const AppNavbar = () => {
             >
               <NavDropdown.Item
                 as={Link}
-                to="/solution"
+                to="/protecting-seniors"
               >
                 Protection of our Society
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 as={Link}
-                to="/Parent-Solution"
+                to="/parental-control"
               >
                 NetHaven™
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 as={Link}
-                to="/FixMyTech"
+                to="/fix-my-tech"
               >
                 FixMyTech™
               </NavDropdown.Item>
@@ -379,7 +379,7 @@ const AppNavbar = () => {
                 onClick={() => {
                   handleNavigation();
                   window.location.href =
-                    "/DefendPro?item=identity-theft";
+                    "/defendme-pro-security?item=identity-theft";
                 }}
               >
                 👤 Identity Theft Protection
@@ -389,7 +389,7 @@ const AppNavbar = () => {
                 onClick={() => {
                   handleNavigation();
                   window.location.href =
-                    "/DefendPro?item=fraud-detection";
+                    "/defendme-pro-security?item=fraud-detection";
                 }}
               >
                 ⚠️ Fraud Detection
@@ -399,7 +399,7 @@ const AppNavbar = () => {
                 onClick={() => {
                   handleNavigation();
                   window.location.href =
-                    "/DefendPro?item=scam-protection";
+                    "/defendme-pro-security?item=scam-protection";
                 }}
               >
                 🔔 Scam Protection
@@ -412,7 +412,7 @@ const AppNavbar = () => {
                   const t = Date.now();
 
                   window.location.href =
-                    `/DefendPro?item=scam-alerts&t=${t}`;
+                    `/defendme-pro-security?item=scam-alerts&t=${t}`;
                 }}
               >
                 🔔 Scam Alerts Hub
@@ -425,7 +425,7 @@ const AppNavbar = () => {
                   const t = Date.now();
 
                   window.location.href =
-                    `/DefendPro?item=financial-security&t=${t}`;
+                    `/defendme-pro-security?item=financial-security&t=${t}`;
                 }}
               >
                 💰 Financial Security
@@ -436,7 +436,7 @@ const AppNavbar = () => {
                   handleNavigation();
 
                   window.location.href =
-                    "/DefendPro?item=password-manager";
+                    "/defendme-pro-security?item=password-manager";
                 }}
               >
                 🔑 Password Manager
@@ -447,7 +447,7 @@ const AppNavbar = () => {
                   handleNavigation();
 
                   window.location.href =
-                    "/DefendPro?item=antivirus";
+                    "/defendme-pro-security?item=antivirus";
                 }}
               >
                 🖥️ Antivirus & Device Security
@@ -458,7 +458,7 @@ const AppNavbar = () => {
                   handleNavigation();
 
                   window.location.href =
-                    "/DefendPro?item=vpn";
+                    "/defendme-pro-security?item=vpn";
                 }}
               >
                 🌐 VPN & Online Privacy
@@ -469,7 +469,7 @@ const AppNavbar = () => {
                   handleNavigation();
 
                   window.location.href =
-                    "/DefendPro?item=spam-call";
+                    "/defendme-pro-security?item=spam-call";
                 }}
               >
                 📞 Spam Call Protection
@@ -480,7 +480,7 @@ const AppNavbar = () => {
                   handleNavigation();
 
                   window.location.href =
-                    "/DefendPro?item=human-support";
+                    "/defendme-pro-security?item=human-support";
                 }}
               >
                 👤 Human Support
@@ -497,7 +497,7 @@ const AppNavbar = () => {
             >
               <NavDropdown.Item
                 as={Link}
-                to="/microsoft-store"
+                to="/microsoft-software"
               >
                 Microsoft Software
               </NavDropdown.Item>
@@ -515,7 +515,7 @@ const AppNavbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/Pricing"
+              to="/pricing"
             >
               Pricing
             </Nav.Link>
@@ -537,7 +537,7 @@ const AppNavbar = () => {
 
               <NavDropdown.Item
                 as={Link}
-                to="/HowSaffronWorks"
+                to="/how-it-works"
               >
                 How Saffron Works
               </NavDropdown.Item>
@@ -560,7 +560,7 @@ const AppNavbar = () => {
             >
               <NavDropdown.Item
                 as={Link}
-                to="/article"
+                to="/online-safety-hub"
               >
                 🧠 Online Safety Hub
               </NavDropdown.Item>

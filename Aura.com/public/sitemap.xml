@@ -9,7 +9,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.saffronguru.com/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-abc-news-video.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-abc11-news-video.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-scam-awareness-cbs-news-video.webp</image:loc></image:image>
@@ -50,7 +50,7 @@
   <!-- About -->
   <url>
     <loc>https://www.saffronguru.com/about-us</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bbb-a-plus-rating.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-journey-and-achievements.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-mission.webp</image:loc></image:image>
@@ -65,7 +65,7 @@
   <!-- Our Story -->
   <url>
     <loc>https://www.saffronguru.com/our-story</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-10-year-anniversary.webp</image:loc></image:image>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
@@ -74,7 +74,7 @@
   <!-- Contact -->
   <url>
     <loc>https://www.saffronguru.com/contact</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-contact-it-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-real-human-it-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-serving-since-2016.webp</image:loc></image:image>
@@ -85,7 +85,7 @@
   <!-- Why Us -->
   <url>
     <loc>https://www.saffronguru.com/why-us</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -97,8 +97,8 @@
 
   <!-- DefendMe Pro -->
   <url>
-    <loc>https://www.saffronguru.com/DefendPro</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/defendme-pro-security</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-cybersecurity-for-business.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-protection-built-for-real-life.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-scam-trap-protection.webp</image:loc></image:image>
@@ -123,15 +123,15 @@
   <!-- Resources -->
   <url>
     <loc>https://www.saffronguru.com/resources</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <!-- How Saffron Works -->
   <url>
-    <loc>https://www.saffronguru.com/HowSaffronWorks</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/how-it-works</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-expert-human-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-instant-scam-alerts.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-layers-of-protection.webp</image:loc></image:image>
@@ -142,8 +142,8 @@
 
   <!-- Solution -->
   <url>
-    <loc>https://www.saffronguru.com/solution</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/protecting-seniors</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-fake-tech-support-scam-warning.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-rising-online-scams-against-seniors.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-romance-scam-warning.webp</image:loc></image:image>
@@ -154,8 +154,8 @@
 
   <!-- Learn More -->
   <url>
-    <loc>https://www.saffronguru.com/LearnMore</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/defendme-pro-features</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-defendme-pro-learn-more.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
@@ -163,8 +163,8 @@
 
   <!-- Microsoft Store -->
   <url>
-    <loc>https://www.saffronguru.com/microsoft-store</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/microsoft-software</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home 2024</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-office-home-and-business-2024.webp</image:loc><image:title>Saffron Guru Microsoft Office Home and Business 2024</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-microsoft-365-family.webp</image:loc><image:title>Saffron Guru Microsoft 365 Family</image:title></image:image>
@@ -180,7 +180,7 @@
   <!-- Internet Security -->
   <url>
     <loc>https://www.saffronguru.com/internet-security</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-crowdstrike-falcon.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-endpoint-security.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-mcafee-livesafe.webp</image:loc></image:image>
@@ -202,8 +202,8 @@
 
   <!-- For Your Business -->
   <url>
-    <loc>https://www.saffronguru.com/for-your-business</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/it-support-business</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-small-business-it-support.webp</image:loc><image:title>Saffron Guru Small Business IT Support</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-safe-support-assist-business-it-support.webp</image:loc><image:title>Saffron Guru Safe Support Assist Business IT Support</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-managed-it-support-productive-office.webp</image:loc><image:title>Saffron Guru Managed IT Support for Small Business</image:title></image:image>
@@ -213,8 +213,8 @@
 
   <!-- For Your Home -->
   <url>
-    <loc>https://www.saffronguru.com/for-your-home</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/it-support-home</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-home-tech-support.webp</image:loc><image:title>Saffron Guru Home Tech Support</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Services/saffron-guru-wifi-setup-troubleshooting.webp</image:loc><image:title>Saffron Guru Wi-Fi Setup &amp; Troubleshooting</image:title></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Services/saffron-guru-software-installation-fixes-support.webp</image:loc><image:title>Saffron Guru Software Installation, Fixes &amp; Support</image:title></image:image>
@@ -234,8 +234,8 @@
 
   <!-- Parent Solution -->
   <url>
-    <loc>https://www.saffronguru.com/Parent-Solution</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/parental-control</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-child-online-safety.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-ai-parental-control.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-nethaven-child-safe-internet.webp</image:loc></image:image>
@@ -248,16 +248,16 @@
 
   <!-- Pricing -->
   <url>
-    <loc>https://www.saffronguru.com/Pricing</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/pricing</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- 30 Days Money Back -->
   <url>
-    <loc>https://www.saffronguru.com/DaysMoneyBack</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/money-back-guarantee</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-defendme-pro-shield.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-30-day-money-back-guarantee.webp</image:loc></image:image>
     <priority>0.6</priority>
@@ -271,24 +271,24 @@
 
   <!-- Identify Fake Calls -->
   <url>
-    <loc>https://www.saffronguru.com/IdentifyFakeCalls</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/spot-fake-calls</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Read FAQ -->
   <url>
-    <loc>https://www.saffronguru.com/ReadFAQ</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/faq</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Fix My Tech -->
   <url>
-    <loc>https://www.saffronguru.com/FixMyTech</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/fix-my-tech</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/resources/saffron-guru-fixmytech-business-remote-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/resources/saffron-guru-fixmytech-home-remote-support.webp</image:loc></image:image>
     <priority>0.7</priority>
@@ -298,7 +298,7 @@
   <!-- Live Support -->
   <url>
     <loc>https://www.saffronguru.com/live-support</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-available-7-days-a-week.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-real-human-it-support.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-serving-since-2016.webp</image:loc></image:image>
@@ -312,36 +312,36 @@
   ========================================== -->
 
   <url>
-    <loc>https://www.saffronguru.com/Fox</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/featured-on-fox</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.saffronguru.com/CBS</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/featured-on-cbs</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.saffronguru.com/ABC11</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/featured-on-abc11</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.saffronguru.com/NewYorkPolice</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/featured-on-ny-police</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.saffronguru.com/ABCNational</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/featured-on-abc-news</loc>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -354,7 +354,7 @@
   <!-- Blog Home -->
   <url>
     <loc>https://www.saffronguru.com/blog</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -362,7 +362,7 @@
   <!-- Blog Articles -->
   <url>
     <loc>https://www.saffronguru.com/blog/online-scam-guide</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-rising-online-scams-against-seniors.webp</image:loc><image:title>Online Scam Guide | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -370,7 +370,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/romance-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-romance-scam-warning.webp</image:loc><image:title>Romance Scams Explained – Protecting Seniors | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -378,7 +378,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/tech-support-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-fake-tech-support-scam-warning.webp</image:loc><image:title>Fake Tech Support Scams – How to Stay Safe | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -386,7 +386,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/banking-otp-fraud</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bank-scam.webp</image:loc><image:title>Banking &amp; OTP Fraud – How to Stay Safe | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -394,7 +394,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/spam-calls</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-spam-call-protection.webp</image:loc><image:title>Spam Calls &amp; Robocalls – A Senior’s Guide to Safety | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -402,7 +402,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/phishing-emails</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-instant-scam-alerts.webp</image:loc><image:title>Phishing Emails &amp; Fake Links – Don’t Get Trapped | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -410,7 +410,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/identity-theft</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-fraud-detection.webp</image:loc><image:title>Identity Theft Protection – Safeguard Your Personal Details | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -418,7 +418,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/online-shopping</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-financial-security-protection.webp</image:loc><image:title>Safe Online Shopping for Seniors – Shop Smart, Shop Safe | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -426,7 +426,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/investment-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-crypto-scams.webp</image:loc><image:title>Investment &amp; Lottery Scams – Don’t Fall for Quick Money Traps | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -434,7 +434,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/password-safety</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Products/saffron-guru-password-manager.webp</image:loc><image:title>Password Safety &amp; Account Security – Strong Defenses for Seniors | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -442,7 +442,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/blog/ai-voice-fraud</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-ai-scam.webp</image:loc><image:title>AI Voice Call Frauds – The Rise of Deepfake Scams | Saffron Guru</image:title></image:image>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
@@ -455,8 +455,8 @@
 
   <!-- Articles Listing -->
   <url>
-    <loc>https://www.saffronguru.com/article</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.saffronguru.com/online-safety-hub</loc>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-ai-scam.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-antivirus-protection.webp</image:loc></image:image>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bank-scam.webp</image:loc></image:image>
@@ -474,7 +474,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/crypto-scams-getting-smarter</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-crypto-scams.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -482,7 +482,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/antivirus-alone-not-enough</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-antivirus-protection.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -490,7 +490,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/ai-powered-scam-attacks</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-ai-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -498,7 +498,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/call-spoofing-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-call-spoofing.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -506,7 +506,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/bank-account-freeze-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-bank-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -514,7 +514,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-qr-code-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-qr-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -522,7 +522,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-delivery-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-delivery-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -530,7 +530,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/tech-support-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-tech-support-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -538,7 +538,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/articles/fake-refund-scam</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <image:image><image:loc>https://www.saffronguru.com/Hero/saffron-guru-refund-scam.webp</image:loc></image:image>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
@@ -551,28 +551,28 @@
 
   <url>
     <loc>https://www.saffronguru.com/privacy-policy</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/terms</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/return-policy</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/why-human-support</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -596,7 +596,7 @@
 
   <url>
     <loc>https://www.saffronguru.com/veterans</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -608,28 +608,28 @@
 
   <url>
     <loc>https://www.saffronguru.com/product/5</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/6</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/7</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/8</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -646,49 +646,49 @@
 
   <url>
     <loc>https://www.saffronguru.com/product/11</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/12</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/13</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/14</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/15</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/16</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.saffronguru.com/product/17</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>

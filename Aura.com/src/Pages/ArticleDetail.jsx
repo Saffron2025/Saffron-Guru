@@ -149,7 +149,7 @@ const ArticleDetail = () => {
             <ul>
               {relatedArticles.map((ra) => (
                 <li key={ra.id}>
-                  <Link to={`/article/${ra.id}`}>
+                  <Link to={`/articles/${ra.id}`}>
                     {ra.title}
                   </Link>
                 </li>

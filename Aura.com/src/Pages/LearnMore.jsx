@@ -365,7 +365,7 @@ const LearnMore = () => {
             </p>
 
             <Link
-              to="/DefendPro"
+              to="/defendme-pro-security"
               className="learn-explore-btn"
             >
               <span>Explore DefendMe PRO™</span>

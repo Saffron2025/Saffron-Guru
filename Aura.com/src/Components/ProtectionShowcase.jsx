@@ -252,7 +252,7 @@ const ProtectionShowcase = () => {
             {features.map((feature, index) => (
               <Link
                 key={feature.item}
-                to={`/DefendPro?item=${feature.item}`}
+                to={`/defendme-pro-security?item=${feature.item}`}
                 className="ps-feature-card"
                 style={{
                   "--feature-delay": `${index * 0.06}s`,
@@ -291,7 +291,7 @@ const ProtectionShowcase = () => {
         </div>
 
         <Link
-          to="/LearnMore"
+          to="/defendme-pro-features"
           className="ps-cta-button"
         >
           <span>🚀</span>
@@ -562,7 +562,7 @@ export default ProtectionShowcase;
 
 //               <Link
 //                 key={feature.item}
-//                 to={`/DefendPro?item=${feature.item}`}
+//                 to={`/defendme-pro-security?item=${feature.item}`}
 //                 className="feature-card"
 //               >
 
@@ -616,7 +616,7 @@ export default ProtectionShowcase;
 
 
 //         <Link
-//           to="/LearnMore"
+//           to="/defendme-pro-features"
 //           className="cta-button"
 //         >
 //           Explore Full Protection

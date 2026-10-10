@@ -241,8 +241,8 @@ export default function Seniors() {
           <h2 className="sr-h2">Scammers count on you being alone. <span>With Saffron Guru, you never are.</span></h2>
           <a className="sr-call" href={PHONE_HREF}><FaPhoneAlt aria-hidden="true" /> Call {PHONE_TEXT}</a>
           <p className="sr-small">
-            Also see our <Link to="/for-your-home">home tech support</Link>,{" "}
-            <Link to="/DefendPro">DefendMe PRO™ Security Solutions</Link> and{" "}
+            Also see our <Link to="/it-support-home">home tech support</Link>,{" "}
+            <Link to="/defendme-pro-security">DefendMe PRO™ Security Solutions</Link> and{" "}
             <Link to="/veterans">Veterans Special Offer</Link>.
           </p>
         </section>
